@@ -1,0 +1,43 @@
+# Credenciais — NUNCA commitar
+clientes/**/.env
+.env
+*.env
+
+# Clientes excluídos do repositório
+construbox/
+clientes/machinearena/
+
+# Dependências
+node_modules/
+
+# Prospecção — arquivos grandes / gerados
+prospecção/notas_brutas/
+prospecção/ja_verificadas/
+prospecção/clientes.json
+prospecção/erros-parsing.json
+prospecção/para-classificar.json
+prospecção/fichas/
+prospecção/pdfs/
+prospecção/lotes/
+
+# Audit exports
+audit-*.json
+
+# Claude Code (settings locais)
+.claude/
+
+# Relatórios gerados
+clientes/**/reports/*.json
+clientes/**/reports/*.csv
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/

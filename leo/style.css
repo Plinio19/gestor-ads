@@ -1,0 +1,81 @@
+.container {
+  width: 80%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+header {
+  background: #347e86;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 20px;
+}
+
+.topo {
+  display: flex;
+  gap: 10px;
+}
+
+.hero {
+  background: #4e3a74;
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+  color: rgb(7, 7, 7);
+}
+
+.main {
+  background: #b89024;
+  flex: 2;
+  padding: 40px;
+  text-align: center;
+}
+
+.meio {
+  display: flex;
+  gap: 10px;
+}
+
+.sidebar {
+  background: #79a547;
+  flex: 1;
+  padding: 40px;
+  text-align: center;
+}
+
+.extra {
+  background: #8d7e7e;
+  flex: 2;
+  padding: 40px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.fim {
+  display: flex;
+  gap: 10px;
+}
+
+.images {
+  background: #187067;
+  flex: 2;
+  padding: 30px;
+  text-align: center;
+  color: rgb(0, 0, 0);
+}
+
+.posts {
+  background: #cd96d6;
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+footer {
+  background: #a36502;
+  text-align: center;
+  padding: 20px;
+  color: rgb(0, 0, 0);
+}
