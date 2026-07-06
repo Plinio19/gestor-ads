@@ -1,35 +1,18 @@
 [
   {
-    "id": "exemplo1",
-    "nome": "Braspress",
-    "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"],
-    "telefone": "(11) 3471-1400",
-    "email": "comercial@braspress.com.br",
-    "site": "www.braspress.com.br",
-    "contato": "Comercial",
+    "id": "mr9gvwyhri15o",
+    "nome": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
     "status": "ativo",
-    "obs": "Atendimento nacional. Cargas fracionadas."
-  },
-  {
-    "id": "exemplo2",
-    "nome": "Sequoia Logística",
-    "estados": ["SP","RJ","MG","PR","SC","RS","ES","BA","GO","DF"],
-    "telefone": "(11) 3003-3300",
-    "email": "contato@sequoia.com.br",
-    "site": "www.sequoia.com.br",
-    "contato": "",
-    "status": "ativo",
-    "obs": "Foco em e-commerce. Rastreamento em tempo real."
-  },
-  {
-    "id": "exemplo3",
-    "nome": "Correios",
-    "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"],
-    "telefone": "3003-0100",
-    "email": "",
-    "site": "www.correios.com.br",
-    "contato": "Atendimento geral",
-    "status": "ativo",
-    "obs": "PAC, SEDEX, SEDEX 10, Logística Reversa."
+    "telefone": "11 95849-0015",
+    "email": "comercial02.rectransportes@gmail.com",
+    "site": "",
+    "contato": "Thayná",
+    "obs": "Nova - ver se é boa",
+    "estados": [
+      "ES",
+      "MG",
+      "RJ",
+      "SP"
+    ]
   }
 ]
