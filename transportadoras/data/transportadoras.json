@@ -14,5 +14,21 @@
       "RJ",
       "SP"
     ]
+  },
+  {
+    "id": "mr9ik8o7ebiii",
+    "nome": "EXPRESSO LEOMAR LTDA",
+    "status": "ativo",
+    "telefone": "(19) 98188-5373",
+    "email": "",
+    "site": "https://www.expressoleomar.com.br/",
+    "contato": "Andressa Moraes",
+    "obs": "Nova - ver se é boa",
+    "estados": [
+      "PR",
+      "RS",
+      "SC",
+      "SP"
+    ]
   }
 ]
