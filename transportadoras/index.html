@@ -381,11 +381,12 @@ let dadosFiltrados = [];
 let editandoId = null;
 let ordenacaoAtual = { campo: 'nome', asc: true };
 let githubSHA = null;
+const DEFAULTS = { owner: 'Plinio19', repo: 'gestor-ads', branch: 'main' };
 let config = carregarConfig();
 
 // ===================== CONFIG GITHUB =====================
 function carregarConfig() {
-  try { return JSON.parse(localStorage.getItem(CHAVE_CFG)) || {}; } catch { return {}; }
+  try { return { ...DEFAULTS, ...JSON.parse(localStorage.getItem(CHAVE_CFG)) }; } catch { return { ...DEFAULTS }; }
 }
 
 function salvarConfig() {
