@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sistema de Transportadoras</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --azul: #1a56db; --azul-escuro: #1e429f; --cinza-claro: #f3f4f6;
+      --cinza: #e5e7eb; --texto: #111827; --texto-leve: #6b7280;
+      --borda: #d1d5db; --verde: #059669; --vermelho: #dc2626; --amarelo: #d97706;
+    }
+    body { font-family: 'Segoe UI', sans-serif; background: #f0f4ff; color: var(--texto); min-height: 100vh; }
+
+    /* HEADER */
+    header {
+      background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
+      color: white; padding: 18px 32px;
+      display: flex; align-items: center; justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15); gap: 12px; flex-wrap: wrap;
+    }
+    header h1 { font-size: 1.4rem; font-weight: 700; }
+    header p { font-size: 0.82rem; opacity: 0.8; margin-top: 2px; }
+    .header-acoes { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+
+    /* STATUS SYNC */
+    .status-sync {
+      background: rgba(255,255,255,0.15); border-radius: 8px;
+      padding: 8px 14px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;
+    }
+    .status-sync .dot { width: 8px; height: 8px; border-radius: 50%; background: #86efac; flex-shrink: 0; }
+    .status-sync .dot.vermelho { background: #fca5a5; }
+    .status-sync .dot.amarelo { background: #fde68a; animation: piscar 1.2s infinite; }
+    @keyframes piscar { 0%,100%{opacity:1} 50%{opacity:0.3} }
+
+    .btn { padding: 9px 18px; border: none; border-radius: 8px; cursor: pointer; font-size: 0.88rem; font-weight: 600; transition: all 0.2s; white-space: nowrap; display: inline-flex; align-items: center; gap: 6px; }
+    .btn-primary { background: var(--azul); color: white; }
+    .btn-primary:hover { background: var(--azul-escuro); }
+    .btn-success { background: var(--verde); color: white; }
+    .btn-success:hover { filter: brightness(0.9); }
+    .btn-danger { background: var(--vermelho); color: white; }
+    .btn-danger:hover { filter: brightness(0.9); }
+    .btn-outline { background: white; color: var(--azul); border: 1px solid var(--azul); }
+    .btn-outline:hover { background: #eff6ff; }
+    .btn-branco { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); }
+    .btn-branco:hover { background: rgba(255,255,255,0.25); }
+    .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
+    .btn-ghost { background: transparent; color: var(--texto-leve); font-size: 0.8rem; font-weight: 400; border: none; }
+    .btn-ghost:hover { color: var(--vermelho); background: #fef2f2; border-radius: 6px; }
+    .btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+    .container { max-width: 1320px; margin: 0 auto; padding: 24px 20px; }
+
+    /* ALERT SETUP */
+    .alert-setup {
+      background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px;
+      padding: 16px 20px; margin-bottom: 20px;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    }
+    .alert-setup p { font-size: 0.88rem; color: #92400e; }
+    .alert-setup strong { font-weight: 700; }
+
+    /* STATS */
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+    .stat-card { background: white; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); border-left: 4px solid var(--azul); }
+    .stat-card.verde { border-left-color: var(--verde); }
+    .stat-card.amarelo { border-left-color: var(--amarelo); }
+    .stat-card .numero { font-size: 2rem; font-weight: 700; color: var(--azul); }
+    .stat-card.verde .numero { color: var(--verde); }
+    .stat-card.amarelo .numero { color: var(--amarelo); }
+    .stat-card .label { font-size: 0.78rem; color: var(--texto-leve); margin-top: 2px; }
+
+    /* FILTROS */
+    .controles { background: white; border-radius: 12px; padding: 18px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
+    .campo { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 150px; }
+    .campo label { font-size: 0.75rem; font-weight: 700; color: var(--texto-leve); text-transform: uppercase; letter-spacing: 0.05em; }
+    .campo input, .campo select { border: 1px solid var(--borda); border-radius: 8px; padding: 9px 12px; font-size: 0.9rem; color: var(--texto); background: white; transition: border-color 0.2s; }
+    .campo input:focus, .campo select:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
+
+    /* TABELA */
+    .tabela-wrapper { background: white; border-radius: 12px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow: hidden; }
+    .tabela-header { padding: 16px 20px; border-bottom: 1px solid var(--cinza); display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 10px; }
+    .tabela-header h2 { font-size: 1rem; font-weight: 600; }
+    .tabela-scroll { overflow-x: auto; }
+    table { width: 100%; border-collapse: collapse; }
+    thead tr { background: var(--cinza-claro); }
+    th { padding: 11px 16px; text-align: left; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--texto-leve); white-space: nowrap; cursor: pointer; user-select: none; }
+    th:hover { color: var(--azul); }
+    th.sorted { color: var(--azul); }
+    tbody tr { border-bottom: 1px solid var(--cinza); transition: background 0.15s; }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f8faff; }
+    td { padding: 11px 16px; font-size: 0.87rem; vertical-align: middle; }
+    .nome-empresa { font-weight: 600; }
+    .detalhe { color: var(--texto-leve); font-size: 0.8rem; margin-top: 2px; }
+    .estados-container { display: flex; flex-wrap: wrap; gap: 4px; max-width: 340px; }
+    .tag-estado { background: #eff6ff; color: var(--azul); border: 1px solid #bfdbfe; padding: 2px 7px; border-radius: 10px; font-size: 0.73rem; font-weight: 600; white-space: nowrap; }
+    .tag-nacional { background: #f0fdf4; color: var(--verde); border-color: #bbf7d0; }
+    .status { padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 600; display: inline-block; }
+    .status-ativo { background: #f0fdf4; color: var(--verde); }
+    .status-inativo { background: #fef2f2; color: var(--vermelho); }
+    .vazio { padding: 56px 20px; text-align: center; color: var(--texto-leve); }
+    .vazio .icone { font-size: 3rem; margin-bottom: 12px; }
+    .pesquisa-destaque { background: #fef08a; border-radius: 3px; }
+
+    /* MODAIS */
+    .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
+    .overlay.aberto { display: flex; }
+    .modal { background: white; border-radius: 16px; padding: 28px; width: 100%; max-width: 640px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); animation: slideUp 0.22s ease; }
+    .modal-sm { max-width: 480px; }
+    @keyframes slideUp { from{transform:translateY(16px);opacity:0} to{transform:translateY(0);opacity:1} }
+    .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .modal-header h2 { font-size: 1.1rem; font-weight: 700; }
+    .btn-fechar { background: var(--cinza); border: none; width: 30px; height: 30px; border-radius: 50%; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
+    .btn-fechar:hover { background: var(--borda); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-grid .full { grid-column: 1/-1; }
+    .form-campo { display: flex; flex-direction: column; gap: 6px; }
+    .form-campo label { font-size: 0.8rem; font-weight: 600; color: var(--texto-leve); }
+    .form-campo input, .form-campo select, .form-campo textarea { border: 1px solid var(--borda); border-radius: 8px; padding: 10px 12px; font-size: 0.9rem; font-family: inherit; transition: border-color 0.2s; resize: vertical; }
+    .form-campo input:focus, .form-campo select:focus, .form-campo textarea:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
+    .form-campo .hint { font-size: 0.75rem; color: var(--texto-leve); }
+    .form-campo .hint a { color: var(--azul); }
+    .estados-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 5px; max-height: 200px; overflow-y: auto; border: 1px solid var(--borda); border-radius: 8px; padding: 10px; }
+    .estado-check { display: flex; align-items: center; gap: 6px; font-size: 0.81rem; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+    .estado-check:hover { background: var(--cinza-claro); }
+    .estado-check input[type="checkbox"] { cursor: pointer; accent-color: var(--azul); }
+    .selecionar-todos { display: flex; gap: 8px; margin-bottom: 8px; }
+    .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--cinza); }
+
+    /* EXPORTAR DROPDOWN */
+    .exportar-menu { position: relative; }
+    .exportar-dropdown { display: none; position: absolute; top: 100%; right: 0; margin-top: 4px; background: white; border: 1px solid var(--borda); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 50; min-width: 160px; overflow: hidden; }
+    .exportar-dropdown.aberto { display: block; }
+    .exportar-dropdown button { display: block; width: 100%; text-align: left; padding: 10px 16px; background: none; border: none; font-size: 0.87rem; cursor: pointer; }
+    .exportar-dropdown button:hover { background: var(--cinza-claro); }
+
+    /* SPINNER */
+    .spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block; }
+    @keyframes spin { to{transform:rotate(360deg)} }
+
+    /* TOAST */
+    .toast-container { position: fixed; bottom: 24px; right: 24px; z-index: 999; display: flex; flex-direction: column; gap: 8px; }
+    .toast { background: #1f2937; color: white; padding: 12px 18px; border-radius: 10px; font-size: 0.87rem; box-shadow: 0 4px 16px rgba(0,0,0,0.2); animation: slideUp 0.2s ease; display: flex; align-items: center; gap: 8px; max-width: 320px; }
+    .toast.sucesso { background: #065f46; }
+    .toast.erro { background: #991b1b; }
+
+    /* CONFIG MODAL */
+    .config-secao { background: var(--cinza-claro); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
+    .config-secao h3 { font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; color: var(--texto); }
+    .config-item { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
+    .config-item:last-child { margin-bottom: 0; }
+    .config-item label { font-size: 0.78rem; font-weight: 600; color: var(--texto-leve); }
+    .config-item input { border: 1px solid var(--borda); border-radius: 8px; padding: 9px 12px; font-size: 0.9rem; font-family: monospace; }
+    .config-item input:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
+    .config-item .hint { font-size: 0.73rem; color: var(--texto-leve); }
+    .config-item .hint a { color: var(--azul); }
+    .badge-conectado { background: #f0fdf4; color: var(--verde); border: 1px solid #bbf7d0; padding: 4px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 600; }
+    .badge-desconectado { background: #fef2f2; color: var(--vermelho); border: 1px solid #fecaca; padding: 4px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 600; }
+
+    @media(max-width:640px) { .form-grid{grid-template-columns:1fr} .stats{grid-template-columns:repeat(2,1fr)} }
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>🚚 Sistema de Transportadoras</h1>
+    <p id="header-sub">Carregando dados...</p>
+  </div>
+  <div class="header-acoes">
+    <div class="status-sync" id="status-sync">
+      <div class="dot amarelo" id="sync-dot"></div>
+      <span id="sync-texto">Conectando...</span>
+    </div>
+    <button class="btn btn-branco btn-sm" onclick="sincronizar()" id="btn-sync" title="Salvar alterações no GitHub">
+      ☁️ Sincronizar
+    </button>
+    <button class="btn btn-branco btn-sm" onclick="abrirConfig()" title="Configurar GitHub">
+      ⚙️
+    </button>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- ALERTA SETUP -->
+  <div class="alert-setup" id="alert-setup" style="display:none;">
+    <p>⚠️ <strong>Configure o GitHub</strong> para salvar e compartilhar os dados com sua equipe.</p>
+    <button class="btn btn-primary btn-sm" onclick="abrirConfig()">Configurar agora →</button>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div class="stat-card"><div class="numero" id="stat-total">0</div><div class="label">Transportadoras</div></div>
+    <div class="stat-card verde"><div class="numero" id="stat-ativas">0</div><div class="label">Ativas</div></div>
+    <div class="stat-card amarelo"><div class="numero" id="stat-estados">0</div><div class="label">Estados cobertos</div></div>
+    <div class="stat-card"><div class="numero" id="stat-nacionais">0</div><div class="label">Nacionais</div></div>
+  </div>
+
+  <!-- FILTROS -->
+  <div class="controles">
+    <div class="campo">
+      <label>Buscar</label>
+      <input type="text" id="filtro-busca" placeholder="Nome, telefone, observação..." oninput="aplicarFiltros()" />
+    </div>
+    <div class="campo" style="max-width:190px;">
+      <label>Estado</label>
+      <select id="filtro-estado" onchange="aplicarFiltros()">
+        <option value="">Todos os estados</option>
+      </select>
+    </div>
+    <div class="campo" style="max-width:150px;">
+      <label>Status</label>
+      <select id="filtro-status" onchange="aplicarFiltros()">
+        <option value="">Todos</option>
+        <option value="ativo">Ativo</option>
+        <option value="inativo">Inativo</option>
+      </select>
+    </div>
+    <div style="display:flex;gap:8px;padding-bottom:1px;">
+      <button class="btn btn-ghost" onclick="limparFiltros()">✕ Limpar</button>
+      <button class="btn btn-primary" onclick="abrirModal()">+ Nova Transportadora</button>
+    </div>
+  </div>
+
+  <!-- TABELA -->
+  <div class="tabela-wrapper">
+    <div class="tabela-header">
+      <h2>Transportadoras <span id="contagem-resultados" style="font-weight:400;color:var(--texto-leve);font-size:0.83rem;"></span></h2>
+      <div style="display:flex;gap:8px;">
+        <div class="exportar-menu">
+          <button class="btn btn-outline btn-sm" onclick="toggleExportar()">↓ Exportar</button>
+          <div class="exportar-dropdown" id="exportar-dropdown">
+            <button onclick="exportarCSV()">📄 Exportar CSV (Excel)</button>
+            <button onclick="exportarJSON()">📋 Exportar JSON</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="tabela-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th onclick="ordenar('nome')">Transportadora ↕</th>
+            <th onclick="ordenar('estados')">Estados ↕</th>
+            <th>Contato</th>
+            <th>Site / E-mail</th>
+            <th onclick="ordenar('status')">Status ↕</th>
+            <th>Observações</th>
+            <th style="text-align:center;">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+      <div class="vazio" id="vazio" style="display:none;">
+        <div class="icone">🔍</div>
+        <p>Nenhuma transportadora encontrada.<br>Ajuste os filtros ou cadastre uma nova.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-container" id="toasts"></div>
+
+<!-- MODAL TRANSPORTADORA -->
+<div class="overlay" id="overlay-form" onclick="fecharSeFora(event,'overlay-form')">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modal-titulo">Nova Transportadora</h2>
+      <button class="btn-fechar" onclick="fecharModal()">✕</button>
+    </div>
+    <div class="form-grid">
+      <div class="form-campo">
+        <label>Nome *</label>
+        <input type="text" id="f-nome" placeholder="Ex: Braspress, Total Express..." />
+      </div>
+      <div class="form-campo">
+        <label>Status</label>
+        <select id="f-status"><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select>
+      </div>
+      <div class="form-campo">
+        <label>Telefone / WhatsApp</label>
+        <input type="text" id="f-telefone" placeholder="(11) 9 0000-0000" />
+      </div>
+      <div class="form-campo">
+        <label>E-mail</label>
+        <input type="email" id="f-email" placeholder="contato@transportadora.com" />
+      </div>
+      <div class="form-campo full">
+        <label>Site</label>
+        <input type="text" id="f-site" placeholder="www.transportadora.com.br" />
+      </div>
+      <div class="form-campo full">
+        <label>Nome do Contato</label>
+        <input type="text" id="f-contato" placeholder="Pessoa responsável" />
+      </div>
+      <div class="form-campo full">
+        <label>Estados Atendidos *</label>
+        <div class="selecionar-todos">
+          <button type="button" class="btn btn-outline btn-sm" onclick="selTodos(true)">Selecionar todos</button>
+          <button type="button" class="btn btn-outline btn-sm" onclick="selTodos(false)">Limpar</button>
+        </div>
+        <div class="estados-grid" id="estados-grid"></div>
+      </div>
+      <div class="form-campo full">
+        <label>Observações</label>
+        <textarea id="f-obs" rows="3" placeholder="Prazo, modalidades, tabela de preços..."></textarea>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="fecharModal()">Cancelar</button>
+      <button class="btn btn-success" onclick="salvar()">✓ Salvar</button>
+    </div>
+  </div>
+</div>
+
+<!-- MODAL CONFIGURAÇÃO GITHUB -->
+<div class="overlay" id="overlay-config" onclick="fecharSeFora(event,'overlay-config')">
+  <div class="modal modal-sm">
+    <div class="modal-header">
+      <h2>⚙️ Configurar GitHub</h2>
+      <button class="btn-fechar" onclick="fecharConfig()">✕</button>
+    </div>
+
+    <div class="config-secao">
+      <h3>🔗 Repositório</h3>
+      <div class="config-item">
+        <label>Usuário do GitHub</label>
+        <input type="text" id="cfg-owner" placeholder="seu-usuario" />
+      </div>
+      <div class="config-item">
+        <label>Nome do Repositório</label>
+        <input type="text" id="cfg-repo" placeholder="transportadoras" />
+      </div>
+      <div class="config-item">
+        <label>Branch</label>
+        <input type="text" id="cfg-branch" placeholder="main" />
+      </div>
+    </div>
+
+    <div class="config-secao">
+      <h3>🔑 Token de Acesso</h3>
+      <div class="config-item">
+        <label>Personal Access Token</label>
+        <input type="password" id="cfg-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
+        <span class="hint">
+          Gere em: <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens</a>
+          → marque permissão <strong>repo</strong> → copie e cole aqui.
+          Cada pessoa da equipe precisa gerar o próprio token.
+        </span>
+      </div>
+    </div>
+
+    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;">
+      <span id="badge-status-config" class="badge-desconectado">Não configurado</span>
+      <button class="btn btn-outline btn-sm" onclick="testarConexao()">Testar conexão</button>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="fecharConfig()">Cancelar</button>
+      <button class="btn btn-success" onclick="salvarConfig()">✓ Salvar configuração</button>
+    </div>
+  </div>
+</div>
+
+<input type="file" id="file-input" accept=".json" style="display:none;" onchange="processarImportacao(event)" />
+
+<script>
+// ===================== CONSTANTES =====================
+const ESTADOS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG','PA','PB','PR','PE','PI','RJ','RN','RS','RO','RR','SC','SP','SE','TO'];
+const CHAVE_LS = 'transportadoras_v2';
+const CHAVE_CFG = 'github_config_v1';
+const FILE_PATH = 'transportadoras/data/transportadoras.json';
+
+// ===================== ESTADO =====================
+let transportadoras = [];
+let dadosFiltrados = [];
+let editandoId = null;
+let ordenacaoAtual = { campo: 'nome', asc: true };
+let githubSHA = null;
+let config = carregarConfig();
+
+// ===================== CONFIG GITHUB =====================
+function carregarConfig() {
+  try { return JSON.parse(localStorage.getItem(CHAVE_CFG)) || {}; } catch { return {}; }
+}
+
+function salvarConfig() {
+  const owner = document.getElementById('cfg-owner').value.trim();
+  const repo = document.getElementById('cfg-repo').value.trim();
+  const token = document.getElementById('cfg-token').value.trim();
+  const branch = document.getElementById('cfg-branch').value.trim() || 'main';
+  if (!owner || !repo || !token) { toast('Preencha usuário, repositório e token.', 'erro'); return; }
+  config = { owner, repo, token, branch };
+  localStorage.setItem(CHAVE_CFG, JSON.stringify(config));
+  fecharConfig();
+  toast('Configuração salva! Carregando dados do GitHub...', 'sucesso');
+  init();
+}
+
+function configurado() { return !!(config.owner && config.repo && config.token); }
+
+// ===================== GITHUB API =====================
+function githubHeaders() {
+  return { 'Authorization': `token ${config.token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' };
+}
+
+function githubUrl(path) {
+  return `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${path}`;
+}
+
+function toB64(str) {
+  return btoa(unescape(encodeURIComponent(str)));
+}
+
+function fromB64(str) {
+  return decodeURIComponent(escape(atob(str)));
+}
+
+async function carregarDoGitHub() {
+  if (!configurado()) return false;
+  try {
+    const res = await fetch(githubUrl(FILE_PATH), { headers: githubHeaders() });
+    if (res.status === 404) {
+      // Arquivo não existe ainda — criar com dados de exemplo
+      transportadoras = dadosExemplo();
+      await criarArquivoGitHub();
+      return true;
+    }
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    const data = await res.json();
+    githubSHA = data.sha;
+    transportadoras = JSON.parse(fromB64(data.content.replace(/\n/g, '')));
+    salvarLocal();
+    return true;
+  } catch (e) {
+    console.error('GitHub load error:', e);
+    return false;
+  }
+}
+
+async function criarArquivoGitHub() {
+  const content = toB64(JSON.stringify(transportadoras, null, 2));
+  const body = { message: 'Criação do arquivo de transportadoras', content, branch: config.branch || 'main' };
+  const res = await fetch(githubUrl(FILE_PATH), { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) });
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  const data = await res.json();
+  githubSHA = data.content.sha;
+}
+
+async function sincronizar() {
+  if (!configurado()) { abrirConfig(); return; }
+  const btn = document.getElementById('btn-sync');
+  btn.disabled = true;
+  btn.innerHTML = '<span class="spinner"></span> Salvando...';
+  setSyncStatus('amarelo', 'Sincronizando...');
+
+  try {
+    const json = JSON.stringify(transportadoras, null, 2);
+    const content = toB64(json);
+    const agora = new Date().toLocaleString('pt-BR');
+    const body = {
+      message: `Atualização — ${agora}`,
+      content,
+      branch: config.branch || 'main',
+      ...(githubSHA ? { sha: githubSHA } : {})
+    };
+    const res = await fetch(githubUrl(FILE_PATH), { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) });
+    if (!res.ok) {
+      const err = await res.json();
+      throw new Error(err.message || `HTTP ${res.status}`);
+    }
+    const data = await res.json();
+    githubSHA = data.content.sha;
+    salvarLocal();
+    setSyncStatus('verde', `Sincronizado às ${agora.split(' ')[1]}`);
+    toast('✅ Dados salvos no GitHub com sucesso!', 'sucesso');
+  } catch (e) {
+    setSyncStatus('vermelho', 'Erro ao sincronizar');
+    toast(`Erro: ${e.message}`, 'erro');
+    console.error(e);
+  } finally {
+    btn.disabled = false;
+    btn.innerHTML = '☁️ Sincronizar';
+  }
+}
+
+async function testarConexao() {
+  const owner = document.getElementById('cfg-owner').value.trim();
+  const repo = document.getElementById('cfg-repo').value.trim();
+  const token = document.getElementById('cfg-token').value.trim();
+  if (!owner || !repo || !token) { toast('Preencha todos os campos antes de testar.', 'erro'); return; }
+  try {
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { 'Authorization': `token ${token}` } });
+    if (res.ok) {
+      document.getElementById('badge-status-config').className = 'badge-conectado';
+      document.getElementById('badge-status-config').textContent = '✓ Conexão OK';
+      toast('Conexão com o GitHub funcionando!', 'sucesso');
+    } else {
+      document.getElementById('badge-status-config').className = 'badge-desconectado';
+      document.getElementById('badge-status-config').textContent = 'Erro: repositório não encontrado';
+      toast('Repositório não encontrado. Verifique o usuário e o nome do repositório.', 'erro');
+    }
+  } catch { toast('Erro de rede. Verifique sua conexão.', 'erro'); }
+}
+
+// ===================== LOCAL STORAGE =====================
+function salvarLocal() {
+  localStorage.setItem(CHAVE_LS, JSON.stringify(transportadoras));
+}
+
+function carregarLocal() {
+  try { return JSON.parse(localStorage.getItem(CHAVE_LS)) || null; } catch { return null; }
+}
+
+// ===================== INIT =====================
+async function init() {
+  // Carregar localmente primeiro (resposta imediata)
+  const local = carregarLocal();
+  if (local) { transportadoras = local; render(); }
+
+  if (!configurado()) {
+    document.getElementById('alert-setup').style.display = 'flex';
+    setSyncStatus('vermelho', 'Não configurado');
+    document.getElementById('header-sub').textContent = 'Configure o GitHub para compartilhar dados';
+    if (!local) { transportadoras = dadosExemplo(); render(); }
+    return;
+  }
+
+  document.getElementById('alert-setup').style.display = 'none';
+  setSyncStatus('amarelo', 'Carregando...');
+  document.getElementById('header-sub').textContent = `${config.owner}/${config.repo}`;
+
+  const ok = await carregarDoGitHub();
+  if (ok) {
+    setSyncStatus('verde', 'Sincronizado');
+    render();
+  } else {
+    setSyncStatus('vermelho', 'Erro ao conectar');
+    toast('Não foi possível carregar do GitHub. Usando dados locais.', 'erro');
+    if (!local) { transportadoras = dadosExemplo(); render(); }
+  }
+}
+
+// ===================== RENDER =====================
+function setSyncStatus(cor, texto) {
+  const dot = document.getElementById('sync-dot');
+  dot.className = `dot ${cor === 'verde' ? '' : cor}`.trim();
+  document.getElementById('sync-texto').textContent = texto;
+}
+
+function atualizarStats() {
+  document.getElementById('stat-total').textContent = transportadoras.length;
+  document.getElementById('stat-ativas').textContent = transportadoras.filter(t => t.status === 'ativo').length;
+  document.getElementById('stat-nacionais').textContent = transportadoras.filter(t => t.estados.length === ESTADOS.length).length;
+  document.getElementById('stat-estados').textContent = new Set(transportadoras.flatMap(t => t.estados)).size;
+}
+
+function atualizarFiltroEstados() {
+  const sel = document.getElementById('filtro-estado');
+  const val = sel.value;
+  sel.innerHTML = '<option value="">Todos os estados</option>';
+  [...new Set(transportadoras.flatMap(t => t.estados))].sort().forEach(e => {
+    const opt = document.createElement('option');
+    opt.value = e; opt.textContent = e;
+    if (e === val) opt.selected = true;
+    sel.appendChild(opt);
+  });
+}
+
+function aplicarFiltros() {
+  const busca = document.getElementById('filtro-busca').value.toLowerCase().trim();
+  const estado = document.getElementById('filtro-estado').value;
+  const status = document.getElementById('filtro-status').value;
+
+  dadosFiltrados = transportadoras.filter(t => {
+    if (estado && !t.estados.includes(estado)) return false;
+    if (status && t.status !== status) return false;
+    if (busca) {
+      const h = [t.nome, t.contato, t.obs, t.telefone, t.email, t.site].join(' ').toLowerCase();
+      if (!h.includes(busca)) return false;
+    }
+    return true;
+  });
+
+  dadosFiltrados.sort((a, b) => {
+    let va = ordenacaoAtual.campo === 'estados' ? a.estados.length : (a[ordenacaoAtual.campo] || '').toLowerCase();
+    let vb = ordenacaoAtual.campo === 'estados' ? b.estados.length : (b[ordenacaoAtual.campo] || '').toLowerCase();
+    if (typeof va === 'number') return ordenacaoAtual.asc ? vb - va : va - vb;
+    if (va < vb) return ordenacaoAtual.asc ? -1 : 1;
+    if (va > vb) return ordenacaoAtual.asc ? 1 : -1;
+    return 0;
+  });
+
+  renderizarTabela(busca);
+}
+
+function renderizarTabela(busca = '') {
+  const tbody = document.getElementById('tbody');
+  const vazio = document.getElementById('vazio');
+  document.getElementById('contagem-resultados').textContent = dadosFiltrados.length < transportadoras.length ? `(${dadosFiltrados.length} resultado${dadosFiltrados.length !== 1 ? 's' : ''})` : '';
+
+  if (!dadosFiltrados.length) { tbody.innerHTML = ''; vazio.style.display = 'block'; return; }
+  vazio.style.display = 'none';
+
+  tbody.innerHTML = dadosFiltrados.map(t => {
+    const nacional = t.estados.length === ESTADOS.length;
+    const tags = nacional ? '<span class="tag-estado tag-nacional">🌎 Nacional</span>' : t.estados.map(e => `<span class="tag-estado">${e}</span>`).join('');
+    const statusHtml = t.status === 'ativo' ? '<span class="status status-ativo">● Ativo</span>' : '<span class="status status-inativo">● Inativo</span>';
+    const siteHtml = t.site ? `<a href="${t.site.startsWith('http')?t.site:'https://'+t.site}" target="_blank" style="color:var(--azul);font-size:0.82rem;">${esc(t.site)}</a>` : '';
+    const emailHtml = t.email ? `<div style="margin-top:2px;"><a href="mailto:${t.email}" style="color:var(--texto-leve);font-size:0.8rem;">${esc(t.email)}</a></div>` : '';
+    return `<tr>
+      <td><div class="nome-empresa">${hl(t.nome,busca)}</div>${t.telefone?`<div class="detalhe">📞 ${hl(t.telefone,busca)}</div>`:''}${t.contato?`<div class="detalhe">👤 ${hl(t.contato,busca)}</div>`:''}</td>
+      <td><div class="estados-container">${tags}</div></td>
+      <td>${t.telefone?`<div>${hl(t.telefone,busca)}</div>`:''}</td>
+      <td>${siteHtml}${emailHtml}</td>
+      <td>${statusHtml}</td>
+      <td style="max-width:180px;font-size:0.81rem;color:var(--texto-leve);">${hl(t.obs,busca)}</td>
+      <td style="text-align:center;white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="abrirModal('${t.id}')" style="margin-right:4px;">✏️</button>
+        <button class="btn btn-ghost btn-sm" onclick="excluir('${t.id}')">🗑️</button>
+      </td>
+    </tr>`;
+  }).join('');
+}
+
+function render() { atualizarStats(); atualizarFiltroEstados(); aplicarFiltros(); }
+
+// ===================== ORDENAÇÃO =====================
+function ordenar(campo) {
+  ordenacaoAtual = { campo, asc: ordenacaoAtual.campo === campo ? !ordenacaoAtual.asc : true };
+  aplicarFiltros();
+}
+
+// ===================== MODAL FORM =====================
+function montarEstadosGrid() {
+  document.getElementById('estados-grid').innerHTML = ESTADOS.map(e =>
+    `<label class="estado-check"><input type="checkbox" value="${e}" id="cb-${e}" /><span>${e}</span></label>`
+  ).join('');
+}
+
+function selTodos(v) { ESTADOS.forEach(e => { const c = document.getElementById(`cb-${e}`); if(c) c.checked = v; }); }
+
+function abrirModal(id = null) {
+  editandoId = id;
+  montarEstadosGrid();
+  if (id) {
+    const t = transportadoras.find(x => x.id === id);
+    document.getElementById('modal-titulo').textContent = 'Editar Transportadora';
+    document.getElementById('f-nome').value = t.nome || '';
+    document.getElementById('f-status').value = t.status || 'ativo';
+    document.getElementById('f-telefone').value = t.telefone || '';
+    document.getElementById('f-email').value = t.email || '';
+    document.getElementById('f-site').value = t.site || '';
+    document.getElementById('f-contato').value = t.contato || '';
+    document.getElementById('f-obs').value = t.obs || '';
+    t.estados.forEach(e => { const c = document.getElementById(`cb-${e}`); if(c) c.checked = true; });
+  } else {
+    document.getElementById('modal-titulo').textContent = 'Nova Transportadora';
+    ['f-nome','f-telefone','f-email','f-site','f-contato','f-obs'].forEach(id => document.getElementById(id).value = '');
+    document.getElementById('f-status').value = 'ativo';
+  }
+  document.getElementById('overlay-form').classList.add('aberto');
+  setTimeout(() => document.getElementById('f-nome').focus(), 100);
+}
+
+function fecharModal() { document.getElementById('overlay-form').classList.remove('aberto'); editandoId = null; }
+
+function salvar() {
+  const nome = document.getElementById('f-nome').value.trim();
+  if (!nome) { toast('Informe o nome da transportadora.', 'erro'); return; }
+  const estados = ESTADOS.filter(e => document.getElementById(`cb-${e}`)?.checked);
+  if (!estados.length) { toast('Selecione pelo menos um estado.', 'erro'); return; }
+
+  const dados = { nome, status: document.getElementById('f-status').value, telefone: document.getElementById('f-telefone').value.trim(), email: document.getElementById('f-email').value.trim(), site: document.getElementById('f-site').value.trim(), contato: document.getElementById('f-contato').value.trim(), obs: document.getElementById('f-obs').value.trim(), estados };
+
+  if (editandoId) {
+    const idx = transportadoras.findIndex(x => x.id === editandoId);
+    transportadoras[idx] = { ...transportadoras[idx], ...dados };
+  } else {
+    transportadoras.push({ id: uid(), ...dados });
+  }
+
+  salvarLocal();
+  fecharModal();
+  render();
+  setSyncStatus('amarelo', 'Alterações pendentes');
+  toast('Salvo localmente. Clique em "Sincronizar" para enviar ao GitHub.');
+}
+
+function excluir(id) {
+  const t = transportadoras.find(x => x.id === id);
+  if (!confirm(`Excluir "${t?.nome}"?`)) return;
+  transportadoras = transportadoras.filter(x => x.id !== id);
+  salvarLocal();
+  render();
+  setSyncStatus('amarelo', 'Alterações pendentes');
+  toast('Transportadora excluída. Clique em "Sincronizar" para atualizar o GitHub.');
+}
+
+// ===================== CONFIG MODAL =====================
+function abrirConfig() {
+  document.getElementById('cfg-owner').value = config.owner || '';
+  document.getElementById('cfg-repo').value = config.repo || '';
+  document.getElementById('cfg-token').value = config.token || '';
+  document.getElementById('cfg-branch').value = config.branch || 'main';
+  const badge = document.getElementById('badge-status-config');
+  badge.className = configurado() ? 'badge-conectado' : 'badge-desconectado';
+  badge.textContent = configurado() ? '✓ Configurado' : 'Não configurado';
+  document.getElementById('overlay-config').classList.add('aberto');
+}
+
+function fecharConfig() { document.getElementById('overlay-config').classList.remove('aberto'); }
+
+// ===================== EXPORTAR =====================
+function toggleExportar() { document.getElementById('exportar-dropdown').classList.toggle('aberto'); }
+document.addEventListener('click', e => { if (!e.target.closest('.exportar-menu')) document.getElementById('exportar-dropdown').classList.remove('aberto'); });
+
+function exportarCSV() {
+  const linhas = [
+    ['Nome','Estados','Telefone','Email','Site','Contato','Status','Observacoes'],
+    ...dadosFiltrados.map(t => [t.nome, t.estados.join(';'), t.telefone, t.email, t.site, t.contato, t.status, t.obs])
+  ];
+  const csv = linhas.map(l => l.map(c => `"${(c||'').replace(/"/g,'""')}"`).join(',')).join('\n');
+  baixar(new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8;'}), 'transportadoras.csv');
+  document.getElementById('exportar-dropdown').classList.remove('aberto');
+}
+
+function exportarJSON() {
+  baixar(new Blob([JSON.stringify(transportadoras,null,2)],{type:'application/json'}), 'transportadoras.json');
+  document.getElementById('exportar-dropdown').classList.remove('aberto');
+}
+
+function processarImportacao(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = ev => {
+    try {
+      const imp = JSON.parse(ev.target.result);
+      if (!Array.isArray(imp)) throw new Error();
+      if (!confirm(`Importar ${imp.length} transportadora(s)?`)) return;
+      const novos = imp.filter(i => !transportadoras.find(t => t.nome === i.nome));
+      novos.forEach(n => { if (!n.id) n.id = uid(); });
+      transportadoras = [...transportadoras, ...novos];
+      salvarLocal();
+      render();
+      toast(`${novos.length} transportadora(s) importada(s). Sincronize para salvar no GitHub.`);
+    } catch { toast('Arquivo inválido.', 'erro'); }
+  };
+  reader.readAsText(file);
+  e.target.value = '';
+}
+
+function baixar(blob, nome) {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url; a.download = nome; a.click();
+  URL.revokeObjectURL(url);
+}
+
+// ===================== UTILS =====================
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2,7); }
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function hl(texto, busca) {
+  if (!busca || !texto) return esc(texto);
+  return esc(texto).replace(new RegExp(`(${busca.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'), '<mark class="pesquisa-destaque">$1</mark>');
+}
+
+function toast(msg, tipo = '') {
+  const el = document.createElement('div');
+  el.className = `toast ${tipo}`;
+  el.textContent = msg;
+  const c = document.getElementById('toasts');
+  c.appendChild(el);
+  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.4s'; setTimeout(() => el.remove(), 400); }, 3500);
+}
+
+function fecharSeFora(e, id) { if (e.target.id === id) { id === 'overlay-form' ? fecharModal() : fecharConfig(); } }
+function limparFiltros() { document.getElementById('filtro-busca').value=''; document.getElementById('filtro-estado').value=''; document.getElementById('filtro-status').value=''; aplicarFiltros(); }
+
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { fecharModal(); fecharConfig(); }
+  if (e.key === 'Enter' && document.getElementById('overlay-form').classList.contains('aberto') && document.activeElement.tagName !== 'TEXTAREA') salvar();
+});
+
+function dadosExemplo() {
+  return [
+    { id: uid(), nome: 'Braspress', estados: ESTADOS.slice(), telefone: '(11) 3471-1400', email: 'comercial@braspress.com.br', site: 'www.braspress.com.br', contato: 'Comercial', status: 'ativo', obs: 'Atendimento nacional. Cargas fracionadas.' },
+    { id: uid(), nome: 'Sequoia Logística', estados: ['SP','RJ','MG','PR','SC','RS','ES','BA','GO','DF'], telefone: '(11) 3003-3300', email: 'contato@sequoia.com.br', site: 'www.sequoia.com.br', contato: '', status: 'ativo', obs: 'Foco em e-commerce. Rastreamento em tempo real.' },
+    { id: uid(), nome: 'Correios', estados: ESTADOS.slice(), telefone: '3003-0100', email: '', site: 'www.correios.com.br', contato: 'Atendimento geral', status: 'ativo', obs: 'PAC, SEDEX, SEDEX 10, Logística Reversa.' }
+  ];
+}
+
+// ===================== START =====================
+init();
+</script>
+</body>
+</html>
