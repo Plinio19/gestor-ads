@@ -30,5 +30,23 @@
       "SC",
       "SP"
     ]
+  },
+  {
+    "id": "mrb13d3tnlivi",
+    "nome": "TTJB TRANSPORTES E LOGÍSTICA LTDA",
+    "status": "ativo",
+    "telefone": "(11) 94990-8482",
+    "email": "coletas.sp@tjbtransportes.com.br",
+    "site": "ww.tjbtransportes.com.br",
+    "contato": "FELIPE",
+    "obs": "Nova - ver se é boa",
+    "estados": [
+      "ES",
+      "PR",
+      "RJ",
+      "RS",
+      "SC",
+      "SP"
+    ]
   }
 ]
