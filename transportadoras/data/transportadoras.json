@@ -144,5 +144,44 @@
       "RN",
       "SE"
     ]
+  },
+  {
+    "id": "mrjgo6ch506bk",
+    "nome": "TODOBRASIL TRANSPORTES",
+    "status": "ativo",
+    "telefone": "31 8475-8812",
+    "email": "comercial2.bhz@todobrasil.log.br",
+    "site": "https://www.todobrasil.log.br/",
+    "contato": "Mariana",
+    "obs": "Nova - cobra coleta.",
+    "estados": [
+      "AC",
+      "AL",
+      "AP",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MT",
+      "MS",
+      "MG",
+      "PA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RJ",
+      "RN",
+      "RS",
+      "RO",
+      "RR",
+      "SC",
+      "SP",
+      "SE",
+      "TO"
+    ]
   }
 ]
