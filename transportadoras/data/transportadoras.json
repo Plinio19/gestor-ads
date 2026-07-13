@@ -63,5 +63,29 @@
       "RS",
       "SC"
     ]
+  },
+  {
+    "id": "mrjgh8yyjfqds",
+    "nome": "Grupo Dago",
+    "status": "ativo",
+    "telefone": "11 95650-8512",
+    "email": "",
+    "site": "https://grupodago.com.br/",
+    "contato": "Daniela",
+    "obs": "Nordeste preço bom. \nCobra coleta.",
+    "estados": [
+      "AL",
+      "BA",
+      "CE",
+      "MA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RN",
+      "RS",
+      "SC",
+      "SE"
+    ]
   }
 ]
