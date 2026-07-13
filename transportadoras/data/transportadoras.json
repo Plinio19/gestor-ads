@@ -48,5 +48,20 @@
       "SC",
       "SP"
     ]
+  },
+  {
+    "id": "mrjgfjrksxog6",
+    "nome": "Ouro Negro",
+    "status": "ativo",
+    "telefone": "11 97088-7061",
+    "email": "",
+    "site": "https://www.ouronegro.com/",
+    "contato": "Alessandro",
+    "obs": "Coleta grátis seg/qua/sex.\nPreço e prazo bom.",
+    "estados": [
+      "PR",
+      "RS",
+      "SC"
+    ]
   }
 ]
