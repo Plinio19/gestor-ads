@@ -126,5 +126,23 @@
       "SE",
       "TO"
     ]
+  },
+  {
+    "id": "mrjgm7v3pazfc",
+    "nome": "PRIMEIRA DO NORDESTE",
+    "status": "ativo",
+    "telefone": "11 95722-0083",
+    "email": "",
+    "site": "https://primeiradonordeste.com.br/",
+    "contato": "Julia",
+    "obs": "Preço bom\nColeta grátis",
+    "estados": [
+      "AL",
+      "BA",
+      "PB",
+      "PE",
+      "RN",
+      "SE"
+    ]
   }
 ]
