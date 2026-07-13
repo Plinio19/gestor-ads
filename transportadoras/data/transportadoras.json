@@ -222,5 +222,24 @@
       "SE",
       "TO"
     ]
+  },
+  {
+    "id": "mrjgse4v15tv3",
+    "nome": "SATILOG",
+    "status": "ativo",
+    "telefone": "31 7189-0176",
+    "email": "joyce.garcia@satilog.com.br",
+    "site": "https://satilog.com.br/",
+    "contato": "Joyce",
+    "obs": "Nova - Sul e sudeste.",
+    "estados": [
+      "ES",
+      "MG",
+      "PR",
+      "RJ",
+      "RS",
+      "SC",
+      "SP"
+    ]
   }
 ]
