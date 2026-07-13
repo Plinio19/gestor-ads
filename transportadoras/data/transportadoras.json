@@ -51,7 +51,7 @@
   },
   {
     "id": "mrjgfjrksxog6",
-    "nome": "Ouro Negro",
+    "nome": "OURO NEGRO",
     "status": "ativo",
     "telefone": "11 97088-7061",
     "email": "",
@@ -66,7 +66,7 @@
   },
   {
     "id": "mrjgh8yyjfqds",
-    "nome": "Grupo Dago",
+    "nome": "GRUPO DAGO",
     "status": "ativo",
     "telefone": "11 95650-8512",
     "email": "",
@@ -86,6 +86,45 @@
       "RS",
       "SC",
       "SE"
+    ]
+  },
+  {
+    "id": "mrjgk55ldspq0",
+    "nome": "TRANS IMPERIO",
+    "status": "ativo",
+    "telefone": "11 98348-4691",
+    "email": "",
+    "site": "https://www.transimperiobrasil.com.br/",
+    "contato": "Dayane",
+    "obs": "Cobra coleta.",
+    "estados": [
+      "AC",
+      "AL",
+      "AP",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MT",
+      "MS",
+      "MG",
+      "PA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RJ",
+      "RN",
+      "RS",
+      "RO",
+      "RR",
+      "SC",
+      "SP",
+      "SE",
+      "TO"
     ]
   }
 ]
