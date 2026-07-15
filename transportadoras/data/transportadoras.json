@@ -9,7 +9,12 @@
     "site": "",
     "contato": "Thayná",
     "obs": "Nova - ver se é boa",
-    "estados": ["ES","MG","RJ","SP"]
+    "estados": [
+      "ES",
+      "MG",
+      "RJ",
+      "SP"
+    ]
   },
   {
     "id": "mr9ik8o7ebiii",
@@ -21,7 +26,12 @@
     "site": "https://www.expressoleomar.com.br/",
     "contato": "Andressa Moraes",
     "obs": "Nova - ver se é boa",
-    "estados": ["PR","RS","SC","SP"]
+    "estados": [
+      "PR",
+      "RS",
+      "SC",
+      "SP"
+    ]
   },
   {
     "id": "mrb13d3tnlivi",
@@ -33,7 +43,14 @@
     "site": "ww.tjbtransportes.com.br",
     "contato": "FELIPE",
     "obs": "Nova - ver se é boa",
-    "estados": ["ES","PR","RJ","RS","SC","SP"]
+    "estados": [
+      "ES",
+      "PR",
+      "RJ",
+      "RS",
+      "SC",
+      "SP"
+    ]
   },
   {
     "id": "mrjgfjrksxog6",
@@ -45,7 +62,11 @@
     "site": "https://www.ouronegro.com/",
     "contato": "Alessandro",
     "obs": "Coleta grátis seg/qua/sex.\nPreço e prazo bom.",
-    "estados": ["PR","RS","SC"]
+    "estados": [
+      "PR",
+      "RS",
+      "SC"
+    ]
   },
   {
     "id": "mrjgh8yyjfqds",
@@ -57,7 +78,20 @@
     "site": "https://grupodago.com.br/",
     "contato": "Daniela",
     "obs": "Nordeste preço bom. \nCobra coleta.",
-    "estados": ["AL","BA","CE","MA","PB","PR","PE","PI","RN","RS","SC","SE"]
+    "estados": [
+      "AL",
+      "BA",
+      "CE",
+      "MA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RN",
+      "RS",
+      "SC",
+      "SE"
+    ]
   },
   {
     "id": "mrjgk55ldspq0",
@@ -69,7 +103,35 @@
     "site": "https://www.transimperiobrasil.com.br/",
     "contato": "Dayane",
     "obs": "Cobra coleta.",
-    "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]
+    "estados": [
+      "AC",
+      "AL",
+      "AP",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MT",
+      "MS",
+      "MG",
+      "PA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RJ",
+      "RN",
+      "RS",
+      "RO",
+      "RR",
+      "SC",
+      "SP",
+      "SE",
+      "TO"
+    ]
   },
   {
     "id": "mrjgm7v3pazfc",
@@ -81,7 +143,14 @@
     "site": "https://primeiradonordeste.com.br/",
     "contato": "Julia",
     "obs": "Preço bom\nColeta grátis",
-    "estados": ["AL","BA","PB","PE","RN","SE"]
+    "estados": [
+      "AL",
+      "BA",
+      "PB",
+      "PE",
+      "RN",
+      "SE"
+    ]
   },
   {
     "id": "mrjgo6ch506bk",
@@ -93,7 +162,35 @@
     "site": "https://www.todobrasil.log.br/",
     "contato": "Mariana",
     "obs": "Nova - cobra coleta.",
-    "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"]
+    "estados": [
+      "AC",
+      "AL",
+      "AP",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MT",
+      "MS",
+      "MG",
+      "PA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RJ",
+      "RN",
+      "RS",
+      "RO",
+      "RR",
+      "SC",
+      "SP",
+      "SE",
+      "TO"
+    ]
   },
   {
     "id": "mrmc79w2gww65",
@@ -105,7 +202,17 @@
     "site": "https://maexbrasil.com.br/",
     "contato": "Waniz",
     "obs": "",
-    "estados": ["AP","AM","DF","GO","MA","PA","PR","SP","TO"]
+    "estados": [
+      "AP",
+      "AM",
+      "DF",
+      "GO",
+      "MA",
+      "PA",
+      "PR",
+      "SP",
+      "TO"
+    ]
   },
   {
     "id": "mrmcp0153sqyo",
@@ -117,7 +224,9 @@
     "site": "https://rodoviariowilson.com.br/",
     "contato": "Comercial Geral",
     "obs": "Não atende todo o estado de MG.\nLeva quimico\nPreço bom mas cobra coleta",
-    "estados": ["MG"]
+    "estados": [
+      "MG"
+    ]
   },
   {
     "id": "mrmcrgd855c59",
@@ -129,6 +238,11 @@
     "site": "https://rodogarcia.com.br/",
     "contato": "Comercial Geral",
     "obs": "Preço bom, não cobra coleta.",
-    "estados": ["PR","RJ","RS","SP"]
+    "estados": [
+      "PR",
+      "RJ",
+      "RS",
+      "SP"
+    ]
   }
 ]
