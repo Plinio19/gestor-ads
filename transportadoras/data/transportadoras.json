@@ -217,5 +217,21 @@
     "estados": [
       "MG"
     ]
+  },
+  {
+    "id": "mrmcrgd855c59",
+    "nome": "RODOGARCIA",
+    "status": "ativo",
+    "telefone": "14 99105-3933",
+    "email": "",
+    "site": "https://rodogarcia.com.br/",
+    "contato": "Comercial Geral",
+    "obs": "Preço bom, não cobra coleta.",
+    "estados": [
+      "PR",
+      "RJ",
+      "RS",
+      "SP"
+    ]
   }
 ]
