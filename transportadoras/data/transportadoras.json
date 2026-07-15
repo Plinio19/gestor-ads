@@ -2,6 +2,7 @@
   {
     "id": "exemplo1",
     "nome": "Braspress",
+    "quimico": "consultar",
     "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"],
     "telefone": "(11) 3471-1400",
     "email": "comercial@braspress.com.br",
@@ -13,6 +14,7 @@
   {
     "id": "exemplo2",
     "nome": "Sequoia Logística",
+    "quimico": "consultar",
     "estados": ["SP","RJ","MG","PR","SC","RS","ES","BA","GO","DF"],
     "telefone": "(11) 3003-3300",
     "email": "contato@sequoia.com.br",
@@ -24,6 +26,7 @@
   {
     "id": "exemplo3",
     "nome": "Correios",
+    "quimico": "nao",
     "estados": ["AC","AL","AP","AM","BA","CE","DF","ES","GO","MA","MT","MS","MG","PA","PB","PR","PE","PI","RJ","RN","RS","RO","RR","SC","SP","SE","TO"],
     "telefone": "3003-0100",
     "email": "",

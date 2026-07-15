@@ -97,6 +97,9 @@
     .estados-container { display: flex; flex-wrap: wrap; gap: 4px; max-width: 340px; }
     .tag-estado { background: #eff6ff; color: var(--azul); border: 1px solid #bfdbfe; padding: 2px 7px; border-radius: 10px; font-size: 0.73rem; font-weight: 600; white-space: nowrap; }
     .tag-nacional { background: #f0fdf4; color: var(--verde); border-color: #bbf7d0; }
+    .tag-quimico-sim { background: #f0fdf4; color: #065f46; border: 1px solid #6ee7b7; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
+    .tag-quimico-nao { background: #fef2f2; color: #991b1b; border: 1px solid #fca5a5; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
+    .tag-quimico-consultar { background: #fffbeb; color: #92400e; border: 1px solid #fcd34d; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
     .status { padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 600; display: inline-block; }
     .status-ativo { background: #f0fdf4; color: var(--verde); }
     .status-inativo { background: #fef2f2; color: var(--vermelho); }
@@ -211,6 +214,15 @@
         <option value="">Todos os estados</option>
       </select>
     </div>
+    <div class="campo" style="max-width:180px;">
+      <label>Transporta Químicos</label>
+      <select id="filtro-quimico" onchange="aplicarFiltros()">
+        <option value="">Todos</option>
+        <option value="sim">✅ Sim</option>
+        <option value="nao">❌ Não</option>
+        <option value="consultar">⚠️ Consultar</option>
+      </select>
+    </div>
     <div class="campo" style="max-width:150px;">
       <label>Status</label>
       <select id="filtro-status" onchange="aplicarFiltros()">
@@ -247,6 +259,7 @@
             <th onclick="ordenar('estados')">Estados ↕</th>
             <th>Contato</th>
             <th>Site / E-mail</th>
+            <th onclick="ordenar('quimico')">Químicos ↕</th>
             <th onclick="ordenar('status')">Status ↕</th>
             <th>Observações</th>
             <th style="text-align:center;">Ações</th>
@@ -280,6 +293,14 @@
       <div class="form-campo">
         <label>Status</label>
         <select id="f-status"><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select>
+      </div>
+      <div class="form-campo full">
+        <label>Transporta Produtos Químicos?</label>
+        <select id="f-quimico">
+          <option value="consultar">⚠️ Consultar / Não informado</option>
+          <option value="sim">✅ Sim — aceita produtos químicos</option>
+          <option value="nao">❌ Não — não transporta químicos</option>
+        </select>
       </div>
       <div class="form-campo">
         <label>Telefone / WhatsApp</label>
@@ -577,9 +598,12 @@ function aplicarFiltros() {
   const estado = document.getElementById('filtro-estado').value;
   const status = document.getElementById('filtro-status').value;
 
+  const quimico = document.getElementById('filtro-quimico').value;
+
   dadosFiltrados = transportadoras.filter(t => {
     if (estado && !t.estados.includes(estado)) return false;
     if (status && t.status !== status) return false;
+    if (quimico && (t.quimico || 'consultar') !== quimico) return false;
     if (busca) {
       const h = [t.nome, t.contato, t.obs, t.telefone, t.email, t.site].join(' ').toLowerCase();
       if (!h.includes(busca)) return false;
@@ -611,6 +635,8 @@ function renderizarTabela(busca = '') {
     const nacional = t.estados.length === ESTADOS.length;
     const tags = nacional ? '<span class="tag-estado tag-nacional">🌎 Nacional</span>' : t.estados.map(e => `<span class="tag-estado">${e}</span>`).join('');
     const statusHtml = t.status === 'ativo' ? '<span class="status status-ativo">● Ativo</span>' : '<span class="status status-inativo">● Inativo</span>';
+    const quimicoMap = { sim: '<span class="tag-quimico-sim">✅ Sim</span>', nao: '<span class="tag-quimico-nao">❌ Não</span>', consultar: '<span class="tag-quimico-consultar">⚠️ Consultar</span>' };
+    const quimicoHtml = quimicoMap[t.quimico || 'consultar'];
     const siteHtml = t.site ? `<a href="${t.site.startsWith('http')?t.site:'https://'+t.site}" target="_blank" style="color:var(--azul);font-size:0.82rem;">${esc(t.site)}</a>` : '';
     const emailHtml = t.email ? `<div style="margin-top:2px;"><a href="mailto:${t.email}" style="color:var(--texto-leve);font-size:0.8rem;">${esc(t.email)}</a></div>` : '';
     return `<tr>
@@ -618,6 +644,7 @@ function renderizarTabela(busca = '') {
       <td><div class="estados-container">${tags}</div></td>
       <td>${t.telefone?`<div>${hl(t.telefone,busca)}</div>`:''}</td>
       <td>${siteHtml}${emailHtml}</td>
+      <td>${quimicoHtml}</td>
       <td>${statusHtml}</td>
       <td style="max-width:180px;font-size:0.81rem;color:var(--texto-leve);">${hl(t.obs,busca)}</td>
       <td style="text-align:center;white-space:nowrap;">
@@ -653,6 +680,7 @@ function abrirModal(id = null) {
     document.getElementById('modal-titulo').textContent = 'Editar Transportadora';
     document.getElementById('f-nome').value = t.nome || '';
     document.getElementById('f-status').value = t.status || 'ativo';
+    document.getElementById('f-quimico').value = t.quimico || 'consultar';
     document.getElementById('f-telefone').value = t.telefone || '';
     document.getElementById('f-email').value = t.email || '';
     document.getElementById('f-site').value = t.site || '';
@@ -676,7 +704,7 @@ function salvar() {
   const estados = ESTADOS.filter(e => document.getElementById(`cb-${e}`)?.checked);
   if (!estados.length) { toast('Selecione pelo menos um estado.', 'erro'); return; }
 
-  const dados = { nome, status: document.getElementById('f-status').value, telefone: document.getElementById('f-telefone').value.trim(), email: document.getElementById('f-email').value.trim(), site: document.getElementById('f-site').value.trim(), contato: document.getElementById('f-contato').value.trim(), obs: document.getElementById('f-obs').value.trim(), estados };
+  const dados = { nome, status: document.getElementById('f-status').value, quimico: document.getElementById('f-quimico').value, telefone: document.getElementById('f-telefone').value.trim(), email: document.getElementById('f-email').value.trim(), site: document.getElementById('f-site').value.trim(), contato: document.getElementById('f-contato').value.trim(), obs: document.getElementById('f-obs').value.trim(), estados };
 
   if (editandoId) {
     const idx = transportadoras.findIndex(x => x.id === editandoId);
