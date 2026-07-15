@@ -13,22 +13,12 @@
     }
     body { font-family: 'Segoe UI', sans-serif; background: #f0f4ff; color: var(--texto); min-height: 100vh; }
 
-    /* HEADER */
-    header {
-      background: linear-gradient(135deg, var(--azul-escuro), var(--azul));
-      color: white; padding: 18px 32px;
-      display: flex; align-items: center; justify-content: space-between;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.15); gap: 12px; flex-wrap: wrap;
-    }
+    header { background: linear-gradient(135deg, var(--azul-escuro), var(--azul)); color: white; padding: 18px 32px; display: flex; align-items: center; justify-content: space-between; box-shadow: 0 2px 8px rgba(0,0,0,0.15); gap: 12px; flex-wrap: wrap; }
     header h1 { font-size: 1.4rem; font-weight: 700; }
     header p { font-size: 0.82rem; opacity: 0.8; margin-top: 2px; }
     .header-acoes { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
 
-    /* STATUS SYNC */
-    .status-sync {
-      background: rgba(255,255,255,0.15); border-radius: 8px;
-      padding: 8px 14px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px;
-    }
+    .status-sync { background: rgba(255,255,255,0.15); border-radius: 8px; padding: 8px 14px; font-size: 0.82rem; display: flex; align-items: center; gap: 8px; }
     .status-sync .dot { width: 8px; height: 8px; border-radius: 50%; background: #86efac; flex-shrink: 0; }
     .status-sync .dot.vermelho { background: #fca5a5; }
     .status-sync .dot.amarelo { background: #fde68a; animation: piscar 1.2s infinite; }
@@ -39,41 +29,42 @@
     .btn-primary:hover { background: var(--azul-escuro); }
     .btn-success { background: var(--verde); color: white; }
     .btn-success:hover { filter: brightness(0.9); }
-    .btn-danger { background: var(--vermelho); color: white; }
-    .btn-danger:hover { filter: brightness(0.9); }
     .btn-outline { background: white; color: var(--azul); border: 1px solid var(--azul); }
     .btn-outline:hover { background: #eff6ff; }
     .btn-branco { background: rgba(255,255,255,0.15); color: white; border: 1px solid rgba(255,255,255,0.3); }
     .btn-branco:hover { background: rgba(255,255,255,0.25); }
     .btn-sm { padding: 6px 12px; font-size: 0.8rem; }
-    .btn-ghost { background: transparent; color: var(--texto-leve); font-size: 0.8rem; font-weight: 400; border: none; }
+    .btn-ghost { background: transparent; color: var(--texto-leve); font-size: 0.8rem; font-weight: 400; border: none; cursor: pointer; }
     .btn-ghost:hover { color: var(--vermelho); background: #fef2f2; border-radius: 6px; }
     .btn:disabled { opacity: 0.6; cursor: not-allowed; }
 
-    .container { max-width: 1320px; margin: 0 auto; padding: 24px 20px; }
+    .container { max-width: 1380px; margin: 0 auto; padding: 24px 20px; }
 
-    /* ALERT SETUP */
-    .alert-setup {
-      background: #fffbeb; border: 1px solid #fcd34d; border-radius: 12px;
-      padding: 16px 20px; margin-bottom: 20px;
-      display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap;
-    }
-    .alert-setup p { font-size: 0.88rem; color: #92400e; }
-    .alert-setup strong { font-weight: 700; }
+    /* ALERTAS */
+    .alerta { border-radius: 12px; padding: 14px 20px; margin-bottom: 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; flex-wrap: wrap; }
+    .alerta-amarelo { background: #fffbeb; border: 1px solid #fcd34d; }
+    .alerta-amarelo p { font-size: 0.87rem; color: #92400e; }
+    .alerta-vermelho { background: #fef2f2; border: 1px solid #fca5a5; }
+    .alerta-vermelho p { font-size: 0.87rem; color: #991b1b; }
+    .alerta strong { font-weight: 700; }
+    .alerta-itens { margin-top: 6px; display: flex; flex-wrap: wrap; gap: 6px; }
+    .alerta-item { background: rgba(0,0,0,0.06); padding: 3px 10px; border-radius: 8px; font-size: 0.8rem; font-weight: 600; }
 
     /* STATS */
-    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; margin-bottom: 20px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(145px, 1fr)); gap: 12px; margin-bottom: 20px; }
     .stat-card { background: white; border-radius: 10px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); border-left: 4px solid var(--azul); }
     .stat-card.verde { border-left-color: var(--verde); }
     .stat-card.amarelo { border-left-color: var(--amarelo); }
+    .stat-card.vermelho { border-left-color: var(--vermelho); }
     .stat-card .numero { font-size: 2rem; font-weight: 700; color: var(--azul); }
     .stat-card.verde .numero { color: var(--verde); }
     .stat-card.amarelo .numero { color: var(--amarelo); }
+    .stat-card.vermelho .numero { color: var(--vermelho); }
     .stat-card .label { font-size: 0.78rem; color: var(--texto-leve); margin-top: 2px; }
 
     /* FILTROS */
     .controles { background: white; border-radius: 12px; padding: 18px 20px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); margin-bottom: 18px; display: flex; flex-wrap: wrap; gap: 12px; align-items: flex-end; }
-    .campo { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 150px; }
+    .campo { display: flex; flex-direction: column; gap: 5px; flex: 1; min-width: 140px; }
     .campo label { font-size: 0.75rem; font-weight: 700; color: var(--texto-leve); text-transform: uppercase; letter-spacing: 0.05em; }
     .campo input, .campo select { border: 1px solid var(--borda); border-radius: 8px; padding: 9px 12px; font-size: 0.9rem; color: var(--texto); background: white; transition: border-color 0.2s; }
     .campo input:focus, .campo select:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
@@ -85,24 +76,30 @@
     .tabela-scroll { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; }
     thead tr { background: var(--cinza-claro); }
-    th { padding: 11px 16px; text-align: left; font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--texto-leve); white-space: nowrap; cursor: pointer; user-select: none; }
+    th { padding: 11px 14px; text-align: left; font-size: 0.73rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--texto-leve); white-space: nowrap; cursor: pointer; user-select: none; }
     th:hover { color: var(--azul); }
-    th.sorted { color: var(--azul); }
     tbody tr { border-bottom: 1px solid var(--cinza); transition: background 0.15s; }
     tbody tr:last-child { border-bottom: none; }
     tbody tr:hover { background: #f8faff; }
-    td { padding: 11px 16px; font-size: 0.87rem; vertical-align: middle; }
+    td { padding: 10px 14px; font-size: 0.86rem; vertical-align: middle; }
     .nome-empresa { font-weight: 600; }
-    .detalhe { color: var(--texto-leve); font-size: 0.8rem; margin-top: 2px; }
-    .estados-container { display: flex; flex-wrap: wrap; gap: 4px; max-width: 340px; }
-    .tag-estado { background: #eff6ff; color: var(--azul); border: 1px solid #bfdbfe; padding: 2px 7px; border-radius: 10px; font-size: 0.73rem; font-weight: 600; white-space: nowrap; }
+    .detalhe { color: var(--texto-leve); font-size: 0.79rem; margin-top: 2px; }
+    .estados-container { display: flex; flex-wrap: wrap; gap: 3px; max-width: 300px; }
+    .tag-estado { background: #eff6ff; color: var(--azul); border: 1px solid #bfdbfe; padding: 2px 6px; border-radius: 10px; font-size: 0.72rem; font-weight: 600; white-space: nowrap; }
     .tag-nacional { background: #f0fdf4; color: var(--verde); border-color: #bbf7d0; }
-    .tag-quimico-sim { background: #f0fdf4; color: #065f46; border: 1px solid #6ee7b7; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
-    .tag-quimico-nao { background: #fef2f2; color: #991b1b; border: 1px solid #fca5a5; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
-    .tag-quimico-consultar { background: #fffbeb; color: #92400e; border: 1px solid #fcd34d; padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 700; display: inline-block; }
-    .status { padding: 3px 10px; border-radius: 12px; font-size: 0.77rem; font-weight: 600; display: inline-block; }
+    .tag { padding: 3px 9px; border-radius: 12px; font-size: 0.76rem; font-weight: 700; display: inline-block; }
+    .status { padding: 3px 10px; border-radius: 12px; font-size: 0.76rem; font-weight: 600; display: inline-block; }
     .status-ativo { background: #f0fdf4; color: var(--verde); }
     .status-inativo { background: #fef2f2; color: var(--vermelho); }
+
+    /* BADGES LICENÇA */
+    .lic-badge { display: inline-flex; align-items: center; gap: 5px; padding: 3px 9px; border-radius: 10px; font-size: 0.75rem; font-weight: 700; white-space: nowrap; cursor: pointer; }
+    .lic-ok { background: #f0fdf4; color: #065f46; border: 1px solid #6ee7b7; }
+    .lic-vencendo { background: #fffbeb; color: #92400e; border: 1px solid #fcd34d; }
+    .lic-vencida { background: #fef2f2; color: #991b1b; border: 1px solid #fca5a5; }
+    .lic-sem { background: #f3f4f6; color: #6b7280; border: 1px solid #e5e7eb; }
+    .lic-lista { display: flex; flex-direction: column; gap: 4px; }
+
     .vazio { padding: 56px 20px; text-align: center; color: var(--texto-leve); }
     .vazio .icone { font-size: 3rem; margin-bottom: 12px; }
     .pesquisa-destaque { background: #fef08a; border-radius: 3px; }
@@ -110,48 +107,70 @@
     /* MODAIS */
     .overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.45); z-index: 100; align-items: center; justify-content: center; padding: 20px; }
     .overlay.aberto { display: flex; }
-    .modal { background: white; border-radius: 16px; padding: 28px; width: 100%; max-width: 640px; max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); animation: slideUp 0.22s ease; }
+    .modal { background: white; border-radius: 16px; padding: 28px; width: 100%; max-width: 680px; max-height: 92vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2); animation: slideUp 0.22s ease; }
     .modal-sm { max-width: 480px; }
     @keyframes slideUp { from{transform:translateY(16px);opacity:0} to{transform:translateY(0);opacity:1} }
-    .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px; }
+    .modal-header { display: flex; align-items: center; justify-content: space-between; margin-bottom: 22px; }
     .modal-header h2 { font-size: 1.1rem; font-weight: 700; }
     .btn-fechar { background: var(--cinza); border: none; width: 30px; height: 30px; border-radius: 50%; font-size: 1rem; cursor: pointer; display: flex; align-items: center; justify-content: center; }
     .btn-fechar:hover { background: var(--borda); }
-    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
     .form-grid .full { grid-column: 1/-1; }
     .form-campo { display: flex; flex-direction: column; gap: 6px; }
-    .form-campo label { font-size: 0.8rem; font-weight: 600; color: var(--texto-leve); }
-    .form-campo input, .form-campo select, .form-campo textarea { border: 1px solid var(--borda); border-radius: 8px; padding: 10px 12px; font-size: 0.9rem; font-family: inherit; transition: border-color 0.2s; resize: vertical; }
+    .form-campo label { font-size: 0.79rem; font-weight: 600; color: var(--texto-leve); }
+    .form-campo input, .form-campo select, .form-campo textarea { border: 1px solid var(--borda); border-radius: 8px; padding: 9px 12px; font-size: 0.9rem; font-family: inherit; transition: border-color 0.2s; resize: vertical; }
     .form-campo input:focus, .form-campo select:focus, .form-campo textarea:focus { outline: none; border-color: var(--azul); box-shadow: 0 0 0 3px rgba(26,86,219,0.1); }
-    .form-campo .hint { font-size: 0.75rem; color: var(--texto-leve); }
-    .form-campo .hint a { color: var(--azul); }
-    .estados-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(90px, 1fr)); gap: 5px; max-height: 200px; overflow-y: auto; border: 1px solid var(--borda); border-radius: 8px; padding: 10px; }
-    .estado-check { display: flex; align-items: center; gap: 6px; font-size: 0.81rem; cursor: pointer; padding: 4px 6px; border-radius: 6px; }
+    .estados-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(88px, 1fr)); gap: 5px; max-height: 190px; overflow-y: auto; border: 1px solid var(--borda); border-radius: 8px; padding: 10px; }
+    .estado-check { display: flex; align-items: center; gap: 6px; font-size: 0.8rem; cursor: pointer; padding: 3px 5px; border-radius: 6px; }
     .estado-check:hover { background: var(--cinza-claro); }
     .estado-check input[type="checkbox"] { cursor: pointer; accent-color: var(--azul); }
     .selecionar-todos { display: flex; gap: 8px; margin-bottom: 8px; }
-    .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 22px; padding-top: 18px; border-top: 1px solid var(--cinza); }
+    .modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; padding-top: 16px; border-top: 1px solid var(--cinza); }
 
-    /* EXPORTAR DROPDOWN */
+    /* SEÇÃO LICENÇAS NO MODAL */
+    .secao-licencas { grid-column: 1/-1; }
+    .secao-licencas .titulo-secao { font-size: 0.85rem; font-weight: 700; color: var(--texto); margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid var(--cinza); display: flex; align-items: center; justify-content: space-between; }
+    .licenca-item-modal { background: var(--cinza-claro); border-radius: 10px; padding: 12px 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .licenca-item-modal .lic-info { flex: 1; min-width: 140px; }
+    .licenca-item-modal .lic-tipo { font-weight: 700; font-size: 0.85rem; }
+    .licenca-item-modal .lic-venc { font-size: 0.78rem; color: var(--texto-leve); margin-top: 2px; }
+    .licenca-item-modal .lic-arquivo { font-size: 0.77rem; color: var(--azul); text-decoration: none; display: inline-flex; align-items: center; gap: 3px; margin-top: 3px; }
+    .licenca-item-modal .lic-arquivo:hover { text-decoration: underline; }
+    .lista-licencas { display: flex; flex-direction: column; gap: 8px; margin-bottom: 12px; }
+
+    /* FORM NOVA LICENÇA */
+    .form-nova-licenca { background: #f8faff; border: 1px dashed var(--azul); border-radius: 10px; padding: 14px; }
+    .form-nova-licenca .titulo { font-size: 0.82rem; font-weight: 700; color: var(--azul); margin-bottom: 12px; }
+    .form-nova-licenca .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .form-nova-licenca .grid .full { grid-column: 1/-1; }
+    .form-nova-licenca label { font-size: 0.77rem; font-weight: 600; color: var(--texto-leve); display: block; margin-bottom: 4px; }
+    .form-nova-licenca input, .form-nova-licenca select { width: 100%; border: 1px solid var(--borda); border-radius: 7px; padding: 8px 10px; font-size: 0.87rem; font-family: inherit; }
+    .form-nova-licenca input:focus, .form-nova-licenca select:focus { outline: none; border-color: var(--azul); }
+    .upload-area { border: 2px dashed var(--borda); border-radius: 8px; padding: 16px; text-align: center; cursor: pointer; transition: all 0.2s; background: white; }
+    .upload-area:hover { border-color: var(--azul); background: #eff6ff; }
+    .upload-area.tem-arquivo { border-color: var(--verde); background: #f0fdf4; }
+    .upload-area p { font-size: 0.82rem; color: var(--texto-leve); }
+    .upload-area .nome-arquivo { font-size: 0.82rem; font-weight: 600; color: var(--verde); margin-top: 4px; }
+    .form-nova-licenca .acoes { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+
+    /* EXPORTAR */
     .exportar-menu { position: relative; }
-    .exportar-dropdown { display: none; position: absolute; top: 100%; right: 0; margin-top: 4px; background: white; border: 1px solid var(--borda); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 50; min-width: 160px; overflow: hidden; }
+    .exportar-dropdown { display: none; position: absolute; top: 100%; right: 0; margin-top: 4px; background: white; border: 1px solid var(--borda); border-radius: 8px; box-shadow: 0 4px 16px rgba(0,0,0,0.12); z-index: 50; min-width: 170px; overflow: hidden; }
     .exportar-dropdown.aberto { display: block; }
     .exportar-dropdown button { display: block; width: 100%; text-align: left; padding: 10px 16px; background: none; border: none; font-size: 0.87rem; cursor: pointer; }
     .exportar-dropdown button:hover { background: var(--cinza-claro); }
 
-    /* SPINNER */
-    .spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block; }
+    /* SPINNER / TOAST */
+    .spinner { width: 15px; height: 15px; border: 2px solid rgba(255,255,255,0.3); border-top-color: white; border-radius: 50%; animation: spin 0.7s linear infinite; display: inline-block; }
     @keyframes spin { to{transform:rotate(360deg)} }
-
-    /* TOAST */
     .toast-container { position: fixed; bottom: 24px; right: 24px; z-index: 999; display: flex; flex-direction: column; gap: 8px; }
-    .toast { background: #1f2937; color: white; padding: 12px 18px; border-radius: 10px; font-size: 0.87rem; box-shadow: 0 4px 16px rgba(0,0,0,0.2); animation: slideUp 0.2s ease; display: flex; align-items: center; gap: 8px; max-width: 320px; }
+    .toast { background: #1f2937; color: white; padding: 12px 18px; border-radius: 10px; font-size: 0.87rem; box-shadow: 0 4px 16px rgba(0,0,0,0.2); animation: slideUp 0.2s ease; max-width: 340px; }
     .toast.sucesso { background: #065f46; }
     .toast.erro { background: #991b1b; }
 
-    /* CONFIG MODAL */
-    .config-secao { background: var(--cinza-claro); border-radius: 10px; padding: 16px; margin-bottom: 16px; }
-    .config-secao h3 { font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; color: var(--texto); }
+    /* CONFIG */
+    .config-secao { background: var(--cinza-claro); border-radius: 10px; padding: 16px; margin-bottom: 14px; }
+    .config-secao h3 { font-size: 0.85rem; font-weight: 700; margin-bottom: 12px; }
     .config-item { display: flex; flex-direction: column; gap: 5px; margin-bottom: 12px; }
     .config-item:last-child { margin-bottom: 0; }
     .config-item label { font-size: 0.78rem; font-weight: 600; color: var(--texto-leve); }
@@ -162,7 +181,7 @@
     .badge-conectado { background: #f0fdf4; color: var(--verde); border: 1px solid #bbf7d0; padding: 4px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 600; }
     .badge-desconectado { background: #fef2f2; color: var(--vermelho); border: 1px solid #fecaca; padding: 4px 10px; border-radius: 8px; font-size: 0.78rem; font-weight: 600; }
 
-    @media(max-width:640px) { .form-grid{grid-template-columns:1fr} .stats{grid-template-columns:repeat(2,1fr)} }
+    @media(max-width:640px) { .form-grid{grid-template-columns:1fr} .stats{grid-template-columns:repeat(2,1fr)} .form-nova-licenca .grid{grid-template-columns:1fr} }
   </style>
 </head>
 <body>
@@ -177,29 +196,26 @@
       <div class="dot amarelo" id="sync-dot"></div>
       <span id="sync-texto">Conectando...</span>
     </div>
-    <button class="btn btn-branco btn-sm" onclick="sincronizar()" id="btn-sync" title="Salvar alterações no GitHub">
-      ☁️ Sincronizar
-    </button>
-    <button class="btn btn-branco btn-sm" onclick="abrirConfig()" title="Configurar GitHub">
-      ⚙️
-    </button>
+    <button class="btn btn-branco btn-sm" onclick="sincronizar()" id="btn-sync">☁️ Sincronizar</button>
+    <button class="btn btn-branco btn-sm" onclick="abrirConfig()">⚙️</button>
   </div>
 </header>
 
 <div class="container">
 
-  <!-- ALERTA SETUP -->
-  <div class="alert-setup" id="alert-setup" style="display:none;">
-    <p>⚠️ <strong>Configure o GitHub</strong> para salvar e compartilhar os dados com sua equipe.</p>
-    <button class="btn btn-primary btn-sm" onclick="abrirConfig()">Configurar agora →</button>
+  <div class="alerta alerta-amarelo" id="alert-setup" style="display:none;">
+    <p>⚠️ <strong>Configure o GitHub</strong> para salvar e compartilhar os dados.</p>
+    <button class="btn btn-primary btn-sm" onclick="abrirConfig()">Configurar →</button>
   </div>
+
+  <div id="alert-licencas" style="display:none;"></div>
 
   <!-- STATS -->
   <div class="stats">
     <div class="stat-card"><div class="numero" id="stat-total">0</div><div class="label">Transportadoras</div></div>
     <div class="stat-card verde"><div class="numero" id="stat-ativas">0</div><div class="label">Ativas</div></div>
     <div class="stat-card amarelo"><div class="numero" id="stat-estados">0</div><div class="label">Estados cobertos</div></div>
-    <div class="stat-card"><div class="numero" id="stat-nacionais">0</div><div class="label">Nacionais</div></div>
+    <div class="stat-card vermelho"><div class="numero" id="stat-lic-alerta">0</div><div class="label">Licenças a vencer</div></div>
   </div>
 
   <!-- FILTROS -->
@@ -208,22 +224,13 @@
       <label>Buscar</label>
       <input type="text" id="filtro-busca" placeholder="Nome, telefone, observação..." oninput="aplicarFiltros()" />
     </div>
-    <div class="campo" style="max-width:190px;">
+    <div class="campo" style="max-width:180px;">
       <label>Estado</label>
       <select id="filtro-estado" onchange="aplicarFiltros()">
         <option value="">Todos os estados</option>
       </select>
     </div>
-    <div class="campo" style="max-width:180px;">
-      <label>Transporta Químicos</label>
-      <select id="filtro-quimico" onchange="aplicarFiltros()">
-        <option value="">Todos</option>
-        <option value="sim">✅ Sim</option>
-        <option value="nao">❌ Não</option>
-        <option value="consultar">⚠️ Consultar</option>
-      </select>
-    </div>
-    <div class="campo" style="max-width:150px;">
+    <div class="campo" style="max-width:145px;">
       <label>Status</label>
       <select id="filtro-status" onchange="aplicarFiltros()">
         <option value="">Todos</option>
@@ -241,13 +248,11 @@
   <div class="tabela-wrapper">
     <div class="tabela-header">
       <h2>Transportadoras <span id="contagem-resultados" style="font-weight:400;color:var(--texto-leve);font-size:0.83rem;"></span></h2>
-      <div style="display:flex;gap:8px;">
-        <div class="exportar-menu">
-          <button class="btn btn-outline btn-sm" onclick="toggleExportar()">↓ Exportar</button>
-          <div class="exportar-dropdown" id="exportar-dropdown">
-            <button onclick="exportarCSV()">📄 Exportar CSV (Excel)</button>
-            <button onclick="exportarJSON()">📋 Exportar JSON</button>
-          </div>
+      <div class="exportar-menu">
+        <button class="btn btn-outline btn-sm" onclick="toggleExportar()">↓ Exportar</button>
+        <div class="exportar-dropdown" id="exportar-dropdown">
+          <button onclick="exportarCSV()">📄 Exportar CSV (Excel)</button>
+          <button onclick="exportarJSON()">📋 Exportar JSON</button>
         </div>
       </div>
     </div>
@@ -259,7 +264,7 @@
             <th onclick="ordenar('estados')">Estados ↕</th>
             <th>Contato</th>
             <th>Site / E-mail</th>
-            <th onclick="ordenar('quimico')">Químicos ↕</th>
+            <th>Licenças</th>
             <th onclick="ordenar('status')">Status ↕</th>
             <th>Observações</th>
             <th style="text-align:center;">Ações</th>
@@ -269,13 +274,12 @@
       </table>
       <div class="vazio" id="vazio" style="display:none;">
         <div class="icone">🔍</div>
-        <p>Nenhuma transportadora encontrada.<br>Ajuste os filtros ou cadastre uma nova.</p>
+        <p>Nenhuma transportadora encontrada.</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- TOAST -->
 <div class="toast-container" id="toasts"></div>
 
 <!-- MODAL TRANSPORTADORA -->
@@ -288,19 +292,11 @@
     <div class="form-grid">
       <div class="form-campo">
         <label>Nome *</label>
-        <input type="text" id="f-nome" placeholder="Ex: Braspress, Total Express..." />
+        <input type="text" id="f-nome" placeholder="Ex: Braspress..." />
       </div>
       <div class="form-campo">
         <label>Status</label>
         <select id="f-status"><option value="ativo">Ativo</option><option value="inativo">Inativo</option></select>
-      </div>
-      <div class="form-campo full">
-        <label>Transporta Produtos Químicos?</label>
-        <select id="f-quimico">
-          <option value="consultar">⚠️ Consultar / Não informado</option>
-          <option value="sim">✅ Sim — aceita produtos químicos</option>
-          <option value="nao">❌ Não — não transporta químicos</option>
-        </select>
       </div>
       <div class="form-campo">
         <label>Telefone / WhatsApp</label>
@@ -308,7 +304,7 @@
       </div>
       <div class="form-campo">
         <label>E-mail</label>
-        <input type="email" id="f-email" placeholder="contato@transportadora.com" />
+        <input type="email" id="f-email" placeholder="contato@transp.com" />
       </div>
       <div class="form-campo full">
         <label>Site</label>
@@ -328,66 +324,82 @@
       </div>
       <div class="form-campo full">
         <label>Observações</label>
-        <textarea id="f-obs" rows="3" placeholder="Prazo, modalidades, tabela de preços..."></textarea>
+        <textarea id="f-obs" rows="2" placeholder="Prazo, modalidades, tabela de preços..."></textarea>
       </div>
+
+      <!-- LICENÇAS -->
+      <div class="secao-licencas">
+        <div class="titulo-secao">
+          <span>📄 Licenças e Documentos</span>
+          <button type="button" class="btn btn-outline btn-sm" onclick="mostrarFormLicenca()">+ Adicionar</button>
+        </div>
+        <div class="lista-licencas" id="lista-licencas-modal"></div>
+        <div class="form-nova-licenca" id="form-nova-licenca" style="display:none;">
+          <div class="titulo">Nova Licença</div>
+          <div class="grid">
+            <div>
+              <label>Tipo de Licença</label>
+              <input type="text" id="lic-tipo" placeholder="Ex: ANTT, IBAMA, Alvará..." />
+            </div>
+            <div>
+              <label>Data de Vencimento</label>
+              <input type="date" id="lic-vencimento" />
+            </div>
+            <div class="full">
+              <label>Anexar PDF (opcional)</label>
+              <div class="upload-area" id="upload-area" onclick="document.getElementById('lic-file').click()">
+                <p>📎 Clique para selecionar o PDF da licença</p>
+                <div class="nome-arquivo" id="upload-nome"></div>
+              </div>
+              <input type="file" id="lic-file" accept=".pdf,.PDF" style="display:none;" onchange="onArquivoSelecionado(event)" />
+            </div>
+          </div>
+          <div class="acoes">
+            <button type="button" class="btn btn-ghost btn-sm" onclick="cancelarFormLicenca()">Cancelar</button>
+            <button type="button" class="btn btn-success btn-sm" onclick="adicionarLicenca()">✓ Adicionar</button>
+          </div>
+        </div>
+      </div>
+
     </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="fecharModal()">Cancelar</button>
-      <button class="btn btn-success" onclick="salvar()">✓ Salvar</button>
+      <button class="btn btn-success" id="btn-salvar-form" onclick="salvar()">✓ Salvar</button>
     </div>
   </div>
 </div>
 
-<!-- MODAL CONFIGURAÇÃO GITHUB -->
+<!-- MODAL CONFIG -->
 <div class="overlay" id="overlay-config" onclick="fecharSeFora(event,'overlay-config')">
   <div class="modal modal-sm">
     <div class="modal-header">
       <h2>⚙️ Configurar GitHub</h2>
       <button class="btn-fechar" onclick="fecharConfig()">✕</button>
     </div>
-
     <div class="config-secao">
       <h3>🔗 Repositório</h3>
-      <div class="config-item">
-        <label>Usuário do GitHub</label>
-        <input type="text" id="cfg-owner" placeholder="seu-usuario" />
-      </div>
-      <div class="config-item">
-        <label>Nome do Repositório</label>
-        <input type="text" id="cfg-repo" placeholder="transportadoras" />
-      </div>
-      <div class="config-item">
-        <label>Branch</label>
-        <input type="text" id="cfg-branch" placeholder="main" />
-      </div>
+      <div class="config-item"><label>Usuário</label><input type="text" id="cfg-owner" placeholder="seu-usuario" /></div>
+      <div class="config-item"><label>Repositório</label><input type="text" id="cfg-repo" placeholder="transportadoras" /></div>
+      <div class="config-item"><label>Branch</label><input type="text" id="cfg-branch" placeholder="main" /></div>
     </div>
-
     <div class="config-secao">
-      <h3>🔑 Token de Acesso</h3>
+      <h3>🔑 Token</h3>
       <div class="config-item">
         <label>Personal Access Token</label>
-        <input type="password" id="cfg-token" placeholder="ghp_xxxxxxxxxxxxxxxxxxxx" />
-        <span class="hint">
-          Gere em: <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens</a>
-          → marque permissão <strong>repo</strong> → copie e cole aqui.
-          Cada pessoa da equipe precisa gerar o próprio token.
-        </span>
+        <input type="password" id="cfg-token" placeholder="ghp_xxxxxxxxxxxx" />
+        <span class="hint">Gere em <a href="https://github.com/settings/tokens/new" target="_blank">github.com/settings/tokens</a> → marque <strong>repo</strong>.</span>
       </div>
     </div>
-
-    <div style="display:flex;align-items:center;justify-content:space-between;margin-top:4px;">
+    <div style="display:flex;align-items:center;justify-content:space-between;">
       <span id="badge-status-config" class="badge-desconectado">Não configurado</span>
       <button class="btn btn-outline btn-sm" onclick="testarConexao()">Testar conexão</button>
     </div>
-
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="fecharConfig()">Cancelar</button>
-      <button class="btn btn-success" onclick="salvarConfig()">✓ Salvar configuração</button>
+      <button class="btn btn-success" onclick="salvarConfig()">✓ Salvar</button>
     </div>
   </div>
 </div>
-
-<input type="file" id="file-input" accept=".json" style="display:none;" onchange="processarImportacao(event)" />
 
 <script>
 // ===================== CONSTANTES =====================
@@ -395,6 +407,8 @@ const ESTADOS = ['AC','AL','AP','AM','BA','CE','DF','ES','GO','MA','MT','MS','MG
 const CHAVE_LS = 'transportadoras_v2';
 const CHAVE_CFG = 'github_config_v1';
 const FILE_PATH = 'transportadoras/data/transportadoras.json';
+const LICENCAS_PATH = 'transportadoras/licencas';
+const DIAS_ALERTA = 60;
 
 // ===================== ESTADO =====================
 let transportadoras = [];
@@ -402,75 +416,67 @@ let dadosFiltrados = [];
 let editandoId = null;
 let ordenacaoAtual = { campo: 'nome', asc: true };
 let githubSHA = null;
+let licencasEmEdicao = [];
+let arquivoPendente = null;
 const DEFAULTS = { owner: 'Plinio19', repo: 'gestor-ads', branch: 'main' };
 let config = carregarConfig();
 
-// ===================== CONFIG GITHUB =====================
+// ===================== CONFIG =====================
 function carregarConfig() {
   try { return { ...DEFAULTS, ...JSON.parse(localStorage.getItem(CHAVE_CFG)) }; } catch { return { ...DEFAULTS }; }
 }
-
 function salvarConfig() {
   const owner = document.getElementById('cfg-owner').value.trim();
-  const repo = document.getElementById('cfg-repo').value.trim();
+  const repo  = document.getElementById('cfg-repo').value.trim();
   const token = document.getElementById('cfg-token').value.trim();
   const branch = document.getElementById('cfg-branch').value.trim() || 'main';
-  if (!owner || !repo || !token) { toast('Preencha usuário, repositório e token.', 'erro'); return; }
+  if (!owner || !repo || !token) { toast('Preencha todos os campos.', 'erro'); return; }
   config = { owner, repo, token, branch };
   localStorage.setItem(CHAVE_CFG, JSON.stringify(config));
   fecharConfig();
-  toast('Configuração salva! Carregando dados do GitHub...', 'sucesso');
+  toast('Configuração salva!', 'sucesso');
   init();
 }
-
 function configurado() { return !!(config.owner && config.repo && config.token); }
 
 // ===================== GITHUB API =====================
 function githubHeaders() {
   return { 'Authorization': `token ${config.token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' };
 }
-
 function githubUrl(path) {
   return `https://api.github.com/repos/${config.owner}/${config.repo}/contents/${path}`;
 }
+function toB64(str) { return btoa(unescape(encodeURIComponent(str))); }
+function fromB64(str) { return decodeURIComponent(escape(atob(str))); }
 
-function toB64(str) {
-  return btoa(unescape(encodeURIComponent(str)));
-}
-
-function fromB64(str) {
-  return decodeURIComponent(escape(atob(str)));
+function fileToB64(file) {
+  return new Promise((res, rej) => {
+    const r = new FileReader();
+    r.onload = e => res(e.target.result.split(',')[1]);
+    r.onerror = rej;
+    r.readAsDataURL(file);
+  });
 }
 
 async function carregarDoGitHub() {
   if (!configurado()) return false;
   try {
     const res = await fetch(githubUrl(FILE_PATH), { headers: githubHeaders() });
-    if (res.status === 404) {
-      // Arquivo não existe ainda — criar com dados de exemplo
-      transportadoras = dadosExemplo();
-      await criarArquivoGitHub();
-      return true;
-    }
+    if (res.status === 404) { transportadoras = []; await criarArquivoGitHub(); return true; }
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     githubSHA = data.sha;
     transportadoras = JSON.parse(fromB64(data.content.replace(/\n/g, '')));
     salvarLocal();
     return true;
-  } catch (e) {
-    console.error('GitHub load error:', e);
-    return false;
-  }
+  } catch (e) { console.error(e); return false; }
 }
 
 async function criarArquivoGitHub() {
   const content = toB64(JSON.stringify(transportadoras, null, 2));
-  const body = { message: 'Criação do arquivo de transportadoras', content, branch: config.branch || 'main' };
-  const res = await fetch(githubUrl(FILE_PATH), { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) });
-  if (!res.ok) throw new Error(`HTTP ${res.status}`);
-  const data = await res.json();
-  githubSHA = data.content.sha;
+  const res = await fetch(githubUrl(FILE_PATH), { method: 'PUT', headers: githubHeaders(), body: JSON.stringify({ message: 'Criação do arquivo', content, branch: config.branch }) });
+  if (!res.ok) throw new Error();
+  githubSHA = (await res.json()).content.sha;
 }
 
 async function sincronizar() {
@@ -479,106 +485,161 @@ async function sincronizar() {
   btn.disabled = true;
   btn.innerHTML = '<span class="spinner"></span> Salvando...';
   setSyncStatus('amarelo', 'Sincronizando...');
-
   try {
-    const json = JSON.stringify(transportadoras, null, 2);
-    const content = toB64(json);
     const agora = new Date().toLocaleString('pt-BR');
-    const body = {
-      message: `Atualização — ${agora}`,
-      content,
-      branch: config.branch || 'main',
-      ...(githubSHA ? { sha: githubSHA } : {})
-    };
-    const res = await fetch(githubUrl(FILE_PATH), { method: 'PUT', headers: githubHeaders(), body: JSON.stringify(body) });
-    if (!res.ok) {
-      const err = await res.json();
-      throw new Error(err.message || `HTTP ${res.status}`);
-    }
-    const data = await res.json();
-    githubSHA = data.content.sha;
+    const res = await fetch(githubUrl(FILE_PATH), {
+      method: 'PUT', headers: githubHeaders(),
+      body: JSON.stringify({ message: `Atualização — ${agora}`, content: toB64(JSON.stringify(transportadoras, null, 2)), branch: config.branch, ...(githubSHA ? { sha: githubSHA } : {}) })
+    });
+    if (!res.ok) { const e = await res.json(); throw new Error(e.message); }
+    githubSHA = (await res.json()).content.sha;
     salvarLocal();
     setSyncStatus('verde', `Sincronizado às ${agora.split(' ')[1]}`);
-    toast('✅ Dados salvos no GitHub com sucesso!', 'sucesso');
+    toast('✅ Dados salvos no GitHub!', 'sucesso');
   } catch (e) {
     setSyncStatus('vermelho', 'Erro ao sincronizar');
     toast(`Erro: ${e.message}`, 'erro');
-    console.error(e);
   } finally {
     btn.disabled = false;
     btn.innerHTML = '☁️ Sincronizar';
   }
 }
 
+async function uploadPDF(file, transportadoraId) {
+  const nomeArquivo = `${transportadoraId}_${Date.now()}_${file.name.replace(/\s+/g,'_')}`;
+  const path = `${LICENCAS_PATH}/${nomeArquivo}`;
+  const content = await fileToB64(file);
+  const res = await fetch(githubUrl(path), {
+    method: 'PUT', headers: githubHeaders(),
+    body: JSON.stringify({ message: `Upload licença: ${file.name}`, content, branch: config.branch })
+  });
+  if (!res.ok) throw new Error('Falha no upload do PDF');
+  return { path, nomeArquivo };
+}
+
+function urlPDF(path) {
+  return `https://raw.githubusercontent.com/${config.owner}/${config.repo}/${config.branch}/${path}`;
+}
+
 async function testarConexao() {
   const owner = document.getElementById('cfg-owner').value.trim();
-  const repo = document.getElementById('cfg-repo').value.trim();
+  const repo  = document.getElementById('cfg-repo').value.trim();
   const token = document.getElementById('cfg-token').value.trim();
-  if (!owner || !repo || !token) { toast('Preencha todos os campos antes de testar.', 'erro'); return; }
+  if (!owner || !repo || !token) { toast('Preencha os campos.', 'erro'); return; }
   try {
-    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { 'Authorization': `token ${token}` } });
-    if (res.ok) {
-      document.getElementById('badge-status-config').className = 'badge-conectado';
-      document.getElementById('badge-status-config').textContent = '✓ Conexão OK';
-      toast('Conexão com o GitHub funcionando!', 'sucesso');
-    } else {
-      document.getElementById('badge-status-config').className = 'badge-desconectado';
-      document.getElementById('badge-status-config').textContent = 'Erro: repositório não encontrado';
-      toast('Repositório não encontrado. Verifique o usuário e o nome do repositório.', 'erro');
-    }
-  } catch { toast('Erro de rede. Verifique sua conexão.', 'erro'); }
+    const res = await fetch(`https://api.github.com/repos/${owner}/${repo}`, { headers: { Authorization: `token ${token}` } });
+    const badge = document.getElementById('badge-status-config');
+    if (res.ok) { badge.className = 'badge-conectado'; badge.textContent = '✓ Conexão OK'; toast('GitHub conectado!', 'sucesso'); }
+    else { badge.className = 'badge-desconectado'; badge.textContent = 'Repositório não encontrado'; toast('Verifique usuário e repo.', 'erro'); }
+  } catch { toast('Erro de rede.', 'erro'); }
 }
 
-// ===================== LOCAL STORAGE =====================
-function salvarLocal() {
-  localStorage.setItem(CHAVE_LS, JSON.stringify(transportadoras));
-}
-
-function carregarLocal() {
-  try { return JSON.parse(localStorage.getItem(CHAVE_LS)) || null; } catch { return null; }
-}
+// ===================== LOCAL =====================
+function salvarLocal() { localStorage.setItem(CHAVE_LS, JSON.stringify(transportadoras)); }
+function carregarLocal() { try { return JSON.parse(localStorage.getItem(CHAVE_LS)) || null; } catch { return null; } }
 
 // ===================== INIT =====================
 async function init() {
-  // Carregar localmente primeiro (resposta imediata)
   const local = carregarLocal();
   if (local) { transportadoras = local; render(); }
-
   if (!configurado()) {
     document.getElementById('alert-setup').style.display = 'flex';
     setSyncStatus('vermelho', 'Não configurado');
-    document.getElementById('header-sub').textContent = 'Configure o GitHub para compartilhar dados';
-    if (!local) { transportadoras = dadosExemplo(); render(); }
+    document.getElementById('header-sub').textContent = 'Configure o GitHub';
+    if (!local) { transportadoras = []; render(); }
     return;
   }
-
   document.getElementById('alert-setup').style.display = 'none';
   setSyncStatus('amarelo', 'Carregando...');
   document.getElementById('header-sub').textContent = `${config.owner}/${config.repo}`;
-
   const ok = await carregarDoGitHub();
-  if (ok) {
-    setSyncStatus('verde', 'Sincronizado');
-    render();
-  } else {
-    setSyncStatus('vermelho', 'Erro ao conectar');
-    toast('Não foi possível carregar do GitHub. Usando dados locais.', 'erro');
-    if (!local) { transportadoras = dadosExemplo(); render(); }
+  if (ok) { setSyncStatus('verde', 'Sincronizado'); render(); }
+  else { setSyncStatus('vermelho', 'Erro ao conectar'); toast('Usando dados locais.', 'erro'); if (!local) { transportadoras = []; render(); } }
+}
+
+// ===================== LICENÇAS — UTILITÁRIOS =====================
+function statusLicenca(vencimento) {
+  if (!vencimento) return 'sem';
+  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const venc = new Date(vencimento + 'T00:00:00');
+  const diff = Math.ceil((venc - hoje) / 86400000);
+  if (diff < 0) return 'vencida';
+  if (diff <= DIAS_ALERTA) return 'vencendo';
+  return 'ok';
+}
+
+function diasParaVencer(vencimento) {
+  const hoje = new Date(); hoje.setHours(0,0,0,0);
+  const venc = new Date(vencimento + 'T00:00:00');
+  return Math.ceil((venc - hoje) / 86400000);
+}
+
+function piorStatusLicencas(licencas) {
+  if (!licencas || !licencas.length) return 'sem';
+  const prioridade = { vencida: 0, vencendo: 1, ok: 2, sem: 3 };
+  return licencas.reduce((pior, lic) => {
+    const s = statusLicenca(lic.vencimento);
+    return prioridade[s] < prioridade[pior] ? s : pior;
+  }, 'ok');
+}
+
+function badgeLicenca(licencas) {
+  if (!licencas || !licencas.length) return '<span class="lic-badge lic-sem">Sem licença</span>';
+  const pior = piorStatusLicencas(licencas);
+  const n = licencas.length;
+  if (pior === 'vencida') return `<span class="lic-badge lic-vencida">🔴 Vencida (${n})</span>`;
+  if (pior === 'vencendo') {
+    const minDias = Math.min(...licencas.filter(l => statusLicenca(l.vencimento) === 'vencendo').map(l => diasParaVencer(l.vencimento)));
+    return `<span class="lic-badge lic-vencendo">🟡 Vence em ${minDias}d (${n})</span>`;
   }
+  return `<span class="lic-badge lic-ok">🟢 OK (${n})</span>`;
+}
+
+function formatarData(iso) {
+  if (!iso) return '';
+  const [a,m,d] = iso.split('-');
+  return `${d}/${m}/${a}`;
 }
 
 // ===================== RENDER =====================
 function setSyncStatus(cor, texto) {
-  const dot = document.getElementById('sync-dot');
-  dot.className = `dot ${cor === 'verde' ? '' : cor}`.trim();
+  document.getElementById('sync-dot').className = `dot ${cor === 'verde' ? '' : cor}`.trim();
   document.getElementById('sync-texto').textContent = texto;
 }
 
 function atualizarStats() {
   document.getElementById('stat-total').textContent = transportadoras.length;
   document.getElementById('stat-ativas').textContent = transportadoras.filter(t => t.status === 'ativo').length;
-  document.getElementById('stat-nacionais').textContent = transportadoras.filter(t => t.estados.length === ESTADOS.length).length;
   document.getElementById('stat-estados').textContent = new Set(transportadoras.flatMap(t => t.estados)).size;
+
+  const alertaLics = transportadoras.filter(t => {
+    const s = piorStatusLicencas(t.licencas);
+    return s === 'vencida' || s === 'vencendo';
+  });
+  document.getElementById('stat-lic-alerta').textContent = alertaLics.length;
+
+  // Banner de alertas
+  const container = document.getElementById('alert-licencas');
+  if (!alertaLics.length) { container.style.display = 'none'; return; }
+
+  const vencidas  = alertaLics.filter(t => piorStatusLicencas(t.licencas) === 'vencida');
+  const vencendo  = alertaLics.filter(t => piorStatusLicencas(t.licencas) === 'vencendo');
+
+  let html = '';
+  if (vencidas.length) {
+    html += `<div class="alerta alerta-vermelho" style="margin-bottom:8px;">
+      <div><p>🔴 <strong>${vencidas.length} transportadora(s) com licença VENCIDA:</strong></p>
+      <div class="alerta-itens">${vencidas.map(t => `<span class="alerta-item">${esc(t.nome)}</span>`).join('')}</div></div>
+    </div>`;
+  }
+  if (vencendo.length) {
+    html += `<div class="alerta alerta-amarelo">
+      <div><p>🟡 <strong>${vencendo.length} transportadora(s) com licença vencendo em até ${DIAS_ALERTA} dias:</strong></p>
+      <div class="alerta-itens">${vencendo.map(t => `<span class="alerta-item">${esc(t.nome)}</span>`).join('')}</div></div>
+    </div>`;
+  }
+  container.innerHTML = html;
+  container.style.display = 'block';
 }
 
 function atualizarFiltroEstados() {
@@ -594,16 +655,13 @@ function atualizarFiltroEstados() {
 }
 
 function aplicarFiltros() {
-  const busca = document.getElementById('filtro-busca').value.toLowerCase().trim();
+  const busca  = document.getElementById('filtro-busca').value.toLowerCase().trim();
   const estado = document.getElementById('filtro-estado').value;
   const status = document.getElementById('filtro-status').value;
-
-  const quimico = document.getElementById('filtro-quimico').value;
 
   dadosFiltrados = transportadoras.filter(t => {
     if (estado && !t.estados.includes(estado)) return false;
     if (status && t.status !== status) return false;
-    if (quimico && (t.quimico || 'consultar') !== quimico) return false;
     if (busca) {
       const h = [t.nome, t.contato, t.obs, t.telefone, t.email, t.site].join(' ').toLowerCase();
       if (!h.includes(busca)) return false;
@@ -625,8 +683,9 @@ function aplicarFiltros() {
 
 function renderizarTabela(busca = '') {
   const tbody = document.getElementById('tbody');
-  const vazio = document.getElementById('vazio');
-  document.getElementById('contagem-resultados').textContent = dadosFiltrados.length < transportadoras.length ? `(${dadosFiltrados.length} resultado${dadosFiltrados.length !== 1 ? 's' : ''})` : '';
+  const vazio  = document.getElementById('vazio');
+  document.getElementById('contagem-resultados').textContent =
+    dadosFiltrados.length < transportadoras.length ? `(${dadosFiltrados.length} resultado${dadosFiltrados.length !== 1 ? 's' : ''})` : '';
 
   if (!dadosFiltrados.length) { tbody.innerHTML = ''; vazio.style.display = 'block'; return; }
   vazio.style.display = 'none';
@@ -634,19 +693,17 @@ function renderizarTabela(busca = '') {
   tbody.innerHTML = dadosFiltrados.map(t => {
     const nacional = t.estados.length === ESTADOS.length;
     const tags = nacional ? '<span class="tag-estado tag-nacional">🌎 Nacional</span>' : t.estados.map(e => `<span class="tag-estado">${e}</span>`).join('');
+    const siteHtml  = t.site  ? `<a href="${t.site.startsWith('http')?t.site:'https://'+t.site}" target="_blank" style="color:var(--azul);font-size:0.81rem;">${esc(t.site)}</a>` : '';
+    const emailHtml = t.email ? `<div style="margin-top:2px;"><a href="mailto:${t.email}" style="color:var(--texto-leve);font-size:0.79rem;">${esc(t.email)}</a></div>` : '';
     const statusHtml = t.status === 'ativo' ? '<span class="status status-ativo">● Ativo</span>' : '<span class="status status-inativo">● Inativo</span>';
-    const quimicoMap = { sim: '<span class="tag-quimico-sim">✅ Sim</span>', nao: '<span class="tag-quimico-nao">❌ Não</span>', consultar: '<span class="tag-quimico-consultar">⚠️ Consultar</span>' };
-    const quimicoHtml = quimicoMap[t.quimico || 'consultar'];
-    const siteHtml = t.site ? `<a href="${t.site.startsWith('http')?t.site:'https://'+t.site}" target="_blank" style="color:var(--azul);font-size:0.82rem;">${esc(t.site)}</a>` : '';
-    const emailHtml = t.email ? `<div style="margin-top:2px;"><a href="mailto:${t.email}" style="color:var(--texto-leve);font-size:0.8rem;">${esc(t.email)}</a></div>` : '';
     return `<tr>
-      <td><div class="nome-empresa">${hl(t.nome,busca)}</div>${t.telefone?`<div class="detalhe">📞 ${hl(t.telefone,busca)}</div>`:''}${t.contato?`<div class="detalhe">👤 ${hl(t.contato,busca)}</div>`:''}</td>
+      <td><div class="nome-empresa">${hl(t.nome,busca)}</div>${t.contato?`<div class="detalhe">👤 ${hl(t.contato,busca)}</div>`:''}</td>
       <td><div class="estados-container">${tags}</div></td>
       <td>${t.telefone?`<div>${hl(t.telefone,busca)}</div>`:''}</td>
       <td>${siteHtml}${emailHtml}</td>
-      <td>${quimicoHtml}</td>
+      <td style="cursor:pointer;" onclick="abrirModal('${t.id}')">${badgeLicenca(t.licencas)}</td>
       <td>${statusHtml}</td>
-      <td style="max-width:180px;font-size:0.81rem;color:var(--texto-leve);">${hl(t.obs,busca)}</td>
+      <td style="max-width:170px;font-size:0.8rem;color:var(--texto-leve);">${hl(t.obs,busca)}</td>
       <td style="text-align:center;white-space:nowrap;">
         <button class="btn btn-outline btn-sm" onclick="abrirModal('${t.id}')" style="margin-right:4px;">✏️</button>
         <button class="btn btn-ghost btn-sm" onclick="excluir('${t.id}')">🗑️</button>
@@ -657,7 +714,6 @@ function renderizarTabela(busca = '') {
 
 function render() { atualizarStats(); atualizarFiltroEstados(); aplicarFiltros(); }
 
-// ===================== ORDENAÇÃO =====================
 function ordenar(campo) {
   ordenacaoAtual = { campo, asc: ordenacaoAtual.campo === campo ? !ordenacaoAtual.asc : true };
   aplicarFiltros();
@@ -666,58 +722,169 @@ function ordenar(campo) {
 // ===================== MODAL FORM =====================
 function montarEstadosGrid() {
   document.getElementById('estados-grid').innerHTML = ESTADOS.map(e =>
-    `<label class="estado-check"><input type="checkbox" value="${e}" id="cb-${e}" /><span>${e}</span></label>`
+    `<label class="estado-check"><input type="checkbox" value="${e}" id="cb-${e}"/><span>${e}</span></label>`
   ).join('');
 }
 
 function selTodos(v) { ESTADOS.forEach(e => { const c = document.getElementById(`cb-${e}`); if(c) c.checked = v; }); }
 
+function renderLicencasModal() {
+  const container = document.getElementById('lista-licencas-modal');
+  if (!licencasEmEdicao.length) { container.innerHTML = '<p style="font-size:0.82rem;color:var(--texto-leve);margin-bottom:8px;">Nenhuma licença cadastrada.</p>'; return; }
+  container.innerHTML = licencasEmEdicao.map((lic, i) => {
+    const s = statusLicenca(lic.vencimento);
+    const classeMap = { ok: 'lic-ok', vencendo: 'lic-vencendo', vencida: 'lic-vencida', sem: 'lic-sem' };
+    const iconMap   = { ok: '🟢', vencendo: '🟡', vencida: '🔴', sem: '⚪' };
+    const dias = lic.vencimento ? diasParaVencer(lic.vencimento) : null;
+    const diasTexto = dias === null ? '' : dias < 0 ? ` — venceu há ${Math.abs(dias)} dias` : ` — vence em ${dias} dias`;
+    const arquivoHtml = lic.arquivo && configurado()
+      ? `<a class="lic-arquivo" href="${urlPDF(lic.arquivo)}" target="_blank">📎 Ver PDF</a>`
+      : (lic.nomeArquivoLocal ? `<span style="font-size:0.77rem;color:var(--verde);">📎 ${esc(lic.nomeArquivoLocal)} (será enviado ao salvar)</span>` : '');
+    return `<div class="licenca-item-modal">
+      <div class="lic-info">
+        <div class="lic-tipo">${esc(lic.tipo) || 'Sem tipo'}</div>
+        <div class="lic-venc"><span class="lic-badge ${classeMap[s]}" style="font-size:0.72rem;padding:2px 7px;">${iconMap[s]} ${lic.vencimento ? formatarData(lic.vencimento) : 'Sem data'}${diasTexto}</span></div>
+        ${arquivoHtml ? `<div style="margin-top:4px;">${arquivoHtml}</div>` : ''}
+      </div>
+      <button class="btn btn-ghost btn-sm" onclick="removerLicenca(${i})" title="Remover">🗑️</button>
+    </div>`;
+  }).join('');
+}
+
 function abrirModal(id = null) {
   editandoId = id;
+  licencasEmEdicao = [];
+  arquivoPendente = null;
   montarEstadosGrid();
+  cancelarFormLicenca();
+
   if (id) {
     const t = transportadoras.find(x => x.id === id);
     document.getElementById('modal-titulo').textContent = 'Editar Transportadora';
-    document.getElementById('f-nome').value = t.nome || '';
-    document.getElementById('f-status').value = t.status || 'ativo';
-    document.getElementById('f-quimico').value = t.quimico || 'consultar';
-    document.getElementById('f-telefone').value = t.telefone || '';
-    document.getElementById('f-email').value = t.email || '';
-    document.getElementById('f-site').value = t.site || '';
+    document.getElementById('f-nome').value    = t.nome || '';
+    document.getElementById('f-status').value  = t.status || 'ativo';
+    document.getElementById('f-telefone').value= t.telefone || '';
+    document.getElementById('f-email').value   = t.email || '';
+    document.getElementById('f-site').value    = t.site || '';
     document.getElementById('f-contato').value = t.contato || '';
-    document.getElementById('f-obs').value = t.obs || '';
+    document.getElementById('f-obs').value     = t.obs || '';
     t.estados.forEach(e => { const c = document.getElementById(`cb-${e}`); if(c) c.checked = true; });
+    licencasEmEdicao = (t.licencas || []).map(l => ({ ...l }));
   } else {
     document.getElementById('modal-titulo').textContent = 'Nova Transportadora';
     ['f-nome','f-telefone','f-email','f-site','f-contato','f-obs'].forEach(id => document.getElementById(id).value = '');
-    document.getElementById('f-status').value = 'ativo';
+    document.getElementById('f-status').value  = 'ativo';
   }
+
+  renderLicencasModal();
   document.getElementById('overlay-form').classList.add('aberto');
   setTimeout(() => document.getElementById('f-nome').focus(), 100);
 }
 
-function fecharModal() { document.getElementById('overlay-form').classList.remove('aberto'); editandoId = null; }
+function fecharModal() {
+  document.getElementById('overlay-form').classList.remove('aberto');
+  editandoId = null; licencasEmEdicao = []; arquivoPendente = null;
+}
 
-function salvar() {
+// ===================== GERENCIAR LICENÇAS NO FORM =====================
+function mostrarFormLicenca() {
+  document.getElementById('form-nova-licenca').style.display = 'block';
+  document.getElementById('lic-tipo').value = '';
+  document.getElementById('lic-vencimento').value = '';
+  document.getElementById('lic-file').value = '';
+  document.getElementById('upload-nome').textContent = '';
+  document.getElementById('upload-area').classList.remove('tem-arquivo');
+  arquivoPendente = null;
+}
+
+function cancelarFormLicenca() {
+  document.getElementById('form-nova-licenca').style.display = 'none';
+  arquivoPendente = null;
+}
+
+function onArquivoSelecionado(e) {
+  const file = e.target.files[0];
+  if (!file) return;
+  arquivoPendente = file;
+  document.getElementById('upload-nome').textContent = file.name;
+  document.getElementById('upload-area').classList.add('tem-arquivo');
+}
+
+function adicionarLicenca() {
+  const tipo = document.getElementById('lic-tipo').value.trim();
+  const vencimento = document.getElementById('lic-vencimento').value;
+  if (!tipo) { toast('Informe o tipo da licença.', 'erro'); return; }
+  const novaLic = { id: uid(), tipo, vencimento: vencimento || null };
+  if (arquivoPendente) { novaLic.arquivoPendente = arquivoPendente; novaLic.nomeArquivoLocal = arquivoPendente.name; }
+  licencasEmEdicao.push(novaLic);
+  renderLicencasModal();
+  cancelarFormLicenca();
+}
+
+function removerLicenca(idx) {
+  licencasEmEdicao.splice(idx, 1);
+  renderLicencasModal();
+}
+
+// ===================== SALVAR =====================
+async function salvar() {
   const nome = document.getElementById('f-nome').value.trim();
-  if (!nome) { toast('Informe o nome da transportadora.', 'erro'); return; }
+  if (!nome) { toast('Informe o nome.', 'erro'); return; }
   const estados = ESTADOS.filter(e => document.getElementById(`cb-${e}`)?.checked);
   if (!estados.length) { toast('Selecione pelo menos um estado.', 'erro'); return; }
 
-  const dados = { nome, status: document.getElementById('f-status').value, quimico: document.getElementById('f-quimico').value, telefone: document.getElementById('f-telefone').value.trim(), email: document.getElementById('f-email').value.trim(), site: document.getElementById('f-site').value.trim(), contato: document.getElementById('f-contato').value.trim(), obs: document.getElementById('f-obs').value.trim(), estados };
+  const btnSalvar = document.getElementById('btn-salvar-form');
+  btnSalvar.disabled = true;
+  btnSalvar.innerHTML = '<span class="spinner" style="border-top-color:white;border-color:rgba(255,255,255,0.3);width:14px;height:14px;"></span> Salvando...';
+
+  // Upload de PDFs pendentes
+  const novaId = editandoId || uid();
+  const licencasSalvas = [];
+  for (const lic of licencasEmEdicao) {
+    const licSalva = { id: lic.id, tipo: lic.tipo, vencimento: lic.vencimento };
+    if (lic.arquivoPendente && configurado()) {
+      try {
+        toast(`Enviando PDF: ${lic.nomeArquivoLocal}...`);
+        const { path } = await uploadPDF(lic.arquivoPendente, novaId);
+        licSalva.arquivo = path;
+        licSalva.nomeArquivo = lic.nomeArquivoLocal;
+      } catch (e) {
+        toast(`Erro ao enviar PDF "${lic.nomeArquivoLocal}": ${e.message}`, 'erro');
+      }
+    } else if (lic.arquivo) {
+      licSalva.arquivo = lic.arquivo;
+      licSalva.nomeArquivo = lic.nomeArquivo;
+    }
+    licencasSalvas.push(licSalva);
+  }
+
+  const dados = {
+    nome,
+    status:   document.getElementById('f-status').value,
+    telefone: document.getElementById('f-telefone').value.trim(),
+    email:    document.getElementById('f-email').value.trim(),
+    site:     document.getElementById('f-site').value.trim(),
+    contato:  document.getElementById('f-contato').value.trim(),
+    obs:      document.getElementById('f-obs').value.trim(),
+    estados,
+    licencas: licencasSalvas
+  };
 
   if (editandoId) {
     const idx = transportadoras.findIndex(x => x.id === editandoId);
     transportadoras[idx] = { ...transportadoras[idx], ...dados };
   } else {
-    transportadoras.push({ id: uid(), ...dados });
+    transportadoras.push({ id: novaId, ...dados });
   }
 
   salvarLocal();
   fecharModal();
   render();
   setSyncStatus('amarelo', 'Alterações pendentes');
-  toast('Salvo localmente. Clique em "Sincronizar" para enviar ao GitHub.');
+  toast('Salvo! Clique em "Sincronizar" para enviar ao GitHub.');
+
+  btnSalvar.disabled = false;
+  btnSalvar.innerHTML = '✓ Salvar';
 }
 
 function excluir(id) {
@@ -727,21 +894,19 @@ function excluir(id) {
   salvarLocal();
   render();
   setSyncStatus('amarelo', 'Alterações pendentes');
-  toast('Transportadora excluída. Clique em "Sincronizar" para atualizar o GitHub.');
 }
 
 // ===================== CONFIG MODAL =====================
 function abrirConfig() {
-  document.getElementById('cfg-owner').value = config.owner || '';
-  document.getElementById('cfg-repo').value = config.repo || '';
-  document.getElementById('cfg-token').value = config.token || '';
+  document.getElementById('cfg-owner').value  = config.owner || '';
+  document.getElementById('cfg-repo').value   = config.repo || '';
+  document.getElementById('cfg-token').value  = config.token || '';
   document.getElementById('cfg-branch').value = config.branch || 'main';
   const badge = document.getElementById('badge-status-config');
-  badge.className = configurado() ? 'badge-conectado' : 'badge-desconectado';
+  badge.className   = configurado() ? 'badge-conectado' : 'badge-desconectado';
   badge.textContent = configurado() ? '✓ Configurado' : 'Não configurado';
   document.getElementById('overlay-config').classList.add('aberto');
 }
-
 function fecharConfig() { document.getElementById('overlay-config').classList.remove('aberto'); }
 
 // ===================== EXPORTAR =====================
@@ -750,8 +915,13 @@ document.addEventListener('click', e => { if (!e.target.closest('.exportar-menu'
 
 function exportarCSV() {
   const linhas = [
-    ['Nome','Estados','Telefone','Email','Site','Contato','Status','Observacoes'],
-    ...dadosFiltrados.map(t => [t.nome, t.estados.join(';'), t.telefone, t.email, t.site, t.contato, t.status, t.obs])
+    ['Nome','Estados','Telefone','Email','Site','Contato','Quimico','Status','Licencas','Observacoes'],
+    ...dadosFiltrados.map(t => [
+      t.nome, t.estados.join(';'), t.telefone, t.email, t.site, t.contato,
+      t.status,
+      (t.licencas||[]).map(l => `${l.tipo}(${l.vencimento||'sem data'})`).join(';'),
+      t.obs
+    ])
   ];
   const csv = linhas.map(l => l.map(c => `"${(c||'').replace(/"/g,'""')}"`).join(',')).join('\n');
   baixar(new Blob(['﻿'+csv],{type:'text/csv;charset=utf-8;'}), 'transportadoras.csv');
@@ -761,27 +931,6 @@ function exportarCSV() {
 function exportarJSON() {
   baixar(new Blob([JSON.stringify(transportadoras,null,2)],{type:'application/json'}), 'transportadoras.json');
   document.getElementById('exportar-dropdown').classList.remove('aberto');
-}
-
-function processarImportacao(e) {
-  const file = e.target.files[0];
-  if (!file) return;
-  const reader = new FileReader();
-  reader.onload = ev => {
-    try {
-      const imp = JSON.parse(ev.target.result);
-      if (!Array.isArray(imp)) throw new Error();
-      if (!confirm(`Importar ${imp.length} transportadora(s)?`)) return;
-      const novos = imp.filter(i => !transportadoras.find(t => t.nome === i.nome));
-      novos.forEach(n => { if (!n.id) n.id = uid(); });
-      transportadoras = [...transportadoras, ...novos];
-      salvarLocal();
-      render();
-      toast(`${novos.length} transportadora(s) importada(s). Sincronize para salvar no GitHub.`);
-    } catch { toast('Arquivo inválido.', 'erro'); }
-  };
-  reader.readAsText(file);
-  e.target.value = '';
 }
 
 function baixar(blob, nome) {
@@ -798,31 +947,22 @@ function hl(texto, busca) {
   if (!busca || !texto) return esc(texto);
   return esc(texto).replace(new RegExp(`(${busca.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')})`, 'gi'), '<mark class="pesquisa-destaque">$1</mark>');
 }
-
-function toast(msg, tipo = '') {
+function toast(msg, tipo='') {
   const el = document.createElement('div');
-  el.className = `toast ${tipo}`;
-  el.textContent = msg;
-  const c = document.getElementById('toasts');
-  c.appendChild(el);
-  setTimeout(() => { el.style.opacity = '0'; el.style.transition = 'opacity 0.4s'; setTimeout(() => el.remove(), 400); }, 3500);
+  el.className = `toast ${tipo}`; el.textContent = msg;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(() => { el.style.opacity='0'; el.style.transition='opacity 0.4s'; setTimeout(()=>el.remove(),400); }, 3500);
 }
-
-function fecharSeFora(e, id) { if (e.target.id === id) { id === 'overlay-form' ? fecharModal() : fecharConfig(); } }
-function limparFiltros() { document.getElementById('filtro-busca').value=''; document.getElementById('filtro-estado').value=''; document.getElementById('filtro-status').value=''; aplicarFiltros(); }
-
+function fecharSeFora(e, id) { if (e.target.id === id) { id==='overlay-form' ? fecharModal() : fecharConfig(); } }
+function limparFiltros() {
+  document.getElementById('filtro-busca').value='';
+  document.getElementById('filtro-estado').value='';
+  document.getElementById('filtro-status').value='';
+  aplicarFiltros();
+}
 document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') { fecharModal(); fecharConfig(); }
-  if (e.key === 'Enter' && document.getElementById('overlay-form').classList.contains('aberto') && document.activeElement.tagName !== 'TEXTAREA') salvar();
+  if (e.key==='Escape') { fecharModal(); fecharConfig(); }
 });
-
-function dadosExemplo() {
-  return [
-    { id: uid(), nome: 'Braspress', estados: ESTADOS.slice(), telefone: '(11) 3471-1400', email: 'comercial@braspress.com.br', site: 'www.braspress.com.br', contato: 'Comercial', status: 'ativo', obs: 'Atendimento nacional. Cargas fracionadas.' },
-    { id: uid(), nome: 'Sequoia Logística', estados: ['SP','RJ','MG','PR','SC','RS','ES','BA','GO','DF'], telefone: '(11) 3003-3300', email: 'contato@sequoia.com.br', site: 'www.sequoia.com.br', contato: '', status: 'ativo', obs: 'Foco em e-commerce. Rastreamento em tempo real.' },
-    { id: uid(), nome: 'Correios', estados: ESTADOS.slice(), telefone: '3003-0100', email: '', site: 'www.correios.com.br', contato: 'Atendimento geral', status: 'ativo', obs: 'PAC, SEDEX, SEDEX 10, Logística Reversa.' }
-  ];
-}
 
 // ===================== START =====================
 init();
