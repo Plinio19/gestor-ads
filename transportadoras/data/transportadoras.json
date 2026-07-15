@@ -204,5 +204,18 @@
       "SP",
       "TO"
     ]
+  },
+  {
+    "id": "mrmcp0153sqyo",
+    "nome": "RODOVIARIO WILSON",
+    "status": "ativo",
+    "telefone": "35 9939-2721",
+    "email": "",
+    "site": "https://rodoviariowilson.com.br/",
+    "contato": "Comercial Geral",
+    "obs": "Não atende todo o estado de MG.\nLeva quimico\nPreço bom mas cobra coleta",
+    "estados": [
+      "MG"
+    ]
   }
 ]
