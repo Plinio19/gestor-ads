@@ -91,6 +91,22 @@
       "RS",
       "SC",
       "SE"
+    ],
+    "licencas": [
+      {
+        "id": "mrmdx3eb0oagb",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrjgh8yyjfqds_1784138392270_Policia_Civil_-_2026.pdf",
+        "nomeArquivo": "Policia Civil - 2026.pdf"
+      },
+      {
+        "id": "mrmdxlcxhr45c",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-02-07",
+        "arquivo": "transportadoras/licencas/mrjgh8yyjfqds_1784138394332_LICENCA_POLICIA_FEDERAL.pdf",
+        "nomeArquivo": "LICENCA POLICIA FEDERAL.pdf"
+      }
     ]
   },
   {
