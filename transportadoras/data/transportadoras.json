@@ -66,6 +66,15 @@
       "RS",
       "SC",
       "SP"
+    ],
+    "licencas": [
+      {
+        "id": "mrngh47jkp8zm",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-11-29",
+        "arquivo": "transportadoras/licencas/mrb13d3tnlivi_1784203128449_Certificação_Polícia_Federal_-_CLF_(v29112026).pdf",
+        "nomeArquivo": "Certificação Polícia Federal - CLF (v29112026).pdf"
+      }
     ]
   },
   {
