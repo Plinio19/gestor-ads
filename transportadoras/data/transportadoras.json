@@ -31,6 +31,22 @@
       "RS",
       "SC",
       "SP"
+    ],
+    "licencas": [
+      {
+        "id": "mrng4pw90pdqq",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mr9ik8o7ebiii_1784202569101_Policia_Civil_-_LICENÇA_TRANSPORTE_PRODUTOS_CONTROLADOS_-_31.12.2026.pdf",
+        "nomeArquivo": "Policia Civil - LICENÇA TRANSPORTE PRODUTOS CONTROLADOS  -  31.12.2026.pdf"
+      },
+      {
+        "id": "mrng54ewupcft",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-05-06",
+        "arquivo": "transportadoras/licencas/mr9ik8o7ebiii_1784202570676_POLICIA_FEDERAL_-_CERTIFICADO_DE_LICENÇA_DE_FUNCIONAMENTO_-_06.05.2027.pdf",
+        "nomeArquivo": "POLICIA FEDERAL - CERTIFICADO DE LICENÇA DE FUNCIONAMENTO - 06.05.2027.pdf"
+      }
     ]
   },
   {
