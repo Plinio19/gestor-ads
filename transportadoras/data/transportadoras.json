@@ -191,6 +191,22 @@
       "PE",
       "RN",
       "SE"
+    ],
+    "licencas": [
+      {
+        "id": "mrngo9pfc6g7u",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-11-19",
+        "arquivo": "transportadoras/licencas/mrjgm7v3pazfc_1784203534855_15129315000887PROTALVFINSTRANSPORTEFEV2026.pdf",
+        "nomeArquivo": "15129315000887PROTALVFINSTRANSPORTEFEV2026.pdf"
+      },
+      {
+        "id": "mrngptn31iud0",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-09-22",
+        "arquivo": "transportadoras/licencas/mrjgm7v3pazfc_1784203536343_LICENÇA_POLICIA_FEDERAL_SP_SET_2026.pdf",
+        "nomeArquivo": "LICENÇA POLICIA FEDERAL SP SET 2026.pdf"
+      }
     ]
   },
   {
@@ -300,6 +316,22 @@
       "RJ",
       "RS",
       "SP"
+    ],
+    "licencas": [
+      {
+        "id": "mrngvifypsrb1",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrmcrgd855c59_1784203823484_POLICIA_CIVIL_31.12.2026.pdf",
+        "nomeArquivo": "POLICIA CIVIL 31.12.2026.pdf"
+      },
+      {
+        "id": "mrngw0jyzam6r",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-03-16",
+        "arquivo": "transportadoras/licencas/mrmcrgd855c59_1784203825392_POLICIA_FEDERAL_16.03.2027_(2).pdf",
+        "nomeArquivo": "POLICIA FEDERAL 16.03.2027 (2).pdf"
+      }
     ]
   }
 ]
