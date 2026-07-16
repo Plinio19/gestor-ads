@@ -172,6 +172,22 @@
       "SP",
       "SE",
       "TO"
+    ],
+    "licencas": [
+      {
+        "id": "mrnh2xafb3d45",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrjgk55ldspq0_1784204169159_POLICIA_CIVIL_TRANSP_PROD_QUIMICOS_CONTROLADOS_VALIDADE_31.12.26.pdf",
+        "nomeArquivo": "POLICIA CIVIL TRANSP PROD QUIMICOS CONTROLADOS VALIDADE 31.12.26.pdf"
+      },
+      {
+        "id": "mrnh3dq7yhkol",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-08-31",
+        "arquivo": "transportadoras/licencas/mrjgk55ldspq0_1784204171546_POLICIA_FEDERAL_TRANS-IMPERIO_BRASIL_TRANSPORTES_E_LOGISTICA_LTDA_-_RENOV_CLF_-_VALIDADE_31.08.26.pdf",
+        "nomeArquivo": "POLICIA FEDERAL TRANS-IMPERIO BRASIL TRANSPORTES E LOGISTICA LTDA - RENOV CLF - VALIDADE 31.08.26.pdf"
+      }
     ]
   },
   {
@@ -247,6 +263,22 @@
       "SP",
       "SE",
       "TO"
+    ],
+    "licencas": [
+      {
+        "id": "mrngxz1c3gkfc",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-10",
+        "arquivo": "transportadoras/licencas/mrjgo6ch506bk_1784203933680_Protocolo_Polícia_Civil_TodoBrasil_Transportes_Ltda_20260401_0001.pdf",
+        "nomeArquivo": "Protocolo Polícia Civil TodoBrasil Transportes Ltda_20260401_0001.pdf"
+      },
+      {
+        "id": "mrngyd59deaak",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-10-18",
+        "arquivo": "transportadoras/licencas/mrjgo6ch506bk_1784203935363_CLF_2025-2026.pdf",
+        "nomeArquivo": "CLF 2025-2026.pdf"
+      }
     ]
   },
   {
