@@ -244,6 +244,22 @@
       "PR",
       "SP",
       "TO"
+    ],
+    "licencas": [
+      {
+        "id": "mrng9aiq6rp5k",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2027-02-26",
+        "arquivo": "transportadoras/licencas/mrmc79w2gww65_1784202789854_Licença_Transporte_PC_2026_SPO.pdf",
+        "nomeArquivo": "Licença Transporte PC 2026 SPO.pdf"
+      },
+      {
+        "id": "mrng9v04trfv2",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-06-12",
+        "arquivo": "transportadoras/licencas/mrmc79w2gww65_1784202791717_Licença_PF_2026_SPO.pdf",
+        "nomeArquivo": "Licença PF 2026 SPO.pdf"
+      }
     ]
   },
   {
