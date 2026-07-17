@@ -462,5 +462,82 @@
         "nomeArquivo": "LICENÇA POLICIA CIVIL - 17-01-2027.pdf"
       }
     ]
+  },
+  {
+    "id": "mrpa2mjr7qres",
+    "nome": "EXPRESS TCM",
+    "status": "ativo",
+    "telefone": "83 8115-8441",
+    "email": "",
+    "site": "https://www.expresstcm.com.br/",
+    "contato": "Paula",
+    "obs": "",
+    "estados": [
+      "SP"
+    ],
+    "licencas": [
+      {
+        "id": "mrpa2lexh21mc",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-10-20",
+        "arquivo": "transportadoras/licencas/mrpa2mjr7qres_1784313306280_Licença_Polícia_Federal_SP_2025-2026.pdf",
+        "nomeArquivo": "Licença Polícia Federal SP 2025-2026.pdf"
+      }
+    ]
+  },
+  {
+    "id": "mrpa6pv963z7n",
+    "nome": "PANAMERICANO",
+    "status": "ativo",
+    "telefone": "11 93961-3144",
+    "email": "",
+    "site": "https://panamericano.log.br/",
+    "contato": "Fernando",
+    "obs": "",
+    "estados": [
+      "AC",
+      "AL",
+      "AP",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MT",
+      "MS",
+      "MG",
+      "PA",
+      "PB",
+      "PR",
+      "PE",
+      "PI",
+      "RJ",
+      "RN",
+      "RS",
+      "RO",
+      "RR",
+      "SC",
+      "SP",
+      "SE",
+      "TO"
+    ],
+    "licencas": [
+      {
+        "id": "mrpa5jiqct8p0",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-04-03",
+        "arquivo": "transportadoras/licencas/mrpa6pv963z7n_1784313497205_certificado_(13).pdf",
+        "nomeArquivo": "certificado (13).pdf"
+      },
+      {
+        "id": "mrpa647ok72f3",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrpa6pv963z7n_1784313498301_certificado_(13).pdf",
+        "nomeArquivo": "certificado (13).pdf"
+      }
+    ]
   }
 ]
