@@ -372,5 +372,35 @@
         "nomeArquivo": "POLICIA FEDERAL 16.03.2027 (2).pdf"
       }
     ]
+  },
+  {
+    "id": "mrowg02ypqgjn",
+    "nome": "ABT LOG",
+    "status": "ativo",
+    "telefone": "1191177-8155",
+    "email": "",
+    "site": "https://abtlog.com.br/",
+    "contato": "Veronice",
+    "obs": "",
+    "estados": [
+      "RJ",
+      "SP"
+    ],
+    "licencas": [
+      {
+        "id": "mrowffzplubqe",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrowg02ypqgjn_1784290415722_ABT_Log_-_Transporte_Civil_31.12.2026_.pdf",
+        "nomeArquivo": "ABT Log - Transporte  Civil 31.12.2026 .pdf"
+      },
+      {
+        "id": "mrowfyrlfmfwq",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-09-15",
+        "arquivo": "transportadoras/licencas/mrowg02ypqgjn_1784290417280_ABTLOG_Federal_2026_atual_.pdf",
+        "nomeArquivo": "ABTLOG_Federal 2026 atual .pdf"
+      }
+    ]
   }
 ]
