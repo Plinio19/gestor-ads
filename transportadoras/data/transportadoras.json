@@ -402,5 +402,40 @@
         "nomeArquivo": "ABTLOG_Federal 2026 atual .pdf"
       }
     ]
+  },
+  {
+    "id": "mrp1qst7pzlte",
+    "nome": "TPL",
+    "status": "ativo",
+    "telefone": "91 9300-6745",
+    "email": "",
+    "site": "http://www.tpllogistica.com.br/",
+    "contato": "Rana",
+    "obs": "",
+    "estados": [
+      "AC",
+      "AP",
+      "AM",
+      "MA",
+      "PA",
+      "RR",
+      "TO"
+    ],
+    "licencas": [
+      {
+        "id": "mrp1qft4ajwec",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mrp1qst7pzlte_1784299317595_LICENÇA_POLICIA_CIVIL_TPL_-_2026.pdf",
+        "nomeArquivo": "LICENÇA POLICIA CIVIL TPL - 2026.pdf"
+      },
+      {
+        "id": "mrp1qsbwvqcc3",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2027-05-22",
+        "arquivo": "transportadoras/licencas/mrp1qst7pzlte_1784299319551_CLF_TPL_22.05.2027.pdf",
+        "nomeArquivo": "CLF TPL 22.05.2027.pdf"
+      }
+    ]
   }
 ]
