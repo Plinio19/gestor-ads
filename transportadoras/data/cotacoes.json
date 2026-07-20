@@ -21,6 +21,27 @@
         "valor": "2190",
         "cotacao": "1265264",
         "prazo": "4"
+      },
+      {
+        "id": "mrtfa9brc2n4",
+        "nome": "PANAMERICANO",
+        "valor": "1677.85",
+        "cotacao": "58912",
+        "prazo": "4"
+      },
+      {
+        "id": "mrtfalw23sid",
+        "nome": "TODOBRASIL TRANSPORTES",
+        "valor": "4300",
+        "cotacao": "497802",
+        "prazo": ""
+      },
+      {
+        "id": "mrtfayoxszkc",
+        "nome": "ZANOTELLI",
+        "valor": "1555",
+        "cotacao": "371645",
+        "prazo": ""
       }
     ]
   }
