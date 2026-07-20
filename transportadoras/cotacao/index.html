@@ -306,29 +306,23 @@ let tmr=null;
 function upd(){clearTimeout(tmr);tmr=setTimeout(()=>{draw();buildPA();},120);}
 
 /* ══════════════════════════════════════════
-   CANVAS — layout exato da planilha Excel
+   CANVAS — apenas dados do envio (lado esquerdo)
+   A tabela de comparação fica só no sistema
 ══════════════════════════════════════════ */
 function draw() {
-  const d   = dados();
-  const cv  = document.getElementById('cv');
-  const cx  = cv.getContext('2d');
-  const SC  = 2;        // 2× para imagem nítida
-  const nL  = parseInt(d.linhas)||5; // linhas em branco à direita
+  const d  = dados();
+  const cv = document.getElementById('cv');
+  const cx = cv.getContext('2d');
+  const SC = 2; // 2× resolução
 
-  /* ── Dimensões lógicas ── */
-  const WL_LBL = 130;   // coluna de labels (esquerda)
-  const WL_VAL = 295;   // coluna de valores (esquerda)
-  const WR_TRA = 200;   // coluna TRANSPORTADORA (direita)
-  const WR_VAL = 125;   // coluna VALOR
-  const WR_COT = 120;   // coluna COTAÇÃO
-  const WR_PRZ = 75;    // coluna PRAZO
-  const W = WL_LBL + WL_VAL + WR_TRA + WR_VAL + WR_COT + WR_PRZ; // 945
+  /* ── Dimensões ── */
+  const WL_LBL = 140;  // coluna de labels
+  const WL_VAL = 380;  // coluna de valores
+  const W      = WL_LBL + WL_VAL; // 520
+  const H_HDR  = 38;
+  const H_ROW  = 26;
 
-  const H_HDR = 38;     // altura do cabeçalho
-  const H_ROW = 26;     // altura das linhas
-
-  // 14 linhas de dados no lado esquerdo
-  const leftRows = [
+  const rows = [
     {s:'DADOS DO REMETENTE'},
     {l:'CNPJ', v: d.cnpjR},
     {l:'CEP',  v: d.cepR},
@@ -345,149 +339,88 @@ function draw() {
     {l:'COLETA',   v: d.col},
   ];
 
-  const nRows = Math.max(leftRows.length, nL);
-  const H = H_HDR + nRows * H_ROW;
+  const H = H_HDR + rows.length * H_ROW;
 
-  /* ── Setup canvas ── */
   cv.width  = W * SC;
   cv.height = H * SC;
   cv.style.width  = W + 'px';
   cv.style.height = H + 'px';
   cx.scale(SC, SC);
 
-  /* ── Fundo branco ── */
   cx.fillStyle = '#ffffff';
   cx.fillRect(0, 0, W, H);
 
-  /* ── Cores (iguais à planilha) ── */
-  const C_GRN  = '#1E7E34';  // verde cabeçalho
-  const C_SEC  = '#595959';  // cinza seção
-  const C_LAB  = '#F2F2F2';  // cinza claro rótulo
-  const C_WHT  = '#FFFFFF';
-  const C_BRD  = '#AAAAAA';  // borda
+  const C_GRN = '#1E7E34';
+  const C_SEC = '#595959';
+  const C_LAB = '#F2F2F2';
+  const C_WHT = '#FFFFFF';
+  const C_BRD = '#AAAAAA';
 
-  /* ── Helper: desenhar célula ── */
   const cell = (x, y, w, h, bg, texto, opts = {}) => {
-    // fundo
-    cx.fillStyle = bg;
-    cx.fillRect(x, y, w, h);
-    // borda
-    cx.strokeStyle = C_BRD;
-    cx.lineWidth   = 0.5;
-    cx.strokeRect(x + 0.25, y + 0.25, w - 0.5, h - 0.5);
+    cx.fillStyle = bg; cx.fillRect(x, y, w, h);
+    cx.strokeStyle = C_BRD; cx.lineWidth = 0.5;
+    cx.strokeRect(x + .25, y + .25, w - .5, h - .5);
     if (!texto && texto !== 0) return;
-    // clip + texto
     cx.save();
     cx.beginPath(); cx.rect(x + 3, y + 2, w - 6, h - 4); cx.clip();
-    const sz    = opts.sz || 10;
-    const bold  = opts.b  ? 'bold ' : '';
-    const align = opts.a  || 'left';
-    cx.font          = `${bold}${sz}px Calibri, Arial, sans-serif`;
-    cx.fillStyle     = opts.c || '#111111';
-    cx.textBaseline  = 'middle';
-    cx.textAlign     = align;
-    const tx = align === 'center' ? x + w / 2
-             : align === 'right'  ? x + w - 6
-             :                      x + 6;
+    cx.font = `${opts.b?'bold ':''}${opts.sz||10}px Calibri, Arial, sans-serif`;
+    cx.fillStyle = opts.c || '#111';
+    cx.textBaseline = 'middle';
+    cx.textAlign = opts.a || 'left';
+    const tx = opts.a==='center' ? x+w/2 : opts.a==='right' ? x+w-6 : x+6;
     cx.fillText(String(texto), tx, y + h / 2);
     cx.restore();
   };
 
-  /* ════ LINHA 0: CABEÇALHO ════ */
-  // Lado esquerdo — título
-  cell(0, 0, WL_LBL + WL_VAL, H_HDR,
-       C_GRN, `COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido || '____'}`,
-       {b: true, sz: 12, a: 'center', c: '#FFFFFF'});
+  /* ── Cabeçalho ── */
+  cell(0, 0, W, H_HDR, C_GRN,
+    `COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido || '____'}`,
+    {b:true, sz:13, a:'center', c:'#FFFFFF'});
 
-  // Lado direito — cabeçalhos das colunas
-  let rx = WL_LBL + WL_VAL;
-  cell(rx,              0, WR_TRA, H_HDR, C_GRN, 'TRANSPORTADORA', {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
-  cell(rx + WR_TRA,     0, WR_VAL, H_HDR, C_GRN, 'VALOR',          {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
-  cell(rx+WR_TRA+WR_VAL,0, WR_COT, H_HDR, C_GRN, 'COTAÇÃO',        {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
-  cell(rx+WR_TRA+WR_VAL+WR_COT,0,WR_PRZ,H_HDR, C_GRN,'PRAZO',     {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
-
-  /* ════ LINHAS 1–N ════ */
-  for (let i = 0; i < nRows; i++) {
+  /* ── Linhas de dados ── */
+  rows.forEach((row, i) => {
     const ry = H_HDR + i * H_ROW;
-    const row = leftRows[i];
-
-    /* Lado esquerdo */
-    if (!row) {
-      // linha extra (abaixo dos dados da NF) — células vazias
-      cell(0,      ry, WL_LBL, H_ROW, C_LAB, '');
-      cell(WL_LBL, ry, WL_VAL, H_ROW, C_WHT, '');
-    } else if (row.s) {
-      // cabeçalho de seção (cinza escuro, texto centralizado, span 2 cols)
-      cell(0, ry, WL_LBL + WL_VAL, H_ROW, C_SEC, row.s, {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
+    if (row.s) {
+      cell(0, ry, W, H_ROW, C_SEC, row.s, {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
     } else {
-      // linha de dado: label + valor
-      cell(0,      ry, WL_LBL, H_ROW, C_LAB, row.l, {b:true, sz:9.5});
-      cell(WL_LBL, ry, WL_VAL, H_ROW, C_WHT, row.v, {sz:10});
+      cell(0,       ry, WL_LBL, H_ROW, C_LAB, row.l, {b:true, sz:9.5});
+      cell(WL_LBL,  ry, WL_VAL, H_ROW, C_WHT, row.v, {sz:10});
     }
+  });
 
-    /* Lado direito — células em branco (transportadora preenche) */
-    const rxi = WL_LBL + WL_VAL;
-    cell(rxi,              ry, WR_TRA, H_ROW, C_WHT, '');
-    cell(rxi + WR_TRA,     ry, WR_VAL, H_ROW, C_WHT, '');
-    cell(rxi+WR_TRA+WR_VAL,ry, WR_COT, H_ROW, C_WHT, '');
-    cell(rxi+WR_TRA+WR_VAL+WR_COT,ry,WR_PRZ,H_ROW, C_WHT, '');
-  }
-
-  /* ── Borda externa mais grossa ── */
-  cx.strokeStyle = '#555555';
-  cx.lineWidth   = 1.2;
-  cx.strokeRect(0.6, 0.6, W - 1.2, H - 1.2);
-
-  /* ── Linha divisória esquerda/direita ── */
-  cx.strokeStyle = '#555555';
-  cx.lineWidth   = 1;
-  cx.beginPath();
-  cx.moveTo(WL_LBL + WL_VAL, 0);
-  cx.lineTo(WL_LBL + WL_VAL, H);
-  cx.stroke();
+  /* ── Borda externa ── */
+  cx.strokeStyle = '#555'; cx.lineWidth = 1.2;
+  cx.strokeRect(.6, .6, W - 1.2, H - 1.2);
 }
 
-/* ── PRINT AREA ── */
+/* ── PRINT AREA (só dados do envio) ── */
 function buildPA() {
   const d = dados();
-  const nL = parseInt(d.linhas)||5;
-
-  const thG  = `style="background:#1E7E34;color:#fff;font-weight:700;padding:6px 10px;font-size:10pt;text-align:center;"`;
-  const thGn = `style="background:#1E7E34;color:#fff;font-weight:700;padding:5px 8px;font-size:9pt;text-align:center;"`;
-  const thS  = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9pt;text-align:center;" colspan="2"`;
-  const tdL  = `style="background:#f2f2f2;font-weight:700;padding:4px 8px;font-size:9pt;white-space:nowrap;border:1px solid #aaa;"`;
-  const tdV  = `style="padding:4px 8px;font-size:9pt;border:1px solid #aaa;"`;
-  const tdE  = `style="padding:4px 8px;border:1px solid #aaa;"`;
+  const thG = `style="background:#1E7E34;color:#fff;font-weight:700;padding:8px 12px;font-size:12pt;text-align:center;"`;
+  const thS = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9.5pt;text-align:center;" colspan="2"`;
+  const tdL = `style="background:#f2f2f2;font-weight:700;padding:5px 10px;font-size:9.5pt;white-space:nowrap;border:1px solid #aaa;"`;
+  const tdV = `style="padding:5px 10px;font-size:9.5pt;border:1px solid #aaa;"`;
 
   const leftRows = [
     {s:'DADOS DO REMETENTE'},
-    {l:'CNPJ', v:d.cnpjR},{l:'CEP',v:d.cepR},
+    {l:'CNPJ',v:d.cnpjR},{l:'CEP',v:d.cepR},
     {s:'DADOS DO DESTINATÁRIO'},
-    {l:'CNPJ', v:d.cnpjD},{l:'CEP',v:d.cepD},
+    {l:'CNPJ',v:d.cnpjD},{l:'CEP',v:d.cepD},
     {s:'DADOS DA NOTA FISCAL'},
     {l:'VALOR',v:d.vnf?fmtR(d.vnf):''},{l:'VOLUME',v:d.vol},
     {l:'PESO',v:d.pes},{l:'MEDIDAS',v:d.med},
     {l:'TOMADOR',v:d.tomador},{l:'MATERIAL',v:d.mat},{l:'COLETA',v:d.col},
   ];
-  const nRows = Math.max(leftRows.length, nL);
-  while(leftRows.length < nRows) leftRows.push({l:'',v:''});
 
-  const rows = leftRows.map(r => {
-    const left = r.s
-      ? `<td ${thS}>${esc(r.s)}</td>`
-      : `<td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td>`;
-    return `<tr>${left}<td ${tdE}></td><td ${tdE}></td><td ${tdE}></td><td ${tdE}></td></tr>`;
-  }).join('');
+  const rows = leftRows.map(r =>
+    r.s ? `<tr><td ${thS}>${esc(r.s)}</td></tr>`
+        : `<tr><td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td></tr>`
+  ).join('');
 
   document.getElementById('pa').innerHTML = `
-    <style>@page{margin:10mm;size:A4 landscape}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse;width:100%}#pa td,#pa th{border:1px solid #aaa}</style>
+    <style>@page{margin:15mm;size:A4 portrait}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse;width:60%}#pa td,#pa th{border:1px solid #aaa}</style>
     <table>
-      <thead>
-        <tr>
-          <th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th>
-          <th ${thGn}>TRANSPORTADORA</th><th ${thGn}>VALOR</th><th ${thGn}>COTAÇÃO</th><th ${thGn}>PRAZO</th>
-        </tr>
-      </thead>
+      <thead><tr><th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th></tr></thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
