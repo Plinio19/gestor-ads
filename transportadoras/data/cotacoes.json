@@ -31,7 +31,39 @@
     "pes": "61 KG",
     "med": "30 x 21 x 24",
     "mat": "QUIMICO ONU: 1170 RISCO: 3 ",
-    "col": "SIM"
+    "col": "SIM",
+    "transRows": [
+      {
+        "trans": "TJB",
+        "valor": "490",
+        "cotacao": "699581 ",
+        "prazo": "5"
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "711.65",
+        "cotacao": "58948",
+        "prazo": "8"
+      },
+      {
+        "trans": "",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ]
   },
   {
     "id": "mrtetb9m1et2",
