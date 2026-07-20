@@ -196,6 +196,7 @@
       <div class="dot amarelo" id="sync-dot"></div>
       <span id="sync-texto">Conectando...</span>
     </div>
+    <a href="./cotacao/" class="btn btn-branco btn-sm">📋 Gerar Cotação</a>
     <button class="btn btn-branco btn-sm" onclick="sincronizar()" id="btn-sync">☁️ Sincronizar</button>
     <button class="btn btn-branco btn-sm" onclick="abrirConfig()">⚙️</button>
   </div>
@@ -915,7 +916,7 @@ document.addEventListener('click', e => { if (!e.target.closest('.exportar-menu'
 
 function exportarCSV() {
   const linhas = [
-    ['Nome','Estados','Telefone','Email','Site','Contato','Quimico','Status','Licencas','Observacoes'],
+    ['Nome','Estados','Telefone','Email','Site','Contato','Status','Licencas','Observacoes'],
     ...dadosFiltrados.map(t => [
       t.nome, t.estados.join(';'), t.telefone, t.email, t.site, t.contato,
       t.status,

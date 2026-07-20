@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cotação de Frete</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--az:#1a56db;--az2:#1e429f;--vd:#059669;--vm:#dc2626;--ci:#e5e7eb;--cic:#f3f4f6;--bd:#d1d5db;--tx:#111827;--txl:#6b7280}
+    body{font-family:'Segoe UI',sans-serif;background:#f0f4ff;color:var(--tx);min-height:100vh}
+    header{background:linear-gradient(135deg,var(--az2),var(--az));color:#fff;padding:16px 28px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.15)}
+    header h1{font-size:1.3rem;font-weight:700}
+    header p{font-size:.8rem;opacity:.8;margin-top:2px}
+    .ha{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border:none;border-radius:8px;cursor:pointer;font-size:.87rem;font-weight:600;transition:all .2s;white-space:nowrap;text-decoration:none}
+    .bp{background:var(--az);color:#fff}.bp:hover{background:var(--az2)}
+    .bs{background:var(--vd);color:#fff}.bs:hover{filter:brightness(.9)}
+    .bo{background:#fff;color:var(--az);border:1.5px solid var(--az)}.bo:hover{background:#eff6ff}
+    .bb{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}.bb:hover{background:rgba(255,255,255,.25)}
+    .bg{background:transparent;color:var(--vm);border:none;cursor:pointer;padding:5px 9px;border-radius:6px;font-weight:700;font-size:.82rem}.bg:hover{background:#fef2f2}
+    .bsm{padding:6px 12px;font-size:.8rem}
+    .container{max-width:1440px;margin:0 auto;padding:24px 20px}
+    .lay{display:grid;grid-template-columns:440px 1fr;gap:20px;align-items:start}
+    @media(max-width:1100px){.lay{grid-template-columns:1fr}}
+    .card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:16px;overflow:hidden}
+    .card:last-child{margin-bottom:0}
+    .ch{padding:13px 18px;font-size:.9rem;font-weight:700;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;background:var(--cic)}
+    .cb{padding:16px 18px;display:flex;flex-direction:column;gap:11px}
+    .fc{display:flex;flex-direction:column;gap:5px}
+    .fc label{font-size:.73rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em}
+    .fc input,.fc select,.fc textarea{border:1.5px solid var(--bd);border-radius:8px;padding:8px 11px;font-size:.88rem;font-family:inherit;color:var(--tx);background:#fff;transition:border-color .2s;width:100%}
+    .fc input:focus,.fc select:focus{outline:none;border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .gr2{display:grid;grid-template-columns:1fr 1fr;gap:11px}
+    .gr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:11px}
+    .cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+    @media(max-width:600px){.gr2,.gr3,.cg{grid-template-columns:1fr}}
+    /* cotações table */
+    .ct-hdr{display:grid;grid-template-columns:2fr 1.1fr 1fr 70px 34px;gap:6px;padding:4px 0 8px;border-bottom:2px solid var(--ci);margin-bottom:6px}
+    .ct-hdr span{font-size:.71rem;font-weight:700;color:var(--txl);text-transform:uppercase}
+    .ct-row{display:grid;grid-template-columns:2fr 1.1fr 1fr 70px 34px;gap:6px;margin-bottom:6px;align-items:center}
+    .ct-row input{border:1.5px solid var(--bd);border-radius:7px;padding:7px 8px;font-size:.85rem;font-family:inherit;color:var(--tx);transition:border-color .2s;width:100%}
+    .ct-row input:focus{outline:none;border-color:var(--az)}
+    .ct-vz{color:var(--txl);font-size:.83rem;padding:6px 0}
+    /* preview */
+    .pstick{position:sticky;top:20px}
+    .cscroll{overflow-x:auto;background:#f8f8f8;border-radius:8px;padding:10px}
+    canvas{display:block}
+    /* toast */
+    .toasts{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;flex-direction:column;gap:8px}
+    .toast{background:#1f2937;color:#fff;padding:11px 17px;border-radius:9px;font-size:.86rem;box-shadow:0 4px 14px rgba(0,0,0,.2);max-width:320px;animation:su .2s ease}
+    .toast.sucesso{background:#065f46}.toast.erro{background:#991b1b}
+    @keyframes su{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+    /* print */
+    @media print{
+      body>header,body>.container,.toasts{display:none!important}
+      #pa{display:block!important}
+    }
+    #pa{display:none}
+    #pa table{border-collapse:collapse;font-family:Calibri,Arial,sans-serif;font-size:10pt;width:100%}
+    #pa td,#pa th{border:1px solid #aaa}
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📋 Cotação de Frete</h1>
+    <p>Preencha os dados e gere a cotação formatada</p>
+  </div>
+  <div class="ha">
+    <a href="../" class="btn bb bsm">← Transportadoras</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="lay">
+
+    <!-- FORM -->
+    <div>
+      <div class="card">
+        <div class="ch">Identificação</div>
+        <div class="cb">
+          <div class="gr2">
+            <div class="fc"><label>Nº do Pedido</label><input type="text" id="f-pedido" placeholder="Ex: 2689" oninput="upd()"/></div>
+            <div class="fc"><label>Tomador do Frete</label>
+              <select id="f-tomador" onchange="upd()">
+                <option value="REMETENTE">Remetente</option>
+                <option value="DESTINATÁRIO">Destinatário</option>
+                <option value="TERCEIRO">Terceiro</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cg">
+        <div class="card">
+          <div class="ch">Remetente</div>
+          <div class="cb">
+            <div class="fc"><label>CNPJ</label><input type="text" id="f-cnpj-r" placeholder="00.000.000/0000-00" oninput="upd()"/></div>
+            <div class="fc"><label>CEP</label><input type="text" id="f-cep-r" placeholder="00000-000" oninput="upd()"/></div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="ch">Destinatário</div>
+          <div class="cb">
+            <div class="fc"><label>CNPJ</label><input type="text" id="f-cnpj-d" placeholder="00.000.000/0000-00" oninput="upd()"/></div>
+            <div class="fc"><label>CEP</label><input type="text" id="f-cep-d" placeholder="00000-000" oninput="upd()"/></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="ch">Nota Fiscal</div>
+        <div class="cb">
+          <div class="gr3">
+            <div class="fc"><label>Valor NF (R$)</label><input type="number" id="f-vnf" placeholder="10800.00" step="0.01" oninput="upd()"/></div>
+            <div class="fc"><label>Volume</label><input type="text" id="f-vol" placeholder="80 CAIXAS" oninput="upd()"/></div>
+            <div class="fc"><label>Peso</label><input type="text" id="f-pes" placeholder="1.200 KG" oninput="upd()"/></div>
+          </div>
+          <div class="gr2">
+            <div class="fc"><label>Medidas (C x L x A cm)</label><input type="text" id="f-med" placeholder="30 X 21 X 24" oninput="upd()"/></div>
+            <div class="fc"><label>Material</label><input type="text" id="f-mat" placeholder="QUÍMICO ONU: 1170 RISCO: 3" oninput="upd()"/></div>
+          </div>
+          <div class="fc" style="max-width:160px">
+            <label>Coleta</label>
+            <select id="f-col" onchange="upd()"><option value="SIM">SIM</option><option value="NÃO">NÃO</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="ch">
+          <span>Cotações das Transportadoras</span>
+          <button class="btn bp bsm" onclick="addLinha()">+ Adicionar</button>
+        </div>
+        <div class="cb">
+          <datalist id="dl-trans"></datalist>
+          <div class="ct-hdr">
+            <span>Transportadora</span><span>Valor (R$)</span><span>Nº Cotação</span><span>Prazo (d)</span><span></span>
+          </div>
+          <div id="cot-lista"><p class="ct-vz">Clique em "+ Adicionar" para inserir cotações.</p></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PREVIEW -->
+    <div>
+      <div class="pstick">
+        <div class="card">
+          <div class="ch">
+            <span>Pré-visualização</span>
+            <div style="display:flex;gap:8px">
+              <button class="btn bs bsm" onclick="baixarPNG()">📷 Baixar PNG</button>
+              <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF</button>
+            </div>
+          </div>
+          <div class="cb" style="padding:12px">
+            <div class="cscroll"><canvas id="cv"></canvas></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ÁREA DE IMPRESSÃO -->
+<div id="pa"></div>
+<div class="toasts" id="toasts"></div>
+
+<script>
+const LS_T = 'transportadoras_v2';
+let linhas = [];
+let transList = [];
+
+function init() {
+  try { transList = JSON.parse(localStorage.getItem(LS_T)) || []; } catch { transList = []; }
+  const dl = document.getElementById('dl-trans');
+  dl.innerHTML = transList.map(t => `<option value="${esc(t.nome)}"></option>`).join('');
+  addLinha();
+  draw();
+}
+
+/* ── LINHAS ── */
+function addLinha() {
+  salvarTodas();
+  linhas.push({ id: uid(), nome:'', valor:'', cotacao:'', prazo:'' });
+  renderLinhas();
+  upd();
+}
+function remLinha(id) {
+  salvarTodas();
+  linhas = linhas.filter(l => l.id !== id);
+  renderLinhas();
+  upd();
+}
+function salvarTodas() {
+  document.querySelectorAll('.ct-row[data-id]').forEach(row => {
+    const l = linhas.find(x => x.id === row.dataset.id);
+    if (!l) return;
+    l.nome    = row.querySelector('.i-nome')?.value    || '';
+    l.valor   = row.querySelector('.i-val')?.value     || '';
+    l.cotacao = row.querySelector('.i-cot')?.value     || '';
+    l.prazo   = row.querySelector('.i-prazo')?.value   || '';
+  });
+}
+function renderLinhas() {
+  const c = document.getElementById('cot-lista');
+  if (!linhas.length) { c.innerHTML = '<p class="ct-vz">Clique em "+ Adicionar" para inserir cotações.</p>'; return; }
+  c.innerHTML = linhas.map(l => `
+    <div class="ct-row" data-id="${l.id}">
+      <input class="i-nome" type="text" list="dl-trans" value="${esc(l.nome)}" placeholder="Nome da transportadora" oninput="upd()"/>
+      <input class="i-val"  type="number" value="${esc(l.valor)}" placeholder="0.00" step="0.01" oninput="upd()"/>
+      <input class="i-cot"  type="text"   value="${esc(l.cotacao)}" placeholder="Nº cotação" oninput="upd()"/>
+      <input class="i-prazo" type="number" value="${esc(l.prazo)}" placeholder="dias" oninput="upd()"/>
+      <button class="bg" onclick="remLinha('${l.id}')">✕</button>
+    </div>`).join('');
+}
+
+/* ── DADOS ── */
+function dados() {
+  salvarTodas();
+  return {
+    pedido:   g('f-pedido'), cnpjR: g('f-cnpj-r'), cepR: g('f-cep-r'),
+    cnpjD:    g('f-cnpj-d'), cepD:  g('f-cep-d'),
+    vnf:      g('f-vnf'),    vol:   g('f-vol'),  pes: g('f-pes'),
+    med:      g('f-med'),    mat:   g('f-mat'),  col: g('f-col'),
+    tomador:  g('f-tomador'),
+    cots: linhas.filter(l => l.nome),
+  };
+}
+function g(id) { return document.getElementById(id)?.value || ''; }
+
+/* ── DEBOUNCE ── */
+let tmr = null;
+function upd() { clearTimeout(tmr); tmr = setTimeout(() => { draw(); buildPA(); }, 120); }
+
+/* ── CANVAS ── */
+function draw() {
+  const d  = dados();
+  const cv = document.getElementById('cv');
+  const cx = cv.getContext('2d');
+
+  const WL=120, WV=280, WTR=195, WVL=130, WCO=110, WPR=65;
+  const TW = WL+WV+WTR+WVL+WCO+WPR; // 900
+  const H0=36, HR=25;
+
+  const leftRows = [
+    {s:'DADOS DO REMETENTE'},
+    {l:'CNPJ', v:d.cnpjR}, {l:'CEP', v:d.cepR},
+    {s:'DADOS DO DESTINATÁRIO'},
+    {l:'CNPJ', v:d.cnpjD}, {l:'CEP', v:d.cepD},
+    {s:'DADOS DA NOTA FISCAL'},
+    {l:'VALOR',   v:d.vnf ? fmtR(d.vnf) : ''},
+    {l:'VOLUME',  v:d.vol}, {l:'PESO', v:d.pes},
+    {l:'MEDIDAS', v:d.med}, {l:'TOMADOR', v:d.tomador},
+    {l:'MATERIAL',v:d.mat}, {l:'COLETA',  v:d.col},
+  ];
+
+  const nR = Math.max(leftRows.length, d.cots.length);
+  const TH = H0 + nR * HR;
+  cv.width = TW; cv.height = TH;
+
+  const cell = (x,y,w,h,bg,txt,o={}) => {
+    cx.fillStyle = bg; cx.fillRect(x,y,w,h);
+    cx.strokeStyle='#999'; cx.lineWidth=.5;
+    cx.strokeRect(x+.25,y+.25,w-.5,h-.5);
+    if (!txt) return;
+    cx.save(); cx.beginPath(); cx.rect(x+3,y+2,w-6,h-4); cx.clip();
+    cx.font=`${o.b?'bold ':''}${o.sz||10}px Calibri,Arial,sans-serif`;
+    cx.fillStyle=o.c||'#111'; cx.textBaseline='middle';
+    cx.textAlign=o.a||'left';
+    const tx = o.a==='center'?x+w/2:o.a==='right'?x+w-6:x+6;
+    cx.fillText(String(txt),tx,y+h/2); cx.restore();
+  };
+
+  const GRN='#1a7a3c', SEC='#595959', LAB='#efefef', WHT='#ffffff', ALT='#f7f7f7';
+
+  // Header row
+  cell(0,0,WL+WV,H0,GRN,`COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido||'____'}`,{b:true,sz:12,a:'center',c:'#fff'});
+  cell(WL+WV,      0,WTR,H0,GRN,'TRANSPORTADORA',{b:true,sz:9,a:'center',c:'#fff'});
+  cell(WL+WV+WTR,  0,WVL,H0,GRN,'VALOR',         {b:true,sz:9,a:'center',c:'#fff'});
+  cell(WL+WV+WTR+WVL,  0,WCO,H0,GRN,'COTAÇÃO',   {b:true,sz:9,a:'center',c:'#fff'});
+  cell(WL+WV+WTR+WVL+WCO,0,WPR,H0,GRN,'PRAZO',   {b:true,sz:9,a:'center',c:'#fff'});
+
+  // Left rows
+  leftRows.forEach((r,i) => {
+    const ry = H0+i*HR;
+    if (r.s) { cell(0,ry,WL+WV,HR,SEC,r.s,{b:true,sz:9,a:'center',c:'#fff'}); }
+    else      { cell(0,ry,WL,HR,LAB,r.l,{b:true,sz:9}); cell(WL,ry,WV,HR,WHT,r.v,{sz:9.5}); }
+  });
+  for (let i=leftRows.length;i<nR;i++) {
+    const ry=H0+i*HR; cell(0,ry,WL,HR,LAB,''); cell(WL,ry,WV,HR,WHT,'');
+  }
+
+  // Right rows (cotações)
+  for (let i=0;i<nR;i++) {
+    const ry=H0+i*HR, rx=WL+WV, bg=i%2===0?WHT:ALT;
+    const ct=d.cots[i];
+    cell(rx,          ry,WTR,HR,bg,ct?.nome    ||'',{sz:9.5});
+    cell(rx+WTR,      ry,WVL,HR,bg,ct?.valor   ? fmtR(ct.valor):'' ,{sz:9.5,a:'right'});
+    cell(rx+WTR+WVL,  ry,WCO,HR,bg,ct?.cotacao ||'',{sz:9.5,a:'center'});
+    cell(rx+WTR+WVL+WCO,ry,WPR,HR,bg,ct?.prazo ||'',{sz:9.5,a:'center'});
+  }
+
+  // Outer + divider
+  cx.strokeStyle='#555'; cx.lineWidth=1;
+  cx.strokeRect(.5,.5,TW-1,TH-1);
+  cx.beginPath(); cx.moveTo(WL+WV,0); cx.lineTo(WL+WV,TH); cx.stroke();
+}
+
+/* ── BUILD PRINT AREA ── */
+function buildPA() {
+  const d = dados();
+  const gs = (bg,c='#fff',b=true)=>`background:${bg};color:${c};font-weight:${b?'bold':'normal'};padding:5px 9px;font-size:9.5pt;`;
+  const GRN='#1a7a3c', SEC='#595959', LAB='#efefef';
+  const thG  = `style="${gs(GRN)}text-align:center;font-size:11pt;"`;
+  const thGS = `style="${gs(GRN)}text-align:center;font-size:9pt;"`;
+  const thSEC= `style="${gs(SEC)}text-align:center;" colspan="2"`;
+  const tdL  = `style="${gs(LAB,'#111')}white-space:nowrap;"`;
+  const tdV  = `style="padding:5px 9px;font-size:9.5pt;"`;
+  const tdR  = `style="padding:5px 9px;font-size:9.5pt;text-align:right;"`;
+  const tdC  = `style="padding:5px 9px;font-size:9.5pt;text-align:center;"`;
+  const emp  = `<td style="padding:5px 9px;"></td>`;
+
+  const leftRows = [
+    {sec:'DADOS DO REMETENTE'},
+    {l:'CNPJ',    v:d.cnpjR}, {l:'CEP',v:d.cepR},
+    {sec:'DADOS DO DESTINATÁRIO'},
+    {l:'CNPJ',    v:d.cnpjD}, {l:'CEP',v:d.cepD},
+    {sec:'DADOS DA NOTA FISCAL'},
+    {l:'VALOR',   v:d.vnf ? fmtR(d.vnf):''}, {l:'VOLUME',v:d.vol},
+    {l:'PESO',    v:d.pes}, {l:'MEDIDAS',v:d.med},
+    {l:'TOMADOR', v:d.tomador}, {l:'MATERIAL',v:d.mat},
+    {l:'COLETA',  v:d.col},
+  ];
+  const nR = Math.max(leftRows.length, d.cots.length);
+  while (leftRows.length < nR) leftRows.push({l:'',v:''});
+
+  const rows = leftRows.map((r,i) => {
+    const ct = d.cots[i];
+    const left = r.sec
+      ? `<td ${thSEC}>${esc(r.sec)}</td>`
+      : `<td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td>`;
+    const right = ct
+      ? `<td ${tdV}>${esc(ct.nome)}</td><td ${tdR}>${ct.valor?fmtR(ct.valor):''}</td><td ${tdC}>${esc(ct.cotacao)}</td><td ${tdC}>${esc(ct.prazo)}</td>`
+      : `${emp}${emp}${emp}${emp}`;
+    return `<tr>${left}${right}</tr>`;
+  }).join('');
+
+  document.getElementById('pa').innerHTML = `
+    <style>
+      @page{margin:12mm;size:A4 landscape}
+      #pa{font-family:Calibri,Arial,sans-serif}
+      #pa table{border-collapse:collapse;width:100%}
+      #pa td,#pa th{border:1px solid #bbb}
+    </style>
+    <table>
+      <thead><tr>
+        <th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th>
+        <th ${thGS}>TRANSPORTADORA</th><th ${thGS}>VALOR</th><th ${thGS}>COTAÇÃO</th><th ${thGS}>PRAZO</th>
+      </tr></thead>
+      <tbody>${rows}</tbody>
+    </table>`;
+}
+
+/* ── EXPORT ── */
+function baixarPNG() {
+  const cv = document.getElementById('cv');
+  if (!cv.width) { toast('Preencha ao menos o nº do pedido.','erro'); return; }
+  const a = document.createElement('a');
+  a.download = `cotacao-${g('f-pedido')||'frete'}.png`;
+  a.href = cv.toDataURL('image/png');
+  a.click();
+  toast('Imagem baixada!','sucesso');
+}
+function gerarPDF() { buildPA(); setTimeout(()=>window.print(),100); }
+
+/* ── UTILS ── */
+function fmtR(v) {
+  const n = parseFloat(v); if (isNaN(n)) return v||'';
+  return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
+}
+function uid() { return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
+function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function toast(msg,tipo='') {
+  const el=document.createElement('div');
+  el.className=`toast ${tipo}`;el.textContent=msg;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>{el.style.opacity='0';el.style.transition='opacity .4s';setTimeout(()=>el.remove(),400)},3500);
+}
+
+init();
+</script>
+</body>
+</html>
