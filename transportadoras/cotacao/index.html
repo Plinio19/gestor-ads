@@ -472,8 +472,12 @@ function draw() {
     + H_SPAD + H_SEC + H_SECP + H_THDR + nRows*H_TROW
     + H_FOOT;
 
-  cv.width  = W;
-  cv.height = H_TOT;
+  const SC = 2; // 2x para imagem nítida
+  cv.width  = W    * SC;
+  cv.height = H_TOT * SC;
+  cv.style.width  = W     + 'px';
+  cv.style.height = H_TOT + 'px';
+  cx.scale(SC, SC);
 
   // fundo branco
   cx.fillStyle = '#fff';
