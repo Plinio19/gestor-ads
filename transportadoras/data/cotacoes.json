@@ -14,7 +14,39 @@
     "pes": "500",
     "med": "70X50",
     "mat": "QUIMICO SEM CLASSIFICAÇÃO",
-    "col": "SIM"
+    "col": "SIM",
+    "transRows": [
+      {
+        "trans": "TCM",
+        "valor": "1123.55",
+        "cotacao": "120998",
+        "prazo": "8"
+      },
+      {
+        "trans": "TJB",
+        "valor": "900.00",
+        "cotacao": "698581 ",
+        "prazo": "6"
+      },
+      {
+        "trans": "LEOMAR",
+        "valor": "597.06",
+        "cotacao": "3276528",
+        "prazo": "6"
+      },
+      {
+        "trans": "MAEX",
+        "valor": "645",
+        "cotacao": "1264483 ",
+        "prazo": "6"
+      },
+      {
+        "trans": "",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ]
   },
   {
     "id": "mrtff4ovi73g",
