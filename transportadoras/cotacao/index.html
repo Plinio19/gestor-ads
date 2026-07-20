@@ -17,12 +17,12 @@
     .bs{background:var(--vd);color:#fff}.bs:hover{filter:brightness(.9)}
     .bo{background:#fff;color:var(--az);border:1.5px solid var(--az)}.bo:hover{background:#eff6ff}
     .bb{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}.bb:hover{background:rgba(255,255,255,.25)}
-    .bg{background:transparent;color:var(--vm);border:none;cursor:pointer;padding:5px 8px;border-radius:6px;font-weight:700;font-size:.82rem}.bg:hover{background:#fef2f2}
     .bam{background:transparent;color:var(--am);border:1.5px solid var(--am);border-radius:7px;cursor:pointer;padding:5px 10px;font-size:.8rem;font-weight:600}.bam:hover{background:#fffbeb}
+    .bg{background:transparent;color:var(--vm);border:none;cursor:pointer;padding:5px 8px;border-radius:6px;font-weight:700;font-size:.82rem}.bg:hover{background:#fef2f2}
     .bsm{padding:6px 12px;font-size:.8rem}
-    .container{max-width:1480px;margin:0 auto;padding:20px}
-    .lay{display:grid;grid-template-columns:450px 1fr;gap:20px;align-items:start}
-    @media(max-width:1140px){.lay{grid-template-columns:1fr}}
+    .container{max-width:1520px;margin:0 auto;padding:20px}
+    .lay{display:grid;grid-template-columns:430px 1fr;gap:20px;align-items:start}
+    @media(max-width:1100px){.lay{grid-template-columns:1fr}}
     .card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:14px;overflow:hidden}
     .card:last-child{margin-bottom:0}
     .ch{padding:12px 18px;font-size:.88rem;font-weight:700;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;background:var(--cic)}
@@ -35,14 +35,6 @@
     .gr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
     .cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
     @media(max-width:600px){.gr2,.gr3,.cg{grid-template-columns:1fr}}
-    /* cotações rows */
-    .ct-hdr{display:grid;grid-template-columns:2fr 1.1fr 1fr 68px 30px;gap:6px;padding:4px 0 7px;border-bottom:2px solid var(--ci);margin-bottom:6px}
-    .ct-hdr span{font-size:.7rem;font-weight:700;color:var(--txl);text-transform:uppercase}
-    .ct-row{display:grid;grid-template-columns:2fr 1.1fr 1fr 68px 30px;gap:6px;margin-bottom:6px;align-items:center}
-    .ct-row input{border:1.5px solid var(--bd);border-radius:7px;padding:7px 8px;font-size:.85rem;font-family:inherit;color:var(--tx);transition:border-color .2s;width:100%}
-    .ct-row input:focus{outline:none;border-color:var(--az)}
-    .ct-vz{color:var(--txl);font-size:.83rem;padding:4px 0}
-    /* salvas panel */
     .painel-salvas{background:#fff;border-bottom:1px solid var(--ci);padding:12px 20px}
     .salvas-lista{display:flex;flex-direction:column;gap:6px;margin-top:10px}
     .salva-item{display:flex;align-items:center;gap:8px;background:var(--cic);border-radius:8px;padding:8px 12px;flex-wrap:wrap}
@@ -50,19 +42,15 @@
     .salva-pedido{font-weight:700;font-size:.85rem}
     .salva-meta{font-size:.75rem;color:var(--txl);margin-top:1px}
     .salva-acoes{display:flex;gap:6px;flex-shrink:0}
-    /* preview */
     .pstick{position:sticky;top:16px}
-    .cscroll{overflow-x:auto;background:#f1f5f9;border-radius:8px;padding:10px;min-height:120px;display:flex;align-items:flex-start}
-    canvas{display:block}
-    /* toast */
+    .cscroll{overflow-x:auto;background:#e8edf2;border-radius:8px;padding:12px;min-height:160px}
+    canvas{display:block;box-shadow:0 2px 12px rgba(0,0,0,.18)}
     .toasts{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;flex-direction:column;gap:8px}
     .toast{background:#1f2937;color:#fff;padding:11px 17px;border-radius:9px;font-size:.86rem;box-shadow:0 4px 14px rgba(0,0,0,.2);max-width:340px;animation:su .2s ease}
-    .toast.sucesso{background:#065f46}.toast.erro{background:#991b1b}.toast.aviso{background:#92400e}
+    .toast.sucesso{background:#065f46}.toast.erro{background:#991b1b}
     @keyframes su{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
     @media print{body>header,body>.container,body>.painel-salvas,.toasts{display:none!important}#pa{display:block!important}}
     #pa{display:none}
-    #pa table{border-collapse:collapse;font-family:Calibri,Arial,sans-serif;width:100%}
-    #pa td,#pa th{border:1px solid #ccc}
   </style>
 </head>
 <body>
@@ -70,18 +58,18 @@
 <header>
   <div>
     <h1>📋 Cotação de Frete</h1>
-    <p>Preencha os dados e gere a cotação formatada</p>
+    <p>Preencha os dados e gere o formulário para enviar às transportadoras</p>
   </div>
   <div class="ha">
     <a href="../" class="btn bb bsm">← Transportadoras</a>
   </div>
 </header>
 
-<!-- PAINEL COTAÇÕES SALVAS -->
+<!-- PAINEL SALVAS -->
 <div class="painel-salvas" id="painel-salvas" style="display:none">
   <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
     <div style="font-size:.9rem;font-weight:700">💾 Cotações Salvas <span id="qtd-salvas" style="font-size:.75rem;color:var(--txl);font-weight:400"></span></div>
-    <button class="btn bo bsm" onclick="novaCotacao()">+ Nova cotação</button>
+    <button class="btn bo bsm" onclick="novaCotacao()">+ Nova</button>
   </div>
   <div class="salvas-lista" id="salvas-lista"></div>
 </div>
@@ -96,13 +84,22 @@
         <div class="cb">
           <div class="gr2">
             <div class="fc"><label>Nº do Pedido</label><input type="text" id="f-pedido" placeholder="Ex: 2689" oninput="upd()"/></div>
-            <div class="fc"><label>Tomador do Frete</label>
-              <select id="f-tomador" onchange="upd()">
-                <option value="REMETENTE">Remetente</option>
-                <option value="DESTINATÁRIO">Destinatário</option>
-                <option value="TERCEIRO">Terceiro</option>
+            <div class="fc"><label>Linhas em branco</label>
+              <select id="f-linhas" onchange="upd()">
+                <option value="3">3 transportadoras</option>
+                <option value="4">4 transportadoras</option>
+                <option value="5" selected>5 transportadoras</option>
+                <option value="6">6 transportadoras</option>
+                <option value="7">7 transportadoras</option>
               </select>
             </div>
+          </div>
+          <div class="fc"><label>Tomador do Frete</label>
+            <select id="f-tomador" onchange="upd()">
+              <option value="REMETENTE">Remetente</option>
+              <option value="DESTINATÁRIO">Destinatário</option>
+              <option value="TERCEIRO">Terceiro</option>
+            </select>
           </div>
         </div>
       </div>
@@ -143,23 +140,9 @@
         </div>
       </div>
 
-      <div class="card">
-        <div class="ch">
-          <span>Cotações das Transportadoras</span>
-          <button class="btn bp bsm" onclick="addLinha()">+ Adicionar</button>
-        </div>
-        <div class="cb">
-          <datalist id="dl-trans"></datalist>
-          <div class="ct-hdr">
-            <span>Transportadora</span><span>Valor (R$)</span><span>Nº Cotação</span><span>Prazo (d)</span><span></span>
-          </div>
-          <div id="cot-lista"><p class="ct-vz">Clique em "+ Adicionar" para inserir cotações.</p></div>
-        </div>
-      </div>
-
-      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:4px">
-        <button class="btn bo" onclick="novaCotacao()">🗑 Limpar</button>
-        <button class="btn bs" onclick="salvarCotacao()">💾 Salvar Cotação</button>
+      <div style="display:flex;gap:10px;justify-content:flex-end">
+        <button class="btn bo bsm" onclick="novaCotacao()">🗑 Limpar</button>
+        <button class="btn bs" onclick="salvarCotacao()">💾 Salvar</button>
       </div>
     </div>
 
@@ -168,7 +151,7 @@
       <div class="pstick">
         <div class="card">
           <div class="ch">
-            <span>Pré-visualização</span>
+            <span>Pré-visualização — formulário enviado às transportadoras</span>
             <div style="display:flex;gap:8px">
               <button class="btn bs bsm" onclick="baixarPNG()">📷 Baixar PNG</button>
               <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF</button>
@@ -188,594 +171,347 @@
 <div class="toasts" id="toasts"></div>
 
 <script>
-/* ═══════════════════════════════════════════
-   ESTADO
-═══════════════════════════════════════════ */
 const LS_T   = 'transportadoras_v2';
 const LS_COT = 'trans_cotacoes_v1';
 const LS_CFG = 'github_config_v1';
 const GH_PATH = 'transportadoras/data/cotacoes.json';
 
-let linhas    = [];
-let transList = [];
-let salvas    = [];
-let ghSHA     = null;
-let ghCfg     = null;
-
-/* ═══════════════════════════════════════════
-   INIT
-═══════════════════════════════════════════ */
-async function init() {
-  try { transList = JSON.parse(localStorage.getItem(LS_T)) || []; } catch { transList = []; }
-  try { ghCfg = JSON.parse(localStorage.getItem(LS_CFG)); } catch { ghCfg = null; }
-
-  const dl = document.getElementById('dl-trans');
-  dl.innerHTML = transList.map(t => `<option value="${esc(t.nome)}"></option>`).join('');
-
-  // carregar salvas local primeiro, depois tenta GitHub
-  try { salvas = JSON.parse(localStorage.getItem(LS_COT)) || []; } catch { salvas = []; }
-  renderSalvas();
-
-  if (ghCfg?.token) await carregarDoGitHub();
-
-  addLinha();
-  draw();
-}
-
-/* ═══════════════════════════════════════════
-   GITHUB
-═══════════════════════════════════════════ */
-function ghHeaders() {
-  return { 'Authorization': `token ${ghCfg.token}`, 'Content-Type': 'application/json', 'Accept': 'application/vnd.github.v3+json' };
-}
-function ghUrl(path) {
-  return `https://api.github.com/repos/${ghCfg.owner}/${ghCfg.repo}/contents/${path}`;
-}
-function toB64(str) { return btoa(unescape(encodeURIComponent(str))); }
-function fromB64(str) { return decodeURIComponent(escape(atob(str))); }
-
-async function carregarDoGitHub() {
-  if (!ghCfg?.token) return;
-  try {
-    const res = await fetch(ghUrl(GH_PATH), { headers: ghHeaders() });
-    if (res.status === 404) { await criarArquivoGH(); return; }
-    if (!res.ok) return;
-    const data = await res.json();
-    ghSHA  = data.sha;
-    const remote = JSON.parse(fromB64(data.content.replace(/\n/g,'')));
-    salvas = remote;
-    localStorage.setItem(LS_COT, JSON.stringify(salvas));
-    renderSalvas();
-  } catch(e) { console.warn('GitHub cotacoes:', e); }
-}
-
-async function criarArquivoGH() {
-  const content = toB64(JSON.stringify([], null, 2));
-  try {
-    const res = await fetch(ghUrl(GH_PATH), {
-      method:'PUT', headers: ghHeaders(),
-      body: JSON.stringify({ message:'Criar cotacoes.json', content, branch: ghCfg.branch || 'main' })
-    });
-    if (res.ok) ghSHA = (await res.json()).content.sha;
-  } catch(e) {}
-}
-
-async function sincronizarGH() {
-  if (!ghCfg?.token) return;
-  try {
-    const res = await fetch(ghUrl(GH_PATH), {
-      method:'PUT', headers: ghHeaders(),
-      body: JSON.stringify({
-        message: `Cotações: ${new Date().toLocaleString('pt-BR')}`,
-        content: toB64(JSON.stringify(salvas, null, 2)),
-        branch: ghCfg.branch || 'main',
-        ...(ghSHA ? { sha: ghSHA } : {})
-      })
-    });
-    if (res.ok) ghSHA = (await res.json()).content.sha;
-  } catch(e) { console.warn('Sync GitHub cotações:', e); }
-}
-
-/* ═══════════════════════════════════════════
-   SALVAR / CARREGAR COTAÇÕES
-═══════════════════════════════════════════ */
-async function salvarCotacao() {
-  const d = dados();
-  if (!d.pedido) { toast('Informe o Nº do Pedido antes de salvar.','erro'); return; }
-
-  const id = editandoId || uid();
-  const obj = { id, data: hoje(), ...d };
-
-  if (editandoId) {
-    salvas = salvas.map(s => s.id === id ? obj : s);
-  } else {
-    salvas = [obj, ...salvas];
-  }
-
-  localStorage.setItem(LS_COT, JSON.stringify(salvas));
-  renderSalvas();
-  toast('Cotação salva!', 'sucesso');
-  editandoId = id;
-  await sincronizarGH();
-}
-
+let salvas = [];
+let ghSHA  = null;
+let ghCfg  = null;
 let editandoId = null;
 
-function carregarSalva(id) {
-  const s = salvas.find(x => x.id === id);
-  if (!s) return;
-  editandoId = id;
-
-  set('f-pedido', s.pedido);  set('f-tomador', s.tomador);
-  set('f-cnpj-r', s.cnpjR);  set('f-cep-r', s.cepR);
-  set('f-cnpj-d', s.cnpjD);  set('f-cep-d', s.cepD);
-  set('f-vnf', s.vnf);        set('f-vol', s.vol);
-  set('f-pes', s.pes);        set('f-med', s.med);
-  set('f-mat', s.mat);        set('f-col', s.col);
-
-  linhas = (s.cots || []).map(c => ({ id: uid(), ...c }));
-  if (!linhas.length) linhas = [{ id: uid(), nome:'', valor:'', cotacao:'', prazo:'' }];
-  renderLinhas();
-  upd();
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  toast(`Cotação nº ${s.pedido} carregada.`, 'sucesso');
-}
-
-async function excluirSalva(id) {
-  if (!confirm('Excluir esta cotação salva?')) return;
-  salvas = salvas.filter(s => s.id !== id);
-  if (editandoId === id) { editandoId = null; }
-  localStorage.setItem(LS_COT, JSON.stringify(salvas));
+/* ── INIT ── */
+async function init() {
+  try { ghCfg = JSON.parse(localStorage.getItem(LS_CFG)); } catch { ghCfg = null; }
+  try { salvas = JSON.parse(localStorage.getItem(LS_COT)) || []; } catch { salvas = []; }
   renderSalvas();
-  await sincronizarGH();
+  if (ghCfg?.token) await carregarDoGH();
+  upd();
 }
 
+/* ── GITHUB ── */
+function ghH() { return {'Authorization':`token ${ghCfg.token}`,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'}; }
+function ghUrl(p) { return `https://api.github.com/repos/${ghCfg.owner}/${ghCfg.repo}/contents/${p}`; }
+function b64e(s) { return btoa(unescape(encodeURIComponent(s))); }
+function b64d(s) { return decodeURIComponent(escape(atob(s))); }
+
+async function carregarDoGH() {
+  try {
+    const r = await fetch(ghUrl(GH_PATH),{headers:ghH()});
+    if (r.status===404){await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Criar cotacoes.json',content:b64e('[]'),branch:ghCfg.branch||'main'})});return;}
+    if (!r.ok) return;
+    const data = await r.json();
+    ghSHA = data.sha;
+    salvas = JSON.parse(b64d(data.content.replace(/\n/g,'')));
+    localStorage.setItem(LS_COT, JSON.stringify(salvas));
+    renderSalvas();
+  } catch(e){}
+}
+async function syncGH() {
+  if (!ghCfg?.token) return;
+  try {
+    const r = await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({message:`Cotações ${new Date().toLocaleString('pt-BR')}`,content:b64e(JSON.stringify(salvas,null,2)),branch:ghCfg.branch||'main',...(ghSHA?{sha:ghSHA}:{})})});
+    if (r.ok) ghSHA=(await r.json()).content.sha;
+  } catch(e){}
+}
+
+/* ── SALVAR / CARREGAR ── */
+async function salvarCotacao() {
+  const d = dados();
+  if (!d.pedido){toast('Informe o Nº do Pedido.','erro');return;}
+  const id = editandoId||uid();
+  const obj = {id, data:hoje(), ...d};
+  salvas = editandoId ? salvas.map(s=>s.id===id?obj:s) : [obj,...salvas];
+  editandoId = id;
+  localStorage.setItem(LS_COT,JSON.stringify(salvas));
+  renderSalvas();
+  toast('Salvo!','sucesso');
+  await syncGH();
+}
+function carregarSalva(id) {
+  const s = salvas.find(x=>x.id===id); if(!s) return;
+  editandoId = id;
+  set('f-pedido',s.pedido); set('f-tomador',s.tomador); set('f-linhas',s.linhas||'5');
+  set('f-cnpj-r',s.cnpjR);  set('f-cep-r',s.cepR);
+  set('f-cnpj-d',s.cnpjD);  set('f-cep-d',s.cepD);
+  set('f-vnf',s.vnf); set('f-vol',s.vol); set('f-pes',s.pes);
+  set('f-med',s.med); set('f-mat',s.mat); set('f-col',s.col||'SIM');
+  upd();
+  toast(`Pedido nº ${s.pedido} carregado.`,'sucesso');
+}
+async function excluirSalva(id) {
+  if(!confirm('Excluir esta cotação?')) return;
+  salvas = salvas.filter(s=>s.id!==id);
+  if(editandoId===id) editandoId=null;
+  localStorage.setItem(LS_COT,JSON.stringify(salvas));
+  renderSalvas();
+  await syncGH();
+}
 function novaCotacao() {
-  editandoId = null;
-  ['f-pedido','f-cnpj-r','f-cep-r','f-cnpj-d','f-cep-d','f-vnf','f-vol','f-pes','f-med','f-mat'].forEach(id => set(id,''));
-  set('f-tomador','REMETENTE'); set('f-col','SIM');
-  linhas = [{ id: uid(), nome:'', valor:'', cotacao:'', prazo:'' }];
-  renderLinhas(); upd();
+  editandoId=null;
+  ['f-pedido','f-cnpj-r','f-cep-r','f-cnpj-d','f-cep-d','f-vnf','f-vol','f-pes','f-med','f-mat'].forEach(i=>set(i,''));
+  set('f-tomador','REMETENTE'); set('f-col','SIM'); set('f-linhas','5');
+  upd();
 }
-
 function renderSalvas() {
-  const painel = document.getElementById('painel-salvas');
-  const lista  = document.getElementById('salvas-lista');
-  const qtd    = document.getElementById('qtd-salvas');
-  if (!salvas.length) { painel.style.display = 'none'; return; }
-  painel.style.display = 'block';
-  qtd.textContent = `(${salvas.length})`;
-  lista.innerHTML = salvas.map(s => {
-    const nCots = (s.cots || []).length;
-    const melhor = nCots ? Math.min(...(s.cots||[]).map(c=>parseFloat(c.valor)).filter(v=>v>0)) : 0;
-    return `<div class="salva-item">
-      <div class="salva-info">
-        <div class="salva-pedido">Pedido nº ${esc(s.pedido)} <span style="font-weight:400;color:var(--txl);font-size:.78rem;margin-left:6px">${s.data ? formatarDataBR(s.data) : ''}</span></div>
-        <div class="salva-meta">Dest: ${esc(s.cnpjD||'—')} · ${nCots} transportadora${nCots!==1?'s':''} ${melhor>0?'· Melhor: '+fmtR(melhor):''}</div>
-      </div>
-      <div class="salva-acoes">
-        <button class="bam" onclick="carregarSalva('${s.id}')">📂 Abrir</button>
-        <button class="bg" onclick="excluirSalva('${s.id}')" title="Excluir">✕</button>
-      </div>
-    </div>`;
-  }).join('');
+  const p=document.getElementById('painel-salvas');
+  const l=document.getElementById('salvas-lista');
+  const q=document.getElementById('qtd-salvas');
+  if(!salvas.length){p.style.display='none';return;}
+  p.style.display='block';
+  q.textContent=`(${salvas.length})`;
+  l.innerHTML=salvas.map(s=>`<div class="salva-item">
+    <div class="salva-info">
+      <div class="salva-pedido">Pedido nº ${esc(s.pedido||'—')} <span style="font-weight:400;color:var(--txl);font-size:.76rem;margin-left:6px">${s.data?formatBR(s.data):''}</span></div>
+      <div class="salva-meta">Dest: ${esc(s.cnpjD||'—')} · CEP ${esc(s.cepD||'—')}</div>
+    </div>
+    <div class="salva-acoes">
+      <button class="bam" onclick="carregarSalva('${s.id}')">📂 Abrir</button>
+      <button class="bg" onclick="excluirSalva('${s.id}')">✕</button>
+    </div>
+  </div>`).join('');
 }
 
-/* ═══════════════════════════════════════════
-   LINHAS DE COTAÇÃO
-═══════════════════════════════════════════ */
-function addLinha() {
-  salvarTodas();
-  linhas.push({ id: uid(), nome:'', valor:'', cotacao:'', prazo:'' });
-  renderLinhas(); upd();
-}
-function remLinha(id) {
-  salvarTodas();
-  linhas = linhas.filter(l => l.id !== id);
-  renderLinhas(); upd();
-}
-function salvarTodas() {
-  document.querySelectorAll('.ct-row[data-id]').forEach(row => {
-    const l = linhas.find(x => x.id === row.dataset.id); if (!l) return;
-    l.nome    = row.querySelector('.i-nome')?.value  || '';
-    l.valor   = row.querySelector('.i-val')?.value   || '';
-    l.cotacao = row.querySelector('.i-cot')?.value   || '';
-    l.prazo   = row.querySelector('.i-prazo')?.value || '';
-  });
-}
-function renderLinhas() {
-  const c = document.getElementById('cot-lista');
-  if (!linhas.length) { c.innerHTML = '<p class="ct-vz">Clique em "+ Adicionar".</p>'; return; }
-  c.innerHTML = linhas.map(l => `
-    <div class="ct-row" data-id="${l.id}">
-      <input class="i-nome"  type="text"   list="dl-trans" value="${esc(l.nome)}"    placeholder="Transportadora"  oninput="upd()"/>
-      <input class="i-val"   type="number" value="${esc(l.valor)}"   placeholder="0.00"  step="0.01" oninput="upd()"/>
-      <input class="i-cot"   type="text"   value="${esc(l.cotacao)}" placeholder="Nº cotação"           oninput="upd()"/>
-      <input class="i-prazo" type="number" value="${esc(l.prazo)}"   placeholder="dias"                 oninput="upd()"/>
-      <button class="bg" onclick="remLinha('${l.id}')">✕</button>
-    </div>`).join('');
-}
-
-/* ═══════════════════════════════════════════
-   DADOS
-═══════════════════════════════════════════ */
+/* ── DADOS ── */
 function dados() {
-  salvarTodas();
   return {
-    pedido: g('f-pedido'),  tomador: g('f-tomador'),
-    cnpjR:  g('f-cnpj-r'), cepR:    g('f-cep-r'),
-    cnpjD:  g('f-cnpj-d'), cepD:    g('f-cep-d'),
-    vnf:    g('f-vnf'),    vol:     g('f-vol'),
-    pes:    g('f-pes'),    med:     g('f-med'),
-    mat:    g('f-mat'),    col:     g('f-col'),
-    cots:   linhas.filter(l => l.nome),
+    pedido:  g('f-pedido'),  tomador: g('f-tomador'), linhas: g('f-linhas'),
+    cnpjR:   g('f-cnpj-r'), cepR:    g('f-cep-r'),
+    cnpjD:   g('f-cnpj-d'), cepD:    g('f-cep-d'),
+    vnf:     g('f-vnf'),    vol:     g('f-vol'),   pes: g('f-pes'),
+    med:     g('f-med'),    mat:     g('f-mat'),   col: g('f-col'),
   };
 }
-function g(id) { return document.getElementById(id)?.value || ''; }
-function set(id, val) { const el = document.getElementById(id); if (el) el.value = val||''; }
+function g(id){return document.getElementById(id)?.value||'';}
+function set(id,v){const e=document.getElementById(id);if(e)e.value=v||'';}
 
-/* ═══════════════════════════════════════════
-   MASKS
-═══════════════════════════════════════════ */
-function maskCNPJ(el) {
-  let v = el.value.replace(/\D/g,'').slice(0,14);
-  if (v.length > 12) v = v.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2})$/,'$1.$2.$3/$4-$5');
-  else if (v.length > 8) v = v.replace(/^(\d{2})(\d{3})(\d{3})(\d{0,4})$/,'$1.$2.$3/$4');
-  else if (v.length > 5) v = v.replace(/^(\d{2})(\d{3})(\d{0,3})$/,'$1.$2.$3');
-  else if (v.length > 2) v = v.replace(/^(\d{2})(\d{0,3})$/,'$1.$2');
-  el.value = v;
+/* ── MASKS ── */
+function maskCNPJ(el){
+  let v=el.value.replace(/\D/g,'').slice(0,14);
+  if(v.length>12) v=v.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{0,2})$/,'$1.$2.$3/$4-$5');
+  else if(v.length>8) v=v.replace(/^(\d{2})(\d{3})(\d{3})(\d{0,4})$/,'$1.$2.$3/$4');
+  else if(v.length>5) v=v.replace(/^(\d{2})(\d{3})(\d{0,3})$/,'$1.$2.$3');
+  else if(v.length>2) v=v.replace(/^(\d{2})(\d{0,3})$/,'$1.$2');
+  el.value=v;
 }
-function maskCEP(el) {
-  let v = el.value.replace(/\D/g,'').slice(0,8);
-  if (v.length > 5) v = v.replace(/^(\d{5})(\d{0,3})$/,'$1-$2');
-  el.value = v;
+function maskCEP(el){
+  let v=el.value.replace(/\D/g,'').slice(0,8);
+  if(v.length>5) v=v.replace(/^(\d{5})(\d{0,3})$/,'$1-$2');
+  el.value=v;
 }
 
-/* ═══════════════════════════════════════════
-   DEBOUNCE
-═══════════════════════════════════════════ */
-let tmr = null;
-function upd() { clearTimeout(tmr); tmr = setTimeout(()=>{ draw(); buildPA(); },120); }
+/* ── DEBOUNCE ── */
+let tmr=null;
+function upd(){clearTimeout(tmr);tmr=setTimeout(()=>{draw();buildPA();},120);}
 
-/* ═══════════════════════════════════════════
-   CANVAS — VISUAL MODERNO
-═══════════════════════════════════════════ */
+/* ══════════════════════════════════════════
+   CANVAS — layout exato da planilha Excel
+══════════════════════════════════════════ */
 function draw() {
-  const d  = dados();
-  const cv = document.getElementById('cv');
-  const cx = cv.getContext('2d');
+  const d   = dados();
+  const cv  = document.getElementById('cv');
+  const cx  = cv.getContext('2d');
+  const SC  = 2;        // 2× para imagem nítida
+  const nL  = parseInt(d.linhas)||5; // linhas em branco à direita
 
-  const W   = 780;
-  const PAD = 24;
-  const CW  = W - PAD*2;  // 732
+  /* ── Dimensões lógicas ── */
+  const WL_LBL = 130;   // coluna de labels (esquerda)
+  const WL_VAL = 295;   // coluna de valores (esquerda)
+  const WR_TRA = 200;   // coluna TRANSPORTADORA (direita)
+  const WR_VAL = 125;   // coluna VALOR
+  const WR_COT = 120;   // coluna COTAÇÃO
+  const WR_PRZ = 75;    // coluna PRAZO
+  const W = WL_LBL + WL_VAL + WR_TRA + WR_VAL + WR_COT + WR_PRZ; // 945
 
-  // pré-calcula min/max para barra de preços
-  const vals = d.cots.map(c=>parseFloat(c.valor)).filter(v=>v>0&&!isNaN(v));
-  const minV = vals.length ? Math.min(...vals) : 0;
-  const maxV = vals.length ? Math.max(...vals) : 0;
+  const H_HDR = 38;     // altura do cabeçalho
+  const H_ROW = 26;     // altura das linhas
 
-  // alturas das seções
-  const H_HEAD = 58;
-  const H_SPAD = 14; // padding antes de seção
-  const H_SEC  = 18; // título de seção
-  const H_SECP = 7;  // padding após título
-  const H_BOX_RD = 70;
-  const H_BOX_NF = 60;
-  const H_THDR   = 32; // table header
-  const H_TROW   = 32; // table row
-  const H_FOOT   = 26;
+  // 14 linhas de dados no lado esquerdo
+  const leftRows = [
+    {s:'DADOS DO REMETENTE'},
+    {l:'CNPJ', v: d.cnpjR},
+    {l:'CEP',  v: d.cepR},
+    {s:'DADOS DO DESTINATÁRIO'},
+    {l:'CNPJ', v: d.cnpjD},
+    {l:'CEP',  v: d.cepD},
+    {s:'DADOS DA NOTA FISCAL'},
+    {l:'VALOR',    v: d.vnf ? fmtR(d.vnf) : ''},
+    {l:'VOLUME',   v: d.vol},
+    {l:'PESO',     v: d.pes},
+    {l:'MEDIDAS',  v: d.med},
+    {l:'TOMADOR',  v: d.tomador},
+    {l:'MATERIAL', v: d.mat},
+    {l:'COLETA',   v: d.col},
+  ];
 
-  const nRows = Math.max(d.cots.length, 1);
-  const H_TOT = H_HEAD
-    + H_SPAD + H_SEC + H_SECP + H_BOX_RD
-    + H_SPAD + H_SEC + H_SECP + H_BOX_NF
-    + H_SPAD + H_SEC + H_SECP + H_THDR + nRows*H_TROW
-    + H_FOOT;
+  const nRows = Math.max(leftRows.length, nL);
+  const H = H_HDR + nRows * H_ROW;
 
-  const SC = 2; // 2x para imagem nítida
-  cv.width  = W    * SC;
-  cv.height = H_TOT * SC;
-  cv.style.width  = W     + 'px';
-  cv.style.height = H_TOT + 'px';
+  /* ── Setup canvas ── */
+  cv.width  = W * SC;
+  cv.height = H * SC;
+  cv.style.width  = W + 'px';
+  cv.style.height = H + 'px';
   cx.scale(SC, SC);
 
-  // fundo branco
-  cx.fillStyle = '#fff';
-  cx.fillRect(0,0,W,H_TOT);
+  /* ── Fundo branco ── */
+  cx.fillStyle = '#ffffff';
+  cx.fillRect(0, 0, W, H);
 
-  /* ── utilidades ── */
-  const rrect = (x,y,w,h,r,fill,stroke) => {
-    cx.beginPath();
-    cx.moveTo(x+r,y); cx.lineTo(x+w-r,y);
-    cx.quadraticCurveTo(x+w,y,x+w,y+r);
-    cx.lineTo(x+w,y+h-r); cx.quadraticCurveTo(x+w,y+h,x+w-r,y+h);
-    cx.lineTo(x+r,y+h); cx.quadraticCurveTo(x,y+h,x,y+h-r);
-    cx.lineTo(x,y+r); cx.quadraticCurveTo(x,y,x+r,y); cx.closePath();
-    if (fill) { cx.fillStyle=fill; cx.fill(); }
-    if (stroke) { cx.strokeStyle=stroke; cx.lineWidth=1; cx.stroke(); }
+  /* ── Cores (iguais à planilha) ── */
+  const C_GRN  = '#1E7E34';  // verde cabeçalho
+  const C_SEC  = '#595959';  // cinza seção
+  const C_LAB  = '#F2F2F2';  // cinza claro rótulo
+  const C_WHT  = '#FFFFFF';
+  const C_BRD  = '#AAAAAA';  // borda
+
+  /* ── Helper: desenhar célula ── */
+  const cell = (x, y, w, h, bg, texto, opts = {}) => {
+    // fundo
+    cx.fillStyle = bg;
+    cx.fillRect(x, y, w, h);
+    // borda
+    cx.strokeStyle = C_BRD;
+    cx.lineWidth   = 0.5;
+    cx.strokeRect(x + 0.25, y + 0.25, w - 0.5, h - 0.5);
+    if (!texto && texto !== 0) return;
+    // clip + texto
+    cx.save();
+    cx.beginPath(); cx.rect(x + 3, y + 2, w - 6, h - 4); cx.clip();
+    const sz    = opts.sz || 10;
+    const bold  = opts.b  ? 'bold ' : '';
+    const align = opts.a  || 'left';
+    cx.font          = `${bold}${sz}px Calibri, Arial, sans-serif`;
+    cx.fillStyle     = opts.c || '#111111';
+    cx.textBaseline  = 'middle';
+    cx.textAlign     = align;
+    const tx = align === 'center' ? x + w / 2
+             : align === 'right'  ? x + w - 6
+             :                      x + 6;
+    cx.fillText(String(texto), tx, y + h / 2);
+    cx.restore();
   };
 
-  const txt = (t,x,y,opts={}) => {
-    const {sz=10,b=false,c='#111',a='left',clip:cl=null} = opts;
-    if (!t && t!==0) return;
-    cx.font=`${b?'bold ':''}${sz}px Calibri,Arial,sans-serif`;
-    cx.fillStyle=c; cx.textBaseline='middle'; cx.textAlign=a;
-    if (cl) { cx.save(); cx.beginPath(); cx.rect(...cl); cx.clip(); }
-    cx.fillText(String(t),x,y);
-    if (cl) cx.restore();
-  };
+  /* ════ LINHA 0: CABEÇALHO ════ */
+  // Lado esquerdo — título
+  cell(0, 0, WL_LBL + WL_VAL, H_HDR,
+       C_GRN, `COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido || '____'}`,
+       {b: true, sz: 12, a: 'center', c: '#FFFFFF'});
 
-  const secTitle = (label, y) => {
-    txt(label, PAD, y+H_SEC/2, {sz:9.5,b:true,c:'#1e40af'});
-    const mw = cx.measureText(label).width;
-    cx.strokeStyle='#93c5fd'; cx.lineWidth=1.5;
-    cx.beginPath(); cx.moveTo(PAD+mw+5,y+H_SEC-2); cx.lineTo(W-PAD,y+H_SEC-2); cx.stroke();
-  };
+  // Lado direito — cabeçalhos das colunas
+  let rx = WL_LBL + WL_VAL;
+  cell(rx,              0, WR_TRA, H_HDR, C_GRN, 'TRANSPORTADORA', {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
+  cell(rx + WR_TRA,     0, WR_VAL, H_HDR, C_GRN, 'VALOR',          {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
+  cell(rx+WR_TRA+WR_VAL,0, WR_COT, H_HDR, C_GRN, 'COTAÇÃO',        {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
+  cell(rx+WR_TRA+WR_VAL+WR_COT,0,WR_PRZ,H_HDR, C_GRN,'PRAZO',     {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
 
-  /* ── HEADER gradient ── */
-  const grad = cx.createLinearGradient(0,0,W,0);
-  grad.addColorStop(0,'#0f172a'); grad.addColorStop(1,'#1e3a8a');
-  cx.fillStyle=grad; cx.fillRect(0,0,W,H_HEAD);
+  /* ════ LINHAS 1–N ════ */
+  for (let i = 0; i < nRows; i++) {
+    const ry = H_HDR + i * H_ROW;
+    const row = leftRows[i];
 
-  // ícone truck
-  txt('🚚', PAD, H_HEAD/2, {sz:20,a:'left'});
-  // título
-  txt('COTAÇÃO DE FRETE', PAD+34, H_HEAD/2-10, {sz:15,b:true,c:'#fff'});
-  txt(`PEDIDO Nº ${d.pedido||'____'}`, PAD+34, H_HEAD/2+10, {sz:11,c:'#93c5fd'});
-  // data
-  txt(new Date().toLocaleDateString('pt-BR'), W-PAD, H_HEAD/2-8, {sz:8.5,c:'rgba(255,255,255,.65)',a:'right'});
-  txt('Emitido em', W-PAD, H_HEAD/2+6, {sz:7.5,c:'rgba(255,255,255,.4)',a:'right'});
-
-  let Y = H_HEAD;
-
-  /* ── REMETENTE / DESTINATÁRIO ── */
-  Y += H_SPAD;
-  secTitle('REMETENTE / DESTINATÁRIO', Y);
-  Y += H_SEC + H_SECP;
-
-  const colW = (CW-10)/2;
-  // box remetente
-  rrect(PAD, Y, colW, H_BOX_RD, 8, '#f8fafc', '#e2e8f0');
-  // label topo
-  txt('REMETENTE', PAD+10, Y+12, {sz:7.5,b:true,c:'#94a3b8'});
-  cx.strokeStyle='#e2e8f0'; cx.lineWidth=.5;
-  cx.beginPath(); cx.moveTo(PAD,Y+20); cx.lineTo(PAD+colW,Y+20); cx.stroke();
-  txt('CNPJ', PAD+10, Y+33, {sz:7.5,b:true,c:'#64748b'});
-  txt(d.cnpjR||'—', PAD+10, Y+48, {sz:10,c:'#111',clip:[PAD+8,Y+40,colW-16,18]});
-  txt('CEP', PAD+colW/2, Y+33, {sz:7.5,b:true,c:'#64748b'});
-  txt(d.cepR||'—', PAD+colW/2, Y+48, {sz:10,c:'#111'});
-
-  // box destinatário
-  const bx2 = PAD+colW+10;
-  rrect(bx2, Y, colW, H_BOX_RD, 8, '#f0f9ff', '#bae6fd');
-  txt('DESTINATÁRIO', bx2+10, Y+12, {sz:7.5,b:true,c:'#0369a1'});
-  cx.strokeStyle='#bae6fd'; cx.lineWidth=.5;
-  cx.beginPath(); cx.moveTo(bx2,Y+20); cx.lineTo(bx2+colW,Y+20); cx.stroke();
-  txt('CNPJ', bx2+10, Y+33, {sz:7.5,b:true,c:'#64748b'});
-  txt(d.cnpjD||'—', bx2+10, Y+48, {sz:10,c:'#111',clip:[bx2+8,Y+40,colW-16,18]});
-  txt('CEP', bx2+colW/2, Y+33, {sz:7.5,b:true,c:'#64748b'});
-  txt(d.cepD||'—', bx2+colW/2, Y+48, {sz:10,c:'#111'});
-
-  Y += H_BOX_RD;
-
-  /* ── NOTA FISCAL ── */
-  Y += H_SPAD;
-  secTitle('DADOS DA NOTA FISCAL', Y);
-  Y += H_SEC + H_SECP;
-
-  rrect(PAD, Y, CW, H_BOX_NF, 8, '#fffbeb', '#fde68a');
-
-  const nfCols = [
-    ['VALOR NF',  d.vnf ? fmtR(d.vnf) : '—'],
-    ['VOLUME',    d.vol||'—'],
-    ['PESO',      d.pes||'—'],
-    ['MEDIDAS',   d.med||'—'],
-    ['TOMADOR',   d.tomador||'—'],
-    ['COLETA',    d.col||'—'],
-  ];
-  const nfW = (CW-20) / nfCols.length;
-  nfCols.forEach(([label,val],i) => {
-    const nx = PAD+10 + i*nfW;
-    txt(label, nx, Y+14, {sz:7,b:true,c:'#92400e'});
-    txt(val, nx, Y+31, {sz:9.5,c:'#111',b:i===0,clip:[nx,Y+22,nfW-4,16]});
-  });
-  if (d.mat) {
-    txt('MATERIAL:', PAD+10, Y+50, {sz:7.5,b:true,c:'#92400e'});
-    txt(d.mat, PAD+60, Y+50, {sz:9,c:'#111',clip:[PAD+58,Y+42,CW-70,16]});
-  }
-  Y += H_BOX_NF;
-
-  /* ── TABELA DE COTAÇÕES ── */
-  Y += H_SPAD;
-  secTitle('COMPARATIVO DE FRETES', Y);
-  Y += H_SEC + H_SECP;
-
-  // colunas
-  const C_RANK = 28, C_TRANS = 230, C_VALOR = 130, C_BAR = 80, C_COT = 120, C_PRAZO = CW-C_RANK-C_TRANS-C_VALOR-C_BAR-C_COT;
-
-  // header da tabela
-  rrect(PAD, Y, CW, H_THDR, 8, '#1e3a8a', null);
-  cx.fillStyle='rgba(255,255,255,.07)';
-  cx.fillRect(PAD,Y+H_THDR/2,CW,H_THDR/2);
-
-  const thTxt = (label,x,w,a='center') => txt(label,x+(a==='center'?w/2:a==='right'?w-6:6),Y+H_THDR/2,{sz:8.5,b:true,c:'#fff',a});
-  let hx=PAD;
-  thTxt('',hx,C_RANK); hx+=C_RANK;
-  thTxt('TRANSPORTADORA',hx,C_TRANS,'left'); hx+=C_TRANS;
-  thTxt('VALOR',hx,C_VALOR,'right'); hx+=C_VALOR;
-  thTxt('',hx,C_BAR); hx+=C_BAR;
-  thTxt('COTAÇÃO',hx,C_COT); hx+=C_COT;
-  thTxt('PRAZO',hx,C_PRAZO);
-  Y += H_THDR;
-
-  // linhas
-  const cots = d.cots.length ? d.cots : [{nome:'',valor:'',cotacao:'',prazo:''}];
-  cots.forEach((ct,i) => {
-    const val     = parseFloat(ct.valor);
-    const isBest  = vals.length>1 && !isNaN(val) && val===minVal && val>0;
-    const isWorst = vals.length>1 && !isNaN(val) && val===maxV  && val>0;
-    const ry = Y + i*H_TROW;
-
-    // fundo alternado
-    const bg = isBest ? '#f0fdf4' : i%2===0 ? '#fff' : '#f8fafc';
-    cx.fillStyle=bg; cx.fillRect(PAD,ry,CW,H_TROW);
-    // divisor
-    cx.strokeStyle='#e2e8f0'; cx.lineWidth=.5;
-    cx.strokeRect(PAD+.25,ry+.25,CW-.5,H_TROW-.5);
-    // barra lateral colorida
-    if (isBest)  { cx.fillStyle='#22c55e'; cx.fillRect(PAD,ry,4,H_TROW); }
-    if (isWorst) { cx.fillStyle='#f87171'; cx.fillRect(PAD,ry,4,H_TROW); }
-
-    const cy = ry+H_TROW/2;
-    let rx = PAD;
-
-    // rank/badge
-    if (isBest)  txt('★', rx+C_RANK/2, cy, {sz:13,c:'#16a34a',a:'center'});
-    if (isWorst) txt('▲', rx+C_RANK/2, cy, {sz:9, c:'#ef4444',a:'center'});
-    rx += C_RANK;
-
-    // nome
-    const nc = isBest?'#166534':isWorst?'#b91c1c':'#111';
-    txt(ct.nome||'—', rx+6, cy, {sz:10.5,b:isBest,c:nc,a:'left',clip:[rx,ry,C_TRANS-4,H_TROW]});
-    rx += C_TRANS;
-
-    // valor
-    txt(val>0?fmtR(ct.valor):'—', rx+C_VALOR-6, cy, {sz:10.5,b:isBest,c:nc,a:'right'});
-    rx += C_VALOR;
-
-    // barra mini
-    if (maxV>0 && val>0) {
-      const bw = Math.max(4, Math.round((val/maxV)*(C_BAR-14)));
-      const bh=8, bxo=rx+4, byo=cy-bh/2;
-      cx.fillStyle='#e2e8f0'; cx.fillRect(bxo,byo,C_BAR-14,bh);
-      const bc = isBest?'#22c55e':isWorst?'#f87171':'#fbbf24';
-      cx.fillStyle=bc; cx.fillRect(bxo,byo,bw,bh);
+    /* Lado esquerdo */
+    if (!row) {
+      // linha extra (abaixo dos dados da NF) — células vazias
+      cell(0,      ry, WL_LBL, H_ROW, C_LAB, '');
+      cell(WL_LBL, ry, WL_VAL, H_ROW, C_WHT, '');
+    } else if (row.s) {
+      // cabeçalho de seção (cinza escuro, texto centralizado, span 2 cols)
+      cell(0, ry, WL_LBL + WL_VAL, H_ROW, C_SEC, row.s, {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
+    } else {
+      // linha de dado: label + valor
+      cell(0,      ry, WL_LBL, H_ROW, C_LAB, row.l, {b:true, sz:9.5});
+      cell(WL_LBL, ry, WL_VAL, H_ROW, C_WHT, row.v, {sz:10});
     }
-    rx += C_BAR;
 
-    // cotação
-    txt(ct.cotacao||'—', rx+C_COT/2, cy, {sz:9.5,c:'#374151',a:'center'});
-    rx += C_COT;
-
-    // prazo
-    const pc = ct.prazo&&ct.prazo<=3?'#166534':ct.prazo&&ct.prazo>=6?'#b91c1c':'#374151';
-    txt(ct.prazo?ct.prazo+'d':'—', rx+C_PRAZO/2, cy, {sz:9.5,c:pc,a:'center'});
-  });
-
-  // linha de fechamento tabela
-  const tableEnd = Y + cots.length*H_TROW;
-  cx.strokeStyle='#94a3b8'; cx.lineWidth=1;
-  cx.beginPath(); cx.moveTo(PAD,tableEnd); cx.lineTo(PAD+CW,tableEnd); cx.stroke();
-
-  // legenda
-  const legX = PAD, legY = tableEnd+10;
-  if (vals.length>1) {
-    cx.fillStyle='#22c55e'; cx.fillRect(legX,legY,10,10);
-    txt('Melhor preço', legX+14, legY+5, {sz:7.5,c:'#64748b'});
-    cx.fillStyle='#f87171'; cx.fillRect(legX+100,legY,10,10);
-    txt('Preço mais alto', legX+114, legY+5, {sz:7.5,c:'#64748b'});
+    /* Lado direito — células em branco (transportadora preenche) */
+    const rxi = WL_LBL + WL_VAL;
+    cell(rxi,              ry, WR_TRA, H_ROW, C_WHT, '');
+    cell(rxi + WR_TRA,     ry, WR_VAL, H_ROW, C_WHT, '');
+    cell(rxi+WR_TRA+WR_VAL,ry, WR_COT, H_ROW, C_WHT, '');
+    cell(rxi+WR_TRA+WR_VAL+WR_COT,ry,WR_PRZ,H_ROW, C_WHT, '');
   }
 
-  /* ── FOOTER ── */
-  const footY = H_TOT - H_FOOT/2 - 2;
-  cx.strokeStyle='#e2e8f0'; cx.lineWidth=.5;
-  cx.beginPath(); cx.moveTo(PAD,H_TOT-H_FOOT); cx.lineTo(W-PAD,H_TOT-H_FOOT); cx.stroke();
-  txt('Documento gerado pelo Sistema de Transportadoras', PAD, footY, {sz:7.5,c:'#94a3b8'});
-  txt(new Date().toLocaleString('pt-BR'), W-PAD, footY, {sz:7.5,c:'#94a3b8',a:'right'});
+  /* ── Borda externa mais grossa ── */
+  cx.strokeStyle = '#555555';
+  cx.lineWidth   = 1.2;
+  cx.strokeRect(0.6, 0.6, W - 1.2, H - 1.2);
+
+  /* ── Linha divisória esquerda/direita ── */
+  cx.strokeStyle = '#555555';
+  cx.lineWidth   = 1;
+  cx.beginPath();
+  cx.moveTo(WL_LBL + WL_VAL, 0);
+  cx.lineTo(WL_LBL + WL_VAL, H);
+  cx.stroke();
 }
 
-/* ═══════════════════════════════════════════
-   PRINT AREA
-═══════════════════════════════════════════ */
+/* ── PRINT AREA ── */
 function buildPA() {
   const d = dados();
-  const th = (t,extra='')=>`<th style="background:#1e3a8a;color:#fff;padding:6px 10px;font-size:9pt;${extra}">${t}</th>`;
-  const td = (t,extra='')=>`<td style="padding:5px 9px;font-size:9pt;${extra}">${esc(String(t||''))}</td>`;
-  const tl = (t)=>`<td style="padding:5px 9px;font-size:8.5pt;font-weight:700;background:#f1f5f9;white-space:nowrap;">${esc(t)}</td>`;
+  const nL = parseInt(d.linhas)||5;
 
-  const vals = d.cots.map(c=>parseFloat(c.valor)).filter(v=>v>0&&!isNaN(v));
-  const minV = vals.length?Math.min(...vals):0;
+  const thG  = `style="background:#1E7E34;color:#fff;font-weight:700;padding:6px 10px;font-size:10pt;text-align:center;"`;
+  const thGn = `style="background:#1E7E34;color:#fff;font-weight:700;padding:5px 8px;font-size:9pt;text-align:center;"`;
+  const thS  = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9pt;text-align:center;" colspan="2"`;
+  const tdL  = `style="background:#f2f2f2;font-weight:700;padding:4px 8px;font-size:9pt;white-space:nowrap;border:1px solid #aaa;"`;
+  const tdV  = `style="padding:4px 8px;font-size:9pt;border:1px solid #aaa;"`;
+  const tdE  = `style="padding:4px 8px;border:1px solid #aaa;"`;
 
-  const rows = (d.cots.length?d.cots:[{nome:'',valor:'',cotacao:'',prazo:''}]).map(ct=>{
-    const val=parseFloat(ct.valor);
-    const best=vals.length>1&&val===minV&&val>0;
-    const bg=best?'background:#f0fdf4;color:#166534;font-weight:700;':'';
-    return `<tr>
-      <td style="padding:5px 9px;text-align:center;font-size:11pt;">${best?'★':''}</td>
-      ${td(ct.nome,'font-size:10pt;'+bg)}
-      ${td(val>0?fmtR(ct.valor):'—','text-align:right;'+bg)}
-      ${td(ct.cotacao||'—','text-align:center;')}
-      ${td(ct.prazo?ct.prazo+'d':'—','text-align:center;')}
-    </tr>`;
+  const leftRows = [
+    {s:'DADOS DO REMETENTE'},
+    {l:'CNPJ', v:d.cnpjR},{l:'CEP',v:d.cepR},
+    {s:'DADOS DO DESTINATÁRIO'},
+    {l:'CNPJ', v:d.cnpjD},{l:'CEP',v:d.cepD},
+    {s:'DADOS DA NOTA FISCAL'},
+    {l:'VALOR',v:d.vnf?fmtR(d.vnf):''},{l:'VOLUME',v:d.vol},
+    {l:'PESO',v:d.pes},{l:'MEDIDAS',v:d.med},
+    {l:'TOMADOR',v:d.tomador},{l:'MATERIAL',v:d.mat},{l:'COLETA',v:d.col},
+  ];
+  const nRows = Math.max(leftRows.length, nL);
+  while(leftRows.length < nRows) leftRows.push({l:'',v:''});
+
+  const rows = leftRows.map(r => {
+    const left = r.s
+      ? `<td ${thS}>${esc(r.s)}</td>`
+      : `<td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td>`;
+    return `<tr>${left}<td ${tdE}></td><td ${tdE}></td><td ${tdE}></td><td ${tdE}></td></tr>`;
   }).join('');
 
-  document.getElementById('pa').innerHTML=`
-    <style>@page{margin:10mm;size:A4 landscape}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse;width:100%}#pa td,#pa th{border:1px solid #cbd5e1}</style>
+  document.getElementById('pa').innerHTML = `
+    <style>@page{margin:10mm;size:A4 landscape}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse;width:100%}#pa td,#pa th{border:1px solid #aaa}</style>
     <table>
       <thead>
-        <tr><th colspan="5" style="background:#0f172a;color:#fff;padding:10px;font-size:13pt;text-align:left;">
-          🚚 COTAÇÃO DE FRETE — PEDIDO Nº ${esc(d.pedido||'____')}
-          <span style="float:right;font-size:9pt;opacity:.7">${new Date().toLocaleDateString('pt-BR')}</span>
-        </th></tr>
         <tr>
-          <th colspan="5" style="background:#1e3a8a;color:#fff;padding:0;border:none;">
-            <table style="width:100%;border-collapse:collapse;">
-              <tr>
-                <td style="width:50%;padding:8px 12px;border-right:1px solid #334155;">
-                  <b style="color:#93c5fd;font-size:8pt;">REMETENTE</b><br>
-                  <span style="color:#fff;font-size:9pt;">CNPJ: ${esc(d.cnpjR||'—')}</span>
-                  &nbsp;&nbsp;<span style="color:#fff;font-size:9pt;">CEP: ${esc(d.cepR||'—')}</span>
-                </td>
-                <td style="width:50%;padding:8px 12px;">
-                  <b style="color:#93c5fd;font-size:8pt;">DESTINATÁRIO</b><br>
-                  <span style="color:#fff;font-size:9pt;">CNPJ: ${esc(d.cnpjD||'—')}</span>
-                  &nbsp;&nbsp;<span style="color:#fff;font-size:9pt;">CEP: ${esc(d.cepD||'—')}</span>
-                </td>
-              </tr>
-            </table>
-          </th>
-        </tr>
-        <tr><td colspan="5" style="background:#fffbeb;padding:6px 12px;font-size:8.5pt;border:1px solid #fde68a;">
-          <b>NF:</b> ${d.vnf?fmtR(d.vnf):'—'} &nbsp;|&nbsp;
-          <b>Volume:</b> ${esc(d.vol||'—')} &nbsp;|&nbsp;
-          <b>Peso:</b> ${esc(d.pes||'—')} &nbsp;|&nbsp;
-          <b>Medidas:</b> ${esc(d.med||'—')} &nbsp;|&nbsp;
-          <b>Tomador:</b> ${esc(d.tomador)} &nbsp;|&nbsp;
-          <b>Coleta:</b> ${esc(d.col)} &nbsp;|&nbsp;
-          <b>Material:</b> ${esc(d.mat||'—')}
-        </td></tr>
-        <tr>
-          ${th('','width:28px;')}${th('TRANSPORTADORA','text-align:left;')}${th('VALOR','text-align:right;')}${th('COTAÇÃO','text-align:center;')}${th('PRAZO','text-align:center;')}
+          <th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th>
+          <th ${thGn}>TRANSPORTADORA</th><th ${thGn}>VALOR</th><th ${thGn}>COTAÇÃO</th><th ${thGn}>PRAZO</th>
         </tr>
       </thead>
       <tbody>${rows}</tbody>
     </table>`;
 }
 
-/* ═══════════════════════════════════════════
-   EXPORT
-═══════════════════════════════════════════ */
+/* ── EXPORT ── */
 function baixarPNG() {
-  const cv=document.getElementById('cv');
+  const cv = document.getElementById('cv');
   if (!cv.width){toast('Preencha os dados primeiro.','erro');return;}
-  const a=document.createElement('a');
-  a.download=`cotacao-${g('f-pedido')||'frete'}.png`;
-  a.href=cv.toDataURL('image/png'); a.click();
+  const a = document.createElement('a');
+  a.download = `cotacao-${g('f-pedido')||'frete'}.png`;
+  a.href = cv.toDataURL('image/png'); a.click();
   toast('Imagem baixada!','sucesso');
 }
-function gerarPDF(){ buildPA(); setTimeout(()=>window.print(),100); }
+function gerarPDF(){buildPA();setTimeout(()=>window.print(),100);}
 
-/* ═══════════════════════════════════════════
-   UTILS
-═══════════════════════════════════════════ */
-function fmtR(v){ const n=parseFloat(v); if(isNaN(n))return v||''; return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2}); }
-function hoje(){ return new Date().toISOString().slice(0,10); }
-function formatarDataBR(iso){ if(!iso)return ''; const[a,m,d]=iso.split('-'); return `${d}/${m}/${a}`; }
-function uid(){ return Date.now().toString(36)+Math.random().toString(36).slice(2,6); }
-function esc(s){ return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+/* ── UTILS ── */
+function fmtR(v){const n=parseFloat(v);if(isNaN(n))return v||'';return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function hoje(){return new Date().toISOString().slice(0,10);}
+function formatBR(iso){if(!iso)return '';const[a,m,d]=iso.split('-');return `${d}/${m}/${a}`;}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
 function toast(msg,tipo=''){
   const el=document.createElement('div');
-  el.className=`toast ${tipo}`; el.textContent=msg;
+  el.className=`toast ${tipo}`;el.textContent=msg;
   document.getElementById('toasts').appendChild(el);
   setTimeout(()=>{el.style.opacity='0';el.style.transition='opacity .4s';setTimeout(()=>el.remove(),400);},3500);
 }
