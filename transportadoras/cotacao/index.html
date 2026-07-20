@@ -146,7 +146,7 @@
       </div>
     </div>
 
-    <!-- PREVIEW -->
+    <!-- PREVIEW + TABELA DE TRANSPORTADORAS -->
     <div>
       <div class="pstick">
         <div class="card">
@@ -154,12 +154,34 @@
             <span>Pré-visualização — formulário enviado às transportadoras</span>
             <div style="display:flex;gap:8px">
               <button class="btn bs bsm" onclick="baixarPNG()">📷 Baixar PNG</button>
-              <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF</button>
+              <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF completo</button>
             </div>
           </div>
           <div class="cb" style="padding:10px">
             <div class="cscroll"><canvas id="cv"></canvas></div>
           </div>
+        </div>
+      </div>
+
+      <!-- TABELA DE TRANSPORTADORAS (uso interno) -->
+      <div class="card" style="margin-top:14px">
+        <div class="ch">
+          <span>Comparativo de Transportadoras <span style="font-size:.75rem;font-weight:400;color:var(--txl)">(uso interno — não exportado na imagem)</span></span>
+          <button class="btn bo bsm" onclick="addTransRow()">+ Linha</button>
+        </div>
+        <div style="overflow-x:auto">
+          <table style="width:100%;border-collapse:collapse;min-width:500px">
+            <thead>
+              <tr style="background:var(--cic)">
+                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Transportadora</th>
+                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Valor (R$)</th>
+                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Cotação</th>
+                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Prazo</th>
+                <th style="width:36px;border-bottom:1px solid var(--bd)"></th>
+              </tr>
+            </thead>
+            <tbody id="trans-body"></tbody>
+          </table>
         </div>
       </div>
     </div>
@@ -180,6 +202,7 @@ let salvas = [];
 let ghSHA  = null;
 let ghCfg  = null;
 let editandoId = null;
+let transRows  = [];
 
 /* ── INIT ── */
 async function init() {
@@ -187,6 +210,7 @@ async function init() {
   try { salvas = JSON.parse(localStorage.getItem(LS_COT)) || []; } catch { salvas = []; }
   renderSalvas();
   if (ghCfg?.token) await carregarDoGH();
+  for(let i=0;i<5;i++) addTransRow();
   upd();
 }
 
@@ -221,7 +245,7 @@ async function salvarCotacao() {
   const d = dados();
   if (!d.pedido){toast('Informe o Nº do Pedido.','erro');return;}
   const id = editandoId||uid();
-  const obj = {id, data:hoje(), ...d};
+  const obj = {id, data:hoje(), ...d, transRows: transRows.map(r=>({trans:r.trans,valor:r.valor,cotacao:r.cotacao,prazo:r.prazo}))};
   salvas = editandoId ? salvas.map(s=>s.id===id?obj:s) : [obj,...salvas];
   editandoId = id;
   localStorage.setItem(LS_COT,JSON.stringify(salvas));
@@ -237,6 +261,9 @@ function carregarSalva(id) {
   set('f-cnpj-d',s.cnpjD);  set('f-cep-d',s.cepD);
   set('f-vnf',s.vnf); set('f-vol',s.vol); set('f-pes',s.pes);
   set('f-med',s.med); set('f-mat',s.mat); set('f-col',s.col||'SIM');
+  transRows = (s.transRows||[]).map(r=>({id:uid(),trans:r.trans||'',valor:r.valor||'',cotacao:r.cotacao||'',prazo:r.prazo||''}));
+  if(!transRows.length) for(let i=0;i<5;i++) addTransRow();
+  renderTransTable();
   upd();
   toast(`Pedido nº ${s.pedido} carregado.`,'sucesso');
 }
@@ -252,6 +279,8 @@ function novaCotacao() {
   editandoId=null;
   ['f-pedido','f-cnpj-r','f-cep-r','f-cnpj-d','f-cep-d','f-vnf','f-vol','f-pes','f-med','f-mat'].forEach(i=>set(i,''));
   set('f-tomador','REMETENTE'); set('f-col','SIM'); set('f-linhas','5');
+  transRows=[];
+  for(let i=0;i<5;i++) addTransRow();
   upd();
 }
 function renderSalvas() {
@@ -299,6 +328,37 @@ function maskCEP(el){
   let v=el.value.replace(/\D/g,'').slice(0,8);
   if(v.length>5) v=v.replace(/^(\d{5})(\d{0,3})$/,'$1-$2');
   el.value=v;
+}
+
+/* ── TABELA TRANSPORTADORAS ── */
+function addTransRow(data={}) {
+  transRows.push({id:uid(), trans:data.trans||'', valor:data.valor||'', cotacao:data.cotacao||'', prazo:data.prazo||''});
+  renderTransTable();
+}
+function removeTransRow(id) {
+  transRows=transRows.filter(r=>r.id!==id);
+  renderTransTable();
+}
+function updateTransRow(id,field,val) {
+  const r=transRows.find(r=>r.id===id); if(r) r[field]=val;
+}
+function renderTransTable() {
+  const tbody=document.getElementById('trans-body'); if(!tbody) return;
+  const inp = (val,ph,w,field,id,type='text') =>
+    `<input type="${type}" value="${esc(String(val))}" placeholder="${ph}"
+      onchange="updateTransRow('${id}','${field}',this.value)"
+      style="border:1.5px solid var(--bd);border-radius:6px;padding:5px 8px;font-size:.85rem;width:${w};font-family:inherit"/>`;
+  tbody.innerHTML = transRows.length
+    ? transRows.map(r=>`<tr>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.trans,'Nome da transportadora','100%','trans',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.valor,'0.00','110px','valor',r.id,'number')}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.cotacao,'Nº cotação','120px','cotacao',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.prazo,'Ex: 3 dias úteis','140px','prazo',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci);text-align:center">
+          <button class="bg" onclick="removeTransRow('${r.id}')">✕</button>
+        </td>
+      </tr>`).join('')
+    : '<tr><td colspan="5" style="padding:16px;text-align:center;color:var(--txl);font-size:.85rem">Clique em "+ Linha" para adicionar transportadoras.</td></tr>';
 }
 
 /* ── DEBOUNCE ── */
@@ -393,15 +453,18 @@ function draw() {
   cx.strokeRect(.6, .6, W - 1.2, H - 1.2);
 }
 
-/* ── PRINT AREA (só dados do envio) ── */
+/* ── PRINT AREA — parte 1: envio | parte 2: comparativo ── */
 function buildPA() {
   const d = dados();
-  const thG = `style="background:#1E7E34;color:#fff;font-weight:700;padding:8px 12px;font-size:12pt;text-align:center;"`;
-  const thS = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9.5pt;text-align:center;" colspan="2"`;
-  const tdL = `style="background:#f2f2f2;font-weight:700;padding:5px 10px;font-size:9.5pt;white-space:nowrap;border:1px solid #aaa;"`;
-  const tdV = `style="padding:5px 10px;font-size:9.5pt;border:1px solid #aaa;"`;
+  const thG  = `style="background:#1E7E34;color:#fff;font-weight:700;padding:8px 12px;font-size:12pt;text-align:center;"`;
+  const thGn = `style="background:#1E7E34;color:#fff;font-weight:700;padding:5px 8px;font-size:9pt;text-align:center;"`;
+  const thS  = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9.5pt;text-align:center;" colspan="2"`;
+  const tdL  = `style="background:#f2f2f2;font-weight:700;padding:5px 10px;font-size:9.5pt;white-space:nowrap;border:1px solid #aaa;"`;
+  const tdV  = `style="padding:5px 10px;font-size:9.5pt;border:1px solid #aaa;"`;
+  const tdC  = `style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;"`;
+  const tdCc = `style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;text-align:center;"`;
 
-  const leftRows = [
+  const shipRows = [
     {s:'DADOS DO REMETENTE'},
     {l:'CNPJ',v:d.cnpjR},{l:'CEP',v:d.cepR},
     {s:'DADOS DO DESTINATÁRIO'},
@@ -410,18 +473,44 @@ function buildPA() {
     {l:'VALOR',v:d.vnf?fmtR(d.vnf):''},{l:'VOLUME',v:d.vol},
     {l:'PESO',v:d.pes},{l:'MEDIDAS',v:d.med},
     {l:'TOMADOR',v:d.tomador},{l:'MATERIAL',v:d.mat},{l:'COLETA',v:d.col},
-  ];
-
-  const rows = leftRows.map(r =>
-    r.s ? `<tr><td ${thS}>${esc(r.s)}</td></tr>`
-        : `<tr><td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td></tr>`
+  ].map(r => r.s
+    ? `<tr><td ${thS}>${esc(r.s)}</td></tr>`
+    : `<tr><td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td></tr>`
   ).join('');
 
+  const transHtml = transRows.length
+    ? transRows.map(r=>`<tr>
+        <td ${tdC}>${esc(r.trans)}</td>
+        <td ${tdCc}>${r.valor?fmtR(r.valor):''}</td>
+        <td ${tdCc}>${esc(r.cotacao)}</td>
+        <td ${tdCc}>${esc(r.prazo)}</td>
+      </tr>`).join('')
+    : `<tr><td colspan="4" ${tdCc}>—</td></tr>`;
+
   document.getElementById('pa').innerHTML = `
-    <style>@page{margin:15mm;size:A4 portrait}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse;width:60%}#pa td,#pa th{border:1px solid #aaa}</style>
-    <table>
+    <style>
+      @page{margin:15mm;size:A4 portrait}
+      #pa{font-family:Calibri,Arial,sans-serif}
+      #pa table{border-collapse:collapse}
+      #pa td,#pa th{border:1px solid #aaa}
+      .pb{page-break-before:always}
+    </style>
+    <table style="width:60%">
       <thead><tr><th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th></tr></thead>
-      <tbody>${rows}</tbody>
+      <tbody>${shipRows}</tbody>
+    </table>
+    <div class="pb"></div>
+    <table style="width:100%">
+      <thead>
+        <tr><th colspan="4" ${thG}>COMPARATIVO DE TRANSPORTADORAS — PEDIDO Nº ${esc(d.pedido||'____')}</th></tr>
+        <tr>
+          <th ${thGn} style="width:35%">TRANSPORTADORA</th>
+          <th ${thGn} style="width:20%">VALOR</th>
+          <th ${thGn} style="width:20%">COTAÇÃO</th>
+          <th ${thGn} style="width:25%">PRAZO</th>
+        </tr>
+      </thead>
+      <tbody>${transHtml}</tbody>
     </table>`;
 }
 
