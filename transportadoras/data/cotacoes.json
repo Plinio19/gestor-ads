@@ -1,1 +1,27 @@
-[]
+[
+  {
+    "id": "mrtetb9m1et2",
+    "data": "2026-07-20",
+    "pedido": "2689",
+    "tomador": "REMETENTE",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.126.437/0026-00",
+    "cepD": "74605-040",
+    "vnf": "10800",
+    "vol": "80",
+    "pes": "1200",
+    "med": "30x21x24",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "col": "SIM",
+    "cots": [
+      {
+        "id": "mrtdjunvu4qe",
+        "nome": "MAEX - MARDONIO",
+        "valor": "2190",
+        "cotacao": "1265264",
+        "prazo": "4"
+      }
+    ]
+  }
+]
