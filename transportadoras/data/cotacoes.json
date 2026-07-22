@@ -18,9 +18,9 @@
     "transRows": [
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "782",
+        "cotacao": "59103",
+        "prazo": "7"
       },
       {
         "trans": "",
