@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Documentos — NFs e Pedidos</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{--az:#1a56db;--az2:#1e429f;--vd:#059669;--vm:#dc2626;--am:#d97706;--ci:#e5e7eb;--cic:#f9fafb;--bd:#d1d5db;--tx:#111827;--txl:#6b7280;--bg:#f0f4ff}
+    body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+    header{background:linear-gradient(135deg,var(--az2),var(--az));color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+    header h1{font-size:1.18rem;font-weight:700}
+    header p{font-size:.76rem;opacity:.8;margin-top:2px}
+    .ha{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;font-size:.84rem;font-weight:600;transition:all .18s;white-space:nowrap;text-decoration:none}
+    .bp{background:var(--az);color:#fff}.bp:hover{background:var(--az2)}
+    .bs{background:var(--vd);color:#fff}.bs:hover{filter:brightness(.9)}
+    .bo{background:#fff;color:var(--az);border:1.5px solid var(--az)}.bo:hover{background:#eff6ff}
+    .bb{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}.bb:hover{background:rgba(255,255,255,.25)}
+    .bsm{padding:6px 12px;font-size:.8rem}
+    .bvm{background:transparent;color:var(--vm);border:none;cursor:pointer;padding:4px 8px;border-radius:6px;font-size:.8rem;font-weight:600}.bvm:hover{background:#fef2f2}
+    .container{max-width:1400px;margin:0 auto;padding:20px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 1px 5px rgba(0,0,0,.08);overflow:hidden;margin-bottom:14px}
+    .ch{padding:12px 18px;font-size:.88rem;font-weight:700;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;gap:10px;background:var(--cic);flex-wrap:wrap}
+    .cb{padding:16px 18px}
+    .fc{display:flex;flex-direction:column;gap:4px}
+    .fc label{font-size:.7rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.05em}
+    .inp{border:1.5px solid var(--bd);border-radius:8px;padding:8px 11px;font-size:.88rem;font-family:inherit;color:var(--tx);background:#fff;transition:border-color .18s;width:100%}
+    .inp:focus{outline:none;border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .gr2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+    .gr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px}
+    .gr4{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+    @media(max-width:700px){.gr2,.gr3,.gr4{grid-template-columns:1fr 1fr}}
+    @media(max-width:420px){.gr2,.gr3,.gr4{grid-template-columns:1fr}}
+    /* upload area */
+    .upload-area{border:2px dashed var(--bd);border-radius:10px;padding:20px;text-align:center;cursor:pointer;transition:all .18s;background:#fafafa}
+    .upload-area:hover,.upload-area.drag{border-color:var(--az);background:#eff6ff}
+    .upload-area input{display:none}
+    .upload-area .label{font-size:.84rem;color:var(--txl)}
+    .upload-area .ico{font-size:1.6rem;margin-bottom:6px}
+    .upload-area .file-name{font-size:.82rem;font-weight:700;color:var(--az);margin-top:6px}
+    /* empresa tabs */
+    .tabs{display:flex;gap:4px;border-bottom:2px solid var(--ci);margin-bottom:16px}
+    .tab{padding:9px 18px;font-size:.86rem;font-weight:600;cursor:pointer;color:var(--txl);border-bottom:2px solid transparent;margin-bottom:-2px;border-radius:6px 6px 0 0;transition:all .15s}
+    .tab.ativa{color:var(--az);border-color:var(--az);background:#eff6ff}
+    .tab:hover:not(.ativa){background:#f3f4f6}
+    /* empresa badges */
+    .empresa-badge{display:inline-block;padding:2px 10px;border-radius:20px;font-size:.74rem;font-weight:700;text-transform:uppercase}
+    .emp-linklab{background:#dbeafe;color:#1e40af}
+    .emp-halogenn{background:#d1fae5;color:#065f46}
+    .emp-expresslab{background:#ede9fe;color:#5b21b6}
+    /* pesquisa */
+    .search-box{position:relative;max-width:500px}
+    .search-box input{border:1.5px solid var(--bd);border-radius:10px;padding:10px 14px 10px 40px;font-size:.92rem;font-family:inherit;color:var(--tx);background:#fff;width:100%;transition:border-color .18s}
+    .search-box input:focus{outline:none;border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .search-box .ico{position:absolute;left:13px;top:50%;transform:translateY(-50%);color:var(--txl);font-size:1rem}
+    /* lista */
+    .doc-lista{display:flex;flex-direction:column;gap:8px}
+    .doc-item{border:1px solid var(--ci);border-radius:10px;padding:14px 16px;background:#fff;display:flex;align-items:center;gap:14px;flex-wrap:wrap;transition:box-shadow .15s}
+    .doc-item:hover{box-shadow:0 2px 10px rgba(0,0,0,.1)}
+    .doc-info{flex:1;min-width:180px}
+    .doc-num{font-size:.92rem;font-weight:700}
+    .doc-meta{font-size:.74rem;color:var(--txl);margin-top:3px}
+    .doc-files{display:flex;gap:8px;flex-wrap:wrap}
+    .doc-file-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 12px;border-radius:7px;font-size:.78rem;font-weight:600;text-decoration:none;border:1.5px solid;transition:all .15s;cursor:pointer;background:transparent}
+    .doc-file-btn.nf{color:#1e40af;border-color:#93c5fd}.doc-file-btn.nf:hover{background:#dbeafe}
+    .doc-file-btn.fp{color:#065f46;border-color:#6ee7b7}.doc-file-btn.fp:hover{background:#d1fae5}
+    .doc-file-btn.falta{color:var(--txl);border-color:var(--bd);opacity:.6;cursor:default}
+    .doc-acoes{display:flex;gap:6px;flex-shrink:0}
+    /* agrupamento */
+    .grupo-header{font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.06em;padding:8px 4px 4px;border-bottom:1px solid var(--ci);margin-bottom:6px;margin-top:14px}
+    .grupo-header:first-child{margin-top:0}
+    /* modal */
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.45);z-index:100;display:flex;align-items:center;justify-content:center;padding:16px}
+    .modal{background:#fff;border-radius:14px;width:100%;max-width:560px;box-shadow:0 8px 40px rgba(0,0,0,.2);max-height:90vh;overflow-y:auto}
+    .modal-h{padding:16px 20px;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;font-weight:700;font-size:1rem;position:sticky;top:0;background:#fff;z-index:2}
+    .modal-b{padding:20px;display:flex;flex-direction:column;gap:14px}
+    .modal-f{padding:14px 20px;border-top:1px solid var(--ci);display:flex;gap:10px;justify-content:flex-end;position:sticky;bottom:0;background:#fff}
+    .toasts{position:fixed;bottom:22px;right:22px;z-index:999;display:flex;flex-direction:column;gap:8px}
+    .toast{background:#1f2937;color:#fff;padding:10px 16px;border-radius:9px;font-size:.85rem;box-shadow:0 4px 14px rgba(0,0,0,.2);max-width:340px;animation:su .2s ease}
+    .toast.sucesso{background:#065f46}.toast.erro{background:#991b1b}
+    @keyframes su{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+    .empty{text-align:center;padding:40px 20px;color:var(--txl);font-size:.9rem}
+    .spinner{display:inline-block;width:16px;height:16px;border:2px solid #ccc;border-top-color:var(--az);border-radius:50%;animation:spin .6s linear infinite;vertical-align:middle;margin-left:6px}
+    @keyframes spin{to{transform:rotate(360deg)}}
+  </style>
+</head>
+<body>
+
+<header>
+  <div>
+    <h1>📁 Documentos — NFs e Pedidos</h1>
+    <p>Notas fiscais assinadas e folhas de pedido por empresa, ano e mês</p>
+  </div>
+  <div class="ha">
+    <button class="btn bb bsm" onclick="abrirModal()">+ Adicionar documento</button>
+    <a href="../cotacao/" class="btn bb bsm">📋 Cotação</a>
+    <a href="../" class="btn bb bsm">← Transportadoras</a>
+  </div>
+</header>
+
+<div class="container">
+
+  <!-- PESQUISA -->
+  <div class="card">
+    <div class="ch">🔍 Pesquisar por Nº do Pedido ou Nº da NF</div>
+    <div class="cb">
+      <div class="search-box">
+        <span class="ico">🔍</span>
+        <input type="text" id="inp-busca" placeholder="Digite o número do pedido ou da NF..." oninput="renderLista()"/>
+      </div>
+      <div id="resultado-busca" style="margin-top:14px"></div>
+    </div>
+  </div>
+
+  <!-- TABS EMPRESAS -->
+  <div class="card">
+    <div class="ch">
+      <div class="tabs" style="border:none;margin:0">
+        <div class="tab ativa" onclick="setEmpresa('todas',this)">Todas</div>
+        <div class="tab" onclick="setEmpresa('linklab',this)">Linklab</div>
+        <div class="tab" onclick="setEmpresa('halogenn',this)">Halogenn</div>
+        <div class="tab" onclick="setEmpresa('expresslab',this)">Expresslab</div>
+      </div>
+      <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+        <select class="inp" id="sel-ano" onchange="renderLista()" style="width:auto;padding:6px 10px;font-size:.84rem"></select>
+        <select class="inp" id="sel-mes" onchange="renderLista()" style="width:auto;padding:6px 10px;font-size:.84rem">
+          <option value="">Todos os meses</option>
+          <option value="1">Janeiro</option><option value="2">Fevereiro</option><option value="3">Março</option>
+          <option value="4">Abril</option><option value="5">Maio</option><option value="6">Junho</option>
+          <option value="7">Julho</option><option value="8">Agosto</option><option value="9">Setembro</option>
+          <option value="10">Outubro</option><option value="11">Novembro</option><option value="12">Dezembro</option>
+        </select>
+      </div>
+    </div>
+    <div class="cb">
+      <div id="doc-lista" class="doc-lista"><div class="empty">Nenhum documento cadastrado.</div></div>
+    </div>
+  </div>
+
+</div>
+
+<!-- MODAL ADD/EDIT -->
+<div class="overlay" id="modal" style="display:none" onclick="if(event.target===this)fecharModal()">
+  <div class="modal">
+    <div class="modal-h">
+      <span id="modal-titulo">Adicionar Documento</span>
+      <button onclick="fecharModal()" style="background:none;border:none;cursor:pointer;font-size:1.2rem;color:var(--txl)">✕</button>
+    </div>
+    <div class="modal-b">
+      <div class="gr2">
+        <div class="fc">
+          <label>Empresa *</label>
+          <select class="inp" id="m-empresa">
+            <option value="linklab">Linklab</option>
+            <option value="halogenn">Halogenn</option>
+            <option value="expresslab">Expresslab</option>
+          </select>
+        </div>
+        <div class="fc">
+          <label>Mês/Ano *</label>
+          <input class="inp" type="month" id="m-periodo"/>
+        </div>
+      </div>
+      <div class="gr2">
+        <div class="fc">
+          <label>Nº do Pedido</label>
+          <input class="inp" type="text" id="m-pedido" placeholder="Ex: 2689"/>
+        </div>
+        <div class="fc">
+          <label>Nº da NF</label>
+          <input class="inp" type="text" id="m-nf" placeholder="Ex: 1234"/>
+        </div>
+      </div>
+      <div class="fc">
+        <label>NF Assinada (PDF)</label>
+        <div class="upload-area" id="drop-nf" onclick="document.getElementById('f-nf').click()" ondragover="dragOver(event,'drop-nf')" ondragleave="dragLeave('drop-nf')" ondrop="dropFile(event,'nf')">
+          <input type="file" id="f-nf" accept=".pdf,application/pdf" onchange="fileSelected(this,'nf')"/>
+          <div class="ico">📄</div>
+          <div class="label">Clique ou arraste o PDF da NF assinada</div>
+          <div class="file-name" id="nome-nf"></div>
+        </div>
+      </div>
+      <div class="fc">
+        <label>Folha de Pedido (PDF)</label>
+        <div class="upload-area" id="drop-fp" onclick="document.getElementById('f-fp').click()" ondragover="dragOver(event,'drop-fp')" ondragleave="dragLeave('drop-fp')" ondrop="dropFile(event,'fp')">
+          <input type="file" id="f-fp" accept=".pdf,application/pdf" onchange="fileSelected(this,'fp')"/>
+          <div class="ico">📋</div>
+          <div class="label">Clique ou arraste a folha de pedido</div>
+          <div class="file-name" id="nome-fp"></div>
+        </div>
+      </div>
+      <div class="fc">
+        <label>Observação</label>
+        <input class="inp" type="text" id="m-obs" placeholder="Opcional"/>
+      </div>
+    </div>
+    <div class="modal-f">
+      <button class="btn bo bsm" onclick="fecharModal()">Cancelar</button>
+      <button class="btn bs" id="btn-salvar" onclick="salvarDoc()">💾 Salvar</button>
+    </div>
+  </div>
+</div>
+
+<div class="toasts" id="toasts"></div>
+
+<script>
+const LS_CFG = 'github_config_v1';
+const LS_DOC = 'documentos_v1';
+const GH_PATH_DOC = 'transportadoras/data/documentos.json';
+const GH_PATH_FILES = 'transportadoras/documentos/files/';
+
+const MESES = ['','Janeiro','Fevereiro','Março','Abril','Maio','Junho','Julho','Agosto','Setembro','Outubro','Novembro','Dezembro'];
+const EMPRESAS = {linklab:{label:'Linklab',cls:'emp-linklab'},halogenn:{label:'Halogenn',cls:'emp-halogenn'},expresslab:{label:'Expresslab',cls:'emp-expresslab'}};
+
+let docs = [];
+let ghSHA = null;
+let ghCfg = null;
+let editandoId = null;
+let empresaFiltro = 'todas';
+let arquivos = {nf:null, fp:null}; // {name, base64}
+
+async function init() {
+  try { ghCfg = JSON.parse(localStorage.getItem(LS_CFG)); } catch { ghCfg=null; }
+  try { docs = JSON.parse(localStorage.getItem(LS_DOC)) || []; } catch { docs=[]; }
+  preencherAnos();
+  if (ghCfg?.token) await carregarDoGH();
+  renderLista();
+}
+
+function preencherAnos() {
+  const sel = document.getElementById('sel-ano');
+  const anos = new Set(docs.map(d=>d.ano));
+  const anoAtual = new Date().getFullYear();
+  anos.add(anoAtual); anos.add(anoAtual-1);
+  const sorted = [...anos].sort((a,b)=>b-a);
+  sel.innerHTML = `<option value="">Todos os anos</option>` + sorted.map(a=>`<option value="${a}">${a}</option>`).join('');
+}
+
+/* ── GITHUB ── */
+function ghH(){return{'Authorization':`token ${ghCfg.token}`,'Content-Type':'application/json','Accept':'application/vnd.github.v3+json'};}
+function ghUrl(p){return `https://api.github.com/repos/${ghCfg.owner}/${ghCfg.repo}/contents/${p}`;}
+function b64e(s){return btoa(unescape(encodeURIComponent(s)));}
+function b64d(s){return decodeURIComponent(escape(atob(s)));}
+
+async function carregarDoGH() {
+  try {
+    const r = await fetch(ghUrl(GH_PATH_DOC),{headers:ghH()});
+    if(r.status===404){
+      await fetch(ghUrl(GH_PATH_DOC),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Criar documentos.json',content:b64e('[]'),branch:ghCfg.branch||'main'})});
+      return;
+    }
+    if(!r.ok) return;
+    const data = await r.json();
+    ghSHA = data.sha;
+    docs = JSON.parse(b64d(data.content.replace(/\n/g,'')));
+    localStorage.setItem(LS_DOC,JSON.stringify(docs));
+    preencherAnos();
+    renderLista();
+  } catch(e){}
+}
+
+async function syncGH() {
+  if(!ghCfg?.token) return;
+  try {
+    const r = await fetch(ghUrl(GH_PATH_DOC),{method:'PUT',headers:ghH(),body:JSON.stringify({
+      message:`Documentos ${new Date().toLocaleString('pt-BR')}`,
+      content:b64e(JSON.stringify(docs,null,2)),
+      branch:ghCfg.branch||'main',
+      ...(ghSHA?{sha:ghSHA}:{})
+    })});
+    if(r.ok) ghSHA=(await r.json()).content.sha;
+  } catch(e){}
+}
+
+async function uploadArquivo(base64, path) {
+  if(!ghCfg?.token) return null;
+  // Verificar se já existe para pegar SHA
+  let sha = null;
+  try {
+    const chk = await fetch(ghUrl(path),{headers:ghH()});
+    if(chk.ok) sha=(await chk.json()).sha;
+  } catch{}
+  const body = {message:`Upload ${path}`,content:base64,branch:ghCfg.branch||'main'};
+  if(sha) body.sha=sha;
+  const r = await fetch(ghUrl(path),{method:'PUT',headers:ghH(),body:JSON.stringify(body)});
+  if(!r.ok) return null;
+  return `https://raw.githubusercontent.com/${ghCfg.owner}/${ghCfg.repo}/${ghCfg.branch||'main'}/${path}`;
+}
+
+/* ── MODAL ── */
+function abrirModal(id=null) {
+  editandoId=id;
+  arquivos={nf:null,fp:null};
+  document.getElementById('nome-nf').textContent='';
+  document.getElementById('nome-fp').textContent='';
+  document.getElementById('f-nf').value='';
+  document.getElementById('f-fp').value='';
+
+  if(id) {
+    const d=docs.find(x=>x.id===id);
+    document.getElementById('modal-titulo').textContent='Editar Documento';
+    document.getElementById('m-empresa').value=d.empresa;
+    document.getElementById('m-periodo').value=`${d.ano}-${String(d.mes).padStart(2,'0')}`;
+    document.getElementById('m-pedido').value=d.numPedido||'';
+    document.getElementById('m-nf').value=d.numNF||'';
+    document.getElementById('m-obs').value=d.obs||'';
+    if(d.nfAssinadaNome) document.getElementById('nome-nf').textContent=d.nfAssinadaNome;
+    if(d.folhaPedidoNome) document.getElementById('nome-fp').textContent=d.folhaPedidoNome;
+  } else {
+    document.getElementById('modal-titulo').textContent='Adicionar Documento';
+    document.getElementById('m-empresa').value='linklab';
+    const hoje=new Date(); document.getElementById('m-periodo').value=`${hoje.getFullYear()}-${String(hoje.getMonth()+1).padStart(2,'0')}`;
+    document.getElementById('m-pedido').value='';
+    document.getElementById('m-nf').value='';
+    document.getElementById('m-obs').value='';
+  }
+  document.getElementById('modal').style.display='flex';
+}
+
+function fecharModal() {
+  document.getElementById('modal').style.display='none';
+  editandoId=null;
+  arquivos={nf:null,fp:null};
+}
+
+/* ── UPLOAD ÁREA ── */
+function dragOver(e,id){e.preventDefault();document.getElementById(id).classList.add('drag');}
+function dragLeave(id){document.getElementById(id).classList.remove('drag');}
+function dropFile(e,tipo){
+  e.preventDefault();
+  dragLeave('drop-'+tipo);
+  const file=e.dataTransfer?.files?.[0];
+  if(file) processarArquivo(file,tipo);
+}
+function fileSelected(input,tipo){if(input.files?.[0]) processarArquivo(input.files[0],tipo);}
+function processarArquivo(file,tipo){
+  if(file.type!=='application/pdf'&&!file.name.endsWith('.pdf')){toast('Apenas PDFs são aceitos.','erro');return;}
+  const reader=new FileReader();
+  reader.onload=()=>{
+    const base64=reader.result.split(',')[1];
+    arquivos[tipo]={name:file.name,base64};
+    document.getElementById('nome-'+tipo).textContent=file.name;
+  };
+  reader.readAsDataURL(file);
+}
+
+/* ── SALVAR ── */
+async function salvarDoc() {
+  const empresa=document.getElementById('m-empresa').value;
+  const periodo=document.getElementById('m-periodo').value;
+  const numPedido=document.getElementById('m-pedido').value.trim();
+  const numNF=document.getElementById('m-nf').value.trim();
+  const obs=document.getElementById('m-obs').value.trim();
+
+  if(!periodo){toast('Selecione o mês/ano.','erro');return;}
+  if(!numPedido&&!numNF){toast('Informe o Nº do Pedido ou da NF.','erro');return;}
+
+  const [ano,mes]=periodo.split('-').map(Number);
+  const id=editandoId||uid();
+  const btn=document.getElementById('btn-salvar');
+  btn.disabled=true;
+  btn.innerHTML='Salvando...<span class="spinner"></span>';
+
+  let obj = editandoId ? {...docs.find(x=>x.id===editandoId)} : {id, criadoEm:hoje()};
+  obj = {...obj, empresa, ano, mes, numPedido, numNF, obs};
+
+  // Upload arquivos novos
+  if(arquivos.nf) {
+    const path=`${GH_PATH_FILES}${id}_nf_${Date.now()}.pdf`;
+    const url=await uploadArquivo(arquivos.nf.base64, path);
+    if(url){obj.nfAssinada=path;obj.nfAssinadaUrl=url;obj.nfAssinadaNome=arquivos.nf.name;}
+    else toast('Erro ao enviar NF assinada. Salvo sem o arquivo.','erro');
+  }
+  if(arquivos.fp) {
+    const path=`${GH_PATH_FILES}${id}_fp_${Date.now()}.pdf`;
+    const url=await uploadArquivo(arquivos.fp.base64, path);
+    if(url){obj.folhaPedido=path;obj.folhaPedidoUrl=url;obj.folhaPedidoNome=arquivos.fp.name;}
+    else toast('Erro ao enviar folha de pedido. Salvo sem o arquivo.','erro');
+  }
+
+  docs = editandoId ? docs.map(d=>d.id===id?obj:d) : [obj,...docs];
+  localStorage.setItem(LS_DOC,JSON.stringify(docs));
+  preencherAnos();
+  renderLista();
+  fecharModal();
+  toast('Documento salvo!','sucesso');
+  await syncGH();
+
+  btn.disabled=false;
+  btn.innerHTML='💾 Salvar';
+}
+
+/* ── EXCLUIR ── */
+async function excluirDoc(id) {
+  if(!confirm('Excluir este documento?')) return;
+  docs=docs.filter(d=>d.id!==id);
+  localStorage.setItem(LS_DOC,JSON.stringify(docs));
+  preencherAnos();
+  renderLista();
+  await syncGH();
+  toast('Documento excluído.','sucesso');
+}
+
+/* ── RENDER ── */
+function setEmpresa(emp,el) {
+  empresaFiltro=emp;
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('ativa'));
+  el.classList.add('ativa');
+  renderLista();
+}
+
+function renderLista() {
+  const busca=document.getElementById('inp-busca').value.trim().toLowerCase();
+  const anoFiltro=document.getElementById('sel-ano').value;
+  const mesFiltro=document.getElementById('sel-mes').value;
+
+  // modo pesquisa
+  if(busca) {
+    const res=docs.filter(d=>
+      (d.numPedido||'').toLowerCase().includes(busca)||
+      (d.numNF||'').toLowerCase().includes(busca)
+    );
+    const el=document.getElementById('resultado-busca');
+    el.innerHTML=res.length
+      ? res.map(d=>renderDocCard(d,true)).join('')
+      : `<div class="empty">Nenhum resultado para "<strong>${esc(busca)}</strong>".</div>`;
+    document.getElementById('doc-lista').innerHTML='<div class="empty" style="color:var(--az)">Pesquisa ativa — limpe o campo acima para ver a lista completa.</div>';
+    return;
+  }
+  document.getElementById('resultado-busca').innerHTML='';
+
+  let filtrados=docs;
+  if(empresaFiltro!=='todas') filtrados=filtrados.filter(d=>d.empresa===empresaFiltro);
+  if(anoFiltro) filtrados=filtrados.filter(d=>String(d.ano)===anoFiltro);
+  if(mesFiltro) filtrados=filtrados.filter(d=>String(d.mes)===mesFiltro);
+
+  // agrupar por ano/mês
+  const grupos={};
+  filtrados.forEach(d=>{
+    const k=`${d.ano}-${String(d.mes).padStart(2,'0')}`;
+    if(!grupos[k]) grupos[k]={ano:d.ano,mes:d.mes,docs:[]};
+    grupos[k].docs.push(d);
+  });
+  const keys=Object.keys(grupos).sort((a,b)=>b.localeCompare(a));
+
+  const el=document.getElementById('doc-lista');
+  if(!keys.length){el.innerHTML='<div class="empty">Nenhum documento encontrado.</div>';return;}
+  el.innerHTML=keys.map(k=>{
+    const g=grupos[k];
+    return `<div class="grupo-header">${MESES[g.mes]} ${g.ano}</div>${g.docs.map(d=>renderDocCard(d,false)).join('')}`;
+  }).join('');
+}
+
+function renderDocCard(d,showEmpresa) {
+  const emp=EMPRESAS[d.empresa]||{label:d.empresa,cls:''};
+  const temNF=!!(d.nfAssinadaUrl||d.nfAssinada);
+  const temFP=!!(d.folhaPedidoUrl||d.folhaPedido);
+  const urlNF=d.nfAssinadaUrl||(d.nfAssinada?`https://raw.githubusercontent.com/${ghCfg?.owner||'Plinio19'}/${ghCfg?.repo||'gestor-ads'}/${ghCfg?.branch||'main'}/${d.nfAssinada}`:'');
+  const urlFP=d.folhaPedidoUrl||(d.folhaPedido?`https://raw.githubusercontent.com/${ghCfg?.owner||'Plinio19'}/${ghCfg?.repo||'gestor-ads'}/${ghCfg?.branch||'main'}/${d.folhaPedido}`:'');
+
+  return `<div class="doc-item">
+    <div class="doc-info">
+      ${showEmpresa?`<div style="margin-bottom:4px"><span class="empresa-badge ${emp.cls}">${emp.label}</span> <span style="font-size:.74rem;color:var(--txl)">${MESES[d.mes]} ${d.ano}</span></div>`:''}
+      <div class="doc-num">
+        ${d.numPedido?`Pedido nº <strong>${esc(d.numPedido)}</strong>`:''}
+        ${d.numPedido&&d.numNF?' · ':''}
+        ${d.numNF?`NF nº <strong>${esc(d.numNF)}</strong>`:''}
+        ${!showEmpresa?`<span class="empresa-badge ${emp.cls}" style="margin-left:8px;font-size:.7rem">${emp.label}</span>`:''}
+      </div>
+      ${d.obs?`<div class="doc-meta">${esc(d.obs)}</div>`:''}
+    </div>
+    <div class="doc-files">
+      ${temNF
+        ?`<a href="${urlNF}" target="_blank" class="doc-file-btn nf">📄 NF Assinada</a>`
+        :`<span class="doc-file-btn falta">📄 Sem NF</span>`}
+      ${temFP
+        ?`<a href="${urlFP}" target="_blank" class="doc-file-btn fp">📋 Folha de Pedido</a>`
+        :`<span class="doc-file-btn falta">📋 Sem Folha</span>`}
+    </div>
+    <div class="doc-acoes">
+      <button class="btn bo bsm" onclick="abrirModal('${d.id}')">✏️</button>
+      <button class="bvm" onclick="excluirDoc('${d.id}')">✕</button>
+    </div>
+  </div>`;
+}
+
+/* ── UTILS ── */
+function hoje(){return new Date().toISOString().slice(0,10);}
+function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
+function esc(s){return(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+function toast(msg,tipo=''){
+  const el=document.createElement('div');
+  el.className=`toast ${tipo}`;el.textContent=msg;
+  document.getElementById('toasts').appendChild(el);
+  setTimeout(()=>{el.style.opacity='0';el.style.transition='opacity .4s';setTimeout(()=>el.remove(),400);},3500);
+}
+
+init();
+</script>
+</body>
+</html>

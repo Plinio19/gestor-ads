@@ -6,49 +6,67 @@
   <title>Cotação de Frete</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
-    :root{--az:#1a56db;--az2:#1e429f;--vd:#059669;--vm:#dc2626;--am:#d97706;--ci:#e5e7eb;--cic:#f3f4f6;--bd:#d1d5db;--tx:#111827;--txl:#6b7280}
-    body{font-family:'Segoe UI',sans-serif;background:#f0f4ff;color:var(--tx);min-height:100vh}
-    header{background:linear-gradient(135deg,var(--az2),var(--az));color:#fff;padding:15px 28px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.15)}
-    header h1{font-size:1.25rem;font-weight:700}
-    header p{font-size:.78rem;opacity:.8;margin-top:2px}
+    :root{--az:#1a56db;--az2:#1e429f;--vd:#059669;--vm:#dc2626;--am:#d97706;--ci:#e5e7eb;--cic:#f9fafb;--bd:#d1d5db;--tx:#111827;--txl:#6b7280;--bg:#f0f4ff}
+    body{font-family:'Segoe UI',sans-serif;background:var(--bg);color:var(--tx);min-height:100vh}
+    header{background:linear-gradient(135deg,var(--az2),var(--az));color:#fff;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+    header h1{font-size:1.18rem;font-weight:700}
+    header p{font-size:.76rem;opacity:.8;margin-top:2px}
     .ha{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
-    .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 18px;border:none;border-radius:8px;cursor:pointer;font-size:.87rem;font-weight:600;transition:all .2s;white-space:nowrap;text-decoration:none}
+    .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border:none;border-radius:8px;cursor:pointer;font-size:.84rem;font-weight:600;transition:all .18s;white-space:nowrap;text-decoration:none}
     .bp{background:var(--az);color:#fff}.bp:hover{background:var(--az2)}
     .bs{background:var(--vd);color:#fff}.bs:hover{filter:brightness(.9)}
     .bo{background:#fff;color:var(--az);border:1.5px solid var(--az)}.bo:hover{background:#eff6ff}
     .bb{background:rgba(255,255,255,.15);color:#fff;border:1px solid rgba(255,255,255,.3)}.bb:hover{background:rgba(255,255,255,.25)}
-    .bam{background:transparent;color:var(--am);border:1.5px solid var(--am);border-radius:7px;cursor:pointer;padding:5px 10px;font-size:.8rem;font-weight:600}.bam:hover{background:#fffbeb}
-    .bg{background:transparent;color:var(--vm);border:none;cursor:pointer;padding:5px 8px;border-radius:6px;font-weight:700;font-size:.82rem}.bg:hover{background:#fef2f2}
+    .bam{background:transparent;color:var(--am);border:1.5px solid var(--am);border-radius:7px;cursor:pointer;padding:4px 10px;font-size:.78rem;font-weight:600}.bam:hover{background:#fffbeb}
+    .bg{background:transparent;color:var(--txl);border:none;cursor:pointer;padding:4px 8px;border-radius:6px;font-weight:700;font-size:.82rem}.bg:hover{background:#f3f4f6;color:var(--vm)}
     .bsm{padding:6px 12px;font-size:.8rem}
-    .container{max-width:1520px;margin:0 auto;padding:20px}
-    .lay{display:grid;grid-template-columns:430px 1fr;gap:20px;align-items:start}
-    @media(max-width:1100px){.lay{grid-template-columns:1fr}}
-    .card{background:#fff;border-radius:12px;box-shadow:0 1px 4px rgba(0,0,0,.07);margin-bottom:14px;overflow:hidden}
+    .container{max-width:1560px;margin:0 auto;padding:16px 20px}
+    .lay{display:grid;grid-template-columns:420px 1fr;gap:18px;align-items:start}
+    @media(max-width:1060px){.lay{grid-template-columns:1fr}}
+    .card{background:#fff;border-radius:12px;box-shadow:0 1px 5px rgba(0,0,0,.08);margin-bottom:12px;overflow:hidden}
     .card:last-child{margin-bottom:0}
-    .ch{padding:12px 18px;font-size:.88rem;font-weight:700;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;background:var(--cic)}
-    .cb{padding:15px 18px;display:flex;flex-direction:column;gap:10px}
+    .ch{padding:11px 16px;font-size:.86rem;font-weight:700;border-bottom:1px solid var(--ci);display:flex;align-items:center;justify-content:space-between;background:var(--cic);gap:8px}
+    .cb{padding:14px 16px;display:flex;flex-direction:column;gap:10px}
     .fc{display:flex;flex-direction:column;gap:4px}
-    .fc label{font-size:.72rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em}
-    .fc input,.fc select{border:1.5px solid var(--bd);border-radius:8px;padding:8px 11px;font-size:.88rem;font-family:inherit;color:var(--tx);background:#fff;transition:border-color .2s;width:100%}
-    .fc input:focus,.fc select:focus{outline:none;border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .fc label{font-size:.7rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.05em}
+    .inp{border:1.5px solid var(--bd);border-radius:8px;padding:8px 11px;font-size:.88rem;font-family:inherit;color:var(--tx);background:#fff;transition:border-color .18s;width:100%}
+    .inp:focus{outline:none;border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .inp-prefix{display:flex;align-items:center;border:1.5px solid var(--bd);border-radius:8px;overflow:hidden;background:#fff;transition:border-color .18s}
+    .inp-prefix:focus-within{border-color:var(--az);box-shadow:0 0 0 3px rgba(26,86,219,.1)}
+    .inp-prefix .pre{padding:0 9px;font-size:.82rem;font-weight:700;color:var(--txl);background:#f9fafb;border-right:1px solid var(--bd);height:100%;display:flex;align-items:center;white-space:nowrap;user-select:none}
+    .inp-prefix .suf{padding:0 9px;font-size:.82rem;font-weight:700;color:var(--txl);background:#f9fafb;border-left:1px solid var(--bd);height:100%;display:flex;align-items:center;white-space:nowrap;user-select:none}
+    .inp-prefix input{border:none;outline:none;padding:8px 10px;font-size:.88rem;font-family:inherit;color:var(--tx);background:transparent;flex:1;min-width:0}
     .gr2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
     .gr3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px}
-    .cg{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px}
+    .cg{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:12px}
     @media(max-width:600px){.gr2,.gr3,.cg{grid-template-columns:1fr}}
-    .painel-salvas{background:#fff;border-bottom:1px solid var(--ci);padding:12px 20px}
-    .salvas-lista{display:flex;flex-direction:column;gap:6px;margin-top:10px}
-    .salva-item{display:flex;align-items:center;gap:8px;background:var(--cic);border-radius:8px;padding:8px 12px;flex-wrap:wrap}
+    .painel-salvas{background:#fff;border-bottom:2px solid var(--ci);padding:11px 20px}
+    .salvas-lista{display:flex;flex-direction:column;gap:5px;margin-top:8px}
+    .salva-item{display:flex;align-items:center;gap:8px;background:var(--cic);border:1px solid var(--ci);border-radius:8px;padding:7px 12px;flex-wrap:wrap}
     .salva-info{flex:1;min-width:0}
-    .salva-pedido{font-weight:700;font-size:.85rem}
-    .salva-meta{font-size:.75rem;color:var(--txl);margin-top:1px}
+    .salva-pedido{font-weight:700;font-size:.84rem}
+    .salva-meta{font-size:.73rem;color:var(--txl);margin-top:2px}
     .salva-acoes{display:flex;gap:6px;flex-shrink:0}
-    .pstick{position:sticky;top:16px}
-    .cscroll{overflow-x:auto;background:#e8edf2;border-radius:8px;padding:12px;min-height:160px}
+    .pstick{position:sticky;top:14px}
+    .cscroll{overflow-x:auto;background:#e8edf2;border-radius:8px;padding:10px;min-height:100px}
     canvas{display:block;box-shadow:0 2px 12px rgba(0,0,0,.18)}
-    .toasts{position:fixed;bottom:24px;right:24px;z-index:999;display:flex;flex-direction:column;gap:8px}
-    .toast{background:#1f2937;color:#fff;padding:11px 17px;border-radius:9px;font-size:.86rem;box-shadow:0 4px 14px rgba(0,0,0,.2);max-width:340px;animation:su .2s ease}
+    .toasts{position:fixed;bottom:22px;right:22px;z-index:999;display:flex;flex-direction:column;gap:8px}
+    .toast{background:#1f2937;color:#fff;padding:10px 16px;border-radius:9px;font-size:.85rem;box-shadow:0 4px 14px rgba(0,0,0,.2);max-width:340px;animation:su .2s ease}
     .toast.sucesso{background:#065f46}.toast.erro{background:#991b1b}
     @keyframes su{from{transform:translateY(10px);opacity:0}to{transform:translateY(0);opacity:1}}
+    /* estado badge */
+    .uf-badge{display:inline-flex;align-items:center;gap:6px;background:#eff6ff;color:var(--az);border:1px solid #bfdbfe;border-radius:20px;padding:3px 10px;font-size:.78rem;font-weight:700;margin-top:4px}
+    .uf-badge.loading{background:#f9fafb;color:var(--txl);border-color:var(--bd)}
+    .uf-badge.erro{background:#fef2f2;color:var(--vm);border-color:#fecaca}
+    /* painel transportadoras disponíveis */
+    #painel-trans-disp{display:none;margin-top:12px}
+    .trans-disp-grid{display:flex;flex-direction:column;gap:5px;margin-top:8px;max-height:220px;overflow-y:auto}
+    .trans-disp-item{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:7px 12px;border:1px solid var(--ci);border-radius:8px;background:#fff;cursor:pointer;transition:all .15s}
+    .trans-disp-item:hover{border-color:var(--az);background:#eff6ff}
+    .trans-disp-item.sel{border-color:var(--vd);background:#f0fdf4}
+    .trans-disp-nome{font-size:.84rem;font-weight:600}
+    .trans-disp-info{font-size:.73rem;color:var(--txl);margin-top:1px}
+    .trans-check{width:16px;height:16px;accent-color:var(--vd);flex-shrink:0}
     @media print{body>header,body>.container,body>.painel-salvas,.toasts{display:none!important}#pa{display:block!important}}
     #pa{display:none}
   </style>
@@ -61,6 +79,7 @@
     <p>Preencha os dados e gere o formulário para enviar às transportadoras</p>
   </div>
   <div class="ha">
+    <a href="../documentos/" class="btn bb bsm">📁 Documentos</a>
     <a href="../" class="btn bb bsm">← Transportadoras</a>
   </div>
 </header>
@@ -68,7 +87,7 @@
 <!-- PAINEL SALVAS -->
 <div class="painel-salvas" id="painel-salvas" style="display:none">
   <div style="display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap">
-    <div style="font-size:.9rem;font-weight:700">💾 Cotações Salvas <span id="qtd-salvas" style="font-size:.75rem;color:var(--txl);font-weight:400"></span></div>
+    <div style="font-size:.88rem;font-weight:700">💾 Cotações Salvas <span id="qtd-salvas" style="font-size:.74rem;color:var(--txl);font-weight:400"></span></div>
     <button class="btn bo bsm" onclick="novaCotacao()">+ Nova</button>
   </div>
   <div class="salvas-lista" id="salvas-lista"></div>
@@ -83,9 +102,9 @@
         <div class="ch">Identificação</div>
         <div class="cb">
           <div class="gr2">
-            <div class="fc"><label>Nº do Pedido</label><input type="text" id="f-pedido" placeholder="Ex: 2689" oninput="upd()"/></div>
+            <div class="fc"><label>Nº do Pedido</label><input class="inp" type="text" id="f-pedido" placeholder="Ex: 2689" oninput="upd()"/></div>
             <div class="fc"><label>Linhas em branco</label>
-              <select id="f-linhas" onchange="upd()">
+              <select class="inp" id="f-linhas" onchange="upd()">
                 <option value="3">3 transportadoras</option>
                 <option value="4">4 transportadoras</option>
                 <option value="5" selected>5 transportadoras</option>
@@ -95,7 +114,7 @@
             </div>
           </div>
           <div class="fc"><label>Tomador do Frete</label>
-            <select id="f-tomador" onchange="upd()">
+            <select class="inp" id="f-tomador" onchange="upd()">
               <option value="REMETENTE">Remetente</option>
               <option value="DESTINATÁRIO">Destinatário</option>
               <option value="TERCEIRO">Terceiro</option>
@@ -108,16 +127,31 @@
         <div class="card">
           <div class="ch">Remetente</div>
           <div class="cb">
-            <div class="fc"><label>CNPJ</label><input type="text" id="f-cnpj-r" placeholder="00.000.000/0000-00" maxlength="18" oninput="maskCNPJ(this);upd()"/></div>
-            <div class="fc"><label>CEP</label><input type="text" id="f-cep-r" placeholder="00000-000" maxlength="9" oninput="maskCEP(this);upd()"/></div>
+            <div class="fc"><label>CNPJ</label><input class="inp" type="text" id="f-cnpj-r" placeholder="00.000.000/0000-00" maxlength="18" oninput="maskCNPJ(this);upd()"/></div>
+            <div class="fc"><label>CEP</label><input class="inp" type="text" id="f-cep-r" placeholder="00000-000" maxlength="9" oninput="maskCEP(this,'r');upd()"/></div>
           </div>
         </div>
         <div class="card">
           <div class="ch">Destinatário</div>
           <div class="cb">
-            <div class="fc"><label>CNPJ</label><input type="text" id="f-cnpj-d" placeholder="00.000.000/0000-00" maxlength="18" oninput="maskCNPJ(this);upd()"/></div>
-            <div class="fc"><label>CEP</label><input type="text" id="f-cep-d" placeholder="00000-000" maxlength="9" oninput="maskCEP(this);upd()"/></div>
+            <div class="fc"><label>CNPJ</label><input class="inp" type="text" id="f-cnpj-d" placeholder="00.000.000/0000-00" maxlength="18" oninput="maskCNPJ(this);upd()"/></div>
+            <div class="fc">
+              <label>CEP</label>
+              <input class="inp" type="text" id="f-cep-d" placeholder="00000-000" maxlength="9" oninput="maskCEP(this,'d');upd()"/>
+              <div id="uf-status"></div>
+            </div>
           </div>
+        </div>
+      </div>
+
+      <!-- Transportadoras disponíveis para o estado -->
+      <div id="painel-trans-disp" class="card">
+        <div class="ch">
+          <span>🚚 Transportadoras disponíveis para <strong id="uf-nome">—</strong></span>
+          <button class="btn bo bsm" onclick="adicionarSelecionadas()">+ Adicionar selecionadas</button>
+        </div>
+        <div class="cb" style="padding:10px 14px">
+          <div id="trans-disp-lista" class="trans-disp-grid"></div>
         </div>
       </div>
 
@@ -125,17 +159,29 @@
         <div class="ch">Nota Fiscal</div>
         <div class="cb">
           <div class="gr3">
-            <div class="fc"><label>Valor NF (R$)</label><input type="number" id="f-vnf" placeholder="10800.00" step="0.01" oninput="upd()"/></div>
-            <div class="fc"><label>Volume</label><input type="text" id="f-vol" placeholder="80 CAIXAS" oninput="upd()"/></div>
-            <div class="fc"><label>Peso</label><input type="text" id="f-pes" placeholder="1.200 KG" oninput="upd()"/></div>
+            <div class="fc">
+              <label>Valor NF</label>
+              <div class="inp-prefix">
+                <span class="pre">R$</span>
+                <input type="text" id="f-vnf" placeholder="10.800,00" oninput="maskMoeda(this);upd()"/>
+              </div>
+            </div>
+            <div class="fc"><label>Volume</label><input class="inp" type="text" id="f-vol" placeholder="80 CAIXAS" oninput="upd()"/></div>
+            <div class="fc">
+              <label>Peso</label>
+              <div class="inp-prefix">
+                <input type="text" id="f-pes" placeholder="1.200" oninput="upd()"/>
+                <span class="suf">KG</span>
+              </div>
+            </div>
           </div>
           <div class="gr2">
-            <div class="fc"><label>Medidas (C × L × A cm)</label><input type="text" id="f-med" placeholder="30 X 21 X 24" oninput="upd()"/></div>
-            <div class="fc"><label>Material</label><input type="text" id="f-mat" placeholder="QUÍMICO ONU: 1170 RISCO: 3" oninput="upd()"/></div>
+            <div class="fc"><label>Medidas (C × L × A cm)</label><input class="inp" type="text" id="f-med" placeholder="30 X 21 X 24" oninput="upd()"/></div>
+            <div class="fc"><label>Material</label><input class="inp" type="text" id="f-mat" placeholder="QUÍMICO ONU: 1170 RISCO: 3" oninput="upd()"/></div>
           </div>
-          <div class="fc" style="max-width:160px">
+          <div class="fc" style="max-width:150px">
             <label>Coleta</label>
-            <select id="f-col" onchange="upd()"><option value="SIM">SIM</option><option value="NÃO">NÃO</option></select>
+            <select class="inp" id="f-col" onchange="upd()"><option value="SIM">SIM</option><option value="NÃO">NÃO</option></select>
           </div>
         </div>
       </div>
@@ -146,42 +192,42 @@
       </div>
     </div>
 
-    <!-- PREVIEW + TABELA DE TRANSPORTADORAS -->
+    <!-- PREVIEW + TABELA -->
     <div>
       <div class="pstick">
         <div class="card">
           <div class="ch">
-            <span>Pré-visualização — formulário enviado às transportadoras</span>
+            <span>Pré-visualização</span>
             <div style="display:flex;gap:8px">
-              <button class="btn bs bsm" onclick="baixarPNG()">📷 Baixar PNG</button>
-              <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF completo</button>
+              <button class="btn bs bsm" onclick="baixarPNG()">📷 PNG</button>
+              <button class="btn bo bsm" onclick="gerarPDF()">🖨️ PDF</button>
             </div>
           </div>
           <div class="cb" style="padding:10px">
             <div class="cscroll"><canvas id="cv"></canvas></div>
           </div>
         </div>
-      </div>
 
-      <!-- TABELA DE TRANSPORTADORAS (uso interno) -->
-      <div class="card" style="margin-top:14px">
-        <div class="ch">
-          <span>Comparativo de Transportadoras <span style="font-size:.75rem;font-weight:400;color:var(--txl)">(uso interno — não exportado na imagem)</span></span>
-          <button class="btn bo bsm" onclick="addTransRow()">+ Linha</button>
-        </div>
-        <div style="overflow-x:auto">
-          <table style="width:100%;border-collapse:collapse;min-width:500px">
-            <thead>
-              <tr style="background:var(--cic)">
-                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Transportadora</th>
-                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Valor (R$)</th>
-                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Cotação</th>
-                <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.78rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Prazo</th>
-                <th style="width:36px;border-bottom:1px solid var(--bd)"></th>
-              </tr>
-            </thead>
-            <tbody id="trans-body"></tbody>
-          </table>
+        <!-- TABELA COMPARATIVO -->
+        <div class="card">
+          <div class="ch">
+            <span>Comparativo de Transportadoras <span style="font-size:.72rem;font-weight:400;color:var(--txl)">(interno — não aparece na imagem)</span></span>
+            <button class="btn bo bsm" onclick="addTransRow()">+ Linha</button>
+          </div>
+          <div style="overflow-x:auto">
+            <table style="width:100%;border-collapse:collapse;min-width:480px">
+              <thead>
+                <tr style="background:var(--cic)">
+                  <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.74rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Transportadora</th>
+                  <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.74rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Valor (R$)</th>
+                  <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.74rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Cotação</th>
+                  <th style="padding:8px 10px;text-align:left;border-bottom:1px solid var(--bd);font-size:.74rem;font-weight:700;color:var(--txl);text-transform:uppercase;letter-spacing:.04em">Prazo</th>
+                  <th style="width:34px;border-bottom:1px solid var(--bd)"></th>
+                </tr>
+              </thead>
+              <tbody id="trans-body"></tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
@@ -203,11 +249,15 @@ let ghSHA  = null;
 let ghCfg  = null;
 let editandoId = null;
 let transRows  = [];
+let ufAtual    = null;       // UF detectada do CEP do destinatário
+let todasTrans = [];         // transportadoras carregadas do localStorage
+let transDispSel = new Set(); // ids das selecionadas no painel
 
 /* ── INIT ── */
 async function init() {
   try { ghCfg = JSON.parse(localStorage.getItem(LS_CFG)); } catch { ghCfg = null; }
   try { salvas = JSON.parse(localStorage.getItem(LS_COT)) || []; } catch { salvas = []; }
+  try { todasTrans = JSON.parse(localStorage.getItem(LS_T)) || []; } catch { todasTrans = []; }
   renderSalvas();
   if (ghCfg?.token) await carregarDoGH();
   for(let i=0;i<5;i++) addTransRow();
@@ -223,7 +273,10 @@ function b64d(s) { return decodeURIComponent(escape(atob(s))); }
 async function carregarDoGH() {
   try {
     const r = await fetch(ghUrl(GH_PATH),{headers:ghH()});
-    if (r.status===404){await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Criar cotacoes.json',content:b64e('[]'),branch:ghCfg.branch||'main'})});return;}
+    if (r.status===404){
+      await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({message:'Criar cotacoes.json',content:b64e('[]'),branch:ghCfg.branch||'main'})});
+      return;
+    }
     if (!r.ok) return;
     const data = await r.json();
     ghSHA = data.sha;
@@ -235,9 +288,81 @@ async function carregarDoGH() {
 async function syncGH() {
   if (!ghCfg?.token) return;
   try {
-    const r = await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({message:`Cotações ${new Date().toLocaleString('pt-BR')}`,content:b64e(JSON.stringify(salvas,null,2)),branch:ghCfg.branch||'main',...(ghSHA?{sha:ghSHA}:{})})});
+    const r = await fetch(ghUrl(GH_PATH),{method:'PUT',headers:ghH(),body:JSON.stringify({
+      message:`Cotações ${new Date().toLocaleString('pt-BR')}`,
+      content:b64e(JSON.stringify(salvas,null,2)),
+      branch:ghCfg.branch||'main',
+      ...(ghSHA?{sha:ghSHA}:{})
+    })});
     if (r.ok) ghSHA=(await r.json()).content.sha;
   } catch(e){}
+}
+
+/* ── CEP → UF ── */
+let cepTimer = null;
+async function buscarCEP(cep) {
+  const el = document.getElementById('uf-status');
+  el.innerHTML = `<span class="uf-badge loading">🔍 Consultando...</span>`;
+  try {
+    const r = await fetch(`https://viacep.com.br/ws/${cep}/json/`);
+    const d = await r.json();
+    if (d.erro) { el.innerHTML=`<span class="uf-badge erro">CEP não encontrado</span>`; ufAtual=null; renderTransDisp(); return; }
+    ufAtual = d.uf;
+    el.innerHTML = `<span class="uf-badge">📍 ${d.localidade} — ${d.uf}</span>`;
+    renderTransDisp();
+  } catch {
+    el.innerHTML = `<span class="uf-badge erro">Erro ao consultar CEP</span>`;
+    ufAtual = null;
+    renderTransDisp();
+  }
+}
+
+function renderTransDisp() {
+  const painel = document.getElementById('painel-trans-disp');
+  const lista  = document.getElementById('trans-disp-lista');
+  const ufNome = document.getElementById('uf-nome');
+  if (!ufAtual) { painel.style.display='none'; return; }
+
+  const ativas = todasTrans.filter(t => t.status==='ativo' && Array.isArray(t.estados) && t.estados.includes(ufAtual));
+  if (!ativas.length) { painel.style.display='none'; return; }
+
+  painel.style.display = 'block';
+  ufNome.textContent = ufAtual;
+
+  lista.innerHTML = ativas.map(t => {
+    const sel = transDispSel.has(t.id);
+    const jaAdicionada = transRows.some(r => r.trans === t.nome);
+    return `<div class="trans-disp-item${sel?' sel':''}" onclick="toggleTransDisp('${t.id}','${esc(t.nome)}')">
+      <div>
+        <div class="trans-disp-nome">${esc(t.nome)}</div>
+        <div class="trans-disp-info">${t.quimico==='sim'?'✅ Transporta químicos · ':t.quimico==='consultar'?'⚠️ Químicos: consultar · ':''}${t.telefone||''}</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:8px">
+        ${jaAdicionada?'<span style="font-size:.72rem;color:var(--vd);font-weight:600">✓ na tabela</span>':''}
+        <input type="checkbox" class="trans-check" ${sel?'checked':''} onclick="event.stopPropagation();toggleTransDisp('${t.id}','${esc(t.nome)}')"/>
+      </div>
+    </div>`;
+  }).join('');
+}
+
+function toggleTransDisp(id, nome) {
+  if (transDispSel.has(id)) transDispSel.delete(id);
+  else transDispSel.add(id);
+  renderTransDisp();
+}
+
+function adicionarSelecionadas() {
+  if (!transDispSel.size) { toast('Selecione ao menos uma transportadora.','erro'); return; }
+  const nomes = [...transDispSel].map(id => {
+    const t = todasTrans.find(x=>x.id===id); return t?.nome||'';
+  }).filter(Boolean);
+  nomes.forEach(nome => {
+    if (!transRows.some(r=>r.trans===nome)) addTransRow({trans:nome});
+  });
+  transDispSel.clear();
+  renderTransDisp();
+  renderTransTable();
+  toast(`${nomes.length} transportadora(s) adicionada(s) à tabela.`,'sucesso');
 }
 
 /* ── SALVAR / CARREGAR ── */
@@ -279,6 +404,9 @@ function novaCotacao() {
   editandoId=null;
   ['f-pedido','f-cnpj-r','f-cep-r','f-cnpj-d','f-cep-d','f-vnf','f-vol','f-pes','f-med','f-mat'].forEach(i=>set(i,''));
   set('f-tomador','REMETENTE'); set('f-col','SIM'); set('f-linhas','5');
+  document.getElementById('uf-status').innerHTML='';
+  ufAtual=null; transDispSel.clear();
+  renderTransDisp();
   transRows=[];
   for(let i=0;i<5;i++) addTransRow();
   upd();
@@ -292,7 +420,7 @@ function renderSalvas() {
   q.textContent=`(${salvas.length})`;
   l.innerHTML=salvas.map(s=>`<div class="salva-item">
     <div class="salva-info">
-      <div class="salva-pedido">Pedido nº ${esc(s.pedido||'—')} <span style="font-weight:400;color:var(--txl);font-size:.76rem;margin-left:6px">${s.data?formatBR(s.data):''}</span></div>
+      <div class="salva-pedido">Pedido nº ${esc(s.pedido||'—')} <span style="font-weight:400;color:var(--txl);font-size:.75rem;margin-left:6px">${s.data?formatBR(s.data):''}</span></div>
       <div class="salva-meta">Dest: ${esc(s.cnpjD||'—')} · CEP ${esc(s.cepD||'—')}</div>
     </div>
     <div class="salva-acoes">
@@ -304,11 +432,13 @@ function renderSalvas() {
 
 /* ── DADOS ── */
 function dados() {
+  const pes = g('f-pes');
+  const pesVal = pes ? pes.replace(/\s*kg\s*$/i,'').trim() : '';
   return {
     pedido:  g('f-pedido'),  tomador: g('f-tomador'), linhas: g('f-linhas'),
     cnpjR:   g('f-cnpj-r'), cepR:    g('f-cep-r'),
     cnpjD:   g('f-cnpj-d'), cepD:    g('f-cep-d'),
-    vnf:     g('f-vnf'),    vol:     g('f-vol'),   pes: g('f-pes'),
+    vnf:     g('f-vnf'),    vol:     g('f-vol'),   pes: pesVal,
     med:     g('f-med'),    mat:     g('f-mat'),   col: g('f-col'),
   };
 }
@@ -324,10 +454,20 @@ function maskCNPJ(el){
   else if(v.length>2) v=v.replace(/^(\d{2})(\d{0,3})$/,'$1.$2');
   el.value=v;
 }
-function maskCEP(el){
+function maskCEP(el, lado) {
   let v=el.value.replace(/\D/g,'').slice(0,8);
   if(v.length>5) v=v.replace(/^(\d{5})(\d{0,3})$/,'$1-$2');
   el.value=v;
+  if (lado==='d' && v.replace('-','').length===8) {
+    clearTimeout(cepTimer);
+    cepTimer = setTimeout(()=>buscarCEP(v.replace('-','')), 400);
+  }
+}
+function maskMoeda(el) {
+  let v = el.value.replace(/\D/g,'');
+  if (!v) { el.value=''; return; }
+  v = (parseInt(v,10)/100).toFixed(2);
+  el.value = parseFloat(v).toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});
 }
 
 /* ── TABELA TRANSPORTADORAS ── */
@@ -347,13 +487,13 @@ function renderTransTable() {
   const inp = (val,ph,w,field,id,type='text') =>
     `<input type="${type}" value="${esc(String(val))}" placeholder="${ph}"
       onchange="updateTransRow('${id}','${field}',this.value)"
-      style="border:1.5px solid var(--bd);border-radius:6px;padding:5px 8px;font-size:.85rem;width:${w};font-family:inherit"/>`;
+      style="border:1.5px solid var(--bd);border-radius:6px;padding:5px 8px;font-size:.84rem;width:${w};font-family:inherit;color:var(--tx)"/>`;
   tbody.innerHTML = transRows.length
-    ? transRows.map(r=>`<tr>
+    ? transRows.map(r=>`<tr style="transition:background .15s" onmouseenter="this.style.background='#f9fafb'" onmouseleave="this.style.background=''">
         <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.trans,'Nome da transportadora','100%','trans',r.id)}</td>
-        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.valor,'0.00','110px','valor',r.id,'number')}</td>
-        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.cotacao,'Nº cotação','120px','cotacao',r.id)}</td>
-        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.prazo,'Ex: 3 dias úteis','140px','prazo',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.valor,'0,00','110px','valor',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.cotacao,'Nº cotação','115px','cotacao',r.id)}</td>
+        <td style="padding:5px 8px;border-bottom:1px solid var(--ci)">${inp(r.prazo,'Ex: 3 dias úteis','130px','prazo',r.id)}</td>
         <td style="padding:5px 8px;border-bottom:1px solid var(--ci);text-align:center">
           <button class="bg" onclick="removeTransRow('${r.id}')">✕</button>
         </td>
@@ -365,22 +505,16 @@ function renderTransTable() {
 let tmr=null;
 function upd(){clearTimeout(tmr);tmr=setTimeout(()=>{draw();buildPA();},120);}
 
-/* ══════════════════════════════════════════
-   CANVAS — apenas dados do envio (lado esquerdo)
-   A tabela de comparação fica só no sistema
-══════════════════════════════════════════ */
+/* ── CANVAS ── */
 function draw() {
   const d  = dados();
   const cv = document.getElementById('cv');
   const cx = cv.getContext('2d');
-  const SC = 2; // 2× resolução
+  const SC = 2;
+  const WL_LBL=140, WL_VAL=380, W=WL_LBL+WL_VAL, H_HDR=38, H_ROW=26;
 
-  /* ── Dimensões ── */
-  const WL_LBL = 140;  // coluna de labels
-  const WL_VAL = 380;  // coluna de valores
-  const W      = WL_LBL + WL_VAL; // 520
-  const H_HDR  = 38;
-  const H_ROW  = 26;
+  const pesExib = d.pes ? d.pes+' KG' : '';
+  const vnfExib = d.vnf ? 'R$ '+d.vnf : '';
 
   const rows = [
     {s:'DADOS DO REMETENTE'},
@@ -390,9 +524,9 @@ function draw() {
     {l:'CNPJ', v: d.cnpjD},
     {l:'CEP',  v: d.cepD},
     {s:'DADOS DA NOTA FISCAL'},
-    {l:'VALOR',    v: d.vnf ? fmtR(d.vnf) : ''},
+    {l:'VALOR',    v: vnfExib},
     {l:'VOLUME',   v: d.vol},
-    {l:'PESO',     v: d.pes},
+    {l:'PESO',     v: pesExib},
     {l:'MEDIDAS',  v: d.med},
     {l:'TOMADOR',  v: d.tomador},
     {l:'MATERIAL', v: d.mat},
@@ -400,137 +534,83 @@ function draw() {
   ];
 
   const H = H_HDR + rows.length * H_ROW;
+  cv.width=W*SC; cv.height=H*SC; cv.style.width=W+'px'; cv.style.height=H+'px';
+  cx.scale(SC,SC);
+  cx.fillStyle='#ffffff'; cx.fillRect(0,0,W,H);
 
-  cv.width  = W * SC;
-  cv.height = H * SC;
-  cv.style.width  = W + 'px';
-  cv.style.height = H + 'px';
-  cx.scale(SC, SC);
-
-  cx.fillStyle = '#ffffff';
-  cx.fillRect(0, 0, W, H);
-
-  const C_GRN = '#1E7E34';
-  const C_SEC = '#595959';
-  const C_LAB = '#F2F2F2';
-  const C_WHT = '#FFFFFF';
-  const C_BRD = '#AAAAAA';
-
-  const cell = (x, y, w, h, bg, texto, opts = {}) => {
-    cx.fillStyle = bg; cx.fillRect(x, y, w, h);
-    cx.strokeStyle = C_BRD; cx.lineWidth = 0.5;
-    cx.strokeRect(x + .25, y + .25, w - .5, h - .5);
-    if (!texto && texto !== 0) return;
-    cx.save();
-    cx.beginPath(); cx.rect(x + 3, y + 2, w - 6, h - 4); cx.clip();
-    cx.font = `${opts.b?'bold ':''}${opts.sz||10}px Calibri, Arial, sans-serif`;
-    cx.fillStyle = opts.c || '#111';
-    cx.textBaseline = 'middle';
-    cx.textAlign = opts.a || 'left';
-    const tx = opts.a==='center' ? x+w/2 : opts.a==='right' ? x+w-6 : x+6;
-    cx.fillText(String(texto), tx, y + h / 2);
-    cx.restore();
+  const C_GRN='#1E7E34',C_SEC='#595959',C_LAB='#F2F2F2',C_WHT='#FFFFFF',C_BRD='#AAAAAA';
+  const cell=(x,y,w,h,bg,texto,opts={})=>{
+    cx.fillStyle=bg; cx.fillRect(x,y,w,h);
+    cx.strokeStyle=C_BRD; cx.lineWidth=0.5;
+    cx.strokeRect(x+.25,y+.25,w-.5,h-.5);
+    if(!texto&&texto!==0)return;
+    cx.save(); cx.beginPath(); cx.rect(x+3,y+2,w-6,h-4); cx.clip();
+    cx.font=`${opts.b?'bold ':''}${opts.sz||10}px Calibri,Arial,sans-serif`;
+    cx.fillStyle=opts.c||'#111'; cx.textBaseline='middle';
+    cx.textAlign=opts.a||'left';
+    const tx=opts.a==='center'?x+w/2:opts.a==='right'?x+w-6:x+6;
+    cx.fillText(String(texto),tx,y+h/2); cx.restore();
   };
 
-  /* ── Cabeçalho ── */
-  cell(0, 0, W, H_HDR, C_GRN,
-    `COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido || '____'}`,
-    {b:true, sz:13, a:'center', c:'#FFFFFF'});
-
-  /* ── Linhas de dados ── */
-  rows.forEach((row, i) => {
-    const ry = H_HDR + i * H_ROW;
-    if (row.s) {
-      cell(0, ry, W, H_ROW, C_SEC, row.s, {b:true, sz:9.5, a:'center', c:'#FFFFFF'});
-    } else {
-      cell(0,       ry, WL_LBL, H_ROW, C_LAB, row.l, {b:true, sz:9.5});
-      cell(WL_LBL,  ry, WL_VAL, H_ROW, C_WHT, row.v, {sz:10});
-    }
+  cell(0,0,W,H_HDR,C_GRN,`COTAÇÃO DE FRETE DO PEDIDO Nº ${d.pedido||'____'}`,{b:true,sz:13,a:'center',c:'#FFFFFF'});
+  rows.forEach((row,i)=>{
+    const ry=H_HDR+i*H_ROW;
+    if(row.s) cell(0,ry,W,H_ROW,C_SEC,row.s,{b:true,sz:9.5,a:'center',c:'#FFFFFF'});
+    else { cell(0,ry,WL_LBL,H_ROW,C_LAB,row.l,{b:true,sz:9.5}); cell(WL_LBL,ry,WL_VAL,H_ROW,C_WHT,row.v,{sz:10}); }
   });
-
-  /* ── Borda externa ── */
-  cx.strokeStyle = '#555'; cx.lineWidth = 1.2;
-  cx.strokeRect(.6, .6, W - 1.2, H - 1.2);
+  cx.strokeStyle='#555'; cx.lineWidth=1.2; cx.strokeRect(.6,.6,W-1.2,H-1.2);
 }
 
-/* ── PRINT AREA — parte 1: envio | parte 2: comparativo ── */
+/* ── PDF PRINT ── */
 function buildPA() {
   const d = dados();
-  const thG  = `style="background:#1E7E34;color:#fff;font-weight:700;padding:8px 12px;font-size:12pt;text-align:center;"`;
-  const thGn = `style="background:#1E7E34;color:#fff;font-weight:700;padding:5px 8px;font-size:9pt;text-align:center;"`;
-  const thS  = `style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9.5pt;text-align:center;" colspan="2"`;
-  const tdL  = `style="background:#f2f2f2;font-weight:700;padding:5px 10px;font-size:9.5pt;white-space:nowrap;border:1px solid #aaa;"`;
-  const tdV  = `style="padding:5px 10px;font-size:9.5pt;border:1px solid #aaa;"`;
-  const tdC  = `style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;"`;
-  const tdCc = `style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;text-align:center;"`;
+  const pesExib = d.pes ? d.pes+' KG' : '';
+  const vnfExib = d.vnf ? 'R$ '+d.vnf : '';
+  const thG=`style="background:#1E7E34;color:#fff;font-weight:700;padding:8px 12px;font-size:12pt;text-align:center;"`;
+  const thGn=`style="background:#1E7E34;color:#fff;font-weight:700;padding:5px 8px;font-size:9pt;text-align:center;"`;
+  const thS=`style="background:#595959;color:#fff;font-weight:700;padding:5px 10px;font-size:9.5pt;text-align:center;" colspan="2"`;
+  const tdL=`style="background:#f2f2f2;font-weight:700;padding:5px 10px;font-size:9.5pt;white-space:nowrap;border:1px solid #aaa;"`;
+  const tdV=`style="padding:5px 10px;font-size:9.5pt;border:1px solid #aaa;"`;
+  const tdC=`style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;"`;
+  const tdCc=`style="padding:5px 8px;font-size:9pt;border:1px solid #aaa;text-align:center;"`;
 
-  const shipRows = [
-    {s:'DADOS DO REMETENTE'},
-    {l:'CNPJ',v:d.cnpjR},{l:'CEP',v:d.cepR},
-    {s:'DADOS DO DESTINATÁRIO'},
-    {l:'CNPJ',v:d.cnpjD},{l:'CEP',v:d.cepD},
+  const shipRows=[
+    {s:'DADOS DO REMETENTE'},{l:'CNPJ',v:d.cnpjR},{l:'CEP',v:d.cepR},
+    {s:'DADOS DO DESTINATÁRIO'},{l:'CNPJ',v:d.cnpjD},{l:'CEP',v:d.cepD},
     {s:'DADOS DA NOTA FISCAL'},
-    {l:'VALOR',v:d.vnf?fmtR(d.vnf):''},{l:'VOLUME',v:d.vol},
-    {l:'PESO',v:d.pes},{l:'MEDIDAS',v:d.med},
-    {l:'TOMADOR',v:d.tomador},{l:'MATERIAL',v:d.mat},{l:'COLETA',v:d.col},
-  ].map(r => r.s
-    ? `<tr><td ${thS}>${esc(r.s)}</td></tr>`
-    : `<tr><td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td></tr>`
-  ).join('');
+    {l:'VALOR',v:vnfExib},{l:'VOLUME',v:d.vol},{l:'PESO',v:pesExib},
+    {l:'MEDIDAS',v:d.med},{l:'TOMADOR',v:d.tomador},{l:'MATERIAL',v:d.mat},{l:'COLETA',v:d.col},
+  ].map(r=>r.s?`<tr><td ${thS}>${esc(r.s)}</td></tr>`:`<tr><td ${tdL}>${esc(r.l||'')}</td><td ${tdV}>${esc(r.v||'')}</td></tr>`).join('');
 
-  const transHtml = transRows.length
-    ? transRows.map(r=>`<tr>
-        <td ${tdC}>${esc(r.trans)}</td>
-        <td ${tdCc}>${r.valor?fmtR(r.valor):''}</td>
-        <td ${tdCc}>${esc(r.cotacao)}</td>
-        <td ${tdCc}>${esc(r.prazo)}</td>
-      </tr>`).join('')
-    : `<tr><td colspan="4" ${tdCc}>—</td></tr>`;
+  const transHtml=transRows.length
+    ?transRows.map(r=>`<tr><td ${tdC}>${esc(r.trans)}</td><td ${tdCc}>${r.valor?'R$ '+r.valor:''}</td><td ${tdCc}>${esc(r.cotacao)}</td><td ${tdCc}>${esc(r.prazo)}</td></tr>`).join('')
+    :`<tr><td colspan="4" ${tdCc}>—</td></tr>`;
 
-  document.getElementById('pa').innerHTML = `
-    <style>
-      @page{margin:15mm;size:A4 portrait}
-      #pa{font-family:Calibri,Arial,sans-serif}
-      #pa table{border-collapse:collapse}
-      #pa td,#pa th{border:1px solid #aaa}
-      .pb{page-break-before:always}
-    </style>
-    <table style="width:60%">
-      <thead><tr><th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th></tr></thead>
-      <tbody>${shipRows}</tbody>
-    </table>
+  document.getElementById('pa').innerHTML=`
+    <style>@page{margin:15mm;size:A4 portrait}#pa{font-family:Calibri,Arial,sans-serif}#pa table{border-collapse:collapse}#pa td,#pa th{border:1px solid #aaa}.pb{page-break-before:always}</style>
+    <table style="width:60%"><thead><tr><th colspan="2" ${thG}>COTAÇÃO DE FRETE DO PEDIDO Nº ${esc(d.pedido||'____')}</th></tr></thead><tbody>${shipRows}</tbody></table>
     <div class="pb"></div>
-    <table style="width:100%">
-      <thead>
-        <tr><th colspan="4" ${thG}>COMPARATIVO DE TRANSPORTADORAS — PEDIDO Nº ${esc(d.pedido||'____')}</th></tr>
-        <tr>
-          <th ${thGn} style="width:35%">TRANSPORTADORA</th>
-          <th ${thGn} style="width:20%">VALOR</th>
-          <th ${thGn} style="width:20%">COTAÇÃO</th>
-          <th ${thGn} style="width:25%">PRAZO</th>
-        </tr>
-      </thead>
-      <tbody>${transHtml}</tbody>
-    </table>`;
+    <table style="width:100%"><thead><tr><th colspan="4" ${thG}>COMPARATIVO DE TRANSPORTADORAS — PEDIDO Nº ${esc(d.pedido||'____')}</th></tr>
+    <tr><th ${thGn} style="width:35%">TRANSPORTADORA</th><th ${thGn} style="width:20%">VALOR</th><th ${thGn} style="width:20%">COTAÇÃO</th><th ${thGn} style="width:25%">PRAZO</th></tr></thead>
+    <tbody>${transHtml}</tbody></table>`;
 }
 
 /* ── EXPORT ── */
 function baixarPNG() {
-  const cv = document.getElementById('cv');
-  if (!cv.width){toast('Preencha os dados primeiro.','erro');return;}
-  const a = document.createElement('a');
-  a.download = `cotacao-${g('f-pedido')||'frete'}.png`;
-  a.href = cv.toDataURL('image/png'); a.click();
+  const cv=document.getElementById('cv');
+  if(!cv.width){toast('Preencha os dados primeiro.','erro');return;}
+  const a=document.createElement('a');
+  a.download=`cotacao-${g('f-pedido')||'frete'}.png`;
+  a.href=cv.toDataURL('image/png'); a.click();
   toast('Imagem baixada!','sucesso');
 }
 function gerarPDF(){buildPA();setTimeout(()=>window.print(),100);}
 
 /* ── UTILS ── */
-function fmtR(v){const n=parseFloat(v);if(isNaN(n))return v||'';return 'R$ '+n.toLocaleString('pt-BR',{minimumFractionDigits:2,maximumFractionDigits:2});}
 function hoje(){return new Date().toISOString().slice(0,10);}
 function formatBR(iso){if(!iso)return '';const[a,m,d]=iso.split('-');return `${d}/${m}/${a}`;}
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2,6);}
-function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+function esc(s){return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
 function toast(msg,tipo=''){
   const el=document.createElement('div');
   el.className=`toast ${tipo}`;el.textContent=msg;
