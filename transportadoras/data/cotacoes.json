@@ -49,9 +49,9 @@
     "transRows": [
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "258,00",
+        "cotacao": "1266660 ",
+        "prazo": "10"
       },
       {
         "trans": "TODOBRASIL TRANSPORTES",
@@ -67,8 +67,8 @@
       },
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "307,95",
+        "cotacao": "200069",
         "prazo": ""
       }
     ]
