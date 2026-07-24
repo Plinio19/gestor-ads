@@ -81,7 +81,7 @@
   },
   {
     "id": "mrxi45z3459r",
-    "data": "2026-07-23",
+    "data": "2026-07-24",
     "pedido": "2686",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -107,24 +107,6 @@
         "valor": "1029,78",
         "cotacao": "218646",
         "prazo": "4"
-      },
-      {
-        "trans": "ZANOTELLI",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "EXPRESSO LEOMAR LTDA",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
       }
     ]
   },
