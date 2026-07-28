@@ -165,15 +165,9 @@
     "col": "SIM",
     "transRows": [
       {
-        "trans": "RODOVIARIO WILSON",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "1189,27",
+        "cotacao": "59466",
         "prazo": ""
       }
     ]
