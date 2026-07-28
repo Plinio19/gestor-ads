@@ -5,43 +5,25 @@
     "pedido": "2758 à 2769",
     "tomador": "REMETENTE",
     "linhas": "3",
-    "cnpjR": "",
-    "cepR": "",
-    "cnpjD": "",
-    "cepD": "",
-    "vnf": "",
-    "vol": "",
-    "pes": "",
-    "med": "",
-    "mat": "",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "16.888.315/0001-57",
+    "cepD": "39100-000",
+    "vnf": "10.798,27",
+    "vol": "53",
+    "pes": "289",
+    "med": "36 x 25 x 31",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "col": "SIM",
     "transRows": [
       {
-        "trans": "",
+        "trans": "RODOVIARIO WILSON",
         "valor": "",
         "cotacao": "",
         "prazo": ""
       },
       {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
+        "trans": "PANAMERICANO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
