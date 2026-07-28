@@ -329,7 +329,7 @@
   },
   {
     "id": "mryzkyyt502h",
-    "data": "2026-07-24",
+    "data": "2026-07-28",
     "pedido": "2772",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -352,27 +352,9 @@
       },
       {
         "trans": "MAEX",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "287,00",
+        "cotacao": "1266666 ",
+        "prazo": "9"
       }
     ]
   },
