@@ -32,7 +32,7 @@
   },
   {
     "id": "ms3gr3ssqyue",
-    "data": "2026-07-27",
+    "data": "2026-07-28",
     "pedido": "2859",
     "tomador": "REMETENTE",
     "linhas": "3",
@@ -48,9 +48,9 @@
     "col": "SIM",
     "transRows": [
       {
-        "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
+        "trans": "OURO NEGRO",
+        "valor": "159,26",
+        "cotacao": "218970",
         "prazo": ""
       }
     ]
