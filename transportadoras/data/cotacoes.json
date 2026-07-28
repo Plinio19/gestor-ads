@@ -1,7 +1,7 @@
 [
   {
     "id": "ms3gtespf9k5",
-    "data": "2026-07-27",
+    "data": "2026-07-28",
     "pedido": "2784/2742",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -18,15 +18,15 @@
     "transRows": [
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "245",
+        "cotacao": "1267060 ",
+        "prazo": "4"
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "195,96",
+        "cotacao": "59369",
+        "prazo": "4"
       }
     ]
   },
