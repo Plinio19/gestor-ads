@@ -1,7 +1,7 @@
 [
   {
     "id": "ms4y71x262wv",
-    "data": "2026-07-28",
+    "data": "2026-07-29",
     "pedido": "2858",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -30,9 +30,9 @@
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "463,20",
+        "cotacao": "152445",
+        "prazo": "9"
       }
     ]
   },
