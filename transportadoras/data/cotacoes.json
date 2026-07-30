@@ -49,20 +49,20 @@
       },
       {
         "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "290,69",
+        "cotacao": "129751 ",
+        "prazo": "2"
       },
       {
-        "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "trans": "MAEX",
+        "valor": "428,00",
+        "cotacao": "1267959 ",
+        "prazo": "4"
       },
       {
         "trans": "EXPRESSO LEOMAR LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "252,48",
+        "cotacao": "3306825",
         "prazo": ""
       }
     ]
