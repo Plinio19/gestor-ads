@@ -23,15 +23,9 @@
         "prazo": ""
       },
       {
-        "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
         "trans": "OURO NEGRO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "65,14",
+        "cotacao": "219407",
         "prazo": ""
       }
     ]
