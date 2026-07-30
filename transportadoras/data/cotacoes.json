@@ -17,31 +17,7 @@
     "col": "SIM",
     "transRows": [
       {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "",
+        "trans": "OURO NEGRO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
