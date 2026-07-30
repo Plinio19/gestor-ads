@@ -489,6 +489,12 @@
         "valor": "1074,56",
         "cotacao": "59621",
         "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
       }
     ]
   },
