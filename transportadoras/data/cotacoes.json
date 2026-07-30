@@ -186,7 +186,7 @@
   },
   {
     "id": "ms4xm904sp5e",
-    "data": "2026-07-28",
+    "data": "2026-07-30",
     "pedido": "2767/2764",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -209,8 +209,8 @@
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "1074,56",
+        "cotacao": "59621",
         "prazo": ""
       }
     ]
