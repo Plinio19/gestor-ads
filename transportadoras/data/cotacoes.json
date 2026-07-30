@@ -341,7 +341,7 @@
   },
   {
     "id": "mrz0516pihg5",
-    "data": "2026-07-24",
+    "data": "2026-07-30",
     "pedido": "2774/2804",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -358,14 +358,8 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "EXPRESSO LEOMAR LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "69,97",
+        "cotacao": "219140",
         "prazo": ""
       }
     ]
