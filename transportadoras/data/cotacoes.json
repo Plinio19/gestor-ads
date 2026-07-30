@@ -383,7 +383,7 @@
   },
   {
     "id": "ms4xqbrdt8vt",
-    "data": "2026-07-28",
+    "data": "2026-07-30",
     "pedido": "2779/2783",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -406,8 +406,8 @@
       },
       {
         "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "184,14",
+        "cotacao": "129312 ",
         "prazo": ""
       },
       {
