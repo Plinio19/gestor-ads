@@ -230,6 +230,12 @@
         "valor": "",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "LEVANTE",
+        "valor": "355,40",
+        "cotacao": "",
+        "prazo": ""
       }
     ]
   },
