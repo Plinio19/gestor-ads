@@ -458,6 +458,12 @@
         "valor": "",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "EXPRESSO LEOMAR LTDA",
+        "valor": "140,75",
+        "cotacao": "",
+        "prazo": ""
       }
     ]
   },
