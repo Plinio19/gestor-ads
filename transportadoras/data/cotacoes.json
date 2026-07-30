@@ -42,25 +42,25 @@
     "col": "SIM",
     "transRows": [
       {
-        "trans": "TRANS IMPERIO",
+        "trans": "ABT LOG",
+        "valor": "397,53",
+        "cotacao": "127253",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOGARCIA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
       },
       {
-        "trans": "PRIMEIRA DO NORDESTE",
+        "trans": "MAEX - MARDONIO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
       },
       {
-        "trans": "TODOBRASIL TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "GRUPO DAGO",
+        "trans": "EXPRESSO LEOMAR LTDA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
