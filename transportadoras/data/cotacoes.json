@@ -17,13 +17,25 @@
     "col": "SIM",
     "transRows": [
       {
-        "trans": "RODOGARCIA",
+        "trans": "ABT LOG",
+        "valor": "237,84",
+        "cotacao": "127257",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
       },
       {
-        "trans": "ABT LOG",
+        "trans": "TODOBRASIL TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TTJB TRANSPORTES E LOGÍSTICA LTDA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
