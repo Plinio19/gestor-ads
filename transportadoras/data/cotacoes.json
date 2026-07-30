@@ -9,11 +9,11 @@
     "cepR": "06739-020",
     "cnpjD": "24.464.109/0001-48",
     "cepD": "57309-005",
-    "vnf": "",
-    "vol": "",
-    "pes": "",
-    "med": "",
-    "mat": "",
+    "vnf": "140,00",
+    "vol": "1",
+    "pes": "10",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "col": "SIM",
     "transRows": [
       {
