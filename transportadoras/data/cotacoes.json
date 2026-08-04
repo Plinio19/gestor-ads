@@ -124,7 +124,7 @@
   },
   {
     "id": "msdbqefgozce",
-    "data": "2026-08-03",
+    "data": "2026-08-04",
     "pedido": "2879",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -147,13 +147,13 @@
       },
       {
         "trans": "TODOBRASIL TRANSPORTES",
-        "valor": "",
+        "valor": "1100,00",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "799,98",
         "cotacao": "",
         "prazo": ""
       }
