@@ -951,7 +951,7 @@
   },
   {
     "id": "mryzae5y1uwy",
-    "data": "2026-07-31",
+    "data": "2026-08-04",
     "pedido": "2753",
     "tomador": "REMETENTE",
     "linhas": "5",
@@ -974,8 +974,8 @@
       },
       {
         "trans": "EXPRESSO LEOMAR LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "174,88",
+        "cotacao": "3312651",
         "prazo": ""
       }
     ]
