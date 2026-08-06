@@ -1574,5 +1574,29 @@
       }
     ],
     "id": "mshspw3vb12dz"
+  },
+  {
+    "data": "2026-08-06",
+    "pedido": "2865",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "19.559.012/0009-36",
+    "cepD": "36202-336",
+    "vnf": "394,00",
+    "pes": "4",
+    "vol": "2",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
+    "transRows": [
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mshubuk0qgbqc"
   }
 ]
