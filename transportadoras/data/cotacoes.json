@@ -92,21 +92,20 @@
     ]
   },
   {
-    "id": "msdizrq4zc0f",
     "data": "2026-08-03",
     "pedido": "2803",
     "tomador": "REMETENTE",
     "linhas": "5",
+    "col": "SIM",
     "cnpjR": "49.506.242/0001-40",
     "cepR": "06739-020",
     "cnpjD": "83.899.526/0005-06",
     "cepD": "89036-256",
     "vnf": "210,00",
-    "vol": "1",
     "pes": "7",
+    "vol": "1",
     "med": "36 x 31 x 25",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "col": "SIM",
     "transRows": [
       {
         "trans": "EXPRESSO LEOMAR LTDA",
@@ -120,7 +119,8 @@
         "cotacao": "219671",
         "prazo": ""
       }
-    ]
+    ],
+    "id": "msdizrq4zc0f"
   },
   {
     "data": "2026-08-04",
