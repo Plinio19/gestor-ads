@@ -1427,7 +1427,14 @@
     "vol": "4",
     "med": "30 x 21 x 24",
     "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
     "id": "mshs5t5p0cch5"
   },
   {
