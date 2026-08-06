@@ -1421,7 +1421,20 @@
     "vol": "54",
     "med": "30 x 21 x 24",
     "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
     "id": "mshp6e1n1jibz"
   }
 ]
