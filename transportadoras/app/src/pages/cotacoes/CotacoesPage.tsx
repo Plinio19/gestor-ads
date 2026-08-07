@@ -4,12 +4,13 @@ import {
 } from 'antd';
 import type { ColumnsType } from 'antd/es/table';
 import {
-  PlusOutlined, SearchOutlined, EditOutlined, DeleteOutlined,
+  PlusOutlined, SearchOutlined, EditOutlined, DeleteOutlined, PictureOutlined,
 } from '@ant-design/icons';
 import type { Cotacao } from '../../types';
 import { useCotacoesStore } from '../../stores/useCotacoesStore';
 import { formatarData } from '../../utils';
 import CotacaoForm from './CotacaoForm';
+import CotacaoPreview from './CotacaoPreview';
 
 const { Title, Text } = Typography;
 
@@ -18,6 +19,8 @@ export default function CotacoesPage() {
   const [busca, setBusca] = useState('');
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [editando, setEditando] = useState<Cotacao | null>(null);
+  const [previewOpen, setPreviewOpen] = useState(false);
+  const [previewCotacao, setPreviewCotacao] = useState<Cotacao | null>(null);
 
   useEffect(() => { fetch(); }, []);
 
@@ -105,9 +108,16 @@ export default function CotacoesPage() {
     {
       title: 'Ações',
       key: 'acoes',
-      width: 90,
+      width: 120,
       render: (_, record) => (
         <Space size={4}>
+          <Tooltip title="Ver imagem / PDF">
+            <Button
+              type="text"
+              icon={<PictureOutlined />}
+              onClick={() => { setPreviewCotacao(record); setPreviewOpen(true); }}
+            />
+          </Tooltip>
           <Tooltip title="Editar">
             <Button
               type="text"
@@ -203,6 +213,12 @@ export default function CotacoesPage() {
         cotacao={editando}
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
+      />
+
+      <CotacaoPreview
+        cotacao={previewCotacao}
+        open={previewOpen}
+        onClose={() => setPreviewOpen(false)}
       />
     </div>
   );
