@@ -1568,5 +1568,22 @@
       }
     ],
     "id": "mshubuk0qgbqc"
+  },
+  {
+    "data": "2026-08-07",
+    "pedido": "2846",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "24.098.477/0001-10",
+    "cepD": "58051-900",
+    "vnf": "619,00",
+    "pes": "35",
+    "vol": "5 ",
+    "med": "30 X 21 X 24",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [],
+    "id": "msjawfdwi6bwq"
   }
 ]
