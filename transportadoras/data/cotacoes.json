@@ -1563,7 +1563,25 @@
       {
         "trans": "PANAMERICANO",
         "valor": "",
+        "cotacao": "nao faz",
+        "prazo": ""
+      },
+      {
+        "trans": "TODOBRASIL TRANSPORTES",
+        "valor": "",
         "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "nao faz",
         "prazo": ""
       }
     ],
