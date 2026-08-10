@@ -1603,5 +1603,29 @@
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "transRows": [],
     "id": "msjawfdwi6bwq"
+  },
+  {
+    "data": "2026-08-10",
+    "pedido": "2862",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "75.095.679/0001-49",
+    "cepD": "83327-000",
+    "vnf": "807,06",
+    "pes": "62",
+    "vol": "6",
+    "med": "36 x 21 x 24",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "msngz1h9dzdfb"
   }
 ]
