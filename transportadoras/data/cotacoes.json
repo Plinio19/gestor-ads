@@ -1601,7 +1601,26 @@
     "vol": "5 ",
     "med": "30 X 21 X 24",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "220,42",
+        "cotacao": "151060",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "220,00",
+        "cotacao": "152518",
+        "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "312,74",
+        "cotacao": "201303  ",
+        "prazo": ""
+      }
+    ],
     "id": "msjawfdwi6bwq"
   },
   {
