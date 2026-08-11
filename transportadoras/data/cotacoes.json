@@ -1879,5 +1879,29 @@
       }
     ],
     "id": "msozo4ypf1dof"
+  },
+  {
+    "data": "2026-08-11",
+    "pedido": "2834/2838",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "33.781.055/0012-98",
+    "cepD": "21040-360",
+    "vnf": "440,00",
+    "pes": "22",
+    "vol": "9",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1791 RISCO: 8",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "msp0u9y47q5am"
   }
 ]
