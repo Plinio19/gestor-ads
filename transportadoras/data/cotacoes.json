@@ -1855,5 +1855,29 @@
       }
     ],
     "id": "msozh40oc58rl"
+  },
+  {
+    "data": "2026-08-11",
+    "pedido": "2871/2872",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "00.444.232/0004-81",
+    "cepD": "36092-060",
+    "vnf": "2.175,00",
+    "pes": "60",
+    "vol": "10",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1294 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "msozo4ypf1dof"
   }
 ]
