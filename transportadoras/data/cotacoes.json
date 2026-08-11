@@ -1789,5 +1789,35 @@
     "mat": "QUIMICO ONU: 1307 RISCO: 3",
     "transRows": [],
     "id": "msniq0mq6y0ht"
+  },
+  {
+    "data": "2026-08-11",
+    "pedido": "37",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "61.682.943/0001-36",
+    "cepR": "06739-020",
+    "cnpjD": "136.832.857-10",
+    "cepD": "12050-187",
+    "vnf": "3.827,09",
+    "pes": "12",
+    "vol": "5",
+    "med": "53 x 46 x 26",
+    "mat": "VIDRARIA",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "msoxczb4wc28a"
   }
 ]
