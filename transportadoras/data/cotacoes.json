@@ -1945,20 +1945,20 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "338,34",
+        "cotacao": "151108",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "470,00",
+        "cotacao": "152551",
         "prazo": ""
       },
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "582,75",
+        "cotacao": "201579  ",
         "prazo": ""
       }
     ],
