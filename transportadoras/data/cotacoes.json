@@ -1927,5 +1927,41 @@
       }
     ],
     "id": "msq3fn1w03gag"
+  },
+  {
+    "data": "2026-08-12",
+    "pedido": "2832",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.126.437/0010-34",
+    "cepD": "49060-025",
+    "vnf": "1660,00",
+    "pes": "200",
+    "vol": "14",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "msq6oikizbo1f"
   }
 ]
