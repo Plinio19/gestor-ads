@@ -2004,8 +2004,8 @@
     "transRows": [
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "940,00",
+        "cotacao": "152555",
         "prazo": ""
       },
       {
@@ -2016,8 +2016,8 @@
       },
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "779,48",
+        "cotacao": "201666  ",
         "prazo": ""
       }
     ],
