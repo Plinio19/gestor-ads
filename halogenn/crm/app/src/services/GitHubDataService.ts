@@ -90,18 +90,35 @@ class GitHubDataService {
     message?: string,
   ): Promise<string> {
     const content = btoa(unescape(encodeURIComponent(JSON.stringify(lista, null, 2))));
-    const body: Record<string, unknown> = {
-      message: message ?? `Atualizar ${path}`,
-      content,
-      branch: this.branch(),
-    };
-    if (sha) body.sha = sha;
 
-    const res = await fetch(`${this.apiBase()}/${path}`, {
-      method: 'PUT',
-      headers: this.headers(),
-      body: JSON.stringify(body),
-    });
+    const doPut = async (currentSha: string | null) => {
+      const body: Record<string, unknown> = {
+        message: message ?? `Atualizar ${path}`,
+        content,
+        branch: this.branch(),
+      };
+      if (currentSha) body.sha = currentSha;
+      return fetch(`${this.apiBase()}/${path}`, {
+        method: 'PUT',
+        headers: this.headers(),
+        body: JSON.stringify(body),
+      });
+    };
+
+    let res = await doPut(sha);
+
+    // SHA desatualizado — busca o SHA atual e tenta de novo
+    if (res.status === 409) {
+      const fresh = await fetch(
+        `${this.apiBase()}/${path}?ref=${this.branch()}`,
+        { headers: this.headers() },
+      );
+      if (fresh.ok) {
+        const meta = await fresh.json() as { sha: string };
+        res = await doPut(meta.sha);
+      }
+    }
+
     if (!res.ok) {
       const txt = await res.text();
       throw new Error(`Erro ao salvar (${res.status}): ${txt}`);
