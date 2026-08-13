@@ -1,9 +1,22 @@
 [
   {
-    "razaoSocial": "CINA – Centro Industrial Nuclear de Aramar",
+    "razaoSocial": "CINA â Centro Industrial Nuclear de Aramar",
     "cnpj": "71.558.068/0001-39",
     "status": "prospecto",
     "id": "msrfduha3wc36",
+    "contatos": [],
+    "criadoEm": "2026-08-13"
+  },
+  {
+    "cnpj": "03.775.069/0001-85",
+    "razaoSocial": "SERVICO NACIONAL DE APRENDIZAGEM INDUSTRIAL-SENAI",
+    "nomeFantasia": "SENAI DEPARTAMENTO REGIONAL DO RIO GRANDE DO SUL",
+    "status": "prospecto",
+    "telefone": "(51) 33478688",
+    "email": "",
+    "cidade": "PORTO ALEGRE",
+    "uf": "RS",
+    "id": "msrh2dhk1f56f",
     "contatos": [],
     "criadoEm": "2026-08-13"
   }
