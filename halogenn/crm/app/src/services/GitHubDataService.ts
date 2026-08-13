@@ -68,7 +68,10 @@ class GitHubDataService {
         throw new Error(`GitHub ${res.status}`);
       }
       const json = await res.json() as { content: string; sha: string };
-      const lista = JSON.parse(atob(json.content.replace(/\n/g, ''))) as T[];
+      const binary = atob(json.content.replace(/\n/g, ''));
+      const bytes  = Uint8Array.from(binary, c => c.charCodeAt(0));
+      const text   = new TextDecoder('utf-8').decode(bytes);
+      const lista  = JSON.parse(text) as T[];
       if (cacheKey) localStorage.setItem(cacheKey, JSON.stringify({ lista, sha: json.sha }));
       return { lista, sha: json.sha };
     } catch (err) {
@@ -89,7 +92,11 @@ class GitHubDataService {
     sha: string | null,
     message?: string,
   ): Promise<string> {
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(lista, null, 2))));
+    const jsonStr = JSON.stringify(lista, null, 2);
+    const utf8    = new TextEncoder().encode(jsonStr);
+    let binary    = '';
+    utf8.forEach(b => { binary += String.fromCharCode(b); });
+    const content = btoa(binary);
 
     const doPut = async (currentSha: string | null) => {
       const body: Record<string, unknown> = {
@@ -107,8 +114,8 @@ class GitHubDataService {
 
     let res = await doPut(sha);
 
-    // SHA desatualizado — busca o SHA atual e tenta de novo
-    if (res.status === 409) {
+    // 409 = SHA stale | 422 = arquivo existe mas SHA não foi enviado
+    if (res.status === 409 || res.status === 422) {
       const fresh = await fetch(
         `${this.apiBase()}/${path}?ref=${this.branch()}`,
         { headers: this.headers() },
