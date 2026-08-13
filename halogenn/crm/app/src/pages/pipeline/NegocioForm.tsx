@@ -1,11 +1,13 @@
 import { useEffect, useState } from 'react';
 import {
   Drawer, Form, Input, Button, Space, Row, Col, Select, InputNumber,
-  Typography, message,
+  Typography, message, Divider, Checkbox, Alert,
 } from 'antd';
+import { BellOutlined } from '@ant-design/icons';
 import type { Negocio, Etapa } from '../../types';
 import { useNegociosStore } from '../../stores/useNegociosStore';
 import { useClientesStore } from '../../stores/useClientesStore';
+import { useAtividadesStore } from '../../stores/useAtividadesStore';
 import { uid, hoje, ETAPAS, ORIGENS } from '../../utils';
 
 const { Text } = Typography;
@@ -17,11 +19,33 @@ interface Props {
   onClose: () => void;
 }
 
+const INTERVALOS = [
+  { value: 1,  label: '1 dia'    },
+  { value: 2,  label: '2 dias'   },
+  { value: 3,  label: '3 dias'   },
+  { value: 5,  label: '5 dias'   },
+  { value: 7,  label: '1 semana' },
+  { value: 14, label: '2 semanas'},
+  { value: 30, label: '1 mês'    },
+];
+
+function somarDias(base: string, dias: number): string {
+  const d = new Date(base + 'T12:00:00');
+  d.setDate(d.getDate() + dias);
+  return d.toISOString().slice(0, 10);
+}
+
 export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Props) {
   const [form] = Form.useForm();
   const { upsert } = useNegociosStore();
   const { clientes, fetch: fetchClientes, loaded } = useClientesStore();
+  const { upsert: upsertAtiv } = useAtividadesStore();
   const [salvando, setSalvando] = useState(false);
+
+  // Follow-up
+  const [agendarFollowUp, setAgendarFollowUp] = useState(false);
+  const [intervalo, setIntervalo] = useState<number>(3);
+  const [etapaAtual, setEtapaAtual] = useState<Etapa>('lead');
 
   useEffect(() => { if (!loaded) fetchClientes(); }, [loaded, fetchClientes]);
 
@@ -29,28 +53,57 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
     if (!open) return;
     if (negocio) {
       form.setFieldsValue(negocio);
+      setEtapaAtual(negocio.etapa);
     } else {
       form.resetFields();
+      const ep = etapaInicial ?? 'lead';
       form.setFieldsValue({
-        etapa: etapaInicial ?? 'lead',
+        etapa: ep,
         dataAbertura: hoje(),
         probabilidade: '50',
       });
+      setEtapaAtual(ep);
     }
+    // Pré-ativa o follow-up para proposta/negociação
+    const ep = negocio?.etapa ?? etapaInicial ?? 'lead';
+    setAgendarFollowUp(['proposta', 'negociacao'].includes(ep));
+    setIntervalo(ep === 'proposta' ? 3 : 2);
   }, [open, negocio, etapaInicial]);
 
   async function handleSubmit(values: Partial<Negocio>) {
     setSalvando(true);
     try {
+      const novoId = negocio?.id ?? uid();
       const data: Negocio = {
         ...values as Negocio,
-        id: negocio?.id ?? uid(),
+        id: novoId,
         criadoEm: negocio?.criadoEm ?? hoje(),
         valor: String(values.valor ?? ''),
         probabilidade: String(values.probabilidade ?? ''),
       };
       await upsert(data);
-      message.success(`Negócio ${negocio ? 'atualizado' : 'criado'}!`);
+
+      // Criar atividade de follow-up automaticamente
+      if (agendarFollowUp && intervalo) {
+        const dataFollowUp = somarDias(hoje(), intervalo);
+        const clienteNome = clientes.find(c => c.id === data.clienteId)?.nomeFantasia
+          || clientes.find(c => c.id === data.clienteId)?.razaoSocial
+          || '';
+        await upsertAtiv({
+          id: uid(),
+          tipo: 'tarefa',
+          descricao: `Follow-up: ${data.titulo}${clienteNome ? ' — ' + clienteNome : ''}`,
+          clienteId: data.clienteId,
+          negocioId: novoId,
+          data: dataFollowUp,
+          concluida: false,
+          obs: `Cobrança de orçamento a cada ${intervalo} dia(s). Próximo em: ${dataFollowUp}`,
+          criadoEm: hoje(),
+        });
+        message.success(`Negócio salvo! Follow-up agendado para ${dataFollowUp.split('-').reverse().join('/')}.`);
+      } else {
+        message.success(`Negócio ${negocio ? 'atualizado' : 'criado'}!`);
+      }
       onClose();
     } catch (e) {
       message.error('Erro: ' + String(e));
@@ -58,6 +111,9 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
       setSalvando(false);
     }
   }
+
+  const etapaVal = etapaAtual;
+  const mostrarFollowUp = ['proposta', 'negociacao', 'qualificado'].includes(etapaVal);
 
   return (
     <Drawer
@@ -77,7 +133,7 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
     >
       <Form form={form} layout="vertical" onFinish={handleSubmit}>
         <Form.Item name="titulo" label="Título do Negócio" rules={[{ required: true, message: 'Obrigatório' }]}>
-          <Input placeholder="Ex: Venda de Xileno – Lab UFPR" />
+          <Input placeholder="Ex: Fornecimento de Xileno – Lab UFPR" />
         </Form.Item>
 
         <Row gutter={12}>
@@ -97,6 +153,10 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
           <Col span={10}>
             <Form.Item name="etapa" label="Etapa">
               <Select
+                onChange={(v: Etapa) => {
+                  setEtapaAtual(v);
+                  setAgendarFollowUp(['proposta', 'negociacao'].includes(v));
+                }}
                 options={ETAPAS.map(e => ({
                   value: e.key,
                   label: <Space size={6}><span>{e.icone}</span><span>{e.label}</span></Space>,
@@ -154,14 +214,63 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
 
         <Form.Item name="descricao" label="Descrição / Observações">
           <Input.TextArea
-            rows={3}
-            placeholder="Detalhes do produto, contexto da oportunidade, próximos passos..."
+            rows={2}
+            placeholder="Detalhes do produto, contexto da oportunidade..."
           />
         </Form.Item>
       </Form>
 
+      {/* Seção de Follow-up */}
+      {mostrarFollowUp && (
+        <>
+          <Divider style={{ margin: '8px 0 16px' }} />
+          <div style={{
+            background: agendarFollowUp ? '#f0f5ff' : '#fafafa',
+            border: `1px solid ${agendarFollowUp ? '#adc6ff' : '#e8e8e8'}`,
+            borderRadius: 10,
+            padding: '14px 16px',
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 10 }}>
+              <BellOutlined style={{ color: '#6C2BD9', fontSize: 16 }} />
+              <Text strong style={{ fontSize: 14 }}>Agendar Follow-up</Text>
+            </div>
+
+            <Checkbox
+              checked={agendarFollowUp}
+              onChange={e => setAgendarFollowUp(e.target.checked)}
+              style={{ marginBottom: agendarFollowUp ? 12 : 0 }}
+            >
+              Cobrar este orçamento automaticamente
+            </Checkbox>
+
+            {agendarFollowUp && (
+              <>
+                <Alert
+                  type="info"
+                  style={{ marginBottom: 12, fontSize: 12 }}
+                  message="Uma tarefa de follow-up será criada automaticamente e aparecerá na Agenda do Dashboard no dia programado."
+                  showIcon
+                />
+                <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                  <Text style={{ fontSize: 13, whiteSpace: 'nowrap' }}>Cobrar daqui a</Text>
+                  <Select
+                    value={intervalo}
+                    onChange={setIntervalo}
+                    style={{ width: 130 }}
+                    options={INTERVALOS}
+                  />
+                  <Text style={{ fontSize: 12, color: '#888' }}>
+                    → {somarDias(hoje(), intervalo).split('-').reverse().join('/')}
+                  </Text>
+                </div>
+              </>
+            )}
+          </div>
+        </>
+      )}
+
       {negocio && (
-        <div style={{ marginTop: 8 }}>
+        <div style={{ marginTop: 12 }}>
           <Text type="secondary" style={{ fontSize: 11 }}>
             Criado em {negocio.criadoEm} · ID: {negocio.id}
           </Text>

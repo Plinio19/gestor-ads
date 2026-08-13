@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import {
   Drawer, Form, Input, Button, Space, Row, Col, Divider, Select,
-  Typography, message, Table, Popconfirm,
+  Typography, message, Table, Popconfirm, Spin,
 } from 'antd';
-import { PlusOutlined, DeleteOutlined } from '@ant-design/icons';
+import { PlusOutlined, DeleteOutlined, LoadingOutlined, CheckCircleOutlined } from '@ant-design/icons';
 import type { Cliente, Contato } from '../../types';
 import { useClientesStore } from '../../stores/useClientesStore';
 import { uid, hoje, SEGMENTOS, ESTADOS_BR } from '../../utils';
@@ -18,15 +18,28 @@ interface Props {
 
 const EMPTY_CONTATO: Contato = { id: '', nome: '', cargo: '', telefone: '', email: '' };
 
+function maskCNPJ(v: string) {
+  const d = v.replace(/\D/g, '').slice(0, 14);
+  if (d.length <= 2) return d;
+  if (d.length <= 5) return `${d.slice(0, 2)}.${d.slice(2)}`;
+  if (d.length <= 8) return `${d.slice(0, 2)}.${d.slice(2, 5)}.${d.slice(5)}`;
+  if (d.length <= 12) return `${d.slice(0, 2)}.${d.slice(2, 5)}.${d.slice(5, 8)}/${d.slice(8)}`;
+  return `${d.slice(0, 2)}.${d.slice(2, 5)}.${d.slice(5, 8)}/${d.slice(8, 12)}-${d.slice(12)}`;
+}
+
 export default function ClienteForm({ cliente, open, onClose }: Props) {
   const [form] = Form.useForm();
   const { upsert } = useClientesStore();
   const [contatos, setContatos] = useState<Contato[]>([]);
   const [novoContato, setNovoContato] = useState<Contato>({ ...EMPTY_CONTATO });
   const [salvando, setSalvando] = useState(false);
+  const [cnpjLoading, setCnpjLoading] = useState(false);
+  const [cnpjOk, setCnpjOk] = useState(false);
+  const cnpjTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     if (!open) return;
+    setCnpjOk(false);
     if (cliente) {
       form.setFieldsValue(cliente);
       setContatos(cliente.contatos ?? []);
@@ -37,6 +50,49 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
     }
     setNovoContato({ ...EMPTY_CONTATO });
   }, [open, cliente]);
+
+  async function buscarCNPJ(cnpjMasked: string) {
+    const digits = cnpjMasked.replace(/\D/g, '');
+    if (digits.length !== 14) { setCnpjOk(false); return; }
+    setCnpjLoading(true);
+    setCnpjOk(false);
+    try {
+      const res = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${digits}`);
+      if (!res.ok) throw new Error('CNPJ não encontrado');
+      const data = await res.json() as {
+        razao_social?: string;
+        nome_fantasia?: string;
+        ddd_telefone_1?: string;
+        email?: string;
+        municipio?: string;
+        uf?: string;
+        cnae_fiscal_descricao?: string;
+      };
+      const tel = data.ddd_telefone_1?.replace(/\D/g, '') ?? '';
+      form.setFieldsValue({
+        razaoSocial:  data.razao_social   ?? '',
+        nomeFantasia: data.nome_fantasia  ?? '',
+        telefone:     tel ? `(${tel.slice(0, 2)}) ${tel.slice(2)}` : '',
+        email:        data.email          ?? '',
+        cidade:       data.municipio      ?? '',
+        uf:           data.uf             ?? '',
+      });
+      setCnpjOk(true);
+      message.success('Dados carregados automaticamente!');
+    } catch {
+      message.warning('CNPJ não encontrado na Receita Federal.');
+    } finally {
+      setCnpjLoading(false);
+    }
+  }
+
+  function onCnpjChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const masked = maskCNPJ(e.target.value);
+    form.setFieldValue('cnpj', masked);
+    setCnpjOk(false);
+    if (cnpjTimer.current) clearTimeout(cnpjTimer.current);
+    cnpjTimer.current = setTimeout(() => buscarCNPJ(masked), 600);
+  }
 
   function adicionarContato() {
     if (!novoContato.nome.trim()) { message.warning('Informe o nome do contato.'); return; }
@@ -84,6 +140,32 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
       }
     >
       <Form form={form} layout="vertical" onFinish={handleSubmit}>
+        {/* CNPJ com auto-preenchimento */}
+        <Form.Item
+          name="cnpj"
+          label={
+            <Space size={6}>
+              <span>CNPJ</span>
+              {cnpjLoading && <Spin indicator={<LoadingOutlined spin />} size="small" />}
+              {cnpjOk && <CheckCircleOutlined style={{ color: '#52c41a' }} />}
+              {!cnpjLoading && !cnpjOk && (
+                <Text type="secondary" style={{ fontSize: 11 }}>
+                  — preencha para buscar dados automaticamente
+                </Text>
+              )}
+              {cnpjOk && (
+                <Text style={{ fontSize: 11, color: '#52c41a' }}>dados carregados</Text>
+              )}
+            </Space>
+          }
+        >
+          <Input
+            placeholder="00.000.000/0001-00"
+            onChange={onCnpjChange}
+            maxLength={18}
+          />
+        </Form.Item>
+
         <Row gutter={12}>
           <Col span={14}>
             <Form.Item name="razaoSocial" label="Razão Social" rules={[{ required: true, message: 'Obrigatório' }]}>
@@ -99,11 +181,6 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
 
         <Row gutter={12}>
           <Col span={12}>
-            <Form.Item name="cnpj" label="CNPJ">
-              <Input placeholder="00.000.000/0001-00" />
-            </Form.Item>
-          </Col>
-          <Col span={12}>
             <Form.Item name="segmento" label="Segmento">
               <Select
                 placeholder="Selecione"
@@ -111,6 +188,15 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
                 showSearch
                 allowClear
               />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item name="status" label="Status">
+              <Select options={[
+                { value: 'prospecto', label: 'Prospecto' },
+                { value: 'ativo',     label: 'Ativo'     },
+                { value: 'inativo',   label: 'Inativo'   },
+              ]} />
             </Form.Item>
           </Col>
         </Row>
@@ -132,15 +218,6 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
           <Col span={12}>
             <Form.Item name="site" label="Site">
               <Input placeholder="www.empresa.com.br" />
-            </Form.Item>
-          </Col>
-          <Col span={12}>
-            <Form.Item name="status" label="Status">
-              <Select options={[
-                { value: 'prospecto', label: 'Prospecto' },
-                { value: 'ativo',     label: 'Ativo'     },
-                { value: 'inativo',   label: 'Inativo'   },
-              ]} />
             </Form.Item>
           </Col>
         </Row>
@@ -167,52 +244,29 @@ export default function ClienteForm({ cliente, open, onClose }: Props) {
         </Form.Item>
       </Form>
 
-      {/* Contatos */}
       <Divider style={{ margin: '4px 0 16px' }}>Contatos</Divider>
 
-      {/* Adicionar contato */}
       <div style={{ background: '#fafafa', borderRadius: 8, padding: 12, marginBottom: 12 }}>
         <Text strong style={{ fontSize: 12, display: 'block', marginBottom: 8 }}>Adicionar contato</Text>
         <Row gutter={8}>
           <Col span={8}>
-            <Input
-              placeholder="Nome *"
-              size="small"
-              value={novoContato.nome}
-              onChange={e => setNovoContato(p => ({ ...p, nome: e.target.value }))}
-            />
+            <Input placeholder="Nome *" size="small" value={novoContato.nome}
+              onChange={e => setNovoContato(p => ({ ...p, nome: e.target.value }))} />
           </Col>
           <Col span={6}>
-            <Input
-              placeholder="Cargo"
-              size="small"
-              value={novoContato.cargo}
-              onChange={e => setNovoContato(p => ({ ...p, cargo: e.target.value }))}
-            />
+            <Input placeholder="Cargo" size="small" value={novoContato.cargo}
+              onChange={e => setNovoContato(p => ({ ...p, cargo: e.target.value }))} />
           </Col>
           <Col span={5}>
-            <Input
-              placeholder="Telefone"
-              size="small"
-              value={novoContato.telefone}
-              onChange={e => setNovoContato(p => ({ ...p, telefone: e.target.value }))}
-            />
+            <Input placeholder="Telefone" size="small" value={novoContato.telefone}
+              onChange={e => setNovoContato(p => ({ ...p, telefone: e.target.value }))} />
           </Col>
           <Col span={5}>
-            <Input
-              placeholder="E-mail"
-              size="small"
-              value={novoContato.email}
-              onChange={e => setNovoContato(p => ({ ...p, email: e.target.value }))}
-            />
+            <Input placeholder="E-mail" size="small" value={novoContato.email}
+              onChange={e => setNovoContato(p => ({ ...p, email: e.target.value }))} />
           </Col>
         </Row>
-        <Button
-          icon={<PlusOutlined />}
-          size="small"
-          style={{ marginTop: 8 }}
-          onClick={adicionarContato}
-        >
+        <Button icon={<PlusOutlined />} size="small" style={{ marginTop: 8 }} onClick={adicionarContato}>
           Adicionar
         </Button>
       </div>
