@@ -1,1 +1,13 @@
-[]
+[
+  {
+    "id": "msrh1ojfifujr",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: Orçamento 541 — CINA â Centro Industrial Nuclear de Aramar",
+    "clienteId": "msrfduha3wc36",
+    "negocioId": "msrfekvpkrw9h",
+    "data": "2026-08-15",
+    "concluida": false,
+    "obs": "Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-15",
+    "criadoEm": "2026-08-13"
+  }
+]
