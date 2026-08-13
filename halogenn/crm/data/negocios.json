@@ -1,6 +1,6 @@
 [
   {
-    "titulo": "Orçamento 541",
+    "titulo": "OrÃ§amento 541",
     "clienteId": "msrfduha3wc36",
     "etapa": "proposta",
     "valor": "50000",
@@ -8,6 +8,17 @@
     "dataAbertura": "2026-08-13",
     "origem": "Site / Google",
     "id": "msrfekvpkrw9h",
+    "criadoEm": "2026-08-13"
+  },
+  {
+    "titulo": "ORÇAMENTO Nº 543",
+    "clienteId": "msrh2dhk1f56f",
+    "etapa": "proposta",
+    "valor": "1200",
+    "probabilidade": "50",
+    "dataAbertura": "2026-08-13",
+    "origem": "Site / Google",
+    "id": "msrhfthjngqdn",
     "criadoEm": "2026-08-13"
   }
 ]
