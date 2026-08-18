@@ -10,6 +10,7 @@ import { useAtividadesStore } from '../../stores/useAtividadesStore';
 import { useClientesStore } from '../../stores/useClientesStore';
 import { useNegociosStore } from '../../stores/useNegociosStore';
 import { uid, hoje, formatarData, TIPOS_ATIVIDADE } from '../../utils';
+import FollowUpModal from '../../components/FollowUpModal';
 
 const { Title, Text } = Typography;
 
@@ -147,10 +148,11 @@ function AtividadeForm({
 }
 
 export default function AtividadesPage() {
-  const { atividades, loading, fetch, remove, concluir } = useAtividadesStore();
+  const { atividades, loading, fetch, remove, concluir, upsert: upsertAtiv } = useAtividadesStore();
   const { clientes, fetch: fc } = useClientesStore();
   const [busca, setBusca] = useState('');
   const [filtroTipo, setFiltroTipo] = useState<string | undefined>();
+  const [followUp, setFollowUp] = useState<Atividade | null>(null);
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [editando, setEditando] = useState<Atividade | null>(null);
   const [aba, setAba] = useState('pendentes');
@@ -174,9 +176,38 @@ export default function AtividadesPage() {
     catch (e) { message.error('Erro: ' + String(e)); }
   }
 
+  async function handleConcluir(id: string) {
+    try {
+      const ativ = await concluir(id);
+      if (ativ) setFollowUp(ativ);
+    } catch (e) {
+      message.error('Erro ao concluir: ' + String(e));
+    }
+  }
+
+  async function agendarFollowUp(dias: number) {
+    if (!followUp) return;
+    const d = new Date();
+    d.setDate(d.getDate() + dias);
+    const data = d.toISOString().slice(0, 10);
+    try {
+      await upsertAtiv({
+        ...followUp,
+        id: uid(),
+        concluida: false,
+        data,
+        criadoEm: hoje(),
+        obs: `Re-agendado após conclusão. ${followUp.obs ?? ''}`.trim(),
+      });
+      message.success(`Follow-up agendado para ${data.split('-').reverse().join('/')}`);
+    } catch (e) {
+      message.error('Erro ao agendar: ' + String(e));
+    }
+    setFollowUp(null);
+  }
+
   async function marcarConcluida(id: string) {
-    try { await concluir(id); message.success('Atividade concluída!'); }
-    catch (e) { message.error('Erro: ' + String(e)); }
+    await handleConcluir(id);
   }
 
   const columns: ColumnsType<Atividade> = [
@@ -324,6 +355,13 @@ export default function AtividadesPage() {
         atividade={editando}
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
+      />
+
+      <FollowUpModal
+        open={!!followUp}
+        descricao={followUp?.descricao ?? ''}
+        onConfirm={agendarFollowUp}
+        onSkip={() => setFollowUp(null)}
       />
     </div>
   );

@@ -14,7 +14,7 @@ interface State {
   save: (lista: Atividade[], msg?: string) => Promise<void>;
   upsert: (a: Atividade) => Promise<void>;
   remove: (id: string) => Promise<void>;
-  concluir: (id: string) => Promise<void>;
+  concluir: (id: string) => Promise<Atividade | null>;
 }
 
 export const useAtividadesStore = create<State>((set, get) => ({
@@ -53,8 +53,12 @@ export const useAtividadesStore = create<State>((set, get) => ({
   },
 
   concluir: async (id) => {
+    // Garante SHA atualizado antes de salvar
+    if (!get().sha) await get().fetch(true);
     const all = get().atividades;
+    const ativ = all.find(x => x.id === id) ?? null;
     const next = all.map(x => x.id === id ? { ...x, concluida: true } : x);
     await get().save(next, 'Concluir atividade');
+    return ativ;
   },
 }));
