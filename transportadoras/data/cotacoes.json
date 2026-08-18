@@ -2199,7 +2199,20 @@
     "vol": "7",
     "med": "36 x 31 x 25",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "340,11",
+        "cotacao": "152598",
+        "prazo": ""
+      }
+    ],
     "id": "msywvdrgdbh2o"
   },
   {
