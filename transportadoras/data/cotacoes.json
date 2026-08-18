@@ -2225,5 +2225,22 @@
       }
     ],
     "id": "msyxag25vsig6"
+  },
+  {
+    "data": "2026-08-18",
+    "pedido": "2900",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "00.396.895/0045-46",
+    "cepD": "91780-580",
+    "vnf": "1.060,00",
+    "pes": "25",
+    "vol": "5",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
+    "transRows": [],
+    "id": "msyy1qc966z96"
   }
 ]
