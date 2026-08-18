@@ -1,14 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import {
   Drawer, Form, Input, Button, Space, Row, Col, Select, InputNumber,
-  Typography, message, Divider, Checkbox, Alert,
+  Typography, message, Divider, Checkbox, Alert, Modal,
 } from 'antd';
-import { BellOutlined } from '@ant-design/icons';
-import type { Negocio, Etapa } from '../../types';
+import { BellOutlined, PlusOutlined, CheckCircleOutlined } from '@ant-design/icons';
+import type { Negocio, Etapa, Cliente } from '../../types';
 import { useNegociosStore } from '../../stores/useNegociosStore';
 import { useClientesStore } from '../../stores/useClientesStore';
 import { useAtividadesStore } from '../../stores/useAtividadesStore';
-import { uid, hoje, ETAPAS, ORIGENS } from '../../utils';
+import { uid, hoje, ETAPAS, ORIGENS, SEGMENTOS, ESTADOS_BR } from '../../utils';
 
 const { Text } = Typography;
 
@@ -35,12 +35,171 @@ function somarDias(base: string, dias: number): string {
   return d.toISOString().slice(0, 10);
 }
 
+function NovoClienteModal({ open, onClose, onCreated }: {
+  open: boolean;
+  onClose: () => void;
+  onCreated: (id: string) => void;
+}) {
+  const [form] = Form.useForm();
+  const { upsert, fetch: refetch } = useClientesStore();
+  const [salvando, setSalvando] = useState(false);
+  const cnpjTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const [cnpjOk, setCnpjOk] = useState(false);
+
+  useEffect(() => {
+    if (open) { form.resetFields(); setCnpjOk(false); }
+  }, [open]);
+
+  function maskCNPJ(v: string) {
+    return v.replace(/\D/g, '').slice(0, 14)
+      .replace(/^(\d{2})(\d)/, '$1.$2')
+      .replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3')
+      .replace(/\.(\d{3})(\d)/, '.$1/$2')
+      .replace(/(\d{4})(\d)/, '$1-$2');
+  }
+
+  function handleCNPJChange(e: React.ChangeEvent<HTMLInputElement>) {
+    const masked = maskCNPJ(e.target.value);
+    form.setFieldValue('cnpj', masked);
+    setCnpjOk(false);
+    if (cnpjTimerRef.current) clearTimeout(cnpjTimerRef.current);
+    const digits = masked.replace(/\D/g, '');
+    if (digits.length !== 14) return;
+    cnpjTimerRef.current = setTimeout(async () => {
+      try {
+        const res = await fetch(`https://brasilapi.com.br/api/cnpj/v1/${digits}`);
+        if (!res.ok) return;
+        const d = await res.json();
+        form.setFieldsValue({
+          razaoSocial: d.razao_social ?? '',
+          nomeFantasia: d.nome_fantasia ?? d.razao_social ?? '',
+          telefone: d.ddd_telefone_1 ? d.ddd_telefone_1.replace(/\D/g,'').replace(/(\d{2})(\d{4,5})(\d{4})/,'($1) $2-$3') : '',
+          email: d.email ?? '',
+          cidade: d.municipio ?? '',
+          uf: d.uf ?? '',
+        });
+        setCnpjOk(true);
+      } catch { /* ignora */ }
+    }, 600);
+  }
+
+  async function handleSave() {
+    const values = await form.validateFields();
+    setSalvando(true);
+    try {
+      const novoId = uid();
+      const cliente: Cliente = {
+        id: novoId,
+        razaoSocial: values.razaoSocial ?? '',
+        nomeFantasia: values.nomeFantasia ?? '',
+        cnpj: values.cnpj ?? '',
+        telefone: values.telefone ?? '',
+        email: values.email ?? '',
+        site: '',
+        segmento: values.segmento ?? '',
+        cidade: values.cidade ?? '',
+        uf: values.uf ?? '',
+        status: 'prospecto',
+        obs: '',
+        contatos: [],
+        criadoEm: hoje(),
+      };
+      await upsert(cliente);
+      await refetch(true);
+      message.success(`Cliente "${values.nomeFantasia || values.razaoSocial}" cadastrado!`);
+      onCreated(novoId);
+      onClose();
+    } catch (e) {
+      message.error('Erro: ' + String(e));
+    } finally {
+      setSalvando(false);
+    }
+  }
+
+  return (
+    <Modal
+      open={open}
+      title="Cadastro Rápido de Cliente"
+      onCancel={onClose}
+      footer={
+        <Space style={{ justifyContent: 'flex-end', width: '100%' }}>
+          <Button onClick={onClose}>Cancelar</Button>
+          <Button type="primary" loading={salvando} onClick={handleSave}>
+            Salvar cliente
+          </Button>
+        </Space>
+      }
+      width={500}
+      destroyOnClose
+    >
+      <Form form={form} layout="vertical" style={{ marginTop: 8 }}>
+        <Form.Item name="cnpj" label="CNPJ">
+          <Input
+            placeholder="00.000.000/0001-00"
+            onChange={handleCNPJChange}
+            suffix={cnpjOk ? <CheckCircleOutlined style={{ color: '#52c41a' }} /> : null}
+          />
+        </Form.Item>
+        <Row gutter={12}>
+          <Col span={12}>
+            <Form.Item name="razaoSocial" label="Razão Social" rules={[{ required: true, message: 'Obrigatório' }]}>
+              <Input placeholder="Nome jurídico" />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item name="nomeFantasia" label="Nome Fantasia">
+              <Input placeholder="Como é conhecido" />
+            </Form.Item>
+          </Col>
+        </Row>
+        <Row gutter={12}>
+          <Col span={12}>
+            <Form.Item name="telefone" label="Telefone">
+              <Input placeholder="(00) 00000-0000" />
+            </Form.Item>
+          </Col>
+          <Col span={12}>
+            <Form.Item name="email" label="E-mail">
+              <Input placeholder="contato@empresa.com" />
+            </Form.Item>
+          </Col>
+        </Row>
+        <Row gutter={12}>
+          <Col span={12}>
+            <Form.Item name="segmento" label="Segmento">
+              <Select
+                placeholder="Selecione..."
+                allowClear
+                options={SEGMENTOS.map(s => ({ value: s, label: s }))}
+              />
+            </Form.Item>
+          </Col>
+          <Col span={8}>
+            <Form.Item name="cidade" label="Cidade">
+              <Input placeholder="Ex: Curitiba" />
+            </Form.Item>
+          </Col>
+          <Col span={4}>
+            <Form.Item name="uf" label="UF">
+              <Select
+                placeholder="UF"
+                options={ESTADOS_BR.map(s => ({ value: s, label: s }))}
+              />
+            </Form.Item>
+          </Col>
+        </Row>
+      </Form>
+    </Modal>
+  );
+}
+
 export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Props) {
   const [form] = Form.useForm();
   const { upsert } = useNegociosStore();
   const { clientes, fetch: fetchClientes, loaded } = useClientesStore();
   const { upsert: upsertAtiv } = useAtividadesStore();
   const [salvando, setSalvando] = useState(false);
+  const [novoClienteOpen, setNovoClienteOpen] = useState(false);
 
   // Follow-up
   const [agendarFollowUp, setAgendarFollowUp] = useState(false);
@@ -138,9 +297,26 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
 
         <Row gutter={12}>
           <Col span={14}>
-            <Form.Item name="clienteId" label="Cliente" rules={[{ required: true, message: 'Selecione o cliente' }]}>
+            <Form.Item
+              name="clienteId"
+              label={
+                <Space size={6}>
+                  <span>Cliente</span>
+                  <Button
+                    type="link"
+                    size="small"
+                    icon={<PlusOutlined />}
+                    style={{ padding: 0, height: 'auto', fontSize: 12 }}
+                    onClick={() => setNovoClienteOpen(true)}
+                  >
+                    Novo
+                  </Button>
+                </Space>
+              }
+              rules={[{ required: true, message: 'Selecione o cliente' }]}
+            >
               <Select
-                placeholder="Selecione..."
+                placeholder="Selecione ou crie um novo →"
                 showSearch
                 optionFilterProp="label"
                 options={clientes.map(c => ({
@@ -276,6 +452,15 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
           </Text>
         </div>
       )}
+
+      <NovoClienteModal
+        open={novoClienteOpen}
+        onClose={() => setNovoClienteOpen(false)}
+        onCreated={(id) => {
+          form.setFieldValue('clienteId', id);
+          setNovoClienteOpen(false);
+        }}
+      />
     </Drawer>
   );
 }
