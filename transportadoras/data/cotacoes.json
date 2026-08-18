@@ -25,21 +25,20 @@
     "id": "msdjby9plmgl"
   },
   {
-    "id": "msdj1yowkv2y",
     "data": "2026-08-03",
     "pedido": "2810",
     "tomador": "REMETENTE",
     "linhas": "5",
+    "col": "SIM",
     "cnpjR": "49.506.242/0001-40",
     "cepR": "06739-020",
     "cnpjD": "15.180.714/0001-04",
     "cepD": "40110-902",
     "vnf": "4.116,00",
-    "vol": "28",
     "pes": "420",
+    "vol": "28",
     "med": "36 X 31 X 25",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "col": "SIM",
     "transRows": [
       {
         "trans": "PRIMEIRA DO NORDESTE",
@@ -61,11 +60,12 @@
       },
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "416,37",
+        "cotacao": "152858",
         "prazo": ""
       }
-    ]
+    ],
+    "id": "msdj1yowkv2y"
   },
   {
     "data": "2026-08-03",
