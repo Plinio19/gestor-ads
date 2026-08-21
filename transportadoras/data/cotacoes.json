@@ -2357,5 +2357,29 @@
       }
     ],
     "id": "mt2z2asi8j6jd"
+  },
+  {
+    "data": "2026-08-21",
+    "pedido": "2927",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "09.341.233/0001-22",
+    "cepD": "97650-000",
+    "vnf": "318,00",
+    "pes": "25",
+    "vol": "3",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mt2z4mtb60ll3"
   }
 ]
