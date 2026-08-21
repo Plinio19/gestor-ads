@@ -2345,7 +2345,7 @@
     "transRows": [
       {
         "trans": "RODOGARCIA",
-        "valor": "1.749,61",
+        "valor": "1574,75",
         "cotacao": "134051 ",
         "prazo": ""
       },
@@ -2353,6 +2353,18 @@
         "trans": "PANAMERICANO",
         "valor": "1899,98",
         "cotacao": "60970",
+        "prazo": ""
+      },
+      {
+        "trans": "TODOBRASIL TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "ABT LOG",
+        "valor": "",
+        "cotacao": "",
         "prazo": ""
       }
     ],
