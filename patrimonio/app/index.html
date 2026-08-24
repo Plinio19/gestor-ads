@@ -9,6 +9,16 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.onerror = function(msg, src, line, col, err) {
+        document.body.innerHTML = '<pre style="padding:24px;color:red;font-size:13px;white-space:pre-wrap">' +
+          'ERRO: ' + msg + '\n\nArquivo: ' + src + ':' + line + '\n\n' + (err && err.stack ? err.stack : '') + '</pre>';
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        document.body.innerHTML = '<pre style="padding:24px;color:red;font-size:13px;white-space:pre-wrap">' +
+          'PROMISE REJEITADA:\n' + (e.reason && e.reason.stack ? e.reason.stack : String(e.reason)) + '</pre>';
+      });
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

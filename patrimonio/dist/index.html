@@ -6,7 +6,7 @@
     <title>Patrimônio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Mono:wght@400;500&display=swap">
-    <script type="module" crossorigin src="/gestor-ads/patrimonio/dist/assets/index-CfVRbB0U.js"></script>
+    <script type="module" crossorigin src="/gestor-ads/patrimonio/dist/assets/index-BE3l7QOe.js"></script>
     <link rel="modulepreload" crossorigin href="/gestor-ads/patrimonio/dist/assets/rolldown-runtime-CbXtAM7H.js">
     <link rel="modulepreload" crossorigin href="/gestor-ads/patrimonio/dist/assets/antd-CI_VrIWz.js">
     <link rel="modulepreload" crossorigin href="/gestor-ads/patrimonio/dist/assets/deps--KDjlzju.js">
@@ -15,5 +15,15 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.onerror = function(msg, src, line, col, err) {
+        document.body.innerHTML = '<pre style="padding:24px;color:red;font-size:13px;white-space:pre-wrap">' +
+          'ERRO: ' + msg + '\n\nArquivo: ' + src + ':' + line + '\n\n' + (err && err.stack ? err.stack : '') + '</pre>';
+      };
+      window.addEventListener('unhandledrejection', function(e) {
+        document.body.innerHTML = '<pre style="padding:24px;color:red;font-size:13px;white-space:pre-wrap">' +
+          'PROMISE REJEITADA:\n' + (e.reason && e.reason.stack ? e.reason.stack : String(e.reason)) + '</pre>';
+      });
+    </script>
   </body>
 </html>

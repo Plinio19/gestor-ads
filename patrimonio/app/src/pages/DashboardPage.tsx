@@ -149,6 +149,9 @@ export default function DashboardPage() {
 
   useEffect(() => { fetch(); fetchCaixa(); fetchRecv(); }, []);
 
+  const [ativoOptions, setAtivoOptions] = useState<{ value: string; label: string }[]>([]);
+  const ativoIdWatch = Form.useWatch('ativoId', formAlocar);
+
   if (!loaded || lc || lx || lr) {
     return <Spin size="large" style={{ display: 'block', margin: '80px auto' }} />;
   }
@@ -304,7 +307,6 @@ export default function DashboardPage() {
   }
 
   /* ── Watch ativoId options based on catId ── */
-  const [ativoOptions, setAtivoOptions] = useState<{ value: string; label: string }[]>([]);
   function updateAtivoOptions(catId: string) {
     const cat = categorias.find(c => c.id === catId);
     const opts = (cat?.assets ?? []).map((a: Asset) => ({ value: a.id, label: `${a.name} — ${fmtBRL(a.value)}` }));
@@ -314,7 +316,6 @@ export default function DashboardPage() {
     formAlocar.setFieldValue('novoNome', undefined);
   }
 
-  const ativoIdWatch = Form.useWatch('ativoId', formAlocar);
   const selectedCaixaItem = caixa.find(x => x.id === selectedCaixaId);
 
   return (
