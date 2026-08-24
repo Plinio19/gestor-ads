@@ -42,5 +42,17 @@
     "origem": "Site / Google",
     "id": "msyogq10uontj",
     "criadoEm": "2026-08-18"
+  },
+  {
+    "titulo": "Orçamento 545",
+    "clienteId": "mt7ibten8krto",
+    "etapa": "lead",
+    "valor": "482",
+    "probabilidade": "50",
+    "dataAbertura": "2026-08-24",
+    "dataFechamento": "2026-08-26",
+    "origem": "Site / Google",
+    "id": "mt7ic5aya92m2",
+    "criadoEm": "2026-08-24"
   }
 ]
