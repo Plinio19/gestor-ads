@@ -39,3 +39,15 @@ export interface Recebimento {
   recebido: boolean;
   dataRecebimento: string | null;
 }
+
+export interface Movimentacao {
+  id: string;
+  data: string;
+  descricao: string;
+  tipo: 'transferencia' | 'aporte' | 'resgate' | 'recebimento';
+  origemCat?: string;
+  origemAtivo?: string;
+  destinoCat?: string;
+  destinoAtivo?: string;
+  valor: number;
+}

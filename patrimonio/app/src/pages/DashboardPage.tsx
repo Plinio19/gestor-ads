@@ -5,12 +5,13 @@ import {
 } from 'antd';
 import {
   PlusOutlined, DeleteOutlined, CheckOutlined, CalendarOutlined,
-  ArrowRightOutlined,
+  ArrowRightOutlined, SwapOutlined,
 } from '@ant-design/icons';
 import type { Categoria, Asset } from '../types';
 import { useCategoriasStore, uid, COLORS } from '../stores/useCategoriasStore';
 import { useCaixaStore } from '../stores/useCaixaStore';
 import { useRecebimentosStore } from '../stores/useRecebimentosStore';
+import { useMovimentacoesStore } from '../stores/useMovimentacoesStore';
 import { fmtBRL, fmtPct, fmtDate, hoje, parseVal } from '../utils';
 
 const { Text } = Typography;
@@ -134,11 +135,14 @@ export default function DashboardPage() {
   const { categorias, loading: lc, loaded, fetch, save: saveCats } = useCategoriasStore();
   const { caixa, loading: lx, fetch: fetchCaixa, add: addCaixa, remove: removeCaixa, update: updateCaixa } = useCaixaStore();
   const { recebimentos, loading: lr, fetch: fetchRecv, add: addRecv, remove: removeRecv, marcarRecebido } = useRecebimentosStore();
+  const { movimentacoes, loading: lm, fetch: fetchMovs, add: addMov } = useMovimentacoesStore();
 
+  const [extratoOpen, setExtratoOpen] = useState(false);
   const [recvOpen, setRecvOpen] = useState(true);
   const [modalRecv, setModalRecv] = useState(false);
   const [modalAlocar, setModalAlocar] = useState(false);
   const [modalConfirmar, setModalConfirmar] = useState(false);
+  const [modalTransferir, setModalTransferir] = useState(false);
   const [selectedCatId, setSelectedCatId] = useState<string>('');
   const [selectedCaixaId, setSelectedCaixaId] = useState<string>('');
   const [selectedRecvId, setSelectedRecvId] = useState<string>('');
@@ -146,13 +150,19 @@ export default function DashboardPage() {
   const [formRecv] = Form.useForm();
   const [formAlocar] = Form.useForm();
   const [formConfirmar] = Form.useForm();
+  const [formTransferir] = Form.useForm();
 
-  useEffect(() => { fetch(); fetchCaixa(); fetchRecv(); }, []);
-
+  // ativo options for Alocar modal
   const [ativoOptions, setAtivoOptions] = useState<{ value: string; label: string }[]>([]);
   const [ativoIdWatch, setAtivoIdWatch] = useState<string>('');
 
-  if (!loaded || lc || lx || lr) {
+  // options for Transferir modal
+  const [origemAtivoOpts, setOrigemAtivoOpts] = useState<{ value: string; label: string }[]>([]);
+  const [destinoAtivoOpts, setDestinoAtivoOpts] = useState<{ value: string; label: string }[]>([]);
+
+  useEffect(() => { fetch(); fetchCaixa(); fetchRecv(); fetchMovs(); }, []);
+
+  if (!loaded || lc || lx || lr || lm) {
     return <Spin size="large" style={{ display: 'block', margin: '80px auto' }} />;
   }
 
@@ -238,19 +248,26 @@ export default function DashboardPage() {
 
   async function confirmarRecv() {
     const values = await formConfirmar.validateFields();
+    const principal = parseVal(values.valor || '0');
+    const juros = parseVal(values.juros || '0');
+    const total = principal + juros;
     setSalvando(true);
     try {
       const r = await marcarRecebido(selectedRecvId, values.data);
       if (r) {
-        await addCaixa({
-          id: uid(),
-          valor: parseVal(values.valor || '0'),
-          origem: r.descricao,
-          data: values.data,
+        const descCaixa = juros > 0
+          ? `${r.descricao} (principal ${fmtBRL(principal)} + juros ${fmtBRL(juros)})`
+          : r.descricao;
+        await addCaixa({ id: uid(), valor: total, origem: descCaixa, data: values.data });
+        await addMov({
+          id: uid(), data: values.data,
+          descricao: r.descricao + (juros > 0 ? ` + juros ${fmtBRL(juros)}` : ''),
+          tipo: 'recebimento',
+          valor: total,
         });
       }
       setModalConfirmar(false);
-      message.success('Valor enviado para o Caixa!');
+      message.success(`${fmtBRL(total)} enviado para o Caixa!`);
     } catch (e) { message.error(String(e)); }
     finally { setSalvando(false); }
   }
@@ -320,12 +337,89 @@ export default function DashboardPage() {
 
   const selectedCaixaItem = caixa.find(x => x.id === selectedCaixaId);
 
+  /* ── Transferir ── */
+  function openTransferir() {
+    formTransferir.resetFields();
+    formTransferir.setFieldsValue({ data: hoje(), origemCat: categorias[0]?.id, destinoCat: categorias[0]?.id });
+    const opts = (categorias[0]?.assets ?? []).map((a: Asset) => ({ value: a.id, label: `${a.name} — ${fmtBRL(a.value)}` }));
+    setOrigemAtivoOpts(opts);
+    setDestinoAtivoOpts(opts);
+    setModalTransferir(true);
+  }
+
+  function updateOrigemAtivos(catId: string) {
+    const cat = categorias.find(c => c.id === catId);
+    const opts = (cat?.assets ?? []).map((a: Asset) => ({ value: a.id, label: `${a.name} — ${fmtBRL(a.value)}` }));
+    setOrigemAtivoOpts(opts);
+    formTransferir.setFieldValue('origemAtivo', cat?.assets[0]?.id);
+  }
+
+  function updateDestinoAtivos(catId: string) {
+    const cat = categorias.find(c => c.id === catId);
+    const opts = (cat?.assets ?? []).map((a: Asset) => ({ value: a.id, label: `${a.name} — ${fmtBRL(a.value)}` }));
+    setDestinoAtivoOpts(opts);
+    formTransferir.setFieldValue('destinoAtivo', cat?.assets[0]?.id);
+  }
+
+  async function confirmarTransferir() {
+    const values = await formTransferir.validateFields();
+    const val = parseVal(values.valor || '0');
+    if (val <= 0) { message.error('Valor inválido'); return; }
+    setSalvando(true);
+    try {
+      const origemCat = categorias.find(c => c.id === values.origemCat);
+      const destinoCat = categorias.find(c => c.id === values.destinoCat);
+      const origemAtivo = origemCat?.assets.find(a => a.id === values.origemAtivo);
+      const destinoAtivo = destinoCat?.assets.find(a => a.id === values.destinoAtivo);
+      if (!origemCat || !destinoCat || !origemAtivo || !destinoAtivo) { message.error('Ativo inválido'); return; }
+      if (origemAtivo.value < val) { message.error(`Saldo insuficiente. Disponível: ${fmtBRL(origemAtivo.value)}`); return; }
+
+      // update categorias
+      const nextCats = categorias.map(c => {
+        if (c.id === origemCat.id && c.id === destinoCat.id) {
+          return {
+            ...c, assets: c.assets.map(a => {
+              if (a.id === origemAtivo.id) return { ...a, value: a.value - val };
+              if (a.id === destinoAtivo.id) return { ...a, value: a.value + val };
+              return a;
+            })
+          };
+        }
+        if (c.id === origemCat.id) return { ...c, assets: c.assets.map(a => a.id === origemAtivo.id ? { ...a, value: a.value - val } : a) };
+        if (c.id === destinoCat.id) return { ...c, assets: c.assets.map(a => a.id === destinoAtivo.id ? { ...a, value: a.value + val } : a) };
+        return c;
+      });
+      await saveCats(nextCats, `Transferência: ${origemAtivo.name} → ${destinoAtivo.name}`);
+
+      await addMov({
+        id: uid(), data: values.data,
+        descricao: values.descricao || `${origemAtivo.name} → ${destinoAtivo.name}`,
+        tipo: 'transferencia',
+        origemCat: origemCat.name, origemAtivo: origemAtivo.name,
+        destinoCat: destinoCat.name, destinoAtivo: destinoAtivo.name,
+        valor: val,
+      });
+
+      setModalTransferir(false);
+      message.success(`${fmtBRL(val)} transferido com sucesso!`);
+    } catch (e) { message.error(String(e)); }
+    finally { setSalvando(false); }
+  }
+
   return (
     <div style={{ padding: '28px 20px 72px', maxWidth: 900, margin: '0 auto' }}>
 
       {/* HERO */}
       <div style={{ marginBottom: 28, paddingBottom: 24, borderBottom: '1px solid #e8e8e8' }}>
-        <div style={{ fontSize: 12, fontWeight: 500, color: '#888', marginBottom: 4 }}>Patrimônio Total</div>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12 }}>
+          <div style={{ fontSize: 12, fontWeight: 500, color: '#888', marginBottom: 4 }}>Patrimônio Total</div>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <Button icon={<SwapOutlined />} onClick={openTransferir} style={{ fontSize: 12 }}>Transferir</Button>
+            <Button icon={<ArrowRightOutlined />} onClick={() => setExtratoOpen(o => !o)} style={{ fontSize: 12 }}>
+              {extratoOpen ? 'Ocultar extrato' : `Extrato (${movimentacoes.length})`}
+            </Button>
+          </div>
+        </div>
         <div style={{
           fontFamily: '"DM Serif Display", Georgia, serif',
           fontSize: 'clamp(34px, 6.5vw, 52px)',
@@ -625,12 +719,17 @@ export default function DashboardPage() {
         </Text>
         <Form form={formConfirmar} layout="vertical">
           <Row gutter={12}>
-            <Col span={12}>
-              <Form.Item name="valor" label="Valor Recebido (R$)" rules={[{ required: true }]}>
+            <Col span={8}>
+              <Form.Item name="valor" label="Principal (R$)" rules={[{ required: true }]}>
                 <Input style={{ fontFamily: '"DM Mono", monospace' }} />
               </Form.Item>
             </Col>
-            <Col span={12}>
+            <Col span={8}>
+              <Form.Item name="juros" label="Juros / Extra (R$)">
+                <Input placeholder="0,00" style={{ fontFamily: '"DM Mono", monospace' }} />
+              </Form.Item>
+            </Col>
+            <Col span={8}>
               <Form.Item name="data" label="Data" rules={[{ required: true }]}>
                 <Input type="date" />
               </Form.Item>
@@ -687,6 +786,97 @@ export default function DashboardPage() {
           )}
         </Form>
       </Modal>
+
+      {/* MODAL: Transferir */}
+      <Modal
+        title={<><SwapOutlined style={{ marginRight: 8 }} />Transferir entre categorias</>}
+        open={modalTransferir}
+        onCancel={() => setModalTransferir(false)}
+        onOk={confirmarTransferir}
+        okText="Confirmar transferência"
+        cancelText="Cancelar"
+        confirmLoading={salvando}
+        destroyOnHidden
+        width={480}
+      >
+        <Form form={formTransferir} layout="vertical" style={{ marginTop: 12 }}>
+          <Form.Item name="descricao" label="Descrição">
+            <Input placeholder="Ex: Aporte Halogenn — Ago/2026" />
+          </Form.Item>
+          <Row gutter={12}>
+            <Col span={12}>
+              <Form.Item name="valor" label="Valor (R$)" rules={[{ required: true, message: 'Obrigatório' }]}>
+                <Input placeholder="0,00" style={{ fontFamily: '"DM Mono", monospace' }} />
+              </Form.Item>
+            </Col>
+            <Col span={12}>
+              <Form.Item name="data" label="Data" rules={[{ required: true }]}>
+                <Input type="date" />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Divider style={{ margin: '4px 0 16px' }}>De</Divider>
+          <Row gutter={12}>
+            <Col span={12}>
+              <Form.Item name="origemCat" label="Categoria" rules={[{ required: true }]}>
+                <Select options={categorias.map(c => ({ value: c.id, label: c.name }))} onChange={updateOrigemAtivos} />
+              </Form.Item>
+            </Col>
+            <Col span={12}>
+              <Form.Item name="origemAtivo" label="Ativo" rules={[{ required: true }]}>
+                <Select options={origemAtivoOpts} />
+              </Form.Item>
+            </Col>
+          </Row>
+          <Divider style={{ margin: '4px 0 16px' }}>Para</Divider>
+          <Row gutter={12}>
+            <Col span={12}>
+              <Form.Item name="destinoCat" label="Categoria" rules={[{ required: true }]}>
+                <Select options={categorias.map(c => ({ value: c.id, label: c.name }))} onChange={updateDestinoAtivos} />
+              </Form.Item>
+            </Col>
+            <Col span={12}>
+              <Form.Item name="destinoAtivo" label="Ativo" rules={[{ required: true }]}>
+                <Select options={destinoAtivoOpts} />
+              </Form.Item>
+            </Col>
+          </Row>
+        </Form>
+      </Modal>
+
+      {/* EXTRATO */}
+      {extratoOpen && (
+        <div style={{ marginTop: 28, borderTop: '1px solid #e8e8e8', paddingTop: 20 }}>
+          <Text style={{ fontSize: 11.5, fontWeight: 600, letterSpacing: '.07em', textTransform: 'uppercase', color: '#888' }}>
+            📋 Extrato de Movimentações
+          </Text>
+          {movimentacoes.length === 0 ? (
+            <div style={{ marginTop: 16, color: '#bbb', fontSize: 13 }}>Nenhuma movimentação registrada ainda.</div>
+          ) : (
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 6, marginTop: 14 }}>
+              {[...movimentacoes].reverse().map(m => (
+                <div key={m.id} style={{ background: '#F7F5F0', border: '1px solid #e0ddd6', borderRadius: 8, padding: '10px 14px', display: 'flex', alignItems: 'center', gap: 12 }}>
+                  <div style={{ fontSize: 18, flexShrink: 0 }}>
+                    {m.tipo === 'transferencia' ? '↔️' : m.tipo === 'recebimento' ? '💵' : m.tipo === 'aporte' ? '📥' : '📤'}
+                  </div>
+                  <div style={{ flex: 1, minWidth: 0 }}>
+                    <div style={{ fontSize: 13, fontWeight: 500 }}>{m.descricao}</div>
+                    <div style={{ fontSize: 11, color: '#aaa', marginTop: 2 }}>
+                      {fmtDate(m.data)}
+                      {m.tipo === 'transferencia' && m.origemCat && m.destinoCat && (
+                        <> · {m.origemCat} / {m.origemAtivo} <span style={{ color: '#999' }}>→</span> {m.destinoCat} / {m.destinoAtivo}</>
+                      )}
+                    </div>
+                  </div>
+                  <Text style={{ fontFamily: '"DM Mono", monospace', fontSize: 13, fontWeight: 500, whiteSpace: 'nowrap' }}>
+                    {fmtBRL(m.valor)}
+                  </Text>
+                </div>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
 
       <style>{`
         .asset-row:hover .del-asset-btn { opacity: 1 !important; }

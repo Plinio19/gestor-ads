@@ -4,9 +4,10 @@ const LS_CONFIG = 'pat_config_v1';
 const DEFAULTS = { owner: 'Plinio19', repo: 'gestor-ads', branch: 'main' };
 
 const CACHE_MAP: Record<string, string> = {
-  'patrimonio/data/categorias.json':    'pat_categorias',
-  'patrimonio/data/caixa.json':         'pat_caixa',
-  'patrimonio/data/recebimentos.json':  'pat_recebimentos',
+  'patrimonio/data/categorias.json':     'pat_categorias',
+  'patrimonio/data/caixa.json':          'pat_caixa',
+  'patrimonio/data/recebimentos.json':   'pat_recebimentos',
+  'patrimonio/data/movimentacoes.json':  'pat_movimentacoes',
 };
 
 class GitHubDataService {
