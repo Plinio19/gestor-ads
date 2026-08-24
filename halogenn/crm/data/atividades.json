@@ -42,5 +42,16 @@
     "concluida": false,
     "obs": "Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
     "criadoEm": "2026-08-18"
+  },
+  {
+    "id": "mt7icg4w0rmaj",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: Orçamento 545 — PHARMA FACE VET",
+    "clienteId": "mt7ibten8krto",
+    "negocioId": "mt7ic5aya92m2",
+    "data": "2026-08-25",
+    "concluida": false,
+    "obs": "Cobrança de orçamento a cada 1 dia(s). Próximo em: 2026-08-25",
+    "criadoEm": "2026-08-24"
   }
 ]
