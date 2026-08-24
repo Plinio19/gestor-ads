@@ -1,1 +1,87 @@
-[]
+[
+  {
+    "id": "rpgvu4v",
+    "name": "Renda Fixa",
+    "color": "#2D6A4F",
+    "assets": [
+      {
+        "id": "vkdusc9",
+        "name": "BTG Pactual",
+        "value": 40677.78
+      }
+    ]
+  },
+  {
+    "id": "280ay8a",
+    "name": "Renda Variável",
+    "color": "#52B788",
+    "assets": [
+      {
+        "id": "ogc45ym",
+        "name": "AREA11",
+        "value": 8127.6
+      },
+      {
+        "id": "mqw9aay",
+        "name": "WRLD11",
+        "value": 8219.75
+      },
+      {
+        "id": "oljyo00",
+        "name": "AUVP11",
+        "value": 4957.68
+      }
+    ]
+  },
+  {
+    "id": "gsi88el",
+    "name": "Imóveis",
+    "color": "#E9A23B",
+    "assets": [
+      {
+        "id": "l6f34zb",
+        "name": "Construção de Casas",
+        "value": 30000
+      }
+    ]
+  },
+  {
+    "id": "ton690i",
+    "name": "Veículos",
+    "color": "#7D8FA8",
+    "assets": [
+      {
+        "id": "nryelo4",
+        "name": "Moto GSX650F",
+        "value": 28000
+      },
+      {
+        "id": "vn7nc1g",
+        "name": "Carro City 2013",
+        "value": 40000
+      }
+    ]
+  },
+  {
+    "id": "ushq1aa",
+    "name": "Aportes em Empresas",
+    "color": "#A78BFA",
+    "assets": [
+      {
+        "id": "f8hxyzu",
+        "name": "Halogenn",
+        "value": 7000
+      },
+      {
+        "id": "x944y7k",
+        "name": "N30 Engenharia",
+        "value": 5000
+      },
+      {
+        "id": "bymbs1j",
+        "name": "Novo ativo",
+        "value": 0
+      }
+    ]
+  }
+]
