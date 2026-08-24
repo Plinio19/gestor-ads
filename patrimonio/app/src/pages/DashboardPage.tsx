@@ -150,7 +150,7 @@ export default function DashboardPage() {
   useEffect(() => { fetch(); fetchCaixa(); fetchRecv(); }, []);
 
   const [ativoOptions, setAtivoOptions] = useState<{ value: string; label: string }[]>([]);
-  const ativoIdWatch = Form.useWatch('ativoId', formAlocar);
+  const [ativoIdWatch, setAtivoIdWatch] = useState<string>('');
 
   if (!loaded || lc || lx || lr) {
     return <Spin size="large" style={{ display: 'block', margin: '80px auto' }} />;
@@ -312,8 +312,10 @@ export default function DashboardPage() {
     const opts = (cat?.assets ?? []).map((a: Asset) => ({ value: a.id, label: `${a.name} — ${fmtBRL(a.value)}` }));
     opts.push({ value: '__novo__', label: '+ Criar novo ativo' });
     setAtivoOptions(opts);
-    formAlocar.setFieldValue('ativoId', cat?.assets[0]?.id ?? '__novo__');
+    const defaultAtivo = cat?.assets[0]?.id ?? '__novo__';
+    formAlocar.setFieldValue('ativoId', defaultAtivo);
     formAlocar.setFieldValue('novoNome', undefined);
+    setAtivoIdWatch(defaultAtivo);
   }
 
   const selectedCaixaItem = caixa.find(x => x.id === selectedCaixaId);
@@ -674,7 +676,7 @@ export default function DashboardPage() {
             </Col>
             <Col span={12}>
               <Form.Item name="ativoId" label="Ativo" rules={[{ required: true }]}>
-                <Select options={ativoOptions} />
+                <Select options={ativoOptions} onChange={(v) => setAtivoIdWatch(String(v))} />
               </Form.Item>
             </Col>
           </Row>
