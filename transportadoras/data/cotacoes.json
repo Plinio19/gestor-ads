@@ -2414,6 +2414,18 @@
         "valor": "202,77",
         "cotacao": "134075 ",
         "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "298,35",
+        "cotacao": "61049",
+        "prazo": ""
+      },
+      {
+        "trans": "ABT LOG",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
       }
     ],
     "id": "mt2z6sslkjvz1"
