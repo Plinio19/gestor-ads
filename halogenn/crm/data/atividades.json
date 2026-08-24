@@ -53,5 +53,16 @@
     "concluida": false,
     "obs": "Cobrança de orçamento a cada 1 dia(s). Próximo em: 2026-08-25",
     "criadoEm": "2026-08-24"
+  },
+  {
+    "id": "mt7idk515yilh",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: ORC-20260818-001 — Fundação Faculdade de Medicina",
+    "clienteId": "msynti5galubt",
+    "negocioId": "msynu7z3j7f4r",
+    "data": "2026-08-27",
+    "concluida": false,
+    "obs": "Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
+    "criadoEm": "2026-08-24"
   }
 ]
