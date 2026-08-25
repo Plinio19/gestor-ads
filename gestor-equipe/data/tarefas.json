@@ -1,1 +1,16 @@
-[]
+[
+  {
+    "id": "nhbz74kmt92dx5e",
+    "titulo": "Criar Conta no ML",
+    "descricao": "Precisa fazer a criação de conta no mercado livre da Halogenn",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-08-26",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-08-25T19:35:02.162Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
+  }
+]
