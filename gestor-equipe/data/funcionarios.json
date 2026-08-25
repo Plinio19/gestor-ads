@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "m2wbm5dmt92d0z1",
+    "nome": "Guilherme Lima",
+    "cargo": "Gerente",
+    "email": "financeiro@halogenn.com.br",
+    "telefone": "11986440330",
+    "cor": "#F56A00",
+    "ativo": true,
+    "criadoEm": "2026-08-25T19:34:20.461Z"
+  }
+]
