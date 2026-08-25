@@ -12,5 +12,21 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "dprxfmimt92evau",
+    "titulo": "Notas para Senger Acessoria",
+    "descricao": "Enviar Notas de Entrada e Saida para Senger",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-08-25",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-08-25T19:35:46.422Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "5",
+      "horario": "08:30"
+    }
   }
 ]
