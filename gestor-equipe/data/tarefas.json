@@ -28,5 +28,21 @@
       "diaMes": "5",
       "horario": "08:30"
     }
+  },
+  {
+    "id": "8krsmubmt92frr0",
+    "titulo": "Fazer Fechamento",
+    "descricao": "Fazer fechamento mensal da empresa, seguir checklist etc...",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-08-25",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-08-25T19:36:28.476Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "10",
+      "horario": "08:00"
+    }
   }
 ]
