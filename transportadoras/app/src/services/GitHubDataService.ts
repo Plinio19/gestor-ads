@@ -64,7 +64,9 @@ export class GitHubDataService {
 
     if (!cfg) {
       const cached = localStorage.getItem(key);
-      if (cached) return { lista: JSON.parse(cached), sha: null };
+      if (cached) {
+        try { return JSON.parse(cached) as DataResult<T>; } catch { /* invalid cache */ }
+      }
       throw new Error('GitHub não configurado. Acesse Configurações.');
     }
 
@@ -74,7 +76,9 @@ export class GitHubDataService {
 
     if (!res.ok) {
       const cached = localStorage.getItem(key);
-      if (cached) return { lista: JSON.parse(cached), sha: null };
+      if (cached) {
+        try { return JSON.parse(cached) as DataResult<T>; } catch { /* invalid cache */ }
+      }
       throw new Error(`GitHub ${res.status}: ${res.statusText}`);
     }
 
@@ -83,7 +87,7 @@ export class GitHubDataService {
     const raw = atob(json.content.replace(/\n/g, ''));
     const lista: T[] = JSON.parse(decodeURIComponent(escape(raw)));
 
-    localStorage.setItem(key, JSON.stringify(lista));
+    localStorage.setItem(key, JSON.stringify({ lista, sha }));
     return { lista, sha };
   }
 
@@ -96,21 +100,34 @@ export class GitHubDataService {
     const cfg = getConfig();
     if (!cfg) throw new Error('GitHub não configurado.');
 
+    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+
+    const doPut = (currentSha: string | null) => fetch(apiBaseNoRef(cfg, path), {
+      method: 'PUT',
+      headers: headers(cfg),
+      body: JSON.stringify({
+        message, content, branch: cfg.branch,
+        ...(currentSha ? { sha: currentSha } : {}),
+      }),
+    });
+
+    // Busca SHA fresco antes de salvar
     let freshSha = sha;
     try {
       const check = await fetch(apiBase(cfg, path), { headers: headers(cfg) });
       if (check.ok) freshSha = (await check.json()).sha;
-    } catch { /* usa sha atual */ }
+    } catch { /* usa sha recebido */ }
 
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
-    const body: Record<string, unknown> = { message, content, branch: cfg.branch };
-    if (freshSha) body.sha = freshSha;
+    let res = await doPut(freshSha);
 
-    const res = await fetch(apiBaseNoRef(cfg, path), {
-      method: 'PUT',
-      headers: headers(cfg),
-      body: JSON.stringify(body),
-    });
+    // Em conflito, busca SHA novamente e tenta mais uma vez
+    if (res.status === 409 || res.status === 422) {
+      try {
+        const retry = await fetch(apiBase(cfg, path), { headers: headers(cfg) });
+        if (retry.ok) freshSha = (await retry.json()).sha;
+      } catch { /* mantém sha */ }
+      res = await doPut(freshSha);
+    }
 
     if (!res.ok) {
       const err = await res.json().catch(() => ({}));
@@ -118,7 +135,7 @@ export class GitHubDataService {
     }
 
     const newSha: string = (await res.json()).content.sha;
-    localStorage.setItem(cacheKey(path), JSON.stringify(data));
+    localStorage.setItem(cacheKey(path), JSON.stringify({ lista: data, sha: newSha }));
     return newSha;
   }
 
