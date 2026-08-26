@@ -44,5 +44,20 @@
       "diaMes": "10",
       "horario": "08:00"
     }
+  },
+  {
+    "id": "eq119mxmt9zrkyu",
+    "titulo": "Verificar status e Preenchar KPI licitações ",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-09-01",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-08-26T11:09:26.886Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "1",
+      "horario": "08:30"
+    }
   }
 ]
