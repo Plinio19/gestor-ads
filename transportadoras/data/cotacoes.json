@@ -2510,6 +2510,12 @@
         "valor": "",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "DAGO",
+        "valor": "910,00",
+        "cotacao": "151273",
+        "prazo": ""
       }
     ],
     "id": "mt9zw9ji9r1w5"
