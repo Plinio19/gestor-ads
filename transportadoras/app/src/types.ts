@@ -68,3 +68,21 @@ export interface Documento {
   nomeArquivo?: string;
   obs: string;
 }
+
+export type TicketPrioridade = 'alta' | 'media';
+export type TicketPosicao = 'aberto' | 'andamento' | 'finalizado';
+
+export interface Ticket {
+  id: string;
+  numero: string;
+  assunto: string;
+  notaFiscal: string;
+  empenho?: string;
+  pedido: string;
+  problemaRaiz: string;
+  acaoTomada: string;
+  prioridade: TicketPrioridade;
+  posicao: TicketPosicao;
+  criadoEm: string;
+  atualizadoEm: string;
+}

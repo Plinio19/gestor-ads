@@ -9,6 +9,7 @@ import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   CloudOutlined,
+  ExclamationCircleOutlined,
 } from '@ant-design/icons';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { dataService } from '../../services/GitHubDataService';
@@ -17,11 +18,12 @@ const { Sider, Header, Content } = Layout;
 const { Text } = Typography;
 
 const menuItems = [
-  { key: '/',              icon: <HomeOutlined />,       label: 'Dashboard' },
-  { key: '/transportadoras', icon: <CarOutlined />,      label: 'Transportadoras' },
-  { key: '/cotacoes',      icon: <FileTextOutlined />,   label: 'Cotações' },
-  { key: '/documentos',    icon: <FolderOpenOutlined />, label: 'Documentos' },
-  { key: '/configuracoes', icon: <SettingOutlined />,    label: 'Configurações' },
+  { key: '/',              icon: <HomeOutlined />,                    label: 'Dashboard' },
+  { key: '/transportadoras', icon: <CarOutlined />,                   label: 'Transportadoras' },
+  { key: '/cotacoes',      icon: <FileTextOutlined />,                label: 'Cotações' },
+  { key: '/documentos',    icon: <FolderOpenOutlined />,              label: 'Documentos' },
+  { key: '/tickets',       icon: <ExclamationCircleOutlined />,       label: 'Tickets' },
+  { key: '/configuracoes', icon: <SettingOutlined />,                 label: 'Configurações' },
 ];
 
 export default function AppLayout() {

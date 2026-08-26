@@ -11,6 +11,7 @@ const CACHE_MAP: Record<string, string> = {
   'transportadoras/data/transportadoras.json': 'trans_transportadoras',
   'transportadoras/data/cotacoes.json':        'trans_cotacoes',
   'transportadoras/data/documentos.json':      'trans_docs',
+  'transportadoras/data/tickets.json':         'trans_tickets',
 };
 
 function cacheKey(path: string): string {
