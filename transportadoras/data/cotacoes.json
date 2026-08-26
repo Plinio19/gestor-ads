@@ -2531,14 +2531,14 @@
     "transRows": [
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "589,57",
+        "cotacao": "202617  ",
         "prazo": ""
       },
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "575,00",
+        "cotacao": "1274547",
         "prazo": ""
       },
       {
@@ -2549,8 +2549,8 @@
       },
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "361,62",
+        "cotacao": "023816",
         "prazo": ""
       }
     ],
