@@ -2513,5 +2513,47 @@
       }
     ],
     "id": "mt9zw9ji9r1w5"
+  },
+  {
+    "data": "2026-08-26",
+    "pedido": "2892",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "03.568.867/0001-36",
+    "cepD": "70673-900",
+    "vnf": "8,980,00",
+    "pes": "200",
+    "vol": "34",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1307 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mt9zzccmf2tns"
   }
 ]
