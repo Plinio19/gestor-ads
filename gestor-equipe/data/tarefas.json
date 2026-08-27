@@ -74,5 +74,19 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "qn689j5mtbkavfu",
+    "titulo": "Sistema Tickets",
+    "descricao": "Colocar todos os tickets e prazos no sistema que o plinio criou",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-08-27",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-08-27T13:32:05.418Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
