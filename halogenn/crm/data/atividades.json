@@ -97,5 +97,16 @@
     "concluida": false,
     "obs": "Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-29",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "id": "mtbkf8td6488r",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: ORÇAMENTO Nº 543 — SENAI DEPARTAMENTO REGIONAL DO RIO GRANDE DO SUL",
+    "clienteId": "msrh2dhk1f56f",
+    "negocioId": "msrhfthjngqdn",
+    "data": "2026-09-01",
+    "concluida": false,
+    "obs": "Re-agendado após conclusão. Re-agendado após conclusão. Cobrança de orçamento a cada 3 dia(s). Próximo em: 2026-08-21",
+    "criadoEm": "2026-08-27"
   }
 ]
