@@ -119,5 +119,16 @@
     "concluida": false,
     "obs": "Re-agendado após conclusão. Re-agendado após conclusão. Re-agendado após conclusão. Cobrança de orçamento a cada 3 dia(s). Próximo em: 2026-08-21",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "id": "mtbkhbnoj2k1p",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: Orçamento 545 — PHARMA FACE VET",
+    "clienteId": "mt7ibten8krto",
+    "negocioId": "mt7ic5aya92m2",
+    "data": "2026-09-01",
+    "concluida": false,
+    "obs": "Re-agendado após conclusão. Cobrança de orçamento a cada 1 dia(s). Próximo em: 2026-08-25",
+    "criadoEm": "2026-08-27"
   }
 ]
