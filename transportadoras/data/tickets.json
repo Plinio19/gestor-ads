@@ -98,20 +98,6 @@
     "atualizadoEm": "2026-08-27T18:54:06.381Z"
   },
   {
-    "id": "mtbvuv3tq9zet",
-    "numero": "0001",
-    "assunto": "Ticket 1 - UFMS - Edta Sal Dissódico",
-    "notaFiscal": "NF 2757",
-    "empenho": "2026NE000893",
-    "pedido": "2026NE000893",
-    "problemaRaiz": "Objeto: Item 36 (EDTA Sal Dissódico 2H2O PA ACS) da NE 2026NE000893 / NF 000.002.757 — cliente UFMS\nProblema: entregue só 500g de 1kg pedido + rótulo do frasco trazendo dados de Álcool Etílico em vez de EDTA\nContexto: cronologia dos dois e-mails (22/07 conferência técnica, 24/07 notificação formal do Almoxarifado), com contatos da UFMS\nAção solicitada: enviar os 500g restantes, corrigir rotulagem, revisar processo de expedição e responder formalmente ao Almoxarifado — prazo de 5 dias úteis\nAnexos referenciados: os dois e-mails já existentes na pasta\n",
-    "acaoTomada": "Código de Rastreio: https://www.melhorrastreio.com.br/app/correios/AD813613600BR\n\nPrevisão de entrega 24/08. Aguardando confirmação do Cliente",
-    "prioridade": "media",
-    "posicao": "aberto",
-    "criadoEm": "2026-08-27T18:55:33.881Z",
-    "atualizadoEm": "2026-08-27T18:55:33.881Z"
-  },
-  {
     "id": "mtbvzwkaomn2e",
     "numero": "0010",
     "assunto": "Ticket 10 - 2L Ácido Sulfúrico - Ministério da Agricultura",
