@@ -64,5 +64,16 @@
     "dataAbertura": "2026-08-27",
     "id": "mtbkbzrln8d3f",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "titulo": "ORÇAMENTO 546",
+    "clienteId": "mtbkkqg1p1m6x",
+    "etapa": "proposta",
+    "valor": "22090",
+    "probabilidade": "50",
+    "dataAbertura": "2026-08-27",
+    "origem": "Prospecção Ativa",
+    "id": "mtbkl4afepi4x",
+    "criadoEm": "2026-08-27"
   }
 ]
