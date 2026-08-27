@@ -40,5 +40,19 @@
     "posicao": "finalizado",
     "criadoEm": "2026-08-27T16:14:05.272Z",
     "atualizadoEm": "2026-08-27T16:14:05.272Z"
+  },
+  {
+    "id": "mtbq5jk547p55",
+    "numero": "0002",
+    "assunto": "Ticket 2 - Envio de empenhos solabor e synth",
+    "notaFiscal": "2824 E 2822",
+    "empenho": "",
+    "pedido": "2647/2645",
+    "problemaRaiz": "Enviamos dois empenhos de outros fornecedores (solabor e synth).",
+    "acaoTomada": "Solicitar coleta do material para retornar para a Halogenn. \nAtualização -> Material entregue à halogenn em 24/08. ",
+    "prioridade": "media",
+    "posicao": "finalizado",
+    "criadoEm": "2026-08-27T16:15:54.437Z",
+    "atualizadoEm": "2026-08-27T16:15:54.437Z"
   }
 ]
