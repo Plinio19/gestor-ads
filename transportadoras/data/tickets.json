@@ -11,7 +11,7 @@
     "prioridade": "alta",
     "posicao": "aberto",
     "criadoEm": "2026-08-27T13:43:44.322Z",
-    "atualizadoEm": "2026-08-27T13:43:44.322Z"
+    "atualizadoEm": "2026-08-27T13:50:56.198Z"
   },
   {
     "id": "mtbkrvikg80v0",
@@ -21,24 +21,10 @@
     "empenho": "",
     "pedido": "NT",
     "problemaRaiz": "Cliente: Universidade Federal do Paraná (UFPR), Curitiba/PR\nProblema: transportadora Ouro Negro não conseguiu entregar 3 NFs (2939, 2940, 2944) do CT-e 658731 porque não localizou o responsável no setor de destino — as outras NFs do mesmo CT-e foram entregues normalmente a 3 recebedores diferentes\nCausa raiz apontada pela própria transportadora: o CT-e agrupou vários setores/destinatários diferentes num único documento (\"muitos donos, um só CTe\") — sugestão é emitir um CT-e por setor em despachos futuros com múltiplos recebedores\nRisco: mercadorias retidas no CD da Ouro Negro; serão devolvidas ao remetente em 7 dias (contando de 11/08) se não houver solução — prazo estimado até ~18/08/2026\nAção solicitada: identificar o responsável correto de cada NF pendente junto à UFPR, repassar à transportadora para nova tentativa de entrega, e adotar a prática de CT-e separado por setor para evitar recorrência\n\n20/08\n\nTicket 6: Situação da transp Ouro Negro, parece que são varias NF´s para endereç",
-    "acaoTomada": "",
+    "acaoTomada": "Devolução das notas para Halogenn e reenvio para o local correto com nova NF.",
     "prioridade": "alta",
     "posicao": "aberto",
     "criadoEm": "2026-08-27T13:45:18.668Z",
-    "atualizadoEm": "2026-08-27T13:45:18.668Z"
-  },
-  {
-    "id": "mtbkzdumg5cih",
-    "numero": "0010",
-    "assunto": "Ticket 10 - RodoGarcia - 2L Ácido Sulfúrico",
-    "notaFiscal": "2955",
-    "empenho": "",
-    "pedido": "NF2955",
-    "problemaRaiz": "Resumo da situação:\n\nNF 2955, entrega ao Ministério da Agricultura pela transportadora Rodo Garcia, com avaria (vazamento) reportada no Álcool Etílico 99,5%\nPonto de atenção principal: os relatos da própria transportadora sobre quantas unidades vazaram são contraditórios — primeiro \"2 unidades com vazamento pelo lacre\" (caixa de 6 devolvida inteira), depois \"apenas 1 unidade\", depois \"são apenas 2 itens\". Isso precisa ser esclarecido antes de decidir reposição/crédito.\nO Ácido Sulfúrico 95-98%, inicialmente também apontado com avaria, foi confirmado sem vazamento na atualização de 20/08.\nA Rodo Garcia está sem retorno da Halogenn desde 18/08 e reencaminhou a cobrança para licitações em 24/08 (6 dias depois).\n\n25/08\n\nSituação: Rodogarcia vira coletar no dia 26/08 os 2L para enviar ao cliente.",
-    "acaoTomada": "Rodogarcia coletou os 2L e a previsão de entrega ao cliente é dia 28/08",
-    "prioridade": "media",
-    "posicao": "aberto",
-    "criadoEm": "2026-08-27T13:51:09.022Z",
-    "atualizadoEm": "2026-08-27T13:51:09.022Z"
+    "atualizadoEm": "2026-08-27T13:54:42.275Z"
   }
 ]
