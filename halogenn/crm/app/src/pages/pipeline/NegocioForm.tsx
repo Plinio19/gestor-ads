@@ -239,6 +239,10 @@ export default function NegocioForm({ negocio, etapaInicial, open, onClose }: Pr
         criadoEm: negocio?.criadoEm ?? hoje(),
         valor: String(values.valor ?? ''),
         probabilidade: String(values.probabilidade ?? ''),
+        // Ao marcar como ganho, registra a data real do fechamento
+        dataFechamento: values.etapa === 'ganho'
+          ? (values.dataFechamento || hoje())
+          : (values.dataFechamento ?? ''),
       };
       await upsert(data);
 

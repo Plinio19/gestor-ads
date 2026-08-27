@@ -60,8 +60,9 @@ export default function DashboardPage() {
   const ativos    = negocios.filter(n => !['ganho','perdido'].includes(n.etapa));
   const ganhos    = negocios.filter(n => n.etapa === 'ganho');
   const pipeline  = ativos.reduce((s, n) => s + (parseFloat(n.valor?.toString().replace(',', '.') ?? '0') || 0), 0);
+  const mesAtual = hj.slice(0, 7);
   const mesFechado = ganhos
-    .filter(n => n.dataFechamento?.slice(0, 7) === hj.slice(0, 7))
+    .filter(n => (n.dataFechamento || n.criadoEm || '').slice(0, 7) === mesAtual)
     .reduce((s, n) => s + (parseFloat(n.valor?.toString().replace(',', '.') ?? '0') || 0), 0);
 
   const pendentes = atividades.filter(a => !a.concluida);
