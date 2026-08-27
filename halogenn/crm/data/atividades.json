@@ -141,5 +141,16 @@
     "concluida": false,
     "obs": "Re-agendado após conclusão. Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "id": "mtbkidmpl0la0",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: ORC-20260818-002 — IF BAIANO",
+    "clienteId": "msyoga174ljlr",
+    "negocioId": "msyogq10uontj",
+    "data": "2026-09-01",
+    "concluida": false,
+    "obs": "Re-agendado após conclusão. Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
+    "criadoEm": "2026-08-27"
   }
 ]
