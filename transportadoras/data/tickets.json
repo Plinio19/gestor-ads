@@ -110,5 +110,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-08-27T18:55:33.881Z",
     "atualizadoEm": "2026-08-27T18:55:33.881Z"
+  },
+  {
+    "id": "mtbvxcvqdgbul",
+    "numero": "0009",
+    "assunto": "Ticket 9 - RodoGarcia - 1 CTe p/ 5 NF´s diferentes",
+    "notaFiscal": "2965, 2966, 2967, 2968 e 2969",
+    "empenho": "",
+    "pedido": "2965, 2966, 2967, 2968 e 2969",
+    "problemaRaiz": "Problema raiz: a transportadora Rodo Garcia emitiu apenas 1 CT-e para uma carga com 5 empenhos/NFs e 5 destinos internos distintos no IOC/Fiocruz, e o motorista se recusou a distribuir a carga na triagem, voltando com tudo sem entregar.\nTabela com os 5 empenhos, destinos (LAC, LIVH, LIVEDIH, LABMAM, LABZOO), itens e valores (total R$440,00).\nAções: cobrar CT-e segregado da transportadora, verificar se a Halogenn informou corretamente os 5 destinos no momento da contratação do frete, reagendar com o Almoxarifado/SEGEM, responder ao IOC com urgência, e monitorar risco de bloqueio de pagamento/multa por atraso.\nPrazo: 24–48h, dado o risco de multa e de inadimplência (pagamento só é liberado com a triagem correta).",
+    "acaoTomada": "25/08\n\nSituação: Julia enviou email a transportadora para seguirem com a entrega, aguardando retorno",
+    "prioridade": "alta",
+    "posicao": "andamento",
+    "criadoEm": "2026-08-27T18:57:30.230Z",
+    "atualizadoEm": "2026-08-27T18:57:30.230Z"
   }
 ]
