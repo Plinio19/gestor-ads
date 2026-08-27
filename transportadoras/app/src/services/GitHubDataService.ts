@@ -28,8 +28,9 @@ function getConfig(): GitHubConfig | null {
   }
 }
 
-function apiBase(cfg: GitHubConfig, path: string): string {
-  return `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}?ref=${cfg.branch}`;
+function apiBase(cfg: GitHubConfig, path: string, bust = false): string {
+  const ts = bust ? `&_t=${Date.now()}` : '';
+  return `https://api.github.com/repos/${cfg.owner}/${cfg.repo}/contents/${path}?ref=${cfg.branch}${ts}`;
 }
 
 function apiBaseNoRef(cfg: GitHubConfig, path: string): string {
@@ -42,6 +43,29 @@ function headers(cfg: GitHubConfig): HeadersInit {
     Accept: 'application/vnd.github.v3+json',
     'Content-Type': 'application/json',
   };
+}
+
+function toBase64(str: string): string {
+  const bytes = new TextEncoder().encode(str);
+  let binary = '';
+  bytes.forEach(b => (binary += String.fromCharCode(b)));
+  return btoa(binary);
+}
+
+function fromBase64(b64: string): string {
+  const binary = atob(b64.replace(/\n/g, '').replace(/\r/g, ''));
+  const bytes = Uint8Array.from(binary, c => c.charCodeAt(0));
+  return new TextDecoder('utf-8').decode(bytes);
+}
+
+async function fetchFreshSha(cfg: GitHubConfig, path: string): Promise<string | null> {
+  try {
+    const res = await fetch(apiBase(cfg, path, true), {
+      headers: { ...headers(cfg), 'Cache-Control': 'no-cache' },
+    });
+    if (res.ok) return (await res.json()).sha as string;
+  } catch { /* ignora */ }
+  return null;
 }
 
 export class GitHubDataService {
@@ -85,8 +109,8 @@ export class GitHubDataService {
 
     const json = await res.json();
     const sha: string = json.sha;
-    const raw = atob(json.content.replace(/\n/g, ''));
-    const lista: T[] = JSON.parse(decodeURIComponent(escape(raw)));
+    const raw = fromBase64(json.content);
+    const lista: T[] = JSON.parse(raw);
 
     localStorage.setItem(key, JSON.stringify({ lista, sha }));
     return { lista, sha };
@@ -101,7 +125,7 @@ export class GitHubDataService {
     const cfg = getConfig();
     if (!cfg) throw new Error('GitHub não configurado.');
 
-    const content = btoa(unescape(encodeURIComponent(JSON.stringify(data, null, 2))));
+    const content = toBase64(JSON.stringify(data, null, 2));
 
     const doPut = (currentSha: string | null) => fetch(apiBaseNoRef(cfg, path), {
       method: 'PUT',
@@ -112,22 +136,15 @@ export class GitHubDataService {
       }),
     });
 
-    // Busca SHA fresco antes de salvar
-    let freshSha = sha;
-    try {
-      const check = await fetch(apiBase(cfg, path), { headers: headers(cfg) });
-      if (check.ok) freshSha = (await check.json()).sha;
-    } catch { /* usa sha recebido */ }
+    // Sempre busca SHA fresco com cache-busting para evitar SHA desatualizado
+    const freshSha = (await fetchFreshSha(cfg, path)) ?? sha;
 
     let res = await doPut(freshSha);
 
     // Em conflito, busca SHA novamente e tenta mais uma vez
     if (res.status === 409 || res.status === 422) {
-      try {
-        const retry = await fetch(apiBase(cfg, path), { headers: headers(cfg) });
-        if (retry.ok) freshSha = (await retry.json()).sha;
-      } catch { /* mantém sha */ }
-      res = await doPut(freshSha);
+      const retrySha = (await fetchFreshSha(cfg, path)) ?? freshSha;
+      res = await doPut(retrySha);
     }
 
     if (!res.ok) {
