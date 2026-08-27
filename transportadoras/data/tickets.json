@@ -68,5 +68,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-08-27T14:13:01.877Z",
     "atualizadoEm": "2026-08-27T14:13:01.877Z"
+  },
+  {
+    "id": "mtbltgbc9qq9w",
+    "numero": "0001",
+    "assunto": "Ticket 1 - ",
+    "notaFiscal": "2757",
+    "empenho": "2026NE000893",
+    "pedido": "2026NE000893",
+    "problemaRaiz": "Objeto: Item 36 (EDTA Sal Dissódico 2H2O PA ACS) da NE 2026NE000893 / NF 000.002.757 — cliente UFMS\nProblema: entregue só 500g de 1kg pedido + rótulo do frasco trazendo dados de Álcool Etílico em vez de EDTA\nContexto: cronologia dos dois e-mails (22/07 conferência técnica, 24/07 notificação formal do Almoxarifado), com contatos da UFMS\nAção solicitada: enviar os 500g restantes, corrigir rotulagem, revisar processo de expedição e responder formalmente ao Almoxarifado — prazo de 5 dias úteis\n24/08\n\nCódigo de Rastreio: https://www.melhorrastreio.com.br/app/correios/AD813613600BR\n\nPrevisão de entrega 24/08. Aguardando confirmação do Cliente",
+    "acaoTomada": "No código ja consta a entrega, aguardando confirmação do Cliente",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-08-27T14:14:31.896Z",
+    "atualizadoEm": "2026-08-27T14:14:31.896Z"
   }
 ]
