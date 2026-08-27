@@ -86,5 +86,16 @@
     "concluida": false,
     "obs": "Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
     "criadoEm": "2026-08-24"
+  },
+  {
+    "id": "mtbkc0mge496c",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: ORÇAMENTO 549 - ZAP — UFRN",
+    "clienteId": "mtbkbjkzys3gr",
+    "negocioId": "mtbkbzrln8d3f",
+    "data": "2026-08-29",
+    "concluida": false,
+    "obs": "Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-29",
+    "criadoEm": "2026-08-27"
   }
 ]
