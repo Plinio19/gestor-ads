@@ -54,5 +54,19 @@
     "posicao": "finalizado",
     "criadoEm": "2026-08-27T16:15:54.437Z",
     "atualizadoEm": "2026-08-27T16:15:54.437Z"
+  },
+  {
+    "id": "mtbq8o6xii9gb",
+    "numero": "0003",
+    "assunto": "Ticket 3 - ",
+    "notaFiscal": "2873",
+    "empenho": "2026NE000112",
+    "pedido": "2784",
+    "problemaRaiz": "Item 40 (Ácido Clorídrico) — o Termo de Referência exige 6 frascos de 1L (entregues corretamente), mas a NF 2873 faturou 7 frascos — falta entregar 1 frasco de 1L.",
+    "acaoTomada": "Enviar 1L de acido cloridrico.\nAtualização -> Entregue em 26/08 através da NF 3017",
+    "prioridade": "media",
+    "posicao": "finalizado",
+    "criadoEm": "2026-08-27T16:18:20.409Z",
+    "atualizadoEm": "2026-08-27T16:18:20.409Z"
   }
 ]
