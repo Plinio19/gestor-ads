@@ -152,5 +152,16 @@
     "concluida": false,
     "obs": "Re-agendado após conclusão. Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-20",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "id": "mtbkl50rvv36f",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: ORÇAMENTO 546 — FULLIN",
+    "clienteId": "mtbkkqg1p1m6x",
+    "negocioId": "mtbkl4afepi4x",
+    "data": "2026-08-29",
+    "concluida": false,
+    "obs": "Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-29",
+    "criadoEm": "2026-08-27"
   }
 ]
