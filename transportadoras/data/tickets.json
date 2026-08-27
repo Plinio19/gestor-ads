@@ -68,5 +68,19 @@
     "posicao": "finalizado",
     "criadoEm": "2026-08-27T16:18:20.409Z",
     "atualizadoEm": "2026-08-27T16:18:20.409Z"
+  },
+  {
+    "id": "mtbqbo1swsot2",
+    "numero": "0004",
+    "assunto": "Ticket 4 - Faturado 1.000L de xilol e entregue 990L",
+    "notaFiscal": "2865",
+    "empenho": "Pregão 90131/2025, AF 005",
+    "pedido": "2686",
+    "problemaRaiz": "NF 2865 (Item 49 — Xilol/Xileno P.A.) faturou 1.000L, mas a conferência do cliente encontrou só 990L entregues — faltam 10L\nPedido do cliente: retificar a NF para 990L (não pediram reenvio do produto, e sim ajuste fiscal)",
+    "acaoTomada": "Fazer estorno da NF 2865 e emitir nova NF com a quantidade entregue.\nAtualização -> Nova NF 2976 correta ",
+    "prioridade": "media",
+    "posicao": "finalizado",
+    "criadoEm": "2026-08-27T16:20:40.192Z",
+    "atualizadoEm": "2026-08-27T16:20:40.192Z"
   }
 ]
