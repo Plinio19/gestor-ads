@@ -96,19 +96,5 @@
     "posicao": "aberto",
     "criadoEm": "2026-08-27T18:59:29.050Z",
     "atualizadoEm": "2026-08-27T18:59:29.050Z"
-  },
-  {
-    "id": "mtbw2z7wpypcq",
-    "numero": "0005",
-    "assunto": "Ticket 5 - Cadastro GMS - Estado do Paraná",
-    "notaFiscal": ".",
-    "empenho": "",
-    "pedido": ".",
-    "problemaRaiz": "Cliente/órgão: Unioeste (Campus Cascavel), Pregão Eletrônico 1163/2024\nProblema: o cadastro da Halogenn no Sistema GMS (Cadastro Geral de Fornecedores do Estado do Paraná) está com status \"NÃO AVALIADO\" → hoje classificado como IRREGULAR\nHistórico: cobranças em 10/07, 13/07, 20/07 e 03/08 — nenhuma regularização feita em mais de um mês\n⚠️ Ponto crítico: em 03/08/2026 a Unioeste deu prazo de 2 dias úteis, avisando que depois disso abriria tratativas administrativas. Esse prazo já venceu há uma semana — hoje é 12/08.\nRisco: como o Sistema GMS é único para todo o Estado do Paraná, essa irregularidade pode estar bloqueando a Halogenn em qualquer processo de compra com órgãos paranaenses, não só com a Unioeste.\n\n20/08\n\nSituação: Julia iniciou o processo do cadastro , porém ficou faltando algumas pendências. Ainda continua pendente.",
-    "acaoTomada": "Guilherme vai finalizar o processo",
-    "prioridade": "alta",
-    "posicao": "aberto",
-    "criadoEm": "2026-08-27T19:01:52.460Z",
-    "atualizadoEm": "2026-08-27T19:01:52.460Z"
   }
 ]
