@@ -2615,5 +2615,22 @@
       }
     ],
     "id": "mtcw45qcvxwd5"
+  },
+  {
+    "data": "2026-08-28",
+    "pedido": "2934",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "24.134.488/0004-50",
+    "cepD": "55608-680",
+    "vnf": "7.113,12",
+    "pes": "368",
+    "vol": "28 CAIXAS",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1830 RISCO: 8",
+    "transRows": [],
+    "id": "mtcwemjhp7ztf"
   }
 ]
