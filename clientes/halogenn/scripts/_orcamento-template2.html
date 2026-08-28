@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Orçamento HL-ORC-20260826-002</title>
+<style>
+  @page { size: A4; margin: 18mm 16mm; }
+  * { box-sizing: border-box; }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1a1a1a;
+    font-size: 12.5px;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 3px solid #2D3561;
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+  }
+  .header img { height: 46px; }
+  .header .empresa-dados {
+    text-align: right;
+    font-size: 11px;
+    color: #444;
+    line-height: 1.4;
+  }
+  .header .empresa-dados strong { color: #2D3561; font-size: 13px; }
+  h1.titulo {
+    text-align: center;
+    color: #2D3561;
+    font-size: 19px;
+    letter-spacing: 0.5px;
+    margin: 0 0 2px 0;
+  }
+  .subtitulo {
+    text-align: center;
+    font-size: 11.5px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  .info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .info-box {
+    background: #F0F2F9;
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .info-box h3 {
+    margin: 0 0 8px 0;
+    font-size: 11.5px;
+    color: #2D3561;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .info-box p { margin: 2px 0; font-size: 12px; }
+  .info-box .label { color: #666; font-size: 10.5px; }
+  table.produtos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 18px;
+  }
+  table.produtos th {
+    background: #2D3561;
+    color: #fff;
+    text-align: left;
+    padding: 9px 10px;
+    font-size: 11.5px;
+  }
+  table.produtos th.num, table.produtos td.num { text-align: right; }
+  table.produtos td {
+    padding: 9px 10px;
+    border-bottom: 1px solid #e0e2ea;
+    font-size: 12px;
+  }
+  table.produtos tr.subtotal-row td {
+    color: #555;
+  }
+  table.produtos tr.total-row td {
+    background: #EEF6EF;
+    font-weight: bold;
+    border-top: 2px solid #2D3561;
+    font-size: 13.5px;
+  }
+  .condicoes {
+    background: #F0F2F9;
+    border-radius: 6px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+  }
+  .condicoes h3 {
+    margin: 0 0 8px 0;
+    font-size: 11.5px;
+    color: #2D3561;
+    text-transform: uppercase;
+  }
+  .condicoes ul { margin: 0; padding-left: 18px; }
+  .condicoes li { margin-bottom: 4px; font-size: 11.5px; }
+  .assinatura {
+    margin-top: 26px;
+    font-size: 12px;
+  }
+  .footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #ccc;
+    font-size: 9.5px;
+    color: #777;
+    text-align: center;
+    line-height: 1.5;
+  }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <img src="data:image/png;base64,{{LOGO_B64}}" alt="Halogenn">
+    <div class="empresa-dados">
+      <strong>HALOGENN PRODUTOS CIENTÍFICOS LTDA</strong><br>
+      CNPJ: 49.506.242/0001-40<br>
+      Av. Fernando de Noronha, 522 — Jd. Margarida<br>
+      Vargem Grande Paulista/SP — CEP 06739-000<br>
+      Tel: (11) 2911-7455 · adm@halogenn.com.br
+    </div>
+  </div>
+
+  <h1 class="titulo">ORÇAMENTO COMERCIAL</h1>
+  <div class="subtitulo">Nº HL-ORC-20260826-002 · Emitido em 26/08/2026 · Válido por 7 dias</div>
+
+  <div class="info-grid">
+    <div class="info-box">
+      <h3>Dados do Cliente</h3>
+      <p><span class="label">Nome Completo:</span><br><strong>Eduardo Costa de Sousa</strong></p>
+      <p><span class="label">CPF:</span> 051.926.072-48</p>
+      <p><span class="label">Endereço:</span><br>Av. Haraldo Bezerro, nº 92 — Bairro Centro<br>Pará</p>
+    </div>
+    <div class="info-box">
+      <h3>Contato</h3>
+      <p><span class="label">E-mail:</span> Ec979347@gmail.com</p>
+      <p><span class="label">Telefone:</span> (94) 99262-4245</p>
+    </div>
+  </div>
+
+  <table class="produtos">
+    <thead>
+      <tr>
+        <th>Produto</th>
+        <th class="num">Qtd.</th>
+        <th class="num">Volume</th>
+        <th class="num">Preço/Litro</th>
+        <th class="num">Total</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Metanol — Galão PEAD</td>
+        <td class="num">2</td>
+        <td class="num">20 L cada (40 L total)</td>
+        <td class="num">R$ 16,00</td>
+        <td class="num">R$ 640,00</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="4">Subtotal produtos</td>
+        <td class="num">R$ 640,00</td>
+      </tr>
+      <tr class="subtotal-row">
+        <td colspan="4">Frete</td>
+        <td class="num">R$ 140,00</td>
+      </tr>
+      <tr class="total-row">
+        <td colspan="4">TOTAL</td>
+        <td class="num">R$ 780,00</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="condicoes">
+    <h3>Condições Gerais</h3>
+    <ul>
+      <li>Preços válidos por 7 dias a partir da data de emissão, sujeitos à disponibilidade de estoque.</li>
+      <li>Frete incluso no valor total acima, referente à entrega em Pará.</li>
+      <li>Forma de pagamento: a combinar (consultar condições comerciais vigentes).</li>
+      <li>Prazo de entrega: a confirmar após fechamento do pedido.</li>
+      <li>Produto controlado (Metanol) — venda sujeita à documentação exigida pela legislação vigente (Polícia Federal/Exército, conforme aplicável).</li>
+      <li>Produto acompanha Ficha de Dados de Segurança (FDS/FISPQ) e Ficha Técnica mediante solicitação.</li>
+    </ul>
+  </div>
+
+  <div class="assinatura">
+    Permanecemos à disposição para esclarecimentos.<br><br>
+    Atenciosamente,<br>
+    <strong>Equipe Comercial — Halogenn Produtos Científicos Ltda.</strong>
+  </div>
+
+  <div class="footer">
+    HALOGENN PRODUTOS CIENTÍFICOS LTDA · CNPJ 49.506.242/0001-40 · Av. Fernando de Noronha, 522 — Vargem Grande Paulista/SP<br>
+    (11) 2911-7455 · adm@halogenn.com.br
+  </div>
+
+</body>
+</html>
