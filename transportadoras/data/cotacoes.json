@@ -2630,7 +2630,26 @@
     "vol": "28 CAIXAS",
     "med": "36 x 31 x 25",
     "mat": "QUIMICO ONU: 1830 RISCO: 8",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
     "id": "mtcwemjhp7ztf"
   }
 ]
