@@ -2633,8 +2633,8 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "960,00",
+        "cotacao": "151317",
         "prazo": ""
       },
       {
@@ -2645,6 +2645,12 @@
       },
       {
         "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TODOBRASIL TRANSPORTES",
         "valor": "",
         "cotacao": "",
         "prazo": ""
