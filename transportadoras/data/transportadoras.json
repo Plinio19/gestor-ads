@@ -539,5 +539,40 @@
         "nomeArquivo": "certificado (13).pdf"
       }
     ]
+  },
+  {
+    "id": "mtcw8a6au9pcr",
+    "nome": "JCV TRANSPORTES",
+    "quimico": "consultar",
+    "status": "ativo",
+    "telefone": "62 8559-1403",
+    "email": "",
+    "site": "",
+    "contato": "TATYANE",
+    "obs": "",
+    "estados": [
+      "MT",
+      "MS",
+      "TO",
+      "MG",
+      "GO",
+      "DF"
+    ],
+    "licencas": [
+      {
+        "id": "mtcw75wlnx132",
+        "tipo": "POLICIA FEDERAL",
+        "vencimento": "2026-09-03",
+        "arquivo": "transportadoras/licencas/mtcw8a6au9pcr_1787918026114_JCV_TRANSPORTES_E_LOGISTICA_LTDA_-_RENOVACAO_CLF.pdf",
+        "nomeArquivo": "JCV TRANSPORTES E LOGISTICA LTDA - RENOVACAO CLF.pdf"
+      },
+      {
+        "id": "mtcw7l9xypto3",
+        "tipo": "POLICIA CIVIL",
+        "vencimento": "2026-12-31",
+        "arquivo": "transportadoras/licencas/mtcw8a6au9pcr_1787918027656_LICENÇA_VENCIMENTO_31122026_(1).pdf",
+        "nomeArquivo": "LICENÇA VENCIMENTO 31122026  (1).pdf"
+      }
+    ]
   }
 ]
