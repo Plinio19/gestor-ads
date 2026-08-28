@@ -2651,5 +2651,34 @@
       }
     ],
     "id": "mtcwemjhp7ztf"
+  },
+  {
+    "data": "2026-08-28",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "48.760.622/0001-44",
+    "cepR": "06739-020",
+    "cnpjD": "453.914.166-04",
+    "cepD": "29500-000",
+    "vnf": "23.022,96",
+    "pes": "8",
+    "vol": "1",
+    "med": "80 x 40 x 40",
+    "mat": "EQUIPAMENTO",
+    "transRows": [
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mtcwtkxnyy6tf"
   }
 ]
