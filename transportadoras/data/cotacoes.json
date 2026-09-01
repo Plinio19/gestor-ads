@@ -2872,19 +2872,19 @@
     "transRows": [
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "290,00",
+        "cotacao": "61558",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       }
