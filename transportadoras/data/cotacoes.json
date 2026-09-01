@@ -2872,14 +2872,14 @@
     "transRows": [
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "290,00",
-        "cotacao": "61558",
+        "valor": "nao faz",
+        "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "nao faz",
-        "cotacao": "",
+        "valor": "290,00",
+        "cotacao": "61558",
         "prazo": ""
       },
       {
