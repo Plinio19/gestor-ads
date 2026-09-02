@@ -53,30 +53,23 @@ export const CORES_AVATAR = [
   '#E9A23B', '#7D8FA8', '#E07BA0', '#5BA4CF',
 ];
 
+// Avança sempre um período a partir do prazo atual (chamado ao concluir uma tarefa recorrente)
 export function proximoPrazo(prazo: string, recorrencia: { tipo: string; diaSemana?: number; diaMes?: number }): string {
   if (recorrencia.tipo === 'unica') return prazo;
   const base = new Date(prazo + 'T00:00:00');
-  const h = new Date(); h.setHours(0, 0, 0, 0);
-  if (base >= h) return prazo;
 
   if (recorrencia.tipo === 'diaria') {
-    const diff = Math.ceil((h.getTime() - base.getTime()) / 86400000);
-    base.setDate(base.getDate() + diff);
+    base.setDate(base.getDate() + 1);
     return base.toISOString().slice(0, 10);
   }
 
-  if (recorrencia.tipo === 'semanal' && recorrencia.diaSemana !== undefined) {
-    const next = new Date(h);
-    const dow = h.getDay();
-    let diff = recorrencia.diaSemana - dow;
-    if (diff <= 0) diff += 7;
-    next.setDate(next.getDate() + diff);
-    return next.toISOString().slice(0, 10);
+  if (recorrencia.tipo === 'semanal') {
+    base.setDate(base.getDate() + 7);
+    return base.toISOString().slice(0, 10);
   }
 
   if (recorrencia.tipo === 'mensal' && recorrencia.diaMes !== undefined) {
-    const next = new Date(h.getFullYear(), h.getMonth(), recorrencia.diaMes);
-    if (next <= h) next.setMonth(next.getMonth() + 1);
+    const next = new Date(base.getFullYear(), base.getMonth() + 1, recorrencia.diaMes);
     return next.toISOString().slice(0, 10);
   }
 
