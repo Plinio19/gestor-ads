@@ -106,5 +106,37 @@
       "horario": "08:00"
     },
     "concluidaEm": "2026-09-02T17:43:42.808Z"
+  },
+  {
+    "id": "senger2outubro26",
+    "titulo": "Notas para Senger Acessoria",
+    "descricao": "Enviar Notas de Entrada e Saida para Senger",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-10-05",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-09-02T19:00:00.000Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "5",
+      "horario": "08:30"
+    }
+  },
+  {
+    "id": "notascompra2out26",
+    "titulo": "Salvas Notas de compra",
+    "descricao": "Salvar as notas de compra do mes",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-10-05",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-09-02T19:00:00.000Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "5",
+      "horario": "08:00"
+    }
   }
 ]
