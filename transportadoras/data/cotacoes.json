@@ -2968,5 +2968,29 @@
       }
     ],
     "id": "mtk3w5gwqkr8e"
+  },
+  {
+    "data": "2026-09-02",
+    "pedido": "2951",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "00.396.895/0045-46",
+    "cepD": "91780-590",
+    "vnf": "1.350,00",
+    "pes": "35",
+    "vol": "6",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU 1888 RISCO 6",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mtk4tousl5kap"
   }
 ]
