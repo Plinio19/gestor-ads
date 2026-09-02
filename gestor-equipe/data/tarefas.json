@@ -68,13 +68,12 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-08-27",
     "prioridade": "normal",
-    "status": "concluida",
+    "status": "pendente",
     "categoria": "Administrativo",
     "criadaEm": "2026-08-26T15:58:47.875Z",
     "recorrencia": {
       "tipo": "unica"
-    },
-    "concluidaEm": "2026-09-01T17:43:32.834Z"
+    }
   },
   {
     "id": "qn689j5mtbkavfu",
@@ -88,6 +87,22 @@
     "criadaEm": "2026-08-27T13:32:05.418Z",
     "recorrencia": {
       "tipo": "unica"
+    }
+  },
+  {
+    "id": "qxs66jamtkdkmg5",
+    "titulo": "Salvas Notas de compra ",
+    "descricao": "Saklvar as notass de compra do mes",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-09-02",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-09-02T17:33:38.597Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "5",
+      "horario": "08:00"
     }
   }
 ]
