@@ -21,14 +21,15 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-09-05",
     "prioridade": "alta",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Financeiro",
     "criadaEm": "2026-08-25T19:35:46.422Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "5",
       "horario": "08:30"
-    }
+    },
+    "concluidaEm": "2026-09-02T17:59:27.576Z"
   },
   {
     "id": "8krsmubmt92frr0",
