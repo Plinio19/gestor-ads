@@ -96,13 +96,14 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-09-02",
     "prioridade": "normal",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Administrativo",
     "criadaEm": "2026-09-02T17:33:38.597Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "5",
       "horario": "08:00"
-    }
+    },
+    "concluidaEm": "2026-09-02T17:43:42.808Z"
   }
 ]
