@@ -7,7 +7,7 @@
       {
         "id": "vkdusc9",
         "name": "BTG Pactual",
-        "value": 37363.9
+        "value": 31757.15
       }
     ]
   },
@@ -81,6 +81,11 @@
         "id": "bymbs1j",
         "name": "Linklab",
         "value": 7000
+      },
+      {
+        "id": "tkvadkt",
+        "name": "Carro Guilherme",
+        "value": 5000
       }
     ]
   }
