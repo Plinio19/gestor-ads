@@ -2908,14 +2908,14 @@
     "transRows": [
       {
         "trans": "PANAMERICANO",
-        "valor": "161,26",
-        "cotacao": "3069 ",
+        "valor": "277,48",
+        "cotacao": "61557",
         "prazo": ""
       },
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "161,26",
+        "cotacao": "3069 ",
         "prazo": ""
       }
     ],
