@@ -138,5 +138,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:05:00.494Z",
     "atualizadoEm": "2026-09-03T13:05:00.494Z"
+  },
+  {
+    "id": "mtljqzua5y55w",
+    "numero": "0013",
+    "assunto": "Ticket 13 - ",
+    "notaFiscal": "NF 2896",
+    "empenho": "NE 42/2026",
+    "pedido": "NE 42/2026",
+    "problemaRaiz": "Quantidade de acetonas divergentes e rotulagem apagada.",
+    "acaoTomada": "1. Verificar disponibilidade em estoque/producao de Acetona para envio complementar de 2 (duas) unidades\nde 1 litro, completando as 5 unidades originalmente empenhadas.\n2. Providenciar a substituicao das 3 unidades ja entregues com rotulo apagado/ilegivel, reimprimindo e\nfixando corretamente as etiquetas de identificacao do reagente.\n3. Coordenar o recolhimento do material com rotulo apagado junto ao ICB/UFMG, conforme solicitado pela\nSecao de Almoxarifado.\n4. Revisar internamente o processo de rotulagem/expedicao para evitar recorrencia de rotulos apagados ou\nilegiveis.\n5. Responder formalmente a Secao de Almoxarifado do ICB/UFMG (salmox@icb.ufmg.br) informando as\nprovidencias adotadas e a previsao de nova entrega.",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:14:19.762Z",
+    "atualizadoEm": "2026-09-03T13:14:19.762Z"
   }
 ]
