@@ -166,5 +166,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:18:04.520Z",
     "atualizadoEm": "2026-09-03T13:18:04.520Z"
+  },
+  {
+    "id": "mtlkgrhcewrad",
+    "numero": "0015",
+    "assunto": "Ticket 15 - UFVJM - Acido Cloridrico e Alcool Metilico",
+    "notaFiscal": "NF 2902",
+    "empenho": "2020NE000782 ",
+    "pedido": "2020NE000782 ",
+    "problemaRaiz": "Acido Clorídrico - Entregue recipientes quebrados.\nAlcool Metílico - Entregue somente 35 unidades.",
+    "acaoTomada": "1. Item 00009 (Acido Cloridrico): verificar o lote enviado, providenciar recipientes intactos e com identificacao\ncorreta do reagente no rotulo e na caixa (nome do produto visivel onde a nota fiscal esta fixada), e reenviar\nem substituicao ao material rejeitado.\n2. Item 00019 (Alcool Metilico): apurar a divergencia entre a quantidade contratada e as 35 unidades\nefetivamente entregues; complementar a entrega da quantidade faltante ou emitir nota de credito/ajuste pelo\nvalor cobrado a maior, conforme o caso\nPRAZO CRITICO: troca do material ate 06/09/2026 (faltam poucos dias uteis a partir de hoje,\n02/09/2026) e recolhimento ate 26/09/2026, sob pena de nao recebimento definitivo do material pela\nUFVJM (Art. 76 da Lei 8.666/93).\n",
+    "prioridade": "alta",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:34:21.984Z",
+    "atualizadoEm": "2026-09-03T13:34:21.984Z"
   }
 ]
