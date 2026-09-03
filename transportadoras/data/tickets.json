@@ -194,5 +194,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:38:27.260Z",
     "atualizadoEm": "2026-09-03T13:38:27.260Z"
+  },
+  {
+    "id": "mtlkor2hztpuc",
+    "numero": "0017",
+    "assunto": "Ticket 17 - Laboratorio de Analises Clinicas do Hospital Universitario Regional de Maringa - Carta de Correção",
+    "notaFiscal": "NF 1565",
+    "empenho": "",
+    "pedido": "NF 1565",
+    "problemaRaiz": "O Laboratorio de Analises Clinicas do Hospital Universitario Regional de Maringa (HUM/UEM) solicita, ha\nmais de 1 ano, uma Carta de Correcao da Halogenn confirmando a densidade correta da Acetona fornecida\nna NF 1565 (Pedido 1535, OF 158232). O sistema de controle da Policia Federal aceita apenas 2 casas\ndecimais e converteu automaticamente a densidade informada na NF (0,789 g/mL) para 7,89, gerando\ninconsistencia no cadastro do orgao junto a PF. O cliente reiterou o pedido em 31/08/2026 em carater de\nurgencia, pois precisa enviar o relatorio de aquisicao e uso do item a Policia Federal.",
+    "acaoTomada": "1. Confirmar tecnicamente a densidade correta da Acetona fornecida (ficha tecnica/laudo do lote da NF 1565, se\ndisponivel) – valor de referencia informado pelo cliente: 0,789 g/mL.\n2. Emitir Carta de Correcao em papel timbrado da Halogenn, com CNPJ, dados da NF 1565 e assinatura do\nrepresentante legal, confirmando a densidade correta do produto para fins de regularizacao do cadastro do\norgao junto a Policia Federal",
+    "prioridade": "alta",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:40:34.697Z",
+    "atualizadoEm": "2026-09-03T13:40:34.697Z"
   }
 ]
