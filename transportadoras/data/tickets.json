@@ -152,5 +152,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:14:19.762Z",
     "atualizadoEm": "2026-09-03T13:15:10.138Z"
+  },
+  {
+    "id": "mtljvt9klyl8t",
+    "numero": "0014",
+    "assunto": "Ticket 14 - LFDA-PE/MAPA - Alcool Metílico em Frasco de Plástico",
+    "notaFiscal": "NF 2246",
+    "empenho": "2025NE97",
+    "pedido": "2025NE97",
+    "problemaRaiz": "Em 04/08/2026, o Setor de Almoxarifado e Patrimonio do LFDA-PE respondeu informando que consta\npendencia no fornecimento do empenho: o item de compra 00023 – Alcool Metilico (aspecto liquido\nlimpido incolor, formula CH3OH, peso molecular 32,04 g/mol, pureza minima 99,8%, reagente P.A., CAS 67-\n56-1) foi REJEITADO pela unidade tecnica, com o seguinte parecer: \"Devido a periculosidade do reagente,\nnao sera aceita a embalagem plastica.\"",
+    "acaoTomada": "Basicamente refaze o pedido em frasco de vidro.",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:18:04.520Z",
+    "atualizadoEm": "2026-09-03T13:18:04.520Z"
   }
 ]
