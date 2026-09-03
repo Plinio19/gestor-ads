@@ -180,5 +180,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:34:21.984Z",
     "atualizadoEm": "2026-09-03T13:34:21.984Z"
+  },
+  {
+    "id": "mtlkm0qkyad96",
+    "numero": "0016",
+    "assunto": "Ticket 16 - Pacote Recusado - Hospital Universitario Onofre Lopes (HUOL/UFRN, via Ebserh)",
+    "notaFiscal": "NF 2948",
+    "empenho": "2026NE000951",
+    "pedido": "2026NE000951",
+    "problemaRaiz": "Notificacao SEI nº 708/2026 do Hospital Universitario Onofre Lopes (HUOL/UFRN, via Ebserh), referente a\nNota de Empenho 2026NE000951, sobre material (alcool) considerado divergente/inconforme na entrega\noriginal. A Halogenn enviou material de reposicao (NF 2948) no inicio de agosto/2026, porem o pacote foi\nrecusado pelo destinatario em 18/08/2026 e retornou fisicamente a Halogenn somente em 01/09/2026. O\nmotivo da recusa da reposicao ainda nao foi esclarecido pelo HUOL.",
+    "acaoTomada": "Esperar o cliente retornar o motivo da recusa.",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:38:27.260Z",
+    "atualizadoEm": "2026-09-03T13:38:27.260Z"
   }
 ]
