@@ -208,5 +208,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:40:34.697Z",
     "atualizadoEm": "2026-09-03T13:40:34.697Z"
+  },
+  {
+    "id": "mtlksbsrk0e6g",
+    "numero": "0018",
+    "assunto": "Ticket 18 -  Endereco de Entrega Incorreto (NFs 2792, 2801 e 2802)",
+    "notaFiscal": "NF 2792/2801/2802",
+    "empenho": "",
+    "pedido": "NF 2792/2801/2802",
+    "problemaRaiz": "Tentativa de entrega 2792/2801/2802 no endereço incorreto. O endereco correto informado pela transportadora e o da\nDivisao de Patrimonio da Universidade Federal do Ceara (UFC), Campus do Pici.",
+    "acaoTomada": "A transportadora aguarda Carta de Correcao Eletronica (CCE) das notas fiscais e autorizacao formal para emitir o custo de reentrega\n(NF 2792: R$ 131,99 + ICMS; NFs 2801/2802: R$ 173,62 + ICMS).\n",
+    "prioridade": "alta",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:43:21.531Z",
+    "atualizadoEm": "2026-09-03T13:43:21.531Z"
   }
 ]
