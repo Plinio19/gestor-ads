@@ -124,5 +124,19 @@
     "posicao": "andamento",
     "criadoEm": "2026-08-28T13:46:30.026Z",
     "atualizadoEm": "2026-09-02T16:10:12.974Z"
+  },
+  {
+    "id": "mtljf0b25hzoj",
+    "numero": "0012",
+    "assunto": "Ticket 12 -  (SES/DF) - Atraso de Empenhos - Alcool Etilico Absoluto 99,5 ",
+    "notaFiscal": "Verificar",
+    "empenho": "",
+    "pedido": "2026NE008027/2026NE008028 /2026NE008030",
+    "problemaRaiz": "Atrasamos os respectivos empenhos, que tinha o prazo até 20/08.",
+    "acaoTomada": "1. Confirmar disponibilidade de estoque de 1.861 frascos de Alcool Etilico Absoluto 99,5 GL (1000ml) para\nentrega imediata na Farmacia Central (SGAP Lote 06, Bloco G, SIA, Guara/DF).\n2. Reunir a documentacao exigida para o reagendamento: Nota Fiscal, Licenca/Alvara Sanitario autenticado e,\nse aplicavel, Carta de Compromisso de Troca.\n3. Preencher o formulario de reagendamento (https://forms.gle/44g7L5WUA63MBbtN8) com pelo menos 48\nhoras de antecedencia da data de entrega proposta, e/ou contatar geaf.laboratorio@gmail.com ou (61) 3449-\n4243/4244.\n4. Revisar a rotulagem dos frascos (nome do produto/lote/validade visiveis), ja que a SES/DF aponta esse ponto\ncomo principal causa de recusa/devolucao.\n5. Confirmar/atualizar junto a SES/DF o endereco e os dados bancarios cadastrados da Halogenn, que constam\ndesatualizados na Nota de Empenho (Alameda dos Contadores, Sao Paulo/SP).\n6. Responder formalmente a SES/SULOG/DLOG/GADMLAB (laboratorio.ses@saude.df.gov.br) com o\nposicionamento da Halog\n",
+    "prioridade": "alta",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-03T13:05:00.494Z",
+    "atualizadoEm": "2026-09-03T13:05:00.494Z"
   }
 ]
