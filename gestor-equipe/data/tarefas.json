@@ -151,5 +151,18 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "w3alykymtlw045a",
+    "titulo": "MANDAR TUDO DA RIMOLAR (SOLDIERS)",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-09-04",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-09-03T18:57:20.638Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
