@@ -88,5 +88,17 @@
         "value": 5000
       }
     ]
+  },
+  {
+    "id": "803mz0d",
+    "name": "Nova Categoria",
+    "color": "#E07BA0",
+    "assets": [
+      {
+        "id": "5nmk35t",
+        "name": "Novo ativo",
+        "value": 0
+      }
+    ]
   }
 ]
