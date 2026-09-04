@@ -121,9 +121,9 @@
     "problemaRaiz": "Problema raiz: a transportadora Rodo Garcia emitiu apenas 1 CT-e para uma carga com 5 empenhos/NFs e 5 destinos internos distintos no IOC/Fiocruz, e o motorista se recusou a distribuir a carga na triagem, voltando com tudo sem entregar.\nTabela com os 5 empenhos, destinos (LAC, LIVH, LIVEDIH, LABMAM, LABZOO), itens e valores (total R$440,00).\nAções: cobrar CT-e segregado da transportadora, verificar se a Halogenn informou corretamente os 5 destinos no momento da contratação do frete, reagendar com o Almoxarifado/SEGEM, responder ao IOC com urgência, e monitorar risco de bloqueio de pagamento/multa por atraso.\nPrazo: 24–48h, dado o risco de multa e de inadimplência (pagamento só é liberado com a triagem correta).\n\n25/08\n\nSituação: Julia enviou email a transportadora para seguirem com a entrega, aguardando retorno",
     "acaoTomada": "25/08\n\nSituação: Julia enviou email a transportadora para seguirem com a entrega, aguardando retorno",
     "prioridade": "alta",
-    "posicao": "andamento",
+    "posicao": "finalizado",
     "criadoEm": "2026-08-28T13:46:30.026Z",
-    "atualizadoEm": "2026-09-02T16:10:12.974Z"
+    "atualizadoEm": "2026-09-04T11:46:43.119Z"
   },
   {
     "id": "mtljf0b25hzoj",
