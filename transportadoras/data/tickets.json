@@ -222,5 +222,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:43:21.531Z",
     "atualizadoEm": "2026-09-03T13:43:21.531Z"
+  },
+  {
+    "id": "mtt0e67qlthnk",
+    "numero": "0019",
+    "assunto": "Ticket 19 - Alcool Etílico ABS 99,5% Incorreto",
+    "notaFiscal": "NF 2945",
+    "empenho": " 2026NE002892",
+    "pedido": " 2026NE002892",
+    "problemaRaiz": "Pedido entregue de maneira divergente do empenho. ",
+    "acaoTomada": "Emitir e  Enviar 16 Galões de 5L para completar o empenho.",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-08T18:34:38.198Z",
+    "atualizadoEm": "2026-09-08T18:34:38.198Z"
   }
 ]
