@@ -232,9 +232,9 @@
     "pedido": " 2026NE002892",
     "problemaRaiz": "Pedido entregue de maneira divergente do empenho. ",
     "acaoTomada": "Emitir e  Enviar 16 Galões de 5L para completar o empenho.",
-    "prioridade": "media",
+    "prioridade": "alta",
     "posicao": "aberto",
     "criadoEm": "2026-09-08T18:34:38.198Z",
-    "atualizadoEm": "2026-09-08T18:34:38.198Z"
+    "atualizadoEm": "2026-09-08T18:38:11.424Z"
   }
 ]
