@@ -38,14 +38,15 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-09-10",
     "prioridade": "alta",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Financeiro",
     "criadaEm": "2026-08-25T19:36:28.476Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "10",
       "horario": "08:00"
-    }
+    },
+    "concluidaEm": "2026-09-08T13:28:17.664Z"
   },
   {
     "id": "eq119mxmt9zrkyu",
@@ -163,6 +164,22 @@
     "criadaEm": "2026-09-03T18:57:20.638Z",
     "recorrencia": {
       "tipo": "unica"
+    }
+  },
+  {
+    "id": "0cwgo41mtspg7pc",
+    "titulo": "Fazer Fechamento",
+    "descricao": "Fazer fechamento mensal da empresa, seguir checklist etc...",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-10-10",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-09-08T13:28:17.664Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "10",
+      "horario": "08:00"
     }
   }
 ]
