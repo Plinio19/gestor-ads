@@ -61,12 +61,15 @@ function fromBase64(b64: string): string {
 async function fetchFreshSha(cfg: GitHubConfig, path: string): Promise<string | null> {
   try {
     const res = await fetch(apiBase(cfg, path, true), {
-      headers: { ...headers(cfg), 'Cache-Control': 'no-cache' },
+      headers: { ...headers(cfg), 'Cache-Control': 'no-cache, no-store', 'Pragma': 'no-cache' },
+      cache: 'no-store',
     });
     if (res.ok) return (await res.json()).sha as string;
   } catch { /* ignora */ }
   return null;
 }
+
+function delay(ms: number) { return new Promise(r => setTimeout(r, ms)); }
 
 export class GitHubDataService {
   isConfigured(): boolean {
@@ -141,10 +144,18 @@ export class GitHubDataService {
 
     let res = await doPut(freshSha);
 
-    // Em conflito, busca SHA novamente e tenta mais uma vez
+    // Tentativa 2: aguarda 600ms e busca SHA novamente
     if (res.status === 409 || res.status === 422) {
+      await delay(600);
       const retrySha = (await fetchFreshSha(cfg, path)) ?? freshSha;
       res = await doPut(retrySha);
+    }
+
+    // Tentativa 3: aguarda mais 1s e tenta uma última vez
+    if (res.status === 409 || res.status === 422) {
+      await delay(1000);
+      const retrySha3 = (await fetchFreshSha(cfg, path)) ?? freshSha;
+      res = await doPut(retrySha3);
     }
 
     if (!res.ok) {
