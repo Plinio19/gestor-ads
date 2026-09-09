@@ -3148,5 +3148,41 @@
       }
     ],
     "id": "mtu2n1vyhryr8"
+  },
+  {
+    "data": "2026-09-09",
+    "pedido": "2978",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "75.095.679/0001-49",
+    "cepD": "81531-980",
+    "vnf": "162,21",
+    "pes": "3",
+    "vol": "1",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1888 RISCO: 6",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mtu2xzm4tq4a5"
   }
 ]
