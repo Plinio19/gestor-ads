@@ -3256,8 +3256,8 @@
     "transRows": [
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "200,25",
+        "cotacao": "3137 ",
         "prazo": ""
       },
       {
@@ -3268,8 +3268,8 @@
       },
       {
         "trans": "RODOVIARIO WILSON",
-        "valor": "",
-        "cotacao": "",
+        "valor": "155,00",
+        "cotacao": "55606",
         "prazo": ""
       }
     ],
