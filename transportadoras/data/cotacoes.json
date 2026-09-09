@@ -3388,13 +3388,13 @@
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "326,92",
+        "cotacao": "61950",
         "prazo": ""
       },
       {
         "trans": "RODOVIARIO WILSON",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       }
