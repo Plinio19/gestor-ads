@@ -3196,20 +3196,14 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "205,54",
+        "cotacao": "151462",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
-      },
-      {
-        "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "220,00",
+        "cotacao": "152718",
         "prazo": ""
       }
     ],
