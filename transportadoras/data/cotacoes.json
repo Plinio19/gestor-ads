@@ -3244,5 +3244,41 @@
       }
     ],
     "id": "mtu46tq3hd0qg"
+  },
+  {
+    "data": "2026-09-09",
+    "pedido": "2939",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "18.715.383/0001-40",
+    "cepD": "30530-580",
+    "vnf": "675,00",
+    "pes": "75",
+    "vol": "5",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mtu48yept2ups"
   }
 ]
