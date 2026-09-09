@@ -3166,8 +3166,8 @@
     "transRows": [
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "148,00",
+        "cotacao": "1277833 ",
         "prazo": ""
       },
       {
@@ -3178,8 +3178,8 @@
       },
       {
         "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "177,55",
+        "cotacao": "137218 ",
         "prazo": ""
       }
     ],
