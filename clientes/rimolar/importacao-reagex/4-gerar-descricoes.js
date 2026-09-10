@@ -90,6 +90,31 @@ function validadeTexto(validade) {
   return `${n} ${n === 1 ? 'ano' : 'anos'}`;
 }
 
+// Extrai o nome químico "puro" (sem embalagem/concentração/grau) pra exibir como "Produto: X"
+function nomeBase(nome) {
+  return nome
+    .replace(/\(?\d+(?:[.,]\d+)?\s*%\)?/g, '') // percentuais: "84,5%", "(84,5%)"
+    .replace(/\b\d+(?:[.,]\d+)?\s*(ML|L|MG|GR|G|KG)\b/gi, '') // embalagem
+    .replace(/\b(PA|ACS|HPLC|GC|PUREX|PURISSIMO|ISO|P\.A\.?)\b/gi, '') // grau
+    .replace(/[()]/g, '')
+    .replace(/\s{2,}/g, ' ')
+    .replace(/[\s,.-]+$/, '')
+    .trim();
+}
+
+const aplicacoesVariantes = [
+  ['Pesquisa científica e desenvolvimento (P&D)', 'Sínteses especializadas e processos químicos controlados', 'Análises industriais e controle de qualidade de processo', 'Laboratórios de ensino, pesquisa e extensão', 'Aplicações analíticas e laboratoriais diversas'],
+  ['Ensaios e análises laboratoriais de rotina', 'Controle de qualidade em ambiente industrial', 'Preparo de soluções e reagentes de trabalho', 'Atividades de ensino e pesquisa acadêmica', 'Processos de síntese e desenvolvimento químico'],
+];
+
+function tagsIndicado(item) {
+  const tags = ['Laboratório', 'Pesquisa e Desenvolvimento (P&D)'];
+  if (item.categoriaExodo === 'Indicadores') tags.push('Titulações e análises volumétricas');
+  else if (item.categoriaExodo === 'Reagentes Especiais') tags.push('Métodos analíticos especiais');
+  else tags.push('Indústria e controle de qualidade');
+  return tags;
+}
+
 const tipoLabel = { solido: 'sólido', solucao: 'solução', liquido: 'líquido' };
 const tipoArtigo = { solido: 'todo sólido', solucao: 'toda solução', liquido: 'todo líquido' };
 const tipoIndef = { solido: 'um sólido', solucao: 'uma solução', liquido: 'um líquido' };
@@ -108,37 +133,79 @@ function gerarDescricaoHtml(item, row) {
   const tipo = tipoLabel[item.tipoFoto] || 'produto';
   const h = hashCodigo(item.codigo);
   const nomeFmt = tituloCaso(nomeOriginal);
+  const nomeCurto = tituloCaso(nomeBase(nomeOriginal)) || nomeFmt;
   const catFmt = `${item.categoriaExodo} &rsaquo; ${item.subcategoriaExodo}`;
+  const temCas = cas && cas !== '-';
 
+  const chaveSubcat = `${item.categoriaExodo} > ${item.subcategoriaExodo}`;
+  const textoSubcategoria = subcatConteudo[chaveSubcat];
+  const enriq = temCas ? enriquecimentoQuimico[cas] : null;
+
+  // --- Indicado para (tags) ---
+  const tags = tagsIndicado(item);
+  const tagsHtml = tags.map(t => `<span style="display:inline-block;border:1px solid #ccc;border-radius:4px;padding:2px 10px;margin:0 6px 6px 0;font-size:12px;">${t}</span>`).join('');
+
+  // --- Intro ---
   const partesIntro = [];
   partesIntro.push(aberturas[h % aberturas.length](nomeFmt, catFmt));
   if (embalagem) partesIntro.push(`Disponível em embalagem de ${embalagem}${grau ? `, grau ${grau}` : ''}.`);
   else if (grau) partesIntro.push(`Produto de ${grau}.`);
-  if (cas && cas !== '-') partesIntro.push(`Número CAS: <strong>${cas}</strong>.`);
+  partesIntro.push('Disponível na Reagex com garantia de procedência, nota fiscal em todas as compras e entrega para todo o Brasil.');
 
-  const chaveSubcat = `${item.categoriaExodo} > ${item.subcategoriaExodo}`;
-  const textoSubcategoria = subcatConteudo[chaveSubcat];
-  const enriq = (cas && cas !== '-') ? enriquecimentoQuimico[cas] : null;
+  // --- Características do Produto (checklist) ---
+  const caracteristicas = [];
+  caracteristicas.push(['Produto', nomeCurto]);
+  if (grau) caracteristicas.push(['Grau de Pureza', grau]);
+  if (concentracao && concentracao !== '-') caracteristicas.push(['Concentração', `${concentracao}%`]);
+  if (embalagem) caracteristicas.push(['Embalagem', embalagem]);
+  caracteristicas.push(['Fabricante', 'Êxodo Científica']);
+  caracteristicas.push(['Categoria', item.subcategoriaExodo]);
+  caracteristicas.push(['Disponibilidade', 'Pronta entrega']);
+  caracteristicas.push(['Prazo de Entrega', '6 dias úteis']);
+  const caracteristicasHtml = caracteristicas
+    .map(([k, v]) => `<li><span style="color:#1a7a3c;">&#10003;</span> <strong>${k}:</strong> ${v}</li>`)
+    .join('');
 
-  const specs = [];
-  if (cas && cas !== '-') specs.push(`<li><strong>CAS:</strong> ${cas}</li>`);
-  if (enriq && enriq.dadosMolecularesHtml) {
-    const liItems = enriq.dadosMolecularesHtml.match(/<li>.*?<\/li>/g) || [];
-    specs.push(...liItems);
+  // --- Especificações Técnicas (tabela) ---
+  const specRows = [];
+  specRows.push(['Nome do Produto', nomeCurto]);
+  if (temCas) specRows.push(['CAS', cas]);
+  if (enriq?.dadosMolecularesHtml) {
+    const liTexts = [...enriq.dadosMolecularesHtml.matchAll(/<strong>(.*?):<\/strong>\s*([^<]+)/g)];
+    for (const [, k, v] of liTexts) specRows.push([k, v.trim()]);
   }
-  if (ncm && ncm !== '-') specs.push(`<li><strong>NCM:</strong> ${ncm}</li>`);
-  if (concentracao && concentracao !== '-') specs.push(`<li><strong>Concentração/Pureza:</strong> ${concentracao}%</li>`);
-  if (densidade && densidade !== '-') specs.push(`<li><strong>Densidade:</strong> ${densidade} g/mL</li>`);
-  if (embalagem) specs.push(`<li><strong>Embalagem:</strong> ${embalagem}</li>`);
-  if (validade) specs.push(`<li><strong>Validade:</strong> ${validade} a partir da fabricação</li>`);
-  if (classeRisco && classeRisco !== '-') specs.push(`<li><strong>Classe de risco:</strong> ${classeRisco}${onu && onu !== '-' ? ` (ONU ${onu})` : ''}</li>`);
+  if (grau) specRows.push(['Grau / Qualidade', grau]);
+  if (concentracao && concentracao !== '-') specRows.push(['Concentração', `${concentracao}%`]);
+  if (densidade && densidade !== '-') specRows.push(['Densidade', `${densidade} g/mL`]);
+  if (embalagem) specRows.push(['Volume / Massa', embalagem]);
+  if (ncm && ncm !== '-') specRows.push(['NCM', ncm]);
+  if (validade) specRows.push(['Validade', `${validade} a partir da fabricação`]);
+  if (classeRisco && classeRisco !== '-') specRows.push(['Classe de risco', `${classeRisco}${onu && onu !== '-' ? ` (ONU ${onu})` : ''}`]);
+  specRows.push(['Fabricante', 'Êxodo Científica']);
+  specRows.push(['Categoria', `${item.categoriaExodo} / ${item.subcategoriaExodo}`]);
+  specRows.push(['Nota Fiscal', 'Emitida em todas as compras']);
+  specRows.push(['Prazo de Entrega', '6 dias úteis']);
+
+  const specTableHtml = `<table style="width:100%;border-collapse:collapse;font-size:14px;" cellpadding="6">
+<thead><tr style="background:#f2f2f2;"><th style="text-align:left;border:1px solid #ddd;">Parâmetro</th><th style="text-align:left;border:1px solid #ddd;">Especificação</th></tr></thead>
+<tbody>${specRows.map(([k, v]) => `<tr><td style="border:1px solid #ddd;"><strong>${k}</strong></td><td style="border:1px solid #ddd;">${v}</td></tr>`).join('')}</tbody>
+</table>`;
+
+  // --- Aplicações ---
+  const aplicacoes = aplicacoesVariantes[h % aplicacoesVariantes.length];
+  const aplicacoesHtml = `<ul>${aplicacoes.map(a => `<li>${a}</li>`).join('')}</ul>`;
 
   const html = [
+    `<h2>${nomeFmt}</h2>`,
+    `<p><strong>Indicado para:</strong> ${tagsHtml}</p>`,
     `<p>${partesIntro.join(' ')}</p>`,
     textoSubcategoria ? `<h3>Sobre ${item.subcategoriaExodo}</h3><p>${textoSubcategoria}</p>` : '',
-    (enriq && enriq.htmlPapeis) ? `<h3>Informações químicas</h3>${enriq.htmlPapeis}` : '',
-    specs.length ? `<h3>Especificações técnicas</h3><ul>${specs.join('')}</ul>` : '',
-    `<p>${fechamentos[h % fechamentos.length](tipoArtigo[item.tipoFoto] || 'todo produto', tipoIndef[item.tipoFoto] || 'um produto')}</p>`,
+    `<h3>Características do Produto</h3><ul style="list-style:none;padding-left:0;">${caracteristicasHtml}</ul>`,
+    (enriq && enriq.htmlPapeis) ? `<h3>Informações Químicas</h3>${enriq.htmlPapeis}` : '',
+    `<h3>Especificações Técnicas</h3>${specTableHtml}`,
+    `<h3>Aplicações</h3>${aplicacoesHtml}`,
+    `<h3>Armazenamento e Manuseio</h3><p>${fechamentos[h % fechamentos.length](tipoArtigo[item.tipoFoto] || 'todo produto', tipoIndef[item.tipoFoto] || 'um produto')}</p>`,
+    `<p style="font-size:13px;color:#555;">&#10003; Produto original com nota fiscal &nbsp;|&nbsp; &#10003; Estoque disponível &nbsp;|&nbsp; &#10003; Entrega em todo o Brasil &nbsp;|&nbsp; &#10003; Compra 100% segura</p>`,
     `<p>Dúvidas técnicas ou comerciais: entre em contato com a Reagex pelo <strong>vendas@reagex.com.br</strong>.</p>`,
   ].filter(Boolean).join('\n');
 

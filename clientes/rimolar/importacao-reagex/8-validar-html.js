@@ -2,7 +2,7 @@ const dados = require('./_mapeamento-categorias.json');
 let problemas = 0;
 for (const d of dados) {
   const html = d.descricaoHtml;
-  for (const tag of ['p', 'ul', 'li', 'h3', 'strong']) {
+  for (const tag of ['p', 'ul', 'li', 'h2', 'h3', 'strong', 'table', 'thead', 'tbody', 'tr', 'td', 'th', 'span']) {
     const abre = (html.match(new RegExp(`<${tag}(\\s[^>]*)?>`, 'g')) || []).length;
     const fecha = (html.match(new RegExp(`</${tag}>`, 'g')) || []).length;
     if (abre !== fecha) {
