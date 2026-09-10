@@ -3544,7 +3544,7 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
+        "valor": "369,28",
         "cotacao": "",
         "prazo": ""
       },
@@ -3556,14 +3556,14 @@
       },
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "230,00",
+        "cotacao": "230 ",
+        "prazo": "4"
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "632,91",
+        "cotacao": "62042",
         "prazo": ""
       }
     ],
