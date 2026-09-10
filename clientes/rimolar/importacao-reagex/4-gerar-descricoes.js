@@ -1,6 +1,7 @@
 const fs = require('fs');
 const path = require('path');
 const subcatConteudo = require('./subcategorias-conteudo.js');
+const aplicacoesPorSubcategoria = require('./aplicacoes-por-subcategoria.js');
 const enriquecimentoQuimico = JSON.parse(fs.readFileSync(path.resolve(__dirname, '_enriquecimento-quimico-por-cas.json'), 'utf8'));
 
 const dados = JSON.parse(fs.readFileSync(path.resolve(__dirname, '_mapeamento-categorias.json'), 'utf8'));
@@ -14,7 +15,7 @@ function hashCodigo(codigo) {
 
 const aberturas = [
   (nome, cat) => `${nome} é um reagente da categoria <strong>${cat}</strong>, comercializado pela Reagex Produtos Químicos.`,
-  (nome, cat) => `Encontre ${nome} na Reagex — reagente classificado em <strong>${cat}</strong>, com procedência e qualidade analítica.`,
+  (nome, cat) => `Encontre ${nome} na Reagex - reagente classificado em <strong>${cat}</strong>, com procedência e qualidade analítica.`,
   (nome, cat) => `A Reagex oferece ${nome}, item da linha <strong>${cat}</strong> do nosso catálogo de produtos químicos.`,
   (nome, cat) => `${nome} faz parte da nossa linha de <strong>${cat}</strong>, disponível para pronta entrega na Reagex.`,
 ];
@@ -191,9 +192,21 @@ function gerarDescricaoHtml(item, row) {
 <tbody>${specRows.map(([k, v]) => `<tr><td style="border:1px solid #ddd;"><strong>${k}</strong></td><td style="border:1px solid #ddd;">${v}</td></tr>`).join('')}</tbody>
 </table>`;
 
-  // --- Aplicações ---
-  const aplicacoes = aplicacoesVariantes[h % aplicacoesVariantes.length];
+  // --- Aplicações: papéis reais do composto (PubChem) quando existir; senão, lista por subcategoria ---
+  let aplicacoes;
+  let origemAplicacoes;
+  if (enriq?.rolesAplicaveis?.length) {
+    aplicacoes = enriq.rolesAplicaveis.map(r => `Uso documentado como ${r}`);
+    origemAplicacoes = 'composto';
+  } else if (aplicacoesPorSubcategoria[chaveSubcat]) {
+    aplicacoes = aplicacoesPorSubcategoria[chaveSubcat];
+    origemAplicacoes = 'subcategoria';
+  } else {
+    aplicacoes = aplicacoesVariantes[h % aplicacoesVariantes.length];
+    origemAplicacoes = 'generico';
+  }
   const aplicacoesHtml = `<ul>${aplicacoes.map(a => `<li>${a}</li>`).join('')}</ul>`;
+  item._origemAplicacoes = origemAplicacoes;
 
   const html = [
     `<h2>${nomeFmt}</h2>`,
@@ -214,7 +227,7 @@ function gerarDescricaoHtml(item, row) {
 
 const metaVariantes = [
   (nome, cas, emb, sub) => `Compre ${nome}${emb ? ` (${emb})` : ''} na Reagex.${cas ? ` CAS ${cas}.` : ''} Reagente para laboratório, categoria ${sub}, entrega para todo o Brasil.`,
-  (nome, cas, emb, sub) => `${nome}${emb ? `, embalagem ${emb}` : ''}${cas ? `, CAS ${cas}` : ''} — reagente de grau analítico da linha ${sub}. Peça já na Reagex Produtos Químicos.`,
+  (nome, cas, emb, sub) => `${nome}${emb ? `, embalagem ${emb}` : ''}${cas ? `, CAS ${cas}` : ''} - reagente de grau analítico da linha ${sub}. Peça já na Reagex Produtos Químicos.`,
   (nome, cas, emb, sub) => `Precisa de ${nome} para o seu laboratório? A Reagex vende${emb ? ` em embalagem de ${emb}` : ''}${cas ? `, CAS ${cas}` : ''}, categoria ${sub}.`,
 ];
 

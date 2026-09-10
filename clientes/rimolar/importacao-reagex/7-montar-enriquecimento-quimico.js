@@ -68,6 +68,10 @@ for (const [cas, pubchemInfo] of Object.entries(cache)) {
     temHazard: !!item?.hazard,
     htmlPapeis: partes.join('\n'),
     dadosMolecularesHtml: dadosMoleculares.length ? `<ul>${dadosMoleculares.join('')}</ul>` : '',
+    rolesPt: rolesValidos.map(r => r.pt),
+    // só papéis funcionais/farmacológicos (prio 0 ou 1) servem de "Aplicação" de verdade;
+    // "metabólito de X" (prio 3) é fato biológico, não uso prático do reagente.
+    rolesAplicaveis: rolesValidos.filter(r => r.prio <= 1).map(r => r.pt),
   };
 }
 

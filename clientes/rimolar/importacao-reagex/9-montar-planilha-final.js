@@ -10,6 +10,20 @@ const imagemPorTipo = {
   liquido: 'https://i.ibb.co/C3rrfkk4/Reagex-Foto-Produtos-Liquidos.png',
 };
 
+// Normaliza pontuação Unicode "esperta" pra equivalente ASCII simples, evitando
+// problema de encoding na importação da Tray (que espera Latin-1, não UTF-8).
+function sanitizarTexto(v) {
+  if (typeof v !== 'string') return v;
+  return v
+    .replace(/[—–]/g, '-')
+    .replace(/[‘’]/g, "'")
+    .replace(/[“”]/g, '"')
+    .replace(/…/g, '...')
+    .replace(/[\t\n\r]+/g, ' ') // tabs/quebras de linha soltas vindas da planilha da Exodo
+    .replace(/ {2,}/g, ' ')
+    .trim();
+}
+
 function tituloCaso(nome) {
   return nome
     .toLowerCase()
@@ -59,7 +73,7 @@ for (const item of dados) {
     item.seoMetaDescricao,
     item.seoPalavrasChave,
     item.seoTitulo,
-  ]);
+  ].map(sanitizarTexto));
 }
 
 console.log('Linhas prontas:', linhas.length, '/', dados.length);

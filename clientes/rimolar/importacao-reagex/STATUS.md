@@ -1,4 +1,16 @@
-# Importação Reagex — Status final (10/09/2026)
+# Importação Reagex — Status final (10/09/2026, atualizado após QA do gestor)
+
+## Correções feitas após teste real na Tray (10/09, tarde)
+
+O gestor importou o arquivo de verdade e fez uma auditoria manual comparando com o padrão visual já usado pela Rimolar. Achados e correções:
+
+1. **Estrutura visual "pobre" comparada à Rimolar** — reescrita completa da `descricaoHtml`: adicionadas tags "Indicado para", checklist "Características do Produto", tabela real "Especificações Técnicas" (Parâmetro | Especificação), seção "Aplicações", selo de confiança no rodapé. Mantidos os dados reais do PubChem que a Rimolar nem tem.
+2. **Seção "Aplicações" repetida entre produtos** — antes usava só 2 listas genéricas fixas. Agora prioriza papéis funcionais reais do PubChem por composto (518 produtos com aplicação específica do composto), com fallback pra lista por subcategoria (27 listas reais, uma por subcategoria — mesmo nível de especificidade já aceito pra seção "Sobre X"). Excluído explicitamente o caso de papel só-biológico tipo "metabólito humano" sendo usado sozinho como única aplicação (fraco demais pra essa seção).
+3. **Caractere quebrado ("?") no meta description, ~30% dos produtos** — causa raiz: nomes de produto na planilha original da Exodo já vinham com travessão/aspas curvas Unicode (ex.: "AZUL DE DISSULFINA – SOLUCAO ACIDA", "TEMED (N,N,N',N'..."), que a importação da Tray não decodifica corretamente (espera Latin-1, não UTF-8). Corrigido normalizando **todo** texto exportado (não só o que eu mesmo escrevi) pra pontuação ASCII simples antes de montar a planilha final.
+4. **Bônus encontrado na mesma varredura:** 28 produtos tinham tab/quebra de linha solta no nome (vindo também da planilha da Exodo) — limpo junto.
+5. **"Aplicações" ausente em outras categorias na Tray, só aparecendo em Compostos Orgânicos** — conferido na minha base: **100% dos 2.599 produtos, nas 7 categorias, têm a seção "Aplicações" gerada** (não é bug seletivo por categoria no código). Hipótese mais provável: o mesmo problema de encoding do item 3 estava truncando a descrição inteira na importação da Tray quando encontrava um caractere malformado mais cedo no HTML — o que explicaria a seção "sumir" só em categorias que tinham mais desses caracteres problemáticos nos nomes originais. A correção do item 3 deve resolver isso também, mas **precisa reimportar pra confirmar** (a Tray já tinha os dados antigos/quebrados importados).
+
+**Ação necessária:** reimportar o arquivo (`Importacao-Reagex-2599-produtos.xlsx` ou `.csv`, atualizado) — a Tray deve atualizar os produtos existentes pela Referência/código, sem duplicar. Depois, conferir de novo uma amostra das categorias que antes não mostravam "Aplicações", pra confirmar se a hipótese do truncamento por encoding estava certa.
 
 ## Resultado
 
