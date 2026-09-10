@@ -1,0 +1,2582 @@
+[
+ {
+  "cas": "112-30-1",
+  "titulo": "1-Decanol",
+  "descricao": "Decan-1-ol is a fatty alcohol consisting of a hydroxy function at C-1 of an unbranched saturated chain of ten carbon atoms. It has a role as a metabolite, a pheromone and a protic solvent. It is a primary alcohol and a decanol."
+ },
+ {
+  "cas": "632-22-4",
+  "titulo": "Tetramethylurea",
+  "descricao": "1,1,3,3-tetramethylurea is a member of the class of ureas that is urea substituted by methyl groups at positions 1, 1, 3 and 3 respectively. Metabolite observed in cancer metabolism. It has a role as a human metabolite."
+ },
+ {
+  "cas": "95-50-1",
+  "titulo": "1,2-Dichlorobenzene",
+  "descricao": "1,2-dichlorobenzene is a dichlorobenzene carrying chloro substituents at positions 1 and 2. It has a role as a metabolite and a hepatotoxic agent."
+ },
+ {
+  "cas": "83-07-8",
+  "titulo": "4-Aminoantipyrine",
+  "descricao": "4-aminoantipyrine is a pyrazolone, a member of the class of pyrazoles that is antipyrine substituted at C-4 by an amino group. It is a metabolite of aminopyrine and of metamizole. It has a role as a non-steroidal anti-inflammatory drug, a non-narcotic analgesic, an antipyretic, an EC 1.14.99.1 (prostaglandin-endoperoxide synthase) inhibitor, an antirheumatic drug, a drug metabolite, a peripheral nervous system drug and a marine xenobiotic metabolite. It is a primary amino compound and a pyrazolone. It is functionally related to an antipyrine."
+ },
+ {
+  "cas": "101-14-4",
+  "titulo": "3,3'-Dichloro-4,4'-Diaminodiphenylmethane",
+  "descricao": "4,4'-Methylene bis(2-chloroaniline) can cause cancer according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "105-57-7",
+  "titulo": "Acetal",
+  "descricao": "1,1-Diethoxyethane is an acetal."
+ },
+ {
+  "cas": "60-35-5",
+  "titulo": "Acetamide",
+  "descricao": "Acetamide can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "103-84-4",
+  "titulo": "Acetanilide",
+  "descricao": "N-phenylacetamide is a member of the class of acetamides that is acetamide in which one of the hydrogens attached to the nitrogen is substituted by a phenyl group. It has a role as an analgesic. It is an anilide and a member of acetamides. It is functionally related to an acetic acid."
+ },
+ {
+  "cas": "631-61-8",
+  "titulo": "Ammonium Acetate",
+  "descricao": "Ammonium acetate is an ammonium salt obtained by reaction of ammonia with acetic acid. A deliquescent white crystalline solid, it has a relatively low melting point (114C) for a salt. Used as a food acidity regulator, although no longer approved for this purpose in the EU. It has a role as a buffer and a food acidity regulator. It is an ammonium salt and an acetate salt."
+ },
+ {
+  "cas": "543-80-6",
+  "titulo": "Barium acetate",
+  "descricao": "Barium acetate is an acetate salt in which the cationic component is barium(2+). It has a role as a catalyst and a mordant. It is an organic barium salt and an acetate salt."
+ },
+ {
+  "cas": "112-07-2",
+  "titulo": "Glycol monobutyl ether acetate",
+  "descricao": "2-Butoxyethyl acetate is a carboxylic ester."
+ },
+ {
+  "cas": "5743-26-0",
+  "titulo": "Calcium acetate monohydrate",
+  "descricao": "Calcium acetate monohydrate is the monohydrate of calcium acetate. It has a role as a chelator. It contains a calcium acetate."
+ },
+ {
+  "cas": "301-04-2",
+  "titulo": "Lead diacetate",
+  "descricao": "Lead Acetate can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "114460-21-8",
+  "titulo": "Calcium acetate monohydrate",
+  "descricao": "Calcium acetate monohydrate is the monohydrate of calcium acetate. It has a role as a chelator. It contains a calcium acetate."
+ },
+ {
+  "cas": "546-89-4",
+  "titulo": "Lithium acetate",
+  "descricao": "Lithium acetate is an acetate salt comprising equal numbers of acetate and lithium ions. It is an organic lithium salt and an acetate salt. It contains an acetate."
+ },
+ {
+  "cas": "127-08-2",
+  "titulo": "Potassium Acetate",
+  "descricao": "Potassium acetate is a potassium salt comprising equal numbers of potassium and acetate ions. It has a role as a food acidity regulator. It contains an acetate."
+ },
+ {
+  "cas": "6131-90-4",
+  "titulo": "Sodium Acetate Trihydrate",
+  "descricao": "Sodium acetate trihydrate is a hydrate. It contains a sodium acetate."
+ },
+ {
+  "cas": "127-09-3",
+  "titulo": "Sodium Acetate",
+  "descricao": "Sodium acetate is an organic sodium salt. It contains an acetate."
+ },
+ {
+  "cas": "108-05-4",
+  "titulo": "Vinyl Acetate",
+  "descricao": "Vinyl acetate is an acetate ester."
+ },
+ {
+  "cas": "557-34-6",
+  "titulo": "Zinc Acetate",
+  "descricao": "Zinc acetate is an acetate salt in which the cationic component is zinc(2+). It has a role as an astringent. It is a zinc molecular entity and an acetate salt."
+ },
+ {
+  "cas": "123-54-6",
+  "titulo": "Acetylacetone",
+  "descricao": "Acetylacetone is a beta-diketone that is pentane in which the hydrogens at positions 2 and 4 are replaced by oxo groups. It is a conjugate acid of an acetylacetonate."
+ },
+ {
+  "cas": "141-97-9",
+  "titulo": "Ethyl Acetoacetate",
+  "descricao": "Ethyl acetoacetate is an ethyl ester resulting from the formal condensation of the carboxy group of acetoacetic acid with ethanol. It has a role as an antibacterial agent, a flavouring agent and a plant metabolite. It is functionally related to an acetoacetic acid."
+ },
+ {
+  "cas": "98-86-2",
+  "titulo": "Acetophenone",
+  "descricao": "Acetophenone is a methyl ketone that is acetone in which one of the methyl groups has been replaced by a phenyl group. It has a role as a xenobiotic, a photosensitizing agent and an animal metabolite."
+ },
+ {
+  "cas": "116-63-2",
+  "titulo": "1-Amino-2-naphthol-4-sulfonic acid",
+  "descricao": "4-amino-3-hydroxynaphthalene-1-sulfonic acid is a naphthalenesulfonic acid and an aminonaphthalene. It has a role as a mutagen. It is functionally related to a 2-naphthol."
+ },
+ {
+  "cas": "71119-23-8",
+  "titulo": "4-Morpholineethanesulfonic acid, sodium salt (1:1)",
+  "descricao": "Sodium 2-(N-morpholino)ethanesulfonate is the organic sodium salt that is the sodium salt of 2-(N-morpholino)ethanesulfonic acid. It contains a 2-(N-morpholino)ethanesulfonate."
+ },
+ {
+  "cas": "504-17-6",
+  "titulo": "Thiobarbituric acid",
+  "descricao": "2-thiobarbituric acid is a barbiturate, the structure of which is that of barbituric acid in which the oxygen at C-2 is replaced by sulfur. It has a role as a reagent and an allergen."
+ },
+ {
+  "cas": "88-82-4",
+  "titulo": "2,3,5-Triiodobenzoic acid",
+  "descricao": "2,3,5-triiodobenzoic acid is a member of the class of benzoic acids that is benzoic acid in which the hydrogens at positions 2, 3 and 5 are replaced by iodine atoms. It is an auxin polar transport inhibitor. It has a role as a member of antiauxins. It is a member of benzoic acids and an organoiodine compound."
+ },
+ {
+  "cas": "1132-61-2",
+  "titulo": "Mops",
+  "descricao": "3-(N-morpholino)propanesulfonic acid is a Good's buffer substance, pKa = 7.2 at 20 C. It is an organosulfonic acid, a member of morpholines and a MOPS. It is a conjugate acid of a 3-(N-morpholino)propanesulfonate. It is a tautomer of a 3-(N-morpholiniumyl)propanesulfonate."
+ },
+ {
+  "cas": "121-92-6",
+  "titulo": "3-Nitrobenzoic acid",
+  "descricao": "3-nitrobenzoic acid is a nitrobenzoic acid having the nitro group at the 3-position. It is a conjugate acid of a 3-nitrobenzoate."
+ },
+ {
+  "cas": "99-96-7",
+  "titulo": "4-Hydroxybenzoic Acid",
+  "descricao": "4-hydroxybenzoic acid is a monohydroxybenzoic acid that is benzoic acid carrying a hydroxy substituent at C-4 of the benzene ring. It has a role as a plant metabolite and an algal metabolite. It is a conjugate acid of a 4-hydroxybenzoate."
+ },
+ {
+  "cas": "104-01-8",
+  "titulo": "4-Methoxyphenylacetic Acid",
+  "descricao": "4-methoxyphenylacetic acid is a monocarboxylic acid that is phenylacetic acid carrying a 4-methoxy substituent. It is used as an intermediate for pharmaceuticals and other organic synthesis. It has been found to inhibit the germination of cress and lettuce seeds. It has a role as a plant growth retardant, a plant metabolite and an Aspergillus metabolite. It is a monomethoxybenzene and a monocarboxylic acid."
+ },
+ {
+  "cas": "50-78-2",
+  "titulo": "Aspirin",
+  "descricao": "Aspirin can cause developmental toxicity and female reproductive toxicity according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "79-10-7",
+  "titulo": "Acrylic Acid",
+  "descricao": "Acrylic acid is a alpha,beta-unsaturated monocarboxylic acid that is ethene substituted by a carboxy group. It has a role as a metabolite. It is a conjugate acid of an acrylate."
+ },
+ {
+  "cas": "124-04-9",
+  "titulo": "Adipic Acid",
+  "descricao": "Adipic acid is an alpha,-dicarboxylic acid that is the 1,4-dicarboxy derivative of butane. It has a role as a food acidity regulator and a human xenobiotic metabolite. It is a dicarboxylic fatty acid and an alpha,omega-dicarboxylic acid. It is a conjugate acid of an adipate(1-)."
+ },
+ {
+  "cas": "150-13-0",
+  "titulo": "4-Aminobenzoic Acid",
+  "descricao": "4-aminobenzoic acid is an aminobenzoic acid in which the amino group is para to the carboxy group. It has a role as an allergen, a plant metabolite and an Escherichia coli metabolite. It is functionally related to a benzoic acid. It is a conjugate base of a 4-carboxyanilinium. It is a conjugate acid of a 4-aminobenzoate. It is a tautomer of a 4-ammoniobenzoate."
+ },
+ {
+  "cas": "50-81-7",
+  "titulo": "L-Ascorbic Acid",
+  "descricao": "L-ascorbic acid is the L-enantiomer of ascorbic acid and conjugate acid of L-ascorbate. It has a role as a geroprotector, a coenzyme, a cofactor, a flour treatment agent, a plant metabolite, a food antioxidant, a food colour retention agent and a skin lightening agent. It is a vitamin C and an ascorbic acid. It is a conjugate acid of a L-ascorbate. It is an enantiomer of a D-ascorbic acid."
+ },
+ {
+  "cas": "56-84-8",
+  "titulo": "L-Aspartic Acid",
+  "descricao": "L-aspartic acid is the L-enantiomer of aspartic acid. It has a role as a neurotransmitter, a mouse metabolite and an Escherichia coli metabolite. It is a L-alpha-amino acid, an aspartate family amino acid, an aspartic acid and a proteinogenic amino acid. It is a conjugate acid of a L-aspartate(1-). It is an enantiomer of a D-aspartic acid."
+ },
+ {
+  "cas": "67-52-7",
+  "titulo": "Barbituric Acid",
+  "descricao": "Barbituric acid is a barbiturate, the structure of which is that of perhydropyrimidine substituted at C-2, -4 and -6 by oxo groups. Barbituric acid is the parent compound of barbiturate drugs, although it is not itself pharmacologically active. It has a role as a xenobiotic and an allergen. It is a conjugate acid of a barbiturate, a barbiturate(2-) and a barbiturate(1-)."
+ },
+ {
+  "cas": "107-92-6",
+  "titulo": "Butyric Acid",
+  "descricao": "Butyric acid is a straight-chain saturated fatty acid that is butane in which one of the terminal methyl groups has been oxidised to a carboxy group. It has a role as a Mycoplasma genitalium metabolite and a human urinary metabolite. It is a fatty acid 4:0 and a straight-chain saturated fatty acid. It is a conjugate acid of a butyrate."
+ },
+ {
+  "cas": "77-92-9",
+  "titulo": "Citric Acid",
+  "descricao": "Citric acid is a tricarboxylic acid that is propane-1,2,3-tricarboxylic acid bearing a hydroxy substituent at position 2. It is an important metabolite in the pathway of all aerobic organisms. It has a role as a calcium chelator, an antimicrobial agent, a chelator, a food acidity regulator and a fundamental metabolite. It is a conjugate acid of a citrate anion and a citrate(1-)."
+ },
+ {
+  "cas": "5949-29-1",
+  "titulo": "2-Hydroxy-1,2,3-propanetricarboxylic acid hydrate (1:1)",
+  "descricao": "Citric acid monohydrate is an organic molecular entity."
+ },
+ {
+  "cas": "79-11-8",
+  "titulo": "Chloroacetic Acid",
+  "descricao": "Chloroacetic acid is a chlorocarboxylic acid that is acetic acid carrying a 2-chloro substituent. It has a role as an alkylating agent and a herbicide. It is a haloacetic acid and a chlorocarboxylic acid. It is functionally related to an acetic acid. It is a conjugate acid of a chloroacetate."
+ },
+ {
+  "cas": "1333-82-0",
+  "titulo": "Chromium Trioxide",
+  "descricao": "Chromium trioxide is a chromium oxide composed of a single chromium bound (oxidation state +6) to three oxygens; the acidic anhydride of chromic acid."
+ },
+ {
+  "cas": "79-43-6",
+  "titulo": "Dichloroacetic Acid",
+  "descricao": "Dichloroacetic Acid can cause cancer, developmental toxicity and male reproductive toxicity according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "67-43-6",
+  "titulo": "Diethylenetriaminepentaacetic acid",
+  "descricao": "Pentetic acid is a pentacarboxylic acid. It has a role as a copper chelator. It is a conjugate acid of a pentetate(1-)."
+ },
+ {
+  "cas": "99-34-3",
+  "titulo": "3,5-Dinitrobenzoic acid",
+  "descricao": "3,5-dinitrobenzoic acid is a member of the class of benzoic acids that is benzoic acid in which the hydrogens at positions 3 and 5 are replaced by nitro groups. It is a member of benzoic acids and a C-nitro compound."
+ },
+ {
+  "cas": "609-99-4",
+  "titulo": "3,5-Dinitrosalicylic acid",
+  "descricao": "3,5-dinitrosalicylic acid is a monohydroxybenzoic acid consisting of 2-hydroxybenzoic acid having nitro substituents at the 3- and 5-positions. It is used in colorimetric testing for the presence of free carbonyl groups (C=O) in reducing sugars. It has a role as a hapten. It is a monohydroxybenzoic acid and a C-nitro compound. It is functionally related to a salicylic acid."
+ },
+ {
+  "cas": "57-11-4",
+  "titulo": "Stearic Acid",
+  "descricao": "Octadecanoic acid is a C18 straight-chain saturated fatty acid component of many animal and vegetable lipids. As well as in the diet, it is used in hardening soaps, softening plastics and in making cosmetics, candles and plastics. It has a role as a plant metabolite, a human metabolite, a Daphnia magna metabolite and an algal metabolite. It is a long-chain fatty acid, a saturated fatty acid and a straight-chain saturated fatty acid. It is a conjugate acid of an octadecanoate. It derives from a hydride of an octadecane."
+ },
+ {
+  "cas": "16872-11-0",
+  "titulo": "Tetrafluoroboric acid",
+  "descricao": "Tetrafluoroboric acid is a boron fluoride. It is a conjugate acid of a tetrafluoroborate(1-)."
+ },
+ {
+  "cas": "59-30-3",
+  "titulo": "Folic Acid",
+  "descricao": "Folic acid is an N-acyl-amino acid that is a form of the water-soluble vitamin B9. Its biologically active forms (tetrahydrofolate and others) are essential for nucleotide biosynthesis and homocysteine remethylation. It has a role as a nutrient, a mouse metabolite and a human metabolite. It is a member of folic acids and a N-acyl-amino acid. It is functionally related to a pteroic acid. It is a conjugate acid of a folate(2-)."
+ },
+ {
+  "cas": "88-99-3",
+  "titulo": "Phthalic Acid",
+  "descricao": "Phthalic acid is a benzenedicarboxylic acid cosisting of two carboxy groups at ortho positions. It has a role as a human xenobiotic metabolite. It is a conjugate acid of a phthalate(1-)."
+ },
+ {
+  "cas": "110-17-8",
+  "titulo": "Fumaric Acid",
+  "descricao": "Fumaric acid is a butenedioic acid in which the C=C double bond has E geometry. It is an intermediate metabolite in the citric acid cycle. It has a role as a geroprotector, a food acidity regulator and a fundamental metabolite. It is a conjugate acid of a fumarate(1-)."
+ },
+ {
+  "cas": "149-91-7",
+  "titulo": "Gallic Acid",
+  "descricao": "Gallic acid is a trihydroxybenzoic acid in which the hydroxy groups are at positions 3, 4, and 5. It has a role as a geroprotector, an antioxidant, an antineoplastic agent, a cyclooxygenase 2 inhibitor, an EC 1.13.11.33 (arachidonate 15-lipoxygenase) inhibitor, an apoptosis inducer, an astringent, a plant metabolite and a human xenobiotic metabolite. It is a conjugate acid of a gallate."
+ },
+ {
+  "cas": "79-14-1",
+  "titulo": "Glycolic Acid",
+  "descricao": "Glycolic acid is a 2-hydroxy monocarboxylic acid that is acetic acid where the methyl group has been hydroxylated. It has a role as a metabolite and a keratolytic drug. It is a primary alcohol and a 2-hydroxy monocarboxylic acid. It is functionally related to an acetic acid. It is a conjugate acid of a glycolate."
+ },
+ {
+  "cas": "56-86-0",
+  "titulo": "L-Glutamic Acid",
+  "descricao": "L-glutamic acid is an optically active form of glutamic acid having L-configuration. It has a role as a ferroptosis inducer, a neurotransmitter, a micronutrient, a nutraceutical, a mouse metabolite and an Escherichia coli metabolite. It is a L-alpha-amino acid, a glutamic acid, a glutamine family amino acid and a proteinogenic amino acid. It is a conjugate acid of a L-glutamate(1-). It is an enantiomer of a D-glutamic acid."
+ },
+ {
+  "cas": "495-69-2",
+  "titulo": "Hippuric Acid",
+  "descricao": "N-benzoylglycine is an N-acylglycine in which the acyl group is specified as benzoyl. It has a role as a uremic toxin and a human blood serum metabolite. It is a conjugate acid of a N-benzoylglycinate."
+ },
+ {
+  "cas": "133-32-4",
+  "titulo": "Indole-3-Butyric Acid",
+  "descricao": "Indole-3-butyric acid is a indol-3-yl carboxylic acid that is butanoic acid carrying a 1H-indol-3-yl substituent at position 1. It has a role as an auxin, a plant hormone and a plant metabolite. It is functionally related to a butyric acid. It is a conjugate acid of an indole-3-butyrate."
+ },
+ {
+  "cas": "97-65-4",
+  "titulo": "Itaconic acid",
+  "descricao": "Itaconic acid is a dicarboxylic acid that is methacrylic acid in which one of the methyl hydrogens is substituted by a carboxylic acid group. It has a role as a fungal metabolite and a human metabolite. It is a dicarboxylic fatty acid, a dicarboxylic acid and an olefinic compound. It is functionally related to a succinic acid. It is a conjugate acid of an itaconate(2-)."
+ },
+ {
+  "cas": "143-07-7",
+  "titulo": "Lauric Acid",
+  "descricao": "Dodecanoic acid is a straight-chain, twelve-carbon medium-chain saturated fatty acid with strong bactericidal properties; the main fatty acid in coconut oil and palm kernel oil. It has a role as an antibacterial agent, a plant metabolite and an algal metabolite. It is a straight-chain saturated fatty acid and a medium-chain fatty acid. It is a conjugate acid of a dodecanoate. It derives from a hydride of a dodecane."
+ },
+ {
+  "cas": "123-76-2",
+  "titulo": "Levulinic Acid",
+  "descricao": "4-oxopentanoic acid is an oxopentanoic acid with the oxo group in the 4-position. It has a role as a plant metabolite. It is an oxopentanoic acid and a straight-chain saturated fatty acid. It is a conjugate acid of a 4-oxopentanoate."
+ },
+ {
+  "cas": "60-33-3",
+  "titulo": "Linoleic Acid",
+  "descricao": "Linoleic acid is an octadecadienoic acid in which the two double bonds are at positions 9 and 12 and have Z (cis) stereochemistry. It has a role as a plant metabolite, a Daphnia galeata metabolite and an algal metabolite. It is an octadecadienoic acid and an omega-6 fatty acid. It is a conjugate acid of a linoleate."
+ },
+ {
+  "cas": "110-16-7",
+  "titulo": "Maleic Acid",
+  "descricao": "Maleic acid is a butenedioic acid in which the double bond has cis- (Z)-configuration. It has a role as a mouse metabolite, a plant metabolite and an algal metabolite. It is a conjugate acid of a maleate and a maleate(1-)."
+ },
+ {
+  "cas": "6915-15-7",
+  "titulo": "Malic Acid",
+  "descricao": "Malic acid is a 2-hydroxydicarboxylic acid that is succinic acid in which one of the hydrogens attached to a carbon is replaced by a hydroxy group. It has a role as a food acidity regulator and a fundamental metabolite. It is a 2-hydroxydicarboxylic acid and a C4-dicarboxylic acid. It is functionally related to a succinic acid. It is a conjugate acid of a malate(2-) and a malate."
+ },
+ {
+  "cas": "141-82-2",
+  "titulo": "Malonic Acid",
+  "descricao": "Malonic acid is an alpha,-dicarboxylic acid in which the two carboxy groups are separated by a single methylene group. It has a role as a human metabolite. It is a conjugate acid of a malonate(1-)."
+ },
+ {
+  "cas": "37267-86-0",
+  "titulo": "Metaphosphoric Acid",
+  "descricao": "Phosphonate(1-) is a monovalent inorganic anion obtained by deprotonation of one of the two OH groups in phosphonic acid. It is a phosphorus oxoanion and a monovalent inorganic anion. It is a conjugate base of a phosphonic acid. It is a conjugate acid of a phosphonate(2-)."
+ },
+ {
+  "cas": "544-63-8",
+  "titulo": "Myristic Acid",
+  "descricao": "Tetradecanoic acid is a straight-chain, fourteen-carbon, long-chain saturated fatty acid mostly found in milk fat. It has a role as a human metabolite, an EC 3.1.1.1 (carboxylesterase) inhibitor, a Daphnia magna metabolite and an algal metabolite. It is a long-chain fatty acid and a straight-chain saturated fatty acid. It is a conjugate acid of a tetradecanoate."
+ },
+ {
+  "cas": "7782-91-4",
+  "titulo": "Molybdic acid",
+  "descricao": "Molybdic acid is a molybdenum oxoacid. It is a conjugate acid of a hydrogenmolybdate."
+ },
+ {
+  "cas": "389-08-2",
+  "titulo": "Nalidixic Acid",
+  "descricao": "Nalidixic Acid can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "59-67-6",
+  "titulo": "Nicotinic Acid",
+  "descricao": "Nicotinic acid is a pyridinemonocarboxylic acid that is pyridine in which the hydrogen at position 3 is replaced by a carboxy group. It has a role as a metabolite, a vasodilator agent, an antilipemic drug, an antidote, a mouse metabolite, a plant metabolite, an Escherichia coli metabolite, a human urinary metabolite and an EC 3.5.1.19 (nicotinamidase) inhibitor. It is a vitamin B3, a pyridine alkaloid and a pyridinemonocarboxylic acid. It is a conjugate acid of a nicotinate."
+ },
+ {
+  "cas": "62-23-7",
+  "titulo": "4-Nitrobenzoic Acid",
+  "descricao": "4-nitrobenzoic acid is a nitrobenzoic acid having the nitro group at the 4-position. It is functionally related to a benzoic acid. It is a conjugate acid of a 4-nitrobenzoate."
+ },
+ {
+  "cas": "112-80-1",
+  "titulo": "Oleic Acid",
+  "descricao": "Oleic acid is an octadec-9-enoic acid in which the double bond at C-9 has Z (cis) stereochemistry. It has a role as an antioxidant, a solvent, a mouse metabolite, a plant metabolite, an Escherichia coli metabolite, an EC 3.1.1.1 (carboxylesterase) inhibitor and a Daphnia galeata metabolite. It is a conjugate acid of an oleate. It derives from a hydride of a cis-octadec-9-ene."
+ },
+ {
+  "cas": "144-62-7",
+  "titulo": "Oxalic Acid",
+  "descricao": "Oxalic acid is an alpha,-dicarboxylic acid that is ethane substituted by carboxyl groups at positions 1 and 2. It has a role as a plant metabolite, a human metabolite and an algal metabolite. It is a conjugate acid of an oxalate and an oxalate(1-)."
+ },
+ {
+  "cas": "10450-60-9",
+  "titulo": "Orthoperiodic acid",
+  "descricao": "Orthoperiodic acid is an iodine oxoacid. It is a conjugate acid of an orthoperiodate(1-)."
+ },
+ {
+  "cas": "87-66-1",
+  "titulo": "Pyrogallol",
+  "descricao": "Pyrogallol is a benzenetriol carrying hydroxy groups at positions 1, 2 and 3. It has a role as a plant metabolite. It is a phenolic donor and a benzenetriol."
+ },
+ {
+  "cas": "79-09-4",
+  "titulo": "Propionic Acid",
+  "descricao": "Propionic acid is a short-chain saturated fatty acid comprising ethane attached to the carbon of a carboxy group. It has a role as an antifungal drug. It is a saturated fatty acid and a short-chain fatty acid. It is a conjugate acid of a propionate."
+ },
+ {
+  "cas": "603-45-2",
+  "titulo": "Aurin",
+  "descricao": "Aurin is a diarylmethane."
+ },
+ {
+  "cas": "69-72-7",
+  "titulo": "Salicylic Acid",
+  "descricao": "Salicylic acid is a monohydroxybenzoic acid that is benzoic acid with a hydroxy group at the ortho position. It is obtained from the bark of the white willow and wintergreen leaves. It has a role as an antiinfective agent, an antifungal agent, a plant hormone, a keratolytic drug, an EC 1.11.1.11 (L-ascorbate peroxidase) inhibitor, a plant metabolite and an algal metabolite. It is a conjugate acid of a salicylate."
+ },
+ {
+  "cas": "110-44-1",
+  "titulo": "Sorbic Acid",
+  "descricao": "Sorbic acid is a hexadienoic acid with double bonds at C-2 and C-4; it has four geometrical isomers, of which the trans,trans-form is naturally occurring. It is a hexadienoic acid, a polyunsaturated fatty acid, a medium-chain fatty acid and an alpha,beta-unsaturated monocarboxylic acid. It is a conjugate acid of a sorbate."
+ },
+ {
+  "cas": "5329-14-6",
+  "titulo": "Sulfamic Acid",
+  "descricao": "Sulfamic acid is the simplest of the sulfamic acids consisting of a single sulfur atom covalently bound by single bonds to hydroxy and amino groups and by double bonds to two oxygen atoms."
+ },
+ {
+  "cas": "7783-06-4",
+  "titulo": "Hydrogen Sulfide",
+  "descricao": "Sulfur atom is a nonmetal atom and a chalcogen. It has a role as a macronutrient."
+ },
+ {
+  "cas": "87-69-4",
+  "titulo": "L-Tartaric acid",
+  "descricao": "L-tartaric acid is the L-enantiomer of tartaric acid. It is a conjugate acid of a L-tartrate(1-). It is an enantiomer of a D-tartaric acid."
+ },
+ {
+  "cas": "68-11-1",
+  "titulo": "Thioglycolic Acid",
+  "descricao": "Thioglycolic acid is a sulfur-containing carboxylic acid. It is a conjugate acid of a thioglycolate(1-)."
+ },
+ {
+  "cas": "70-55-3",
+  "titulo": "P-Toluenesulfonamide",
+  "descricao": "Toluene-4-sulfonamide is a sulfonamide that is benzenesulfonamide bearing a methyl group at position 4."
+ },
+ {
+  "cas": "76-03-9",
+  "titulo": "Trichloroacetic Acid",
+  "descricao": "Trichloroacetic Acid can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "76-05-1",
+  "titulo": "Trifluoroacetic acid",
+  "descricao": "Trifluoroacetic acid is a monocarboxylic acid that is the trifluoro derivative of acetic acid. It has a role as a reagent and a human xenobiotic metabolite. It is functionally related to an acetic acid. It is a conjugate acid of a trifluoroacetate."
+ },
+ {
+  "cas": "79-06-1",
+  "titulo": "Acrylamide",
+  "descricao": "Acrylamide can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC) and The Environmental Protection Agency (EPA). It can cause developmental toxicity and male reproductive toxicity according to The National Toxicology Program's Center for the Evaluation of Risks to Human Reproduction."
+ },
+ {
+  "cas": "140-88-5",
+  "titulo": "Ethyl Acrylate",
+  "descricao": "Ethyl Acrylate can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "488-81-3",
+  "titulo": "(2S,4R)-Pentane-1,2,3,4,5-Pentol",
+  "descricao": "Ribitol is a pentitol (five-carbon sugar alcohol) having meso-configuration, being derived from ribose by reduction of the carbonyl group. It occurs naturally in the plant Adonis vernalis. It has a role as a plant metabolite, a human metabolite and a Daphnia magna metabolite."
+ },
+ {
+  "cas": "7732-18-5",
+  "titulo": "Water",
+  "descricao": "Water is an oxygen hydride consisting of an oxygen atom that is covalently bonded to two hydrogen atoms. It has a role as an amphiprotic solvent, a mouse metabolite, a Saccharomyces cerevisiae metabolite, a member of greenhouse gas, an Escherichia coli metabolite and a human metabolite. It is an oxygen hydride, a mononuclear parent hydride and an inorganic hydroxy compound. It is a conjugate base of an oxonium. It is a conjugate acid of a hydroxide."
+ },
+ {
+  "cas": "56-41-7",
+  "titulo": "L-Alanine",
+  "descricao": "L-alanine is the L-enantiomer of alanine. It has a role as an EC 4.3.1.15 (diaminopropionate ammonia-lyase) inhibitor and a fundamental metabolite. It is a L-alpha-amino acid, an alanine, a pyruvate family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-alaninium. It is a conjugate acid of a L-alaninate. It is an enantiomer of a D-alanine. It is a tautomer of a L-alanine zwitterion."
+ },
+ {
+  "cas": "97-59-6",
+  "titulo": "Allantoin",
+  "descricao": "Allantoin is an imidazolidine-2,4-dione that is 5-aminohydantoin in which a carbamoyl group is attached to the exocyclic nitrogen. It has a role as a vulnerary, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is an imidazolidine-2,4-dione and a member of ureas. It is functionally related to a hydantoin. It is a tautomer of a 1-(5-hydroxy-2-oxo-2,3-dihydroimidazol-4-yl)urea."
+ },
+ {
+  "cas": "1936-15-8",
+  "titulo": "C.I. Acid Orange 10",
+  "descricao": "Orange G is an organic sodium salt that is the disodium salt of 7-hydroxy-8-[(E)-phenyldiazenyl]naphthalene-1,3-disulfonic acid. It is often combined with other yellow dyes in alcoholic solution to stain erythrocytes in trichrome methods, and is used for demonstrating cells in the pancreas and pituitary. It has a role as a histological dye. It contains a 7-hydroxy-8-[(E)-phenyldiazenyl]naphthalene-1,3-disulfonate."
+ },
+ {
+  "cas": "71-41-0",
+  "titulo": "1-Pentanol",
+  "descricao": "Pentan-1-ol is a short-chain primary fatty alcohol that is pentane in which a hydrogen of one of the methyl groups is substituted by a hydroxy group. It has been isolated from Melicope ptelefolia. It has a role as a plant metabolite and a human metabolite. It is a pentanol and a short-chain primary fatty alcohol."
+ },
+ {
+  "cas": "100-51-6",
+  "titulo": "Benzyl Alcohol",
+  "descricao": "Benzyl alcohol is an aromatic alcohol that consists of benzene bearing a single hydroxymethyl substituent. It has a role as an antioxidant, a metabolite, a solvent and a fragrance."
+ },
+ {
+  "cas": "75-65-0",
+  "titulo": "tert-Butanol",
+  "descricao": "Tert-butanol is a tertiary alcohol alcohol that is isobutane substituted by a hydroxy group at position 2. It has a role as a human xenobiotic metabolite. It derives from a hydride of an isobutane."
+ },
+ {
+  "cas": "36653-82-4",
+  "titulo": "Cetyl Alcohol",
+  "descricao": "Hexadecan-1-ol is a long-chain primary fatty alcohol that is hexadecane substituted by a hydroxy group at position 1. It has a role as a flavouring agent, a plant metabolite, a human metabolite and an algal metabolite. It is a hexadecanol and a long-chain primary fatty alcohol."
+ },
+ {
+  "cas": "64-17-5",
+  "titulo": "Ethanol",
+  "descricao": "Ethyl alcohol in alcoholic beverages can cause developmental toxicity according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "123-51-3",
+  "titulo": "Isoamyl Alcohol",
+  "descricao": "Isoamylol is an primary alcohol that is butan-1-ol in which a hydrogen at position 3 has been replaced by a methyl group. It has a role as an antifungal agent, a Saccharomyces cerevisiae metabolite and a xenobiotic metabolite. It is a volatile organic compound, a primary alcohol and an alkyl alcohol. It derives from a hydride of an isopentane."
+ },
+ {
+  "cas": "111-87-5",
+  "titulo": "1-Octanol",
+  "descricao": "Octan-1-ol is an octanol carrying the hydroxy group at position 1. It has a role as an antifungal agent, a fuel additive, a plant metabolite, a bacterial metabolite and a kairomone. It is a primary alcohol and an octanol."
+ },
+ {
+  "cas": "72-48-0",
+  "titulo": "Alizarin",
+  "descricao": "Alizarin is a dihydroxyanthraquinone that is anthracene-9,10-dione in which the two hydroxy groups are located at positions 1 and 2. It has a role as a chromophore, a dye and a plant metabolite."
+ },
+ {
+  "cas": "587-98-4",
+  "titulo": "Metanil yellow",
+  "descricao": "Metanil yellow is an organic sodium salt having 3-[(4-anilinophenyl)diazenyl]benzene-1-sulfonate as the counterion. Used in one variant of Masson's trichrome to stain collagen yellow in contrast to the red muscle, but is not in common used. It has a role as a histological dye. It contains a 3-[(4-anilinophenyl)diazenyl]benzene-1-sulfonate."
+ },
+ {
+  "cas": "9005-84-9",
+  "titulo": "Amylodextrin",
+  "descricao": "Alpha-maltose is a maltose that has alpha-configuration at the reducing end anomeric centre."
+ },
+ {
+  "cas": "107-95-9",
+  "titulo": "Beta-Alanine",
+  "descricao": "Beta-alanine is a naturally-occurring beta-amino acid comprising propionic acid with the amino group in the 3-position. It has a role as a neurotransmitter, an inhibitor, an agonist, a human metabolite and a fundamental metabolite. It is a conjugate acid of a beta-alaninate. It is a tautomer of a beta-alanine zwitterion."
+ },
+ {
+  "cas": "85-44-9",
+  "titulo": "Phthalic Anhydride",
+  "descricao": "Phthalic anhydride is the cyclic dicarboxylic anhydride that is the anhydride of phthalic acid. It has a role as an allergen. It is a cyclic dicarboxylic anhydride and a member of 2-benzofurans."
+ },
+ {
+  "cas": "12029-98-0",
+  "titulo": "Iodine pentoxide",
+  "descricao": "Diiodine pentaoxide is an iodine oxide."
+ },
+ {
+  "cas": "108-31-6",
+  "titulo": "Maleic Anhydride",
+  "descricao": "Maleic anhydride is a cyclic dicarboxylic anhydride that is the cyclic anhydride of maleic acid. It has a role as an allergen. It is a member of furans and a cyclic dicarboxylic anhydride."
+ },
+ {
+  "cas": "62-53-3",
+  "titulo": "Aniline",
+  "descricao": "Aniline can cause cancer according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "60-80-0",
+  "titulo": "Antipyrine",
+  "descricao": "Antipyrine is a pyrazolone derivative that is 1,2-dihydropyrazol-3-one substituted with methyl groups at N-1 and C-5 and with a phenyl group at N-2. It has a role as a non-steroidal anti-inflammatory drug, a non-narcotic analgesic, an antipyretic, a xenobiotic, a cyclooxygenase 3 inhibitor and an environmental contaminant."
+ },
+ {
+  "cas": "120-12-7",
+  "titulo": "Anthracene",
+  "descricao": "Anthracene can cause cancer according to California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "84-65-1",
+  "titulo": "Anthraquinone",
+  "descricao": "Anthraquinone can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "90-44-8",
+  "titulo": "Anthrone",
+  "descricao": "Anthrone is a member of the class of anthracenes that is 9,10-dihydroanthracene carrying an oxo group at C-9. It has a role as a radical scavenger. It is a tautomer of a 9-anthrol."
+ },
+ {
+  "cas": "10323-20-3",
+  "titulo": "D-Arabinose",
+  "descricao": "Aldehydo-D-arabinose is a D-arabinose and an aldehydo-arabinose. It is an enantiomer of an aldehydo-L-arabinose."
+ },
+ {
+  "cas": "5328-37-0",
+  "titulo": "L-Arabinose",
+  "descricao": "L-arabinopyranose is the six-membered ring form of L-arabinose. It has a role as a mouse metabolite and an Escherichia coli metabolite."
+ },
+ {
+  "cas": "14808-60-7",
+  "titulo": "Silica",
+  "descricao": "Silicon dioxide is a silicon oxide made up of linear triatomic molecules in which a silicon atom is covalently bonded to two oxygens."
+ },
+ {
+  "cas": "74-79-3",
+  "titulo": "L-Arginine",
+  "descricao": "L-arginine is an L-alpha-amino acid that is the L-isomer of arginine. It has a role as a micronutrient, a nutraceutical, a biomarker, a mouse metabolite and an Escherichia coli metabolite. It is a L-alpha-amino acid, a glutamine family amino acid, an arginine and a proteinogenic amino acid. It is a conjugate base of a L-argininium(1+). It is a conjugate acid of a L-argininate. It is an enantiomer of a D-arginine."
+ },
+ {
+  "cas": "1119-34-2",
+  "titulo": "L-Arginine, monohydrochloride",
+  "descricao": "Arginine hydrochloride is a L-alpha-amino acid."
+ },
+ {
+  "cas": "10048-95-0",
+  "titulo": "Sodium arsenate, dibasic heptahydrate",
+  "descricao": "Disodium hydrogenarsenate heptahydrate is a hydrate that is the heptahydrate form of disodium hydrogen arsenate. It has a role as a poison. It contains a disodium hydrogenarsenate."
+ },
+ {
+  "cas": "7784-46-5",
+  "titulo": "Sodium Arsenite",
+  "descricao": "Sodium arsenite is an inoganic sodium salt with formula with formula NaAsO2. It has a role as a herbicide, an insecticide, an antibacterial agent, a rodenticide, an antineoplastic agent, an antifungal agent and a carcinogenic agent. It is an arsenic molecular entity and an inorganic sodium salt."
+ },
+ {
+  "cas": "134-03-2",
+  "titulo": "Sodium Ascorbate",
+  "descricao": "Sodium ascorbate is an organic sodium salt resulting from the replacement of the proton from the 3-hydroxy group of ascorbic acid by a sodium ion. It has a role as a coenzyme, a reducing agent, a flour treatment agent, a plant metabolite, a human metabolite, a food antioxidant and a Daphnia magna metabolite. It is a vitamin C and an organic sodium salt. It contains a L-ascorbate."
+ },
+ {
+  "cas": "70-47-3",
+  "titulo": "(-)-Asparagine",
+  "descricao": "L-asparagine is an optically active form of asparagine having L-configuration. It has a role as a micronutrient, a nutraceutical, a mouse metabolite, a Saccharomyces cerevisiae metabolite, a plant metabolite, an Escherichia coli metabolite and a human metabolite. It is a L-alpha-amino acid, an asparagine, an aspartate family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-asparaginium. It is a conjugate acid of a L-asparaginate. It is an enantiomer of a D-asparagine. It is a tautomer of a L-asparagine zwitterion."
+ },
+ {
+  "cas": "22839-47-0",
+  "titulo": "Aspartame",
+  "descricao": "Aspartame is a dipeptide obtained by formal condensation of the alpha-carboxy group of L-aspartic acid with the amino group of methyl L-phenylalaninate. Commonly used as an artificial sweetener. It has a role as a micronutrient, a xenobiotic, a sweetening agent, a nutraceutical, an EC 3.1.3.1 (alkaline phosphatase) inhibitor, an apoptosis inhibitor and an environmental contaminant. It is a methyl ester, a carboxylic acid and a dipeptide. It is functionally related to a L-aspartic acid and a methyl L-phenylalaninate. It is a tautomer of an aspartame zwitterion."
+ },
+ {
+  "cas": "2465-27-2",
+  "titulo": "C.I. Basic Yellow 2",
+  "descricao": "Auramine O is a hydrochloride obtained by combining 4,4'-carbonimidoylbis(N,N-dimethylaniline) with one molar equivalent of hydrogen chloride. A fluorescent stain for demonstrating acid fast organisms in a method similar to the Ziehl Neelsen. It also can be used to make a fluorescent Schiff reagent. It has a role as a fluorochrome and a histological dye. It contains an auramine O(1+)."
+ },
+ {
+  "cas": "3844-45-9",
+  "titulo": "FD&C Blue No. 1",
+  "descricao": "Brilliant Blue is an organic molecular entity."
+ },
+ {
+  "cas": "115-39-9",
+  "titulo": "Bromophenol Blue",
+  "descricao": "Bromophenol blue is 3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 3,5-dibromo-4-hydroxyphenyl groups. It is used as a laboratory indicator, changing from yellow below pH 3 to purple at pH 4.6, and as a size marker for monitoring the progress of agarose gel and polyacrylamide gel electrophoresis. It has also been used as an industrial dye. It has a role as a dye, an acid-base indicator and a two-colour indicator. It is a member of phenols, an organobromine compound, a 2,1-benzoxathiole, a sultone and an arenesulfonate ester."
+ },
+ {
+  "cas": "76-59-5",
+  "titulo": "Bromothymol Blue",
+  "descricao": "Bromothymol blue is a member of the class of 2,1-benzoxathioles that is 2,1-benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 3-bromo-4-hydroxy-5-isopropyl-2-methylphenyl groups. It has a role as a dye, an acid-base indicator and a two-colour indicator. It is a polyphenol, an organobromine compound, a 2,1-benzoxathiole, a sultone and an arenesulfonate ester."
+ },
+ {
+  "cas": "129-17-9",
+  "titulo": "Sulfan Blue",
+  "descricao": "Patent blue is an organic molecular entity."
+ },
+ {
+  "cas": "314-13-6",
+  "titulo": "C.I. Direct Blue 53",
+  "descricao": "Evans blue is an organic sodium salt that is the tetrasodium salt of 6,6'-{(3,3'-dimethyl[1,1'-biphenyl]-4,4'-diyl)bis[diazene-2,1-diyl]}bis(4-amino-5-hydroxynaphthalene-1,3-disulfonate). It is sometimes used as a counterstain, especially in fluorescent methods to suppress background autofluorescence. It has a role as a sodium channel blocker, a teratogenic agent, a fluorochrome and a histological dye. It contains an Evans blue(4-)."
+ },
+ {
+  "cas": "298-83-9",
+  "titulo": "Nitro Blue Tetrazolium",
+  "descricao": "Nitro blue tetrazolium(2+) is an organic cation."
+ },
+ {
+  "cas": "92-31-9",
+  "titulo": "Tolonium chloride",
+  "descricao": "Tolonium chloride is an organic chloride salt having 3-amino-7-(dimethylamino)-2-methylphenothiazin-5-ium (tolonium) as the counterion. It is a blue nuclear counterstain that can be used to demonstrate Nissl substance and is also useful for staining mast cell granules, both in metachromatic and orthochromatic techniques. It has a role as a diagnostic agent, a fluorochrome and a histological dye. It contains a tolonium."
+ },
+ {
+  "cas": "72-57-1",
+  "titulo": "C.I. Direct Blue 14",
+  "descricao": "Trypan Blue (Commercial Grade) can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "2580-56-5",
+  "titulo": "Victoria Blue B",
+  "descricao": "Victoria blue B is an iminium salt composed of 4-{(4-anilinonaphthalen-1-yl)[4-(dimethylamino)phenyl]methylidene}-N,N-dimethylcyclohexa-2,5-dien-1-iminium and chloride ions in a 1:1 ratio. It binds to nucleic acids and can be used in standardised staining techniques suitable for automated cell-pattern recognition. It has a role as a fluorochrome and a histological dye. It is an iminium salt and an organic chloride salt. It contains a victoria blue B(1+)."
+ },
+ {
+  "cas": "1871-22-3",
+  "titulo": "Tetrazolium blue",
+  "descricao": "Tetrazolium blue is an organic chloride salt having tetrazolium blue(1+) as the counterion. It has a role as a dye. It contains a tetrazolium blue(2+)."
+ },
+ {
+  "cas": "531-55-5",
+  "titulo": "N,N-Dimethyl-7-(methylamino)-3H-phenothiazin-3-iminium chloride",
+  "descricao": "Azure B is an organic chloride salt having 3-(dimethylamino)-7-(methylamino)phenothiazin-5-ium as the counterion. It is used in making azure eosin stains for blood smear staining and is an active metabolite of methylene blue. It has a role as an antidepressant, an EC 3.1.1.8 (cholinesterase) inhibitor, an EC 1.4.3.4 (monoamine oxidase) inhibitor, a drug metabolite, a fluorochrome, a histological dye and a cardioprotective agent. It contains a 3-(dimethylamino)-7-(methylamino)phenothiazin-5-ium."
+ },
+ {
+  "cas": "55-21-0",
+  "titulo": "Benzamide",
+  "descricao": "Benzamide is an aromatic amide that consists of benzene bearing a single carboxamido substituent. The parent of the class of benzamides."
+ },
+ {
+  "cas": "92-87-5",
+  "titulo": "Benzidine",
+  "descricao": "Benzidine (and its salts) can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "1214-39-7",
+  "titulo": "Benzylaminopurine",
+  "descricao": "N-benzyladenine is a member of the class of 6-aminopurines that is adenine in which one of the hydrogens of the amino group is replaced by a benzyl group. It has a role as a cytokinin and a plant metabolite. It is functionally related to an adenine."
+ },
+ {
+  "cas": "120-51-4",
+  "titulo": "Benzyl Benzoate",
+  "descricao": "Benzyl benzoate is a benzoate ester obtained by the formal condensation of benzoic acid with benzyl alcohol. It has been isolated from the plant species of the genus Polyalthia. It has a role as an acaricide, a scabicide and a plant metabolite. It is a benzoate ester and a benzyl ester. It is functionally related to a benzoic acid."
+ },
+ {
+  "cas": "93-89-0",
+  "titulo": "Ethyl benzoate",
+  "descricao": "Ethyl benzoate is a benzoate ester obtained by condensation of benzoic acid and ethanol. It is a volatile oil component found in ripe kiwifruit, cranberry juice, and palm kernel oil. It has a role as a volatile oil component, a flavouring agent and a fragrance. It is an ethyl ester and a benzoate ester."
+ },
+ {
+  "cas": "532-32-1",
+  "titulo": "Sodium Benzoate",
+  "descricao": "Sodium benzoate is an organic sodium salt resulting from the replacement of the proton from the carboxy group of benzoic acid by a sodium ion. It has a role as an EC 1.13.11.33 (arachidonate 15-lipoxygenase) inhibitor, an EC 3.1.1.3 (triacylglycerol lipase) inhibitor, an antimicrobial food preservative, a plant metabolite, a human xenobiotic metabolite, an algal metabolite and a drug allergen. It contains a benzoate."
+ },
+ {
+  "cas": "106-51-4",
+  "titulo": "Quinone",
+  "descricao": "1,4-benzoquinone is the simplest member of the class of 1,4-benzoquinones, obtained by the formal oxidation of hydroquinone to the corresponding diketone. It is a metabolite of benzene. It has a role as a cofactor, a mouse metabolite and a human xenobiotic metabolite."
+ },
+ {
+  "cas": "95-14-7",
+  "titulo": "1H-Benzotriazole",
+  "descricao": "Benzotriazole is the simplest member of the class of benzotriazoles that consists of a benzene nucleus fused to a 1H-1,2,3-triazole ring. It has a role as a xenobiotic and an environmental contaminant."
+ },
+ {
+  "cas": "1066-33-7",
+  "titulo": "Ammonium Bicarbonate",
+  "descricao": "Ammonium bicarbonate is an organooxygen compound."
+ },
+ {
+  "cas": "58-85-5",
+  "titulo": "Biotin",
+  "descricao": "Biotin is an organic heterobicyclic compound that consists of 2-oxohexahydro-1H-thieno[3,4-d]imidazole having a valeric acid substituent attached to the tetrahydrothiophene ring. The parent of the class of biotins. It has a role as a coenzyme, a cofactor, a prosthetic group, a nutraceutical, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and a fundamental metabolite. It is a vitamin B7 and a member of biotins. It is a conjugate acid of a biotinate."
+ },
+ {
+  "cas": "366-18-7",
+  "titulo": "2,2'-Bipyridine",
+  "descricao": "2,2'-bipyridine is a bipyridine in which the two pyridine moieties are linked by a bond between positions C-2 and C-2'. It has a role as a ferroptosis inhibitor and a chelator."
+ },
+ {
+  "cas": "23089-26-1",
+  "titulo": "Levomenol",
+  "descricao": "(-)-alpha-Bisabolol is a sesquiterpenoid."
+ },
+ {
+  "cas": "7631-90-5",
+  "titulo": "Sodium Bisulfite",
+  "descricao": "Sodium hydrogensulfite is an inorganic sodium salt having hydrogensulfite as the counterion. It has a role as a mutagen, an allergen, a reducing agent, a food antioxidant and a food colour retention agent. It is an inorganic sodium salt and a sulfite salt. It contains a hydrogensulfite."
+ },
+ {
+  "cas": "7440-42-8",
+  "titulo": "Boron",
+  "descricao": "Boron atom is a metalloid atom, a nonmetal atom and a boron group element atom. It has a role as a micronutrient."
+ },
+ {
+  "cas": "7758-01-2",
+  "titulo": "Potassium Bromate",
+  "descricao": "Potassium bromate can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "7789-38-0",
+  "titulo": "Sodium Bromate",
+  "descricao": "Sodium bromate is an inorganic sodium salt having bromate as the counterion. It has a role as a nephrotoxic agent and an oxidising agent. It is a bromate salt and an inorganic sodium salt."
+ },
+ {
+  "cas": "12124-97-9",
+  "titulo": "Ammonium Bromide",
+  "descricao": "Ammonium bromide is an ammonium salt composed of ammonium and bromide ions in a 1:1 ratio. It is a bromide salt and an ammonium salt."
+ },
+ {
+  "cas": "57-09-0",
+  "titulo": "Hexadecyltrimethylammonium Bromide",
+  "descricao": "Cetyltrimethylammonium bromide is the organic bromide salt that is the bromide salt of cetyltrimethylammonium; one of the components of the topical antiseptic cetrimide. It has a role as a detergent and a surfactant. It is a quaternary ammonium salt and an organic bromide salt. It contains a cetyltrimethylammonium ion."
+ },
+ {
+  "cas": "1119-94-4",
+  "titulo": "Dodecyltrimethylammonium bromide",
+  "descricao": "Dodecyltrimethylammonium bromide is a bromide salt and a quaternary ammonium salt. It has a role as a surfactant. It contains a dodecyltrimethylammonium ion."
+ },
+ {
+  "cas": "1239-45-8",
+  "titulo": "Ethidium Bromide",
+  "descricao": "Ethidium bromide is the organic bromide salt of ethidium. It has a role as a geroprotector, an intercalator and a trypanocidal drug. It contains an ethidium."
+ },
+ {
+  "cas": "7550-35-8",
+  "titulo": "Lithium Bromide",
+  "descricao": "Lithium bromide is a lithium salt in which the counterion is bromide. The anhydrous salt forms cubic crystals similar to common salt. It is a bromide salt and a lithium salt."
+ },
+ {
+  "cas": "7758-02-3",
+  "titulo": "Potassium Bromide",
+  "descricao": "Potassium bromide is a metal bromide salt with a K(+) counterion."
+ },
+ {
+  "cas": "7647-15-6",
+  "titulo": "Sodium Bromide",
+  "descricao": "Sodium bromide is an inorganic sodium salt having bromide as the counterion. It has a role as a NMR chemical shift reference compound. It is a bromide salt and an inorganic sodium salt."
+ },
+ {
+  "cas": "64-20-0",
+  "titulo": "Tetramethylammonium bromide",
+  "descricao": "Tetramethylammonium bromide is the bromide salt of tetramethylammonium. It is a bromide salt and a quaternary ammonium salt. It contains a tetramethylammonium."
+ },
+ {
+  "cas": "298-93-1",
+  "titulo": "(3-(4,5-Dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide)",
+  "descricao": "3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide is the bromide salt of 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium. It has a role as a dye and a colorimetric reagent. It contains a 3-(4,5-dimethylthiazol-2-yl)-2,5-diphenyltetrazolium."
+ },
+ {
+  "cas": "75-25-2",
+  "titulo": "Bromoform",
+  "descricao": "Bromoform can cause cancer according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "128-08-5",
+  "titulo": "N-bromobutanimide",
+  "descricao": "N-bromosuccinimide is a five-membered cyclic dicarboximide compound having a bromo substituent on the nitrogen atom. It has a role as a reagent. It is a dicarboximide, an organobromine compound and a pyrrolidinone. It is functionally related to a succinimide."
+ },
+ {
+  "cas": "357-57-3",
+  "titulo": "Brucine",
+  "descricao": "Brucine is an organic heteroheptacyclic compound and a monoterpenoid indole alkaloid."
+ },
+ {
+  "cas": "110-63-4",
+  "titulo": "1,4-Butanediol",
+  "descricao": "Butane-1,4-diol is a butanediol that is butane in which one hydrogen of each of the methyl groups is substituted by a hydroxy group. A colourless, water-miscible, viscous liquid at room temperature (m.p. 16C) with a high boiling point (230C), it is mainly used for the production of other organic chemicals, particularly the solvent oxolane (also known as tetrahydrofuran or THF). It has a role as a protic solvent, a prodrug and a neurotoxin. It is a glycol and a butanediol."
+ },
+ {
+  "cas": "128-37-0",
+  "titulo": "2,6-Di-tert-butyl-4-methylphenol",
+  "descricao": "2,6-di-tert-butyl-4-methylphenol is a member of the class of phenols that is 4-methylphenol substituted by tert-butyl groups at positions 2 and 6. It has a role as a ferroptosis inhibitor, a geroprotector, an antioxidant and a food additive. It is functionally related to a phenol."
+ },
+ {
+  "cas": "25013-16-5",
+  "titulo": "Butylated Hydroxyanisole",
+  "descricao": "3-tert-butyl-4-hydroxyanisole is an aromatic ether that is 4-methoxyphenol in which one of the hydrogens ortho- to the phenolic hydroxy group is replaced by a tert-butyl group. It has a role as an antioxidant and a human xenobiotic metabolite. It is a member of phenols and an aromatic ether."
+ },
+ {
+  "cas": "76-22-2",
+  "titulo": "Camphor",
+  "descricao": "Camphor is a cyclic monoterpene ketone that is bornane bearing an oxo substituent at position 2. A naturally occurring monoterpenoid. It has a role as a plant metabolite. It is a bornane monoterpenoid and a cyclic monoterpene ketone."
+ },
+ {
+  "cas": "506-87-6",
+  "titulo": "Ammonium Carbonate",
+  "descricao": "Ammonium carbonate is an ammonium salt that is the diammonium salt of carbonic acid. It has a role as a food acidity regulator and a raising agent. It is a carbonate salt and an ammonium salt."
+ },
+ {
+  "cas": "513-77-9",
+  "titulo": "Barium Carbonate",
+  "descricao": "Barium carbonate is an inorganic carbonate salt of barium. It is an inorganic barium salt and a carbonate salt."
+ },
+ {
+  "cas": "471-34-1",
+  "titulo": "Calcium Carbonate",
+  "descricao": "Calcium carbonate is a calcium salt with formula CCaO3. It has a role as a fertilizer, an antacid, a food colouring and a food firming agent. It is an inorganic calcium salt, a calcium salt, a carbonate salt and a one-carbon compound."
+ },
+ {
+  "cas": "554-13-2",
+  "titulo": "Lithium Carbonate",
+  "descricao": "Lithium Carbonate can cause developmental toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "546-93-0",
+  "titulo": "Magnesium Carbonate",
+  "descricao": "Magnesium carbonate is a magnesium salt with formula CMgO3. Its hydrated forms, particularly the di-, tri-, and tetrahydrates occur as minerals. It has a role as a fertilizer and an antacid. It is an organic magnesium salt, a magnesium salt, a carbonate salt and a one-carbon compound."
+ },
+ {
+  "cas": "3486-35-9",
+  "titulo": "Zinc Carbonate",
+  "descricao": "Zinc carbonate is an organooxygen compound."
+ },
+ {
+  "cas": "9004-32-4",
+  "titulo": "Sodium carboxymethyl cellulose",
+  "descricao": "Carboxymethylcellulose sodium salt is an organic molecular entity. It has a role as a food additive."
+ },
+ {
+  "cas": "86-74-8",
+  "titulo": "Carbazole",
+  "descricao": "Carbazole can cause cancer according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "7440-44-0",
+  "titulo": "Carbon",
+  "descricao": "Carbon black (airborne, unbound particles of respirable size) can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "528-50-7",
+  "titulo": "Cellobiose",
+  "descricao": "Cellobiose is a glycosylglucose consisting of two glucose units linked via a beta(14) bond. It has a role as a plant metabolite."
+ },
+ {
+  "cas": "7439-92-1",
+  "titulo": "Lead",
+  "descricao": "Lead and Lead Compounds can cause cancer according to The Environmental Protection Agency (EPA). It can cause developmental toxicity, female reproductive toxicity and male reproductive toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "139-05-9",
+  "titulo": "Sodium Cyclamate",
+  "descricao": "Cyclamate is an organic molecular entity."
+ },
+ {
+  "cas": "108-91-8",
+  "titulo": "Cyclohexylamine",
+  "descricao": "Cyclohexylamine is a primary aliphatic amine consisting of cyclohexane carrying an amino substituent. It has a role as a mouse metabolite and a human xenobiotic metabolite. It is a conjugate base of a cyclohexylammonium."
+ },
+ {
+  "cas": "66-81-9",
+  "titulo": "Cycloheximide",
+  "descricao": "Cycloheximide can cause developmental toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "287-92-3",
+  "titulo": "Cyclopentane",
+  "descricao": "Cyclopentane is a cycloalkane that consists of five carbons each bonded with two hydrogens above and below the plane. The parent of the class of cyclopentanes. It has a role as a non-polar solvent. It is a volatile organic compound, a cycloalkane and a member of cyclopentanes."
+ },
+ {
+  "cas": "68-41-7",
+  "titulo": "Cycloserine",
+  "descricao": "D-cycloserine is a 4-amino-1,2-oxazolidin-3-one that has R configuration. It is an antibiotic produced by Streptomyces garyphalus or S. orchidaceus and is used as part of a multi-drug regimen for the treatment of tuberculosis when resistance to, or toxicity from, primary drugs has developed. An analogue of D-alanine, it interferes with bacterial cell wall synthesis in the cytoplasm by competitive inhibition of L-alanine racemase (which forms D-alanine from L-alanine) and D-alanineD-alanine ligase (which incorporates D-alanine into the pentapeptide required for peptidoglycan formation and bacterial cell wall synthesis). It has a role as a metabolite, an antitubercular agent, an antimetabolite, an antiinfective agent and a NMDA receptor agonist. It is a 4-amino-1,2-oxazolidin-3-one, an organonitrogen heterocyclic antibiotic and an organooxygen heterocyclic antibiotic. It is a conjugate base of a D-cycloserine(1+). It is an enantiomer of a L-cycloserine. It is a tautomer of a D-cycloserine zwitterion."
+ },
+ {
+  "cas": "118-10-5",
+  "titulo": "Cinchonine",
+  "descricao": "Cinchonine is cinchonan in which a hydrogen at position 9 is substituted by hydroxy (S configuration). It occurs in the bark of most varieties of Cinchona shrubs, and is frequently used for directing chirality in asymmetric synthesis. It has a role as a metabolite. It is an (8xi)-cinchonan-9-ol and a cinchona alkaloid. It derives from a hydride of a cinchonan."
+ },
+ {
+  "cas": "7048-04-6",
+  "titulo": "L-Cysteine hydrochloride monohydrate",
+  "descricao": "L-cysteine hydrochloride hydrate is a hydrate that is the monohydrate form of L-cysteine hydrochloride. It has a role as a flour treatment agent, an EC 4.3.1.3 (histidine ammonia-lyase) inhibitor and a human metabolite. It contains a L-cysteine hydrochloride."
+ },
+ {
+  "cas": "52-90-4",
+  "titulo": "L-(+)-Cysteine",
+  "descricao": "L-cysteine is an optically active form of cysteine having L-configuration. It has a role as a flour treatment agent, an EC 4.3.1.3 (histidine ammonia-lyase) inhibitor and a human metabolite. It is a cysteine, a L-alpha-amino acid, a serine family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-cysteinium. It is a conjugate acid of a L-cysteinate(1-). It is an enantiomer of a D-cysteine. It is a tautomer of a L-cysteine zwitterion."
+ },
+ {
+  "cas": "56-89-3",
+  "titulo": "(-)-Cystine",
+  "descricao": "L-cystine is the L-enantiomer of the sulfur-containing amino acid cystine. It has a role as an EC 1.2.1.11 (aspartate-semialdehyde dehydrogenase) inhibitor, a flour treatment agent, a mouse metabolite, a Saccharomyces cerevisiae metabolite and a human metabolite. It is a cystine, a non-proteinogenic L-alpha-amino acid and a L-cysteine derivative. It is a conjugate acid of a L-cystine anion. It is an enantiomer of a D-cystine. It is a tautomer of a L-cystine zwitterion."
+ },
+ {
+  "cas": "3012-65-5",
+  "titulo": "Diammonium Citrate",
+  "descricao": "Diammonium citrate is a citrate salt in which two of the three carboxy groups are deprotonated and associated with ammonium ions as counter-cations. It has a role as a buffer. It is an ammonium salt and a citrate salt."
+ },
+ {
+  "cas": "6100-05-6",
+  "titulo": "Potassium Citrate",
+  "descricao": "Potassium citrate monohydrate is a hydrate that is the monohydrate form of potassium citrate. It has a role as a diuretic. It contains a potassium citrate (anhydrous)."
+ },
+ {
+  "cas": "6132-04-3",
+  "titulo": "Sodium Citrate Dihydrate",
+  "descricao": "Sodium citrate dihydrate is the dihydrate of trisodium citrate. It has a role as an anticoagulant. It contains a sodium citrate."
+ },
+ {
+  "cas": "302-17-0",
+  "titulo": "Chloral Hydrate",
+  "descricao": "Chloral Hydrate can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "56-75-7",
+  "titulo": "Chloramphenicol",
+  "descricao": "Chloramphenicol is an organochlorine compound that is dichloro-substituted acetamide containing a nitrobenzene ring, an amide bond and two alcohol functions. It has a role as a Mycoplasma genitalium metabolite, a geroprotector, an antimicrobial agent, an antibacterial drug, a protein synthesis inhibitor and an Escherichia coli metabolite. It is a diol, a C-nitro compound, an organochlorine compound and a carboxamide."
+ },
+ {
+  "cas": "7758-89-6",
+  "titulo": "Cuprous chloride",
+  "descricao": "Copper(I) chloride is an inorganic chloride of copper in which the metal is in the +1 oxidation state. It has a role as an agrochemical and a molluscicide. It is a copper molecular entity and an inorganic chloride. It contains a copper(1+)."
+ },
+ {
+  "cas": "10326-27-9",
+  "titulo": "Barium chloride, dihydrate",
+  "descricao": "Barium chloride dihydrate is a hydrate that is the dihydrate form of barium chloride. It has a role as a potassium channel blocker. It is a hydrate, an inorganic chloride and a barium salt. It contains a barium chloride."
+ },
+ {
+  "cas": "10035-04-8",
+  "titulo": "Calcium chloride, dihydrate",
+  "descricao": "Calcium chloride dihydrate is a hydrate that is the dihydrate form of calcium chloride. It is a calcium salt, a hydrate and an inorganic chloride. It contains a calcium dichloride."
+ },
+ {
+  "cas": "10043-52-4",
+  "titulo": "Calcium Chloride",
+  "descricao": "Calcium dichloride is an inorganic calcium salt, a calcium salt and an inorganic chloride. It has a role as a NMR chemical shift reference compound and a fertilizer."
+ },
+ {
+  "cas": "6004-24-6",
+  "titulo": "Cetylpyridinium chloride monohydrate",
+  "descricao": "Cetylpyridinium chloride monohydrate is a hydrate. It contains a cetylpyridinium chloride."
+ },
+ {
+  "cas": "112-02-7",
+  "titulo": "Hexadecyltrimethylammonium chloride",
+  "descricao": "Cetyltrimethylammonium chloride is the organic chloride salt of cetyltrimethylammonium. It has a role as a surfactant. It is a quaternary ammonium salt and an organic chloride salt. It contains a cetyltrimethylammonium ion."
+ },
+ {
+  "cas": "7758-95-4",
+  "titulo": "Lead chloride",
+  "descricao": "Lead(II) chloride is an inorganic chloride consisting of two chlorine atoms covalently bound to a central lead atom. It is an inorganic chloride and a lead coordination entity."
+ },
+ {
+  "cas": "7646-79-9",
+  "titulo": "Cobalt chloride (cocl2)",
+  "descricao": "Cobalt dichloride is a cobalt salt in which the cobalt metal is in the +2 oxidation state and the counter-anion is chloride. It is used as an indicator for water in desiccants. It has a role as a sensitiser, a calcium channel blocker, a two-colour indicator and an allergen. It is a cobalt salt and an inorganic chloride. It contains a cobalt(2+)."
+ },
+ {
+  "cas": "7791-13-1",
+  "titulo": "Cobaltous chloride hexahydrate",
+  "descricao": "Cobalt chloride hexahydrate is a hydrate of cobalt chloride containing cobalt (in +2 oxidation state), chloride and water moieties in the ratio 1:2:6. It has a role as an allergen. It contains a cobalt dichloride."
+ },
+ {
+  "cas": "7447-39-4",
+  "titulo": "Cupric Chloride",
+  "descricao": "Copper(II) chloride is an inorganic chloride of copper in which the metal is in the +2 oxidation state. It has a role as an EC 5.3.3.5 (cholestenol Delta-isomerase) inhibitor. It is a copper molecular entity and an inorganic chloride. It contains a copper(2+)."
+ },
+ {
+  "cas": "7791-18-6",
+  "titulo": "Magnesium chloride hexahydrate",
+  "descricao": "Magnesium dichloride hexahydrate is a hydrate that is the hexahydrate form of magnesium dichloride. It is a hydrate, an inorganic chloride and a magnesium halide. It contains a magnesium dichloride."
+ },
+ {
+  "cas": "7786-30-3",
+  "titulo": "Magnesium Chloride",
+  "descricao": "Magnesium dichloride is a magnesium salt comprising of two chlorine atoms bound to a magnesium atom. It has a role as a NMR chemical shift reference compound. It is an inorganic magnesium salt, an inorganic chloride and a magnesium halide."
+ },
+ {
+  "cas": "13446-34-9",
+  "titulo": "Manganese Chloride Tetrahydrate",
+  "descricao": "Manganese(II) chloride tetrahydrate is a hydrate that is the tetrahydrate form of manganese(II) chloride. It has a role as a MRI contrast agent and a nutraceutical. It is a manganese coordination entity, a hydrate and an inorganic chloride. It contains a manganese(II) chloride."
+ },
+ {
+  "cas": "7791-20-0",
+  "titulo": "Nickel chloride hexahydrate",
+  "descricao": "Nickel chloride hexahydrate is a hydrate of nickel chloride containing nickel (in the +2 oxidation state), chloride and water moeities in the ratio 1:2:6. It has a role as a sensitiser. It contains a nickel dichloride."
+ },
+ {
+  "cas": "7447-40-7",
+  "titulo": "Potassium Chloride",
+  "descricao": "Potassium chloride is a metal chloride salt with a K(+) counterion. It has a role as a NMR chemical shift reference compound and a fertilizer. It is an inorganic potassium salt, a potassium salt and an inorganic chloride."
+ },
+ {
+  "cas": "7791-11-9",
+  "titulo": "Rubidium Chloride",
+  "descricao": "Rubidium chloride is an inorganic chloride composed of rubidium and chloride ions in a 1:1 ratio. It has a role as a NMR chemical shift reference compound, an antidepressant and a biomarker. It is an inorganic chloride and a rubidium molecular entity."
+ },
+ {
+  "cas": "75-57-0",
+  "titulo": "Tetramethylammonium chloride",
+  "descricao": "N,N,N-Trimethylmethanaminium chloride is an organic molecular entity."
+ },
+ {
+  "cas": "67-03-8",
+  "titulo": "Thiamine Hydrochloride",
+  "descricao": "Thiamine hydrochloride is a hydrochloride obtained by combining thiamine chloride with one molar equivalent of hydrochloric acid. It has a role as an insect repellent. It is a vitamin B1 and a hydrochloride. It contains a thiamine(2+)."
+ },
+ {
+  "cas": "79-07-2",
+  "titulo": "Chloroacetamide",
+  "descricao": "2-chloroacetamide is a monocarboxylic acid amide that is acetamide substituted by a chloro group at position 2. It has a role as an antimicrobial cosmetic preservative, a fungicide, a herbicide and an antimicrobial agent. It is a primary carboxamide, a monocarboxylic acid amide, an organochlorine compound and a N-acylammonia."
+ },
+ {
+  "cas": "7440-50-8",
+  "titulo": "Copper",
+  "descricao": "Copper atom is a copper group element atom and a metal allergen. It has a role as a micronutrient and an Escherichia coli metabolite."
+ },
+ {
+  "cas": "64-86-8",
+  "titulo": "Colchicine",
+  "descricao": "Colchicine can cause developmental toxicity and male reproductive toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "57-88-5",
+  "titulo": "Cholesterol",
+  "descricao": "Cholesterol is a cholestanoid consisting of cholestane having a double bond at the 5,6-position as well as a 3beta-hydroxy group. It has a role as a mouse metabolite, a human metabolite, a Daphnia galeata metabolite and an algal metabolite. It is a C27-steroid, a 3beta-hydroxy-Delta(5)-steroid, a 3beta-sterol and a cholestanoid."
+ },
+ {
+  "cas": "60-27-5",
+  "titulo": "creatinine",
+  "descricao": "Creatinine is a lactam obtained by formal cyclocondensation of creatine. It is a metabolite of creatine. It has a role as a diagnostic agent and a human metabolite. It is a lactam and an imidazolidinone. It is functionally related to a creatine."
+ },
+ {
+  "cas": "7440-47-3",
+  "titulo": "Chromium",
+  "descricao": "Chromium (hexavalent compounds) can cause cancer according to California Labor Code. It can cause developmental toxicity, female reproductive toxicity and male reproductive toxicity according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "4197-07-3",
+  "titulo": "Disodium 4,5-dihydroxy-3-phenylazonaphthalene-2,7-disulphonate",
+  "descricao": "Acid red 29 is an organic sodium salt that is the disodium salt of 4,5-dihydroxy-3-(phenyldiazenyl)naphthalene-2,7-disulfonic acid. It is used as the plasma stain in trichrome techniques. It has a role as a histological dye. It contains a 4,5-dihydroxy-3-(phenyldiazenyl)naphthalene-2,7-disulfonate."
+ },
+ {
+  "cas": "91-64-5",
+  "titulo": "Coumarin",
+  "descricao": "Coumarin is a chromenone having the keto group located at the 2-position. It has a role as a fluorescent dye, a plant metabolite and a human metabolite."
+ },
+ {
+  "cas": "458-37-7",
+  "titulo": "Curcumin",
+  "descricao": "Curcumin is a beta-diketone that is methane in which two of the hydrogens are substituted by feruloyl groups. A natural dyestuff found in the root of Curcuma longa. It has a role as a geroprotector, a metabolite, a biological pigment, an antineoplastic agent, a flavouring agent, an antifungal agent, a lipoxygenase inhibitor, a dye, an iron chelator, an EC 1.1.1.21 (aldehyde reductase) inhibitor, a radical scavenger, a contraceptive drug, an EC 1.6.5.2 [NAD(P)H dehydrogenase (quinone)] inhibitor, a nutraceutical, an immunomodulator, a ligand, an EC 1.1.1.205 (IMP dehydrogenase) inhibitor, an EC 3.5.1.98 (histone deacetylase) inhibitor, a hepatoprotective agent, a neuroprotective agent, an EC 1.8.1.9 (thioredoxin reductase) inhibitor, an anti-inflammatory agent, an EC 2.7.10.2 (non-specific protein-tyrosine kinase) inhibitor, a food colouring and an EC 1.1.1.25 (shikimate dehydrogenase) inhibitor. It is a polyphenol, an aromatic ether, an enone, a beta-diketone and a diarylheptanoid. It is functionally related to a trans-ferulic acid."
+ },
+ {
+  "cas": "124-18-5",
+  "titulo": "Decane",
+  "descricao": "Decane is a straight-chain alkane with 10 carbon atoms."
+ },
+ {
+  "cas": "302-95-4",
+  "titulo": "Sodium Deoxycholate",
+  "descricao": "Sodium deoxycholate is a bile acid salt. It contains a deoxycholate."
+ },
+ {
+  "cas": "50-99-7",
+  "titulo": "D-Glucose",
+  "descricao": "D-glucopyranose is a glucopyranose having D-configuration. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a D-glucose and a glucopyranose."
+ },
+ {
+  "cas": "101-83-7",
+  "titulo": "Dicyclohexylamine",
+  "descricao": "Dicyclohexylamine is a primary aliphatic amine."
+ },
+ {
+  "cas": "95-76-1",
+  "titulo": "3,4-Dichloroaniline",
+  "descricao": "3,4-dichloroaniline is a dichloroaniline having the two chloro-substituents at the 3- and 4-positions. It has a role as a xenobiotic and an epitope. It is functionally related to a 1,2-dichlorobenzene."
+ },
+ {
+  "cas": "76-54-0",
+  "titulo": "2',7'-Dichlorofluorescein",
+  "descricao": "2',7'-dichlorofluorescein is a member of 2-benzofurans. It has a role as a fluorochrome. It is functionally related to a fluorescin."
+ },
+ {
+  "cas": "620-45-1",
+  "titulo": "2,6-Dichloroindophenol sodium",
+  "descricao": "2,6-Dichlorophenolindophenol sodium salt is an organic molecular entity."
+ },
+ {
+  "cas": "111-42-2",
+  "titulo": "Diethanolamine",
+  "descricao": "Diethanolamine can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "122-39-4",
+  "titulo": "Diphenylamine",
+  "descricao": "Diphenylamine is an aromatic amine containing two phenyl substituents. It has been used as a fungicide for the treatment of superficial scald in apples and pears, but is no longer approved for this purpose within the European Union. It has a role as a ferroptosis inhibitor, an antioxidant, a radical scavenger, a carotogenesis inhibitor, an EC 1.3.99.29 [phytoene desaturase (zeta-carotene-forming)] inhibitor and an antifungal agrochemical. It is an aromatic amine, a secondary amino compound and a bridged diphenyl fungicide."
+ },
+ {
+  "cas": "140-22-7",
+  "titulo": "Diphenylcarbazide",
+  "descricao": "Diphenylcarbazide is a member of phenylhydrazines."
+ },
+ {
+  "cas": "127-19-5",
+  "titulo": "Dimethylacetamide",
+  "descricao": "N,N-Dimethylacetamide can cause cancer according to California Labor Code. It can cause developmental toxicity and male reproductive toxicity according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "100-10-7",
+  "titulo": "4-(Dimethylamino)Benzaldehyde",
+  "descricao": "4-(dimethylamino)benzaldehyde is a member of the class of benzaldehydes that is benzaldehyde carrying a dimethylamino substituent at position 4. Used as an indicator for detection of indoles and hydrazine. It has a role as a chromogenic compound. It is a member of benzaldehydes, a substituted aniline and a tertiary amino compound."
+ },
+ {
+  "cas": "108-01-0",
+  "titulo": "2-(Dimethylamino)ethanol",
+  "descricao": "N,N-dimethylethanolamine is a tertiary amine that is ethanolamine having two N-methyl substituents. It has a role as a radical scavenger and a curing agent. It is a member of ethanolamines and a tertiary amine."
+ },
+ {
+  "cas": "526-75-0",
+  "titulo": "2,3-Dimethylphenol",
+  "descricao": "2,3-Dicresol is a hydroxytoluene."
+ },
+ {
+  "cas": "68-12-2",
+  "titulo": "Dimethylformamide",
+  "descricao": "N,N-Dimethylformamide can cause cancer according to California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "67-68-5",
+  "titulo": "Dimethyl Sulfoxide",
+  "descricao": "Dimethyl sulfoxide is a 2-carbon sulfoxide in which the sulfur atom has two methyl substituents. It has a role as a geroprotector, an alkylating agent, a non-narcotic analgesic, a MRI contrast agent, a polar aprotic solvent, a radical scavenger, an antidote and an Escherichia coli metabolite. It is a volatile organic compound and a sulfoxide."
+ },
+ {
+  "cas": "53-84-9",
+  "titulo": "Nadide",
+  "descricao": "NAD zwitterion is a NAD. It has a role as a geroprotector. It is functionally related to a deamido-NAD zwitterion. It is a conjugate base of a NAD(+)."
+ },
+ {
+  "cas": "123-91-1",
+  "titulo": "1,4-Dioxane",
+  "descricao": "1,4-Dioxane can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "60676-86-0",
+  "titulo": "Silica",
+  "descricao": "Silicon dioxide is a silicon oxide made up of linear triatomic molecules in which a silicon atom is covalently bonded to two oxygens."
+ },
+ {
+  "cas": "1317-33-5",
+  "titulo": "Molybdenum disulfide",
+  "descricao": "Molybdenum disulfide is a sulfide salt."
+ },
+ {
+  "cas": "7775-14-6",
+  "titulo": "Sodium Dithionite",
+  "descricao": "Sodium dithionite is an inorganic sodium salt that is the disodium salt of dithionous acid. It has a role as a bleaching agent and a reducing agent. It contains a dithionite(2-)."
+ },
+ {
+  "cas": "3483-12-3",
+  "titulo": "Dithiothreitol",
+  "descricao": "L-1,4-dithiothreitol is a 1,4-dithiothreitol. It is an enantiomer of a D-1,4-dithiothreitol."
+ },
+ {
+  "cas": "60-10-6",
+  "titulo": "(Phenylazo)thioformic acid 2-phenylhydrazide",
+  "descricao": "Dithizone is a member of phenylhydrazines."
+ },
+ {
+  "cas": "112-40-3",
+  "titulo": "Dodecane",
+  "descricao": "Dodecane is a straight-chain alkane with 12 carbon atoms. It has been isolated from the essential oils of various plants including Zingiber officinale (ginger). It has a role as a plant metabolite."
+ },
+ {
+  "cas": "151-21-3",
+  "titulo": "Sodium Lauryl Sulfate",
+  "descricao": "Sodium dodecyl sulfate is an organic sodium salt that is the sodium salt of dodecyl hydrogen sulfate. It has a role as a detergent and a protein denaturant. It contains a dodecyl sulfate."
+ },
+ {
+  "cas": "1310-73-2",
+  "titulo": "Sodium Hydroxide",
+  "descricao": "Sodium hydroxide is an alkali metal hydroxide."
+ },
+ {
+  "cas": "608-66-2",
+  "titulo": "Galactitol",
+  "descricao": "Galactitol is an optically inactive hexitol having meso-configuration. It has a role as a metabolite, a mouse metabolite, an Escherichia coli metabolite and a human metabolite."
+ },
+ {
+  "cas": "60-00-4",
+  "titulo": "Ethylenediaminetetraacetic Acid",
+  "descricao": "Ethylenediaminetetraacetic acid is an ethylenediamine derivative, a tetracarboxylic acid and a polyamino carboxylic acid. It has a role as a copper chelator, a geroprotector, a calcium chelator, an antidote and an anticoagulant. It is a conjugate acid of an EDTA(2-)."
+ },
+ {
+  "cas": "17372-87-1",
+  "titulo": "Eosin",
+  "descricao": "Eosin YS dye is an organic sodium salt that is 2',4',5',7'-tetrabromofluorescein in which the carboxy group and the phenolic hydroxy group have been deprotonated and the resulting charge is neutralised by two sodium ions. It has a role as a fluorochrome and a histological dye. It is an organobromine compound and an organic sodium salt. It contains a 2',4',5',7'-tetrabromofluorescein(2-)."
+ },
+ {
+  "cas": "56360-46-4",
+  "titulo": "Spiro(isobenzofuran-1(3H),9'-(9H)xanthen)-3-one, 4',5'-dibromo-3',6'-dihydroxy-2',7'-dinitro-",
+  "descricao": "Eosin b diphenol is a C-nitro compound which consists of a fluorescein skeleton substituted by bromo groups at positions 4 and 5 and nitro groups at positions 2 and 7. It is a lactone, a C-nitro compound, an organobromine compound, an oxaspiro compound, a member of 2-benzofurans and a member of xanthenes. It is functionally related to a fluorescein (lactone form). It is a conjugate acid of an eosin b(2-)."
+ },
+ {
+  "cas": "106-89-8",
+  "titulo": "Epichlorohydrin",
+  "descricao": "Epichlorohydrin can cause cancer according to an independent committee of scientific and health experts. It can cause male reproductive toxicity according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "4196-99-0",
+  "titulo": "Sodium 6-(2-hydroxynaphthylazo)-3,4'-azodibenzenesulphonate",
+  "descricao": "Biebrich scarlet is an organic sodium salt having 2-[(2-hydroxynaphthalen-1-yl)diazenyl]-5-[(4-sulfonatophenyl)diazenyl]benzene-1-sulfonate as the counterion. Used as a plasma stain in Masson's trichrome. It has a role as a histological dye. It contains a Biebrich scarlet(2-)."
+ },
+ {
+  "cas": "7440-31-5",
+  "titulo": "Tin atom",
+  "descricao": "Tin atom is a post-transition metal atom and a carbon group element atom. It has a role as a micronutrient."
+ },
+ {
+  "cas": "1592-23-0",
+  "titulo": "Calcium Stearate",
+  "descricao": "Calcium stearate is an organic calcium salt of stearic acid. It is a component of some lubricants and surfactants. It contains an octadecanoate."
+ },
+ {
+  "cas": "557-04-0",
+  "titulo": "Magnesium Stearate",
+  "descricao": "Magnesium distearate is an organic magnesium salt and a magnesium salt."
+ },
+ {
+  "cas": "822-16-2",
+  "titulo": "Sodium Stearate",
+  "descricao": "Sodium octadecanoate is an organic sodium salt comprising equal numbers of sodium and stearate ions. It has a role as a detergent. It contains an octadecanoate."
+ },
+ {
+  "cas": "1634-04-4",
+  "titulo": "tert-Butyl methyl ether",
+  "descricao": "Methyl tert-butyl ether is an ether having methyl and tert-butyl as the two alkyl components. It has a role as a metabolite, a non-polar solvent and a fuel additive."
+ },
+ {
+  "cas": "97-53-0",
+  "titulo": "Eugenol",
+  "descricao": "Eugenol is a phenylpropanoid formally derived from guaiacol with an allyl chain substituted para to the hydroxy group. It is a major component of clove essential oil, and exhibits antibacterial, analgesic and antioxidant properties. It has been widely used in dentistry to treat toothache and pulpitis. It has a role as a sensitiser, a volatile oil component, an antibacterial agent, an analgesic, an antineoplastic agent, a flavouring agent, an EC 1.4.3.4 (monoamine oxidase) inhibitor, a voltage-gated sodium channel blocker, an anaesthetic, a radical scavenger, an allergen, an anti-inflammatory agent, an apoptosis inducer, a NF-kappaB inhibitor and a human blood serum metabolite. It is an alkenylbenzene, a monomethoxybenzene, a phenylpropanoid and a member of phenols. It is functionally related to a guaiacol."
+ },
+ {
+  "cas": "103-85-5",
+  "titulo": "Phenylthiourea",
+  "descricao": "N-phenylthiourea is a member of the class of thioureas that is thiourea in which one of the hydrogens is replaced by a phenyl group. Depending on their genetic makeup, humans find it either very bitter-tasting or tasteless. This unusual property resulted in N-phenylthiourea being used in paternity testing prior to the advent of DNA testing. It has a role as an EC 1.14.18.1 (tyrosinase) inhibitor. It is functionally related to a thiourea."
+ },
+ {
+  "cas": "77-09-8",
+  "titulo": "Phenolphthalein",
+  "descricao": "Phenolphthalein can cause cancer according to The Food and Drug Administration (FDA) and The National Toxicology Program."
+ },
+ {
+  "cas": "2321-07-5",
+  "titulo": "Fluorescein",
+  "descricao": "Fluorescein (lactone form) is a xanthene dye that is highly fluorescent, detectable even when present in minute quantities. Used forensically to detect traces of blood, in analytical chemistry as an indicator in silver nitrate titrations and in microscopy. It has a role as a radioopaque medium and a fluorescent dye. It is a polyphenol, a gamma-lactone, a xanthene dye, an oxaspiro compound, an organic heteropentacyclic compound and a member of 2-benzofurans. It is functionally related to a fluorescein (acid form)."
+ },
+ {
+  "cas": "7784-18-1",
+  "titulo": "Aluminum fluoride",
+  "descricao": "Aluminium trifluoride is an aluminium coordination entity."
+ },
+ {
+  "cas": "12125-01-8",
+  "titulo": "Ammonium fluoride",
+  "descricao": "Ammonium fluoride is a fluoride salt having ammonium (NH4+) as the counterion. It is a fluoride salt and an ammonium salt."
+ },
+ {
+  "cas": "7789-75-5",
+  "titulo": "Calcium Fluoride",
+  "descricao": "Calcium difluoride is an inorganic calcium salt and a calcium salt."
+ },
+ {
+  "cas": "7783-47-3",
+  "titulo": "Stop",
+  "descricao": "Stannous fluoride is an inorganic fluoride salt."
+ },
+ {
+  "cas": "50-00-0",
+  "titulo": "Formaldehyde",
+  "descricao": "Formaldehyde (gas) can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "109-94-4",
+  "titulo": "Ethyl formate",
+  "descricao": "Ethyl formate is a formate ester resulting from the formal condensation of formic acid with ethanol. It has a role as a fumigant and a plant metabolite. It is an ethyl ester and a formate ester."
+ },
+ {
+  "cas": "141-53-7",
+  "titulo": "Sodium Formate",
+  "descricao": "Sodium formate is an organic sodium salt which is the monosodium salt of formic acid. It has a role as a buffer and an astringent. It contains a formate."
+ },
+ {
+  "cas": "7783-28-0",
+  "titulo": "Diammonium hydrogen phosphate",
+  "descricao": "Diammonium hydrogen phosphate is an inorganic phosphate, being the diammonium salt of phosphoric acid. The commercially available fertilizer has an analysis of 18-46-0 (N-P2O5-K2O) and is marketed under the name diammonium phosphate or DAP. It has a role as a fertilizer. It is an inorganic phosphate and an ammonium salt."
+ },
+ {
+  "cas": "7722-76-1",
+  "titulo": "Ammonium dihydrogen phosphate",
+  "descricao": "Ammonium dihydrogen phosphate is the ammonium salt of phosphoric acid (molar ratio 1:1). It has a role as a fertilizer. It contains a dihydrogenphosphate."
+ },
+ {
+  "cas": "7789-77-7",
+  "titulo": "Brushite",
+  "descricao": "Calcium hydrogenphosphate dihydrate is a calcium salt and a hydrate."
+ },
+ {
+  "cas": "7757-93-9",
+  "titulo": "Calcium hydrogen phosphate",
+  "descricao": "Calcium hydrogenphosphate is a calcium phosphate."
+ },
+ {
+  "cas": "7758-23-8",
+  "titulo": "Calcium Dihydrogen Phosphate",
+  "descricao": "Calcium bis(dihydrogenphosphate) is a calcium phosphate. It has a role as a fertilizer."
+ },
+ {
+  "cas": "7758-87-4",
+  "titulo": "Tricalcium Phosphate",
+  "descricao": "Tricalcium bis(phosphate) is a calcium phosphate."
+ },
+ {
+  "cas": "7758-11-4",
+  "titulo": "Potassium Phosphate, Dibasic",
+  "descricao": "Dipotassium hydrogen phosphate is a potassium salt that is the dipotassium salt of phosphoric acid. It has a role as a buffer. It is an inorganic phosphate and a potassium salt."
+ },
+ {
+  "cas": "7778-77-0",
+  "titulo": "Monobasic potassium phosphate",
+  "descricao": "Potassium dihydrogen phosphate is a potassium salt in which dihydrogen phosphate(1) is the counterion. It has a role as a fertilizer. It is an inorganic phosphate and a potassium salt."
+ },
+ {
+  "cas": "7778-53-2",
+  "titulo": "Potassium Phosphate, Tribasic",
+  "descricao": "Tripotassium phosphate is an inorganic potassium salt that is the tripotassium salt of phosphoric acid. It is an inorganic phosphate salt and an inorganic potassium salt."
+ },
+ {
+  "cas": "10039-32-4",
+  "titulo": "Phosphoric acid, disodium salt, dodecahydrate",
+  "descricao": "Disodium hydrogenphosphate dodecahydrate is a hydrate that is the dodecahydrate form of disodium hydrogenphosphate. It contains a disodium hydrogenphosphate."
+ },
+ {
+  "cas": "10028-24-7",
+  "titulo": "Sodium Phosphate, Dibasic, Dihydrate",
+  "descricao": "Disodium hydrogenphosphate dihydrate is a hydrate that is the dihydrate form of disodium hydrogenphosphate. It contains a disodium hydrogenphosphate."
+ },
+ {
+  "cas": "7558-79-4",
+  "titulo": "Sodium Phosphate, Dibasic",
+  "descricao": "Disodium hydrogenphosphate is a sodium phosphate."
+ },
+ {
+  "cas": "7558-80-7",
+  "titulo": "Monosodium phosphate",
+  "descricao": "Sodium dihydrogenphosphate is a sodium phosphate."
+ },
+ {
+  "cas": "10049-21-5",
+  "titulo": "Sodium Phosphate, Monobasic, Monohydrate",
+  "descricao": "Sodium dihydrogenphosphate monohydrate is a hydrate that is the monohydrate form of sodium dihydrogenphosphate. It contains a sodium dihydrogenphosphate."
+ },
+ {
+  "cas": "7601-54-9",
+  "titulo": "Trisodium Phosphate",
+  "descricao": "Trisodium phosphate is a sodium phosphate."
+ },
+ {
+  "cas": "57-48-7",
+  "titulo": "D-Fructose",
+  "descricao": "D-fructopyranose is a fructopyranose having D-configuration. It has a role as a sweetening agent. It is a D-fructose, a fructopyranose and a cyclic hemiketal."
+ },
+ {
+  "cas": "117-84-0",
+  "titulo": "di-N-Octyl Phthalate",
+  "descricao": "Di-n-octyl phthalate is a phthalate ester and a diester."
+ },
+ {
+  "cas": "632-99-5",
+  "titulo": "Basic fuchsin",
+  "descricao": "Rosanilin is a hydrochloride that is the monohydrochloride of 4-[(4-aminophenyl)(4-iminocyclohexa-2,5-dien-1-ylidene)methyl]-2-methylaniline. One of the major constituents of Basic fuchsin, together with pararosanilin, magenta II and new fuchsin. It has a role as a carcinogenic agent, a fluorochrome and a histological dye. It contains a rosanilin(1+)."
+ },
+ {
+  "cas": "3248-91-7",
+  "titulo": "New Fuchsin",
+  "descricao": "New fuchsin is a hydrochloride that is the monohydrochloride of 4-[(4-aminophenyl)(4-iminocyclohexa-2,5-dien-1-ylidene)methyl]-2-methylaniline. One of the minor constituents of Basic fuchsin, together with pararosanilin, rosanilin and magenta II. It has a role as a fluorochrome and a histological dye. It contains a new fuchsin(1+)."
+ },
+ {
+  "cas": "141-01-5",
+  "titulo": "Ferrous Fumarate",
+  "descricao": "Ferrous fumarate is a dicarboxylic acid."
+ },
+ {
+  "cas": "59-23-4",
+  "titulo": "D-Galactose",
+  "descricao": "D-galactopyranose is a galactopyranose having D-configuration. It has a role as a mouse metabolite and an Escherichia coli metabolite. It is a D-galactose and a galactopyranose."
+ },
+ {
+  "cas": "56-40-6",
+  "titulo": "Glycine",
+  "descricao": "Glycine is the simplest (and the only achiral) proteinogenic amino acid, with a hydrogen atom as its side chain. It has a role as a neurotransmitter, a micronutrient, a nutraceutical, a hepatoprotective agent, an EC 2.1.2.1 (glycine hydroxymethyltransferase) inhibitor, a NMDA receptor agonist and a fundamental metabolite. It is a serine family amino acid, an alpha-amino acid and a proteinogenic amino acid. It is a conjugate base of a glycinium. It is a conjugate acid of a glycinate. It is a tautomer of a glycine zwitterion."
+ },
+ {
+  "cas": "107-43-7",
+  "titulo": "Betaine",
+  "descricao": "Glycine betaine is the amino acid betaine derived from glycine. It has a role as a fundamental metabolite. It is an amino-acid betaine and a glycine derivative. It is a conjugate base of a N,N,N-trimethylglycinium."
+ },
+ {
+  "cas": "299-28-5",
+  "titulo": "Calcium Gluconate",
+  "descricao": "Calcium gluconate is the calcium salt of D-gluconic acid. It has a role as a nutraceutical. It contains a D-gluconate."
+ },
+ {
+  "cas": "527-07-1",
+  "titulo": "Sodium Gluconate",
+  "descricao": "Sodium gluconate is an organic sodium salt having D-gluconate as the counterion. It has a role as a chelator. It contains a D-gluconate."
+ },
+ {
+  "cas": "56-85-9",
+  "titulo": "L-Glutamine",
+  "descricao": "L-glutamine is an optically active form of glutamine having L-configuration. It has a role as a micronutrient, a nutraceutical, an EC 1.14.13.39 (nitric oxide synthase) inhibitor, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a L-alpha-amino acid, a glutamine family amino acid, a glutamine and a proteinogenic amino acid. It is a conjugate base of a L-glutaminium. It is a conjugate acid of a L-glutaminate. It is an enantiomer of a D-glutamine. It is a tautomer of a L-glutamine zwitterion."
+ },
+ {
+  "cas": "111-30-8",
+  "titulo": "Glutaraldehyde",
+  "descricao": "Glutaraldehyde is a dialdehyde comprised of pentane with aldehyde functions at C-1 and C-5. It has a role as a disinfectant, a cross-linking reagent and a fixative."
+ },
+ {
+  "cas": "27025-41-8",
+  "titulo": "Glutathione Disulfide",
+  "descricao": "Glutathione disulfide is a glutathione derivative and an organic disulfide. It has a role as a mouse metabolite and an Escherichia coli metabolite. It is a conjugate acid of a glutathione disulfide(2-)."
+ },
+ {
+  "cas": "7782-42-5",
+  "titulo": "Carbon",
+  "descricao": "Carbon black (airborne, unbound particles of respirable size) can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "90-05-1",
+  "titulo": "Guaiacol",
+  "descricao": "Guaiacol is a monomethoxybenzene that consists of phenol with a methoxy substituent at the ortho position. It has a role as a disinfectant, a plant metabolite, an expectorant and an EC 1.1.1.25 (shikimate dehydrogenase) inhibitor. It is functionally related to a catechol."
+ },
+ {
+  "cas": "73-40-5",
+  "titulo": "Guanine",
+  "descricao": "Guanine is a 2-aminopurine carrying a 6-oxo substituent. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a member of 2-aminopurines, an oxopurine and a purine nucleobase. It derives from a hydride of a 9H-purine."
+ },
+ {
+  "cas": "517-28-2",
+  "titulo": "Hematoxylin",
+  "descricao": "(+)-haematoxylin is a haematoxylin. It is an enantiomer of a (-)-haematoxylin."
+ },
+ {
+  "cas": "7365-45-9",
+  "titulo": "4-(2-Hydroxyethyl)-1-piperazineethanesulfonic acid",
+  "descricao": "2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonic acid is a HEPES that is ethanesulfonic acid in which one of the methyl hydrogens is replaced by a 4-(2-hydroxyethyl)piperazin-1-yl group. A Good's buffer substance, pKa = 7.55 at 20 C. It is an organosulfonic acid and a HEPES. It is a conjugate acid of a 2-[4-(2-hydroxyethyl)piperazin-1-yl]ethanesulfonate. It is a tautomer of a 2-[4-(2-hydroxyethyl)piperazin-4-ium-1-yl]ethanesulfonate."
+ },
+ {
+  "cas": "142-82-5",
+  "titulo": "Heptane",
+  "descricao": "Heptane is a straight-chain alkane with seven carbon atoms. It has been found in Jeffrey pine (Pinus jeffreyi). It has a role as a non-polar solvent and a plant metabolite. It is a volatile organic compound and an alkane."
+ },
+ {
+  "cas": "100-97-0",
+  "titulo": "Hexamethylenetetramine",
+  "descricao": "Hexamethylenetetramine is a polycyclic cage that is adamantane in which the carbon atoms at positions 1, 3, 5 and 7 are replaced by nitrogen atoms. It has a role as an antibacterial drug. It is a polycyclic cage, a tetramine and a polyazaalkane."
+ },
+ {
+  "cas": "110-54-3",
+  "titulo": "Hexane",
+  "descricao": "n-Hexane can cause male reproductive toxicity according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "123-31-9",
+  "titulo": "Hydroquinone",
+  "descricao": "Hydroquinone is a benzenediol comprising benzene core carrying two hydroxy substituents para to each other. It has a role as an antioxidant, a cofactor, a carcinogenic agent, a mouse metabolite, a human xenobiotic metabolite, an Escherichia coli metabolite and a skin lightening agent. It is a benzenediol and a member of hydroquinones."
+ },
+ {
+  "cas": "17194-00-2",
+  "titulo": "Barium hydroxide",
+  "descricao": "Barium dihydroxide is a barium hydroxide."
+ },
+ {
+  "cas": "1305-62-0",
+  "titulo": "Calcium Hydroxide",
+  "descricao": "Calcium dihydroxide is a calcium hydroxide. It has a role as an astringent."
+ },
+ {
+  "cas": "20427-59-2",
+  "titulo": "Copper dihydroxide",
+  "descricao": "Copper hydroxide is an organic molecular entity."
+ },
+ {
+  "cas": "1309-42-8",
+  "titulo": "Magnesium Hydroxide",
+  "descricao": "Magnesium dihydroxide is a magnesium hydroxide in which the magnesium atom is bound to two hydroxide groups. It has a role as an antacid and a flame retardant."
+ },
+ {
+  "cas": "1310-58-3",
+  "titulo": "Potassium Hydroxide",
+  "descricao": "Potassium hydroxide is an alkali metal hydroxide."
+ },
+ {
+  "cas": "148-24-3",
+  "titulo": "8-Hydroxyquinoline",
+  "descricao": "Quinolin-8-ol is a monohydroxyquinoline that is quinoline substituted by a hydroxy group at position 8. Its fungicidal properties are used for the control of grey mould on vines and tomatoes. It has a role as an antibacterial agent, an iron chelator, an antiseptic drug and an antifungal agrochemical. It derives from a hydride of a quinoline."
+ },
+ {
+  "cas": "121-54-0",
+  "titulo": "Benzethonium Chloride",
+  "descricao": "Benzethonium chloride is a (synthetic) quaternary ammonium salt that is benzyldimethylamine in which the nitrogen is quaternised by a 2-{2-[p-(2,4,4-trimethylpentan-2-yl)phenoxy]ethoxy}ethyl group, with chloride as the counter-ion. An antiseptic and disinfectant, it is active against a broad spectrum of bacteria, fungi, moulds and viruses. It has a role as an antiviral agent, an antibacterial agent, an antifungal agent, an antiseptic drug and a disinfectant. It is a chloride salt, a quaternary ammonium salt and an aromatic ether."
+ },
+ {
+  "cas": "288-32-4",
+  "titulo": "Imidazole",
+  "descricao": "1H-imidazole is an imidazole tautomer which has the migrating hydrogen at position 1. It is a conjugate base of an imidazolium cation. It is a conjugate acid of an imidazolide. It is a tautomer of a 4H-imidazole."
+ },
+ {
+  "cas": "39236-46-9",
+  "titulo": "Imidazolidinyl Urea",
+  "descricao": "Imidurea is a member of ureas. It has a role as an antimicrobial agent."
+ },
+ {
+  "cas": "860-22-0",
+  "titulo": "Indigo carmine",
+  "descricao": "Indigo carmine is an organic sodium salt resulting from the formal condensation of indigo carmine (acid form) with two equivalents of sodium hydroxide. It is an indicator at pH 11.5-14, changing from blue to yellow. It has a role as a two-colour indicator, a histological dye and a food colouring. It contains an indigo carmine(2-)."
+ },
+ {
+  "cas": "58-63-9",
+  "titulo": "Inosine",
+  "descricao": "Inosine is a purine nucleoside in which hypoxanthine is attached to ribofuranose via a beta-N9-glycosidic bond. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a purines D-ribonucleoside and a member of inosines. It is functionally related to a hypoxanthine and a ribofuranose."
+ },
+ {
+  "cas": "87-89-8",
+  "titulo": "An inositol",
+  "descricao": "Myo-inositol is an inositol having myo- configuration. It has a role as a member of compatible osmolytes, a nutrient, an EC 3.1.4.11 (phosphoinositide phospholipase C) inhibitor, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and a Daphnia magna metabolite."
+ },
+ {
+  "cas": "7758-05-6",
+  "titulo": "Potassium Iodate",
+  "descricao": "Potassium Iodate is an organic molecular entity."
+ },
+ {
+  "cas": "7681-55-2",
+  "titulo": "Sodium Iodate",
+  "descricao": "Sodium iodate is an organic molecular entity."
+ },
+ {
+  "cas": "7681-11-0",
+  "titulo": "Potassium Iodide",
+  "descricao": "Potassium iodide is a metal iodide salt with a K(+) counterion. It is a scavenger of hydroxyl radicals. It has a role as a NMR chemical shift reference compound, a radical scavenger and an expectorant. It contains an iodide."
+ },
+ {
+  "cas": "7681-82-5",
+  "titulo": "Sodium Iodide",
+  "descricao": "Sodium iodide is a metal iodide salt with a Na(+) counterion. It is an iodide salt and an inorganic sodium salt."
+ },
+ {
+  "cas": "7553-56-2",
+  "titulo": "Iodine",
+  "descricao": "Diiodine is molecule comprising two covalently bonded iodine atoms with overall zero charge.. It has a role as a nutrient."
+ },
+ {
+  "cas": "75-03-6",
+  "titulo": "Iodoethane",
+  "descricao": "Iodoethane is an iodoalkane that is ethane substituted by an iodo group. It derives from a hydride of an ethane."
+ },
+ {
+  "cas": "75-47-8",
+  "titulo": "Iodoform",
+  "descricao": "Iodoform is a member of iodomethanes."
+ },
+ {
+  "cas": "3380-34-5",
+  "titulo": "Triclosan",
+  "descricao": "Triclosan is an aromatic ether that is phenol which is substituted at C-5 by a chloro group and at C-2 by a 2,4-dichlorophenoxy group. It is widely used as a preservative and antimicrobial agent in personal care products such as soaps, skin creams, toothpaste and deodorants as well as in household items such as plastic chopping boards, sports equipment and shoes. It has a role as an EC 1.3.1.9 [enoyl-[acyl-carrier-protein] reductase (NADH)] inhibitor, a fungicide, an antibacterial agent, a xenobiotic, an antimalarial, an EC 1.5.1.3 (dihydrofolate reductase) inhibitor, a persistent organic pollutant and a drug allergen. It is a dichlorobenzene, a member of phenols, an aromatic ether and a member of monochlorobenzenes."
+ },
+ {
+  "cas": "91-56-5",
+  "titulo": "Isatin",
+  "descricao": "Isatin is an indoledione that is the 2,3-diketo derivative of indole. It has a role as an EC 1.4.3.4 (monoamine oxidase) inhibitor and a plant metabolite."
+ },
+ {
+  "cas": "540-84-1",
+  "titulo": "2,2,4-Trimethylpentane",
+  "descricao": "Isooctane is an alkane that consists of pentane bearing two methyl substituents at position 2 and a single methyl substituent at position 4. It has a role as a non-polar solvent, a nephrotoxic agent and a fuel additive. It is a volatile organic compound and an alkane."
+ },
+ {
+  "cas": "525-79-1",
+  "titulo": "Kinetin",
+  "descricao": "Kinetin is a member of the class of 6-aminopurines that is adenine carrying a (furan-2-ylmethyl) substituent at the exocyclic amino group. It has a role as a geroprotector and a cytokinin. It is a member of 6-aminopurines and a member of furans."
+ },
+ {
+  "cas": "70-18-8",
+  "titulo": "Glutathione",
+  "descricao": "Glutathione is a tripeptide compound consisting of glutamic acid attached via its side chain to the N-terminus of cysteinylglycine. It has a role as a geroprotector, an antioxidant, a cofactor, a mouse metabolite, an Escherichia coli metabolite, a human metabolite and a skin lightening agent. It is a thiol, a tripeptide and a L-cysteine derivative. It is a conjugate acid of a glutathionate(1-)."
+ },
+ {
+  "cas": "3184-13-2",
+  "titulo": "Ornithine hydrochloride",
+  "descricao": "L-Ornithine monochlorohydrate/ornithine is a L-alpha-amino acid."
+ },
+ {
+  "cas": "72-17-3",
+  "titulo": "Sodium Lactate",
+  "descricao": "Sodium lactate is an organic sodium salt having lactate as the counterion. It has a role as a food acidity regulator and a food preservative. It is a lactate salt and an organic sodium salt. It contains a lactate."
+ },
+ {
+  "cas": "64044-51-5",
+  "titulo": "alpha-Lactose monohydrate",
+  "descricao": "Alpha-lactose monohydrate is a glycoside."
+ },
+ {
+  "cas": "111-82-0",
+  "titulo": "Methyl Laurate",
+  "descricao": "Methyl laurate is a fatty acid methyl ester of lauric acid. It has a role as a metabolite. It is a fatty acid methyl ester and a dodecanoate ester."
+ },
+ {
+  "cas": "73-32-5",
+  "titulo": "L-Isoleucine",
+  "descricao": "L-isoleucine is the L-enantiomer of isoleucine. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, a plant metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a L-alpha-amino acid, an aspartate family amino acid, an isoleucine and a proteinogenic amino acid. It is a conjugate base of a L-isoleucinium. It is a conjugate acid of a L-isoleucinate. It is an enantiomer of a D-isoleucine. It is a tautomer of a L-isoleucine zwitterion."
+ },
+ {
+  "cas": "61-90-5",
+  "titulo": "L-Leucine",
+  "descricao": "L-leucine is the L-enantiomer of leucine. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, a plant metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a L-alpha-amino acid, a leucine, a pyruvate family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-leucinium. It is a conjugate acid of a L-leucinate. It is an enantiomer of a D-leucine. It is a tautomer of a L-leucine zwitterion."
+ },
+ {
+  "cas": "78-70-6",
+  "titulo": "Linalool",
+  "descricao": "Linalool is a monoterpenoid that is octa-1,6-diene substituted by methyl groups at positions 3 and 7 and a hydroxy group at position 3. It has been isolated from plants like Ocimum canum. It has a role as a volatile oil component, an antimicrobial agent, a fragrance and a plant metabolite. It is a monoterpenoid and a tertiary alcohol."
+ },
+ {
+  "cas": "657-27-2",
+  "titulo": "L-Lysine monohydrochloride",
+  "descricao": "L-lysine hydrochloride is the hydrochloride salt of L-lysine. It contains a L-lysine."
+ },
+ {
+  "cas": "105-53-3",
+  "titulo": "Diethyl Malonate",
+  "descricao": "Ethyl malonate is a dicarboxylic acid."
+ },
+ {
+  "cas": "3458-28-4",
+  "titulo": "Demannose",
+  "descricao": "Aldehydo-D-mannose is the D-enantiomer of aldehydo-mannose. It is a D-mannose and an aldehydo-mannose. It is an enantiomer of an aldehydo-L-mannose."
+ },
+ {
+  "cas": "108-78-1",
+  "titulo": "Melamine",
+  "descricao": "Melamine is a trimer of cyanamide, with a 1,3,5-triazine skeleton. It has a role as a xenobiotic metabolite. It is functionally related to a cyanamide. It is a conjugate base of a melamine(1+)."
+ },
+ {
+  "cas": "89-78-1",
+  "titulo": "Menthol",
+  "descricao": "P-menthan-3-ol is any secondary alcohol that is one of the eight possible diastereoisomers of 5-methyl-2-(propan-2-yl)cyclohexan-1-ol. It has a role as a volatile oil component. It is a p-menthane monoterpenoid and a secondary alcohol."
+ },
+ {
+  "cas": "60-24-2",
+  "titulo": "2-Mercaptoethanol",
+  "descricao": "Mercaptoethanol is a primary alcohol and an alkanethiol. It has a role as a geroprotector."
+ },
+ {
+  "cas": "7681-57-4",
+  "titulo": "Sodium Pyrosulfite",
+  "descricao": "Sodium disulfite is an inorganic sodium salt composed of sodium and disulfite ions in a 2:1 ratio. It has a role as a food antioxidant. It contains a disulfite."
+ },
+ {
+  "cas": "13718-26-8",
+  "titulo": "Sodium metavanadate",
+  "descricao": "Sodium metavanadate is an inorganic sodium salt having metavanadate as the counterion. It contains a metavanadate."
+ },
+ {
+  "cas": "872-50-4",
+  "titulo": "N-methyl-2-pyrrolidone",
+  "descricao": "N-Methylpyrrolidone can cause developmental toxicity according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "108-87-2",
+  "titulo": "Methylcyclohexane",
+  "descricao": "Methylcyclohexane is a cycloalkane that is cyclohexane substituted by a single methyl group. It has a role as an aprotic solvent, a plant metabolite and a human metabolite. It is a volatile organic compound and a cycloalkane. It derives from a hydride of a cyclohexane."
+ },
+ {
+  "cas": "63-68-3",
+  "titulo": "L-Methionine",
+  "descricao": "L-methionine is the L-enantiomer of methionine. It has a role as a micronutrient, a nutraceutical, an antidote to paracetamol poisoning, a mouse metabolite and a human metabolite. It is a L-alpha-amino acid, a methionine, an aspartate family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-methioninium. It is a conjugate acid of a L-methioninate. It is an enantiomer of a D-methionine. It is a tautomer of a L-methionine zwitterion."
+ },
+ {
+  "cas": "5466-77-3",
+  "titulo": "Octinoxate",
+  "descricao": "Octyl 4-methoxycinnamic acid is a cinnamate ester."
+ },
+ {
+  "cas": "110-27-0",
+  "titulo": "Isopropyl Myristate",
+  "descricao": "Isopropyl tetradecanoate is a fatty acid ester."
+ },
+ {
+  "cas": "10102-40-6",
+  "titulo": "Sodium molybdate dihydrate",
+  "descricao": "Sodium molybdate dihydrate is a hydrate that is the dihydrate form of sodium molybdate. It has a role as a poison. It is a hydrate and an inorganic sodium salt. It contains a sodium molybdate (anhydrous)."
+ },
+ {
+  "cas": "108-90-7",
+  "titulo": "Chlorobenzene",
+  "descricao": "Chlorobenzene is the simplest member of the class of monochlorobenzenes, that is benzene in which a single hydrogen has been substituted by a chlorine. It has a role as a solvent."
+ },
+ {
+  "cas": "123-94-4",
+  "titulo": "Monostearin",
+  "descricao": "1-monostearoylglycerol is a 1-monoglyceride that has stearoyl as the acyl group. It has a role as a Caenorhabditis elegans metabolite and an algal metabolite."
+ },
+ {
+  "cas": "141-43-5",
+  "titulo": "Ethanolamine",
+  "descricao": "Ethanolamine is a member of the class of ethanolamines that is ethane with an amino substituent at C-1 and a hydroxy substituent at C-2, making it both a primary amine and a primary alcohol. It has a role as a mouse metabolite, an Escherichia coli metabolite and a human metabolite. It is a primary alcohol, a member of ethanolamines and a primary amine. It is a conjugate base of an ethanolaminium(1+)."
+ },
+ {
+  "cas": "10163-15-2",
+  "titulo": "Sodium Monofluorophosphate",
+  "descricao": "Sodium fluorophosphate, commonly abbreviated MFP, is an inorganic compound with the chemical formula Na2PO3F. Typical for a salt, MFP is odourless, colourless, and water-soluble. This salt is an ingredient in toothpastes. It has a role as an antibacterial agent. It is an inorganic phosphate and an inorganic sodium salt."
+ },
+ {
+  "cas": "110-91-8",
+  "titulo": "Morpholine",
+  "descricao": "Morpholine is an organic heteromonocyclic compound whose six-membered ring contains four carbon atoms and one nitrogen atom and one oxygen atom that lies opposite to each other; the parent compound of the morpholine family. It is a saturated organic heteromonocyclic parent and a member of morpholines. It is a conjugate base of a morpholinium."
+ },
+ {
+  "cas": "69227-93-6",
+  "titulo": "dodecyl beta-D-maltoside",
+  "descricao": "Dodecyl beta-D-maltoside is a glycoside resulting from attachment of a dodecyl group to the reducing-end anomeric centre of a beta-maltose molecule. It has a role as a detergent. It is a glycoside and a disaccharide derivative. It derives from a hydride of a beta-maltose."
+ },
+ {
+  "cas": "91-20-3",
+  "titulo": "Naphthalene",
+  "descricao": "Naphthalene can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "134-32-7",
+  "titulo": "1-Naphthylamine",
+  "descricao": "1-Naphthylamine can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "135-19-3",
+  "titulo": "2-Naphthol",
+  "descricao": "2-naphthol is a naphthol carrying a hydroxy group at position 2. It has a role as an antinematodal drug, a radical scavenger, a genotoxin, a mouse metabolite, a human xenobiotic metabolite and a human urinary metabolite."
+ },
+ {
+  "cas": "484-11-7",
+  "titulo": "2,9-Dimethyl-1,10-phenanthroline",
+  "descricao": "Neocuproine is a member of the class of phenanthrolines that is 1,10-phenanthroline bearing two methyl substituents at positions 2 and 9. It has a role as a copper chelator and a chelator."
+ },
+ {
+  "cas": "98-92-0",
+  "titulo": "Nicotinamide",
+  "descricao": "Nicotinamide is a pyridinecarboxamide that is pyridine in which the hydrogen at position 3 is replaced by a carboxamide group. It has a role as a geroprotector, an antioxidant, a cofactor, a metabolite, an EC 3.5.1.98 (histone deacetylase) inhibitor, an EC 2.4.2.30 (NAD(+) ADP-ribosyltransferase) inhibitor, a neuroprotective agent, an anti-inflammatory agent, a Sir2 inhibitor, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human urinary metabolite. It is a vitamin B3, a pyridinecarboxamide and a pyridine alkaloid. It is functionally related to a nicotinic acid."
+ },
+ {
+  "cas": "8005-03-6",
+  "titulo": "2,7-Naphthalenedisulfonic acid, 4-amino-5-hydroxy-3-(2-(4-nitrophenyl)diazenyl)-6-(2-phenyldiazenyl)-, sodium salt (1:?)",
+  "descricao": "Amido Black 10B is an organic sodium salt resulting from the formal condensation of Amido Black 10B (acid form) with two equivalents of sodium hydroxide. It has a role as a histological dye. It contains a 4-amino-5-hydroxy-3-[(p-nitrophenyl)azo]-6-(phenylazo)-naphthalene-2,7-disulfonate."
+ },
+ {
+  "cas": "485-47-2",
+  "titulo": "Ninhydrin",
+  "descricao": "Ninhydrin is a member of the class of indanones that is indane-1,3-dione bearing two additional hydroxy substituents at position 2. It has a role as a colour indicator and a human metabolite. It is a member of indanones, a ketone hydrate, a beta-diketone and an aromatic ketone."
+ },
+ {
+  "cas": "99-76-3",
+  "titulo": "Methylparaben",
+  "descricao": "Methylparaben is a 4-hydroxybenzoate ester resulting from the formal condensation of the carboxy group of 4-hydroxybenzoic acid with methanol. It is the most frequently used antimicrobial preservative in cosmetics. It occurs naturally in several fruits, particularly in blueberries. It has a role as an antifungal agent, a neuroprotective agent, an antimicrobial food preservative and a plant metabolite."
+ },
+ {
+  "cas": "94-13-3",
+  "titulo": "Propylparaben",
+  "descricao": "Propylparaben is the benzoate ester that is the propyl ester of 4-hydroxybenzoic acid. Preservative typically found in many water-based cosmetics, such as creams, lotions, shampoos and bath products. Also used as a food additive. It has a role as an antimicrobial agent and an antifungal agent. It is a member of phenols, a benzoate ester and a paraben. It is functionally related to a propan-1-ol and a 4-hydroxybenzoic acid."
+ },
+ {
+  "cas": "7697-37-2",
+  "titulo": "Nitric Acid",
+  "descricao": "Nitric acid is a nitrogen oxoacid of formula HNO3 in which the nitrogen atom is bonded to a hydroxy group and by equivalent bonds to the remaining two oxygen atoms. It has a role as a reagent and a protic solvent. It is a conjugate acid of a nitrate."
+ },
+ {
+  "cas": "10022-68-1",
+  "titulo": "Cadmium nitrate tetrahydrate",
+  "descricao": "Cadmium nitrate tetrahydrate is a hydrate that is the tetrahydrate form of cadmium nitrate. It has a role as a genotoxin, a carcinogenic agent and a hepatotoxic agent. It is a hydrate, a cadmium salt and an inorganic nitrate salt. It contains a cadmium nitrate."
+ },
+ {
+  "cas": "13477-34-4",
+  "titulo": "Calcium nitrate tetrahydrate",
+  "descricao": "Calcium nitrate tetrahydrate is a hydrate that is the tetrahydrate form of calcium nitrate. It is a calcium salt, a hydrate and an inorganic nitrate salt. It contains a calcium nitrate."
+ },
+ {
+  "cas": "7789-18-6",
+  "titulo": "Cesium nitrate",
+  "descricao": "Caesium nitrate is the inorganic nitrate salt of caesium. It has a role as a NMR chemical shift reference compound. It is an inorganic caesium salt and an inorganic nitrate salt."
+ },
+ {
+  "cas": "10026-22-9",
+  "titulo": "Cobaltous nitrate hexahydrate",
+  "descricao": "Cobalt dinitrate hexahydrate is a hydrate that is the hexahydrate form of cobalt dinitrate. It is a hydrate, a cobalt salt and an inorganic nitrate salt. It contains a cobalt dinitrate."
+ },
+ {
+  "cas": "7790-69-4",
+  "titulo": "Lithium nitrate",
+  "descricao": "Lithium nitrate is the inorganic nitrate salt of lithium. It has a role as an oxidising agent. It is a lithium salt and an inorganic nitrate salt."
+ },
+ {
+  "cas": "7761-88-8",
+  "titulo": "Silver Nitrate",
+  "descricao": "Silver(1+) nitrate is a silver salt and an inorganic nitrate salt. It has a role as a NMR chemical shift reference compound and an astringent."
+ },
+ {
+  "cas": "7758-09-0",
+  "titulo": "Potassium nitrite",
+  "descricao": "Potassium nitrite is an inorganic potassium salt and an inorganic molecular entity. It has a role as an antihypertensive agent and an antimicrobial food preservative."
+ },
+ {
+  "cas": "552-89-6",
+  "titulo": "2-Nitrobenzaldehyde",
+  "descricao": "2-nitrobenzaldehyde is benzaldehyde substituted at the ortho-position with a nitro group. It is a member of benzaldehydes and a C-nitro compound."
+ },
+ {
+  "cas": "99-61-6",
+  "titulo": "3-Nitrobenzaldehyde",
+  "descricao": "3-nitrobenzaldehyde is a benzaldehyde carrying a nitro group at the 3-position. It is a member of benzaldehydes and a C-nitro compound."
+ },
+ {
+  "cas": "555-16-8",
+  "titulo": "4-Nitrobenzaldehyde",
+  "descricao": "4-nitrobenzaldehyde is a C-nitro compound that is benzaldehyde substituted at the para-position with a nitro group. It is a member of benzaldehydes and a C-nitro compound."
+ },
+ {
+  "cas": "98-95-3",
+  "titulo": "Nitrobenzene",
+  "descricao": "Nitrobenzene can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC). It can cause male reproductive toxicity according to The Environmental Protection Agency (EPA)."
+ },
+ {
+  "cas": "2492-87-7",
+  "titulo": "p-Nitrophenyl beta-D-glucopyranoside",
+  "descricao": "4-nitrophenyl beta-D-glucoside is a beta-D-glucoside that is beta-D-glucopyranose in which the anomeric hydroxy hydrogen is replaced by a 4-nitrophenyl group. It has a role as a chromogenic compound. It is a beta-D-glucoside and a C-nitro compound. It is functionally related to a 4-nitrophenol."
+ },
+ {
+  "cas": "100-02-7",
+  "titulo": "4-Nitrophenol",
+  "descricao": "4-nitrophenol is a member of the class of 4-nitrophenols that is phenol in which the hydrogen that is para to the hydroxy group has been replaced by a nitro group. It has a role as a mouse metabolite and a human xenobiotic metabolite. It is a conjugate acid of a 4-nitrophenolate."
+ },
+ {
+  "cas": "111-65-9",
+  "titulo": "Octane",
+  "descricao": "Octane is a straight chain alkane composed of 8 carbon atoms. It has a role as a xenobiotic."
+ },
+ {
+  "cas": "3687-46-5",
+  "titulo": "Decyl Oleate",
+  "descricao": "Decyl oleate is a wax ester obtained by the formal condensation of the carboxy group of oleic acid with the hydroxy group of decanol. It is functionally related to an oleic acid and a decan-1-ol."
+ },
+ {
+  "cas": "1400-62-0",
+  "titulo": "Orcein",
+  "descricao": "Pacein is a member of the class of benzofurans that is dibenzo[b,d]furan-3,7-dione bearing two methyl substituents at positions 1 and 9 as well as two 2,4-dihydroxy-6-methylanilino substituents at positions 2 and 8. It is a polyphenol, a member of resorcinols, a member of dibenzofurans, a secondary amino compound and a member of quinomethanes."
+ },
+ {
+  "cas": "1113-38-8",
+  "titulo": "Ammonium Oxalate",
+  "descricao": "Ammonium oxalate is an ammonium salt consisting of ammonium and oxalate ions in a 2:1 ratio. It is an ammonium salt and an oxalate salt. It contains an oxalate(2-)."
+ },
+ {
+  "cas": "62-76-0",
+  "titulo": "Sodium Oxalate",
+  "descricao": "Sodium oxalate is an organic sodium salt consisting of sodium and oxalate ions in a 2:1 ratio. It has a role as a reducing agent and a poison. It is an organic sodium salt and an oxalate salt. It contains an oxalate(2-)."
+ },
+ {
+  "cas": "1309-64-4",
+  "titulo": "Antimony Trioxide",
+  "descricao": "Antimony Oxide (Antimony trioxide) can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "1305-78-8",
+  "titulo": "Calcium Oxide",
+  "descricao": "Calcium oxide is a member of the class of calcium oxides of calcium and oxygen in a 1:1 ratio. It has a role as a fertilizer."
+ },
+ {
+  "cas": "1306-38-3",
+  "titulo": "Ceria",
+  "descricao": "Ceric oxide is a metal oxide with formula CeO2. It is used for polishing glass, in coatings for infra-red filters to prevent reflection, and as an oxidant and catalyst in organic synthesis. It is a metal oxide and a cerium molecular entity."
+ },
+ {
+  "cas": "1317-38-0",
+  "titulo": "Copper oxide (CuO)",
+  "descricao": "Copper(II) oxide is a metal oxide that has the formula CuO. It has an ionic structure. It contains a copper(2+)."
+ },
+ {
+  "cas": "1308-38-9",
+  "titulo": "Chromia",
+  "descricao": "Dichromium trioxide is a chromium oxide."
+ },
+ {
+  "cas": "1309-37-1",
+  "titulo": "Iron oxide (Fe2O3)",
+  "descricao": "Ferric oxide is an iron oxide."
+ },
+ {
+  "cas": "1313-13-9",
+  "titulo": "Manganese dioxide",
+  "descricao": "Manganese dioxide is a manganese molecular entity with formula MnO2. It is a metal oxide and a manganese molecular entity."
+ },
+ {
+  "cas": "1313-27-5",
+  "titulo": "Molybdenum trioxide",
+  "descricao": "Molybdenum Trioxide can cause cancer according to California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "13463-67-7",
+  "titulo": "Titanium dioxide",
+  "descricao": "Titanium dioxide (airborne, unbound particles of respirable size) can cause cancer according to California Labor Code."
+ },
+ {
+  "cas": "1314-62-1",
+  "titulo": "Vanadium oxide (V2O5)",
+  "descricao": "Vanadium pentoxide (orthorhombic crystalline form) can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "104-94-9",
+  "titulo": "P-Anisidine",
+  "descricao": "P-anisidine is a substituted aniline that is aniline in which the hydrogen para to the amino group has been replaced by a methoxy group. It is used as a reagent for the detection of oxidation products such as aldehydes and ketones in fats and oils. It has a role as a reagent and a genotoxin. It is a substituted aniline, a primary amino compound and a member of methoxybenzenes."
+ },
+ {
+  "cas": "106-50-3",
+  "titulo": "P-Phenylenediamine",
+  "descricao": "1,4-phenylenediamine is a phenylenediamine in which the amino functions are at positions 1 and 4 of the benzene nucleus. It has a role as a reagent, a dye, an allergen and a hapten."
+ },
+ {
+  "cas": "7440-05-3",
+  "titulo": "Palladium",
+  "descricao": "Palladium is chemical element (nickel group element atom) with atomic number 46. It is a nickel group element atom, a platinum group metal atom and a metal allergen."
+ },
+ {
+  "cas": "540-10-3",
+  "titulo": "Cetyl Palmitate",
+  "descricao": "Palmityl palmitate is a palmitate ester resulting from the formal condensation of palmitic acid with palmityl alcohol. It is used as a thickener and emollient in cosmetics. It has a role as a metabolite. It is functionally related to a hexadecan-1-ol."
+ },
+ {
+  "cas": "81-13-0",
+  "titulo": "Dexpanthenol",
+  "descricao": "Pantothenol is a monocarboxylic acid amide that is 3,3-dimethylbutanamide substituted by hydroxy groups at positions 2 and 4 and a 3-hydroxypropyl group at the carbomyl nitrogen. It has a role as a cholinergic drug and a provitamin. It is an amino alcohol and a monocarboxylic acid amide."
+ },
+ {
+  "cas": "137-08-6",
+  "titulo": "Calcium Pantothenate",
+  "descricao": "Calcium pantothenate is a polymer."
+ },
+ {
+  "cas": "569-61-9",
+  "titulo": "Pararosaniline Hydrochloride",
+  "descricao": "C.I. Basic Red 9 Monohydrochloride can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "109-66-0",
+  "titulo": "Pentane",
+  "descricao": "Pentane is a straight chain alkane consisting of 5 carbon atoms. It has a role as a non-polar solvent and a refrigerant. It is a volatile organic compound and an alkane."
+ },
+ {
+  "cas": "1314-56-3",
+  "titulo": "Phosphorus pentoxide",
+  "descricao": "Diphosphonate(2-) is a divalent inorganic anion obtained by removal of both protons from diphosphonic acid. It is a phosphorus oxoanion and a divalent inorganic anion. It is a conjugate base of a diphosphonate(1-)."
+ },
+ {
+  "cas": "7790-28-5",
+  "titulo": "Sodium periodate",
+  "descricao": "Sodium periodate is an inorganic sodium salt having periodate as the counterion. It has a role as an oxidising agent. It contains a periodate."
+ },
+ {
+  "cas": "94-36-0",
+  "titulo": "Benzoyl Peroxide",
+  "descricao": "Benzoyl peroxide is a carbonyl compound."
+ },
+ {
+  "cas": "110-85-0",
+  "titulo": "Piperazine",
+  "descricao": "Piperazine is an azacycloalkane that consists of a six-membered ring containing two nitrogen atoms at opposite positions. It has a role as an anthelminthic drug. It is a member of piperazines, a saturated organic heteromonocyclic parent and an azacycloalkane. It is a conjugate base of a piperazinium(2+)."
+ },
+ {
+  "cas": "85-85-8",
+  "titulo": "1-(2-Pyridylazo)-2-naphthol",
+  "descricao": "1-(2-pyridin-2-yldiazenyl)-2-naphthol is a member of naphthols."
+ },
+ {
+  "cas": "120-80-9",
+  "titulo": "Catechol",
+  "descricao": "Catechol can cause cancer according to The World Health Organization's International Agency for Research on Cancer (IARC)."
+ },
+ {
+  "cas": "13472-36-1",
+  "titulo": "Sodium pyrophosphate decahydrate",
+  "descricao": "Sodium pyrophosphate decahydrate is a hydrate that is the decahydrate form of sodium diphosphate. It has a role as a chelator, a food emulsifier and a food thickening agent. It contains a sodium diphosphate."
+ },
+ {
+  "cas": "7722-88-5",
+  "titulo": "Tetrasodium Pyrophosphate",
+  "descricao": "Sodium diphosphate is an inorganic sodium salt comprised of a diphosphate(4) anion and four sodium(1+) cations. More commonly known as tetrasodium pyrophosphate, it finds much use in the food industry as an emulsifier and in dental hygiene as a calcium-chelating salt. It has a role as a chelator, a food emulsifier and a food thickening agent. It contains a diphosphate(4-)."
+ },
+ {
+  "cas": "109-97-7",
+  "titulo": "Pyrrole",
+  "descricao": "1H-pyrrole is a tautomer of pyrrole that has the double bonds at positions 2 and 4. It is a secondary amine and a pyrrole. It is a tautomer of a 3H-pyrrole and a 2H-pyrrole."
+ },
+ {
+  "cas": "123-75-1",
+  "titulo": "Pyrrolidine",
+  "descricao": "Pyrrolidine is a cyclic amine whose five-membered ring contains four carbon atoms and one nitrogen atom; the parent compound of the pyrrolidine family. It is a saturated organic heteromonocyclic parent, an azacycloalkane and a member of pyrrolidines. It is a conjugate base of a pyrrolidinium ion."
+ },
+ {
+  "cas": "113-24-6",
+  "titulo": "Sodium pyruvate",
+  "descricao": "Sodium pyruvate is an organic sodium salt. It contains a pyruvate."
+ },
+ {
+  "cas": "6226-79-5",
+  "titulo": "Ponceau S",
+  "descricao": "Ponceau S is an organic sodium salt that is the tetrasodium salt of 3-hydroxy-4-({2-sulfo-4-[(4-sulfophenyl)diazenyl]phenyl}diazenyl)naphthalene-2,7-disulfonic acid. It has a role as a fluorochrome and a histological dye. It is an organic sodium salt and an organosulfonate salt. It contains a Ponceau S(4-)."
+ },
+ {
+  "cas": "7440-22-4",
+  "titulo": "Silver",
+  "descricao": "Silver(0) is an elemental silver. It has a role as an Escherichia coli metabolite."
+ },
+ {
+  "cas": "4197-25-5",
+  "titulo": "Sudan Black B",
+  "descricao": "Sudan black B is a member of the class of perimidines that is 2,2-dimethyl-2,3-dihydro-1H-perimidine carrying a [4-(phenyldiazenyl)naphthalen-1-yl]diazenyl substituent at position 6. A fat-soluble dye predominantly used for demonstrating triglycerides in frozen sections and for staining of protein bound lipids in paraffin sections. It has a role as a histological dye. It is a member of azobenzenes, a member of perimidines and a bis(azo) compound."
+ },
+ {
+  "cas": "57-55-6",
+  "titulo": "Propylene Glycol",
+  "descricao": "Propane-1,2-diol is the simplest member of the class of propane-1,2-diols, consisting of propane in which a hydrogen at position 1 and a hydrogen at position 2 are substituted by hydroxy groups. A colourless, viscous, hygroscopic, low-melting (59C) and high-boiling (188C) liquid with low toxicity, it is used as a solvent, emulsifying agent, and antifreeze. It has a role as a protic solvent, an allergen, a mouse metabolite and a human xenobiotic metabolite. It is a glycol and a member of propane-1,2-diols."
+ },
+ {
+  "cas": "121-79-9",
+  "titulo": "Propyl Gallate",
+  "descricao": "N-propyl gallate is a trihydroxybenzoic acid."
+ },
+ {
+  "cas": "115-40-2",
+  "titulo": "Bromocresol Purple",
+  "descricao": "Bromocresol purple is a member of the class of 2,1-benzoxathioles that is 2,1-benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 3-bromo-4-hydroxy-5-methylphenyl groups. A hydrophilic dye that is used as a pH indicator and to measure serum albumin concentrations. It has a role as a dye, an acid-base indicator and a two-colour indicator. It is a polyphenol, an organobromine compound, a 2,1-benzoxathiole, a sultone and an arenesulfonate ester."
+ },
+ {
+  "cas": "17629-30-0",
+  "titulo": "Raffinose, pentahydrate",
+  "descricao": "Raffinose Pentahydrate is an oligosaccharide."
+ },
+ {
+  "cas": "50-69-1",
+  "titulo": "D-Ribose",
+  "descricao": "D-ribopyranose is a D-ribose and the D-enantiomer of ribopyranose. It is a D-ribose and a ribopyranose. It is an enantiomer of a L-ribopyranose."
+ },
+ {
+  "cas": "81-88-9",
+  "titulo": "Rhodamine B",
+  "descricao": "D&C Red No. 19 can cause cancer according to The Food and Drug Administration (FDA)."
+ },
+ {
+  "cas": "57-50-1",
+  "titulo": "Sucrose",
+  "descricao": "Sucrose is a glycosyl glycoside formed by glucose and fructose units joined by an acetal oxygen bridge from hemiacetal of glucose to the hemiketal of the fructose. It has a role as an osmolyte, a sweetening agent, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite."
+ },
+ {
+  "cas": "477-73-6",
+  "titulo": "C.I. Basic Red 2",
+  "descricao": "Safranin O is an organic chloride salt having 3,7-diamino-2,8-dimethyl-5-phenylphenazin-5-ium as the counterion. It is commonly used for staining Gram negative bacteria. It has a role as a fluorochrome and a histological dye. It contains a 3,7-diamino-2,8-dimethyl-5-phenylphenazin-5-ium."
+ },
+ {
+  "cas": "90-02-8",
+  "titulo": "Salicylaldehyde",
+  "descricao": "Salicylaldehyde is a hydroxybenzaldehyde carrying a hydroxy substituent at position 2. It has a role as a nematicide and a plant metabolite."
+ },
+ {
+  "cas": "119-36-8",
+  "titulo": "Methyl Salicylate",
+  "descricao": "Methyl salicylate is a benzoate ester that is the methyl ester of salicylic acid. It has a role as an insect attractant, a metabolite and a flavouring agent. It is a methyl ester, a member of salicylates and a benzoate ester. It is functionally related to a salicylic acid."
+ },
+ {
+  "cas": "54-21-7",
+  "titulo": "Sodium Salicylate",
+  "descricao": "Sodium salicylate is an organic molecular entity."
+ },
+ {
+  "cas": "7782-49-2",
+  "titulo": "Selenium",
+  "descricao": "Selenium atom is a nonmetal atom and a chalcogen. It has a role as a micronutrient."
+ },
+ {
+  "cas": "10102-18-8",
+  "titulo": "Sodium Selenite",
+  "descricao": "Disodium selenite is an inorganic sodium salt composed of sodium and selenite ions in a 2:1 ratio. It has a role as a nutraceutical. It is an inorganic sodium salt and a selenite salt."
+ },
+ {
+  "cas": "56-45-1",
+  "titulo": "L-Serine",
+  "descricao": "L-serine is the L-enantiomer of serine. It has a role as a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a L-alpha-amino acid, a serine, a serine family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-serinium. It is a conjugate acid of a L-serinate. It is an enantiomer of a D-serine. It is a tautomer of a L-serine zwitterion."
+ },
+ {
+  "cas": "112926-00-8",
+  "titulo": "Silica",
+  "descricao": "Silicon dioxide is a silicon oxide made up of linear triatomic molecules in which a silicon atom is covalently bonded to two oxygens."
+ },
+ {
+  "cas": "24634-61-5",
+  "titulo": "Potassium Sorbate",
+  "descricao": "Potassium sorbate is a potassium salt having sorbate as the counterion. It has a role as an antimicrobial food preservative. It contains an (E,E)-sorbate."
+ },
+ {
+  "cas": "50-70-4",
+  "titulo": "Sorbitol",
+  "descricao": "D-glucitol is the D-enantiomer of glucitol (also known as D-sorbitol). It has a role as a metabolite, a laxative, a sweetening agent, a cathartic, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and a food humectant. It is an enantiomer of a L-glucitol."
+ },
+ {
+  "cas": "6106-21-4",
+  "titulo": "Sodium Succinate Hexahydrate",
+  "descricao": "Sodium succinate hexahydrate is a hydrate that is the hexahydrate form of sodium succinate. It is used as an ingredient of topical preparations for the treatment of cataract. It has a role as a nutraceutical. It contains a sodium succinate (anhydrous)."
+ },
+ {
+  "cas": "7773-06-0",
+  "titulo": "Ammonium sulfamate",
+  "descricao": "Ammonium sulfamate is an organic molecular entity."
+ },
+ {
+  "cas": "7784-31-8",
+  "titulo": "Aluminium sulfate octadecahydrate",
+  "descricao": "Aluminium sulfate octadecahydrate is a hydrate resulting from the the formal combination of anhydrous aluminium sulfate with approximately 18 mol eq. of water. The commercial product usually contains 5-10% less water than theory. It is one of the commonest hydrates of aluminium sulfate. It is a hydrate and an aluminium sulfate. It contains an aluminium sulfate (anhydrous)."
+ },
+ {
+  "cas": "10043-01-3",
+  "titulo": "Aluminum Sulfate",
+  "descricao": "Aluminium sulfate (anhydrous) is an aluminium sulfate that contains no water of crystallisation."
+ },
+ {
+  "cas": "7784-26-1",
+  "titulo": "Ammonium alum",
+  "descricao": "Ammonium alum is an inorganic sulfate salt."
+ },
+ {
+  "cas": "7784-24-9",
+  "titulo": "Aluminum potassium sulfate dodecahydrate",
+  "descricao": "Potassium aluminium sulfate dodecahydrate is a hydrate resulting from the the formal combination of anhydrous potassium aluminium sulfate with 12 mol eq. of water. It has a role as a mordant, an astringent and a flame retardant. It is a potassium salt, a hydrate, an aluminium salt and a metal sulfate. It contains an aluminium(3+) and a potassium aluminium sulfate."
+ },
+ {
+  "cas": "7783-20-2",
+  "titulo": "Ammonium Sulfate",
+  "descricao": "Ammonium sulfate is an inorganic sulfate salt obtained by reaction of sulfuric acid with two equivalents of ammonia. A high-melting (decomposes above 280C) white solid which is very soluble in water (70.6 g/100 g water at 0C; 103.8 g/100 g water at 100C), it is widely used as a fertilizer for alkaline soils. It has a role as a NMR chemical shift reference compound and a fertilizer. It is an inorganic sulfate salt and an ammonium salt."
+ },
+ {
+  "cas": "10101-41-4",
+  "titulo": "Calcium Sulfate Dihydrate",
+  "descricao": "Calcium sulfate dihydrate is a calcium salt and a hydrate. It contains a calcium sulfate."
+ },
+ {
+  "cas": "7778-18-9",
+  "titulo": "Calcium Sulfate",
+  "descricao": "Calcium sulfate is an inorganic calcium salt and a calcium salt."
+ },
+ {
+  "cas": "10026-24-1",
+  "titulo": "Cobaltous sulfate heptahydrate",
+  "descricao": "Cobalt Sulfate Heptahydrate can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "7758-98-7",
+  "titulo": "Copper Sulfate",
+  "descricao": "Copper(II) sulfate is a metal sulfate compound having copper(2+) as the metal ion. It has a role as a sensitiser, an emetic and a fertilizer. It contains a copper(2+)."
+ },
+ {
+  "cas": "3810-74-0",
+  "titulo": "Streptomycin Sulfate",
+  "descricao": "Streptomycin Sulfate can cause developmental toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "7782-63-0",
+  "titulo": "Ferrous sulfate heptahydrate",
+  "descricao": "Iron(2+) sulfate heptahydrate is a hydrate that is the heptahydrate form of iron(2+) sulfate. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in liquid-dosage treatments; for solid-dosage treatments, the monohydrate is normally used). It has a role as a nutraceutical, a reducing agent and an anti-anaemic agent. It is an iron molecular entity and a hydrate. It contains an iron(2+) sulfate (anhydrous)."
+ },
+ {
+  "cas": "13463-43-9",
+  "titulo": "Ferrous sulfate monohydrate",
+  "descricao": "Iron(2+) sulfate monohydrate is a hydrate that is the monohydrate form of iron(2+) sulfate. It is obtained from the heptahydrate by heating above 65C. It is used as a source of iron in the treatment of iron-deficiency anaemia (generally in solid-dosage treatments; for liquid-dosage treatments, the heptahydrate is normally used). It has a role as a nutraceutical, a reducing agent and an anti-anaemic agent. It is an iron molecular entity and a hydrate. It contains an iron(2+) sulfate (anhydrous)."
+ },
+ {
+  "cas": "15244-10-7",
+  "titulo": "Ferric sulfate hydrate",
+  "descricao": "Iron(3+) sulfate hydrate is a hydrate that is the monohydrate form of iron(3+) sulfate. It has a role as a catalyst, a mordant and an astringent. It contains an iron(3+) sulfate."
+ },
+ {
+  "cas": "10034-99-8",
+  "titulo": "Magnesium Sulfate Heptahydrate",
+  "descricao": "Magnesium sulfate heptahydrate is a hydrate that is the heptahydrate form of magnesium sulfate. It has a role as a laxative and a cathartic. It is a magnesium salt and a hydrate. It contains a magnesium sulfate."
+ },
+ {
+  "cas": "7487-88-9",
+  "titulo": "Sulfuric acid magnesium salt (1:1)",
+  "descricao": "Magnesium sulfate is a magnesium salt having sulfate as the counterion. It has a role as a fertilizer, an analgesic, a cardiovascular drug, an anticonvulsant, an anti-arrhythmia drug, a calcium channel blocker, an anaesthetic and a tocolytic agent. It is an organic magnesium salt, a magnesium salt and a metal sulfate."
+ },
+ {
+  "cas": "10034-96-5",
+  "titulo": "Manganese sulfate monohydrate",
+  "descricao": "Manganese(II) sulfate monohydrate is a hydrate that is the monohydrate form of manganese(II) sulfate. It has a role as a nutraceutical. It is a manganese molecular entity, a hydrate and a metal sulfate. It contains a manganese(II) sulfate."
+ },
+ {
+  "cas": "1405-10-3",
+  "titulo": "Neomycin Sulfate",
+  "descricao": "Neomycin B sulfate is the aminoglycoside sulfate salt that is the sulfate salt of neomycin B; a component of neomycin sulfate. It contains a framycetin."
+ },
+ {
+  "cas": "10101-97-0",
+  "titulo": "Nickel sulfate hexahydrate",
+  "descricao": "Nickel sulfate hexahydrate is a hydrate that is the hexahydrate of nickel sulfate. It has a role as a sensitiser. It contains a nickel sulfate."
+ },
+ {
+  "cas": "7778-80-5",
+  "titulo": "Potassium Sulfate",
+  "descricao": "Potassium sulfate is an inorganic potassium salt and a potassium salt."
+ },
+ {
+  "cas": "49842-07-1",
+  "titulo": "Tobramycin Sulfate",
+  "descricao": "Tobramycin Sulfate can cause developmental toxicity according to state or federal government labeling requirements."
+ },
+ {
+  "cas": "7446-20-0",
+  "titulo": "Zinc Sulfate Heptahydrate",
+  "descricao": "Zinc sulfate heptahydrate is a hydrate that is the heptahydrate form of zinc sulfate. It is a hydrate and a metal sulfate. It contains a zinc sulfate."
+ },
+ {
+  "cas": "7733-02-0",
+  "titulo": "Zinc Sulfate",
+  "descricao": "Zinc sulfate is a metal sulfate compound having zinc(2+) as the counterion. It has a role as a fertilizer. It is a zinc molecular entity and a metal sulfate. It contains a zinc(2+)."
+ },
+ {
+  "cas": "7757-83-7",
+  "titulo": "Sodium Sulfite",
+  "descricao": "Sodium sulfite is an inorganic sodium salt having sulfite as the counterion. It has a role as a reducing agent and a food preservative. It is an inorganic sodium salt and a sulfite salt. It contains a sulfite."
+ },
+ {
+  "cas": "7647-01-0",
+  "titulo": "Hydrochloric Acid",
+  "descricao": "Chlorine atom is a halogen. It has a role as a micronutrient."
+ },
+ {
+  "cas": "868-14-4",
+  "titulo": "Potassium Bitartrate",
+  "descricao": "Potassium bitartrate is an organic potassium salt of L-tartaric acid. It is a by-product of winemaking and occurs naturally in grapes, the major fruit used to produce wine. It has a role as an antimicrobial agent, a laxative, a food acidity regulator, a plant metabolite, a food anticaking agent, a food stabiliser, a food humectant and a raising agent. It contains a L-tartrate(1-)."
+ },
+ {
+  "cas": "868-18-8",
+  "titulo": "Sodium Tartrate",
+  "descricao": "Sodium L-tartrate is the organic sodium salt that is the disodium salt of L-tartaric acid. It has a role as a food emulsifier. It contains a L-tartrate(2-)."
+ },
+ {
+  "cas": "1934-21-0",
+  "titulo": "Tartrazine",
+  "descricao": "Tartrazine is an organic sodium salt which is the trisodium salt of tartrazine acid. A synthetic lemon yellow azo dye used as a food colouring. It has a role as a histological dye and a food colouring. It contains a tartrazine(3-)."
+ },
+ {
+  "cas": "107-35-7",
+  "titulo": "Taurine",
+  "descricao": "Taurine is an amino sulfonic acid that is the 2-amino derivative of ethanesulfonic acid. It is a naturally occurring amino acid derived from methionine and cysteine metabolism. An abundant component of fish- and meat-based foods, it has been used as an oral supplement in the treatment of disorders such as cystic fibrosis and hypertension. It has a role as an antioxidant, a nutrient, a radical scavenger, a glycine receptor agonist, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite and a human metabolite. It is a conjugate acid of a 2-aminoethanesulfonate. It is a tautomer of a taurine zwitterion."
+ },
+ {
+  "cas": "110-18-9",
+  "titulo": "N,N,N',N'-Tetramethylethylenediamine",
+  "descricao": "N,N,N',N'-tetramethylethylenediamine is an ethylenediamine derivative in which each nitrogen carries two methyl substituents. It is widely employed both as a ligand for metal ions and as a catalyst in organic polymerisation. It has a role as a catalyst and a chelator."
+ },
+ {
+  "cas": "79-34-5",
+  "titulo": "1,1,2,2-Tetrachloroethane",
+  "descricao": "1,1,2,2-Tetrachloroethane can cause cancer according to The National Institute for Occupational Safety and Health (NIOSH)."
+ },
+ {
+  "cas": "629-59-4",
+  "titulo": "Tetradecane",
+  "descricao": "Tetradecane is a straight chain alkane consisting of 14 carbon atoms. It has a role as a volatile oil component and a plant metabolite."
+ },
+ {
+  "cas": "54-64-8",
+  "titulo": "Thimerosal",
+  "descricao": "Thimerosal is an alkylmercury compound (approximately 49% mercury by weight) used as an antiseptic and antifungal agent. It has a role as an antiseptic drug, a disinfectant, an antifungal drug and a drug allergen. It contains an ethylmercurithiosalicylate."
+ },
+ {
+  "cas": "89-83-8",
+  "titulo": "Thymol",
+  "descricao": "Thymol is a phenol that is a natural monoterpene derivative of cymene. It has a role as a volatile oil component. It is a monoterpenoid and a member of phenols. It derives from a hydride of a p-cymene."
+ },
+ {
+  "cas": "125-20-2",
+  "titulo": "Thymolphthalein",
+  "descricao": "Thymophthalein is a terpene lactone."
+ },
+ {
+  "cas": "62-55-5",
+  "titulo": "Thioacetamide",
+  "descricao": "Thioacetamide can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "333-20-0",
+  "titulo": "Potassium thiocyanate",
+  "descricao": "Potassium thiocyanate is a potassium salt which is the monopotassium salt of thiocyanic acid. It contains a thiocyanate."
+ },
+ {
+  "cas": "5421-46-5",
+  "titulo": "Ammonium Thioglycolate",
+  "descricao": "Ammonium thioglycolate is an organic ammonium salt having thioglycolate(1) as the counterion. Also known as perm salt, it has use in perming hair. It has a role as an allergen and a reducing agent. It contains a thioglycolate(1-)."
+ },
+ {
+  "cas": "367-51-1",
+  "titulo": "Sodium Thioglycolate",
+  "descricao": "Sodium thioglycolate is an organic sodium salt having thioglycolate(1) as the counterion. It has a role as a reducing agent. It contains a thioglycolate(1-)."
+ },
+ {
+  "cas": "79-19-6",
+  "titulo": "Thiosemicarbazide",
+  "descricao": "Hydrazinecarbothioamide is a member of the class of thioureas that is thiourea in which a hydrogen of one of the amino groups is replaced by an amino group. It is a member of hydrazines, a thiocarboxamide and a member of thioureas."
+ },
+ {
+  "cas": "7783-18-8",
+  "titulo": "Ammonium thiosulfate",
+  "descricao": "Ammonium thiosulfate is an inorganic ammonium salt composed of ammonium and thiosulfate ions in a 2:1 ratio. It is used in the leaching of gold and silver, as a fertilizer and as a photographic fixing salt. It has a role as a herbicide safener, a bleaching agent, a fertilizer and a reducing agent. It contains a thiosulfate(2-)."
+ },
+ {
+  "cas": "10102-17-7",
+  "titulo": "Sodium Thiosulfate Pentahydrate",
+  "descricao": "Sodium thiosulfate pentahydrate is a hydrate consisting of sodium thiosulfate with 5 mol eq. of water. It has a role as a nephroprotective agent, an antifungal drug and an antidote to cyanide poisoning. It contains a sodium thiosulfate."
+ },
+ {
+  "cas": "7772-98-7",
+  "titulo": "Sodium Thiosulfate",
+  "descricao": "Sodium thiosulfate is an inorganic sodium salt composed of sodium and thiosulfate ions in a 2:1 ratio. It has a role as a nephroprotective agent, an antifungal drug and an antidote to cyanide poisoning. It contains a thiosulfate(2-)."
+ },
+ {
+  "cas": "612-82-8",
+  "titulo": "3,3'-Dimethylbenzidine dihydrochloride",
+  "descricao": "3,3'-Dimethylbenzidine dihydrochloride can cause cancer according to The National Toxicology Program."
+ },
+ {
+  "cas": "119-93-7",
+  "titulo": "o-Tolidine",
+  "descricao": "3,3'-Dimethylbenzidine (ortho-Tolidine) can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "106-49-0",
+  "titulo": "p-Toluidine",
+  "descricao": "P-toluidine is an aminotoluene in which the amino substituent is para to the methyl group."
+ },
+ {
+  "cas": "51-35-4",
+  "titulo": "L-Hydroxyproline",
+  "descricao": "Trans-4-hydroxy-L-proline is an optically active form of 4-hydroxyproline having L-trans-configuration. It has a role as a mouse metabolite, a plant metabolite and a human metabolite. It is a tautomer of a trans-4-hydroxy-L-proline zwitterion."
+ },
+ {
+  "cas": "6138-23-4",
+  "titulo": "Trehalose, dihydrate",
+  "descricao": "Trehalose dihydrate is an organic molecular entity. It contains a trehalose."
+ },
+ {
+  "cas": "72-19-5",
+  "titulo": "L-Threonine",
+  "descricao": "L-threonine is an optically active form of threonine having L-configuration. It has a role as a micronutrient, a nutraceutical, a mouse metabolite, a Saccharomyces cerevisiae metabolite, a plant metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a L-alpha-amino acid, an aspartate family amino acid, a threonine and a proteinogenic amino acid. It is a conjugate base of a L-threoninium. It is a conjugate acid of a L-threoninate. It is an enantiomer of a D-threonine. It is a tautomer of a L-threonine zwitterion."
+ },
+ {
+  "cas": "10025-91-9",
+  "titulo": "Antimony trichloride",
+  "descricao": "Antimony trichloride is an inorganic chloride salt with formula SbCl3. It is used as a reagent for detecting vitamin A and related carotenoids, reacting with the carotenoid to form a blue complex that can be measured by colorimetry (the Carr-Price test). Solutions of antimony trichloride were formerly used for dissolving and removing horn stubs from calves and goats. It has a role as a Lewis acid, a colorimetric reagent and an apoptosis inducer. It is an inorganic chloride and an antimony molecular entity. It derives from a hydride of a stibane."
+ },
+ {
+  "cas": "629-50-5",
+  "titulo": "Tridecane",
+  "descricao": "Tridecane is a straight chain alkane containing 13 carbon atoms. It forms a component of the essential oils isolated from plants such as Abelmoschus esculentus. It has a role as a volatile oil component and a plant metabolite."
+ },
+ {
+  "cas": "121-44-8",
+  "titulo": "Triethylamine",
+  "descricao": "Triethylamine is a tertiary amine that is ammonia in which each hydrogen atom is substituted by an ethyl group."
+ },
+ {
+  "cas": "112-27-6",
+  "titulo": "Triethylene Glycol",
+  "descricao": "Triethylene glycol is a poly(ethylene glycol) that is octane-1,8-diol in which the carbon atoms at positions 3 and 6 have been replaced by oxygen atoms. It has a role as a plasticiser. It is a primary alcohol, a diol and a poly(ethylene glycol)."
+ },
+ {
+  "cas": "603-35-0",
+  "titulo": "Triphenylphosphine",
+  "descricao": "Triphenylphosphine is a member of the class of tertiary phosphines that is phosphane in which the three hydrogens are replaced by phenyl groups. It has a role as a reducing agent. It is a member of benzenes and a tertiary phosphine."
+ },
+ {
+  "cas": "73-22-3",
+  "titulo": "L-Tryptophan",
+  "descricao": "L-tryptophan is the L-enantiomer of tryptophan. It has a role as a micronutrient, an antidepressant, a nutraceutical, a mouse metabolite, a Saccharomyces cerevisiae metabolite, a plant metabolite, an Escherichia coli metabolite and a human metabolite. It is a L-alpha-amino acid, a tryptophan, an erythrose 4-phosphate/phosphoenolpyruvate family amino acid and a proteinogenic amino acid. It is a conjugate base of a L-tryptophanium. It is a conjugate acid of a L-tryptophanate. It is an enantiomer of a D-tryptophan. It is a tautomer of a L-tryptophan zwitterion."
+ },
+ {
+  "cas": "77-86-1",
+  "titulo": "Tris(hydroxymethyl)aminomethane",
+  "descricao": "Tris is a primary amino compound that is tert-butylamine in which one hydrogen attached to each methyl group is replaced by a hydroxy group. A compound widely used as a biological buffer substance in the pH range 79; pKa = 8.3 at 20 C; pKa = 7.82 at 37 C. It has a role as a buffer. It is a triol and a primary amino compound. It is a conjugate base of a member of Htris."
+ },
+ {
+  "cas": "633-96-5",
+  "titulo": "C.I. Acid Orange 7",
+  "descricao": "Acid orange 7 is a member of naphthalenes."
+ },
+ {
+  "cas": "10213-10-2",
+  "titulo": "Sodium Tungstate Dihydrate",
+  "descricao": "Sodium tungstate dihydrate is a hydrate that is the dihydrate form of sodium tungstate. Combines with hydrogen peroxide for the oxidation of secondary amines to nitrones. It has a role as a reagent. It contains a sodium tungstate."
+ },
+ {
+  "cas": "1120-21-4",
+  "titulo": "Undecane",
+  "descricao": "Undecane is a straight-chain alkane with 11 carbon atoms."
+ },
+ {
+  "cas": "1193-24-4",
+  "titulo": "6-Hydroxy-4-pyrimidinone",
+  "descricao": "4,6-dihydroxypyrimidine is a hydroxypyrimidine."
+ },
+ {
+  "cas": "57-13-6",
+  "titulo": "Urea",
+  "descricao": "Urea is a carbonyl group with two C-bound amine groups. The commercially available fertilizer has an analysis of 46-0-0 (N-P2O5-K2O). It has a role as a fertilizer, a flour treatment agent, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and a Daphnia magna metabolite. It is a monocarboxylic acid amide and a one-carbon compound. It is functionally related to a carbonic acid. It is a tautomer of a carbamimidic acid."
+ },
+ {
+  "cas": "72-18-4",
+  "titulo": "L-Valine",
+  "descricao": "L-valine is the L-enantiomer of valine. It has a role as a micronutrient, a nutraceutical, a mouse metabolite, a Saccharomyces cerevisiae metabolite, an Escherichia coli metabolite, a human metabolite and an algal metabolite. It is a L-alpha-amino acid, a pyruvate family amino acid, a valine and a proteinogenic amino acid. It is a conjugate base of a L-valinium. It is a conjugate acid of a L-valinate. It is an enantiomer of a D-valine. It is a tautomer of a L-valine zwitterion."
+ },
+ {
+  "cas": "121-33-5",
+  "titulo": "Vanillin",
+  "descricao": "Vanillin is a member of the class of benzaldehydes carrying methoxy and hydroxy substituents at positions 3 and 4 respectively. It has a role as an antioxidant, a flavouring agent, an anticonvulsant, an anti-inflammatory agent and a plant metabolite. It is a member of benzaldehydes, a monomethoxybenzene and a member of phenols."
+ },
+ {
+  "cas": "633-03-4",
+  "titulo": "Brilliant Green",
+  "descricao": "Brilliant green is an organic hydrogensulfate salt having 4-{[4-(diethylamino)phenyl](phenyl)methylidene}-N,N-diethylcyclohexa-2,5-dien-1-iminium as the counterion. It has a role as an antibacterial agent, an antiseptic drug, a fluorochrome, a poison, a histological dye and an environmental contaminant. It contains a brilliant green cation."
+ },
+ {
+  "cas": "76-60-8",
+  "titulo": "Bromocresol Green",
+  "descricao": "Bromocresolgreen is a member of benzofurans."
+ },
+ {
+  "cas": "19381-50-1",
+  "titulo": "C.I. Acid Green 1",
+  "descricao": "Naphthol green B is an organic sodium salt composed of iron(3+), sodium and 5-(oxidoimino)-6-oxo-5,6-dihydronaphthalene-2-sulfonate ions in a 1:1:3 ratio. Used to stain collagen and animal tissue. It has a role as a histological dye. It is an iron coordination entity and an organic sodium salt. It contains a 5-(oxidoimino)-6-oxo-5,6-dihydronaphthalene-2-sulfonate."
+ },
+ {
+  "cas": "2869-83-2",
+  "titulo": "Janus Green B",
+  "descricao": "Janus Green B chloride is an organic chloride salt. It has a role as a dye. It contains a Janus Green B cation."
+ },
+ {
+  "cas": "5141-20-8",
+  "titulo": "Light green SF yellowish",
+  "descricao": "Acid green 5 is an organic sodium salt having 3-[(ethyl{4-[(4-{ethyl[(3-sulfonatophenyl)methyl]amino}phenyl)(4-sulfonatophenyl)methylidene]cyclohexa-2,5-dien-1-ylidene}azaniumyl)methyl]benzene-1-sulfonate as the counterion. It is the standard dye in North American for staining collagen and is also used extensively in plant histology. It has a role as a histological dye. It contains an acid green 5(2-)."
+ },
+ {
+  "cas": "569-64-2",
+  "titulo": "Malachite Green",
+  "descricao": "Malachite green is an organic chloride salt that is the monochloride salt of malachite green cation. Used as a green-coloured dye, as a counter-stain in histology, and for its anti-fungal properties in aquaculture. It has a role as an antibacterial agent, a carcinogenic agent, a teratogenic agent, a fluorochrome, a histological dye, an environmental contaminant and an antifungal drug. It contains a malachite green cation."
+ },
+ {
+  "cas": "2353-45-9",
+  "titulo": "Fast Green FCF",
+  "descricao": "Fast green FCF is an organic sodium salt having 2-{(4-{ethyl[(3-sulfonatophenyl)methyl]amino}phenyl)[4-{ethyl[(3-sulfonatophenyl)methyl]iminio}cyclohexa-2,5-dien-1-ylidene]methyl}-5-hydroxybenzene-1-sulfonate as the counterion. Used as a substitute for Light green SF yellowish in Masson's trichrome as it is less likely to fade, and is more brilliant in colour. Also used as a food colouring agent. It has a role as a fluorochrome, a histological dye and a food colouring. It contains a Fast green FCF(2-)."
+ },
+ {
+  "cas": "915-67-3",
+  "titulo": "Amaranth",
+  "descricao": "Amaranth is an organic molecular entity."
+ },
+ {
+  "cas": "573-58-0",
+  "titulo": "Congo red",
+  "descricao": "Congo Red is an indicator dye that is blue-violet at pH 3.0 and red at pH 5.0. It contains a 3,3'-(biphenyl-4,4'-diyldidiazene-2,1-diyl)bis(4-aminonaphthalene-1-sulfonate). It is functionally related to a 3,3'-(biphenyl-4,4'-diyldidiazene-2,1-diyl)bis(4-aminonaphthalene-1-sulfonic acid)."
+ },
+ {
+  "cas": "1733-12-6",
+  "titulo": "Cresol Red",
+  "descricao": "Cresol red is a member of the class of 2,1-benzoxathioles that is 2,1-benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 4-hydroxy-5-methylphenyl groups. It has a role as a dye, an acid-base indicator and a two-colour indicator. It is a polyphenol, a 2,1-benzoxathiole, a sultone and an arenesulfonate ester."
+ },
+ {
+  "cas": "143-74-8",
+  "titulo": "Phenol Red",
+  "descricao": "Phenol red is 3H-2,1-Benzoxathiole 1,1-dioxide in which both of the hydrogens at position 3 have been substituted by 4-hydroxyphenyl groups. A pH indicator changing colour from yellow below pH 6.8 to bright pink above pH 8.2, it is commonly used as an indicator in cell cultures and in home swimming pool test kits. It is also used in the (now infrequently performed) phenolsulfonphthalein (PSP) test for estimation of overall blood flow through the kidney. It has a role as a diagnostic agent, an acid-base indicator and a two-colour indicator. It is a member of phenols, a 2,1-benzoxathiole, a sultone and an arenesulfonate ester."
+ },
+ {
+  "cas": "493-52-7",
+  "titulo": "2-((4-(Dimethylamino)phenyl)diazenyl)benzoic acid",
+  "descricao": "Methyl red is an azo dye consisting of benzoic acid substituted at position 2 by a 4-[(dimethylamino)phenyl]diazenyl group. It has a role as a dye. It is a member of azobenzenes, a monocarboxylic acid and a tertiary amino compound. It is a conjugate acid of a methyl red(1-)."
+ },
+ {
+  "cas": "7385-67-3",
+  "titulo": "Nile Red",
+  "descricao": "Nile red is an organic heterotetracyclic compound that is 5H-benzo[a]phenoxazin-5-one substituted at position 9 by a diethylamino group. It has a role as a fluorochrome and a histological dye. It is an aromatic amine, an organic heterotetracyclic compound, a cyclic ketone and a tertiary amino compound."
+ },
+ {
+  "cas": "553-24-2",
+  "titulo": "Neutral Red",
+  "descricao": "Neutral red is a hydrochloride obtained by combining the free base of neutral red with one equivalent of hydrochloric acid. Neutral red acts as a pH indicator, changing from red to yellow between pH 6.8 and 8.0. It has a role as a dye, an acid-base indicator and a two-colour indicator. It contains a neutral red(1+)."
+ },
+ {
+  "cas": "2610-10-8",
+  "titulo": "Sirius Red F3B",
+  "descricao": "Sirius red F3B is an organic sodium salt resulting from the formal condensation of Sirius red F3B (acid form) with six equivalents of sodium hydroxide. A polyazo dye used principally in staining methods for collagen and amyloid. It has a role as a fluorochrome and a histological dye. It contains a Sirius red F3B(6-)."
+ },
+ {
+  "cas": "10114-58-6",
+  "titulo": "1,3-Benzenediamine, 4,4'-(1,3-phenylenebis(azo))bis-, dihydrochloride",
+  "descricao": "Bismark brown Y is a hydrochloride that is the dihydrochloride of 4,4'-[1,3-phenylenebis(diazene-2,1-diyl)]di(benzene-1,3-diamine). Bismarck brown Y is a metachromatic dye which stains acid mucins yellow. It is also a constituent of Papanicolaou's EA solutions, used for cervical, and other smears. It has a role as an allergen, a fluorochrome and a histological dye. It contains a basic brown 1."
+ },
+ {
+  "cas": "548-62-9",
+  "titulo": "Crystal Violet",
+  "descricao": "Gentian Violet can cause cancer according to an independent committee of scientific and health experts."
+ },
+ {
+  "cas": "83-88-5",
+  "titulo": "Riboflavin",
+  "descricao": "Riboflavin is D-Ribitol in which the hydroxy group at position 5 is substituted by a 7,8-dimethyl-2,4-dioxo-3,4-dihydrobenzo[g]pteridin-10(2H)-yl moiety. It is a nutritional factor found in milk, eggs, malted barley, liver, kidney, heart, and leafy vegetables, but the richest natural source is yeast. The free form occurs only in the retina of the eye, in whey, and in urine; its principal forms in tissues and cells are as flavin mononucleotide and flavin-adenine dinucleotide. It has a role as an antioxidant, a cofactor, a photosensitizing agent, an anti-inflammatory agent, a mouse metabolite, a plant metabolite, an Escherichia coli metabolite, a food colouring, a fundamental metabolite and a human urinary metabolite. It is a vitamin B2 and a flavin. It is a conjugate acid of a riboflavin(1-)."
+ },
+ {
+  "cas": "59-02-9",
+  "titulo": "alpha-Tocopherol",
+  "descricao": "(R,R,R)-alpha-tocopherol is an alpha-tocopherol that has R,R,R configuration. The naturally occurring stereoisomer of alpha-tocopherol, it is found particularly in sunflower and olive oils. It has a role as an antioxidant, an antiviral agent, a micronutrient, an EC 2.7.11.13 (protein kinase C) inhibitor, an anticoagulant, a nutraceutical, an immunomodulator, an antiatherogenic agent, a plant metabolite and an algal metabolite. It is an enantiomer of a (S,S,S)-alpha-tocopherol."
+ },
+ {
+  "cas": "58-86-6",
+  "titulo": "D-Xylose",
+  "descricao": "D-xylopyranose is D-Xylose in its pyranose form."
+ },
+ {
+  "cas": "87-99-0",
+  "titulo": "(2S,4R)-Pentane-1,2,3,4,5-Pentol",
+  "descricao": "Ribitol is a pentitol (five-carbon sugar alcohol) having meso-configuration, being derived from ribose by reduction of the carbonyl group. It occurs naturally in the plant Adonis vernalis. It has a role as a plant metabolite, a human metabolite and a Daphnia magna metabolite."
+ },
+ {
+  "cas": "7440-66-6",
+  "titulo": "Zinc",
+  "descricao": "Zinc atom is a zinc group element atom. It has a role as a micronutrient."
+ }
+]

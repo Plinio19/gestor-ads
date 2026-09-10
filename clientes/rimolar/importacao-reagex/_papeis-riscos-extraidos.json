@@ -1,0 +1,4528 @@
+[
+ {
+  "cas": "112-30-1",
+  "titulo": "1-Decanol",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "pheromone",
+   "protic solvent"
+  ]
+ },
+ {
+  "cas": "632-22-4",
+  "titulo": "Tetramethylurea",
+  "hazard": null,
+  "roles": [
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "95-50-1",
+  "titulo": "1,2-Dichlorobenzene",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "hepatotoxic agent"
+  ]
+ },
+ {
+  "cas": "83-07-8",
+  "titulo": "4-Aminoantipyrine",
+  "hazard": null,
+  "roles": [
+   "non-steroidal anti-inflammatory drug",
+   "non-narcotic analgesic",
+   "antipyretic",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "101-14-4",
+  "titulo": "3,3'-Dichloro-4,4'-Diaminodiphenylmethane",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "105-57-7",
+  "titulo": "Acetal",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "60-35-5",
+  "titulo": "Acetamide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "103-84-4",
+  "titulo": "Acetanilide",
+  "hazard": null,
+  "roles": [
+   "analgesic"
+  ]
+ },
+ {
+  "cas": "631-61-8",
+  "titulo": "Ammonium Acetate",
+  "hazard": null,
+  "roles": [
+   "buffer",
+   "food acidity regulator"
+  ]
+ },
+ {
+  "cas": "543-80-6",
+  "titulo": "Barium acetate",
+  "hazard": null,
+  "roles": [
+   "catalyst",
+   "mordant"
+  ]
+ },
+ {
+  "cas": "112-07-2",
+  "titulo": "Glycol monobutyl ether acetate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "5743-26-0",
+  "titulo": "Calcium acetate monohydrate",
+  "hazard": null,
+  "roles": [
+   "chelator"
+  ]
+ },
+ {
+  "cas": "301-04-2",
+  "titulo": "Lead diacetate",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "114460-21-8",
+  "titulo": "Calcium acetate monohydrate",
+  "hazard": null,
+  "roles": [
+   "chelator"
+  ]
+ },
+ {
+  "cas": "546-89-4",
+  "titulo": "Lithium acetate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "127-08-2",
+  "titulo": "Potassium Acetate",
+  "hazard": null,
+  "roles": [
+   "food acidity regulator"
+  ]
+ },
+ {
+  "cas": "6131-90-4",
+  "titulo": "Sodium Acetate Trihydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "127-09-3",
+  "titulo": "Sodium Acetate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "108-05-4",
+  "titulo": "Vinyl Acetate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "557-34-6",
+  "titulo": "Zinc Acetate",
+  "hazard": null,
+  "roles": [
+   "astringent"
+  ]
+ },
+ {
+  "cas": "123-54-6",
+  "titulo": "Acetylacetone",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "141-97-9",
+  "titulo": "Ethyl Acetoacetate",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent",
+   "flavouring agent",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "98-86-2",
+  "titulo": "Acetophenone",
+  "hazard": null,
+  "roles": [
+   "xenobiotic",
+   "photosensitizing agent",
+   "animal metabolite"
+  ]
+ },
+ {
+  "cas": "116-63-2",
+  "titulo": "1-Amino-2-naphthol-4-sulfonic acid",
+  "hazard": null,
+  "roles": [
+   "mutagen"
+  ]
+ },
+ {
+  "cas": "71119-23-8",
+  "titulo": "4-Morpholineethanesulfonic acid, sodium salt (1:1)",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "504-17-6",
+  "titulo": "Thiobarbituric acid",
+  "hazard": null,
+  "roles": [
+   "reagent",
+   "allergen"
+  ]
+ },
+ {
+  "cas": "88-82-4",
+  "titulo": "2,3,5-Triiodobenzoic acid",
+  "hazard": null,
+  "roles": [
+   "member of antiauxins"
+  ]
+ },
+ {
+  "cas": "1132-61-2",
+  "titulo": "Mops",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "121-92-6",
+  "titulo": "3-Nitrobenzoic acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "99-96-7",
+  "titulo": "4-Hydroxybenzoic Acid",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "104-01-8",
+  "titulo": "4-Methoxyphenylacetic Acid",
+  "hazard": null,
+  "roles": [
+   "plant growth retardant",
+   "plant metabolite",
+   "Aspergillus metabolite"
+  ]
+ },
+ {
+  "cas": "50-78-2",
+  "titulo": "Aspirin",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity",
+    "female reproductive toxicity"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "79-10-7",
+  "titulo": "Acrylic Acid",
+  "hazard": null,
+  "roles": [
+   "metabolite"
+  ]
+ },
+ {
+  "cas": "124-04-9",
+  "titulo": "Adipic Acid",
+  "hazard": null,
+  "roles": [
+   "food acidity regulator",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "150-13-0",
+  "titulo": "4-Aminobenzoic Acid",
+  "hazard": null,
+  "roles": [
+   "allergen",
+   "plant metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "50-81-7",
+  "titulo": "L-Ascorbic Acid",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "coenzyme",
+   "cofactor",
+   "flour treatment agent",
+   "plant metabolite",
+   "food antioxidant",
+   "food colour retention agent",
+   "skin lightening agent"
+  ]
+ },
+ {
+  "cas": "56-84-8",
+  "titulo": "L-Aspartic Acid",
+  "hazard": null,
+  "roles": [
+   "neurotransmitter",
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "67-52-7",
+  "titulo": "Barbituric Acid",
+  "hazard": null,
+  "roles": [
+   "xenobiotic",
+   "allergen"
+  ]
+ },
+ {
+  "cas": "107-92-6",
+  "titulo": "Butyric Acid",
+  "hazard": null,
+  "roles": [
+   "Mycoplasma genitalium metabolite",
+   "human urinary metabolite"
+  ]
+ },
+ {
+  "cas": "77-92-9",
+  "titulo": "Citric Acid",
+  "hazard": null,
+  "roles": [
+   "calcium chelator",
+   "antimicrobial agent",
+   "chelator",
+   "food acidity regulator",
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "5949-29-1",
+  "titulo": "2-Hydroxy-1,2,3-propanetricarboxylic acid hydrate (1:1)",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "79-11-8",
+  "titulo": "Chloroacetic Acid",
+  "hazard": null,
+  "roles": [
+   "alkylating agent",
+   "herbicide"
+  ]
+ },
+ {
+  "cas": "1333-82-0",
+  "titulo": "Chromium Trioxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "79-43-6",
+  "titulo": "Dichloroacetic Acid",
+  "hazard": {
+   "tipos": [
+    "cancer",
+    "developmental toxicity",
+    "male reproductive toxicity"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "67-43-6",
+  "titulo": "Diethylenetriaminepentaacetic acid",
+  "hazard": null,
+  "roles": [
+   "copper chelator"
+  ]
+ },
+ {
+  "cas": "99-34-3",
+  "titulo": "3,5-Dinitrobenzoic acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "609-99-4",
+  "titulo": "3,5-Dinitrosalicylic acid",
+  "hazard": null,
+  "roles": [
+   "hapten"
+  ]
+ },
+ {
+  "cas": "57-11-4",
+  "titulo": "Stearic Acid",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "human metabolite",
+   "Daphnia magna metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "16872-11-0",
+  "titulo": "Tetrafluoroboric acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "59-30-3",
+  "titulo": "Folic Acid",
+  "hazard": null,
+  "roles": [
+   "nutrient",
+   "mouse metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "88-99-3",
+  "titulo": "Phthalic Acid",
+  "hazard": null,
+  "roles": [
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "110-17-8",
+  "titulo": "Fumaric Acid",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "food acidity regulator",
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "149-91-7",
+  "titulo": "Gallic Acid",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "antioxidant",
+   "antineoplastic agent",
+   "cyclooxygenase 2 inhibitor",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "79-14-1",
+  "titulo": "Glycolic Acid",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "keratolytic drug"
+  ]
+ },
+ {
+  "cas": "56-86-0",
+  "titulo": "L-Glutamic Acid",
+  "hazard": null,
+  "roles": [
+   "ferroptosis inducer",
+   "neurotransmitter",
+   "micronutrient",
+   "nutraceutical",
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "495-69-2",
+  "titulo": "Hippuric Acid",
+  "hazard": null,
+  "roles": [
+   "uremic toxin",
+   "human blood serum metabolite"
+  ]
+ },
+ {
+  "cas": "133-32-4",
+  "titulo": "Indole-3-Butyric Acid",
+  "hazard": null,
+  "roles": [
+   "auxin",
+   "plant hormone",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "97-65-4",
+  "titulo": "Itaconic acid",
+  "hazard": null,
+  "roles": [
+   "fungal metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "143-07-7",
+  "titulo": "Lauric Acid",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent",
+   "plant metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "123-76-2",
+  "titulo": "Levulinic Acid",
+  "hazard": null,
+  "roles": [
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "60-33-3",
+  "titulo": "Linoleic Acid",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "Daphnia galeata metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "110-16-7",
+  "titulo": "Maleic Acid",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "plant metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "6915-15-7",
+  "titulo": "Malic Acid",
+  "hazard": null,
+  "roles": [
+   "food acidity regulator",
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "141-82-2",
+  "titulo": "Malonic Acid",
+  "hazard": null,
+  "roles": [
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "37267-86-0",
+  "titulo": "Metaphosphoric Acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "544-63-8",
+  "titulo": "Myristic Acid",
+  "hazard": null,
+  "roles": [
+   "human metabolite",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "7782-91-4",
+  "titulo": "Molybdic acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "389-08-2",
+  "titulo": "Nalidixic Acid",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "59-67-6",
+  "titulo": "Nicotinic Acid",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "vasodilator agent",
+   "antilipemic drug",
+   "antidote",
+   "mouse metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human urinary metabolite",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "62-23-7",
+  "titulo": "4-Nitrobenzoic Acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "112-80-1",
+  "titulo": "Oleic Acid",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "solvent",
+   "mouse metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "144-62-7",
+  "titulo": "Oxalic Acid",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "10450-60-9",
+  "titulo": "Orthoperiodic acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "87-66-1",
+  "titulo": "Pyrogallol",
+  "hazard": null,
+  "roles": [
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "79-09-4",
+  "titulo": "Propionic Acid",
+  "hazard": null,
+  "roles": [
+   "antifungal drug"
+  ]
+ },
+ {
+  "cas": "603-45-2",
+  "titulo": "Aurin",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "69-72-7",
+  "titulo": "Salicylic Acid",
+  "hazard": null,
+  "roles": [
+   "antiinfective agent",
+   "antifungal agent",
+   "plant hormone",
+   "keratolytic drug",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "110-44-1",
+  "titulo": "Sorbic Acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "5329-14-6",
+  "titulo": "Sulfamic Acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7783-06-4",
+  "titulo": "Hydrogen Sulfide",
+  "hazard": null,
+  "roles": [
+   "macronutrient"
+  ]
+ },
+ {
+  "cas": "87-69-4",
+  "titulo": "L-Tartaric acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "68-11-1",
+  "titulo": "Thioglycolic Acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "70-55-3",
+  "titulo": "P-Toluenesulfonamide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "76-03-9",
+  "titulo": "Trichloroacetic Acid",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "76-05-1",
+  "titulo": "Trifluoroacetic acid",
+  "hazard": null,
+  "roles": [
+   "reagent",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "79-06-1",
+  "titulo": "Acrylamide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC) and The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "140-88-5",
+  "titulo": "Ethyl Acrylate",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "488-81-3",
+  "titulo": "(2S,4R)-Pentane-1,2,3,4,5-Pentol",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "human metabolite",
+   "Daphnia magna metabolite"
+  ]
+ },
+ {
+  "cas": "7732-18-5",
+  "titulo": "Water",
+  "hazard": null,
+  "roles": [
+   "amphiprotic solvent",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "member of greenhouse gas",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "56-41-7",
+  "titulo": "L-Alanine",
+  "hazard": null,
+  "roles": [
+   "EC 4"
+  ]
+ },
+ {
+  "cas": "97-59-6",
+  "titulo": "Allantoin",
+  "hazard": null,
+  "roles": [
+   "vulnerary",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "1936-15-8",
+  "titulo": "C.I. Acid Orange 10",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "71-41-0",
+  "titulo": "1-Pentanol",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "100-51-6",
+  "titulo": "Benzyl Alcohol",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "metabolite",
+   "solvent",
+   "fragrance"
+  ]
+ },
+ {
+  "cas": "75-65-0",
+  "titulo": "tert-Butanol",
+  "hazard": null,
+  "roles": [
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "36653-82-4",
+  "titulo": "Cetyl Alcohol",
+  "hazard": null,
+  "roles": [
+   "flavouring agent",
+   "plant metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "64-17-5",
+  "titulo": "Ethanol",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "123-51-3",
+  "titulo": "Isoamyl Alcohol",
+  "hazard": null,
+  "roles": [
+   "antifungal agent",
+   "Saccharomyces cerevisiae metabolite",
+   "xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "111-87-5",
+  "titulo": "1-Octanol",
+  "hazard": null,
+  "roles": [
+   "antifungal agent",
+   "fuel additive",
+   "plant metabolite",
+   "bacterial metabolite",
+   "kairomone"
+  ]
+ },
+ {
+  "cas": "72-48-0",
+  "titulo": "Alizarin",
+  "hazard": null,
+  "roles": [
+   "chromophore",
+   "dye",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "587-98-4",
+  "titulo": "Metanil yellow",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "9005-84-9",
+  "titulo": "Amylodextrin",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "107-95-9",
+  "titulo": "Beta-Alanine",
+  "hazard": null,
+  "roles": [
+   "neurotransmitter",
+   "inhibitor",
+   "agonist",
+   "human metabolite",
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "85-44-9",
+  "titulo": "Phthalic Anhydride",
+  "hazard": null,
+  "roles": [
+   "allergen"
+  ]
+ },
+ {
+  "cas": "12029-98-0",
+  "titulo": "Iodine pentoxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "108-31-6",
+  "titulo": "Maleic Anhydride",
+  "hazard": null,
+  "roles": [
+   "allergen"
+  ]
+ },
+ {
+  "cas": "62-53-3",
+  "titulo": "Aniline",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "60-80-0",
+  "titulo": "Antipyrine",
+  "hazard": null,
+  "roles": [
+   "non-steroidal anti-inflammatory drug",
+   "non-narcotic analgesic",
+   "antipyretic",
+   "xenobiotic",
+   "cyclooxygenase 3 inhibitor",
+   "environmental contaminant"
+  ]
+ },
+ {
+  "cas": "120-12-7",
+  "titulo": "Anthracene",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "84-65-1",
+  "titulo": "Anthraquinone",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "90-44-8",
+  "titulo": "Anthrone",
+  "hazard": null,
+  "roles": [
+   "radical scavenger"
+  ]
+ },
+ {
+  "cas": "10323-20-3",
+  "titulo": "D-Arabinose",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "5328-37-0",
+  "titulo": "L-Arabinose",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "14808-60-7",
+  "titulo": "Silica",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "74-79-3",
+  "titulo": "L-Arginine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "biomarker",
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "1119-34-2",
+  "titulo": "L-Arginine, monohydrochloride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10048-95-0",
+  "titulo": "Sodium arsenate, dibasic heptahydrate",
+  "hazard": null,
+  "roles": [
+   "poison"
+  ]
+ },
+ {
+  "cas": "7784-46-5",
+  "titulo": "Sodium Arsenite",
+  "hazard": null,
+  "roles": [
+   "herbicide",
+   "insecticide",
+   "antibacterial agent",
+   "rodenticide",
+   "antineoplastic agent",
+   "antifungal agent",
+   "carcinogenic agent"
+  ]
+ },
+ {
+  "cas": "134-03-2",
+  "titulo": "Sodium Ascorbate",
+  "hazard": null,
+  "roles": [
+   "coenzyme",
+   "reducing agent",
+   "flour treatment agent",
+   "plant metabolite",
+   "human metabolite",
+   "food antioxidant",
+   "Daphnia magna metabolite"
+  ]
+ },
+ {
+  "cas": "70-47-3",
+  "titulo": "(-)-Asparagine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "22839-47-0",
+  "titulo": "Aspartame",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "xenobiotic",
+   "sweetening agent",
+   "nutraceutical",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "2465-27-2",
+  "titulo": "C.I. Basic Yellow 2",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "3844-45-9",
+  "titulo": "FD&C Blue No. 1",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "115-39-9",
+  "titulo": "Bromophenol Blue",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "76-59-5",
+  "titulo": "Bromothymol Blue",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "129-17-9",
+  "titulo": "Sulfan Blue",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "314-13-6",
+  "titulo": "C.I. Direct Blue 53",
+  "hazard": null,
+  "roles": [
+   "sodium channel blocker",
+   "teratogenic agent",
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "298-83-9",
+  "titulo": "Nitro Blue Tetrazolium",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "92-31-9",
+  "titulo": "Tolonium chloride",
+  "hazard": null,
+  "roles": [
+   "diagnostic agent",
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "72-57-1",
+  "titulo": "C.I. Direct Blue 14",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "2580-56-5",
+  "titulo": "Victoria Blue B",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "1871-22-3",
+  "titulo": "Tetrazolium blue",
+  "hazard": null,
+  "roles": [
+   "dye"
+  ]
+ },
+ {
+  "cas": "531-55-5",
+  "titulo": "N,N-Dimethyl-7-(methylamino)-3H-phenothiazin-3-iminium chloride",
+  "hazard": null,
+  "roles": [
+   "antidepressant",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "55-21-0",
+  "titulo": "Benzamide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "92-87-5",
+  "titulo": "Benzidine",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "1214-39-7",
+  "titulo": "Benzylaminopurine",
+  "hazard": null,
+  "roles": [
+   "cytokinin",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "120-51-4",
+  "titulo": "Benzyl Benzoate",
+  "hazard": null,
+  "roles": [
+   "acaricide",
+   "scabicide",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "93-89-0",
+  "titulo": "Ethyl benzoate",
+  "hazard": null,
+  "roles": [
+   "volatile oil component",
+   "flavouring agent",
+   "fragrance"
+  ]
+ },
+ {
+  "cas": "532-32-1",
+  "titulo": "Sodium Benzoate",
+  "hazard": null,
+  "roles": [
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "106-51-4",
+  "titulo": "Quinone",
+  "hazard": null,
+  "roles": [
+   "cofactor",
+   "mouse metabolite",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "95-14-7",
+  "titulo": "1H-Benzotriazole",
+  "hazard": null,
+  "roles": [
+   "xenobiotic",
+   "environmental contaminant"
+  ]
+ },
+ {
+  "cas": "1066-33-7",
+  "titulo": "Ammonium Bicarbonate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "58-85-5",
+  "titulo": "Biotin",
+  "hazard": null,
+  "roles": [
+   "coenzyme",
+   "cofactor",
+   "prosthetic group",
+   "nutraceutical",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "366-18-7",
+  "titulo": "2,2'-Bipyridine",
+  "hazard": null,
+  "roles": [
+   "ferroptosis inhibitor",
+   "chelator"
+  ]
+ },
+ {
+  "cas": "23089-26-1",
+  "titulo": "Levomenol",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7631-90-5",
+  "titulo": "Sodium Bisulfite",
+  "hazard": null,
+  "roles": [
+   "mutagen",
+   "allergen",
+   "reducing agent",
+   "food antioxidant",
+   "food colour retention agent"
+  ]
+ },
+ {
+  "cas": "7440-42-8",
+  "titulo": "Boron",
+  "hazard": null,
+  "roles": [
+   "micronutrient"
+  ]
+ },
+ {
+  "cas": "7758-01-2",
+  "titulo": "Potassium Bromate",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "7789-38-0",
+  "titulo": "Sodium Bromate",
+  "hazard": null,
+  "roles": [
+   "nephrotoxic agent",
+   "oxidising agent"
+  ]
+ },
+ {
+  "cas": "12124-97-9",
+  "titulo": "Ammonium Bromide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "57-09-0",
+  "titulo": "Hexadecyltrimethylammonium Bromide",
+  "hazard": null,
+  "roles": [
+   "detergent",
+   "surfactant"
+  ]
+ },
+ {
+  "cas": "1119-94-4",
+  "titulo": "Dodecyltrimethylammonium bromide",
+  "hazard": null,
+  "roles": [
+   "surfactant"
+  ]
+ },
+ {
+  "cas": "1239-45-8",
+  "titulo": "Ethidium Bromide",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "intercalator",
+   "trypanocidal drug"
+  ]
+ },
+ {
+  "cas": "7550-35-8",
+  "titulo": "Lithium Bromide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7758-02-3",
+  "titulo": "Potassium Bromide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7647-15-6",
+  "titulo": "Sodium Bromide",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound"
+  ]
+ },
+ {
+  "cas": "64-20-0",
+  "titulo": "Tetramethylammonium bromide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "298-93-1",
+  "titulo": "(3-(4,5-Dimethylthiazol-2-yl)-2,5-diphenyltetrazolium bromide)",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "colorimetric reagent"
+  ]
+ },
+ {
+  "cas": "75-25-2",
+  "titulo": "Bromoform",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "128-08-5",
+  "titulo": "N-bromobutanimide",
+  "hazard": null,
+  "roles": [
+   "reagent"
+  ]
+ },
+ {
+  "cas": "357-57-3",
+  "titulo": "Brucine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "110-63-4",
+  "titulo": "1,4-Butanediol",
+  "hazard": null,
+  "roles": [
+   "protic solvent",
+   "prodrug",
+   "neurotoxin"
+  ]
+ },
+ {
+  "cas": "128-37-0",
+  "titulo": "2,6-Di-tert-butyl-4-methylphenol",
+  "hazard": null,
+  "roles": [
+   "ferroptosis inhibitor",
+   "geroprotector",
+   "antioxidant",
+   "food additive"
+  ]
+ },
+ {
+  "cas": "25013-16-5",
+  "titulo": "Butylated Hydroxyanisole",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "76-22-2",
+  "titulo": "Camphor",
+  "hazard": null,
+  "roles": [
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "506-87-6",
+  "titulo": "Ammonium Carbonate",
+  "hazard": null,
+  "roles": [
+   "food acidity regulator",
+   "raising agent"
+  ]
+ },
+ {
+  "cas": "513-77-9",
+  "titulo": "Barium Carbonate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "471-34-1",
+  "titulo": "Calcium Carbonate",
+  "hazard": null,
+  "roles": [
+   "fertilizer",
+   "antacid",
+   "food colouring",
+   "food firming agent"
+  ]
+ },
+ {
+  "cas": "554-13-2",
+  "titulo": "Lithium Carbonate",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "546-93-0",
+  "titulo": "Magnesium Carbonate",
+  "hazard": null,
+  "roles": [
+   "fertilizer",
+   "antacid"
+  ]
+ },
+ {
+  "cas": "3486-35-9",
+  "titulo": "Zinc Carbonate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "9004-32-4",
+  "titulo": "Sodium carboxymethyl cellulose",
+  "hazard": null,
+  "roles": [
+   "food additive"
+  ]
+ },
+ {
+  "cas": "86-74-8",
+  "titulo": "Carbazole",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "7440-44-0",
+  "titulo": "Carbon",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "528-50-7",
+  "titulo": "Cellobiose",
+  "hazard": null,
+  "roles": [
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "7439-92-1",
+  "titulo": "Lead",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "139-05-9",
+  "titulo": "Sodium Cyclamate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "108-91-8",
+  "titulo": "Cyclohexylamine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "66-81-9",
+  "titulo": "Cycloheximide",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "287-92-3",
+  "titulo": "Cyclopentane",
+  "hazard": null,
+  "roles": [
+   "non-polar solvent"
+  ]
+ },
+ {
+  "cas": "68-41-7",
+  "titulo": "Cycloserine",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "antitubercular agent",
+   "antimetabolite",
+   "antiinfective agent",
+   "NMDA receptor agonist"
+  ]
+ },
+ {
+  "cas": "118-10-5",
+  "titulo": "Cinchonine",
+  "hazard": null,
+  "roles": [
+   "metabolite"
+  ]
+ },
+ {
+  "cas": "7048-04-6",
+  "titulo": "L-Cysteine hydrochloride monohydrate",
+  "hazard": null,
+  "roles": [
+   "flour treatment agent",
+   "EC 4"
+  ]
+ },
+ {
+  "cas": "52-90-4",
+  "titulo": "L-(+)-Cysteine",
+  "hazard": null,
+  "roles": [
+   "flour treatment agent",
+   "EC 4"
+  ]
+ },
+ {
+  "cas": "56-89-3",
+  "titulo": "(-)-Cystine",
+  "hazard": null,
+  "roles": [
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "3012-65-5",
+  "titulo": "Diammonium Citrate",
+  "hazard": null,
+  "roles": [
+   "buffer"
+  ]
+ },
+ {
+  "cas": "6100-05-6",
+  "titulo": "Potassium Citrate",
+  "hazard": null,
+  "roles": [
+   "diuretic"
+  ]
+ },
+ {
+  "cas": "6132-04-3",
+  "titulo": "Sodium Citrate Dihydrate",
+  "hazard": null,
+  "roles": [
+   "anticoagulant"
+  ]
+ },
+ {
+  "cas": "302-17-0",
+  "titulo": "Chloral Hydrate",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "56-75-7",
+  "titulo": "Chloramphenicol",
+  "hazard": null,
+  "roles": [
+   "Mycoplasma genitalium metabolite",
+   "geroprotector",
+   "antimicrobial agent",
+   "antibacterial drug",
+   "protein synthesis inhibitor",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "7758-89-6",
+  "titulo": "Cuprous chloride",
+  "hazard": null,
+  "roles": [
+   "agrochemical",
+   "molluscicide"
+  ]
+ },
+ {
+  "cas": "10326-27-9",
+  "titulo": "Barium chloride, dihydrate",
+  "hazard": null,
+  "roles": [
+   "potassium channel blocker"
+  ]
+ },
+ {
+  "cas": "10035-04-8",
+  "titulo": "Calcium chloride, dihydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10043-52-4",
+  "titulo": "Calcium Chloride",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "6004-24-6",
+  "titulo": "Cetylpyridinium chloride monohydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "112-02-7",
+  "titulo": "Hexadecyltrimethylammonium chloride",
+  "hazard": null,
+  "roles": [
+   "surfactant"
+  ]
+ },
+ {
+  "cas": "7758-95-4",
+  "titulo": "Lead chloride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7646-79-9",
+  "titulo": "Cobalt chloride (cocl2)",
+  "hazard": null,
+  "roles": [
+   "sensitiser",
+   "calcium channel blocker",
+   "two-colour indicator",
+   "allergen"
+  ]
+ },
+ {
+  "cas": "7791-13-1",
+  "titulo": "Cobaltous chloride hexahydrate",
+  "hazard": null,
+  "roles": [
+   "allergen"
+  ]
+ },
+ {
+  "cas": "7447-39-4",
+  "titulo": "Cupric Chloride",
+  "hazard": null,
+  "roles": [
+   "EC 5"
+  ]
+ },
+ {
+  "cas": "7791-18-6",
+  "titulo": "Magnesium chloride hexahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7786-30-3",
+  "titulo": "Magnesium Chloride",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound"
+  ]
+ },
+ {
+  "cas": "13446-34-9",
+  "titulo": "Manganese Chloride Tetrahydrate",
+  "hazard": null,
+  "roles": [
+   "MRI contrast agent",
+   "nutraceutical"
+  ]
+ },
+ {
+  "cas": "7791-20-0",
+  "titulo": "Nickel chloride hexahydrate",
+  "hazard": null,
+  "roles": [
+   "sensitiser"
+  ]
+ },
+ {
+  "cas": "7447-40-7",
+  "titulo": "Potassium Chloride",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7791-11-9",
+  "titulo": "Rubidium Chloride",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "antidepressant",
+   "biomarker"
+  ]
+ },
+ {
+  "cas": "75-57-0",
+  "titulo": "Tetramethylammonium chloride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "67-03-8",
+  "titulo": "Thiamine Hydrochloride",
+  "hazard": null,
+  "roles": [
+   "insect repellent"
+  ]
+ },
+ {
+  "cas": "79-07-2",
+  "titulo": "Chloroacetamide",
+  "hazard": null,
+  "roles": [
+   "antimicrobial cosmetic preservative",
+   "fungicide",
+   "herbicide",
+   "antimicrobial agent"
+  ]
+ },
+ {
+  "cas": "7440-50-8",
+  "titulo": "Copper",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "64-86-8",
+  "titulo": "Colchicine",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity",
+    "male reproductive toxicity"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "57-88-5",
+  "titulo": "Cholesterol",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "human metabolite",
+   "Daphnia galeata metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "60-27-5",
+  "titulo": "creatinine",
+  "hazard": null,
+  "roles": [
+   "diagnostic agent",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "7440-47-3",
+  "titulo": "Chromium",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "4197-07-3",
+  "titulo": "Disodium 4,5-dihydroxy-3-phenylazonaphthalene-2,7-disulphonate",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "91-64-5",
+  "titulo": "Coumarin",
+  "hazard": null,
+  "roles": [
+   "fluorescent dye",
+   "plant metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "458-37-7",
+  "titulo": "Curcumin",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "metabolite",
+   "biological pigment",
+   "antineoplastic agent",
+   "flavouring agent",
+   "antifungal agent",
+   "lipoxygenase inhibitor",
+   "dye",
+   "iron chelator",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "124-18-5",
+  "titulo": "Decane",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "302-95-4",
+  "titulo": "Sodium Deoxycholate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "50-99-7",
+  "titulo": "D-Glucose",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "101-83-7",
+  "titulo": "Dicyclohexylamine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "95-76-1",
+  "titulo": "3,4-Dichloroaniline",
+  "hazard": null,
+  "roles": [
+   "xenobiotic",
+   "epitope"
+  ]
+ },
+ {
+  "cas": "76-54-0",
+  "titulo": "2',7'-Dichlorofluorescein",
+  "hazard": null,
+  "roles": [
+   "fluorochrome"
+  ]
+ },
+ {
+  "cas": "620-45-1",
+  "titulo": "2,6-Dichloroindophenol sodium",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "111-42-2",
+  "titulo": "Diethanolamine",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "122-39-4",
+  "titulo": "Diphenylamine",
+  "hazard": null,
+  "roles": [
+   "ferroptosis inhibitor",
+   "antioxidant",
+   "radical scavenger",
+   "carotogenesis inhibitor",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "140-22-7",
+  "titulo": "Diphenylcarbazide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "127-19-5",
+  "titulo": "Dimethylacetamide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "100-10-7",
+  "titulo": "4-(Dimethylamino)Benzaldehyde",
+  "hazard": null,
+  "roles": [
+   "chromogenic compound"
+  ]
+ },
+ {
+  "cas": "108-01-0",
+  "titulo": "2-(Dimethylamino)ethanol",
+  "hazard": null,
+  "roles": [
+   "radical scavenger",
+   "curing agent"
+  ]
+ },
+ {
+  "cas": "526-75-0",
+  "titulo": "2,3-Dimethylphenol",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "68-12-2",
+  "titulo": "Dimethylformamide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "67-68-5",
+  "titulo": "Dimethyl Sulfoxide",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "alkylating agent",
+   "non-narcotic analgesic",
+   "MRI contrast agent",
+   "polar aprotic solvent",
+   "radical scavenger",
+   "antidote",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "53-84-9",
+  "titulo": "Nadide",
+  "hazard": null,
+  "roles": [
+   "geroprotector"
+  ]
+ },
+ {
+  "cas": "123-91-1",
+  "titulo": "1,4-Dioxane",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "60676-86-0",
+  "titulo": "Silica",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1317-33-5",
+  "titulo": "Molybdenum disulfide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7775-14-6",
+  "titulo": "Sodium Dithionite",
+  "hazard": null,
+  "roles": [
+   "bleaching agent",
+   "reducing agent"
+  ]
+ },
+ {
+  "cas": "3483-12-3",
+  "titulo": "Dithiothreitol",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "60-10-6",
+  "titulo": "(Phenylazo)thioformic acid 2-phenylhydrazide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "112-40-3",
+  "titulo": "Dodecane",
+  "hazard": null,
+  "roles": [
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "151-21-3",
+  "titulo": "Sodium Lauryl Sulfate",
+  "hazard": null,
+  "roles": [
+   "detergent",
+   "protein denaturant"
+  ]
+ },
+ {
+  "cas": "1310-73-2",
+  "titulo": "Sodium Hydroxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "608-66-2",
+  "titulo": "Galactitol",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "mouse metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "60-00-4",
+  "titulo": "Ethylenediaminetetraacetic Acid",
+  "hazard": null,
+  "roles": [
+   "copper chelator",
+   "geroprotector",
+   "calcium chelator",
+   "antidote",
+   "anticoagulant"
+  ]
+ },
+ {
+  "cas": "17372-87-1",
+  "titulo": "Eosin",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "56360-46-4",
+  "titulo": "Spiro(isobenzofuran-1(3H),9'-(9H)xanthen)-3-one, 4',5'-dibromo-3',6'-dihydroxy-2',7'-dinitro-",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "106-89-8",
+  "titulo": "Epichlorohydrin",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "4196-99-0",
+  "titulo": "Sodium 6-(2-hydroxynaphthylazo)-3,4'-azodibenzenesulphonate",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "7440-31-5",
+  "titulo": "Tin atom",
+  "hazard": null,
+  "roles": [
+   "micronutrient"
+  ]
+ },
+ {
+  "cas": "1592-23-0",
+  "titulo": "Calcium Stearate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "557-04-0",
+  "titulo": "Magnesium Stearate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "822-16-2",
+  "titulo": "Sodium Stearate",
+  "hazard": null,
+  "roles": [
+   "detergent"
+  ]
+ },
+ {
+  "cas": "1634-04-4",
+  "titulo": "tert-Butyl methyl ether",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "non-polar solvent",
+   "fuel additive"
+  ]
+ },
+ {
+  "cas": "97-53-0",
+  "titulo": "Eugenol",
+  "hazard": null,
+  "roles": [
+   "sensitiser",
+   "volatile oil component",
+   "antibacterial agent",
+   "analgesic",
+   "antineoplastic agent",
+   "flavouring agent",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "103-85-5",
+  "titulo": "Phenylthiourea",
+  "hazard": null,
+  "roles": [
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "77-09-8",
+  "titulo": "Phenolphthalein",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Food and Drug Administration (FDA) and The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "2321-07-5",
+  "titulo": "Fluorescein",
+  "hazard": null,
+  "roles": [
+   "radioopaque medium",
+   "fluorescent dye"
+  ]
+ },
+ {
+  "cas": "7784-18-1",
+  "titulo": "Aluminum fluoride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "12125-01-8",
+  "titulo": "Ammonium fluoride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7789-75-5",
+  "titulo": "Calcium Fluoride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7783-47-3",
+  "titulo": "Stop",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "50-00-0",
+  "titulo": "Formaldehyde",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "109-94-4",
+  "titulo": "Ethyl formate",
+  "hazard": null,
+  "roles": [
+   "fumigant",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "141-53-7",
+  "titulo": "Sodium Formate",
+  "hazard": null,
+  "roles": [
+   "buffer",
+   "astringent"
+  ]
+ },
+ {
+  "cas": "7783-28-0",
+  "titulo": "Diammonium hydrogen phosphate",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7722-76-1",
+  "titulo": "Ammonium dihydrogen phosphate",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7789-77-7",
+  "titulo": "Brushite",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7757-93-9",
+  "titulo": "Calcium hydrogen phosphate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7758-23-8",
+  "titulo": "Calcium Dihydrogen Phosphate",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7758-87-4",
+  "titulo": "Tricalcium Phosphate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7758-11-4",
+  "titulo": "Potassium Phosphate, Dibasic",
+  "hazard": null,
+  "roles": [
+   "buffer"
+  ]
+ },
+ {
+  "cas": "7778-77-0",
+  "titulo": "Monobasic potassium phosphate",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7778-53-2",
+  "titulo": "Potassium Phosphate, Tribasic",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10039-32-4",
+  "titulo": "Phosphoric acid, disodium salt, dodecahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10028-24-7",
+  "titulo": "Sodium Phosphate, Dibasic, Dihydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7558-79-4",
+  "titulo": "Sodium Phosphate, Dibasic",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7558-80-7",
+  "titulo": "Monosodium phosphate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10049-21-5",
+  "titulo": "Sodium Phosphate, Monobasic, Monohydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7601-54-9",
+  "titulo": "Trisodium Phosphate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "57-48-7",
+  "titulo": "D-Fructose",
+  "hazard": null,
+  "roles": [
+   "sweetening agent"
+  ]
+ },
+ {
+  "cas": "117-84-0",
+  "titulo": "di-N-Octyl Phthalate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "632-99-5",
+  "titulo": "Basic fuchsin",
+  "hazard": null,
+  "roles": [
+   "carcinogenic agent",
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "3248-91-7",
+  "titulo": "New Fuchsin",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "141-01-5",
+  "titulo": "Ferrous Fumarate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "59-23-4",
+  "titulo": "D-Galactose",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "56-40-6",
+  "titulo": "Glycine",
+  "hazard": null,
+  "roles": [
+   "neurotransmitter",
+   "micronutrient",
+   "nutraceutical",
+   "hepatoprotective agent",
+   "EC 2"
+  ]
+ },
+ {
+  "cas": "107-43-7",
+  "titulo": "Betaine",
+  "hazard": null,
+  "roles": [
+   "fundamental metabolite"
+  ]
+ },
+ {
+  "cas": "299-28-5",
+  "titulo": "Calcium Gluconate",
+  "hazard": null,
+  "roles": [
+   "nutraceutical"
+  ]
+ },
+ {
+  "cas": "527-07-1",
+  "titulo": "Sodium Gluconate",
+  "hazard": null,
+  "roles": [
+   "chelator"
+  ]
+ },
+ {
+  "cas": "56-85-9",
+  "titulo": "L-Glutamine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "111-30-8",
+  "titulo": "Glutaraldehyde",
+  "hazard": null,
+  "roles": [
+   "disinfectant",
+   "cross-linking reagent",
+   "fixative"
+  ]
+ },
+ {
+  "cas": "27025-41-8",
+  "titulo": "Glutathione Disulfide",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "7782-42-5",
+  "titulo": "Carbon",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "90-05-1",
+  "titulo": "Guaiacol",
+  "hazard": null,
+  "roles": [
+   "disinfectant",
+   "plant metabolite",
+   "expectorant",
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "73-40-5",
+  "titulo": "Guanine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "517-28-2",
+  "titulo": "Hematoxylin",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7365-45-9",
+  "titulo": "4-(2-Hydroxyethyl)-1-piperazineethanesulfonic acid",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "142-82-5",
+  "titulo": "Heptane",
+  "hazard": null,
+  "roles": [
+   "non-polar solvent",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "100-97-0",
+  "titulo": "Hexamethylenetetramine",
+  "hazard": null,
+  "roles": [
+   "antibacterial drug"
+  ]
+ },
+ {
+  "cas": "110-54-3",
+  "titulo": "Hexane",
+  "hazard": {
+   "tipos": [
+    "male reproductive toxicity"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "123-31-9",
+  "titulo": "Hydroquinone",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "cofactor",
+   "carcinogenic agent",
+   "mouse metabolite",
+   "human xenobiotic metabolite",
+   "Escherichia coli metabolite",
+   "skin lightening agent"
+  ]
+ },
+ {
+  "cas": "17194-00-2",
+  "titulo": "Barium hydroxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1305-62-0",
+  "titulo": "Calcium Hydroxide",
+  "hazard": null,
+  "roles": [
+   "astringent"
+  ]
+ },
+ {
+  "cas": "20427-59-2",
+  "titulo": "Copper dihydroxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1309-42-8",
+  "titulo": "Magnesium Hydroxide",
+  "hazard": null,
+  "roles": [
+   "antacid",
+   "flame retardant"
+  ]
+ },
+ {
+  "cas": "1310-58-3",
+  "titulo": "Potassium Hydroxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "148-24-3",
+  "titulo": "8-Hydroxyquinoline",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent",
+   "iron chelator",
+   "antiseptic drug",
+   "antifungal agrochemical"
+  ]
+ },
+ {
+  "cas": "121-54-0",
+  "titulo": "Benzethonium Chloride",
+  "hazard": null,
+  "roles": [
+   "antiviral agent",
+   "antibacterial agent",
+   "antifungal agent",
+   "antiseptic drug",
+   "disinfectant"
+  ]
+ },
+ {
+  "cas": "288-32-4",
+  "titulo": "Imidazole",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "39236-46-9",
+  "titulo": "Imidazolidinyl Urea",
+  "hazard": null,
+  "roles": [
+   "antimicrobial agent"
+  ]
+ },
+ {
+  "cas": "860-22-0",
+  "titulo": "Indigo carmine",
+  "hazard": null,
+  "roles": [
+   "two-colour indicator",
+   "histological dye",
+   "food colouring"
+  ]
+ },
+ {
+  "cas": "58-63-9",
+  "titulo": "Inosine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "87-89-8",
+  "titulo": "An inositol",
+  "hazard": null,
+  "roles": [
+   "member of compatible osmolytes",
+   "nutrient",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "7758-05-6",
+  "titulo": "Potassium Iodate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7681-55-2",
+  "titulo": "Sodium Iodate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7681-11-0",
+  "titulo": "Potassium Iodide",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "radical scavenger",
+   "expectorant"
+  ]
+ },
+ {
+  "cas": "7681-82-5",
+  "titulo": "Sodium Iodide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7553-56-2",
+  "titulo": "Iodine",
+  "hazard": null,
+  "roles": [
+   "nutrient"
+  ]
+ },
+ {
+  "cas": "75-03-6",
+  "titulo": "Iodoethane",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "75-47-8",
+  "titulo": "Iodoform",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "3380-34-5",
+  "titulo": "Triclosan",
+  "hazard": null,
+  "roles": [
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "91-56-5",
+  "titulo": "Isatin",
+  "hazard": null,
+  "roles": [
+   "EC 1"
+  ]
+ },
+ {
+  "cas": "540-84-1",
+  "titulo": "2,2,4-Trimethylpentane",
+  "hazard": null,
+  "roles": [
+   "non-polar solvent",
+   "nephrotoxic agent",
+   "fuel additive"
+  ]
+ },
+ {
+  "cas": "525-79-1",
+  "titulo": "Kinetin",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "cytokinin"
+  ]
+ },
+ {
+  "cas": "70-18-8",
+  "titulo": "Glutathione",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "antioxidant",
+   "cofactor",
+   "mouse metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "skin lightening agent"
+  ]
+ },
+ {
+  "cas": "3184-13-2",
+  "titulo": "Ornithine hydrochloride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "72-17-3",
+  "titulo": "Sodium Lactate",
+  "hazard": null,
+  "roles": [
+   "food acidity regulator",
+   "food preservative"
+  ]
+ },
+ {
+  "cas": "64044-51-5",
+  "titulo": "alpha-Lactose monohydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "111-82-0",
+  "titulo": "Methyl Laurate",
+  "hazard": null,
+  "roles": [
+   "metabolite"
+  ]
+ },
+ {
+  "cas": "73-32-5",
+  "titulo": "L-Isoleucine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "61-90-5",
+  "titulo": "L-Leucine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "78-70-6",
+  "titulo": "Linalool",
+  "hazard": null,
+  "roles": [
+   "volatile oil component",
+   "antimicrobial agent",
+   "fragrance",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "657-27-2",
+  "titulo": "L-Lysine monohydrochloride",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "105-53-3",
+  "titulo": "Diethyl Malonate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "3458-28-4",
+  "titulo": "Demannose",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "108-78-1",
+  "titulo": "Melamine",
+  "hazard": null,
+  "roles": [
+   "xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "89-78-1",
+  "titulo": "Menthol",
+  "hazard": null,
+  "roles": [
+   "volatile oil component"
+  ]
+ },
+ {
+  "cas": "60-24-2",
+  "titulo": "2-Mercaptoethanol",
+  "hazard": null,
+  "roles": [
+   "geroprotector"
+  ]
+ },
+ {
+  "cas": "7681-57-4",
+  "titulo": "Sodium Pyrosulfite",
+  "hazard": null,
+  "roles": [
+   "food antioxidant"
+  ]
+ },
+ {
+  "cas": "13718-26-8",
+  "titulo": "Sodium metavanadate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "872-50-4",
+  "titulo": "N-methyl-2-pyrrolidone",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "The Environmental Protection Agency (EPA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "108-87-2",
+  "titulo": "Methylcyclohexane",
+  "hazard": null,
+  "roles": [
+   "aprotic solvent",
+   "plant metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "63-68-3",
+  "titulo": "L-Methionine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "antidote to paracetamol poisoning",
+   "mouse metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "5466-77-3",
+  "titulo": "Octinoxate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "110-27-0",
+  "titulo": "Isopropyl Myristate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10102-40-6",
+  "titulo": "Sodium molybdate dihydrate",
+  "hazard": null,
+  "roles": [
+   "poison"
+  ]
+ },
+ {
+  "cas": "108-90-7",
+  "titulo": "Chlorobenzene",
+  "hazard": null,
+  "roles": [
+   "solvent"
+  ]
+ },
+ {
+  "cas": "123-94-4",
+  "titulo": "Monostearin",
+  "hazard": null,
+  "roles": [
+   "Caenorhabditis elegans metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "141-43-5",
+  "titulo": "Ethanolamine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "10163-15-2",
+  "titulo": "Sodium Monofluorophosphate",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent"
+  ]
+ },
+ {
+  "cas": "110-91-8",
+  "titulo": "Morpholine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "69227-93-6",
+  "titulo": "dodecyl beta-D-maltoside",
+  "hazard": null,
+  "roles": [
+   "detergent"
+  ]
+ },
+ {
+  "cas": "91-20-3",
+  "titulo": "Naphthalene",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "134-32-7",
+  "titulo": "1-Naphthylamine",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "135-19-3",
+  "titulo": "2-Naphthol",
+  "hazard": null,
+  "roles": [
+   "antinematodal drug",
+   "radical scavenger",
+   "genotoxin",
+   "mouse metabolite",
+   "human xenobiotic metabolite",
+   "human urinary metabolite"
+  ]
+ },
+ {
+  "cas": "484-11-7",
+  "titulo": "2,9-Dimethyl-1,10-phenanthroline",
+  "hazard": null,
+  "roles": [
+   "copper chelator",
+   "chelator"
+  ]
+ },
+ {
+  "cas": "98-92-0",
+  "titulo": "Nicotinamide",
+  "hazard": null,
+  "roles": [
+   "geroprotector",
+   "antioxidant",
+   "cofactor",
+   "metabolite",
+   "EC 3"
+  ]
+ },
+ {
+  "cas": "8005-03-6",
+  "titulo": "2,7-Naphthalenedisulfonic acid, 4-amino-5-hydroxy-3-(2-(4-nitrophenyl)diazenyl)-6-(2-phenyldiazenyl)-, sodium salt (1:?)",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "485-47-2",
+  "titulo": "Ninhydrin",
+  "hazard": null,
+  "roles": [
+   "colour indicator",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "99-76-3",
+  "titulo": "Methylparaben",
+  "hazard": null,
+  "roles": [
+   "antifungal agent",
+   "neuroprotective agent",
+   "antimicrobial food preservative",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "94-13-3",
+  "titulo": "Propylparaben",
+  "hazard": null,
+  "roles": [
+   "antimicrobial agent",
+   "antifungal agent"
+  ]
+ },
+ {
+  "cas": "7697-37-2",
+  "titulo": "Nitric Acid",
+  "hazard": null,
+  "roles": [
+   "reagent",
+   "protic solvent"
+  ]
+ },
+ {
+  "cas": "10022-68-1",
+  "titulo": "Cadmium nitrate tetrahydrate",
+  "hazard": null,
+  "roles": [
+   "genotoxin",
+   "carcinogenic agent",
+   "hepatotoxic agent"
+  ]
+ },
+ {
+  "cas": "13477-34-4",
+  "titulo": "Calcium nitrate tetrahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7789-18-6",
+  "titulo": "Cesium nitrate",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound"
+  ]
+ },
+ {
+  "cas": "10026-22-9",
+  "titulo": "Cobaltous nitrate hexahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7790-69-4",
+  "titulo": "Lithium nitrate",
+  "hazard": null,
+  "roles": [
+   "oxidising agent"
+  ]
+ },
+ {
+  "cas": "7761-88-8",
+  "titulo": "Silver Nitrate",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "astringent"
+  ]
+ },
+ {
+  "cas": "7758-09-0",
+  "titulo": "Potassium nitrite",
+  "hazard": null,
+  "roles": [
+   "antihypertensive agent",
+   "antimicrobial food preservative"
+  ]
+ },
+ {
+  "cas": "552-89-6",
+  "titulo": "2-Nitrobenzaldehyde",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "99-61-6",
+  "titulo": "3-Nitrobenzaldehyde",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "555-16-8",
+  "titulo": "4-Nitrobenzaldehyde",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "98-95-3",
+  "titulo": "Nitrobenzene",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "2492-87-7",
+  "titulo": "p-Nitrophenyl beta-D-glucopyranoside",
+  "hazard": null,
+  "roles": [
+   "chromogenic compound"
+  ]
+ },
+ {
+  "cas": "100-02-7",
+  "titulo": "4-Nitrophenol",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "111-65-9",
+  "titulo": "Octane",
+  "hazard": null,
+  "roles": [
+   "xenobiotic"
+  ]
+ },
+ {
+  "cas": "3687-46-5",
+  "titulo": "Decyl Oleate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1400-62-0",
+  "titulo": "Orcein",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1113-38-8",
+  "titulo": "Ammonium Oxalate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "62-76-0",
+  "titulo": "Sodium Oxalate",
+  "hazard": null,
+  "roles": [
+   "reducing agent",
+   "poison"
+  ]
+ },
+ {
+  "cas": "1309-64-4",
+  "titulo": "Antimony Trioxide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "1305-78-8",
+  "titulo": "Calcium Oxide",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "1306-38-3",
+  "titulo": "Ceria",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1317-38-0",
+  "titulo": "Copper oxide (CuO)",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1308-38-9",
+  "titulo": "Chromia",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1309-37-1",
+  "titulo": "Iron oxide (Fe2O3)",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1313-13-9",
+  "titulo": "Manganese dioxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1313-27-5",
+  "titulo": "Molybdenum trioxide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code and the World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "13463-67-7",
+  "titulo": "Titanium dioxide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "California Labor Code"
+  },
+  "roles": []
+ },
+ {
+  "cas": "1314-62-1",
+  "titulo": "Vanadium oxide (V2O5)",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "104-94-9",
+  "titulo": "P-Anisidine",
+  "hazard": null,
+  "roles": [
+   "reagent",
+   "genotoxin"
+  ]
+ },
+ {
+  "cas": "106-50-3",
+  "titulo": "P-Phenylenediamine",
+  "hazard": null,
+  "roles": [
+   "reagent",
+   "dye",
+   "allergen",
+   "hapten"
+  ]
+ },
+ {
+  "cas": "7440-05-3",
+  "titulo": "Palladium",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "540-10-3",
+  "titulo": "Cetyl Palmitate",
+  "hazard": null,
+  "roles": [
+   "metabolite"
+  ]
+ },
+ {
+  "cas": "81-13-0",
+  "titulo": "Dexpanthenol",
+  "hazard": null,
+  "roles": [
+   "cholinergic drug",
+   "provitamin"
+  ]
+ },
+ {
+  "cas": "137-08-6",
+  "titulo": "Calcium Pantothenate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "569-61-9",
+  "titulo": "Pararosaniline Hydrochloride",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "109-66-0",
+  "titulo": "Pentane",
+  "hazard": null,
+  "roles": [
+   "non-polar solvent",
+   "refrigerant"
+  ]
+ },
+ {
+  "cas": "1314-56-3",
+  "titulo": "Phosphorus pentoxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7790-28-5",
+  "titulo": "Sodium periodate",
+  "hazard": null,
+  "roles": [
+   "oxidising agent"
+  ]
+ },
+ {
+  "cas": "94-36-0",
+  "titulo": "Benzoyl Peroxide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "110-85-0",
+  "titulo": "Piperazine",
+  "hazard": null,
+  "roles": [
+   "anthelminthic drug"
+  ]
+ },
+ {
+  "cas": "85-85-8",
+  "titulo": "1-(2-Pyridylazo)-2-naphthol",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "120-80-9",
+  "titulo": "Catechol",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The World Health Organization's International Agency for Research on Cancer (IARC)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "13472-36-1",
+  "titulo": "Sodium pyrophosphate decahydrate",
+  "hazard": null,
+  "roles": [
+   "chelator",
+   "food emulsifier",
+   "food thickening agent"
+  ]
+ },
+ {
+  "cas": "7722-88-5",
+  "titulo": "Tetrasodium Pyrophosphate",
+  "hazard": null,
+  "roles": [
+   "chelator",
+   "food emulsifier",
+   "food thickening agent"
+  ]
+ },
+ {
+  "cas": "109-97-7",
+  "titulo": "Pyrrole",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "123-75-1",
+  "titulo": "Pyrrolidine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "113-24-6",
+  "titulo": "Sodium pyruvate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "6226-79-5",
+  "titulo": "Ponceau S",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "7440-22-4",
+  "titulo": "Silver",
+  "hazard": null,
+  "roles": [
+   "Escherichia coli metabolite"
+  ]
+ },
+ {
+  "cas": "4197-25-5",
+  "titulo": "Sudan Black B",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "57-55-6",
+  "titulo": "Propylene Glycol",
+  "hazard": null,
+  "roles": [
+   "protic solvent",
+   "allergen",
+   "mouse metabolite",
+   "human xenobiotic metabolite"
+  ]
+ },
+ {
+  "cas": "121-79-9",
+  "titulo": "Propyl Gallate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "115-40-2",
+  "titulo": "Bromocresol Purple",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "17629-30-0",
+  "titulo": "Raffinose, pentahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "50-69-1",
+  "titulo": "D-Ribose",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "81-88-9",
+  "titulo": "Rhodamine B",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The Food and Drug Administration (FDA)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "57-50-1",
+  "titulo": "Sucrose",
+  "hazard": null,
+  "roles": [
+   "osmolyte",
+   "sweetening agent",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "477-73-6",
+  "titulo": "C.I. Basic Red 2",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "90-02-8",
+  "titulo": "Salicylaldehyde",
+  "hazard": null,
+  "roles": [
+   "nematicide",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "119-36-8",
+  "titulo": "Methyl Salicylate",
+  "hazard": null,
+  "roles": [
+   "insect attractant",
+   "metabolite",
+   "flavouring agent"
+  ]
+ },
+ {
+  "cas": "54-21-7",
+  "titulo": "Sodium Salicylate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7782-49-2",
+  "titulo": "Selenium",
+  "hazard": null,
+  "roles": [
+   "micronutrient"
+  ]
+ },
+ {
+  "cas": "10102-18-8",
+  "titulo": "Sodium Selenite",
+  "hazard": null,
+  "roles": [
+   "nutraceutical"
+  ]
+ },
+ {
+  "cas": "56-45-1",
+  "titulo": "L-Serine",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "112926-00-8",
+  "titulo": "Silica",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "24634-61-5",
+  "titulo": "Potassium Sorbate",
+  "hazard": null,
+  "roles": [
+   "antimicrobial food preservative"
+  ]
+ },
+ {
+  "cas": "50-70-4",
+  "titulo": "Sorbitol",
+  "hazard": null,
+  "roles": [
+   "metabolite",
+   "laxative",
+   "sweetening agent",
+   "cathartic",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "food humectant"
+  ]
+ },
+ {
+  "cas": "6106-21-4",
+  "titulo": "Sodium Succinate Hexahydrate",
+  "hazard": null,
+  "roles": [
+   "nutraceutical"
+  ]
+ },
+ {
+  "cas": "7773-06-0",
+  "titulo": "Ammonium sulfamate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7784-31-8",
+  "titulo": "Aluminium sulfate octadecahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10043-01-3",
+  "titulo": "Aluminum Sulfate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7784-26-1",
+  "titulo": "Ammonium alum",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7784-24-9",
+  "titulo": "Aluminum potassium sulfate dodecahydrate",
+  "hazard": null,
+  "roles": [
+   "mordant",
+   "astringent",
+   "flame retardant"
+  ]
+ },
+ {
+  "cas": "7783-20-2",
+  "titulo": "Ammonium Sulfate",
+  "hazard": null,
+  "roles": [
+   "NMR chemical shift reference compound",
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "10101-41-4",
+  "titulo": "Calcium Sulfate Dihydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7778-18-9",
+  "titulo": "Calcium Sulfate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10026-24-1",
+  "titulo": "Cobaltous sulfate heptahydrate",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "7758-98-7",
+  "titulo": "Copper Sulfate",
+  "hazard": null,
+  "roles": [
+   "sensitiser",
+   "emetic",
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "3810-74-0",
+  "titulo": "Streptomycin Sulfate",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "7782-63-0",
+  "titulo": "Ferrous sulfate heptahydrate",
+  "hazard": null,
+  "roles": [
+   "nutraceutical",
+   "reducing agent",
+   "anti-anaemic agent"
+  ]
+ },
+ {
+  "cas": "13463-43-9",
+  "titulo": "Ferrous sulfate monohydrate",
+  "hazard": null,
+  "roles": [
+   "nutraceutical",
+   "reducing agent",
+   "anti-anaemic agent"
+  ]
+ },
+ {
+  "cas": "15244-10-7",
+  "titulo": "Ferric sulfate hydrate",
+  "hazard": null,
+  "roles": [
+   "catalyst",
+   "mordant",
+   "astringent"
+  ]
+ },
+ {
+  "cas": "10034-99-8",
+  "titulo": "Magnesium Sulfate Heptahydrate",
+  "hazard": null,
+  "roles": [
+   "laxative",
+   "cathartic"
+  ]
+ },
+ {
+  "cas": "7487-88-9",
+  "titulo": "Sulfuric acid magnesium salt (1:1)",
+  "hazard": null,
+  "roles": [
+   "fertilizer",
+   "analgesic",
+   "cardiovascular drug",
+   "anticonvulsant",
+   "anti-arrhythmia drug",
+   "calcium channel blocker",
+   "anaesthetic",
+   "tocolytic agent"
+  ]
+ },
+ {
+  "cas": "10034-96-5",
+  "titulo": "Manganese sulfate monohydrate",
+  "hazard": null,
+  "roles": [
+   "nutraceutical"
+  ]
+ },
+ {
+  "cas": "1405-10-3",
+  "titulo": "Neomycin Sulfate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10101-97-0",
+  "titulo": "Nickel sulfate hexahydrate",
+  "hazard": null,
+  "roles": [
+   "sensitiser"
+  ]
+ },
+ {
+  "cas": "7778-80-5",
+  "titulo": "Potassium Sulfate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "49842-07-1",
+  "titulo": "Tobramycin Sulfate",
+  "hazard": {
+   "tipos": [
+    "developmental toxicity"
+   ],
+   "org": "state or federal government labeling requirements"
+  },
+  "roles": []
+ },
+ {
+  "cas": "7446-20-0",
+  "titulo": "Zinc Sulfate Heptahydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7733-02-0",
+  "titulo": "Zinc Sulfate",
+  "hazard": null,
+  "roles": [
+   "fertilizer"
+  ]
+ },
+ {
+  "cas": "7757-83-7",
+  "titulo": "Sodium Sulfite",
+  "hazard": null,
+  "roles": [
+   "reducing agent",
+   "food preservative"
+  ]
+ },
+ {
+  "cas": "7647-01-0",
+  "titulo": "Hydrochloric Acid",
+  "hazard": null,
+  "roles": [
+   "micronutrient"
+  ]
+ },
+ {
+  "cas": "868-14-4",
+  "titulo": "Potassium Bitartrate",
+  "hazard": null,
+  "roles": [
+   "antimicrobial agent",
+   "laxative",
+   "food acidity regulator",
+   "plant metabolite",
+   "food anticaking agent",
+   "food stabiliser",
+   "food humectant",
+   "raising agent"
+  ]
+ },
+ {
+  "cas": "868-18-8",
+  "titulo": "Sodium Tartrate",
+  "hazard": null,
+  "roles": [
+   "food emulsifier"
+  ]
+ },
+ {
+  "cas": "1934-21-0",
+  "titulo": "Tartrazine",
+  "hazard": null,
+  "roles": [
+   "histological dye",
+   "food colouring"
+  ]
+ },
+ {
+  "cas": "107-35-7",
+  "titulo": "Taurine",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "nutrient",
+   "radical scavenger",
+   "glycine receptor agonist",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "110-18-9",
+  "titulo": "N,N,N',N'-Tetramethylethylenediamine",
+  "hazard": null,
+  "roles": [
+   "catalyst",
+   "chelator"
+  ]
+ },
+ {
+  "cas": "79-34-5",
+  "titulo": "1,1,2,2-Tetrachloroethane",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Institute for Occupational Safety and Health (NIOSH)"
+  },
+  "roles": []
+ },
+ {
+  "cas": "629-59-4",
+  "titulo": "Tetradecane",
+  "hazard": null,
+  "roles": [
+   "volatile oil component",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "54-64-8",
+  "titulo": "Thimerosal",
+  "hazard": null,
+  "roles": [
+   "antiseptic drug",
+   "disinfectant",
+   "antifungal drug",
+   "drug allergen"
+  ]
+ },
+ {
+  "cas": "89-83-8",
+  "titulo": "Thymol",
+  "hazard": null,
+  "roles": [
+   "volatile oil component"
+  ]
+ },
+ {
+  "cas": "125-20-2",
+  "titulo": "Thymolphthalein",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "62-55-5",
+  "titulo": "Thioacetamide",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "333-20-0",
+  "titulo": "Potassium thiocyanate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "5421-46-5",
+  "titulo": "Ammonium Thioglycolate",
+  "hazard": null,
+  "roles": [
+   "allergen",
+   "reducing agent"
+  ]
+ },
+ {
+  "cas": "367-51-1",
+  "titulo": "Sodium Thioglycolate",
+  "hazard": null,
+  "roles": [
+   "reducing agent"
+  ]
+ },
+ {
+  "cas": "79-19-6",
+  "titulo": "Thiosemicarbazide",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "7783-18-8",
+  "titulo": "Ammonium thiosulfate",
+  "hazard": null,
+  "roles": [
+   "herbicide safener",
+   "bleaching agent",
+   "fertilizer",
+   "reducing agent"
+  ]
+ },
+ {
+  "cas": "10102-17-7",
+  "titulo": "Sodium Thiosulfate Pentahydrate",
+  "hazard": null,
+  "roles": [
+   "nephroprotective agent",
+   "antifungal drug",
+   "antidote to cyanide poisoning"
+  ]
+ },
+ {
+  "cas": "7772-98-7",
+  "titulo": "Sodium Thiosulfate",
+  "hazard": null,
+  "roles": [
+   "nephroprotective agent",
+   "antifungal drug",
+   "antidote to cyanide poisoning"
+  ]
+ },
+ {
+  "cas": "612-82-8",
+  "titulo": "3,3'-Dimethylbenzidine dihydrochloride",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "The National Toxicology Program"
+  },
+  "roles": []
+ },
+ {
+  "cas": "119-93-7",
+  "titulo": "o-Tolidine",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "106-49-0",
+  "titulo": "p-Toluidine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "51-35-4",
+  "titulo": "L-Hydroxyproline",
+  "hazard": null,
+  "roles": [
+   "mouse metabolite",
+   "plant metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "6138-23-4",
+  "titulo": "Trehalose, dihydrate",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "72-19-5",
+  "titulo": "L-Threonine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "10025-91-9",
+  "titulo": "Antimony trichloride",
+  "hazard": null,
+  "roles": [
+   "Lewis acid",
+   "colorimetric reagent",
+   "apoptosis inducer"
+  ]
+ },
+ {
+  "cas": "629-50-5",
+  "titulo": "Tridecane",
+  "hazard": null,
+  "roles": [
+   "volatile oil component",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "121-44-8",
+  "titulo": "Triethylamine",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "112-27-6",
+  "titulo": "Triethylene Glycol",
+  "hazard": null,
+  "roles": [
+   "plasticiser"
+  ]
+ },
+ {
+  "cas": "603-35-0",
+  "titulo": "Triphenylphosphine",
+  "hazard": null,
+  "roles": [
+   "reducing agent"
+  ]
+ },
+ {
+  "cas": "73-22-3",
+  "titulo": "L-Tryptophan",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "antidepressant",
+   "nutraceutical",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite"
+  ]
+ },
+ {
+  "cas": "77-86-1",
+  "titulo": "Tris(hydroxymethyl)aminomethane",
+  "hazard": null,
+  "roles": [
+   "buffer"
+  ]
+ },
+ {
+  "cas": "633-96-5",
+  "titulo": "C.I. Acid Orange 7",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "10213-10-2",
+  "titulo": "Sodium Tungstate Dihydrate",
+  "hazard": null,
+  "roles": [
+   "reagent"
+  ]
+ },
+ {
+  "cas": "1120-21-4",
+  "titulo": "Undecane",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1193-24-4",
+  "titulo": "6-Hydroxy-4-pyrimidinone",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "57-13-6",
+  "titulo": "Urea",
+  "hazard": null,
+  "roles": [
+   "fertilizer",
+   "flour treatment agent",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "Daphnia magna metabolite"
+  ]
+ },
+ {
+  "cas": "72-18-4",
+  "titulo": "L-Valine",
+  "hazard": null,
+  "roles": [
+   "micronutrient",
+   "nutraceutical",
+   "mouse metabolite",
+   "Saccharomyces cerevisiae metabolite",
+   "Escherichia coli metabolite",
+   "human metabolite",
+   "algal metabolite"
+  ]
+ },
+ {
+  "cas": "121-33-5",
+  "titulo": "Vanillin",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "flavouring agent",
+   "anticonvulsant",
+   "anti-inflammatory agent",
+   "plant metabolite"
+  ]
+ },
+ {
+  "cas": "633-03-4",
+  "titulo": "Brilliant Green",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent",
+   "antiseptic drug",
+   "fluorochrome",
+   "poison",
+   "histological dye",
+   "environmental contaminant"
+  ]
+ },
+ {
+  "cas": "76-60-8",
+  "titulo": "Bromocresol Green",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "19381-50-1",
+  "titulo": "C.I. Acid Green 1",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "2869-83-2",
+  "titulo": "Janus Green B",
+  "hazard": null,
+  "roles": [
+   "dye"
+  ]
+ },
+ {
+  "cas": "5141-20-8",
+  "titulo": "Light green SF yellowish",
+  "hazard": null,
+  "roles": [
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "569-64-2",
+  "titulo": "Malachite Green",
+  "hazard": null,
+  "roles": [
+   "antibacterial agent",
+   "carcinogenic agent",
+   "teratogenic agent",
+   "fluorochrome",
+   "histological dye",
+   "environmental contaminant",
+   "antifungal drug"
+  ]
+ },
+ {
+  "cas": "2353-45-9",
+  "titulo": "Fast Green FCF",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye",
+   "food colouring"
+  ]
+ },
+ {
+  "cas": "915-67-3",
+  "titulo": "Amaranth",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "573-58-0",
+  "titulo": "Congo red",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "1733-12-6",
+  "titulo": "Cresol Red",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "143-74-8",
+  "titulo": "Phenol Red",
+  "hazard": null,
+  "roles": [
+   "diagnostic agent",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "493-52-7",
+  "titulo": "2-((4-(Dimethylamino)phenyl)diazenyl)benzoic acid",
+  "hazard": null,
+  "roles": [
+   "dye"
+  ]
+ },
+ {
+  "cas": "7385-67-3",
+  "titulo": "Nile Red",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "553-24-2",
+  "titulo": "Neutral Red",
+  "hazard": null,
+  "roles": [
+   "dye",
+   "acid-base indicator",
+   "two-colour indicator"
+  ]
+ },
+ {
+  "cas": "2610-10-8",
+  "titulo": "Sirius Red F3B",
+  "hazard": null,
+  "roles": [
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "10114-58-6",
+  "titulo": "1,3-Benzenediamine, 4,4'-(1,3-phenylenebis(azo))bis-, dihydrochloride",
+  "hazard": null,
+  "roles": [
+   "allergen",
+   "fluorochrome",
+   "histological dye"
+  ]
+ },
+ {
+  "cas": "548-62-9",
+  "titulo": "Crystal Violet",
+  "hazard": {
+   "tipos": [
+    "cancer"
+   ],
+   "org": "an independent committee of scientific and health experts"
+  },
+  "roles": []
+ },
+ {
+  "cas": "83-88-5",
+  "titulo": "Riboflavin",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "cofactor",
+   "photosensitizing agent",
+   "anti-inflammatory agent",
+   "mouse metabolite",
+   "plant metabolite",
+   "Escherichia coli metabolite",
+   "food colouring",
+   "fundamental metabolite",
+   "human urinary metabolite"
+  ]
+ },
+ {
+  "cas": "59-02-9",
+  "titulo": "alpha-Tocopherol",
+  "hazard": null,
+  "roles": [
+   "antioxidant",
+   "antiviral agent",
+   "micronutrient",
+   "EC 2"
+  ]
+ },
+ {
+  "cas": "58-86-6",
+  "titulo": "D-Xylose",
+  "hazard": null,
+  "roles": []
+ },
+ {
+  "cas": "87-99-0",
+  "titulo": "(2S,4R)-Pentane-1,2,3,4,5-Pentol",
+  "hazard": null,
+  "roles": [
+   "plant metabolite",
+   "human metabolite",
+   "Daphnia magna metabolite"
+  ]
+ },
+ {
+  "cas": "7440-66-6",
+  "titulo": "Zinc",
+  "hazard": null,
+  "roles": [
+   "micronutrient"
+  ]
+ }
+]
