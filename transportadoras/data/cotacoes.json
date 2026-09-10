@@ -3526,5 +3526,47 @@
       }
     ],
     "id": "mtuc6ja001cls"
+  },
+  {
+    "data": "2026-09-10",
+    "pedido": "1 - EXPRESSLAB",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "61.682.943/0001-36",
+    "cepR": "06739-020",
+    "cnpjD": "10.735.145/0019-13",
+    "cepD": "65030-005",
+    "vnf": "14.244,30",
+    "pes": "10",
+    "vol": "1",
+    "med": "60 X 50 60",
+    "mat": "EQUIPAMENTO",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TPL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mtvl31vk82noz"
   }
 ]
