@@ -24,5 +24,32 @@
     "id": "t5ifpm7mtvj0mw8",
     "criadoEm": "2026-09-10T12:51:31.688Z",
     "atualizadoEm": "2026-09-10T17:15:56.104Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 3,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1Kens6xpvApof7hqzHrblxcJjyxZue-SG"
+    ],
+    "codigo": "225282",
+    "endereco": " Rua Mariapolis, 211",
+    "bairro": "Flora Rica 2",
+    "cidade": "Peruíbe",
+    "estado": "SP",
+    "area": 80,
+    "matricula": "",
+    "nomeProprietario": "Raquel Mohino",
+    "contatoProprietario1": "(11) 99502-9524",
+    "observacoes": "Descrição do imóvel:\nCasa nova com 2 dormitórios, sendo 1 suíte, cozinha americana com móveis planejados, acabamento em porcelanato. Conta com 2 banheiros internos e 1 banheiro externo para a área da piscina, lavanderia coberta, despensa, cerca elétrica e sistema de monitoramento por câmeras. Localizada em um bairro muito tranquilo, com moradores residentes, a apenas 5 minutos do centro. Próxima a 3 grandes supermercados, escolas, UPA e outros comércios. A 5 minutos da praia, é uma excelente opção tanto para lazer quanto para moradia.",
+    "id": "gkbvi45mtvvqrwa",
+    "criadoEm": "2026-09-10T18:47:46.618Z",
+    "atualizadoEm": "2026-09-10T18:47:46.619Z"
   }
 ]
