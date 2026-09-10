@@ -47,7 +47,8 @@ class GitHubDataService {
     try {
       const ts = Date.now();
       const res = await fetch(`${this.apiBase()}/${path}?ref=${this.branch()}&_t=${ts}`, {
-        headers: { ...this.headers(), 'Cache-Control': 'no-cache' },
+        headers: this.headers(),
+        cache: 'no-store',
       });
       if (!res.ok) {
         if (res.status === 404) return { lista: [], sha: null };
@@ -68,18 +69,26 @@ class GitHubDataService {
   }
 
   async saveCollection<T>(path: string, lista: T[], sha: string | null, message?: string): Promise<string> {
+    const cfg = this.getConfig();
+    if (!cfg?.token) throw new Error('Token GitHub não configurado. Acesse Configurações.');
+
     const utf8 = new TextEncoder().encode(JSON.stringify(lista, null, 2));
     let binary = '';
     utf8.forEach(b => { binary += String.fromCharCode(b); });
     const content = btoa(binary);
 
-    const freshSha = async () => {
-      const r = await fetch(`${this.apiBase()}/${path}?ref=${this.branch()}&_t=${Date.now()}`, {
-        headers: { ...this.headers(), 'Cache-Control': 'no-cache' },
-      });
-      if (r.ok) return ((await r.json()) as { sha: string }).sha;
+    const fetchFreshSha = async (): Promise<string | null> => {
+      try {
+        const r = await fetch(`${this.apiBase()}/${path}?ref=${this.branch()}&_t=${Date.now()}`, {
+          headers: this.headers(),
+          cache: 'no-store',
+        });
+        if (r.ok) return ((await r.json()) as { sha: string }).sha;
+      } catch { /* ignora */ }
       return null;
     };
+
+    const delay = (ms: number) => new Promise(r => setTimeout(r, ms));
 
     const doPut = (currentSha: string | null) => fetch(`${this.apiBase()}/${path}`, {
       method: 'PUT',
@@ -92,12 +101,25 @@ class GitHubDataService {
       }),
     });
 
-    const usedSha = (await freshSha()) ?? sha;
+    const usedSha = (await fetchFreshSha()) ?? sha;
     let res = await doPut(usedSha);
+
     if (res.status === 409 || res.status === 422) {
-      res = await doPut(await freshSha());
+      await delay(600);
+      const retrySha = (await fetchFreshSha()) ?? usedSha;
+      res = await doPut(retrySha);
     }
-    if (!res.ok) throw new Error(`Erro ao salvar (${res.status}): ${await res.text()}`);
+
+    if (res.status === 409 || res.status === 422) {
+      await delay(1000);
+      const retrySha3 = (await fetchFreshSha()) ?? usedSha;
+      res = await doPut(retrySha3);
+    }
+
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error((err as { message?: string }).message ?? `Erro ao salvar (${res.status})`);
+    }
     const json = await res.json() as { content: { sha: string } };
     const newSha = json.content.sha;
     const ck = CACHE_MAP[path];
