@@ -217,11 +217,11 @@
     "empenho": "",
     "pedido": "NF 2792/2801/2802",
     "problemaRaiz": "Tentativa de entrega 2792/2801/2802 no endereço incorreto. O endereco correto informado pela transportadora e o da\nDivisao de Patrimonio da Universidade Federal do Ceara (UFC), Campus do Pici.",
-    "acaoTomada": "A transportadora aguarda Carta de Correcao Eletronica (CCE) das notas fiscais e autorizacao formal para emitir o custo de reentrega\n(NF 2792: R$ 131,99 + ICMS; NFs 2801/2802: R$ 173,62 + ICMS).\n",
+    "acaoTomada": "10/09\nTransportadora informou que o cliente recusou devido ja ter recebido o material no mês 07. Autorizamos a devolução.\n",
     "prioridade": "alta",
     "posicao": "aberto",
     "criadoEm": "2026-09-03T13:43:21.531Z",
-    "atualizadoEm": "2026-09-03T13:43:21.531Z"
+    "atualizadoEm": "2026-09-10T13:00:39.271Z"
   },
   {
     "id": "mtt0e67qlthnk",
