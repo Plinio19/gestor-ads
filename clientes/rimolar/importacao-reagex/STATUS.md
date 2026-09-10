@@ -34,7 +34,7 @@
 
 ## Pendências / a confirmar antes de importar de fato
 
-1. **"Prazo de disponibilidade"** — preenchido com o número `6` (dias). O formato exato que a Tray espera nesse campo nunca foi confirmado na tela de importação (não consegui abrir o template original pra checar — ver nota técnica abaixo). **Confirmar na tela de importação da Tray antes de subir o arquivo.**
+1. ~~"Prazo de disponibilidade"~~ — **confirmado pelo gestor:** número inteiro simples `6`. Já é o valor usado na planilha final.
 2. **86 CAS não encontrados no PubChem** (alguns parecem ter erro de digitação na planilha da Exodo, ex.: `7446-09-05` tem um dígito a mais). Esses produtos ficaram só com a descrição de categoria, sem dados moleculares.
 3. **320 produtos sem CAS ou com CAS não encontrado** também ficaram sem a seção "Informações químicas" — descrição ainda completa (categoria + specs), só sem o enriquecimento extra.
 4. Recomendo fazer uma importação de teste com poucas linhas primeiro (a própria Tray permite isso) antes de subir as 2.599 de uma vez.
