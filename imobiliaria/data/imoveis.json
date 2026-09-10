@@ -34,7 +34,7 @@
     "lavanderia": false,
     "aceitaPet": false,
     "status": "disponivel",
-    "finalidade": "locacao",
+    "finalidade": "venda",
     "linksFotos": [
       "https://drive.google.com/drive/folders/1Kens6xpvApof7hqzHrblxcJjyxZue-SG"
     ],
@@ -47,9 +47,9 @@
     "matricula": "",
     "nomeProprietario": "Raquel Mohino",
     "contatoProprietario1": "(11) 99502-9524",
-    "observacoes": "Descrição do imóvel:\nCasa nova com 2 dormitórios, sendo 1 suíte, cozinha americana com móveis planejados, acabamento em porcelanato. Conta com 2 banheiros internos e 1 banheiro externo para a área da piscina, lavanderia coberta, despensa, cerca elétrica e sistema de monitoramento por câmeras. Localizada em um bairro muito tranquilo, com moradores residentes, a apenas 5 minutos do centro. Próxima a 3 grandes supermercados, escolas, UPA e outros comércios. A 5 minutos da praia, é uma excelente opção tanto para lazer quanto para moradia.",
+    "observacoes": "Descrição do imóvel:\nCasa nova com 2 dormitórios, sendo 1 suíte, cozinha americana com móveis planejados, acabamento em porcelanato. Conta com 2 banheiros internos e 1 banheiro externo para a área da piscina, lavanderia coberta, despensa, cerca elétrica e sistema de monitoramento por câmeras. Localizada em um bairro muito tranquilo, com moradores residentes, a apenas 5 minutos do centro. Próxima a 3 grandes supermercados, escolas, UPA e outros comércios. A 5 minutos da praia, é uma excelente opção tanto para lazer quanto para moradia.\n\nEndereço do imóvel:\nEndereço: Rua Mariapolis, 211\nBairro: Flora Rica 2 - Cidade: Peruibe\nCep: 11771-246 - Região: Peruibe\n\n\n",
     "id": "gkbvi45mtvvqrwa",
     "criadoEm": "2026-09-10T18:47:46.618Z",
-    "atualizadoEm": "2026-09-10T18:47:46.619Z"
+    "atualizadoEm": "2026-09-10T18:48:33.087Z"
   }
 ]
