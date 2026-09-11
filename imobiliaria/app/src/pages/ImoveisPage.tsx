@@ -172,6 +172,20 @@ export default function ImoveisPage() {
       render: (v: number) => <Text>{fmtBRL(v)}</Text>,
     },
     {
+      title: 'Comissão 6%',
+      dataIndex: 'valorVenda',
+      key: 'comissao',
+      width: 130,
+      render: (v: number) => v ? <Text type="warning">{fmtBRL(v * 0.06)}</Text> : <Text>—</Text>,
+    },
+    {
+      title: 'Total c/ Comissão',
+      dataIndex: 'valorVenda',
+      key: 'totalComissao',
+      width: 150,
+      render: (v: number) => v ? <Text strong>{fmtBRL(v * 1.06)}</Text> : <Text>—</Text>,
+    },
+    {
       title: 'Proprietário',
       key: 'prop',
       width: 170,
