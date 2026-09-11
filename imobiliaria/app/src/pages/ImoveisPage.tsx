@@ -22,6 +22,15 @@ function fmtBRL(v?: number) {
   return v.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
 }
 
+const currencyFormatter = (val?: number | string) => {
+  if (val === undefined || val === null || val === '') return '';
+  const n = Number(String(val).replace(/\./g, '').replace(',', '.'));
+  if (isNaN(n)) return String(val);
+  return n.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+};
+const currencyParser = (val?: string) =>
+  val ? val.replace(/\./g, '').replace(',', '.') : '';
+
 const IMOVEL_VAZIO: Partial<Imovel> = {
   quartos: 0, banheiros: 1, vagasGaragem: 0,
   mobiliado: false, quintal: false, lavanderia: false, aceitaPet: false,
@@ -360,22 +369,22 @@ export default function ImoveisPage() {
           <Row gutter={12}>
             <Col span={12}>
               <Form.Item name="valorAluguel" label="Valor do aluguel">
-                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} decimalSeparator="," formatter={v => String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} />
+                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} precision={2} formatter={currencyFormatter} parser={currencyParser} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item name="valorVenda" label="Valor de venda">
-                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} decimalSeparator="," formatter={v => String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} />
+                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} precision={2} formatter={currencyFormatter} parser={currencyParser} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item name="valorCondominio" label="Valor do condomínio">
-                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} decimalSeparator="," formatter={v => String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} />
+                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} precision={2} formatter={currencyFormatter} parser={currencyParser} />
               </Form.Item>
             </Col>
             <Col span={12}>
               <Form.Item name="valorIptu" label="Valor do IPTU (anual)">
-                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} decimalSeparator="," formatter={v => String(v).replace(/\B(?=(\d{3})+(?!\d))/g, '.')} />
+                <InputNumber style={{ width: '100%' }} prefix="R$" min={0} precision={2} formatter={currencyFormatter} parser={currencyParser} />
               </Form.Item>
             </Col>
           </Row>
