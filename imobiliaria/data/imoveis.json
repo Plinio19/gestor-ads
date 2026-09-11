@@ -105,5 +105,31 @@
     "id": "dajpf4wmtx71edz",
     "criadoEm": "2026-09-11T16:51:44.279Z",
     "atualizadoEm": "2026-09-11T16:52:00.528Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1W_S5IBgB1n3u5a8ACOKT1FssQU96qagl"
+    ],
+    "codigo": "238612",
+    "endereco": "Rua Nerval Leal, 1236",
+    "bairro": "Jardim Itapel",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "valorVenda": 250000,
+    "nomeProprietario": "Patrícia Cristina Rodrigues perez Francisco",
+    "contatoProprietario1": "(11) 97342-1065",
+    "observacoes": "Casa a venda em Itanhaém/SP\n\n2 dormitórios\nSala\nCozinha\nBanheiro\nGaragem\nChurrasqueira\n\nREF: 238612\n\nLocalizada no jardim itapel \n10 min da praia e do centro da cidade",
+    "id": "60kwfi4mtx77tip",
+    "criadoEm": "2026-09-11T16:56:43.825Z",
+    "atualizadoEm": "2026-09-11T16:56:43.825Z"
   }
 ]
