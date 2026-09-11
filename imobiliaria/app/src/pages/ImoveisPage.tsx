@@ -45,6 +45,7 @@ export default function ImoveisPage() {
   const [busca, setBusca] = useState('');
   const [filtroStatus, setFiltroStatus] = useState<string>('todos');
   const [filtroFinalidade, setFiltroFinalidade] = useState<string>('todos');
+  const [filtroCidade, setFiltroCidade] = useState<string>('todas');
   const [form] = Form.useForm();
 
   useEffect(() => { void fetch(); }, [fetch]);
@@ -105,7 +106,8 @@ export default function ImoveisPage() {
       .some(v => v?.toLowerCase().includes(q));
     const matchStatus = filtroStatus === 'todos' || im.status === filtroStatus;
     const matchFinalidade = filtroFinalidade === 'todos' || im.finalidade === filtroFinalidade;
-    return matchBusca && matchStatus && matchFinalidade;
+    const matchCidade = filtroCidade === 'todas' || im.cidade?.toLowerCase() === filtroCidade;
+    return matchBusca && matchStatus && matchFinalidade && matchCidade;
   });
 
   const disponiveis = imoveis.filter(i => i.status === 'disponivel').length;
@@ -266,6 +268,21 @@ export default function ImoveisPage() {
             { value: 'locacao', label: 'Locação' },
             { value: 'venda', label: 'Venda' },
             { value: 'ambos', label: 'Ambos' },
+          ]}
+        />
+        <Select
+          style={{ width: 150 }}
+          value={filtroCidade}
+          onChange={setFiltroCidade}
+          showSearch
+          options={[
+            { value: 'todas', label: 'Todas as cidades' },
+            { value: 'itanhaém', label: 'Itanhaém' },
+            { value: 'peruíbe', label: 'Peruíbe' },
+            { value: 'mongaguá', label: 'Mongaguá' },
+            { value: 'praia grande', label: 'Praia Grande' },
+            { value: 'santos', label: 'Santos' },
+            { value: 'são vicente', label: 'São Vicente' },
           ]}
         />
       </div>
