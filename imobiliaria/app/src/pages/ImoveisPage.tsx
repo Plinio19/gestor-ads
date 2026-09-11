@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import {
   Button, Table, Tag, Space, Form, Input, Select,
   InputNumber, Switch, Drawer, Row, Col, Tooltip, Popconfirm,
-  message, Badge, Divider, Typography, Empty,
+  message, Badge, Divider, Typography, Empty, Popover,
 } from 'antd';
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, HomeOutlined,
-  SearchOutlined, FilterOutlined, LinkOutlined, MinusCircleOutlined,
+  SearchOutlined, FilterOutlined, LinkOutlined, MinusCircleOutlined, PictureOutlined,
 } from '@ant-design/icons';
 import type { Imovel } from '../types';
 import { useImoveisStore } from '../stores/useImoveisStore';
@@ -183,9 +183,33 @@ export default function ImoveisPage() {
     {
       title: '',
       key: 'acoes',
-      width: 80,
+      width: 110,
       render: (_: unknown, r: Imovel) => (
         <Space>
+          {r.linksFotos.length === 1 ? (
+            <Tooltip title="Ver foto">
+              <Button size="small" icon={<PictureOutlined />} onClick={() => window.open(r.linksFotos[0], '_blank')} />
+            </Tooltip>
+          ) : r.linksFotos.length > 1 ? (
+            <Popover
+              trigger="click"
+              title={`Fotos (${r.linksFotos.length})`}
+              content={
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 4, minWidth: 160 }}>
+                  {r.linksFotos.map((link, i) => (
+                    <Button key={i} type="link" size="small" icon={<LinkOutlined />}
+                      onClick={() => window.open(link, '_blank')} style={{ textAlign: 'left', padding: '0 4px' }}>
+                      Foto {i + 1}
+                    </Button>
+                  ))}
+                </div>
+              }
+            >
+              <Tooltip title={`Ver ${r.linksFotos.length} fotos`}>
+                <Button size="small" icon={<PictureOutlined />} />
+              </Tooltip>
+            </Popover>
+          ) : null}
           <Tooltip title="Editar"><Button size="small" icon={<EditOutlined />} onClick={() => abrirEditar(r)} /></Tooltip>
           <Popconfirm title="Remover este imóvel?" onConfirm={() => excluir(r.id)} okText="Sim" cancelText="Não">
             <Tooltip title="Excluir"><Button size="small" danger icon={<DeleteOutlined />} /></Tooltip>
