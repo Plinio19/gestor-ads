@@ -149,17 +149,6 @@ export default function ImoveisPage() {
         : <Badge status="error" text="Alugado" />,
     },
     {
-      title: 'Detalhes',
-      key: 'detalhes',
-      width: 160,
-      render: (_: unknown, r: Imovel) => (
-        <Text type="secondary" style={{ fontSize: 12 }}>
-          {r.quartos}q · {r.banheiros}bh · {r.vagasGaragem}vg
-          {r.area ? ` · ${r.area}m²` : ''}
-        </Text>
-      ),
-    },
-    {
       title: 'Aluguel',
       dataIndex: 'valorAluguel',
       width: 120,
