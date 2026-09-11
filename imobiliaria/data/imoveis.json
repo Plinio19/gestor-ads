@@ -79,5 +79,31 @@
     "id": "9b8zgvbmtx70b2z",
     "criadoEm": "2026-09-11T16:50:53.339Z",
     "atualizadoEm": "2026-09-11T16:50:53.339Z"
+  },
+  {
+    "quartos": 1,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1ftLwWoUaS0KOXFAOoD02CumS1YGsouWF"
+    ],
+    "codigo": "STUDIO 3",
+    "endereco": "Rua Marcos",
+    "bairro": "Balneario tres marias",
+    "cidade": "Peruibe",
+    "estado": "SP",
+    "area": 41,
+    "valorVenda": 289000,
+    "nomeProprietario": "Alessandro",
+    "contatoProprietario1": "13997891281",
+    "id": "dajpf4wmtx71edz",
+    "criadoEm": "2026-09-11T16:51:44.279Z",
+    "atualizadoEm": "2026-09-11T16:51:44.279Z"
   }
 ]
