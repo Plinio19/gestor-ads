@@ -182,5 +182,30 @@
     "id": "mz66lx2mtxhm2jv",
     "criadoEm": "2026-09-11T21:47:44.875Z",
     "atualizadoEm": "2026-09-11T21:52:06.774Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 3,
+    "vagasGaragem": 10,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "72337",
+    "endereco": "Rua Espirito Santo, 1975",
+    "bairro": "Cibratel II",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 770,
+    "valorVenda": 600000,
+    "nomeProprietario": "Vera Cubissimo",
+    "contatoProprietario1": "(11) 97311-5830",
+    "observacoes": "Sobrado a venda no Cibratel II, Itanhaém/SP\n\nRef: 72337\n\nTerreno de 770m2\n4 dormitorios, sendo 2 suítes\nSala\nCozinha\nBanheiro\nLavanderia\nArea gourmet com forno de pizza e fogão a lenha\nJardim com coqueiros e palmeiras\nDocumentação ok \n\nPara mais informações (13) 99789-1281\nMartinele\nCRECI 241464",
+    "id": "cqid7aemtxi5bwa",
+    "criadoEm": "2026-09-11T22:02:43.450Z",
+    "atualizadoEm": "2026-09-11T22:02:43.450Z"
   }
 ]
