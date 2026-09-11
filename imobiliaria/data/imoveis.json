@@ -89,7 +89,7 @@
     "lavanderia": false,
     "aceitaPet": false,
     "status": "disponivel",
-    "finalidade": "locacao",
+    "finalidade": "venda",
     "linksFotos": [
       "https://drive.google.com/drive/folders/1ftLwWoUaS0KOXFAOoD02CumS1YGsouWF"
     ],
@@ -104,6 +104,6 @@
     "contatoProprietario1": "13 99704-9252",
     "id": "dajpf4wmtx71edz",
     "criadoEm": "2026-09-11T16:51:44.279Z",
-    "atualizadoEm": "2026-09-11T16:51:52.660Z"
+    "atualizadoEm": "2026-09-11T16:52:00.528Z"
   }
 ]
