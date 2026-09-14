@@ -3670,7 +3670,7 @@
       },
       {
         "trans": "TPL",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       },
@@ -3682,7 +3682,7 @@
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       }
