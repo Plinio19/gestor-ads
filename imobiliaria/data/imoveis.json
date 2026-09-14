@@ -238,5 +238,32 @@
     "id": "aw71wgjmtxi98wm",
     "criadoEm": "2026-09-11T22:05:46.198Z",
     "atualizadoEm": "2026-09-14T16:33:49.244Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 2,
+    "vagasGaragem": 3,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1em67BSVUfQyo2exrta56F5Z_lIuKqGmz"
+    ],
+    "codigo": "235876",
+    "endereco": "Avenida Mustafá Abbasi, 790",
+    "bairro": "Nova Itanhaém (Interior)",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 117,
+    "valorVenda": 525000,
+    "nomeProprietario": "Ana Carolina de Menezes Fernandes",
+    "contatoProprietario1": "(11) 94133-1978",
+    "observacoes": "Casa a venda no bairro Nova Itanhaém, Itanhaém/SP\n\n4 dormitórios sendo 1 suíte c/ closet\nTerreno de 250m² \nSala integrada à cozinha interna\n2 banheiros externos\n3 vagas de garagem\n\nR$ 525.000,00\n\nREF: 235876\n\nPara mais informações (13) 99789-1281\nMartinele\nCRECI 241464",
+    "id": "zdkx3yhmu1hjxpe",
+    "criadoEm": "2026-09-14T16:57:09.986Z",
+    "atualizadoEm": "2026-09-14T16:57:09.986Z"
   }
 ]
