@@ -168,7 +168,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1E2AyhwW0S52aql-3I2nUVvQws0Mzh9qr"
+    ],
     "codigo": "231889",
     "endereco": "Rua São Pedro, 251",
     "bairro": "Nsa Sra do Sion",
@@ -181,7 +183,7 @@
     "observacoes": "Casa a venda no bairro Nsa Sra do Sion, Itanhaém/SP\n\nRef: 231889\n\nSala\nCozinha americana\nBanheiro\n2 dormitórios\n2 vagas de garagem\n\nR$ 255.000,00\n\nPara mais informações (13) 99789-1281\nMartinele - CRECI 241464",
     "id": "mz66lx2mtxhm2jv",
     "criadoEm": "2026-09-11T21:47:44.875Z",
-    "atualizadoEm": "2026-09-11T21:52:06.774Z"
+    "atualizadoEm": "2026-09-14T16:42:46.886Z"
   },
   {
     "quartos": 4,
