@@ -3751,6 +3751,12 @@
         "valor": "",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "TODOBRASIL TRANSPORTES",
+        "valor": "600,00",
+        "cotacao": "536155",
+        "prazo": ""
       }
     ],
     "id": "mu1jcv0kmajml"
