@@ -3760,5 +3760,46 @@
       }
     ],
     "id": "mu1jcv0kmajml"
+  },
+  {
+    "data": "2026-09-14",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "50372736000169",
+    "cepD": "19806-900",
+    "vnf": "2456,00",
+    "pes": "117",
+    "vol": "13",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1830 RISCO: 8",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mu1mlwetjzd8u"
   }
 ]
