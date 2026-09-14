@@ -275,7 +275,7 @@
     "lavanderia": false,
     "aceitaPet": false,
     "status": "disponivel",
-    "finalidade": "locacao",
+    "finalidade": "venda",
     "linksFotos": [
       "https://drive.google.com/drive/folders/1-UmD4iSuxjxbwWnyXXs-nddXiHgbv5VW"
     ],
@@ -291,6 +291,6 @@
     "observacoes": "Casa a venda no Tupy, Itanhaém/SP\n\n2 dormitórios (sendo 1 suíte)\nSala e cozinha americana\nGaragem para dois carros\nÁrea gourmet com churrasqueira\nMobiliado\n\nREF: 213580\n\nR$ 255.000,00\n\nPara mais informações (13) 99789-1281\nMartinele - CRECI 241464",
     "id": "fbfuu93mu1lrirv",
     "criadoEm": "2026-09-14T18:55:02.347Z",
-    "atualizadoEm": "2026-09-14T18:55:02.347Z"
+    "atualizadoEm": "2026-09-14T18:58:14.720Z"
   }
 ]
