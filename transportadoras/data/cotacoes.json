@@ -3688,5 +3688,29 @@
       }
     ],
     "id": "mu1a9bhq64sl1"
+  },
+  {
+    "data": "2026-09-14",
+    "pedido": "3027",
+    "tomador": "DESTINATARIO",
+    "col": "SIM",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "11.098.189/0001-13",
+    "cepD": "21931-242",
+    "vnf": "900,00",
+    "pes": "300",
+    "vol": "20",
+    "med": "36 x 31 x 25",
+    "mat": "AGUA DEIONIZADA",
+    "transRows": [
+      {
+        "trans": "TRANSITA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mu1blkcji1c01"
   }
 ]
