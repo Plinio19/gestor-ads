@@ -265,5 +265,32 @@
     "id": "zdkx3yhmu1hjxpe",
     "criadoEm": "2026-09-14T16:57:09.986Z",
     "atualizadoEm": "2026-09-14T18:36:38.705Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1-UmD4iSuxjxbwWnyXXs-nddXiHgbv5VW"
+    ],
+    "codigo": "213580",
+    "endereco": "Rua Iara, 237",
+    "bairro": "Balneario Tupy",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 105,
+    "valorVenda": 255000,
+    "nomeProprietario": "Daniela Araujo",
+    "contatoProprietario1": "(11) 94053-0058",
+    "observacoes": "Casa a venda no Tupy, Itanhaém/SP\n\n2 dormitórios (sendo 1 suíte)\nSala e cozinha americana\nGaragem para dois carros\nÁrea gourmet com churrasqueira\nMobiliado\n\nREF: 213580\n\nR$ 255.000,00\n\nPara mais informações (13) 99789-1281\nMartinele - CRECI 241464",
+    "id": "fbfuu93mu1lrirv",
+    "criadoEm": "2026-09-14T18:55:02.347Z",
+    "atualizadoEm": "2026-09-14T18:55:02.347Z"
   }
 ]
