@@ -3712,5 +3712,47 @@
       }
     ],
     "id": "mu1blkcji1c01"
+  },
+  {
+    "data": "2026-09-14",
+    "pedido": "1",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "61.682.943/0001-36",
+    "cepR": "06739-020",
+    "cnpjD": "10.735.145/0019-13",
+    "cepD": "65030-005",
+    "vnf": "14.244,30",
+    "pes": "10",
+    "vol": "1",
+    "med": "60 x 40 x 30",
+    "mat": "EQUIPAMENTO",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TPL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mu1jcv0kmajml"
   }
 ]
