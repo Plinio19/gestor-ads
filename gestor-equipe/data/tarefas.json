@@ -117,14 +117,15 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-10-05",
     "prioridade": "alta",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Financeiro",
     "criadaEm": "2026-09-02T19:00:00.000Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "5",
       "horario": "08:30"
-    }
+    },
+    "concluidaEm": "2026-09-15T14:00:43.587Z"
   },
   {
     "id": "notascompra2out26",
@@ -197,6 +198,22 @@
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "1",
+      "horario": "08:30"
+    }
+  },
+  {
+    "id": "353gxyjmu2qovur",
+    "titulo": "Notas para Senger Acessoria",
+    "descricao": "Enviar Notas de Entrada e Saida para Senger",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-11-05",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-09-15T14:00:43.587Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "5",
       "horario": "08:30"
     }
   }
