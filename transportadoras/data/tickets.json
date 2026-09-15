@@ -236,5 +236,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-08T18:34:38.198Z",
     "atualizadoEm": "2026-09-08T18:38:11.424Z"
+  },
+  {
+    "id": "mu2zib0xd9l4r",
+    "numero": "0020",
+    "assunto": "EBSERH - Qntd Xilol Incorreto",
+    "notaFiscal": "NF2989",
+    "empenho": "2026NE001312",
+    "pedido": "NF2989",
+    "problemaRaiz": "NF de 360L de Xilol, foi entregue somente 355",
+    "acaoTomada": "Emitir pedido de 5L de xilol via amostra grátis e enviar ",
+    "prioridade": "alta",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-15T18:07:33.201Z",
+    "atualizadoEm": "2026-09-15T18:07:33.201Z"
   }
 ]
