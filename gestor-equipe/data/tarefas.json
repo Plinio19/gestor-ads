@@ -193,14 +193,15 @@
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2026-10-01",
     "prioridade": "alta",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Financeiro",
     "criadaEm": "2026-09-14T18:13:34.601Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "1",
       "horario": "08:30"
-    }
+    },
+    "concluidaEm": "2026-09-15T14:00:54.531Z"
   },
   {
     "id": "353gxyjmu2qovur",
@@ -232,6 +233,21 @@
       "tipo": "mensal",
       "diaMes": "10",
       "horario": "08:00"
+    }
+  },
+  {
+    "id": "n4cv3h7mu2qp4ar",
+    "titulo": "Verificar status e Preenchar KPI licitações ",
+    "responsavelId": "m2wbm5dmt92d0z1",
+    "prazo": "2026-11-01",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Financeiro",
+    "criadaEm": "2026-09-15T14:00:54.531Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "1",
+      "horario": "08:30"
     }
   }
 ]
