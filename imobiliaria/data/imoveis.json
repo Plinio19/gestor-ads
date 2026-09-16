@@ -350,5 +350,32 @@
     "id": "z9qnvlbmu1nvjnp",
     "criadoEm": "2026-09-14T19:54:09.349Z",
     "atualizadoEm": "2026-09-14T19:54:09.349Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 3,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/18TXMdL1PlBtnN7yfIpY8Q_6uVvpf-AsO"
+    ],
+    "codigo": "234574",
+    "endereco": "Rua Beritiba, 4601 - casa 4",
+    "bairro": "Suarão",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 66,
+    "valorVenda": 358000,
+    "nomeProprietario": "Eduardo Jose da Silva",
+    "contatoProprietario1": "(11) 99109-5858",
+    "observacoes": "Sobrado a venda em condominio fechado no Suarão, Itanhaém/SP\n\nRef: 234574\n\n2 dormitórios sendo as duas suítes\nSala\nCozinha planejada\nLavabo\nÁrea de serviço\nChurrasqueira\n1 vaga de garagem\n\nCondomínio oferece churrasqueira coletiva com forno de pizza, piscina, portões automáticos e sociais e câmeras de monitoramento 24 horas.\nLocalizado a 50 metros da praia\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464",
+    "id": "mwo9pm2mu45duqm",
+    "criadoEm": "2026-09-16T13:39:49.342Z",
+    "atualizadoEm": "2026-09-16T13:39:49.342Z"
   }
 ]
