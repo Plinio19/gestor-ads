@@ -1,15 +1,18 @@
 import { useEffect, useState } from 'react';
+import dayjs from 'dayjs';
 import {
   Button, Table, Tag, Space, Form, Input, Select,
   InputNumber, Switch, Drawer, Row, Col, Tooltip, Popconfirm,
-  message, Badge, Divider, Typography, Empty, Popover,
+  message, Badge, Divider, Typography, Empty, Popover, Modal, DatePicker,
 } from 'antd';
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, HomeOutlined,
   SearchOutlined, FilterOutlined, LinkOutlined, MinusCircleOutlined, PictureOutlined,
+  DollarOutlined, CheckCircleOutlined, ClockCircleOutlined,
 } from '@ant-design/icons';
-import type { Imovel } from '../types';
+import type { Imovel, ContaReceber, ParcelaFinanceiro } from '../types';
 import { useImoveisStore } from '../stores/useImoveisStore';
+import { useContasReceberStore } from '../stores/useContasReceberStore';
 
 const { Text, Title } = Typography;
 
@@ -39,6 +42,7 @@ const IMOVEL_VAZIO: Partial<Imovel> = {
 
 export default function ImoveisPage() {
   const { imoveis, loading, fetch, upsert, remove } = useImoveisStore();
+  const { upsert: upsertConta, fetch: fetchContas } = useContasReceberStore();
   const [drawerOpen, setDrawerOpen] = useState(false);
   const [editando, setEditando] = useState<Imovel | null>(null);
   const [salvando, setSalvando] = useState(false);
@@ -47,8 +51,70 @@ export default function ImoveisPage() {
   const [filtroFinalidade, setFiltroFinalidade] = useState<string>('todos');
   const [filtroCidade, setFiltroCidade] = useState<string>('todas');
   const [form] = Form.useForm();
+  const [modalComissao, setModalComissao] = useState<{ open: boolean; imovel: Imovel | null }>({ open: false, imovel: null });
+  const [formComissao] = Form.useForm();
+  const [parcelasComissao, setParcelasComissao] = useState<ParcelaFinanceiro[]>([]);
+  const [qtdParcelasComissao, setQtdParcelasComissao] = useState(1);
+  const [salvandoComissao, setSalvandoComissao] = useState(false);
 
-  useEffect(() => { void fetch(); }, [fetch]);
+  useEffect(() => { void fetch(); void fetchContas(); }, [fetch, fetchContas]);
+
+  function abrirModalComissao(imovel: Imovel) {
+    formComissao.resetFields();
+    const comissao = (imovel.valorVenda || 0) * 0.06;
+    formComissao.setFieldsValue({
+      clienteNome: imovel.nomeProprietario || '',
+      valorTotal: comissao,
+      primeiroVencimento: dayjs(),
+    });
+    setQtdParcelasComissao(1);
+    setParcelasComissao([]);
+    setModalComissao({ open: true, imovel });
+  }
+
+  function gerarParcelasComissao() {
+    const valorTotal = Number(formComissao.getFieldValue('valorTotal') || 0);
+    const vencBase = formComissao.getFieldValue('primeiroVencimento');
+    if (!valorTotal) { message.warning('Informe o valor total.'); return; }
+    const base = vencBase ? dayjs(vencBase) : dayjs();
+    const valorParcela = +(valorTotal / qtdParcelasComissao).toFixed(2);
+    const novas: ParcelaFinanceiro[] = Array.from({ length: qtdParcelasComissao }, (_, i) => ({
+      id: uid(),
+      valor: i === qtdParcelasComissao - 1
+        ? +(valorTotal - valorParcela * (qtdParcelasComissao - 1)).toFixed(2)
+        : valorParcela,
+      vencimento: base.add(i, 'month').format('YYYY-MM-DD'),
+      pago: false,
+    }));
+    setParcelasComissao(novas);
+  }
+
+  async function salvarComissao() {
+    if (!modalComissao.imovel) return;
+    let vals: Record<string, unknown>;
+    try { vals = await formComissao.validateFields(); } catch { return; }
+    if (parcelasComissao.length === 0) { message.warning('Gere as parcelas antes de salvar.'); return; }
+    setSalvandoComissao(true);
+    try {
+      const im = modalComissao.imovel;
+      const conta: ContaReceber = {
+        id: uid(),
+        descricao: `Comissão venda — Imóvel ${im.codigo}`,
+        clienteNome: String(vals.clienteNome || ''),
+        tipo: 'comissao_venda',
+        imovelId: im.id,
+        imovelCodigo: im.codigo,
+        valorTotal: Number(vals.valorTotal),
+        parcelas: parcelasComissao,
+        observacoes: vals.observacoes as string | undefined,
+        criadoEm: new Date().toISOString().slice(0, 10),
+      };
+      await upsertConta(conta);
+      message.success('Comissão lançada em Contas a Receber!');
+      setModalComissao({ open: false, imovel: null });
+    } catch { message.error('Erro ao salvar.'); }
+    finally { setSalvandoComissao(false); }
+  }
 
   const abrirNovo = () => {
     setEditando(null);
@@ -214,6 +280,11 @@ export default function ImoveisPage() {
                 <Button size="small" icon={<PictureOutlined />} />
               </Tooltip>
             </Popover>
+          ) : null}
+          {r.valorVenda ? (
+            <Tooltip title="Lançar comissão em Financeiro">
+              <Button size="small" icon={<DollarOutlined />} style={{ color: '#52c41a', borderColor: '#52c41a' }} onClick={() => abrirModalComissao(r)} />
+            </Tooltip>
           ) : null}
           <Tooltip title="Editar"><Button size="small" icon={<EditOutlined />} onClick={() => abrirEditar(r)} /></Tooltip>
           <Popconfirm title="Remover este imóvel?" onConfirm={() => excluir(r.id)} okText="Sim" cancelText="Não">
@@ -477,6 +548,92 @@ export default function ImoveisPage() {
           </Form.Item>
         </Form>
       </Drawer>
+
+      {/* Modal de Comissão → Financeiro */}
+      <Modal
+        title={<span><DollarOutlined style={{ color: '#52c41a' }} /> Lançar Comissão — Imóvel {modalComissao.imovel?.codigo}</span>}
+        open={modalComissao.open}
+        onCancel={() => setModalComissao({ open: false, imovel: null })}
+        onOk={salvarComissao}
+        okText="Lançar em Contas a Receber"
+        confirmLoading={salvandoComissao}
+        width={580}
+      >
+        {modalComissao.imovel && (
+          <div>
+            <div style={{ background: '#f6ffed', border: '1px solid #b7eb8f', borderRadius: 6, padding: '8px 12px', marginBottom: 16 }}>
+              <Text type="secondary">Venda: </Text>
+              <Text strong>{fmtBRL(modalComissao.imovel.valorVenda)}</Text>
+              <Text type="secondary" style={{ marginLeft: 16 }}>Comissão 6%: </Text>
+              <Text strong style={{ color: '#52c41a' }}>{fmtBRL((modalComissao.imovel.valorVenda || 0) * 0.06)}</Text>
+            </div>
+            <Form form={formComissao} layout="vertical">
+              <Row gutter={12}>
+                <Col span={12}>
+                  <Form.Item name="clienteNome" label="Comprador / Cliente" rules={[{ required: true }]}>
+                    <Input placeholder="Nome do comprador" />
+                  </Form.Item>
+                </Col>
+                <Col span={12}>
+                  <Form.Item name="valorTotal" label="Valor da Comissão (R$)" rules={[{ required: true }]}>
+                    <InputNumber
+                      style={{ width: '100%' }} min={0} precision={2}
+                      formatter={currencyFormatter} parser={currencyParser}
+                    />
+                  </Form.Item>
+                </Col>
+              </Row>
+              <Form.Item name="observacoes" label="Observações">
+                <Input.TextArea rows={2} />
+              </Form.Item>
+              <Divider style={{ margin: '8px 0' }}>Parcelas</Divider>
+              <Row gutter={12} align="bottom">
+                <Col span={7}>
+                  <Form.Item label="Nº parcelas" style={{ marginBottom: 8 }}>
+                    <InputNumber min={1} max={60} value={qtdParcelasComissao} onChange={v => setQtdParcelasComissao(Number(v) || 1)} style={{ width: '100%' }} />
+                  </Form.Item>
+                </Col>
+                <Col span={10}>
+                  <Form.Item name="primeiroVencimento" label="1º Vencimento" style={{ marginBottom: 8 }}>
+                    <DatePicker style={{ width: '100%' }} format="DD/MM/YYYY" />
+                  </Form.Item>
+                </Col>
+                <Col span={7}>
+                  <Form.Item style={{ marginBottom: 8 }}>
+                    <Button block onClick={gerarParcelasComissao}>Gerar</Button>
+                  </Form.Item>
+                </Col>
+              </Row>
+              {parcelasComissao.length > 0 && (
+                <Table
+                  size="small" pagination={false} dataSource={parcelasComissao} rowKey="id"
+                  columns={[
+                    { title: '#', render: (_, __, i) => `${i + 1}/${parcelasComissao.length}`, width: 60 },
+                    { title: 'Valor', dataIndex: 'valor', render: (v: number) => fmtBRL(v) },
+                    { title: 'Vencimento', dataIndex: 'vencimento', render: (v: string) => dayjs(v).format('DD/MM/YYYY') },
+                    {
+                      title: 'Status', dataIndex: 'pago', width: 110,
+                      render: (pago: boolean, rec: ParcelaFinanceiro) => (
+                        <Button
+                          size="small" type={pago ? 'primary' : 'default'}
+                          icon={pago ? <CheckCircleOutlined /> : <ClockCircleOutlined />}
+                          onClick={() => setParcelasComissao(prev =>
+                            prev.map(p => p.id === rec.id
+                              ? { ...p, pago: !p.pago, dataPagamento: !p.pago ? new Date().toISOString().slice(0, 10) : undefined }
+                              : p)
+                          )}
+                        >
+                          {pago ? 'Recebido' : 'Pendente'}
+                        </Button>
+                      ),
+                    },
+                  ]}
+                />
+              )}
+            </Form>
+          </div>
+        )}
+      </Modal>
     </div>
   );
 }

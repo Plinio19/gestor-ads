@@ -1,16 +1,18 @@
 import { useState } from 'react';
 import { Layout, Menu, theme } from 'antd';
-import { HomeOutlined, FileTextOutlined, SettingOutlined } from '@ant-design/icons';
+import { HomeOutlined, FileTextOutlined, SettingOutlined, DollarOutlined } from '@ant-design/icons';
 import ImoveisPage from './pages/ImoveisPage';
 import AlugadosPage from './pages/AlugadosPage';
 import ConfigPage from './pages/ConfigPage';
+import FinanceiroPage from './pages/FinanceiroPage';
 
 const { Sider, Content, Header } = Layout;
 
 const MENU = [
-  { key: 'imoveis',  icon: <HomeOutlined />,      label: 'Imóveis' },
-  { key: 'alugados', icon: <FileTextOutlined />,   label: 'Alugados' },
-  { key: 'config',   icon: <SettingOutlined />,    label: 'Configurações' },
+  { key: 'imoveis',    icon: <HomeOutlined />,      label: 'Imóveis' },
+  { key: 'alugados',   icon: <FileTextOutlined />,   label: 'Alugados' },
+  { key: 'financeiro', icon: <DollarOutlined />,     label: 'Financeiro' },
+  { key: 'config',     icon: <SettingOutlined />,    label: 'Configurações' },
 ];
 
 export default function App() {
@@ -45,9 +47,10 @@ export default function App() {
           {MENU.find(m => m.key === pag)?.label}
         </Header>
         <Content style={{ background: token.colorBgLayout }}>
-          {pag === 'imoveis'  && <ImoveisPage />}
-          {pag === 'alugados' && <AlugadosPage />}
-          {pag === 'config'   && <ConfigPage />}
+          {pag === 'imoveis'    && <ImoveisPage />}
+          {pag === 'alugados'   && <AlugadosPage />}
+          {pag === 'financeiro' && <FinanceiroPage />}
+          {pag === 'config'     && <ConfigPage />}
         </Content>
       </Layout>
     </Layout>

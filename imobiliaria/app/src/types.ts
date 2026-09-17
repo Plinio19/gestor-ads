@@ -52,3 +52,37 @@ export interface Contrato {
   observacoes?: string;
   criadoEm: string;
 }
+
+export interface ParcelaFinanceiro {
+  id: string;
+  valor: number;
+  vencimento: string;
+  pago: boolean;
+  dataPagamento?: string;
+}
+
+export interface ContaReceber {
+  id: string;
+  descricao: string;
+  clienteNome: string;
+  tipo: 'comissao_venda' | 'comissao_aluguel' | 'honorarios' | 'outros';
+  imovelId?: string;
+  imovelCodigo?: string;
+  valorTotal: number;
+  parcelas: ParcelaFinanceiro[];
+  observacoes?: string;
+  criadoEm: string;
+  atualizadoEm?: string;
+}
+
+export interface ContaPagar {
+  id: string;
+  descricao: string;
+  categoria: 'marketing' | 'escritorio' | 'impostos' | 'comissao_corretor' | 'outros';
+  valor: number;
+  vencimento: string;
+  pago: boolean;
+  dataPagamento?: string;
+  observacoes?: string;
+  criadoEm: string;
+}
