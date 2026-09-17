@@ -432,5 +432,30 @@
     "id": "8lt7egumu5uw1gu",
     "criadoEm": "2026-09-17T18:21:34.446Z",
     "atualizadoEm": "2026-09-17T18:21:34.446Z"
+  },
+  {
+    "quartos": 1,
+    "banheiros": 1,
+    "vagasGaragem": 0,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "238401",
+    "endereco": "Avenida Governador Mario Covas Junior, 4040",
+    "bairro": "Centro",
+    "cidade": "Mongagua",
+    "estado": "SP",
+    "area": 57,
+    "valorAluguel": null,
+    "valorVenda": 330000,
+    "nomeProprietario": "Danilo Silva",
+    "contatoProprietario1": "(15) 99177-5210",
+    "id": "u9x3qa9mu5vkeia",
+    "criadoEm": "2026-09-17T18:40:31.090Z",
+    "atualizadoEm": "2026-09-17T18:40:31.090Z"
   }
 ]
