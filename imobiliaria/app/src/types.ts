@@ -37,6 +37,7 @@ export interface Imovel {
   status: 'disponivel' | 'alugado';
   finalidade: 'locacao' | 'venda' | 'ambos';
   linksFotos: string[];
+  publicado?: boolean;
   observacoes?: string;
   criadoEm: string;
   atualizadoEm?: string;

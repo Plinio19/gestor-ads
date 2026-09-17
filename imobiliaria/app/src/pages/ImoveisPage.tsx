@@ -8,7 +8,7 @@ import {
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, HomeOutlined,
   SearchOutlined, FilterOutlined, LinkOutlined, MinusCircleOutlined, PictureOutlined,
-  DollarOutlined, CheckCircleOutlined, ClockCircleOutlined,
+  DollarOutlined, CheckCircleOutlined, ClockCircleOutlined, GlobalOutlined,
 } from '@ant-design/icons';
 import type { Imovel, ContaReceber, ParcelaFinanceiro } from '../types';
 import { useImoveisStore } from '../stores/useImoveisStore';
@@ -166,6 +166,15 @@ export default function ImoveisPage() {
     }
   };
 
+  const togglePublicado = async (imovel: Imovel) => {
+    try {
+      await upsert({ ...imovel, publicado: !imovel.publicado, atualizadoEm: new Date().toISOString() });
+      message.success(imovel.publicado ? 'Marcado como não publicado.' : 'Marcado como publicado!');
+    } catch (e) {
+      message.error('Erro ao atualizar: ' + String(e));
+    }
+  };
+
   const imovelFiltrado = imoveis.filter(im => {
     const q = busca.toLowerCase();
     const matchBusca = !busca || [im.codigo, im.endereco, im.bairro, im.cidade, im.nomeProprietario]
@@ -254,7 +263,7 @@ export default function ImoveisPage() {
     {
       title: '',
       key: 'acoes',
-      width: 110,
+      width: 140,
       render: (_: unknown, r: Imovel) => (
         <Space>
           {r.linksFotos.length === 1 ? (
@@ -286,6 +295,15 @@ export default function ImoveisPage() {
               <Button size="small" icon={<DollarOutlined />} style={{ color: '#52c41a', borderColor: '#52c41a' }} onClick={() => abrirModalComissao(r)} />
             </Tooltip>
           ) : null}
+          <Tooltip title={r.publicado ? 'Publicado — clique para despublicar' : 'Marcar como publicado'}>
+            <Button
+              size="small"
+              icon={<GlobalOutlined />}
+              type={r.publicado ? 'primary' : 'default'}
+              style={r.publicado ? { background: '#1677ff', borderColor: '#1677ff' } : {}}
+              onClick={() => togglePublicado(r)}
+            />
+          </Tooltip>
           <Tooltip title="Editar"><Button size="small" icon={<EditOutlined />} onClick={() => abrirEditar(r)} /></Tooltip>
           <Popconfirm title="Remover este imóvel?" onConfirm={() => excluir(r.id)} okText="Sim" cancelText="Não">
             <Tooltip title="Excluir"><Button size="small" danger icon={<DeleteOutlined />} /></Tooltip>
