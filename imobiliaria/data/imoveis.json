@@ -406,5 +406,31 @@
     "id": "udhokl8mu5jwy4u",
     "criadoEm": "2026-09-17T13:14:21.006Z",
     "atualizadoEm": "2026-09-17T13:14:21.006Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 2,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1LPEdDYsdWNbZSP3iYhmR52iT1vyk9Gh2"
+    ],
+    "codigo": "235057",
+    "endereco": "Avenida Cidade de Santos, 67 - apto 14",
+    "bairro": "Balneário Santa Eugenia",
+    "cidade": "Mongaguá",
+    "estado": "SP",
+    "valorVenda": 300000,
+    "nomeProprietario": "Lucia Zanetti",
+    "contatoProprietario1": "(11) 99361-6652",
+    "observacoes": "Apartamento a venda em Mongagua/SP\n\nREF: 235057\n\n2 dormitórios sendo 1 suíte\nSala\nCozinha\nBanheiro\n1 vaga de garagem\nMenos de 100m da praia\n10 min do centro\n\nR$ 300.000,00\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464\n",
+    "id": "8lt7egumu5uw1gu",
+    "criadoEm": "2026-09-17T18:21:34.446Z",
+    "atualizadoEm": "2026-09-17T18:21:34.446Z"
   }
 ]
