@@ -34,5 +34,14 @@
     "vencimento": "2026-09-30",
     "pago": false,
     "criadoEm": "2026-09-17"
+  },
+  {
+    "id": "kv67kcoj1rrmu5x164s",
+    "descricao": "REEMBOLSO JULIA",
+    "categoria": "outros",
+    "valor": 470,
+    "vencimento": "2026-10-09",
+    "pago": false,
+    "criadoEm": "2026-09-17"
   }
 ]
