@@ -443,11 +443,13 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1KI6gb3ZvLKxy9NA_1oWvQirVCtpEoJ1j"
+    ],
     "codigo": "238401",
     "endereco": "Avenida Governador Mario Covas Junior, 4040",
     "bairro": "Centro",
-    "cidade": "Mongagua",
+    "cidade": "Mongaguá",
     "estado": "SP",
     "area": 57,
     "valorAluguel": null,
@@ -456,6 +458,7 @@
     "contatoProprietario1": "(15) 99177-5210",
     "id": "u9x3qa9mu5vkeia",
     "criadoEm": "2026-09-17T18:40:31.090Z",
-    "atualizadoEm": "2026-09-17T18:40:31.090Z"
+    "atualizadoEm": "2026-09-17T18:59:47.300Z",
+    "observacoes": "Apartamento a venda em Mongaguá/SP\n\nDisponível no 1º trimestre de 2029.\n\nREF: 238401\n\n1 dormitorio\nCozinha\nSala americana\nBanheiro\n1 vaga de garagem\nCondominio conta com piscina, salão de jogos, academia, portaria 24 horas e elevador.\nLocalizado de frente para a praia e próximo a diversas atrações e serviços do centro.\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464\n\n\n\n\n\n\nVenda à vista, mas aceito entrada de R$45.000,00 e valor restante financiado com a construtora em 37 parcelas mensais de R$ 1.117,00, 2 parcelas anuais de R$ 4.000,00 e 1 parcela de R$ 16.000,00 para as chaves. "
   }
 ]
