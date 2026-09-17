@@ -4023,14 +4023,14 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "233,46",
+        "cotacao": "151567",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "370,19",
+        "cotacao": "152791",
         "prazo": ""
       }
     ],
