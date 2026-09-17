@@ -26,17 +26,19 @@ function fmtBRL(v?: number) {
 
 const TIPO_RECEBER_OPTS = [
   { value: 'comissao_venda',   label: 'Comissão de Venda' },
-  { value: 'comissao_aluguel', label: 'Comissão de Aluguel' },
-  { value: 'honorarios',       label: 'Honorários' },
+  { value: 'comissao_locacao', label: 'Comissão de Locação' },
   { value: 'outros',           label: 'Outros' },
 ];
 
 const CAT_PAGAR_OPTS = [
-  { value: 'marketing',          label: 'Marketing / Publicidade' },
-  { value: 'escritorio',         label: 'Escritório / Operacional' },
-  { value: 'impostos',           label: 'Impostos / Taxas' },
-  { value: 'comissao_corretor',  label: 'Comissão Corretor' },
-  { value: 'outros',             label: 'Outros' },
+  { value: 'marketing',  label: 'Marketing' },
+  { value: 'contador',   label: 'Contador' },
+  { value: 'sistema',    label: 'Sistema' },
+  { value: 'impostos',   label: 'Impostos' },
+  { value: 'pro_labore', label: 'Pró-labore' },
+  { value: 'salario',    label: 'Salário' },
+  { value: 'gasolina',   label: 'Gasolina' },
+  { value: 'outros',     label: 'Outras despesas' },
 ];
 
 function statusParcelasTag(conta: ContaReceber) {

@@ -65,7 +65,7 @@ export interface ContaReceber {
   id: string;
   descricao: string;
   clienteNome: string;
-  tipo: 'comissao_venda' | 'comissao_aluguel' | 'honorarios' | 'outros';
+  tipo: 'comissao_venda' | 'comissao_locacao' | 'outros';
   imovelId?: string;
   imovelCodigo?: string;
   valorTotal: number;
@@ -78,7 +78,7 @@ export interface ContaReceber {
 export interface ContaPagar {
   id: string;
   descricao: string;
-  categoria: 'marketing' | 'escritorio' | 'impostos' | 'comissao_corretor' | 'outros';
+  categoria: 'marketing' | 'contador' | 'sistema' | 'impostos' | 'pro_labore' | 'salario' | 'gasolina' | 'outros';
   valor: number;
   vencimento: string;
   pago: boolean;
