@@ -25,5 +25,14 @@
     "vencimento": "2026-09-21",
     "pago": false,
     "criadoEm": "2026-09-17"
+  },
+  {
+    "id": "3qoamvnb2n6mu5x0ncn",
+    "descricao": "DOC CARRO",
+    "categoria": "outros",
+    "valor": 2000,
+    "vencimento": "2026-09-30",
+    "pago": false,
+    "criadoEm": "2026-09-17"
   }
 ]
