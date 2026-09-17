@@ -43,5 +43,14 @@
     "vencimento": "2026-10-09",
     "pago": false,
     "criadoEm": "2026-09-17"
+  },
+  {
+    "id": "9emtsc8no9mu5x1iox",
+    "descricao": "RESCISÃO SEU ZÉ",
+    "categoria": "outros",
+    "valor": 0,
+    "vencimento": "2026-09-30",
+    "pago": false,
+    "criadoEm": "2026-09-17"
   }
 ]
