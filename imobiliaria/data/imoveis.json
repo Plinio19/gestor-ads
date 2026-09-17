@@ -461,5 +461,32 @@
     "criadoEm": "2026-09-17T18:40:31.090Z",
     "atualizadoEm": "2026-09-17T18:59:47.300Z",
     "observacoes": "Apartamento a venda em Mongaguá/SP\n\nDisponível no 1º trimestre de 2029.\n\nREF: 238401\n\n1 dormitorio\nCozinha\nSala americana\nBanheiro\n1 vaga de garagem\nCondominio conta com piscina, salão de jogos, academia, portaria 24 horas e elevador.\nLocalizado de frente para a praia e próximo a diversas atrações e serviços do centro.\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464\n\n\n\n\n\n\nVenda à vista, mas aceito entrada de R$45.000,00 e valor restante financiado com a construtora em 37 parcelas mensais de R$ 1.117,00, 2 parcelas anuais de R$ 4.000,00 e 1 parcela de R$ 16.000,00 para as chaves. "
+  },
+  {
+    "quartos": 2,
+    "banheiros": 2,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1Y-Z_3hyMciURwSkOxSWS4RXD64kE5PB9"
+    ],
+    "codigo": "235098",
+    "endereco": "Avenida Governador Mário Covas Júnior, 1180 - Apto 43",
+    "bairro": "Jardim Caiahu",
+    "cidade": "Mongaguá",
+    "estado": "SP",
+    "area": 70,
+    "valorVenda": 430000,
+    "nomeProprietario": "Caio Teodosio",
+    "contatoProprietario1": "(11) 95701-2270",
+    "observacoes": "Apartamento à venda em Mongaguá/SP\n\nREF: 235098\n\n2 dormitórios sendo 1 suíte\nCozinha com móveis planejados\nSala com sacada com vista lateral para o mar\nBanheiro\n1 vaga de garagem coberta\nSemi mobiliado\nCondomínio de frente para o mar, com piscina, salão de festas, solarium, salão de jogos e terraço.\nPróximo ao centro, padarias, mercados e farmácias.\n\nR$ 430.000,00\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464\n\nAceito permuta por terreno ou apartamento na região de Itu.",
+    "id": "vnibcdumu5wtqbk",
+    "criadoEm": "2026-09-17T19:15:45.920Z",
+    "atualizadoEm": "2026-09-17T19:15:45.920Z"
   }
 ]
