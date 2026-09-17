@@ -16,5 +16,14 @@
     "vencimento": "2026-09-30",
     "pago": false,
     "criadoEm": "2026-09-17"
+  },
+  {
+    "id": "04oyggj7j9vnmu5x0ca8",
+    "descricao": "Aluguel",
+    "categoria": "outros",
+    "valor": 1000,
+    "vencimento": "2026-09-21",
+    "pago": false,
+    "criadoEm": "2026-09-17"
   }
 ]
