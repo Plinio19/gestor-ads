@@ -3933,6 +3933,12 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
+        "valor": "213,06",
+        "cotacao": "223925",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOGARCIA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
