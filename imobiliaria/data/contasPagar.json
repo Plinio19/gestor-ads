@@ -7,5 +7,14 @@
     "vencimento": "2026-10-05",
     "pago": false,
     "criadoEm": "2026-09-17"
+  },
+  {
+    "id": "dqpbfvvygr5mu5uifog",
+    "descricao": "Parcela CNPJ",
+    "categoria": "impostos",
+    "valor": 295.48,
+    "vencimento": "2026-09-30",
+    "pago": false,
+    "criadoEm": "2026-09-17"
   }
 ]
