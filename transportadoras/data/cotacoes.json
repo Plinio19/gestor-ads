@@ -4053,14 +4053,20 @@
     "transRows": [
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "939,73",
+        "cotacao": "62531",
         "prazo": ""
       },
       {
         "trans": "JCV TRANSPORTES",
         "valor": "1048,26",
         "cotacao": "24382",
+        "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
         "prazo": ""
       }
     ],
