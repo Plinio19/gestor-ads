@@ -250,5 +250,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-15T18:07:33.201Z",
     "atualizadoEm": "2026-09-15T18:07:33.201Z"
+  },
+  {
+    "id": "mub9llfuqo8jp",
+    "numero": "0021",
+    "assunto": "Ticket 21 - LFDA-SP ",
+    "notaFiscal": "NF 3113",
+    "empenho": "2026NE00298",
+    "pedido": "NF 3113",
+    "problemaRaiz": "Enviamos alcool metilico normal ao inves do HPLC",
+    "acaoTomada": "Agendar retirada dos alcool metílico normal e enviar 12 L do HPLC",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-09-21T13:12:12.234Z",
+    "atualizadoEm": "2026-09-21T13:12:12.234Z"
   }
 ]
