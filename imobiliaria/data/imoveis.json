@@ -525,5 +525,32 @@
     "id": "sjjs0hbmuczb3k3",
     "criadoEm": "2026-09-22T17:59:38.691Z",
     "atualizadoEm": "2026-09-22T17:59:38.691Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1QFtGSsA1CtqV_xelzPaWHMHP2jcH_2QM"
+    ],
+    "codigo": "232894",
+    "endereco": "Rua Sineval Caviquioli, 79 - Bloco 5 - Apto 32",
+    "bairro": "Guapurá",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 50,
+    "valorVenda": 210000,
+    "nomeProprietario": "Vitor Oliveira",
+    "contatoProprietario1": "(11) 96694-9916",
+    "observacoes": "Apartamento a venda bairro Guapurá, Itanhaém/SP\n\nREF: 232894\n\n2 dormitórios\nSala com varanda\nCozinha americana\nÁrea de serviço\nBanheiro\n1 vaga de garagem\n\nCondomínio com salão de festas, salão de jogos, academia, quadra de areia, bicicletário, brinquedoteca, playground, tanque de areia, churrasqueira, portaria 24 horas, redário e praça.\nO bairro possui acesso fácil de transporte público, escola, creche e praça de alimentação, também localizado próximo ao Supermercado Prático e farmácias.\n",
+    "id": "ahzzzb4mud05dzc",
+    "criadoEm": "2026-09-22T18:23:11.880Z",
+    "atualizadoEm": "2026-09-22T18:23:11.880Z"
   }
 ]
