@@ -498,5 +498,32 @@
     "id": "vnibcdumu5wtqbk",
     "criadoEm": "2026-09-17T19:15:45.920Z",
     "atualizadoEm": "2026-09-17T19:15:45.920Z"
+  },
+  {
+    "quartos": 0,
+    "banheiros": 1,
+    "vagasGaragem": 0,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "locacao",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1z3OM6iiTC80t5eRylH5UiG-3t_cbN7u8"
+    ],
+    "codigo": "225466",
+    "endereco": "Avenida Marginal, 10177",
+    "bairro": "Jamaica",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 90,
+    "valorAluguel": 4000,
+    "nomeProprietario": "Sergio Coelho da Silveira",
+    "contatoProprietario1": "(13) 99119-2752",
+    "observacoes": "Galpão comercial para locação no bairro Jamaica, Itanhaém/SP\n\nREF: 225466\n\nLojas para venda ou aluguel, \nDe frente para a Rodovia\n90 metros de área útil com mezanino\nCopa\n2 banheiros, com 1 para deficiente\nPortas automatizadas.",
+    "id": "sjjs0hbmuczb3k3",
+    "criadoEm": "2026-09-22T17:59:38.691Z",
+    "atualizadoEm": "2026-09-22T17:59:38.691Z"
   }
 ]
