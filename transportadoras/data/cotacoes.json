@@ -4323,5 +4323,35 @@
       }
     ],
     "id": "mucohrmuzylny"
+  },
+  {
+    "data": "2026-09-22",
+    "pedido": "3004",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "35.840.659/0001-30",
+    "cepD": "75801-615",
+    "vnf": "1900,00",
+    "pes": "200",
+    "vol": "34",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mucomfegmclit"
   }
 ]
