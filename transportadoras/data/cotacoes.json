@@ -4353,5 +4353,29 @@
       }
     ],
     "id": "mucomfegmclit"
+  },
+  {
+    "data": "2026-09-22",
+    "pedido": "3060",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "75.095.679/0001-49",
+    "cepD": "80035-050",
+    "vnf": "300,80",
+    "pes": "32",
+    "vol": "6",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1198 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mucos6yo152kn"
   }
 ]
