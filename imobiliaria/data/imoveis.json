@@ -579,5 +579,29 @@
     "id": "3vpp9jmmud0deb3",
     "criadoEm": "2026-09-22T18:29:25.551Z",
     "atualizadoEm": "2026-09-22T18:29:25.551Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 1,
+    "vagasGaragem": 3,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "235350",
+    "endereco": " Rua Maria Celeste Pinto de Castro, 431",
+    "bairro": "Cidade Anchieta",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 150,
+    "valorVenda": 350000,
+    "nomeProprietario": "Joaquim Alves dos Santos",
+    "contatoProprietario1": "(11) 97101-1501",
+    "id": "vkn5i8ymud0nar5",
+    "criadoEm": "2026-09-22T18:37:07.505Z",
+    "atualizadoEm": "2026-09-22T18:37:07.505Z"
   }
 ]
