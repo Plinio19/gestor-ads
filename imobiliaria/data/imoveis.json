@@ -552,5 +552,32 @@
     "id": "ahzzzb4mud05dzc",
     "criadoEm": "2026-09-22T18:23:11.880Z",
     "atualizadoEm": "2026-09-22T18:23:11.880Z"
+  },
+  {
+    "quartos": 1,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1zpBWk_oztgS9uQtcClWgvFUcdGPJeV9_"
+    ],
+    "codigo": "234299",
+    "endereco": "Rua João Coelho, 469",
+    "bairro": "Cibratel (Chácaras)",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 59,
+    "valorVenda": 190000,
+    "nomeProprietario": "Ana Lucia",
+    "contatoProprietario1": "(11) 95353-3305",
+    "observacoes": "Apartamento térreo à venda no Cibratel, Itanhaém/SP\n\nREF: 234299\n\n1 dormitório\nSala\nCozinha\nBanheiro\n1 vaga de garagem\nChurrasqueira\nPiscina 4x2,5m própria",
+    "id": "3vpp9jmmud0deb3",
+    "criadoEm": "2026-09-22T18:29:25.551Z",
+    "atualizadoEm": "2026-09-22T18:29:25.551Z"
   }
 ]
