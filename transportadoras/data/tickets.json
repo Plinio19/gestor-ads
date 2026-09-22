@@ -245,11 +245,11 @@
     "empenho": "2026NE001312",
     "pedido": "NF2989",
     "problemaRaiz": "NF de 360L de Xilol, foi entregue somente 355",
-    "acaoTomada": "Emitir pedido de 5L de xilol via amostra grátis e enviar ",
+    "acaoTomada": "Emitir pedido de 5L de xilol via amostra grátis e enviar \nNF 3130 enviada com os 5L. ",
     "prioridade": "alta",
     "posicao": "aberto",
     "criadoEm": "2026-09-15T18:07:33.201Z",
-    "atualizadoEm": "2026-09-15T18:07:33.201Z"
+    "atualizadoEm": "2026-09-22T13:01:23.161Z"
   },
   {
     "id": "mub9llfuqo8jp",
