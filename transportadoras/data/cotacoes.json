@@ -4191,5 +4191,35 @@
       }
     ],
     "id": "mub9r9uz1h66j"
+  },
+  {
+    "data": "2026-09-22",
+    "pedido": "2988",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "10.651.417/0004-10",
+    "cepD": "76303-899",
+    "vnf": "2065,00",
+    "pes": "350",
+    "vol": "1 PALET",
+    "med": "1,0 X 1,20",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "CONDEX",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mucmjxs3i3kj0"
   }
 ]
