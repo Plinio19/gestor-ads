@@ -4341,14 +4341,14 @@
     "transRows": [
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "500,00",
+        "cotacao": "1281270  ",
         "prazo": ""
       },
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "452,80",
+        "cotacao": "24458",
         "prazo": ""
       }
     ],
