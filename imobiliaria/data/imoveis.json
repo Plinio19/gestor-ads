@@ -712,5 +712,31 @@
     "id": "bj4fktjmuefec4a",
     "criadoEm": "2026-09-23T18:17:49.786Z",
     "atualizadoEm": "2026-09-23T18:19:30.071Z"
+  },
+  {
+    "quartos": 0,
+    "banheiros": 1,
+    "vagasGaragem": 0,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1yWysiYZdtcgeHE9CTwVLKVAjokp03Yds"
+    ],
+    "codigo": "212330",
+    "endereco": "Avenida Mario Micas, 2035",
+    "bairro": "Bopiranga ",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "valorVenda": 460000,
+    "nomeProprietario": "Jorge Virgilio",
+    "contatoProprietario1": "(11) 94201-9422 ",
+    "contatoProprietario2": "(11) 9420-19422",
+    "id": "dsn645bmuefui59",
+    "criadoEm": "2026-09-23T18:30:24.093Z",
+    "atualizadoEm": "2026-09-23T18:30:24.093Z"
   }
 ]
