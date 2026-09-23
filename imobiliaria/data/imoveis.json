@@ -738,5 +738,31 @@
     "id": "dsn645bmuefui59",
     "criadoEm": "2026-09-23T18:30:24.093Z",
     "atualizadoEm": "2026-09-23T18:30:24.093Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 2,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1FPAgsdZm2O00guZuTRO9tV92NNqs5JfF"
+    ],
+    "codigo": "237429",
+    "endereco": "Avenida Governador Mário Covas Júnior, 7259",
+    "bairro": "Balneario Fênix",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 97,
+    "valorVenda": 460000,
+    "nomeProprietario": "Fabiano Macedo Custel",
+    "contatoProprietario1": "(11) 94106-7636",
+    "id": "e5e1me1mueg0eej",
+    "criadoEm": "2026-09-23T18:34:59.179Z",
+    "atualizadoEm": "2026-09-23T18:34:59.179Z"
   }
 ]
