@@ -697,7 +697,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1JIHzmdpg5i6tTEzQ1byFi-y9dFGwMPFV"
+    ],
     "codigo": "236886",
     "endereco": "Rua Padre Anchieta, 125 - Apto 41",
     "bairro": "Jardim Caiahu",
@@ -709,6 +711,6 @@
     "contatoProprietario1": "(15) 99773-2100",
     "id": "bj4fktjmuefec4a",
     "criadoEm": "2026-09-23T18:17:49.786Z",
-    "atualizadoEm": "2026-09-23T18:17:49.786Z"
+    "atualizadoEm": "2026-09-23T18:19:30.071Z"
   }
 ]
