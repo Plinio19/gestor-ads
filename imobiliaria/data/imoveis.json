@@ -660,5 +660,31 @@
     "id": "tfza0ydmued47uc",
     "criadoEm": "2026-09-23T17:13:58.452Z",
     "atualizadoEm": "2026-09-23T17:13:58.452Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1cNW7j9I6VmMwSkHOjo_4ZpesL2wE7huh"
+    ],
+    "codigo": "234055",
+    "endereco": "Avenida Condessa de Vimieiros, 203 - Apto 42",
+    "bairro": "Centro",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 139,
+    "valorVenda": 380000,
+    "nomeProprietario": "Amaury",
+    "contatoProprietario1": "(13) 99201-0787",
+    "id": "qbv7t1umuedozm1",
+    "criadoEm": "2026-09-23T17:30:07.561Z",
+    "atualizadoEm": "2026-09-23T17:30:07.561Z"
   }
 ]
