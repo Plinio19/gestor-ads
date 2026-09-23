@@ -633,5 +633,32 @@
     "id": "r7d5ke9mue2tukk",
     "criadoEm": "2026-09-23T12:25:58.532Z",
     "atualizadoEm": "2026-09-23T12:29:17.567Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 4,
+    "vagasGaragem": 5,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/17_oCMA25-fD7rbWVBhMkLsPs9H_Qi9un"
+    ],
+    "codigo": "237996",
+    "endereco": "Avenida Ribeirão Preto, 1318",
+    "bairro": "Jardim Coronel",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 280,
+    "valorVenda": 165000,
+    "nomeProprietario": "Luiz Roberto",
+    "contatoProprietario1": "(11) 97088-4778",
+    "observacoes": "165.000 não está incluso comissão",
+    "id": "tfza0ydmued47uc",
+    "criadoEm": "2026-09-23T17:13:58.452Z",
+    "atualizadoEm": "2026-09-23T17:13:58.452Z"
   }
 ]
