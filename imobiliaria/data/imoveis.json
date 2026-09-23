@@ -617,7 +617,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "locacao",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1GE6kvJ_F2qwiSjBKRoD7vDWlwbOLG8gl"
+    ],
     "codigo": "235771",
     "endereco": "Rua José Plácido de Medeiros, 12",
     "bairro": "Jamaica (Praia)",
@@ -630,6 +632,6 @@
     "observacoes": "Casa a venda no bairro Jamaica, Itanhaém/SP\n\nREF: 235771\n\n2 dormitórios\nSala\nCozinha\nBanheiro\n2 vagas de garagem coberta\nChurrasqueira\nLocalizada à 80m da praia\n\nPara mais informações (13) 99789-1281\n\nMartinele Negócios Imobiliários\n\n-----------------\ncomissão não está inclusa no valor de 260.000,00",
     "id": "r7d5ke9mue2tukk",
     "criadoEm": "2026-09-23T12:25:58.532Z",
-    "atualizadoEm": "2026-09-23T12:25:58.532Z"
+    "atualizadoEm": "2026-09-23T12:29:12.393Z"
   }
 ]
