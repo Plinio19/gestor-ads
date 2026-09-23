@@ -686,5 +686,29 @@
     "id": "qbv7t1umuedozm1",
     "criadoEm": "2026-09-23T17:30:07.561Z",
     "atualizadoEm": "2026-09-23T17:30:07.561Z"
+  },
+  {
+    "quartos": 3,
+    "banheiros": 3,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "236886",
+    "endereco": "Rua Padre Anchieta, 125 - Apto 41",
+    "bairro": "Jardim Caiahu",
+    "cidade": "Mongaguá",
+    "estado": "SP",
+    "area": 100,
+    "valorVenda": 440000,
+    "nomeProprietario": "Wanderson Moraes",
+    "contatoProprietario1": "(15) 99773-2100",
+    "id": "bj4fktjmuefec4a",
+    "criadoEm": "2026-09-23T18:17:49.786Z",
+    "atualizadoEm": "2026-09-23T18:17:49.786Z"
   }
 ]
