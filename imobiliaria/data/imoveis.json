@@ -955,5 +955,32 @@
     "id": "o3nw38smufvjbh0",
     "criadoEm": "2026-09-24T18:37:22.260Z",
     "atualizadoEm": "2026-09-24T18:42:29.088Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 3,
+    "vagasGaragem": 4,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1PK8UuG3QwktCy19h8Rjn18ETlf0lTMF_"
+    ],
+    "codigo": "228348",
+    "endereco": "Avenida Semyramis de Souza Rossi, 803",
+    "bairro": "Parque Balneário Oasis",
+    "cidade": "Peruíbe",
+    "estado": "SP",
+    "area": 206,
+    "valorVenda": 611000,
+    "nomeProprietario": "Ana Lucia Campos Nese",
+    "contatoProprietario1": "(13) 99784-0727",
+    "observacoes": "Sobrado a venda no bairro Oasis, Peruibe/SP\n\nREF: 228348\n\n4 dormitórios, sendo 2 suítes\nCozinha planejada\nCopa\n3 salas amplas integradas\nBanheiro social\nArea de serviço\nPiscina\n4 vagas de garagem\nPortão eletronico\nLocalizada a 800m da praia\n\nR$ 650.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "crwxhtpmufw81nf",
+    "criadoEm": "2026-09-24T18:56:35.931Z",
+    "atualizadoEm": "2026-09-24T18:56:35.931Z"
   }
 ]
