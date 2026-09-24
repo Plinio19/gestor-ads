@@ -874,5 +874,32 @@
     "id": "vqv9gdmmuftd3x2",
     "criadoEm": "2026-09-24T17:36:33.302Z",
     "atualizadoEm": "2026-09-24T17:36:33.302Z"
+  },
+  {
+    "quartos": 6,
+    "banheiros": 4,
+    "vagasGaragem": 5,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1bom2co_GBmqKebzHrbj3L7xxwb02_ETj"
+    ],
+    "codigo": "210342",
+    "endereco": "Rua Danilo Teixeira de Carvalho, 274",
+    "bairro": "Nova Itanhaém",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 270,
+    "valorVenda": 564000,
+    "nomeProprietario": "José Belarmino da Hora Júnior",
+    "contatoProprietario1": "(11) 98707-9632",
+    "observacoes": "Sobrado a venda no bairro Nova Itanháem, Itanhaém/SP\n\nREF: 210342\n\n6 dormitórios, sendo 4 suítes\nSala\nCozinha\nBanheiro\n5 vagas de garagem\nPiscina\nChurrasqueira\nLocalizada a 300m da praia\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "3o8gkbomufu52ik",
+    "criadoEm": "2026-09-24T17:58:17.852Z",
+    "atualizadoEm": "2026-09-24T17:58:17.852Z"
   }
 ]
