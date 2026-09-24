@@ -775,7 +775,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/14ppMDRjXsXDy9Ju2VX4hQbmMjcoRup5p"
+    ],
     "codigo": "231710",
     "endereco": "Rua Sergipe, 630",
     "bairro": "Gaivota ",
@@ -788,6 +790,6 @@
     "observacoes": "Casa a venda no bairro Gaivota, Itanhaém/SP\n\nREF: 231710\n\n2 dormitórios, sendo 2 suítes\nSala\nCopa\nCozinha americana\nLavabo\nEdícula nos fundos\nLocalizada apenas a duas quadras da praia\n\nR$ 360.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
     "id": "i9ucyw6mufhswo0",
     "criadoEm": "2026-09-24T12:12:55.008Z",
-    "atualizadoEm": "2026-09-24T12:12:55.009Z"
+    "atualizadoEm": "2026-09-24T12:20:08.287Z"
   }
 ]
