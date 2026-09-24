@@ -792,5 +792,32 @@
     "id": "i9ucyw6mufhswo0",
     "criadoEm": "2026-09-24T12:12:55.008Z",
     "atualizadoEm": "2026-09-24T12:20:08.287Z"
+  },
+  {
+    "quartos": 3,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1LShKLVxXylhGIy0W3qGBmCjZAeJIGLPI"
+    ],
+    "codigo": "231587",
+    "endereco": "Rua Alcides Marques, 841",
+    "bairro": "Cibratel II",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 66,
+    "valorVenda": 460000,
+    "nomeProprietario": "Jose Sergio Boffette",
+    "contatoProprietario1": "11 97117-1020",
+    "observacoes": "Casa a venda no Cibratel II, Itanhaém/SP\n\nREF: 231587\n\n3 dormitórios, sendo 1 suíte\nSala\nCozinha americana\n2 vagas de garagem\nPiscina com cascata\nArea gourmet\nLocalizada a apenas 550 metros da praia\n\nR$ 460.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "ju7c442mufihwb8",
+    "criadoEm": "2026-09-24T12:32:20.948Z",
+    "atualizadoEm": "2026-09-24T12:32:20.948Z"
   }
 ]
