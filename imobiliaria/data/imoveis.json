@@ -846,5 +846,33 @@
     "id": "x8244d9mufilm20",
     "criadoEm": "2026-09-24T12:35:14.280Z",
     "atualizadoEm": "2026-09-24T12:38:55.041Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1-oEzfkX3SMGi0mpj9F4ryPQpdFeELFtL"
+    ],
+    "codigo": "216903",
+    "endereco": "Rua Doutor Jose Dias de Araujo, 65",
+    "bairro": "Cibratel ",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 275,
+    "valorVenda": 460000,
+    "nomeProprietario": "Vanderley da Costa Carneiro",
+    "contatoProprietario1": "(11) 99226-6165",
+    "contatoProprietario2": "(11) 2062-9572",
+    "observacoes": "Sobrado a venda no Cibratel, Itanhaém/SP\n\nREF: 216903\n\n4 dormitórios, sendo 1 suíte\nSala com 2 ambientes\nCozinha ampla\n3 banheiros\nEntrada lateral com ducha\nChurrasqueira\nPiscina com cascata\n2 vagas de garagem\nLocalizado a 300m da praia\n\nR$ 500.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "vqv9gdmmuftd3x2",
+    "criadoEm": "2026-09-24T17:36:33.302Z",
+    "atualizadoEm": "2026-09-24T17:36:33.302Z"
   }
 ]
