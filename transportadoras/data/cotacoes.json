@@ -4499,7 +4499,27 @@
     "col": "NÃO",
     "cnpjR": "49.506.242/0001-40",
     "cepR": "06739-020",
-    "transRows": [],
+    "cnpjD": "48.031.918/0022-59",
+    "cepD": "18618-689",
+    "vnf": "9.590,36",
+    "pes": "1.000",
+    "vol": "21",
+    "med": "55 x 56 x 32",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TTJB TRANSPORTES E LOGÍSTICA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
     "id": "mufkglr90gc6q"
   }
 ]
