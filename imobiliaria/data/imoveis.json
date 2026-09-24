@@ -901,5 +901,32 @@
     "id": "3o8gkbomufu52ik",
     "criadoEm": "2026-09-24T17:58:17.852Z",
     "atualizadoEm": "2026-09-24T17:58:17.852Z"
+  },
+  {
+    "quartos": 5,
+    "banheiros": 2,
+    "vagasGaragem": 2,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/18Wvi4QIntWPM1IV6aypuMZWShmuDXBLn"
+    ],
+    "codigo": "219525",
+    "endereco": "Rua Iracema, 20",
+    "bairro": "Jardim Suarao",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 223,
+    "valorVenda": 700000,
+    "nomeProprietario": "José Bezerra",
+    "contatoProprietario1": "(11) 98415-4524",
+    "observacoes": "Sobrado a venda no Suarão, Itanhaém/SP\n\nREF: 219525\n\n5 dormitórios, sendo 2 suítes\nSala\nCozinha\n2 banheiros\nChurrasqueira\nLocalizada a apenas 30m da praia\n\nR$ 742.000,000\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "ts8iyr8mufuvuqd",
+    "criadoEm": "2026-09-24T18:19:07.477Z",
+    "atualizadoEm": "2026-09-24T18:19:07.477Z"
   }
 ]
