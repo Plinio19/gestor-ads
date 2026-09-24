@@ -830,7 +830,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/17sjBOqGu0ewib-YIBMZ8fI7MJfb47X56"
+    ],
     "codigo": "239374",
     "endereco": "Rua dos Palmitos, 100",
     "bairro": "Gaivota",
@@ -840,9 +842,9 @@
     "valorVenda": 380000,
     "nomeProprietario": "Claudia Fender",
     "contatoProprietario1": "13 98101-4199",
-    "observacoes": "Casa a venda no Gaivota, Itanhaém/SP\n\nREF: 239374\n\n4 dormitórios, sendo 1 suíte\nSala\nCozinha\nBanheiro\nQuintal Amplo\nPiscina\n5 vagas de garagem\nLocalizada a 500m da praia\n\n",
+    "observacoes": "Casa a venda no Gaivota, Itanhaém/SP\n\nREF: 239374\n\n4 dormitórios, sendo 1 suíte\nSala\nCozinha\nBanheiro\nQuintal Amplo\nPiscina\n5 vagas de garagem\nLocalizada a 500m da praia\n\nR$ 400.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
     "id": "x8244d9mufilm20",
     "criadoEm": "2026-09-24T12:35:14.280Z",
-    "atualizadoEm": "2026-09-24T12:35:14.280Z"
+    "atualizadoEm": "2026-09-24T12:38:55.041Z"
   }
 ]
