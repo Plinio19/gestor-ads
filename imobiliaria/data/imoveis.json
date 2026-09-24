@@ -928,5 +928,31 @@
     "id": "ts8iyr8mufuvuqd",
     "criadoEm": "2026-09-24T18:19:07.477Z",
     "atualizadoEm": "2026-09-24T18:19:07.477Z"
+  },
+  {
+    "quartos": 3,
+    "banheiros": 2,
+    "vagasGaragem": 6,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/19QYzJEJXAW5qn91Dd6-2Jo654NkXUGo-"
+    ],
+    "codigo": "239587",
+    "endereco": "Rua Mario Micas, 196",
+    "bairro": "Jamaica (Praia)",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 140,
+    "valorVenda": 600000,
+    "nomeProprietario": "Andre Pereira Lima",
+    "contatoProprietario1": "(13) 98806-8776",
+    "id": "o3nw38smufvjbh0",
+    "criadoEm": "2026-09-24T18:37:22.260Z",
+    "atualizadoEm": "2026-09-24T18:37:22.260Z"
   }
 ]
