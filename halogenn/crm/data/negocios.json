@@ -2,10 +2,11 @@
   {
     "titulo": "Orçamento 541",
     "clienteId": "msrfduha3wc36",
-    "etapa": "proposta",
+    "etapa": "perdido",
     "valor": "50000",
     "probabilidade": "50",
     "dataAbertura": "2026-08-13",
+    "dataFechamento": "",
     "origem": "Site / Google",
     "id": "msrfekvpkrw9h",
     "criadoEm": "2026-08-13"
