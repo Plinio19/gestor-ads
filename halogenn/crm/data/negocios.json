@@ -78,5 +78,17 @@
     "origem": "Prospecção Ativa",
     "id": "mtbkl4afepi4x",
     "criadoEm": "2026-08-27"
+  },
+  {
+    "titulo": "HL-ORC-20260925-002",
+    "clienteId": "mugyb0xpn351u",
+    "etapa": "proposta",
+    "valor": "1930",
+    "probabilidade": "50",
+    "dataAbertura": "2026-09-25",
+    "dataFechamento": "2026-10-02",
+    "origem": "Site / Google",
+    "id": "mugybkdyqfmng",
+    "criadoEm": "2026-09-25"
   }
 ]
