@@ -1063,5 +1063,30 @@
     "id": "8xux9dzmuh0kwax",
     "criadoEm": "2026-09-25T13:46:20.169Z",
     "atualizadoEm": "2026-09-25T13:51:25.413Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 4,
+    "vagasGaragem": 4,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "227562",
+    "endereco": "Rua Alcântara Machado, 148",
+    "bairro": "Suarão",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 210,
+    "valorVenda": 750000,
+    "nomeProprietario": "Calebe Valadares",
+    "contatoProprietario1": "(11) 97581-8222",
+    "observacoes": "Sobrado a venda no Suarão, Itanhaém/SP\n\nREF: 227562\n\n4 dormitórios, sendo 3 suítes\nSala ampla\nCozinha americana\nLavabo\nPiscina \nChurrasqueira\n4 vagas de garagem\nPortão com saída para a praia, pé na areia\n\nR$ 750.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "nza8f69muh13u17",
+    "criadoEm": "2026-09-25T14:01:03.691Z",
+    "atualizadoEm": "2026-09-25T14:01:03.691Z"
   }
 ]
