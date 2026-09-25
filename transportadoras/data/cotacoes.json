@@ -4593,14 +4593,14 @@
     "transRows": [
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "164,95",
+        "cotacao": "24532",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "168,39",
+        "cotacao": "62976",
         "prazo": ""
       }
     ],
