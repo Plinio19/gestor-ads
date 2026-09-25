@@ -982,5 +982,32 @@
     "id": "crwxhtpmufw81nf",
     "criadoEm": "2026-09-24T18:56:35.931Z",
     "atualizadoEm": "2026-09-24T18:56:35.931Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 3,
+    "vagasGaragem": 6,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/13ozFoS9bMPrxBnfiEmqR7kGXiJCSkKpa"
+    ],
+    "codigo": "164849",
+    "endereco": "Rua dos Acuris, 288",
+    "bairro": "Jardim Palmeiras",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 500,
+    "valorVenda": 676800,
+    "nomeProprietario": "Gilberto Tadeu Salvador",
+    "contatoProprietario1": "(11) 98041-5136",
+    "observacoes": "Sobrado a venda no Jardim Palmeiras, Itanhaém/SP\n\nREF: 164849\n\n4 dormitórios sendo 2 suítes\nSala\nCozinha americana\n2 banheiros sociais\nSalão de jogos\nAcesso ao mirante no 3º pavimento com vista para o mar pela suíte master.\nPiscina\nArea gourmet\nLocalizada a 150m da praia\n\nR$ 720.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários\n",
+    "id": "nllxn8hmugzb70t",
+    "criadoEm": "2026-09-25T13:10:47.885Z",
+    "atualizadoEm": "2026-09-25T13:10:47.886Z"
   }
 ]
