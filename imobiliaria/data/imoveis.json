@@ -1090,5 +1090,29 @@
     "id": "nza8f69muh13u17",
     "criadoEm": "2026-09-25T14:01:03.691Z",
     "atualizadoEm": "2026-09-25T14:03:20.077Z"
+  },
+  {
+    "quartos": 0,
+    "banheiros": 1,
+    "vagasGaragem": 0,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "225102",
+    "endereco": "Avenida Governador Mario Covas Júnior, 1700",
+    "bairro": "Cibratel II",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 425,
+    "valorVenda": 1300000,
+    "nomeProprietario": "Homero Noronha",
+    "contatoProprietario1": "(13) 98126-6430",
+    "id": "5e19x0omuh5rhpr",
+    "criadoEm": "2026-09-25T16:11:25.935Z",
+    "atualizadoEm": "2026-09-25T16:11:25.935Z"
   }
 ]
