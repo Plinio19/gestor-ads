@@ -1036,5 +1036,29 @@
     "id": "ql52rbdmugzws3d",
     "criadoEm": "2026-09-25T13:27:34.969Z",
     "atualizadoEm": "2026-09-25T13:37:17.302Z"
+  },
+  {
+    "quartos": 4,
+    "banheiros": 2,
+    "vagasGaragem": 5,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "126948",
+    "endereco": "Rua Rio De Janeiro, 1998",
+    "bairro": "Cibratel II",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 240,
+    "nomeProprietario": "Miguel Monllor",
+    "contatoProprietario1": "(11) 99522-5662",
+    "observacoes": "Casa a venda no Cibratel II, Itanhaém/SP\n\nREF: 126948\n\n3 dormitórios, sendo 1 suíte\nAmbiente interno com 3 salas\nCozinha\nBanheiro social\nPiscina\nChurrasqueira\nEdícula nos fundos\n2 portões de garagem\n6 vagas de garagem\nLocalizada a 200m da praia\n\nR$ 800.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
+    "id": "8xux9dzmuh0kwax",
+    "criadoEm": "2026-09-25T13:46:20.169Z",
+    "atualizadoEm": "2026-09-25T13:46:20.169Z"
   }
 ]
