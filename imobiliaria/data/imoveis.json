@@ -1047,7 +1047,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1_TyO0RwK-FUe4eTV7v-E89fsj0qIm51z"
+    ],
     "codigo": "126948",
     "endereco": "Rua Rio De Janeiro, 1998",
     "bairro": "Cibratel II",
@@ -1059,6 +1061,6 @@
     "observacoes": "Casa a venda no Cibratel II, Itanhaém/SP\n\nREF: 126948\n\n3 dormitórios, sendo 1 suíte\nAmbiente interno com 3 salas\nCozinha\nBanheiro social\nPiscina\nChurrasqueira\nEdícula nos fundos\n2 portões de garagem\n6 vagas de garagem\nLocalizada a 200m da praia\n\nR$ 800.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários",
     "id": "8xux9dzmuh0kwax",
     "criadoEm": "2026-09-25T13:46:20.169Z",
-    "atualizadoEm": "2026-09-25T13:46:20.169Z"
+    "atualizadoEm": "2026-09-25T13:51:16.689Z"
   }
 ]
