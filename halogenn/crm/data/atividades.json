@@ -174,5 +174,16 @@
     "concluida": true,
     "obs": "Re-agendado após conclusão. Cobrança de orçamento a cada 2 dia(s). Próximo em: 2026-08-29",
     "criadoEm": "2026-09-25"
+  },
+  {
+    "id": "mugybl1gulj5d",
+    "tipo": "tarefa",
+    "descricao": "Follow-up: HL-ORC-20260925-002 — CONGELATTO ALIMENTOS",
+    "clienteId": "mugyb0xpn351u",
+    "negocioId": "mugybkdyqfmng",
+    "data": "2026-09-28",
+    "concluida": false,
+    "obs": "Cobrança de orçamento a cada 3 dia(s). Próximo em: 2026-09-28",
+    "criadoEm": "2026-09-25"
   }
 ]
