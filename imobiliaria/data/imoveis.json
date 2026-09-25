@@ -1009,5 +1009,29 @@
     "id": "nllxn8hmugzb70t",
     "criadoEm": "2026-09-25T13:10:47.885Z",
     "atualizadoEm": "2026-09-25T13:10:47.886Z"
+  },
+  {
+    "quartos": 3,
+    "banheiros": 4,
+    "vagasGaragem": 5,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [],
+    "codigo": "236145",
+    "endereco": "Rua Turquia, 61",
+    "bairro": "Bopiranga ",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "area": 250,
+    "valorVenda": 650000,
+    "nomeProprietario": "Michele Dias da Rocha",
+    "contatoProprietario1": "(11) 99508-3967",
+    "id": "ql52rbdmugzws3d",
+    "criadoEm": "2026-09-25T13:27:34.969Z",
+    "atualizadoEm": "2026-09-25T13:27:34.969Z"
   }
 ]
