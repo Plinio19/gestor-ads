@@ -4575,5 +4575,35 @@
       }
     ],
     "id": "mugwfsngdjf9a"
+  },
+  {
+    "data": "2026-09-25",
+    "pedido": "3043",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.426.437/0012-04",
+    "cepD": "78048-602",
+    "vnf": "565,24",
+    "pes": "46",
+    "vol": "4",
+    "med": "36 X 31 X 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "muh4yeted9jxh"
   }
 ]
