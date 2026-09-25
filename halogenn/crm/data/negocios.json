@@ -37,10 +37,11 @@
   {
     "titulo": "ORC-20260818-002",
     "clienteId": "msyoga174ljlr",
-    "etapa": "proposta",
+    "etapa": "perdido",
     "valor": "625",
     "probabilidade": "50",
     "dataAbertura": "2026-08-18",
+    "dataFechamento": "",
     "origem": "Site / Google",
     "id": "msyogq10uontj",
     "criadoEm": "2026-08-18"
