@@ -1020,7 +1020,9 @@
     "aceitaPet": false,
     "status": "disponivel",
     "finalidade": "venda",
-    "linksFotos": [],
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1u956smoC7fXmoMjxEo_cOIVVqvBdTHrC"
+    ],
     "codigo": "236145",
     "endereco": "Rua Turquia, 61",
     "bairro": "Bopiranga ",
@@ -1030,8 +1032,9 @@
     "valorVenda": 650000,
     "nomeProprietario": "Michele Dias da Rocha",
     "contatoProprietario1": "(11) 99508-3967",
+    "observacoes": "Sobrado a venda no Bopiranga, Itanhaém/SP\n\nREF: 236145\n\n3 dormitórios, sendo as 3 suítes\nSala de estar\nSala de jantar\nCozinha americana\nLavabo\nLavanderia com banheiro\nPiscina 4x9\nArea gourmet\n\nR$ ",
     "id": "ql52rbdmugzws3d",
     "criadoEm": "2026-09-25T13:27:34.969Z",
-    "atualizadoEm": "2026-09-25T13:27:34.969Z"
+    "atualizadoEm": "2026-09-25T13:36:47.284Z"
   }
 ]
