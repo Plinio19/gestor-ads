@@ -13,10 +13,11 @@
   {
     "titulo": "ORÇAMENTO Nº 543",
     "clienteId": "msrh2dhk1f56f",
-    "etapa": "proposta",
+    "etapa": "perdido",
     "valor": "1200",
     "probabilidade": "50",
     "dataAbertura": "2026-08-13",
+    "dataFechamento": "",
     "origem": "Site / Google",
     "id": "msrhfthjngqdn",
     "criadoEm": "2026-08-13"
