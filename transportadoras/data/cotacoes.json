@@ -4555,7 +4555,7 @@
     "cepR": "06739-020",
     "cnpjD": "15.126.437/0004-96",
     "cepD": "65021-000",
-    "vnf": "5220,00",
+    "vnf": "5.220,00",
     "pes": "500",
     "vol": "34",
     "med": "36 x 31 x 25",
@@ -4569,6 +4569,12 @@
       },
       {
         "trans": "MAEX - MARDONIO",
+        "valor": "950,00",
+        "cotacao": "1283012",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
