@@ -16,5 +16,14 @@
     "origemCat": "Nova Categoria",
     "origemAtivo": "Caixa",
     "valor": 2911.7
+  },
+  {
+    "id": "98joefp",
+    "data": "2026-09-28",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Nova Categoria",
+    "origemAtivo": "Caixa",
+    "valor": 200
   }
 ]
