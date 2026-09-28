@@ -32,7 +32,7 @@ function fmtMes(yyyymm: string) {
 
 export default function ExtratoPage() {
   const { categorias, fetch: fetchCats, save: saveCats } = useCategoriasStore();
-  const { add: addCaixa, fetch: fetchCaixa } = useCaixaStore();
+  const { caixa, add: addCaixa, remove: removeCaixa, fetch: fetchCaixa } = useCaixaStore();
   const { movimentacoes, loading, fetch, add: addMov, remove: removeMov } = useMovimentacoesStore();
 
   const [filtroTipo, setFiltroTipo] = useState('todos');
@@ -113,11 +113,35 @@ export default function ExtratoPage() {
   const ativoIdWatch: string = Form.useWatch('ativoId', form) ?? '';
   const ativoSelecionado = categorias.find(c => c.id === catIdWatch)?.assets.find(a => a.id === ativoIdWatch);
 
-  /* ── excluir lançamento ── */
-  async function excluir(id: string) {
+  /* ── excluir lançamento com estorno ── */
+  async function excluir(m: Movimentacao) {
     try {
-      await removeMov(id);
-      message.success('Lançamento removido.');
+      // Estornar saldo do ativo
+      if ((m.tipo === 'resgate' || m.tipo === 'aporte' || m.tipo === 'recebimento') && m.origemCat && m.origemAtivo) {
+        const delta = m.tipo === 'resgate' ? m.valor : -m.valor; // resgate: devolve ao ativo; aporte/recebimento: desconta
+        const nextCats = categorias.map(c => c.name === m.origemCat
+          ? { ...c, assets: c.assets.map(a => a.name === m.origemAtivo ? { ...a, value: Math.max(0, a.value + delta) } : a) }
+          : c);
+        await saveCats(nextCats, `Estorno: ${m.descricao}`);
+      }
+      if (m.tipo === 'transferencia' && m.origemCat && m.origemAtivo) {
+        const nc1 = categorias.map(c => c.name === m.origemCat
+          ? { ...c, assets: c.assets.map(a => a.name === m.origemAtivo ? { ...a, value: a.value + m.valor } : a) }
+          : c);
+        const nc2 = nc1.map(c => c.name === m.destinoCat
+          ? { ...c, assets: c.assets.map(a => a.name === m.destinoAtivo ? { ...a, value: Math.max(0, a.value - m.valor) } : a) }
+          : c);
+        await saveCats(nc2, `Estorno transferência: ${m.descricao}`);
+      }
+
+      // Remover do Caixa se era resgate
+      if (m.tipo === 'resgate') {
+        const entrada = caixa.find(x => x.origem === m.descricao && x.valor === m.valor && x.data === m.data);
+        if (entrada) await removeCaixa(entrada.id);
+      }
+
+      await removeMov(m.id);
+      message.success('Lançamento cancelado e saldos estornados.');
     } catch (e) { message.error(String(e)); }
   }
 
@@ -397,9 +421,9 @@ export default function ExtratoPage() {
                     {fmtBRL(m.valor)}
                   </Text>
                   <Popconfirm
-                    title="Remover lançamento?"
-                    description="O saldo do ativo não será revertido automaticamente."
-                    onConfirm={() => excluir(m.id)}
+                    title="Cancelar lançamento?"
+                    description="Os saldos serão estornados automaticamente."
+                    onConfirm={() => excluir(m)}
                     okText="Remover"
                     cancelText="Cancelar"
                     okType="danger"
