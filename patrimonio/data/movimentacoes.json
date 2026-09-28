@@ -34,5 +34,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 1000
+  },
+  {
+    "id": "w8oii2p",
+    "data": "2026-09-28",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 30.83
   }
 ]
