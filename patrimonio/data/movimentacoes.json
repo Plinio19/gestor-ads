@@ -34,5 +34,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 30.83
+  },
+  {
+    "id": "lpg68lf",
+    "data": "2026-09-28",
+    "descricao": "Devolução de Aporte - Halogenn",
+    "tipo": "resgate",
+    "origemCat": "Aportes em Empresas",
+    "origemAtivo": "Halogenn",
+    "valor": 1000
   }
 ]
