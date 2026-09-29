@@ -52,5 +52,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 1500
+  },
+  {
+    "id": "nc1r68f",
+    "data": "2026-09-29",
+    "descricao": "Resgate de Cri",
+    "tipo": "resgate",
+    "origemCat": "Renda Fixa",
+    "origemAtivo": "BTG Pactual",
+    "valor": 18806.58
   }
 ]
