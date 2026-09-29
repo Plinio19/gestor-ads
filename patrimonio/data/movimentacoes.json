@@ -61,5 +61,14 @@
     "origemCat": "Renda Fixa",
     "origemAtivo": "BTG Pactual",
     "valor": 18806.58
+  },
+  {
+    "id": "k3tpymz",
+    "data": "2026-09-29",
+    "descricao": "Resgatae para investimento",
+    "tipo": "resgate",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 2116.73
   }
 ]
