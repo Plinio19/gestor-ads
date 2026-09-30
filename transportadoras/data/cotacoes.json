@@ -4839,5 +4839,29 @@
       }
     ],
     "id": "muo20szgkhx8v"
+  },
+  {
+    "data": "2026-09-30",
+    "pedido": "3030",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "29.944.455/0001-96",
+    "cepD": "36570-900",
+    "vnf": "950,00",
+    "pes": "19",
+    "vol": "4",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1830 RISCO: 8",
+    "transRows": [
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "muo2ea8ewr8el"
   }
 ]
