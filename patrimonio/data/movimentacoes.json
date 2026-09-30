@@ -70,5 +70,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 2116.73
+  },
+  {
+    "id": "n1c0tgx",
+    "data": "2026-09-30",
+    "descricao": "Devolução de Aporte - Halogenn",
+    "tipo": "resgate",
+    "origemCat": "Aportes em Empresas",
+    "origemAtivo": "Halogenn",
+    "valor": 1500
   }
 ]
