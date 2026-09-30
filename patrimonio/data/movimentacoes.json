@@ -79,5 +79,14 @@
     "origemCat": "Aportes em Empresas",
     "origemAtivo": "Halogenn",
     "valor": 1500
+  },
+  {
+    "id": "u0b8x6z",
+    "data": "2026-09-30",
+    "descricao": "Resgatae para investimento",
+    "tipo": "resgate",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 7953.81
   }
 ]
