@@ -4839,6 +4839,30 @@
     "transRows": [
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "nao faz",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "nao faz",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "nao faz",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TRANS IMPERIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TODOBRASIL TRANSPORTES",
         "valor": "",
         "cotacao": "",
         "prazo": ""
