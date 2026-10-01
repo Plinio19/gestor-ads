@@ -23,8 +23,9 @@
     "categoria": "outros",
     "valor": 1000,
     "vencimento": "2026-09-21",
-    "pago": false,
-    "criadoEm": "2026-09-17"
+    "pago": true,
+    "criadoEm": "2026-09-17",
+    "dataPagamento": "2026-10-01"
   },
   {
     "id": "3qoamvnb2n6mu5x0ncn",
