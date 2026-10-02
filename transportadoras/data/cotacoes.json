@@ -4995,8 +4995,8 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "211,90",
+        "cotacao": "151772",
         "prazo": ""
       },
       {
@@ -5007,8 +5007,8 @@
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "639,72",
+        "cotacao": "63340",
         "prazo": ""
       }
     ],
