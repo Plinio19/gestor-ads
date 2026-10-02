@@ -5120,5 +5120,22 @@
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "transRows": [],
     "id": "mupwc97qjjtta"
+  },
+  {
+    "data": "2026-10-02",
+    "pedido": "3069",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "833.899.526/0007-78",
+    "cepD": "89520-000",
+    "vnf": "414,24",
+    "pes": "16",
+    "vol": "2",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [],
+    "id": "muqvqo9ivf17e"
   }
 ]
