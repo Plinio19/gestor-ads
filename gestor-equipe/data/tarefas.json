@@ -298,33 +298,17 @@
       "diaMes": "1",
       "horario": "08:30"
     },
-    "concluidaEm": "2026-10-01T18:19:44.418Z"
+    "concluidaEm": "2026-10-02T13:50:59.465Z"
   },
   {
-    "id": "2ajsb38mupuzlwi",
+    "id": "ice71wzmur0tuh5",
     "titulo": "Verificar status e Preenchar KPI licitações ",
     "responsavelId": "m2wbm5dmt92d0z1",
     "prazo": "2027-03-01",
     "prioridade": "alta",
-    "status": "concluida",
-    "categoria": "Financeiro",
-    "criadaEm": "2026-10-01T18:19:44.418Z",
-    "recorrencia": {
-      "tipo": "mensal",
-      "diaMes": "1",
-      "horario": "08:30"
-    },
-    "concluidaEm": "2026-10-01T18:19:45.338Z"
-  },
-  {
-    "id": "a30gut0mupuzmm2",
-    "titulo": "Verificar status e Preenchar KPI licitações ",
-    "responsavelId": "m2wbm5dmt92d0z1",
-    "prazo": "2027-04-01",
-    "prioridade": "alta",
     "status": "pendente",
     "categoria": "Financeiro",
-    "criadaEm": "2026-10-01T18:19:45.338Z",
+    "criadaEm": "2026-10-02T13:50:59.465Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "1",
