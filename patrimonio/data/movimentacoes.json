@@ -97,5 +97,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 1000
+  },
+  {
+    "id": "wlkbxza",
+    "data": "2026-10-07",
+    "descricao": "Devolução de Aporte Linklab",
+    "tipo": "resgate",
+    "origemCat": "Aportes em Empresas",
+    "origemAtivo": "Linklab",
+    "valor": 500
   }
 ]
