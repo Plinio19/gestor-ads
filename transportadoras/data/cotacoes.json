@@ -5160,5 +5160,47 @@
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "transRows": [],
     "id": "mur15zm26h2ux"
+  },
+  {
+    "data": "2026-10-08",
+    "pedido": "3141/3152",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "28.523.215/0039-89",
+    "cepD": "27250-515",
+    "vnf": "202,30",
+    "pes": "7",
+    "vol": "2",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "TTJB TRANSPORTES E LOGÍSTICA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "muzqgenekguqf"
   }
 ]
