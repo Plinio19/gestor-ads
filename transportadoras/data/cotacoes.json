@@ -5202,5 +5202,47 @@
       }
     ],
     "id": "muzqgenekguqf"
+  },
+  {
+    "data": "2026-10-08",
+    "pedido": "4353",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "48.760.622/0001-44",
+    "cepR": "06739-020",
+    "cnpjD": "229.065.158-33",
+    "cepD": "37205-012",
+    "vnf": "9915,49",
+    "pes": "7,5",
+    "vol": "2",
+    "med": "40x20x10",
+    "mat": "EQUIPAMENTO",
+    "transRows": [
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "muzw65xe6cl91"
   }
 ]
