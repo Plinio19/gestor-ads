@@ -1126,5 +1126,31 @@
     "id": "5e19x0omuh5rhpr",
     "criadoEm": "2026-09-25T16:11:25.935Z",
     "atualizadoEm": "2026-09-25T16:11:25.935Z"
+  },
+  {
+    "quartos": 2,
+    "banheiros": 1,
+    "vagasGaragem": 1,
+    "mobiliado": false,
+    "quintal": false,
+    "lavanderia": false,
+    "aceitaPet": false,
+    "status": "disponivel",
+    "finalidade": "venda",
+    "linksFotos": [
+      "https://drive.google.com/drive/folders/1-4WzXPYZCLgy2TWM-n30hcGu5BHYg46U"
+    ],
+    "codigo": "234700",
+    "endereco": "Rua Antônio Agostinho dos Santos, 159",
+    "bairro": "Oásis",
+    "cidade": "Itanhaém",
+    "estado": "SP",
+    "valorVenda": 140000,
+    "nomeProprietario": "Rodrigo Brigante",
+    "contatoProprietario1": "(11) 98815-2700",
+    "observacoes": "Casa a venda em Itanhaém/SP\n\nREF: 234700\n\n2 dormitórios\nSala\nCozinha\nBanheiro\nLavandeira\nQuintal nos fundos\n1 vaga de garagem\n\nLocalizada no bairro Oásis, proximo a comércios e escolas. \n\nR$ 140.000,00\n\nPara mais informações (13) 99789-1281\nMartinele Negócios Imobiliários\n--------------------------\ncomissão inclusa nos 140.000,00",
+    "id": "6prp6e1mv6qcxpg",
+    "criadoEm": "2026-10-13T13:42:13.156Z",
+    "atualizadoEm": "2026-10-13T13:42:13.156Z"
   }
 ]
