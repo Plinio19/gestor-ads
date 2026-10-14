@@ -5394,13 +5394,13 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "232,48",
+        "cotacao": "151917",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       }
