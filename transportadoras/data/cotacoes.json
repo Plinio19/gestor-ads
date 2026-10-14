@@ -5328,26 +5328,26 @@
     "transRows": [
       {
         "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "210,30",
+        "cotacao": "143478",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "269,80",
+        "cotacao": "63634",
         "prazo": ""
       },
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "252,17",
+        "cotacao": "3333",
         "prazo": ""
       },
       {
         "trans": "TTJB TRANSPORTES E LOGÍSTICA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "449,99",
+        "cotacao": "729703",
         "prazo": ""
       }
     ],
