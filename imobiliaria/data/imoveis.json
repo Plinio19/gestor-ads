@@ -388,11 +388,14 @@
     "valorVenda": 358000,
     "nomeProprietario": "Eduardo Jose da Silva",
     "contatoProprietario1": "(11) 99109-5858",
-    "observacoes": "Sobrado a venda em condominio fechado no Suarão, Itanhaém/SP\n\nRef: 234574\n\n2 dormitórios sendo as duas suítes\nSala\nCozinha planejada\nLavabo\nÁrea de serviço\nChurrasqueira\n1 vaga de garagem\n\nCondomínio oferece churrasqueira coletiva com forno de pizza, piscina, portões automáticos e sociais e câmeras de monitoramento 24 horas.\nLocalizado a 50 metros da praia\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464",
+    "observacoes": "Sobrado a venda em condominio fechado no Suarão, Itanhaém/SP\n\nRef: 234574\n\n2 dormitórios sendo as duas suítes\nSala\nCozinha planejada\nLavabo\nÁrea de serviço\nChurrasqueira\n1 vaga de garagem\n\nCondomínio oferece churrasqueira coletiva com forno de pizza, piscina, portões automáticos e sociais e câmeras de monitoramento 24 horas.\nLocalizado a 50 metros da praia\n\nR$ 380.000,00\n\nPara mais informações (13) 99789-1281\n\nMartinele\nCRECI 241464",
     "id": "mwo9pm2mu45duqm",
     "criadoEm": "2026-09-16T13:39:49.342Z",
-    "atualizadoEm": "2026-10-05T17:29:40.056Z",
-    "publicado": true
+    "atualizadoEm": "2026-10-14T17:17:07.881Z",
+    "publicado": true,
+    "matricula": "",
+    "valorCondominio": 100,
+    "valorIptu": 120
   },
   {
     "quartos": 2,
