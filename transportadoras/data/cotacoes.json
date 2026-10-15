@@ -5616,5 +5616,35 @@
       }
     ],
     "id": "mv9h5sh8w7837"
+  },
+  {
+    "data": "2026-10-15",
+    "pedido": "3124",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "17.217.985/0023-10",
+    "cepD": "31270-901",
+    "vnf": "3.542,77",
+    "pes": "196",
+    "vol": "17",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1830 RISCO: 8",
+    "transRows": [
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mv9l4bsxzg8jv"
   }
 ]
