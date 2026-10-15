@@ -5598,14 +5598,14 @@
     "transRows": [
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "432,75",
+        "cotacao": "206463",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "227,33",
+        "cotacao": "64005",
         "prazo": ""
       },
       {
