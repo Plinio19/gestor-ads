@@ -5403,6 +5403,12 @@
         "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "370,00",
+        "cotacao": "152981",
+        "prazo": ""
       }
     ],
     "id": "mv83gqal0x3sr"
