@@ -5574,8 +5574,14 @@
     "transRows": [
       {
         "trans": "RODOVIARIO WILSON",
-        "valor": "",
-        "cotacao": "",
+        "valor": "286",
+        "cotacao": "46468",
+        "prazo": ""
+      },
+      {
+        "trans": "JCV TRANSPORTES",
+        "valor": "312",
+        "cotacao": "24921",
         "prazo": ""
       }
     ],
