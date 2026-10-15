@@ -231,11 +231,11 @@
     "empenho": " 2026NE002892",
     "pedido": " 2026NE002892",
     "problemaRaiz": "Pedido entregue de maneira divergente do empenho. ",
-    "acaoTomada": "Emitir e  Enviar 16 Galões de 5L para completar o empenho.\n22/09 - pedido 3091 lançado\n30/09 - julia precisa trocar a nota",
+    "acaoTomada": "Emitir e  Enviar 16 Galões de 5L para completar o empenho.\n22/09 - pedido 3091 lançado\n30/09 - julia precisa trocar a nota\n15/10 - nova nota emitida",
     "prioridade": "alta",
-    "posicao": "andamento",
+    "posicao": "finalizado",
     "criadoEm": "2026-09-08T18:34:38.198Z",
-    "atualizadoEm": "2026-09-30T18:43:22.074Z"
+    "atualizadoEm": "2026-10-15T13:04:36.783Z"
   },
   {
     "id": "mu2zib0xd9l4r",
