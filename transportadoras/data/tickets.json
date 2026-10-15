@@ -264,19 +264,5 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-21T13:12:12.234Z",
     "atualizadoEm": "2026-10-15T21:05:48.103Z"
-  },
-  {
-    "id": "mva13jnkdsngx",
-    "numero": "0022",
-    "assunto": "Ticket 22 - Teste",
-    "notaFiscal": "teste",
-    "empenho": "",
-    "pedido": "teste",
-    "problemaRaiz": "",
-    "acaoTomada": "",
-    "prioridade": "media",
-    "posicao": "aberto",
-    "criadoEm": "2026-10-15T21:06:09.344Z",
-    "atualizadoEm": "2026-10-15T21:06:09.344Z"
   }
 ]
