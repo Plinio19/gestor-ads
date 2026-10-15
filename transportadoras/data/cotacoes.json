@@ -5430,32 +5430,32 @@
     "transRows": [
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "7.570,00",
+        "cotacao": "1287257",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "9.519,71",
+        "cotacao": "63957",
         "prazo": ""
       },
       {
         "trans": "TRANS IMPERIO",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "TPL",
-        "valor": "",
-        "cotacao": "",
+        "valor": "5.100,00",
+        "cotacao": "98570",
         "prazo": ""
       },
       {
         "trans": "TODOBRASIL TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "8.500,00",
+        "cotacao": "556760",
         "prazo": ""
       }
     ],
