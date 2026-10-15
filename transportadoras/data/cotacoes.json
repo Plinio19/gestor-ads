@@ -5532,5 +5532,26 @@
       }
     ],
     "id": "mv9fdbjb70yyw"
+  },
+  {
+    "data": "2026-10-15",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjD": "00.394.700/0001-08",
+    "cepD": "70719-040",
+    "vnf": "3.370,80",
+    "pes": "424",
+    "vol": "29",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mv9gyqnwl7p9s"
   }
 ]
