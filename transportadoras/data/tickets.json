@@ -278,5 +278,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-10-19T17:33:59.345Z",
     "atualizadoEm": "2026-10-19T17:40:32.036Z"
+  },
+  {
+    "id": "mvflziddjwkb7",
+    "numero": "0024",
+    "assunto": "Ticket 24 ",
+    "notaFiscal": "NF 3080",
+    "empenho": "2026NE1012",
+    "pedido": "2026NE1012",
+    "problemaRaiz": "O pedido foi enviado sem o  acido borico",
+    "acaoTomada": "Enviar um novo pedido com o acido borico",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-10-19T18:49:43.873Z",
+    "atualizadoEm": "2026-10-19T18:49:43.873Z"
   }
 ]
