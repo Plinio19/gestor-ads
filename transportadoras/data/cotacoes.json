@@ -5748,5 +5748,29 @@
       }
     ],
     "id": "mvf7magtreprj"
+  },
+  {
+    "data": "2026-10-19",
+    "pedido": "3098",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "75.095.679/0001-49",
+    "cepD": "81531-980",
+    "vnf": "812,50",
+    "pes": "30",
+    "vol": "6",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mvf800xzf9r7e"
   }
 ]
