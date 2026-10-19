@@ -264,5 +264,19 @@
     "posicao": "aberto",
     "criadoEm": "2026-09-21T13:12:12.234Z",
     "atualizadoEm": "2026-10-15T21:05:48.103Z"
+  },
+  {
+    "id": "mvfja3shp3py5",
+    "numero": "0023",
+    "assunto": "Ticket 23 - NF 2851 - Industria Material Belico",
+    "notaFiscal": "NF 2851",
+    "empenho": "2026NE367",
+    "pedido": "2026NE367",
+    "problemaRaiz": "O material não era exatamente o que eles queriam.",
+    "acaoTomada": "Basicamente, só precisamos retirar lá o mais rápido possível.\nAV. 15 DE MARCO, S/N, LIMEIRA, PIQUETE/SP - CEP: 12.620-000",
+    "prioridade": "media",
+    "posicao": "aberto",
+    "criadoEm": "2026-10-19T17:33:59.345Z",
+    "atualizadoEm": "2026-10-19T17:33:59.345Z"
   }
 ]
