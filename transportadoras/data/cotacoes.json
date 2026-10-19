@@ -5820,5 +5820,35 @@
       }
     ],
     "id": "mvfl28i786gye"
+  },
+  {
+    "data": "2026-10-19",
+    "pedido": "3178",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "45.767829/0001-52",
+    "cepD": "13770-069",
+    "vnf": "1298,40",
+    "pes": "240",
+    "vol": "16",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mvfli856drggo"
   }
 ]
