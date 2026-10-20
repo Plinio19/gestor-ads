@@ -5886,5 +5886,35 @@
       }
     ],
     "id": "mvflz5xd03ijp"
+  },
+  {
+    "data": "2026-10-20",
+    "pedido": "3188",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.126.437/0031-69",
+    "cepD": "49400-099",
+    "vnf": "855,00",
+    "pes": "90",
+    "vol": "6",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1198 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mvgolv8phbvja"
   }
 ]
