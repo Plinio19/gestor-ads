@@ -5904,14 +5904,14 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "270,13",
+        "cotacao": "151985",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "393,58",
+        "cotacao": "153021",
         "prazo": ""
       }
     ],
