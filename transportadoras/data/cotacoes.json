@@ -6005,26 +6005,26 @@
     "transRows": [
       {
         "trans": "RODOVIARIO WILSON",
-        "valor": "",
-        "cotacao": "",
+        "valor": "104,00",
+        "cotacao": "58898",
         "prazo": ""
       },
       {
         "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "200,00",
+        "cotacao": "3375",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "224,55",
+        "cotacao": "64239",
         "prazo": ""
       },
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "184,16",
+        "cotacao": "25089",
         "prazo": ""
       }
     ],
