@@ -6197,14 +6197,14 @@
     "transRows": [
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "143,06",
+        "cotacao": "64239",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "286,24",
+        "cotacao": "153031",
         "prazo": ""
       },
       {
