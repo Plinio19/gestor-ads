@@ -5147,7 +5147,14 @@
     "vol": "2",
     "med": "30 x 21 x 24",
     "mat": "QUIMICO SEM CLASSIFICAÇÃO",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "74,58",
+        "cotacao": "225170",
+        "prazo": ""
+      }
+    ],
     "id": "muqvqo9ivf17e"
   },
   {
