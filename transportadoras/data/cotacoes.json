@@ -5130,7 +5130,14 @@
     "vol": "1",
     "med": "30 x 21 x 24",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "151,25",
+        "cotacao": "3277",
+        "prazo": ""
+      }
+    ],
     "id": "mupwc97qjjtta"
   },
   {
