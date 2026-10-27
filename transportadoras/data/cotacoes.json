@@ -6439,6 +6439,12 @@
     "transRows": [
       {
         "trans": "RODOGARCIA",
+        "valor": "202,93",
+        "cotacao": "146456",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
