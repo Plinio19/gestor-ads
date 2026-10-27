@@ -6361,5 +6361,29 @@
     "mat": "QUIMICO ONU: 1830 RISCO: 8",
     "transRows": [],
     "id": "mvl0mys4yecl7"
+  },
+  {
+    "data": "2026-10-27",
+    "pedido": "3021",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "00.396.895/0073-08",
+    "cepD": "74674-025",
+    "vnf": "2.029,60",
+    "pes": "46",
+    "vol": "8",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mvqxr0agv6k3n"
   }
 ]
