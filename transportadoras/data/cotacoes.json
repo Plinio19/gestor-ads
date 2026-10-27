@@ -6385,5 +6385,41 @@
       }
     ],
     "id": "mvqxr0agv6k3n"
+  },
+  {
+    "data": "2026-10-27",
+    "pedido": "3224",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "13.031.547/0001-04",
+    "cepD": "49107-230",
+    "vnf": "28,20",
+    "pes": "1",
+    "vol": "1",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mvqy7efohkj7w"
   }
 ]
