@@ -5769,8 +5769,8 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "101,15",
+        "cotacao": "226389",
         "prazo": ""
       }
     ],
