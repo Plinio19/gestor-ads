@@ -6009,13 +6009,14 @@
     "cepD": "97508-000",
     "vnf": "1.253,44",
     "pes": "95",
+    "vol": "2",
     "med": "8",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
     "transRows": [
       {
         "trans": "OURO NEGRO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "150,23",
+        "cotacao": "226536",
         "prazo": ""
       }
     ],
