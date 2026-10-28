@@ -6517,6 +6517,12 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
+        "valor": "492,73",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
         "valor": "",
         "cotacao": "",
         "prazo": ""
