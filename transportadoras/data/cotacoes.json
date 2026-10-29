@@ -6674,6 +6674,7 @@
     "cepD": "60440-900",
     "vnf": "120,00",
     "pes": "10",
+    "vol": "1",
     "med": "36 x 31 x 25",
     "mat": "QUIMICO ONU: 1230 RISCO: 3",
     "transRows": [
