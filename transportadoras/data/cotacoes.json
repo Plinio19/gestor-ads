@@ -6716,20 +6716,20 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
+        "valor": "N FAZ",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "N FAZ",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "MAEX - MARDONIO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "260,00",
+        "cotacao": "1292508",
         "prazo": ""
       }
     ],
