@@ -7112,5 +7112,29 @@
       }
     ],
     "id": "mw2f1ic49c4sj"
+  },
+  {
+    "data": "2026-11-04",
+    "pedido": "3296",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "50.871.646/0001-12",
+    "cepD": "91030-500",
+    "vnf": "4.732,00",
+    "pes": "113",
+    "vol": "19",
+    "med": "30 x 21 x 24",
+    "mat": "QUIMICO ONU: 1830 RISCO: 8",
+    "transRows": [
+      {
+        "trans": "HB TRANSPORTES",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mw2hb2qiah6c9"
   }
 ]
