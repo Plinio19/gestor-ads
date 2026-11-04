@@ -295,16 +295,16 @@
   },
   {
     "id": "mw2gyj8t6oiay",
-    "numero": "0025",
-    "assunto": "teste",
-    "notaFiscal": "a",
-    "empenho": "",
-    "pedido": "a",
-    "problemaRaiz": "",
-    "acaoTomada": "",
+    "numero": "0026",
+    "assunto": "NF 3295 - Ebserh - Formaldeido 37%",
+    "notaFiscal": "NF 3295",
+    "empenho": "2026NE946",
+    "pedido": "NF 3295",
+    "problemaRaiz": "Era formaldeido 10% tamponado, enviamos formaldeido 37%",
+    "acaoTomada": "Pedido 3298 Lançado. Enviar o material correto e retirar formaldeido de 37%",
     "prioridade": "media",
     "posicao": "aberto",
     "criadoEm": "2026-11-04T18:47:42.316Z",
-    "atualizadoEm": "2026-11-04T18:47:42.316Z"
+    "atualizadoEm": "2026-11-04T18:53:06.365Z"
   }
 ]
