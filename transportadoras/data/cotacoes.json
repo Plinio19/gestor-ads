@@ -7028,6 +7028,12 @@
       },
       {
         "trans": "MAEX - MARDONIO",
+        "valor": "697,00",
+        "cotacao": "1293967 ",
+        "prazo": "5"
+      },
+      {
+        "trans": "RODOGARCIA",
         "valor": "",
         "cotacao": "",
         "prazo": ""
