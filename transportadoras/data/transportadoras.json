@@ -574,5 +574,44 @@
         "nomeArquivo": "LICENÇA VENCIMENTO 31122026  (1).pdf"
       }
     ]
+  },
+  {
+    "id": "mw4yqjflprq9y",
+    "nome": "HB TRANSPORTES - TRANSITO BRASIL",
+    "quimico": "consultar",
+    "status": "ativo",
+    "telefone": "51 3313-7700",
+    "email": "",
+    "site": "",
+    "contato": "Yasmin",
+    "obs": "",
+    "estados": [
+      "AC",
+      "AL",
+      "AM",
+      "BA",
+      "CE",
+      "DF",
+      "ES",
+      "GO",
+      "MA",
+      "MS",
+      "MG",
+      "MT",
+      "PA",
+      "PB",
+      "PE",
+      "PI",
+      "PR",
+      "RJ",
+      "RN",
+      "RS",
+      "SC",
+      "SP",
+      "RO",
+      "SE",
+      "TO"
+    ],
+    "licencas": []
   }
 ]
