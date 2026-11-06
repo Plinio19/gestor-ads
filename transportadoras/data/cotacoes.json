@@ -7160,5 +7160,35 @@
       }
     ],
     "id": "mw3lg3h0xmedo"
+  },
+  {
+    "data": "2026-11-06",
+    "pedido": "3222",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "48.031.918/0021-78",
+    "cepD": "18610-034",
+    "vnf": "5.745,24",
+    "pes": "600",
+    "vol": "12",
+    "med": "59x39x40",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "MAEX - MARDONIO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mw4x4f3qm1nwz"
   }
 ]
