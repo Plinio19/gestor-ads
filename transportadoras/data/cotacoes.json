@@ -7268,6 +7268,12 @@
     "transRows": [
       {
         "trans": "RODOGARCIA",
+        "valor": "203,30",
+        "cotacao": "148538",
+        "prazo": ""
+      },
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
         "valor": "",
         "cotacao": "",
         "prazo": ""
