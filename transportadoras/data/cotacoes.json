@@ -7292,8 +7292,8 @@
     "transRows": [
       {
         "trans": "PANAMERICANO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "168,39",
+        "cotacao": "65233",
         "prazo": ""
       },
       {
@@ -7304,8 +7304,8 @@
       },
       {
         "trans": "JCV TRANSPORTES",
-        "valor": "",
-        "cotacao": "",
+        "valor": "513,20",
+        "cotacao": "025548",
         "prazo": ""
       }
     ],
