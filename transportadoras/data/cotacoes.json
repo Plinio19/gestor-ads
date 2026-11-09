@@ -7352,5 +7352,29 @@
       }
     ],
     "id": "mw98qlc5efcma"
+  },
+  {
+    "data": "2026-11-09",
+    "pedido": "3230",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "83.899.526/0001-82",
+    "cepD": "88034-000",
+    "vnf": "1.165,05",
+    "pes": "45",
+    "vol": "4",
+    "med": "36 x 31 x 25",
+    "mat": "GLICERINA",
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mw98wjcq2pypg"
   }
 ]
