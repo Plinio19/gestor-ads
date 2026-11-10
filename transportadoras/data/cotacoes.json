@@ -7355,6 +7355,12 @@
         "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
+      },
+      {
+        "trans": "NOVO VALE TRANSPORTES",
+        "valor": "402,17",
+        "cotacao": "122640",
+        "prazo": ""
       }
     ],
     "id": "mw98qlc5efcma"
