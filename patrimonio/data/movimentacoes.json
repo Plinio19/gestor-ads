@@ -106,5 +106,14 @@
     "origemCat": "Aportes em Empresas",
     "origemAtivo": "Linklab",
     "valor": 500
+  },
+  {
+    "id": "4hltmkz",
+    "data": "2026-11-10",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 800
   }
 ]
