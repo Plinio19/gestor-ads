@@ -7582,7 +7582,33 @@
     "pes": "225",
     "vol": "30",
     "med": "36 x 31 x 25",
-    "transRows": [],
+    "mat": "QUIMICO SEM CLASSIFICAÇÃO",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
     "id": "mwc3bl6fjfw1k"
   }
 ]
