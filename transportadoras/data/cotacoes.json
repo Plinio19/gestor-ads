@@ -7634,5 +7634,35 @@
       }
     ],
     "id": "mwc3bl6fjfw1k"
+  },
+  {
+    "data": "2026-11-11",
+    "pedido": "3277",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.126.437/0018-91",
+    "cepD": "79080-190",
+    "vnf": "12.020,00",
+    "pes": "1500",
+    "vol": "101",
+    "med": "36 x 31 x 25",
+    "mat": "QUIMICO ONU: 1170 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "CONDEX",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mwcclwd6j02vq"
   }
 ]
