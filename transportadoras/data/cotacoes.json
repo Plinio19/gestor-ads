@@ -7700,5 +7700,41 @@
       }
     ],
     "id": "mwcezww7qnb6n"
+  },
+  {
+    "data": "2026-11-11",
+    "pedido": "3298",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "15.126.437/0031-69",
+    "cepD": "49400-099",
+    "vnf": "855,00",
+    "pes": "90",
+    "vol": "6",
+    "med": "36 X 31 X 25",
+    "mat": "QUIMICO ONU: 1198 RISCO: 3",
+    "transRows": [
+      {
+        "trans": "GRUPO DAGO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mwcfa8nswgrbb"
   }
 ]
