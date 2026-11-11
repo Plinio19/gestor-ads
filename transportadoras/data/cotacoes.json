@@ -7562,6 +7562,18 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
+        "valor": "409,66",
+        "cotacao": "228212",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOGARCIA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
         "valor": "",
         "cotacao": "",
         "prazo": ""
