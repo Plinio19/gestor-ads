@@ -7472,8 +7472,14 @@
       },
       {
         "trans": "HB TRANSPORTES - TRANSITO BRASIL",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PRIMEIRA DO NORDESTE",
+        "valor": "507,04",
+        "cotacao": "153186",
         "prazo": ""
       }
     ],
