@@ -7652,9 +7652,9 @@
     "transRows": [
       {
         "trans": "HB TRANSPORTES - TRANSITO BRASIL",
-        "valor": "",
-        "cotacao": "",
-        "prazo": ""
+        "valor": "3480,00",
+        "cotacao": "1085780",
+        "prazo": "4"
       },
       {
         "trans": "CONDEX",
