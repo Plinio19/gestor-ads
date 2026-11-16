@@ -348,5 +348,19 @@
       "diaMes": "10",
       "horario": "08:00"
     }
+  },
+  {
+    "id": "3c53oc6mwjbu9ar",
+    "titulo": "Simples Expresslab",
+    "descricao": "Verificar simples nacional e das da Expresslab",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-16",
+    "prioridade": "urgente",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-11-16T13:56:29.715Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
