@@ -115,5 +115,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 800
+  },
+  {
+    "id": "jn4srkn",
+    "data": "2026-11-16",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 750
   }
 ]
