@@ -429,5 +429,17 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "fw6u9bnmwl1i0rt",
+    "titulo": "Recursos Campnha Rimolar",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-23",
+    "prioridade": "normal",
+    "status": "pendente",
+    "criadaEm": "2026-11-17T18:42:34.985Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
