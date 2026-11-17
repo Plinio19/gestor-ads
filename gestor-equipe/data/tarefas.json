@@ -369,9 +369,25 @@
     "responsavelId": "ljiku0nmwjbo9yt",
     "prazo": "2026-11-10",
     "prioridade": "alta",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Administrativo",
     "criadaEm": "2026-11-17T18:15:45.851Z",
+    "concluidaEm": "2026-11-17T18:15:50.228Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "10",
+      "horario": "09:00"
+    }
+  },
+  {
+    "id": "cmute0qmwl0jmj8",
+    "titulo": "Fechamento de Licitações",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-12-10",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-11-17T18:15:50.228Z",
     "recorrencia": {
       "tipo": "mensal",
       "diaMes": "10",
