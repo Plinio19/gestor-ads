@@ -356,12 +356,13 @@
     "responsavelId": "ljiku0nmwjbo9yt",
     "prazo": "2026-11-16",
     "prioridade": "urgente",
-    "status": "pendente",
+    "status": "concluida",
     "categoria": "Administrativo",
     "criadaEm": "2026-11-16T13:56:29.715Z",
     "recorrencia": {
       "tipo": "unica"
-    }
+    },
+    "concluidaEm": "2026-11-17T18:15:56.524Z"
   },
   {
     "id": "98kllbimwl0jj5n",
