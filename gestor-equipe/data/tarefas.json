@@ -394,5 +394,17 @@
       "diaMes": "10",
       "horario": "09:00"
     }
+  },
+  {
+    "id": "vphsjdpmwl1ennn",
+    "titulo": "Verificar Merchant Centar Rimolar ",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-23",
+    "prioridade": "normal",
+    "status": "pendente",
+    "criadaEm": "2026-11-17T18:39:58.019Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
