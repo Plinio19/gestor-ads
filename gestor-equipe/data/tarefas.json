@@ -303,21 +303,6 @@
     "concluidaEm": "2026-10-02T13:50:59.465Z"
   },
   {
-    "id": "ice71wzmur0tuh5",
-    "titulo": "Verificar status e Preenchar KPI licitações ",
-    "responsavelId": "ljiku0nmwjbo9yt",
-    "prazo": "2027-03-01",
-    "prioridade": "alta",
-    "status": "pendente",
-    "categoria": "Financeiro",
-    "criadaEm": "2026-10-02T13:50:59.465Z",
-    "recorrencia": {
-      "tipo": "mensal",
-      "diaMes": "1",
-      "horario": "08:30"
-    }
-  },
-  {
     "id": "j97sd4nmwjboin7",
     "titulo": "Notas para Senger Acessoria",
     "descricao": "Enviar Notas de Entrada e Saida para Senger",
