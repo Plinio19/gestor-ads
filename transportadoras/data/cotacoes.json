@@ -7957,7 +7957,14 @@
     "vol": "6",
     "med": "36 X 31 X 25",
     "mat": "QUIMICO ONU: 1170 RISCO: 3",
-    "transRows": [],
+    "transRows": [
+      {
+        "trans": "OURO NEGRO",
+        "valor": "130,66",
+        "cotacao": "228654",
+        "prazo": ""
+      }
+    ],
     "id": "mwkrbghy1loux"
   },
   {
