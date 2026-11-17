@@ -362,5 +362,20 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "98kllbimwl0jj5n",
+    "titulo": "Fechamento de Licitações",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-10",
+    "prioridade": "alta",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-11-17T18:15:45.851Z",
+    "recorrencia": {
+      "tipo": "mensal",
+      "diaMes": "10",
+      "horario": "09:00"
+    }
   }
 ]
