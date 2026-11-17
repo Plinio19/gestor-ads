@@ -432,5 +432,17 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "dp7ehxemwl1g39t",
+    "titulo": "Promoção Reagex",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-23",
+    "prioridade": "normal",
+    "status": "pendente",
+    "criadaEm": "2026-11-17T18:41:04.913Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
