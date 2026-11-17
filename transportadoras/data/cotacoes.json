@@ -8032,19 +8032,19 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
+        "valor": "1.000,00",
         "cotacao": "",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "290,00",
+        "cotacao": "153214",
         "prazo": ""
       },
       {
         "trans": "PANAMERICANO",
-        "valor": "",
+        "valor": "nao faz",
         "cotacao": "",
         "prazo": ""
       }
