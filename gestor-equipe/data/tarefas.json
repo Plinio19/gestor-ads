@@ -418,5 +418,19 @@
     "recorrencia": {
       "tipo": "unica"
     }
+  },
+  {
+    "id": "gwm2wzemwl1flvm",
+    "titulo": "Promoção Rimolar",
+    "descricao": "Alcool, butanodiol, nitratos etc...",
+    "responsavelId": "ljiku0nmwjbo9yt",
+    "prazo": "2026-11-23",
+    "prioridade": "normal",
+    "status": "pendente",
+    "categoria": "Administrativo",
+    "criadaEm": "2026-11-17T18:40:42.370Z",
+    "recorrencia": {
+      "tipo": "unica"
+    }
   }
 ]
