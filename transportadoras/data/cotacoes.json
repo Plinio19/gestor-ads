@@ -8246,5 +8246,47 @@
       }
     ],
     "id": "mwkxeekyt44rc"
+  },
+  {
+    "data": "2026-11-18",
+    "pedido": "3305",
+    "tomador": "REMETENTE",
+    "col": "NÃO",
+    "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
+    "cnpjD": "17.217.985/0019-33",
+    "cepD": "31270-901",
+    "vnf": "1.159,57",
+    "pes": "52",
+    "vol": "8",
+    "med": "36 X 31 X 25",
+    "mat": "QUIMICO ONU: 1789 RISCO: 8 ",
+    "transRows": [
+      {
+        "trans": "HB TRANSPORTES - TRANSITO BRASIL",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "REC TRANSPORTES E LOGISTICA INTEGRADA LTDA",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "RODOVIARIO WILSON",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "PANAMERICANO",
+        "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      }
+    ],
+    "id": "mwm1ch6sric5y"
   }
 ]
