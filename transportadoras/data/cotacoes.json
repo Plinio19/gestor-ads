@@ -8087,6 +8087,7 @@
     "tomador": "REMETENTE",
     "col": "NÃO",
     "cnpjR": "49.506.242/0001-40",
+    "cepR": "06739-020",
     "cnpjD": "15.126.437/0024-30",
     "cepD": "80060-240",
     "vnf": "300,00",
@@ -8097,8 +8098,8 @@
     "transRows": [
       {
         "trans": "OURO NEGRO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "65,70",
+        "cotacao": "228704",
         "prazo": ""
       }
     ],
