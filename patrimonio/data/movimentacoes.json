@@ -142,5 +142,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 800
+  },
+  {
+    "id": "r5nss40",
+    "data": "2026-11-23",
+    "descricao": "Resgatae para investimento",
+    "tipo": "resgate",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 5000
   }
 ]
