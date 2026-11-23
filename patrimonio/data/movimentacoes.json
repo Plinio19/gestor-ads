@@ -133,5 +133,14 @@
     "origemCat": "Aportes em Empresas",
     "origemAtivo": "Halogenn",
     "valor": 2500
+  },
+  {
+    "id": "vsa40pp",
+    "data": "2026-11-23",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 800
   }
 ]
