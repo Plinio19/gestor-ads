@@ -8338,14 +8338,14 @@
     "transRows": [
       {
         "trans": "GRUPO DAGO",
-        "valor": "",
-        "cotacao": "",
+        "valor": "462,99",
+        "cotacao": "152373",
         "prazo": ""
       },
       {
         "trans": "PRIMEIRA DO NORDESTE",
-        "valor": "",
-        "cotacao": "",
+        "valor": "162,15",
+        "cotacao": "153257",
         "prazo": ""
       }
     ],
