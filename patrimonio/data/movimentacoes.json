@@ -160,5 +160,14 @@
     "origemCat": "Aportes em Empresas",
     "origemAtivo": "Halogenn",
     "valor": 2500
+  },
+  {
+    "id": "lblww7l",
+    "data": "2026-11-24",
+    "descricao": "Aporte - Caixa",
+    "tipo": "aporte",
+    "origemCat": "Caixa",
+    "origemAtivo": "Caixa",
+    "valor": 1000
   }
 ]
