@@ -2,11 +2,11 @@ import { useEffect, useState } from 'react';
 import {
   Button, Table, Tag, Space, Form, Input, DatePicker, Drawer,
   Tooltip, Popconfirm, message, Typography, Alert, Modal,
-  Empty, Select,
+  Empty, Select, Card, Row, Col, Statistic, Divider,
 } from 'antd';
 import {
   PlusOutlined, EditOutlined, DeleteOutlined, CheckCircleOutlined,
-  WarningOutlined,
+  WarningOutlined, FileTextOutlined, PrinterOutlined,
 } from '@ant-design/icons';
 import dayjs, { type Dayjs } from 'dayjs';
 import type { RastreioNF } from '../../types';
@@ -41,11 +41,31 @@ export default function RastreioPage() {
   const [salvandoEntrega, setSalvandoEntrega] = useState(false);
 
   const [filtro, setFiltro] = useState<'todas' | 'pendentes' | 'entregues'>('todas');
+  const [relatorioOpen, setRelatorioOpen] = useState(false);
+  const [periodo, setPeriodo] = useState<[Dayjs, Dayjs] | null>(null);
 
   useEffect(() => { void fetch(); }, [fetch]);
   useEffect(() => { if (!transLoaded) void fetchTrans(); }, [fetchTrans, transLoaded]);
 
   const alertas = nfs.filter(isVencida);
+
+  // ── Lógica do relatório ──────────────────────────────────────────
+  const nfsRelatorio = periodo
+    ? nfs.filter(nf => {
+        const emissao = dayjs(nf.dataEmissao);
+        return emissao.isSame(periodo[0], 'day') || emissao.isSame(periodo[1], 'day')
+          || (emissao.isAfter(periodo[0]) && emissao.isBefore(periodo[1]));
+      })
+    : nfs;
+
+  const hoje = dayjs().startOf('day');
+  const stats = {
+    total:            nfsRelatorio.length,
+    emTransito:       nfsRelatorio.filter(n => !n.entregue && !dayjs(n.previsaoEntrega).isBefore(hoje)).length,
+    entregueNoPrazo:  nfsRelatorio.filter(n => n.entregue && n.dataEntrega && !dayjs(n.dataEntrega).isAfter(dayjs(n.previsaoEntrega))).length,
+    entregueAtrasada: nfsRelatorio.filter(n => n.entregue && n.dataEntrega && dayjs(n.dataEntrega).isAfter(dayjs(n.previsaoEntrega))).length,
+    emAtraso:         nfsRelatorio.filter(n => !n.entregue && dayjs(n.previsaoEntrega).isBefore(hoje)).length,
+  };
 
   const nfsFiltradas = nfs.filter(nf => {
     if (filtro === 'pendentes') return !nf.entregue;
@@ -226,6 +246,9 @@ export default function RastreioPage() {
               { value: 'entregues', label: 'Entregues' },
             ]}
           />
+          <Button icon={<FileTextOutlined />} onClick={() => setRelatorioOpen(true)}>
+            Relatório
+          </Button>
           <Button type="primary" icon={<PlusOutlined />} onClick={abrirNovo}>
             Nova NF
           </Button>
@@ -365,7 +388,97 @@ export default function RastreioPage() {
         @media (prefers-color-scheme: dark) {
           .row-alerta td { background: #2a1215 !important; }
         }
+        @media print {
+          .no-print { display: none !important; }
+          .ant-drawer-body { padding: 0 !important; }
+        }
       `}</style>
+
+      {/* Drawer: Relatório por período */}
+      <Drawer
+        title="Relatório de NFs"
+        open={relatorioOpen}
+        onClose={() => setRelatorioOpen(false)}
+        width={760}
+        className="no-print"
+        extra={
+          <Button icon={<PrinterOutlined />} onClick={() => window.print()}>
+            Imprimir
+          </Button>
+        }
+      >
+        <div style={{ marginBottom: 16 }}>
+          <Text strong style={{ marginRight: 8 }}>Período (data de emissão):</Text>
+          <DatePicker.RangePicker
+            format="DD/MM/YYYY"
+            value={periodo}
+            onChange={v => setPeriodo(v as [Dayjs, Dayjs] | null)}
+            allowClear
+            placeholder={['Data inicial', 'Data final']}
+          />
+          {periodo && (
+            <Text type="secondary" style={{ marginLeft: 12, fontSize: 12 }}>
+              {nfsRelatorio.length} NF{nfsRelatorio.length !== 1 ? 's' : ''} no período
+            </Text>
+          )}
+        </div>
+
+        <Row gutter={12} style={{ marginBottom: 20 }}>
+          <Col span={8}>
+            <Card size="small" style={{ textAlign: 'center', borderColor: '#d9d9d9' }}>
+              <Statistic title="Total no período" value={stats.total} />
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card size="small" style={{ textAlign: 'center', borderColor: '#1677ff' }}>
+              <Statistic title="Em trânsito" value={stats.emTransito} valueStyle={{ color: '#1677ff' }} />
+            </Card>
+          </Col>
+          <Col span={8}>
+            <Card size="small" style={{ textAlign: 'center', borderColor: '#ff4d4f' }}>
+              <Statistic title="Em atraso" value={stats.emAtraso} valueStyle={{ color: '#ff4d4f' }} />
+            </Card>
+          </Col>
+          <Col span={12} style={{ marginTop: 12 }}>
+            <Card size="small" style={{ textAlign: 'center', borderColor: '#52c41a' }}>
+              <Statistic title="Entregue no prazo" value={stats.entregueNoPrazo} valueStyle={{ color: '#52c41a' }} />
+            </Card>
+          </Col>
+          <Col span={12} style={{ marginTop: 12 }}>
+            <Card size="small" style={{ textAlign: 'center', borderColor: '#faad14' }}>
+              <Statistic title="Entregue com atraso" value={stats.entregueAtrasada} valueStyle={{ color: '#faad14' }} />
+            </Card>
+          </Col>
+        </Row>
+
+        <Divider style={{ margin: '12px 0' }} />
+
+        <Table
+          rowKey="id"
+          size="small"
+          dataSource={[...nfsRelatorio].sort((a, b) => a.dataEmissao.localeCompare(b.dataEmissao))}
+          pagination={false}
+          scroll={{ x: 600 }}
+          rowClassName={r => isVencida(r) ? 'row-alerta' : ''}
+          columns={[
+            { title: 'NF', dataIndex: 'notaFiscal', width: 100, render: (v: string) => <Text strong>{v}</Text> },
+            { title: 'Transportadora', dataIndex: 'transportadora', width: 150 },
+            { title: 'Emissão', dataIndex: 'dataEmissao', width: 100, render: fmtDate },
+            { title: 'Prev. Entrega', dataIndex: 'previsaoEntrega', width: 110, render: (v: string, r: RastreioNF) => (
+              <Text type={isVencida(r) ? 'danger' : undefined}>{fmtDate(v)}</Text>
+            )},
+            { title: 'Dt. Entrega', dataIndex: 'dataEntrega', width: 100, render: (v: string | null) => fmtDate(v) },
+            { title: 'Status', key: 'status', width: 150, render: (_: unknown, r: RastreioNF) => {
+              if (r.entregue) {
+                const atrasada = r.dataEntrega && dayjs(r.dataEntrega).isAfter(dayjs(r.previsaoEntrega));
+                return <Tag color={atrasada ? 'warning' : 'success'}>{atrasada ? 'Entregue c/ atraso' : 'No prazo'}</Tag>;
+              }
+              if (isVencida(r)) return <Tag color="error">Em atraso</Tag>;
+              return <Tag color="processing">Em trânsito</Tag>;
+            }},
+          ]}
+        />
+      </Drawer>
     </div>
   );
 }
