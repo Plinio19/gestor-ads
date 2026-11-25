@@ -86,3 +86,17 @@ export interface Ticket {
   criadoEm: string;
   atualizadoEm: string;
 }
+
+export interface RastreioNF {
+  id: string;
+  notaFiscal: string;
+  transportadora: string;
+  dataEmissao: string;
+  dataVencimento: string;
+  dataColeta: string | null;
+  previsaoEntrega: string;
+  entregue: boolean;
+  dataEntrega: string | null;
+  obs?: string;
+  criadoEm: string;
+}

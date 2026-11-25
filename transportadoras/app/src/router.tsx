@@ -6,6 +6,7 @@ import CotacoesPage from './pages/cotacoes/CotacoesPage';
 import DocumentosPage from './pages/documentos/DocumentosPage';
 import Configuracoes from './pages/configuracoes/Configuracoes';
 import TicketsPage from './pages/tickets/TicketsPage';
+import RastreioPage from './pages/rastreio/RastreioPage';
 
 export const router = createHashRouter([
   {
@@ -17,6 +18,7 @@ export const router = createHashRouter([
       { path: 'cotacoes',         element: <CotacoesPage /> },
       { path: 'documentos',       element: <DocumentosPage /> },
       { path: 'tickets',          element: <TicketsPage /> },
+      { path: 'rastreio',         element: <RastreioPage /> },
       { path: 'configuracoes',    element: <Configuracoes /> },
     ],
   },

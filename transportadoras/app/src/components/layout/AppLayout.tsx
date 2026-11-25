@@ -10,21 +10,15 @@ import {
   MenuUnfoldOutlined,
   CloudOutlined,
   ExclamationCircleOutlined,
+  FileSyncOutlined,
 } from '@ant-design/icons';
 import { useNavigate, useLocation, Outlet } from 'react-router-dom';
 import { dataService } from '../../services/GitHubDataService';
+import { useRastreioStore } from '../../stores/useRastreioStore';
+import { rastreioAlertCount } from '../../pages/rastreio/RastreioPage';
 
 const { Sider, Header, Content } = Layout;
 const { Text } = Typography;
-
-const menuItems = [
-  { key: '/',              icon: <HomeOutlined />,                    label: 'Dashboard' },
-  { key: '/transportadoras', icon: <CarOutlined />,                   label: 'Transportadoras' },
-  { key: '/cotacoes',      icon: <FileTextOutlined />,                label: 'Cotações' },
-  { key: '/documentos',    icon: <FolderOpenOutlined />,              label: 'Documentos' },
-  { key: '/tickets',       icon: <ExclamationCircleOutlined />,       label: 'Tickets' },
-  { key: '/configuracoes', icon: <SettingOutlined />,                 label: 'Configurações' },
-];
 
 export default function AppLayout() {
   const [collapsed, setCollapsed] = useState(false);
@@ -33,6 +27,24 @@ export default function AppLayout() {
   const { token } = theme.useToken();
 
   const configurado = dataService.isConfigured();
+  const { nfs } = useRastreioStore();
+  const alertCount = rastreioAlertCount(nfs);
+
+  const menuItems = [
+    { key: '/',               icon: <HomeOutlined />,               label: 'Dashboard' },
+    { key: '/transportadoras', icon: <CarOutlined />,               label: 'Transportadoras' },
+    { key: '/cotacoes',       icon: <FileTextOutlined />,           label: 'Cotações' },
+    { key: '/documentos',     icon: <FolderOpenOutlined />,         label: 'Documentos' },
+    { key: '/tickets',        icon: <ExclamationCircleOutlined />,  label: 'Tickets' },
+    {
+      key: '/rastreio',
+      icon: <FileSyncOutlined />,
+      label: alertCount > 0
+        ? <Badge count={alertCount} size="small" offset={[6, 0]}>Rastreio NFs</Badge>
+        : 'Rastreio NFs',
+    },
+    { key: '/configuracoes',  icon: <SettingOutlined />,            label: 'Configurações' },
+  ];
 
   const selectedKey = menuItems
     .map(i => i.key)
