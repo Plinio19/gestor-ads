@@ -55,8 +55,8 @@
     "dataVencimento": "2026-08-24",
     "dataColeta": "2026-07-15",
     "previsaoEntrega": "2026-07-17",
-    "entregue": false,
-    "dataEntrega": null,
+    "entregue": true,
+    "dataEntrega": "2026-07-17",
     "criadoEm": "2026-11-25T18:03:02.845Z"
   }
 ]
