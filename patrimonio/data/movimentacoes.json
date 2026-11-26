@@ -169,5 +169,14 @@
     "origemCat": "Caixa",
     "origemAtivo": "Caixa",
     "valor": 1000
+  },
+  {
+    "id": "v1oyylj",
+    "data": "2026-11-26",
+    "descricao": "Resgatae para investimento",
+    "tipo": "resgate",
+    "origemCat": "Aportes em Empresas",
+    "origemAtivo": "Halogenn",
+    "valor": 2500
   }
 ]
