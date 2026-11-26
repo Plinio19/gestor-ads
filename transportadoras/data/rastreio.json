@@ -320,8 +320,8 @@
     "dataVencimento": "2027-07-29",
     "dataColeta": "2026-07-01",
     "previsaoEntrega": "2026-07-14",
-    "entregue": false,
-    "dataEntrega": null,
+    "entregue": true,
+    "dataEntrega": "2026-07-08",
     "criadoEm": "2026-11-26T14:24:24.032Z"
   }
 ]
