@@ -262,5 +262,17 @@
     "entregue": false,
     "dataEntrega": null,
     "criadoEm": "2026-11-26T13:16:04.889Z"
+  },
+  {
+    "id": "dgm8ztzmwxkukjc",
+    "notaFiscal": "2696",
+    "transportadora": "RODOGARCIA",
+    "dataEmissao": "2026-06-09",
+    "dataVencimento": "2026-07-07",
+    "dataColeta": "2026-06-10",
+    "previsaoEntrega": "2026-06-17",
+    "entregue": false,
+    "dataEntrega": null,
+    "criadoEm": "2026-11-26T13:17:27.288Z"
   }
 ]
