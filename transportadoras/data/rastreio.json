@@ -190,5 +190,17 @@
     "entregue": true,
     "dataEntrega": "2026-11-25",
     "criadoEm": "2026-11-26T13:09:47.216Z"
+  },
+  {
+    "id": "3q57yjmmwxklaql",
+    "notaFiscal": "3429",
+    "transportadora": "OURO NEGRO",
+    "dataEmissao": "2026-11-16",
+    "dataVencimento": "2026-11-16",
+    "dataColeta": "2026-11-16",
+    "previsaoEntrega": "2026-11-25",
+    "entregue": false,
+    "dataEntrega": null,
+    "criadoEm": "2026-11-26T13:10:14.685Z"
   }
 ]
