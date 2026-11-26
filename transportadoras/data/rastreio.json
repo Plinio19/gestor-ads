@@ -250,5 +250,17 @@
     "entregue": false,
     "dataEntrega": null,
     "criadoEm": "2026-11-26T13:15:32.590Z"
+  },
+  {
+    "id": "r50t6cqmwxkssyh",
+    "notaFiscal": "3232",
+    "transportadora": "RODOGARCIA",
+    "dataEmissao": "2026-10-07",
+    "dataVencimento": "2026-11-06",
+    "dataColeta": "2026-11-26",
+    "previsaoEntrega": "2026-11-26",
+    "entregue": false,
+    "dataEntrega": null,
+    "criadoEm": "2026-11-26T13:16:04.889Z"
   }
 ]
