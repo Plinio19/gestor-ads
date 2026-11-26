@@ -82,5 +82,17 @@
     "entregue": true,
     "dataEntrega": "2026-09-30",
     "criadoEm": "2026-11-25T18:08:02.350Z"
+  },
+  {
+    "id": "zse9b4gmwxh7pgi",
+    "notaFiscal": "3083",
+    "transportadora": "OURO NEGRO",
+    "dataEmissao": "2026-09-09",
+    "dataVencimento": "2026-10-09",
+    "dataColeta": "2026-09-16",
+    "previsaoEntrega": "2026-09-28",
+    "entregue": false,
+    "dataEntrega": null,
+    "criadoEm": "2026-11-26T11:35:41.731Z"
   }
 ]
