@@ -287,5 +287,17 @@
     "dataEntrega": "2026-08-31",
     "obs": "RASTREIO: https://www.melhorrastreio.com.br/app/correios/AD852376332BR\nRecebido por Eliana. ",
     "criadoEm": "2026-11-26T13:21:38.523Z"
+  },
+  {
+    "id": "r90cceumwxl1n7z",
+    "notaFiscal": "3007",
+    "transportadora": "OURO NEGRO",
+    "dataEmissao": "2026-08-18",
+    "dataVencimento": "2026-09-15",
+    "dataColeta": "2026-08-19",
+    "previsaoEntrega": "2026-08-25",
+    "entregue": false,
+    "dataEntrega": null,
+    "criadoEm": "2026-11-26T13:22:57.359Z"
   }
 ]
