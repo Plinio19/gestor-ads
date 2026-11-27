@@ -8351,8 +8351,8 @@
     "transRows": [
       {
         "trans": "RODOGARCIA",
-        "valor": "",
-        "cotacao": "",
+        "valor": "276,03",
+        "cotacao": "152121",
         "prazo": ""
       },
       {
@@ -8364,6 +8364,12 @@
       {
         "trans": "MAEX - MARDONIO",
         "valor": "",
+        "cotacao": "",
+        "prazo": ""
+      },
+      {
+        "trans": "SULMATOGROSSENSE",
+        "valor": "352,00",
         "cotacao": "",
         "prazo": ""
       }
